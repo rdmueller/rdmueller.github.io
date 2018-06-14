@@ -25,7 +25,7 @@ def color = { color, text ->
 }
 {% endhighlight %}
 
-With this closrue, you can now spice up your text with color like this:
+With this closure, you can now spice up your text with color like this:
 
 {% highlight groovy %}
 println "this is ${color 'green', 'some'} ${color 'red', 'colorful'} ${color 'white', 'text'}"
