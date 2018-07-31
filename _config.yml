@@ -83,3 +83,6 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+
+remote_theme: "mmistakes/minimal-mistakes"
+
