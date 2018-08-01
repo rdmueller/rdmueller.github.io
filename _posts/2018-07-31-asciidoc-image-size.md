@@ -8,7 +8,9 @@ When oyu work with several output formats for your doucments, it can be quite ha
 Most of the time, you will use large images which should be scaled to 100% in regards to the column width.
 This is easily done in HTML and also in AsciiDoc:
 
+{% highlight groovy %}
     image:test.png[width=100%]
+{% endhighlight %}
     
 But as soon as you render your document also as PDF and DOCX, you soon notice that these formats behave differently.
 docToolhcain uses docBook as intermediate format in order to convert it through pandoc to DOCX.
@@ -22,17 +24,22 @@ This also leads to unexpected results.
  
 As a last resort, I came up with 
 
+{% highlight groovy %}
     image:test.png[width=100%, scalewidth=17cm]
+{% endhighlight %}
     
 `17cm` is the column width when rendered as DIN-A4 page, resulting in a full width image.
 Not nice, but it works and these two parameters indeed work for HTML, PDF and DOCX because the absolute size is not ignored by pandoc!
 
 This can be also abreviated to 
 
+{% highlight groovy %}
     image:test.png[{fullWidth}]
+{% endhighlight %}
     
 by declaring `fullWidth` as attribute in your build
 
+{% highlight groovy %}
     tasks.withType(AsciidoctorTask) { docTask ->
     
       attributes \
@@ -46,10 +53,7 @@ by declaring `fullWidth` as attribute in your build
       logDocuments = true
     
     }
+{% endhighlight %}
 
 A full working example can be found here: https://github.com/arc42/HHGDAC/tree/master/folge-3
-
-{% highlight groovy %}
-println "this is ${color 'green', 'some'} ${color 'red', 'colorful'} ${color 'white', 'text'}"
-{% endhighlight %}
 
