@@ -84,5 +84,5 @@ exclude:
     - LICENSE
     - README.md
 
-remote_theme: "mmistakes/minimal-mistakes"
+# remote_theme: "mmistakes/minimal-mistakes"
 
