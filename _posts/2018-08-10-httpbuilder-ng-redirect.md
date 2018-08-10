@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HttpBuilder-NG"
-tags: [asciidoc]
+tags: [groovy]
 ---
 
 When you write integration tests for your web application, you certainly need an http client.
@@ -46,15 +46,27 @@ As I already mentioned, there are many http clients available. And that is anoth
 
 When you change the dependency from
 
+{% highlight groovy %}
+
     @Grab('io.github.http-builder-ng:http-builder-ng-okhttp:1.0.3')
+
+{% endhighlight %}
 
 to
 
+{% highlight groovy %}
+
     @Grab('io.github.http-builder-ng:http-builder-ng-core:1.0.3')
+
+{% endhighlight %}
 
 or
 
+{% highlight groovy %}
+
     @Grab('io.github.http-builder-ng:http-builder-ng-apache:1.0.3')
+
+{% endhighlight %}
 
 you switch the underlying http client from [OkHttp](http://square.github.io/okhttp/) to the java core implementation or [Apache HttpComponents](http://hc.apache.org/httpcomponents-client-ga/)
 
