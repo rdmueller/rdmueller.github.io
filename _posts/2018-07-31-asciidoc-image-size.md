@@ -4,7 +4,7 @@ title: "AsciiDoc Image Size"
 tags: [asciidoc]
 ---
 
-When oyu work with several output formats for your doucments, it can be quite hard to get the size of oyur images right.
+When you work with several output formats for your doucments, it can be quite hard to get the size of oyur images right.
 Most of the time, you will use large images which should be scaled to 100% in regards to the column width.
 This is easily done in HTML and also in AsciiDoc:
 
