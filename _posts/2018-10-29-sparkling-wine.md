@@ -12,4 +12,4 @@ I tried to follow the [instructions on the Sparx website](https://sparxsystems.c
 So today I just thought "hey, you should check the [wine home-page](https://wiki.winehq.org/Ubuntu) and follow these instructions". 
 That was a success!
 
-Now with a Sparx EA 14.1 running on my machine on Ubuntu, expect some updated to docToolchain soo 😎
+Now with a Sparx EA 14.1 running on my machine on Ubuntu, expect some updates to docToolchain soo 😎
