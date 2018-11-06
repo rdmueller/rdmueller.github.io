@@ -37,7 +37,7 @@ Moreover, what you do often turns into a habit...
 In addition, contributing to open source is different than closed or inner source. 
 One big difference is remote work. Yes. An aspect I wasn't aware of.
 With open source, you don't sit together in one room and invite the team to a meeting to discuss a change.
-Instead *you study the code and architecture of a system* and then eventually open an issue followed by a PR.
+Instead **you study the code and architecture of a system** and then eventually open an issue followed by a PR.
 This is all across time zones and countries.
 And when your PR gets accepted, it feels very productive.
 
@@ -47,13 +47,13 @@ For most Github repositories, this is the harder part because the available docu
 It showed me how important the various kinds of documentation are and that we should start to not only link to the source of the documentation ("improve this doc") but also to the source code of the feature described in the documentation. 
 I think this would enable more people to contribute.
 
-What are your thoughts on the barriers to contribute?
+<h3>What are your thoughts on the barriers to contribute?</h3>
 
 <br /><br /><br />
 
 PS: As promised, I donated 5€ for each PR to the [Movember foundation](https://movember.com/) and I doubled the amount to round it up to 100€.
 
-Thanx for supporting docToolchain and the Movember foundation with your PRs!
+<h3>Thanx for supporting docToolchain and the Movember foundation with your PRs!</h3>
 
 <div style="text-align: center;">
 <a href="https://movember.com/"><img style="max-width:30%;" src="https://cdn.movember.com/uploads/images/2018/Campaign/Movember%20Foundation_Iconic%20Mo_Black.jpg" /></a>
