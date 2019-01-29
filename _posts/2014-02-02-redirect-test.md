@@ -2,6 +2,7 @@
 layout: post
 title: Redirect Test
 tags: [gradle]
+redirect: /about
 ---
 
 This is just a test on how I could redirect old blog posts
@@ -12,9 +13,4 @@ That would make it much easier to see progress when writing documentation.
 
 Let's give this another try. Should be forty by now, shouldn't it?
 
-<html>
-    <head>
-	<meta http-equiv="refresh" content="0; url=https://docs-as-co.de">
-	<link rel="canonical" href="https://docs-as-co.de" />
-    </head>
-</html>
+
