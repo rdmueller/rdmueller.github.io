@@ -2,6 +2,7 @@
 layout: post
 title: "plantUML revisited"
 tags: [plantUML]
+redirect: /news/plantUML-revisited
 ---
 
 Two days ago, a plantUML tweet caught my attention:

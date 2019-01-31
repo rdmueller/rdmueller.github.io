@@ -2,6 +2,7 @@
 layout: post
 title: "Do more with Slides"
 tags: [asciidoc]
+redirect: /news/PPT-as-asciidoc-editor
 ---
 
 As an architect, you often have to present your ideas and architecture to an audience.

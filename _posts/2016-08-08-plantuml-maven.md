@@ -2,6 +2,7 @@
 layout: post
 title: "PlantUML with Maven"
 tags: [asciidoc, doc, maven]
+redirect: /news/plantuml-maven
 ---
 
 Let's add [PlantUML](https://plantuml.com) to our maven build. I'll use a slightly different approach. For the gradle build, I referenced the asciidoctor-diagram ruby gem to be used. But there is also a .jar version of it which can be used. It is one minor version behind the ruby gem, but that doesn't matter in this case.

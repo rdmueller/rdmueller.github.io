@@ -2,6 +2,7 @@
 layout: post
 title: Simple AsciiDoc Build with Gradle
 tags: [asciidoc, doc, gradle]
+redirect: /news/gradle-asciidoc-build/
 ---
 
 So I told you to use AsciiDoc to write technical documents because of all the great features.

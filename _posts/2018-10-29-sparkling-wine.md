@@ -2,6 +2,7 @@
 layout: post
 title: "Sparxling Wine"
 tags: []
+redirect: /news/sparkling-wine
 ---
 
 In order to optimize docToolchain for Mac and Linux, I wanted to give Sparx Enterprise Architect a try on a *nix environment.

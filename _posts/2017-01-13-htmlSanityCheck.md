@@ -2,6 +2,7 @@
 layout: post
 title: "Automated Quality-Checks"
 tags: [doc, asciidoc]
+redirect: /news/htmlSanityCheck
 ---
 
 Now that docToolchain handles your docs like your code, the next logical step is to add some automated tests.

@@ -2,6 +2,7 @@
 layout: post
 title: "Single-File HTML"
 tags: [asciidoc]
+redirect: /news/single-file-html
 ---
 
 Asciidoctor renders good looking HTML pages, but often you don't have a server to publish the document for others to read. That's why I render my documents as PDF or publish them to confluence. A single file can easily be sent as mail attachment.

@@ -2,6 +2,7 @@
 layout: post
 title: Why you should use AsciiDoc to document your Software Solution
 tags: [asciidoc, documentation]
+redirect: /news/why-asciidoc/
 ---
 
 [Last time](https://rdmueller.github.io/why_no_word/) I wrote about why I don't like  Word, but I didn't mention an alternative.

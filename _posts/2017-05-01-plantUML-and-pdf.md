@@ -2,6 +2,7 @@
 layout: post
 title: "plantUML with Asciidoctor-pdf"
 tags: [asciidoc]
+redirect: /news/plantUML-and-pdf
 ---
 
 The last few days I had to learn the hard way that plantUML (as part of asciidoctor-diagram) is not a frient of asciidoctor-pdf.

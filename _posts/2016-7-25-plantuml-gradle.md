@@ -2,6 +2,7 @@
 layout: post
 title: "Next Level: PlantUML with Gradle"
 tags: [asciidoc, doc, gradle]
+redirect: /news/plantuml-gradle
 ---
 
 In my blog post about why I love AsciiDoc, I wrote about the usage of [plantUml](http://plantuml.com/) in AsciiDoc. Today I will show you how to configure your Gradle build in such a way that a block like this

@@ -2,6 +2,7 @@
 layout: post
 title: "Enterprise AsciiDoctor"
 tags: [gradle, asciidoc]
+redirect: /news/enterprise-edition2
 ---
 
 Last time I wrote about how to configure Gradle to run behind a proxy with a local binary repository.

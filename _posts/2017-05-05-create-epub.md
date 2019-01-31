@@ -2,6 +2,7 @@
 layout: post
 title: "Turn your Document into an Audio-Book"
 tags: [asciidoc]
+redirect: /news/create-epub
 ---
 
 Last blog post showed you how to convert your asciidoc into `.docx` via docbook.

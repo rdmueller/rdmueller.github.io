@@ -2,6 +2,7 @@
 layout: post
 title: "Colorful Gradle"
 tags: [gradle]
+redirect: /news/colorful-gradle
 ---
 
 Did you ever whished to change the color of your gradle log output? Maybe to highlight something?

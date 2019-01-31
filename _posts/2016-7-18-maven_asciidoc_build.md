@@ -3,6 +3,7 @@ layout: post
 title: Simple AsciiDoc Build with Maven
 tags: [asciidoc, doc, maven] 
 future: true
+redirect: /news/maven-asciidoc-build/
 ---
 
 [Last time](https://rdmueller.github.io/gradle_asciidoc_build/) we created a Gradle project to render an AsciiDoc file. But what if you can't use Gradle but have to use Maven? 

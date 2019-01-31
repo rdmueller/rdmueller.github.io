@@ -2,6 +2,7 @@
 layout: post
 title: "How to use PlantUML without Graphviz"
 tags: [doc, plantuml]
+redirect: /news/plantuml-without-graphviz
 ---
 
 [Graphviz](http://www.graphviz.org) is cool to render diagrams and [PlantUML](https://plantuml.com) depends on Graphviz. But Graphviz is also a command line tool which needs to be installed. You can run it as portable app, but what if your company does not allow you to install Graphviz? What if you want to distribute your build but don't want to ask your users to install an additional package?

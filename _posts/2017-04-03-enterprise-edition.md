@@ -2,6 +2,7 @@
 layout: post
 title: "Behind the great Firewall"
 tags: [gradle]
+redirect: /news/enterprise-edition
 ---
 
 The open internet is a great place to code, but sometimes you are sitting behind a great firewall in a corporate environment.

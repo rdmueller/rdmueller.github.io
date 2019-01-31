@@ -2,6 +2,7 @@
 layout: post
 title: "More about AsciiDoc"
 tags: [doc, asciidoc]
+redirect: /news/awesome-asciidoc
 ---
 
 With the second blog post of this series, I already mentioned that I [love AsciiDoc](https://rdmueller.github.io/why_asciidoc/) to create technical documentation, but I didn't say too much about how to use AsciiDoc.

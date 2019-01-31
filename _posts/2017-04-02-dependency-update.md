@@ -2,6 +2,7 @@
 layout: post
 title: "Handle Dependency Updates the easy Way"
 tags: [gradle]
+redirect: /news/dependency-update
 ---
 
 Every developer knows this problem - you work on a project and over time new versions of the configured dependencies are released.

@@ -2,6 +2,7 @@
 layout: post
 title: "Beyond HTML"
 tags: [doc, asciidoc]
+redirect: /news/pdf-output
 ---
 
 Up until now, the docToolchain build only generates HTML5 output. It looks nice, but sometimes you need different formats. For instance, when you want to share your architecture via mail, a single file format like PDF would be helpful - and this is one of the strengths of asciidoctor: it makes it easy to render your content in different formats.

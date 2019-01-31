@@ -2,6 +2,7 @@
 layout: post
 title: "Render Asciidoc to docx (MS Word)"
 tags: [asciidoc]
+redirect: /news/create-docx
 ---
 
 docToolchain is currently able to render your documents as HTML and PDF.

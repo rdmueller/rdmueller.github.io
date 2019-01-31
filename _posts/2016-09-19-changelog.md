@@ -2,6 +2,7 @@
 layout: post
 title: "The only constant in life is change"
 tags: [doc, asciidoc, arc42]
+redirect: /news/changelog
 ---
 
 Today I will show how to add a change log to your documents. Git is quite good when it comes to log changes, so why not use git to add a table of changes to your document? If your version your documents along with your code, you don't want to see all code commits in the change log of your documents. But git can handle this.

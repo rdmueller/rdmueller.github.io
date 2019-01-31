@@ -2,6 +2,7 @@
 layout: post
 title: Why I don't like Word to write documentation
 tags: [asciidoc, documentation]
+redirect: /news/why-no-word/
 ---
 
 Don't get me wrong &ndash; MS Word is a great product for many use cases, but most of them are IMHO outdated (like writing a letter) and writing modern documentation is not a use case where MS Word shines.

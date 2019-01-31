@@ -2,6 +2,7 @@
 layout: post
 title: "AsciiDoc Image Size"
 tags: [asciidoc]
+redirect: /news/asciidoc-image-size
 ---
 
 When you work with several output formats for your doucments, it can be quite hard to get the size of oyur images right.

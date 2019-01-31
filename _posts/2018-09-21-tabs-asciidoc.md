@@ -2,6 +2,7 @@
 layout: post
 title: "How to use tabs in AsciiDoc"
 tags: [asciidoc]
+redirect: /news/tabs-asciidoc
 ---
 
 While writing a tutorial, I just came across the need to target two different user groups - windows and linux users.
