@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Shell-Config on Windows 10"
+title: "How to Self-Record your Conference Talk"
 tags: []
 ---
 
