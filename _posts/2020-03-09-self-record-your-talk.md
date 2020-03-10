@@ -4,7 +4,7 @@ title: "How to Self-Record your Conference Talk"
 tags: []
 ---
 
-## How to Self-Record your Conference Talk
+
 
 Some time ago, I attended a talk by Bernd Rücker. 
 I can't remember the talk anymore (probably something about workflows and decisions),
