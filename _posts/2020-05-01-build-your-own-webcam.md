@@ -38,3 +38,6 @@ For me, the main question now is, if there is a PC software / driver which is ca
 When your Raspberry is set up and ready to go, you will finde more ideas to play around with it inn the [official camra guide](https://magpi.raspberrypi.org/books/camera-guide) - great ressource!
 
 Stay tuned because I will sonn write about my experience...
+
+*Update:* [@phaus](https://twitter.com/phaus/status/1256290854756646914) mentioned on twitter that canon is updateing their cameras to double as webcam.
+Maybe I should check my old cameras to see if I could use them as webcams, too!
