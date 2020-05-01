@@ -28,7 +28,7 @@ Another interesting solution is to utilize one of those many raspberries I bough
 Google provides tutorials for this solution:
 
 * [Raspberry Tips: Pi Camera as Webcam](https://raspberrytips.com/raspberry-pi-camera-as-webcam/)
-* [Toms Hardware: Use Raspberry Pi as PC Webcam]https://www.tomshardware.com/how-to/use-raspberry-pi-as-pc-webcam)
+* [Toms Hardware: Use Raspberry Pi as PC Webcam](https://www.tomshardware.com/how-to/use-raspberry-pi-as-pc-webcam)
 
 Both tutorials are a bit different but both use the raspberry as network based camera.
 This means it is the same approach as with the smartphone.
