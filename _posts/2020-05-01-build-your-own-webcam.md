@@ -35,7 +35,7 @@ This means it is the same approach as with the smartphone.
 
 For me, the main question now is, if there is a PC software / driver which is capable to use both - the smartphone and the raspberry - as a webcam.
 
-When your Raspberry is set up and ready to go, you will find more ideas to play around with it inn the [official camra guide](https://magpi.raspberrypi.org/books/camera-guide) - great ressource!
+When your Raspberry is set up and ready to go, you will find more ideas to play around with it in the [official camra guide](https://magpi.raspberrypi.org/books/camera-guide) - great ressource!
 
 Stay tuned because I will soon write about my experience...
 
