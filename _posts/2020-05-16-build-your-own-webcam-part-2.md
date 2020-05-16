@@ -103,7 +103,7 @@ I also went through my box of old digital cameras and it turned out that none of
 But yesterday I saw that you can get a Canon EOS 2000D for as cheap as 299€ and I read that the Cannon webcam utility should work with that camera.
 So, I ordered it and will see....
 
-== Conclusion
+## Conclusion
 
 For me as techhie, OBS is the way to go, but it is not a solution for everyone.
 
