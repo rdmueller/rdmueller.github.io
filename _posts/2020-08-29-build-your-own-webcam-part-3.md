@@ -13,7 +13,7 @@ A HDMI capture card was always something I dreamed of but 120 € was too much t
 
 Now, the price has changed.
 
-There are currently some new chinese, no-name capture cards on the marked for as low as 15 €!
+There are currently some new chinese, no-name capture cards on the market for as low as 15 €!
 
 ### Are they worth it? 
 
@@ -31,7 +31,7 @@ Glad you ask ;-)
 With a HDMI Capture Card, you can...
 
 * ... use any DSLR with HDMI out as Webcam. And since the Canon driver is only available for Windows, you can even use Canon cameras with your Mac
-* ... use a second PC do do the heavy OBS lifting and feed the output as Webcam to the PC on which you do your video conferencing.
+* ... use a second PC to do the heavy OBS lifting and feed the output as Webcam to the PC on which you do your video conferencing.
 * ... use a tablet like the iPad with HDMI out as white board for your sessions. 
 
 Isn't that cool?
@@ -49,4 +49,4 @@ The results as presented in the video from the blog author look very promising:
 
 Now, this will allow me to create an IR-Webcam with th PiNoIR camera - that'll be fun!
 
-
+PS: thanx to [Johannes Dienst](https://twitter.com/johannesdienst) for fixing my typos :-)
