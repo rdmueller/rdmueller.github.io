@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2015/2015-3-15-spock-report-templates.html
 title: Spock-Reports with Templates
 tags: [spock, asciidoc]
 ---

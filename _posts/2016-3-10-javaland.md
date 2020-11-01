@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2016/2016-3-10-javaland.html
 title: Jatumba!
 tags: [spock, geb, asciidoc]
 ---

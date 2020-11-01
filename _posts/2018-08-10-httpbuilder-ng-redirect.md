@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2018/2018-08-10-httpbuilder-ng-redirect.html
 title: "HttpBuilder-NG"
 tags: [groovy]
 ---

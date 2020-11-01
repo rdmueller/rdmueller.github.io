@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2019/2019-04-01-shell-config.html
 title: "My Shell-Config on Windows 10"
 tags: []
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2015/2015-7-12-A-Fool-with-a-Tool-1.html
 title: A Fool with a Tool is still a Fool...
 tags: []
 ---

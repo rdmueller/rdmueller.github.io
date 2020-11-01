@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2016/2016-4-28-bamboo-spark.html
 title: Wacom Bamboo Spark - could have been so much more...
 tags: []
 ---

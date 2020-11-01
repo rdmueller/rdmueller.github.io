@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2015/2015-3-3-starting-a-blog.html
 title: Starting a new Blog
 tags: [github-pages]
 ---

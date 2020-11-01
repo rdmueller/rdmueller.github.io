@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2016/2016-5-9-Groovy-is-Java.html
 title: Groovy is Java is Groovy...
 tags: [groovy]
 ---

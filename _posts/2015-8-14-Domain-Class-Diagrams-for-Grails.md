@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2015/2015-8-14-Domain-Class-Diagrams-for-Grails.html
 title: Domain Class Diagrams for Grails Projects
 tags: [grails]
 ---

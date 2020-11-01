@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2017/2017-05-01-plantUML-and-pdf.html
 title: "plantUML with Asciidoctor-pdf"
 tags: [asciidoc]
 ---

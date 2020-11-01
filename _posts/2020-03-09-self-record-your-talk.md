@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2020/2020-03-09-self-record-your-talk.html
 title: "How to Self-Record your Conference Talk"
 tags: []
 ---

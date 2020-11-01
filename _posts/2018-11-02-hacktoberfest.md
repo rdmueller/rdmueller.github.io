@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2018/2018-11-02-hacktoberfest.html
 title: "The Results are in!"
 tags: [asciidoc]
 ---

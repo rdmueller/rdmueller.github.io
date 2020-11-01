@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2018/2018-01-14-open-source-is-great.html
 title: "Open Source is GREAT!"
 tags: [doc, asciidoc]
 ---

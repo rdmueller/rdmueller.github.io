@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2016/2016-4-30-Groovy-Notebook.html
 title: A Groovy Notebook
 tags: [groovy, asciidoc]
 ---

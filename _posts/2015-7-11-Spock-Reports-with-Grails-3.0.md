@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2015/2015-7-11-Spock-Reports-with-Grails-3.0.html
 title: Spock-Reports for Grails 3.0
 tags: [spock, grails]
 ---

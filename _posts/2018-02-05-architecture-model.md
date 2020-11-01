@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2018/2018-02-05-architecture-model.html
 title: "Let's start to _model_ our software architecture!"
 tags: [doc]
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2015/2015-3-14-spock-reports-with-gradle.html
 title: How to use the Spock-Reports-Plugin with Gradle
 tags: [spock, gradle]
 ---

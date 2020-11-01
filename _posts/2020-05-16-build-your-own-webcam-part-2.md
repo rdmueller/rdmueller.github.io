@@ -1,5 +1,6 @@
 ---
 layout: post
+redirect: http://fiveandahalfstars.ninja/blog/2020/2020-05-16-build-your-own-webcam-part-2.html
 title: "Build your own Webcam - Part 2"
 tags: [corona, recording,vc ]
 ---
