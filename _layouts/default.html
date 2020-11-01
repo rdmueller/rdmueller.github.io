@@ -9,8 +9,8 @@
 
     {% if page.redirect %}
       {% if page.redirect containts "http" %}
-    <meta http-equiv="refresh" content="0; url={{ page.redirect | replace "http:", "https:" }}">
-    <link rel="canonical" href="{{ page.redirect | replace "http:", "https:"}}" />
+    <!--meta http-equiv="refresh" content="0; url={{ page.redirect | replace "http", "https:" }}">
+    <link rel="canonical" href="{{ page.redirect | replace "http", "https:"}}" /-->
       {% else %}
     <meta http-equiv="refresh" content="0; url=https://docs-as-co.de{{ page.redirect }}">
     <link rel="canonical" href="https://docs-as-co.de{{ page.redirect }}" />
