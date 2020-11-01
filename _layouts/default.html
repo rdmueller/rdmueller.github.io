@@ -8,8 +8,13 @@
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% if page.redirect %}
-      <meta http-equiv="refresh" content="0; url=https://docs-as-co.de{{ page.redirect }}">
-      <link rel="canonical" href="https://docs-as-co.de{{ page.redirect }}" />
+      {% if page.redirect containts "http" %}
+    <meta http-equiv="refresh" content="0; url={{ page.redirect | replace "http:", "https:" }}">
+    <link rel="canonical" href="{{ page.redirect | replace "http:", "https:"}}" />
+      {% else %}
+    <meta http-equiv="refresh" content="0; url=https://docs-as-co.de{{ page.redirect }}">
+    <link rel="canonical" href="https://docs-as-co.de{{ page.redirect }}" />
+      {% endif %}
     {% endif %}
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
