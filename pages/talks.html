@@ -34,8 +34,8 @@
     <main class="page-content">
         <div class="container">
             <h1>Vorträge & Workshops</h1>
-            <p class="page-intro">
-                Über 100 Vorträge auf Konferenzen, Meetups und in Unternehmen seit 2015 -
+            <p class="page-intro" id="talks-intro">
+                Vorträge auf Konferenzen, Meetups und in Unternehmen seit 2015 -
                 zu Software-Architektur, Dokumentation, GenAI und Developer Experience.
             </p>
 
@@ -47,801 +47,13 @@
 
             <!-- Year Tabs -->
             <div class="year-tabs">
-                <div class="tabs-nav">
-                    <button class="tab-btn active" data-year="2025">2025</button>
-                    <button class="tab-btn" data-year="2024">2024</button>
-                    <button class="tab-btn" data-year="2023">2023</button>
-                    <button class="tab-btn" data-year="2022">2022</button>
-                    <button class="tab-btn" data-year="2021">2021</button>
-                    <button class="tab-btn" data-year="2020">2020</button>
-                    <button class="tab-btn" data-year="2019">2019</button>
-                    <button class="tab-btn" data-year="2018">2018</button>
-                    <button class="tab-btn" data-year="2017">2017</button>
-                    <button class="tab-btn" data-year="2016">2016</button>
-                    <button class="tab-btn" data-year="2015">2015</button>
+                <div class="tabs-nav" id="tabs-nav">
+                    <!-- Tabs werden dynamisch generiert -->
                 </div>
-
-                <!-- 2025 -->
-                <div class="tab-content active" data-year="2025">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">08</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Zukunft der Softwarearchitektur mit GenAI und LLMs</h3>
-                                <p class="talk-event">IT-Tage, Frankfurt</p>
-                                <div class="talk-links">
-                                    <a href="https://www.ittage.informatik-aktuell.de/programm/2025/zukunft-der-softwarearchitektur-mit-genai-und-llms.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">08</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Domain Specific Benchmarks für LLMs</h3>
-                                <p class="talk-event">IT-Tage, Frankfurt</p>
-                                <div class="talk-links">
-                                    <a href="https://www.ittage.informatik-aktuell.de/programm/2025/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">25</span><span class="month">Nov</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>The Future of Software Architecture: How GenAI and LLMs Are Shaping the Code of Tomorrow</h3>
-                                <p class="talk-event">iSAQB Software Architecture Gathering, Berlin</p>
-                                <div class="talk-links">
-                                    <a href="https://conferences.isaqb.org/software-architecture-gathering/session/the-future-of-software-architecture-how-genai-and-llms-are-shaping-the-code-of-tomorrow/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">16</span><span class="month">Okt</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Die Zukunft der Software-Architektur: Wie GenAI und LLMs den Code von Morgen gestalten</h3>
-                                <p class="talk-event">BaselOne, Basel</p>
-                                <div class="talk-links">
-                                    <a href="https://baselone.org" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">01</span><span class="month">Okt</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>arc42: Was, Wie, Woher, Wohin?</h3>
-                                <p class="talk-event">iSAQB Meetup, Frankfurt</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">05</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Context-Engineering für Entwickler</h3>
-                                <p class="talk-event">S&N Invent, Eschborn</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">02</span><span class="month">Jul</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>arc42: Was, Wie, Woher, Wohin?</h3>
-                                <p class="talk-event">DWX, Mannheim</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">25</span><span class="month">Jun</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Prompt-Engineering für Entwickler</h3>
-                                <p class="talk-event">IT-Tage Developer Tag, Online</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">12</span><span class="month">Mai</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>arc42: Was, Wie, Woher, Wohin?</h3>
-                                <p class="talk-event">betterCode() archDoc, Online</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">05</span><span class="month">Mai</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Die Zukunft der Software-Architektur: Wie GenAI und LLMs den Code von Morgen gestalten</h3>
-                                <p class="talk-event">betterCode() archDoc, Online</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">01</span><span class="month">Apr</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Die Zukunft der Software-Architektur: Wie GenAI und LLMs den Code von Morgen gestalten</h3>
-                                <p class="talk-event">JavaLand, Nürburgring</p>
-                                <div class="talk-links">
-                                    <a href="https://meine.doag.org/events/javaland/2025/agenda/#eventDay.all#textSearch.ralf" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">26</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>KI-Kompetenz für Architekt:innen und Entwickler:innen: Prompt Engineering praxisnah</h3>
-                                <p class="talk-event">betterCode() clean Architecture, Online</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">12</span><span class="month">Feb</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Die Zukunft der Software-Architektur: Wie GenAI und LLMs den Code von Morgen gestalten</h3>
-                                <p class="talk-event">iSAQB Meetup, Frankfurt</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2024 -->
-                <div class="tab-content" data-year="2024">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">09</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Prompt-Engineering für Entwickler</h3>
-                                <p class="talk-event">IT-Tage, Frankfurt</p>
-                                <div class="talk-links">
-                                    <a href="https://www.ittage.informatik-aktuell.de/programm/2024/prompt-engineering-fuer-entwickler.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">16</span><span class="month">Okt</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Workshop Real World Architekturdiagramme</h3>
-                                <p class="talk-event">Software Architecture Summit, Berlin</p>
-                                <div class="talk-links">
-                                    <a href="https://software-architecture-summit.de/berlin/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">16</span><span class="month">Okt</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Workshop Prompt-Engineering</h3>
-                                <p class="talk-event">Software Architecture Summit, Berlin</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">04</span><span class="month">Jun</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Prompt-Engineering für Entwickler</h3>
-                                <p class="talk-event">EAM Community Rhein-Main, Eschborn</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">22</span><span class="month">Mai</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code: Acht Jahre Erfahrung</h3>
-                                <p class="talk-event">InnoQ Technology Day, Offenbach</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">10</span><span class="month">Apr</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Prompt-Engineering für Entwickler</h3>
-                                <p class="talk-event">JavaLand, Nürburgring</p>
-                                <div class="talk-links">
-                                    <a href="https://meine.doag.org/events/javaland/2024/agenda/#eventDay.all#textSearch.ralf" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">12</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Keynote</span>
-                                <h3>Prompt-Engineering für Entwickler</h3>
-                                <p class="talk-event">Software Architecture Summit, München (Night Session)</p>
-                                <div class="talk-links">
-                                    <a href="https://software-architecture-summit.de/session/prompt-engineering-fuer-entwickler/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">12</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Real World Architekturdiagramme</h3>
-                                <p class="talk-event">Software Architecture Summit, München</p>
-                                <div class="talk-links">
-                                    <a href="https://software-architecture-summit.de/session/real-world-architekturdiagramme/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">07</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Using AI in Software Design: How ChatGPT Can Help With Creating a Solution Architecture</h3>
-                                <p class="talk-event">Voxxed Days Zürich</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">19</span><span class="month">Jan</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Podcast</span>
-                                <h3>Besteht ChatGPT die iSAQB-Advanced-Level-Prüfung? 2/x</h3>
-                                <p class="talk-event">software-architektur.tv</p>
-                                <div class="talk-links">
-                                    <a href="https://www.youtube.com/watch?v=FcPm5PAQFaU" target="_blank" rel="noopener">Video</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2023 -->
-                <div class="tab-content" data-year="2023">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">15</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Podcast</span>
-                                <h3>Besteht ChatGPT die iSAQB-Advanced-Level-Prüfung? 1/x</h3>
-                                <p class="talk-event">software-architektur.tv</p>
-                                <div class="talk-links">
-                                    <a href="https://www.youtube.com/watch?v=YOr6tIhXgFE" target="_blank" rel="noopener">Video</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">29</span><span class="month">Nov</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Using AI in Software Design: How ChatGPT Can Help With Creating a Solution Architecture</h3>
-                                <p class="talk-event">iSAQB Software Architecture Gathering, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://conferences.isaqb.org/software-architecture-gathering/program-2023/#using-ai-in-software-design-how-chatgpt-can-help-with-creating-a-solution-architecture" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">22</span><span class="month">Nov</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Phantastische Diagramme und wie Du sie selbst erstellst</h3>
-                                <p class="talk-event">JUG Frankfurt</p>
-                                <div class="talk-links">
-                                    <a href="https://jugf.github.io/posts/phantastische-diagramme-22-11-2023/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">08</span><span class="month">Nov</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Prompt-Engineering für Entwickler</h3>
-                                <p class="talk-event">W-JAX, München</p>
-                                <div class="talk-links">
-                                    <a href="https://jax.de/big-data-machine-learning/prompt-engineering-fuer-entwickler/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">11</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Phantastische Diagramme und wie Du sie selbst erstellst</h3>
-                                <p class="talk-event">Software Architecture Summit, München</p>
-                                <div class="talk-links">
-                                    <a href="https://software-architecture-summit.de/softwarearchitektur/phantastische-diagramme-und-wie-du-sie-selbst-erstellst/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">10</span><span class="month">Jul</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Phantastische Diagramme und wie Du sie selbst erstellst</h3>
-                                <p class="talk-event">ArchDoc, Online</p>
-                                <div class="talk-links">
-                                    <a href="http://archdoc.bettercode.eu/veranstaltung-20887-se-0-fantastische-diagramme-und-wie-du-sie-selbst-erstellst.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">25</span><span class="month">Apr</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Phantastische Diagramme und wie Du sie selbst erstellst</h3>
-                                <p class="talk-event">DevDay, Dresden</p>
-                                <div class="talk-links">
-                                    <a href="https://www.devday.de/dev-day-2023/talk/phantastische-diagramme-und-wie-du-sie-selbst-erstellst/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">21</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Phantastische Diagramme und wie Du sie selbst erstellst</h3>
-                                <p class="talk-event">JavaLand, Brühl</p>
-                                <div class="talk-links">
-                                    <a href="https://shop.doag.org/events/javaland/2023/agenda/#eventDay.all#textSearch.phantastische" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">13</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Phantastische Diagramme und wie Du sie selbst erstellst</h3>
-                                <p class="talk-event">Software Architecture Summit, München</p>
-                                <div class="talk-links">
-                                    <a href="https://software-architecture-summit.de/softwarearchitektur/phantastische-diagramme-und-wie-du-sie-selbst-erstellst" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2022 -->
-                <div class="tab-content" data-year="2022">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">16</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Podcast</span>
-                                <h3>Mehr als Pfeile und Kästen: Architekturdiagramme</h3>
-                                <p class="talk-event">software-architektur.tv</p>
-                                <div class="talk-links">
-                                    <a href="https://software-architektur.tv/2022/12/16/folge146.html" target="_blank" rel="noopener">Video</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">14</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Rock Solid Software Architecture with ADRs, arc42 and Microsites</h3>
-                                <p class="talk-event">IT-Tage Remote</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">23</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Rock Solid Software Architecture with ADRs, arc42 and Microsites</h3>
-                                <p class="talk-event">JUG Saxony Day, Radebeul</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">12</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Moderne Softwarearchitekturdokumentation</h3>
-                                <p class="talk-event">Software Architecture Summit, Berlin</p>
-                                <div class="talk-links">
-                                    <a href="https://software-architecture-summit.de/softwarearchitektur/moderne-softwarearchitekturdokumentation/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">07</span><span class="month">Jul</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Rock Solid Software Architecture with ADRs, arc42 and Microsites</h3>
-                                <p class="talk-event">Java Forum Stuttgart</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">18</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Moderne Softwarearchitekturdokumentation</h3>
-                                <p class="talk-event">JavaLand, Brühl</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">15</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Rock Solid Software Architecture with ADRs, arc42 and Microsites</h3>
-                                <p class="talk-event">JavaLand, Brühl</p>
-                                <div class="talk-links">
-                                    <a href="https://shop.doag.org/javaland/2022/agenda/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2021 -->
-                <div class="tab-content" data-year="2021">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">06</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Moderne Softwarearchitekturdokumentation</h3>
-                                <p class="talk-event">IT-Tage, Online</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">12</span><span class="month">Okt</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Modern software architecture documentation hands on</h3>
-                                <p class="talk-event">Software Architecture Gathering, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://conferences.isaqb.org/software-architecture-gathering/tuesday/#Tuesday_Falk_Sippach_Ralf_D_Muller" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">24</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Workshop</span>
-                                <h3>Moderne Softwarearchitekturdokumentation</h3>
-                                <p class="talk-event">Herbstcampus, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://www.herbstcampus.de/lecture.php?id=13159&source=0" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">15</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Portfolio as Code – Homepage für ITler</h3>
-                                <p class="talk-event">Herbstcampus, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://www.herbstcampus.de/veranstaltung-13111-0-portfolio-as-code--homepage-fuer-itler.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">13</span><span class="month">Apr</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code</h3>
-                                <p class="talk-event">JUG CH, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://www.jug.ch/html/events/2021/docs-as-code.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">16</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Doku-Microsites mit jBake</h3>
-                                <p class="talk-event">JavaLand, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://programm.javaland.eu/2021/#/scheduledEvent/606554" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">03</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Tutorial</span>
-                                <h3>Moderne Softwarearchitekturdokumentation</h3>
-                                <p class="talk-event">Frankfurter Entwicklertag, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://entwicklertag.de/frankfurt/2021/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">07</span><span class="month">Feb</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code with AsciiDoc & docToolchain</h3>
-                                <p class="talk-event">FOSDEM, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://fosdem.org/2021/schedule/track/tool_the_docs/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2020 -->
-                <div class="tab-content" data-year="2020">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">27</span><span class="month">Okt</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock vs Supermutanten: Spezifikationstesten trifft Mutationstesten</h3>
-                                <p class="talk-event">JCON, Online</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">02</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock und AsciiDoc - vom Test zur Spezifikation und zurück</h3>
-                                <p class="talk-event">German Testing Day, Online</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">23</span><span class="month">Jul</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock vs Supermutanten: Spezifikationstesten trifft Mutationstesten</h3>
-                                <p class="talk-event">SAEC Days, Online</p>
-                                <div class="talk-links">
-                                    <a href="https://www.saec-days.de/agenda/vortraege/articles/do33-spock-vs-supermutanten-spezifikationstesten-trifft-mutationstesten.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">17</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock vs Supermutanten: Spezifikationstesten trifft Mutationstesten</h3>
-                                <p class="talk-event">CyberLand, Online</p>
-                                <div class="talk-links">
-                                    <a href="http://cyberland.ijug.eu/sessions/session-9.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">20</span><span class="month">Feb</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock und AsciiDoc - Vom Test zur Spezifikation und zurück</h3>
-                                <p class="talk-event">Frankfurter Entwicklertag</p>
-                                <div class="talk-links">
-                                    <a href="https://entwicklertag.de/frankfurt/2020/spock-und-asciidoc-%E2%80%93-vom-test-zur-spezifikation-und-zur%C3%BCck-level-advanced" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">04</span><span class="month">Feb</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock vs Supermutanten: Spezifikationstesten trifft Mutationstesten</h3>
-                                <p class="talk-event">OOP / Code Days, München</p>
-                                <div class="talk-links">
-                                    <a href="https://www.code-days.de/programm/programm-details/411/spock-vs-supermutanten-spezifikationstesten-trifft-mutationstesten/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2019 -->
-                <div class="tab-content" data-year="2019">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">10</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code: Anatomie einer smarten Systemdokumentation</h3>
-                                <p class="talk-event">IT-Tage, Frankfurt</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">13</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock and AsciiDoc - ein perfektes Paar</h3>
-                                <p class="talk-event">JUG Saxony Day, Radebeul</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">19</span><span class="month">Jun</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock and AsciiDoc - a perfect match</h3>
-                                <p class="talk-event">Write the Docs, Karlsruhe</p>
-                                <div class="talk-links">
-                                    <a href="https://www.meetup.com/de-DE/Write-the-Docs-Karlsruhe/events/261826329/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">07</span><span class="month">Jun</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>BDD mit Spock und Geb</h3>
-                                <p class="talk-event">German Testing Day, Frankfurt</p>
-                                <div class="talk-links">
-                                    <a href="https://www.germantestingday.info/german-testing-day-2019/programm/konferenzprogramm/sessiondetails/action/detail/session/gtd-13-2/title/bdd-mit-spock-und-geb-uebersichtlich-und-nachvollziehbar-testen-fuer-alle.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">05</span><span class="month">Jun</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code, arc42, AsciiDoc, Gradle & Co. im Einsatz</h3>
-                                <p class="talk-event">JUG Karlsruhe</p>
-                                <div class="talk-links">
-                                    <a href="http://jug-karlsruhe.de/content/docs-as-code/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">08</span><span class="month">Mai</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs as Code, arc42, AsciiDoc, Gradle und Antora im Einsatz</h3>
-                                <p class="talk-event">JAX, Mainz</p>
-                                <div class="talk-links">
-                                    <a href="https://jax.de/software-architecture/docs-as-code-arc42-asciidoc-gradle-und-antora-im-einsatz/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">19</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code, arc42, AsciiDoc, Gradle & Co. im Einsatz</h3>
-                                <p class="talk-event">JavaLand, Brühl</p>
-                                <div class="talk-links">
-                                    <a href="https://programm.javaland.eu/2019/#/scheduledEvent/569976" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">22</span><span class="month">Jan</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code: Anatomie einer smarten Systemdokumentation</h3>
-                                <p class="talk-event">OOP, München</p>
-                                <div class="talk-links">
-                                    <a href="https://www.oop-konferenz.de/oop2019/programm/konferenzprogramm/sessiondetails/action/detail/session/di-61-4/title/docs-as-code-anatomie-einer-smarten-systemdokumentation.html" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2018 -->
-                <div class="tab-content" data-year="2018">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">06</span><span class="month">Nov</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code: Anatomie einer realen Systemdokumentation</h3>
-                                <p class="talk-event">W-JAX, München</p>
-                                <div class="talk-links">
-                                    <a href="https://jax.de/software-architecture/docs-as-code-anatomie-einer-realen-systemdokumentation/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">28</span><span class="month">Aug</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code, arc42, AsciiDoc, Gradle & Co. im Einsatz</h3>
-                                <p class="talk-event">JUG Frankfurt</p>
-                                <div class="talk-links">
-                                    <a href="https://sites.google.com/site/jugffm/home/29-08-2018-docs-as-code-arc42-asciidoc-gradle-co-im-einsatz" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">17</span><span class="month">Mai</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as code: arc42, AsciiDoc, Gradle & Co. combined</h3>
-                                <p class="talk-event">Greach, Madrid</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">26</span><span class="month">Apr</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code - Architekturdokumentation leicht gemacht</h3>
-                                <p class="talk-event">JAX, Mainz</p>
-                                <div class="talk-links">
-                                    <a href="https://jax.de/software-architecture/the-hitchhikers-guide-to-docs-as-code/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">31</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code: arc42, AsciiDoc, Gradle & Co. combined</h3>
-                                <p class="talk-event">Gr8conf, Kopenhagen</p>
-                                <div class="talk-links">
-                                    <a href="http://2018.greachconf.com/sessions/docs-as-code-arc42-asciidoc-gradle-co-combined/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">21</span><span class="month">Feb</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code, arc42, AsciiDoc, Gradle & Co. im Einsatz</h3>
-                                <p class="talk-event">Entwicklertag, Frankfurt</p>
-                                <div class="talk-links">
-                                    <a href="https://entwicklertag.de/frankfurt/2018/docs-code-arc42-asciidoc-gradle-co-im-einsatz" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2017 -->
-                <div class="tab-content" data-year="2017">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">07</span><span class="month">Dez</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Docs-as-Code</h3>
-                                <p class="talk-event">JUG Darmstadt</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">18</span><span class="month">Sep</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Hitchhikers Guide to Architecture Documentation</h3>
-                                <p class="talk-event">Software Architecture Summit, Berlin</p>
-                            </div>
-                        </article>
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">10</span><span class="month">Mai</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Dokumentation am (Riesen-)Beispiel - arc42, AsciiDoc und Co. in Aktion</h3>
-                                <p class="talk-event">JAX, Mainz</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2016 -->
-                <div class="tab-content" data-year="2016">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">08</span><span class="month">Mär</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock und Geb: Übersichtlich und nachvollziehbar Testen für alle!</h3>
-                                <p class="talk-event">JavaLand, Brühl</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- 2015 -->
-                <div class="tab-content" data-year="2015">
-                    <div class="talks-list">
-                        <article class="talk-item">
-                            <div class="talk-date"><span class="day">23</span><span class="month">Mai</span></div>
-                            <div class="talk-info">
-                                <span class="talk-type">Talk</span>
-                                <h3>Spock und Geb: übersichtlich und nachvollziehbar Testen für alle!</h3>
-                                <p class="talk-event">Entwicklertag, Karlsruhe</p>
-                                <div class="talk-links">
-                                    <a href="https://entwicklertag.de/" target="_blank" rel="noopener">Event</a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+                <div id="tabs-content">
+                    <!-- Inhalte werden dynamisch generiert -->
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -857,5 +69,100 @@
     </footer>
 
     <script src="../js/main.js"></script>
+    <script>
+        // Talks aus JSON laden und rendern
+        (function() {
+            const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+
+            fetch('../data/talks.json')
+                .then(response => response.json())
+                .then(talks => {
+                    // Nach Datum sortieren (neueste zuerst)
+                    talks.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                    // Nach Jahr gruppieren
+                    const byYear = {};
+                    talks.forEach(talk => {
+                        const year = talk.date.substring(0, 4);
+                        if (!byYear[year]) byYear[year] = [];
+                        byYear[year].push(talk);
+                    });
+
+                    const years = Object.keys(byYear).sort((a, b) => b - a);
+
+                    // Intro aktualisieren
+                    document.getElementById('talks-intro').textContent =
+                        `Über ${talks.length} Vorträge auf Konferenzen, Meetups und in Unternehmen seit 2015 - zu Software-Architektur, Dokumentation, GenAI und Developer Experience.`;
+
+                    // Tabs generieren
+                    const tabsNav = document.getElementById('tabs-nav');
+                    const tabsContent = document.getElementById('tabs-content');
+
+                    years.forEach((year, index) => {
+                        // Tab Button
+                        const btn = document.createElement('button');
+                        btn.className = 'tab-btn' + (index === 0 ? ' active' : '');
+                        btn.setAttribute('data-year', year);
+                        btn.textContent = year;
+                        tabsNav.appendChild(btn);
+
+                        // Tab Content
+                        const content = document.createElement('div');
+                        content.className = 'tab-content' + (index === 0 ? ' active' : '');
+                        content.setAttribute('data-year', year);
+
+                        const list = document.createElement('div');
+                        list.className = 'talks-list';
+
+                        byYear[year].forEach(talk => {
+                            const date = new Date(talk.date);
+                            const day = String(date.getDate()).padStart(2, '0');
+                            const month = months[date.getMonth()];
+
+                            let linksHtml = '';
+                            if (talk.url || talk.video) {
+                                linksHtml = '<div class="talk-links">';
+                                if (talk.url) {
+                                    linksHtml += `<a href="${talk.url}" target="_blank" rel="noopener">Event</a>`;
+                                }
+                                if (talk.video) {
+                                    linksHtml += `<a href="${talk.video}" target="_blank" rel="noopener">Video</a>`;
+                                }
+                                linksHtml += '</div>';
+                            }
+
+                            const eventLocation = [talk.event, talk.location].filter(x => x).join(', ');
+
+                            list.innerHTML += `
+                                <article class="talk-item">
+                                    <div class="talk-date"><span class="day">${day}</span><span class="month">${month}</span></div>
+                                    <div class="talk-info">
+                                        <span class="talk-type">${talk.type}</span>
+                                        <h3>${talk.title}</h3>
+                                        ${eventLocation ? `<p class="talk-event">${eventLocation}</p>` : ''}
+                                        ${linksHtml}
+                                    </div>
+                                </article>
+                            `;
+                        });
+
+                        content.appendChild(list);
+                        tabsContent.appendChild(content);
+                    });
+
+                    // Tab-Klick-Handler
+                    tabsNav.querySelectorAll('.tab-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const year = this.getAttribute('data-year');
+                            tabsNav.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                            tabsContent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                            this.classList.add('active');
+                            tabsContent.querySelector(`.tab-content[data-year="${year}"]`).classList.add('active');
+                        });
+                    });
+                })
+                .catch(err => console.error('Fehler beim Laden der Talks:', err));
+        })();
+    </script>
 </body>
 </html>
