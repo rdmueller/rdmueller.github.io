@@ -1,0 +1,202 @@
+[
+  {
+    "name": "JavaLand",
+    "aliases": ["JavaLand"],
+    "logo": "https://www.javaland.eu/_assets/21d419d44498ff574c15c53ba467c474/Images/logo_javaland.png",
+    "url": "https://www.javaland.eu",
+    "location": "Nürburgring & Brühl",
+    "inverted": false
+  },
+  {
+    "name": "JAX",
+    "aliases": ["JAX", "JAX 2017", "JAX 2018", "JAX 2019", "W-JAX", "W-Jax 2018"],
+    "logo": "https://jax.de/wp-content/uploads/2024/07/JAX24_Website_Redesign_Header_Logo.svg",
+    "url": "https://jax.de",
+    "location": "Mainz & München",
+    "inverted": false
+  },
+  {
+    "name": "IT-Tage",
+    "aliases": ["IT-Tage", "IT-Tage Remote", "IT-Tage - Developer Tag"],
+    "logo": "https://www.ittage.informatik-aktuell.de/fileadmin/pics/Design-Elemente/ITT-Logo-Farbe-2026.svg",
+    "url": "https://www.ittage.informatik-aktuell.de",
+    "location": "Frankfurt",
+    "inverted": false
+  },
+  {
+    "name": "Software Architecture Summit",
+    "aliases": ["Software Architecture Summit", "Software Architecture Summit 2017"],
+    "logo": "https://software-architecture-summit.de/wp-content/uploads/2021/03/SAS_MUC.svg",
+    "url": "https://software-architecture-summit.de",
+    "location": "Berlin & München",
+    "inverted": false
+  },
+  {
+    "name": "FOSDEM",
+    "aliases": ["FOSDEM"],
+    "logo": "https://web.archive.org/web/20220430002359/https://nlnet.nl/project/VideoBox/fosdem.videobox.logo.svg",
+    "url": "https://fosdem.org",
+    "location": "Brüssel",
+    "inverted": false
+  },
+  {
+    "name": "OOP",
+    "aliases": ["OOP", "OOP 2019", "OOP / Code Days"],
+    "logo": "https://www.oop-konferenz.de/typo3conf/ext/oop_sitepackage/Resources/Public/Images/oop/OOP_Logo_rgb_claim.svg",
+    "url": "https://www.oop-konferenz.de",
+    "location": "München",
+    "inverted": false
+  },
+  {
+    "name": "iSAQB",
+    "aliases": ["iSAQB Software Architecture Gathering", "iSAQB Software Architecture Gathering 2025", "iSAQB Software Architecture Gathering – Digital 2023", "Software Architecture Gathering", "iSAQB Meetup"],
+    "logo": "https://www.isaqb.org/wp-content/uploads/2020/09/logo-isaqb-large.png",
+    "url": "https://conferences.isaqb.org/software-architecture-gathering/",
+    "location": "Berlin",
+    "inverted": false
+  },
+  {
+    "name": "Voxxed Days",
+    "aliases": ["Voxxed Days Zürich", "Voxxed Days Luxembourg"],
+    "logo": "https://vdz26.voxxeddays.ch/wp-content/uploads/2024/10/cropped-VDZ-gray-shade.jpg",
+    "url": "https://voxxeddays.com/zurich/",
+    "location": "Zürich",
+    "inverted": false
+  },
+  {
+    "name": "DWX",
+    "aliases": ["DWX"],
+    "logo": "https://cdn.ebnermediagroup.de/developer-world_de/blt22276bff283176bd/blt466307fbffa7d9cb/68147bdf358df8916e101e1c/DWX_Logo_white_shortversion_big_40.webp",
+    "url": "https://www.developer-week.de",
+    "location": "Nürnberg",
+    "inverted": true
+  },
+  {
+    "name": "betterCode()",
+    "aliases": ["betterCode() archDoc", "betterCode() clean Architecture", "ArchDoc", "ArchDoc 2023", "ArchDoc 2024"],
+    "logo": "https://archdoc.bettercode.eu/common/images/konferenzen/bcad_white.svg",
+    "url": "https://archdoc.bettercode.eu",
+    "location": "Online",
+    "inverted": true
+  },
+  {
+    "name": "BaselOne",
+    "aliases": ["BaselOne"],
+    "logo": "https://baselone.org/wp-content/uploads/2023/08/BaselOne-Logo-OJ.png",
+    "url": "https://baselone.ch",
+    "location": "Basel",
+    "inverted": false
+  },
+  {
+    "name": "JCON",
+    "aliases": ["JCON", "JCon", "JCON 2020", "JCON Europe 2023", "JCON World 2023"],
+    "logo": "https://jcon.one/fileadmin/_processed_/d/e/csm_JCON-2025-Logo_27693f5def.png",
+    "url": "https://jcon.one",
+    "location": "Düsseldorf",
+    "inverted": false
+  },
+  {
+    "name": "Herbstcampus",
+    "aliases": ["Herbstcampus"],
+    "logo": "https://herbstcampus.de/common/images/konferenzen/herbstcampus_just_logo.svg",
+    "url": "https://www.herbstcampus.de",
+    "location": "Nürnberg",
+    "inverted": false
+  },
+  {
+    "name": "DevDay",
+    "aliases": ["DevDay Dresden", "devday.22"],
+    "logo": "https://www.devday.de/wp-content/uploads/2025/11/devday2026.svg",
+    "url": "https://www.devday.de",
+    "location": "Dresden",
+    "inverted": false
+  },
+  {
+    "name": "Entwicklertag",
+    "aliases": ["Entwicklertag", "Entwicklertag Frankfurt", "Frankfurter Entwicklertag", "Frankfurter Entwicklertag 2020", "Karlsruher Entwicklertag"],
+    "logo": "https://entwicklertag.de/_next/static/media/et-full-logo.98c40e17.svg",
+    "url": "https://entwicklertag.de",
+    "location": "Frankfurt & Karlsruhe",
+    "inverted": false
+  },
+  {
+    "name": "CyberLand",
+    "aliases": ["CyberLand", "CyberLand 2020"],
+    "logo": "https://cyberland.ijug.eu/assets/logo/logo-header.png",
+    "url": "https://cyberland.ijug.eu",
+    "location": "Online",
+    "inverted": false
+  },
+  {
+    "name": "Code Days",
+    "aliases": ["Code Days", "Clean Code Days"],
+    "logo": "https://www.code-days.de/typo3conf/ext/codedays_sitepackage/Resources/Public/Images/codedays/CodeDays_Logo_gruen.png",
+    "url": "https://www.code-days.de",
+    "location": "München",
+    "inverted": false
+  },
+  {
+    "name": "Write the Docs",
+    "aliases": ["Write the Docs"],
+    "logo": "https://www.writethedocs.org/_static/sticker-wtd-colors.png",
+    "url": "https://www.writethedocs.org",
+    "location": "International",
+    "inverted": false
+  },
+  {
+    "name": "JUG Saxony Day",
+    "aliases": ["JUG Saxony Day", "9. JUG Saxony Day"],
+    "logo": null,
+    "url": "https://jug-saxony-day.org",
+    "location": "Dresden",
+    "inverted": false
+  },
+  {
+    "name": "Java Forum Stuttgart",
+    "aliases": ["Java Forum Stuttgart"],
+    "logo": null,
+    "url": "https://java-forum-stuttgart.de",
+    "location": "Stuttgart",
+    "inverted": false
+  },
+  {
+    "name": "Greach",
+    "aliases": ["Greach", "Greach-Conf"],
+    "logo": null,
+    "url": "https://greachconf.com",
+    "location": "Madrid",
+    "inverted": false
+  },
+  {
+    "name": "Gr8conf",
+    "aliases": ["Gr8conf", "Gr8conf-Conf"],
+    "logo": null,
+    "url": "https://gr8conf.eu",
+    "location": "Kopenhagen",
+    "inverted": false
+  },
+  {
+    "name": "German Testing Day",
+    "aliases": ["German Testing Day", "German Testing Day 2020"],
+    "logo": null,
+    "url": "https://www.germantestingday.info",
+    "location": "Frankfurt",
+    "inverted": false
+  },
+  {
+    "name": "SAEC Days",
+    "aliases": ["SAEC Days", "SAEC Days 2020"],
+    "logo": null,
+    "url": "https://www.saec-days.de",
+    "location": "Online",
+    "inverted": false
+  },
+  {
+    "name": "software-architektur.tv",
+    "aliases": ["software-architektur.tv", "Software-Architektur.tv", "Software Architektur im Stream"],
+    "logo": null,
+    "url": "https://software-architektur.tv",
+    "location": "Online",
+    "inverted": false
+  }
+]

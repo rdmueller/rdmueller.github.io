@@ -1256,6 +1256,30 @@ ul, ol {
     opacity: 0.8;
 }
 
+.talk-logo {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm);
+}
+
+.talk-conf-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.talk-conf-logo.conf-logo-inverted {
+    background-color: var(--color-bg-dark);
+    padding: var(--spacing-xs);
+    border-radius: var(--radius-sm);
+}
+
 .talk-info {
     flex: 1;
 }
@@ -1337,6 +1361,10 @@ ul, ol {
     }
 
     .talk-date {
+        margin: 0 auto;
+    }
+
+    .talk-logo {
         margin: 0 auto;
     }
 }

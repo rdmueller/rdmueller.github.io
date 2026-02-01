@@ -70,98 +70,118 @@
 
     <script src="../js/main.js"></script>
     <script>
-        // Talks aus JSON laden und rendern
+        // Talks und Konferenzen aus JSON laden und rendern
         (function() {
             const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
 
-            fetch('../data/talks.json')
-                .then(response => response.json())
-                .then(talks => {
-                    // Nach Datum sortieren (neueste zuerst)
-                    talks.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                    // Nach Jahr gruppieren
-                    const byYear = {};
-                    talks.forEach(talk => {
-                        const year = talk.date.substring(0, 4);
-                        if (!byYear[year]) byYear[year] = [];
-                        byYear[year].push(talk);
+            // Beide JSONs parallel laden
+            Promise.all([
+                fetch('../data/talks.json').then(r => r.json()),
+                fetch('../data/conferences.json').then(r => r.json())
+            ])
+            .then(([talks, conferences]) => {
+                // Konferenz-Lookup erstellen (alias -> conference)
+                const confLookup = {};
+                conferences.forEach(conf => {
+                    conf.aliases.forEach(alias => {
+                        confLookup[alias.toLowerCase()] = conf;
                     });
+                });
 
-                    const years = Object.keys(byYear).sort((a, b) => b - a);
+                // Nach Datum sortieren (neueste zuerst)
+                talks.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-                    // Intro aktualisieren
-                    document.getElementById('talks-intro').textContent =
-                        `Über ${talks.length} Vorträge auf Konferenzen, Meetups und in Unternehmen seit 2015 - zu Software-Architektur, Dokumentation, GenAI und Developer Experience.`;
+                // Nach Jahr gruppieren
+                const byYear = {};
+                talks.forEach(talk => {
+                    const year = talk.date.substring(0, 4);
+                    if (!byYear[year]) byYear[year] = [];
+                    byYear[year].push(talk);
+                });
 
-                    // Tabs generieren
-                    const tabsNav = document.getElementById('tabs-nav');
-                    const tabsContent = document.getElementById('tabs-content');
+                const years = Object.keys(byYear).sort((a, b) => b - a);
 
-                    years.forEach((year, index) => {
-                        // Tab Button
-                        const btn = document.createElement('button');
-                        btn.className = 'tab-btn' + (index === 0 ? ' active' : '');
-                        btn.setAttribute('data-year', year);
-                        btn.textContent = year;
-                        tabsNav.appendChild(btn);
+                // Intro aktualisieren
+                document.getElementById('talks-intro').textContent =
+                    `Über ${talks.length} Vorträge auf Konferenzen, Meetups und in Unternehmen seit 2015 - zu Software-Architektur, Dokumentation, GenAI und Developer Experience.`;
 
-                        // Tab Content
-                        const content = document.createElement('div');
-                        content.className = 'tab-content' + (index === 0 ? ' active' : '');
-                        content.setAttribute('data-year', year);
+                // Tabs generieren
+                const tabsNav = document.getElementById('tabs-nav');
+                const tabsContent = document.getElementById('tabs-content');
 
-                        const list = document.createElement('div');
-                        list.className = 'talks-list';
+                years.forEach((year, index) => {
+                    // Tab Button
+                    const btn = document.createElement('button');
+                    btn.className = 'tab-btn' + (index === 0 ? ' active' : '');
+                    btn.setAttribute('data-year', year);
+                    btn.textContent = year;
+                    tabsNav.appendChild(btn);
 
-                        byYear[year].forEach(talk => {
-                            const date = new Date(talk.date);
-                            const day = String(date.getDate()).padStart(2, '0');
-                            const month = months[date.getMonth()];
+                    // Tab Content
+                    const content = document.createElement('div');
+                    content.className = 'tab-content' + (index === 0 ? ' active' : '');
+                    content.setAttribute('data-year', year);
 
-                            let linksHtml = '';
-                            if (talk.url || talk.video) {
-                                linksHtml = '<div class="talk-links">';
-                                if (talk.url) {
-                                    linksHtml += `<a href="${talk.url}" target="_blank" rel="noopener">Event</a>`;
-                                }
-                                if (talk.video) {
-                                    linksHtml += `<a href="${talk.video}" target="_blank" rel="noopener">Video</a>`;
-                                }
-                                linksHtml += '</div>';
+                    const list = document.createElement('div');
+                    list.className = 'talks-list';
+
+                    byYear[year].forEach(talk => {
+                        const date = new Date(talk.date);
+                        const day = String(date.getDate()).padStart(2, '0');
+                        const month = months[date.getMonth()];
+
+                        // Konferenz-Logo finden
+                        const conf = talk.event ? confLookup[talk.event.toLowerCase()] : null;
+                        let logoHtml = '';
+                        if (conf && conf.logo) {
+                            const invertedClass = conf.inverted ? ' conf-logo-inverted' : '';
+                            logoHtml = `<img src="${conf.logo}" alt="${conf.name}" class="talk-conf-logo${invertedClass}">`;
+                        }
+
+                        let linksHtml = '';
+                        if (talk.url || talk.video) {
+                            linksHtml = '<div class="talk-links">';
+                            if (talk.url) {
+                                linksHtml += `<a href="${talk.url}" target="_blank" rel="noopener">Event</a>`;
                             }
+                            if (talk.video) {
+                                linksHtml += `<a href="${talk.video}" target="_blank" rel="noopener">Video</a>`;
+                            }
+                            linksHtml += '</div>';
+                        }
 
-                            const eventLocation = [talk.event, talk.location].filter(x => x).join(', ');
+                        const eventLocation = [talk.event, talk.location].filter(x => x).join(', ');
 
-                            list.innerHTML += `
-                                <article class="talk-item">
-                                    <div class="talk-date"><span class="day">${day}</span><span class="month">${month}</span></div>
-                                    <div class="talk-info">
-                                        <span class="talk-type">${talk.type}</span>
-                                        <h3>${talk.title}</h3>
-                                        ${eventLocation ? `<p class="talk-event">${eventLocation}</p>` : ''}
-                                        ${linksHtml}
-                                    </div>
-                                </article>
-                            `;
-                        });
-
-                        content.appendChild(list);
-                        tabsContent.appendChild(content);
+                        list.innerHTML += `
+                            <article class="talk-item">
+                                <div class="talk-date"><span class="day">${day}</span><span class="month">${month}</span></div>
+                                <div class="talk-logo">${logoHtml}</div>
+                                <div class="talk-info">
+                                    <span class="talk-type">${talk.type}</span>
+                                    <h3>${talk.title}</h3>
+                                    ${eventLocation ? `<p class="talk-event">${eventLocation}</p>` : ''}
+                                    ${linksHtml}
+                                </div>
+                            </article>
+                        `;
                     });
 
-                    // Tab-Klick-Handler
-                    tabsNav.querySelectorAll('.tab-btn').forEach(btn => {
-                        btn.addEventListener('click', function() {
-                            const year = this.getAttribute('data-year');
-                            tabsNav.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                            tabsContent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                            this.classList.add('active');
-                            tabsContent.querySelector(`.tab-content[data-year="${year}"]`).classList.add('active');
-                        });
+                    content.appendChild(list);
+                    tabsContent.appendChild(content);
+                });
+
+                // Tab-Klick-Handler
+                tabsNav.querySelectorAll('.tab-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const year = this.getAttribute('data-year');
+                        tabsNav.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                        tabsContent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                        this.classList.add('active');
+                        tabsContent.querySelector(`.tab-content[data-year="${year}"]`).classList.add('active');
                     });
-                })
-                .catch(err => console.error('Fehler beim Laden der Talks:', err));
+                });
+            })
+            .catch(err => console.error('Fehler beim Laden der Talks:', err));
         })();
     </script>
 </body>
