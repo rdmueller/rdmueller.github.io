@@ -1454,6 +1454,11 @@ ul, ol {
 
 .episodes-section h2 {
     font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-subtitle {
+    color: var(--color-text-light);
     margin-bottom: var(--spacing-xl);
 }
 
