@@ -1385,3 +1385,191 @@ ul, ol {
         margin: 0 auto;
     }
 }
+
+/* --------------------------------------------------------------------------
+   HHGDAC / Series Page
+   -------------------------------------------------------------------------- */
+.series-info {
+    background-color: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.series-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.series-badge {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--color-primary);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+}
+
+.series-publication {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+}
+
+.series-info > p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.series-links {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.episodes-section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.episodes-section h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.episode-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.episode-item {
+    display: flex;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-normal);
+}
+
+.episode-item:hover {
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-md);
+}
+
+.episode-number {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    border-radius: var(--radius-md);
+}
+
+.episode-content {
+    flex: 1;
+}
+
+.episode-date {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xs);
+}
+
+.episode-content h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.episode-content p {
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-sm);
+}
+
+.episode-link {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.episode-link:hover {
+    text-decoration: underline;
+}
+
+.related-section h2 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.related-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    transition: all var(--transition-normal);
+}
+
+.related-card:hover {
+    background-color: var(--color-bg);
+    box-shadow: var(--shadow-md);
+}
+
+.related-card img {
+    width: 60px;
+    height: auto;
+    border-radius: var(--radius-sm);
+}
+
+.related-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    border-radius: var(--radius-md);
+    color: white;
+}
+
+.related-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.related-info h3 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-xs);
+}
+
+.related-info p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+}
+
+@media (max-width: 640px) {
+    .episode-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .episode-number {
+        margin: 0 auto;
+    }
+}
