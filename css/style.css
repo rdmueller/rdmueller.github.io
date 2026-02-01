@@ -533,6 +533,23 @@ ul, ol {
     height: 24px;
 }
 
+.publication-cover {
+    flex-shrink: 0;
+    width: 100px;
+    transition: transform var(--transition-normal);
+}
+
+.publication-cover:hover {
+    transform: scale(1.05);
+}
+
+.publication-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-md);
+}
+
 .publication-content h3 {
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-xs);
