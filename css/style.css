@@ -1124,6 +1124,31 @@ ul, ol {
 /* --------------------------------------------------------------------------
    Year Tabs
    -------------------------------------------------------------------------- */
+.booking-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    background-color: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.booking-cta p {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+@media (max-width: 640px) {
+    .booking-cta {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 .year-tabs {
     margin-bottom: var(--spacing-3xl);
 }
