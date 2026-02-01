@@ -79,6 +79,26 @@
             observer.observe(el);
         });
     }
+    // Year Tabs for Talks page
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    if (tabBtns.length > 0) {
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const year = this.getAttribute('data-year');
+
+                // Remove active from all
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+
+                // Add active to clicked
+                this.classList.add('active');
+                document.querySelector(`.tab-content[data-year="${year}"]`).classList.add('active');
+            });
+        });
+    }
+
     // YouTube Video Lightbox
     const lightbox = document.getElementById('video-lightbox');
     const iframe = document.getElementById('video-iframe');
