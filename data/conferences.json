@@ -194,7 +194,7 @@
   {
     "name": "software-architektur.tv",
     "aliases": ["software-architektur.tv", "Software-Architektur.tv", "Software Architektur im Stream"],
-    "logo": null,
+    "logo": "images/conferences/software-architektur-tv.png",
     "url": "https://software-architektur.tv",
     "location": "Online",
     "inverted": false

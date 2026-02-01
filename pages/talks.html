@@ -135,7 +135,9 @@
                         let logoHtml = '';
                         if (conf && conf.logo) {
                             const invertedClass = conf.inverted ? ' conf-logo-inverted' : '';
-                            logoHtml = `<img src="${conf.logo}" alt="${conf.name}" class="talk-conf-logo${invertedClass}">`;
+                            // Lokale Pfade anpassen (von pages/ aus)
+                            const logoSrc = conf.logo.startsWith('http') ? conf.logo : '../' + conf.logo;
+                            logoHtml = `<img src="${logoSrc}" alt="${conf.name}" class="talk-conf-logo${invertedClass}">`;
                         }
 
                         let linksHtml = '';
