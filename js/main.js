@@ -79,4 +79,44 @@
             observer.observe(el);
         });
     }
+    // YouTube Video Lightbox
+    const lightbox = document.getElementById('video-lightbox');
+    const iframe = document.getElementById('video-iframe');
+    const closeBtn = document.querySelector('.video-lightbox-close');
+
+    if (lightbox && iframe) {
+        // Open lightbox on video link click
+        document.querySelectorAll('[data-youtube]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const videoId = this.getAttribute('data-youtube');
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close lightbox
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            iframe.src = '';
+            document.body.style.overflow = '';
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeLightbox);
+        }
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    }
 })();

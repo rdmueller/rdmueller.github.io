@@ -241,8 +241,8 @@
                     <p>Wie verändern Large Language Models die Art, wie wir Software entwerfen und dokumentieren?</p>
                     <p class="talk-events">JavaLand 2026, betterCode(), iSAQB Meetup</p>
                     <div class="talk-links">
-                        <a href="https://www.youtube.com/watch?v=Gagw6qa8sek" class="btn btn-small" target="_blank" rel="noopener">EN Video</a>
-                        <a href="https://www.youtube.com/watch?v=AxN_i8xD7PI" class="btn btn-small" target="_blank" rel="noopener">DE Video</a>
+                        <a href="#" class="btn btn-small" data-youtube="Gagw6qa8sek">EN Video</a>
+                        <a href="#" class="btn btn-small" data-youtube="AxN_i8xD7PI">DE Video</a>
                     </div>
                 </article>
                 <article class="talk-card">
@@ -253,7 +253,7 @@
                     <p>ChatGPT und ähnliche Systeme sind Technologie, die bleiben wird. Der richtige Input (Prompt) ist entscheidend für maximalen Nutzen.</p>
                     <p class="talk-events">IT-Tage, JavaLand, W-JAX</p>
                     <div class="talk-links">
-                        <a href="https://www.youtube.com/watch?v=zeKc7FFSSv0" class="btn btn-small" target="_blank" rel="noopener">Video ansehen</a>
+                        <a href="#" class="btn btn-small" data-youtube="zeKc7FFSSv0">Video ansehen</a>
                     </div>
                 </article>
                 <article class="talk-card">
@@ -264,18 +264,7 @@
                     <p>Phantastische Diagramme und wie Du sie selbst erstellst - praktische Techniken für bessere Visualisierung.</p>
                     <p class="talk-events">Software Architecture Summit</p>
                     <div class="talk-links">
-                        <a href="https://www.youtube.com/watch?v=U5e7F3LnHvY" class="btn btn-small" target="_blank" rel="noopener">Video ansehen</a>
-                    </div>
-                </article>
-                <article class="talk-card">
-                    <div class="talk-meta">
-                        <span class="talk-type">Session</span>
-                    </div>
-                    <h3>5 Jahre docToolchain</h3>
-                    <p>Eine Reise durch die Entwicklung des Docs-as-Code Ansatzes - vom einfachen Script zum etablierten Open-Source-Tool.</p>
-                    <p class="talk-events">Diverse Konferenzen & JUGs</p>
-                    <div class="talk-links">
-                        <a href="https://www.youtube.com/watch?v=1W5fEku4-_A" class="btn btn-small" target="_blank" rel="noopener">Video ansehen</a>
+                        <a href="#" class="btn btn-small" data-youtube="U5e7F3LnHvY">Video ansehen</a>
                     </div>
                 </article>
             </div>
@@ -532,6 +521,16 @@
             </nav>
         </div>
     </footer>
+
+    <!-- Video Lightbox -->
+    <div id="video-lightbox" class="video-lightbox">
+        <div class="video-lightbox-content">
+            <button class="video-lightbox-close" aria-label="Schließen">&times;</button>
+            <div class="video-container">
+                <iframe id="video-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
