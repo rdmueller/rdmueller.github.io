@@ -573,12 +573,6 @@
 
                     // Klick-Handler
                     card.addEventListener('click', () => {
-                        // Bei spezieller Rolle direkt zur Website
-                        if (conf.role) {
-                            window.open(conf.url, '_blank');
-                            return;
-                        }
-
                         const header = lightbox.querySelector('.conf-lightbox-header');
                         const body = lightbox.querySelector('.conf-lightbox-body');
 
