@@ -1652,6 +1652,21 @@ ul, ol {
     box-shadow: var(--shadow-md);
 }
 
+.blog-icon {
+    flex-shrink: 0;
+    width: 120px;
+    height: 80px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: var(--color-bg);
+}
+
+.blog-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .blog-date {
     flex-shrink: 0;
     display: flex;
@@ -1745,6 +1760,12 @@ ul, ol {
     .blog-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .blog-icon {
+        width: 100%;
+        height: 120px;
+        margin: 0 auto var(--spacing-md);
     }
 
     .blog-date {

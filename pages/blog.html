@@ -116,8 +116,12 @@
                             const linkTarget = isLocal ? '' : ' target="_blank" rel="noopener"';
                             const linkText = isLocal ? 'Artikel lesen →' : 'Auf LinkedIn lesen →';
 
+                            const iconPath = post.icon ? '../' + post.icon : '';
+                            const iconHtml = iconPath ? `<div class="blog-icon"><img src="${iconPath}" alt=""></div>` : '';
+
                             blogList.innerHTML += `
                                 <article class="blog-item">
+                                    ${iconHtml}
                                     <div class="blog-date">
                                         <span class="day">${day}</span>
                                         <span class="month">${month}</span>

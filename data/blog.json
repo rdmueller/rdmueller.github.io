@@ -5,6 +5,7 @@
     "excerpt": "AI kann 80% Deines sorgfältig gehüteten Codes in Tagen nachbauen. Was schützt Dein Geschäft wirklich? Network Effects, proprietäre Daten, operative Exzellenz und Kundenvertrauen.",
     "url": "blog/code-is-worthless.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7423979770402590720/",
+    "icon": "images/blog/code-is-worthless.svg",
     "tags": ["AI", "Business", "Strategy"],
     "lang": "en"
   },
@@ -14,6 +15,7 @@
     "excerpt": "Experiment: Kann ein Raspberry Pi 5 lokale LLMs für Coding-Assistenz ausführen? Der Showstopper: 11.000 Token System-Prompt bei 5 tok/s = mehrere Minuten nur für den Input.",
     "url": "blog/raspberry-pi-llm.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7423667299414601728/",
+    "icon": "images/blog/raspberry-pi-llm.svg",
     "tags": ["AI", "Raspberry Pi", "LLM"],
     "lang": "en"
   },
@@ -23,6 +25,7 @@
     "excerpt": "Nach 8 Jahren Docs-as-Code: Dokumentation muss jetzt zwei Zielgruppen bedienen - Menschen UND KI-Systeme. Die Frage ist nicht mehr 'Wie schreiben wir Docs?' sondern 'Wie wird KI unsere Docs lesen?'",
     "url": "blog/doctoolchain-rb.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7422904560005865472/",
+    "icon": "images/blog/doctoolchain-rb.svg",
     "tags": ["docToolchain", "AI", "Documentation"],
     "lang": "en"
   },
@@ -32,6 +35,7 @@
     "excerpt": "KI kann rechtlich nichts besitzen. Copyright erfordert menschliche Urheberschaft. Wenn niemand den Code besitzt, bricht das gesamte Lizenz-Framework zusammen.",
     "url": "blog/ai-license-paradox.html",
     "linkedin": "https://www.linkedin.com/pulse/person-rights-responsibility-why-ai-contributors-break-ralf-d-m%C3%BCller-m2k9f/",
+    "icon": "images/blog/ai-license-paradox.svg",
     "tags": ["AI", "Open Source", "Legal"],
     "lang": "en"
   },
@@ -41,6 +45,7 @@
     "excerpt": "dacli: Ein CLI-Tool das LLMs strukturierten Zugang zu Dokumentation gibt - wie LSP für Code. Hierarchische Navigation, Relevanz-Suche, programmatische Bearbeitung.",
     "url": "blog/dacli-llm-tool.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7420718516548419584/",
+    "icon": "images/blog/dacli.svg",
     "tags": ["dacli", "AI", "Documentation", "Tools"],
     "lang": "en"
   },
@@ -50,6 +55,7 @@
     "excerpt": "Semantic Anchors für effiziente LLM-Kommunikation: Statt langer Erklärungen einfach 'Pyramid Principle' sagen - aktiviert sofort BLUF, SCQ, MECE und mehr.",
     "url": "blog/pyramid-principle.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7419699566603603968/",
+    "icon": "images/blog/pyramid-principle.svg",
     "tags": ["AI", "Semantic Anchors", "Communication"],
     "lang": "en"
   },
@@ -59,6 +65,7 @@
     "excerpt": "Katalog mit 21+ Semantic Anchors für Software-Architektur, Testing, Requirements, Entscheidungsfindung und Dokumentation. Open Source auf GitHub.",
     "url": "blog/semantic-anchors-catalog.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7393922423005319169/",
+    "icon": "images/blog/semantic-anchors-catalog.svg",
     "tags": ["AI", "Semantic Anchors", "Open Source"],
     "lang": "en"
   },
@@ -68,6 +75,7 @@
     "excerpt": "LLMs machen Pattern-Completion, kein logisches Denken. Etablierte Begriffe wie 'TDD, London School' aktivieren relevante Trainingsmuster besser als lange Erklärungen.",
     "url": "blog/semantic-anchors.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/",
+    "icon": "images/blog/semantic-anchors.svg",
     "tags": ["AI", "Semantic Anchors", "TDD"],
     "lang": "de"
   },
@@ -77,6 +85,7 @@
     "excerpt": "Thomas Mann hat genau das gemacht, was wir LLMs vorwerfen: Erfahrungen und Geschichten intelligent neu kombiniert. Sollten wir Kreativität neu definieren?",
     "url": "blog/llms-kreativ.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/",
+    "icon": "images/blog/llms-kreativ.svg",
     "tags": ["AI", "Creativity", "Philosophy"],
     "lang": "de"
   },
@@ -86,6 +95,7 @@
     "excerpt": "'KI halluziniert heute wie verrückt' → 'Entwickler erzeugen Bugs wie verrückt'. Beide Systeme haben Grenzen und produzieren Fehler - warum akzeptieren wir das bei Menschen, aber nicht bei KI?",
     "url": "blog/ki-vs-entwickler.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7332026445587779586/",
+    "icon": "images/blog/ki-vs-entwickler.svg",
     "tags": ["AI", "Development", "Opinion"],
     "lang": "de"
   },
@@ -95,6 +105,7 @@
     "excerpt": "Die Medien haben eine verschobene Sicht: Claude Sonnet übertrifft OpenAI für Software-Entwicklung. Mistral und Black Forest Labs führen Leaderboards an. Europa hat kompetitive KI-Fähigkeiten.",
     "url": "blog/alternative-sicht-ki.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7292441780266905600/",
+    "icon": "images/blog/alternative-sicht-ki.svg",
     "tags": ["AI", "Europe", "Opinion"],
     "lang": "de"
   },
@@ -104,6 +115,7 @@
     "excerpt": "Claude Code auf dem Raspberry Pi installiert, Netzwerk gescannt, Shelly-Geräte gefunden. Dann eine Debatte über Dämmerungszeiten - Claude hat gewonnen. Ich schulde Claude ein Bier.",
     "url": "blog/claude-code-raspberry.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7402356844729393154/",
+    "icon": "images/blog/claude-code-raspberry.svg",
     "tags": ["AI", "Raspberry Pi", "Home Automation"],
     "lang": "de"
   }
