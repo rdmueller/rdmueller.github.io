@@ -75,7 +75,7 @@
     "excerpt": "LLMs machen Pattern-Completion, kein logisches Denken. Etablierte Begriffe wie 'TDD, London School' aktivieren relevante Trainingsmuster besser als lange Erklärungen.",
     "url": "blog/semantic-anchors.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/",
-    "icon": "images/blog/linkedin/semantic-anchors.jpg",
+    "icon": "images/blog/semantic-anchors.svg",
     "tags": ["AI", "Semantic Anchors", "TDD"],
     "lang": "de"
   },
