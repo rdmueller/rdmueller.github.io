@@ -1640,6 +1640,7 @@ ul, ol {
 
 .blog-item {
     display: flex;
+    align-items: center;
     gap: var(--spacing-xl);
     padding: var(--spacing-xl);
     background-color: var(--color-bg-alt);
