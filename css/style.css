@@ -550,6 +550,11 @@ ul, ol {
     box-shadow: var(--shadow-md);
 }
 
+.publication-cover-logo img {
+    box-shadow: none;
+    border-radius: 0;
+}
+
 .publication-cover-wide {
     width: 180px;
 }
