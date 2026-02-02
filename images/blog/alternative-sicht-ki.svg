@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgalt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ecfdf5"/>
+      <stop offset="100%" style="stop-color:#d1fae5"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bgalt)" width="800" height="400"/>
+
+  <!-- Media narrative -->
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="300" height="140" rx="10" fill="white" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="150" y="25" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">📰 Medien-Narrativ</text>
+    <text x="150" y="55" font-family="Arial" font-size="16" fill="#1e293b" text-anchor="middle" font-weight="bold">OpenAI = #1</text>
+    <text x="150" y="80" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">China bedroht</text>
+    <text x="150" y="100" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Europa irrelevant</text>
+    <text x="150" y="125" font-family="Arial" font-size="20" fill="#ef4444" text-anchor="middle">❌</text>
+  </g>
+
+  <!-- Reality -->
+  <g transform="translate(450, 60)">
+    <rect x="0" y="0" width="300" height="140" rx="10" fill="white" stroke="#22c55e" stroke-width="3"/>
+    <text x="150" y="25" font-family="Arial" font-size="12" fill="#22c55e" text-anchor="middle" font-weight="bold">✅ Meine Erfahrung</text>
+
+    <g transform="translate(20, 40)">
+      <rect x="0" y="0" width="120" height="35" rx="5" fill="#dbeafe"/>
+      <text x="60" y="22" font-family="Arial" font-size="11" fill="#2563eb" text-anchor="middle" font-weight="bold">Claude Sonnet</text>
+    </g>
+    <text x="155" y="60" font-family="Arial" font-size="10" fill="#64748b">→ Beste für Coding</text>
+
+    <g transform="translate(20, 80)">
+      <rect x="0" y="0" width="120" height="35" rx="5" fill="#fef3c7"/>
+      <text x="60" y="22" font-family="Arial" font-size="11" fill="#d97706" text-anchor="middle" font-weight="bold">Mistral / Flux</text>
+    </g>
+    <text x="155" y="100" font-family="Arial" font-size="10" fill="#64748b">→ Führen Leaderboards</text>
+  </g>
+
+  <!-- Europe flag -->
+  <g transform="translate(350, 230)">
+    <rect x="0" y="0" width="100" height="70" rx="5" fill="#003399"/>
+    <circle cx="50" cy="35" r="20" fill="none" stroke="#ffcc00" stroke-width="3"/>
+    <g fill="#ffcc00">
+      <polygon points="50,18 51,22 55,22 52,25 53,29 50,27 47,29 48,25 45,22 49,22"/>
+      <polygon points="50,48 51,44 55,44 52,41 53,37 50,39 47,37 48,41 45,44 49,44" transform="rotate(180, 50, 43)"/>
+    </g>
+  </g>
+
+  <text x="400" y="330" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Europa hat kompetitive KI-Fähigkeiten trotz regulatorischer Einschränkungen</text>
+  <text x="400" y="360" font-family="Arial" font-size="18" fill="#22c55e" text-anchor="middle" font-weight="bold">Alternative Sicht auf KI Modelle</text>
+</svg>

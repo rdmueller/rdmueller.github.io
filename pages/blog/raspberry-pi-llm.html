@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Can a Raspberry Pi 5 run a local LLM for coding assistance? An experiment.">
+    <title>Raspberry Pi 5 + Local LLM | Ralf D. Müller</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">1. Februar 2026</span>
+                </div>
+                <h1>Can a Raspberry Pi 5 Run a Local LLM for Coding Assistance?</h1>
+                <p class="article-subtitle">An experiment in edge AI—and why context size is a deployment constraint</p>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/raspberry-pi-llm.svg" alt="Raspberry Pi 5 LLM Speed Problem">
+            </figure>
+
+            <div class="article-content">
+                <p class="lead">I wanted to know: can a Raspberry Pi 5 run local LLMs for coding tasks? The hardware successfully ran smaller models via Ollama, but practical limitations emerged quickly.</p>
+
+                <h2>The Experiment</h2>
+                <p>Setting up Ollama on the Pi 5 was straightforward. Smaller models loaded fine. But then I tried to use it with Claude Code's workflow...</p>
+
+                <h2>The Showstopper</h2>
+                <p>The problem isn't running the model—it's <strong>context processing speed</strong>.</p>
+
+                <p>Claude Code requires an ~11,000 token system prompt before generating any response. At the Pi's processing rate:</p>
+
+                <blockquote>
+                    <p>11,000 tokens at 5 tok/s = several minutes just to process the input</p>
+                </blockquote>
+
+                <p>This exceeds typical timeout thresholds before any actual response generation occurs.</p>
+
+                <h2>The Workaround</h2>
+                <p>Using n8n with custom, shorter prompts (50 tokens) achieved 15-30 second response times. This works for focused automation tasks like:</p>
+                <ul>
+                    <li>Translations</li>
+                    <li>Smart home commands</li>
+                    <li>Simple text processing</li>
+                </ul>
+
+                <h2>Critical Insights</h2>
+                <ul>
+                    <li><strong>Small models lack reasoning depth</strong> compared to larger counterparts</li>
+                    <li><strong>"Context size" is a deployment constraint</strong>, not merely a model property</li>
+                    <li><strong>Device capability differs from practical usability</strong> for specific tasks</li>
+                    <li><strong>Processing every context token</strong> before generation becomes the dominant factor on constrained hardware</li>
+                </ul>
+
+                <h2>The Right Question</h2>
+                <p>Rather than asking "does it run?", evaluators should ask:</p>
+                <blockquote>
+                    <p>"What context size is practical, and what does that mean for my use case?"</p>
+                </blockquote>
+
+                <p>For simple, focused tasks with minimal context: yes, it works.</p>
+                <p>For agentic coding workflows: not yet practical.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Raspberry Pi</span>
+                    <span class="blog-tag">LLM</span>
+                </div>
+                <div class="article-discuss">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7423667299414601728/" class="btn btn-primary" target="_blank" rel="noopener">
+                        💬 Discuss on LinkedIn
+                    </a>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

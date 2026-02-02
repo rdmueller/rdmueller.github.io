@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgcatalog" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fdf4"/>
+      <stop offset="100%" style="stop-color:#dcfce7"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bgcatalog)" width="800" height="400"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" fill="#166534" text-anchor="middle" font-weight="bold">Semantic Anchors Catalog</text>
+  <text x="400" y="60" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">21+ Anchors for Efficient LLM Communication</text>
+
+  <!-- Categories grid -->
+  <!-- Software Architecture -->
+  <g transform="translate(50, 85)">
+    <rect x="0" y="0" width="170" height="130" rx="10" fill="white" stroke="#22c55e" stroke-width="2"/>
+    <text x="85" y="22" font-family="Arial" font-size="12" fill="#22c55e" text-anchor="middle" font-weight="bold">🏗️ Architecture</text>
+    <text x="15" y="45" font-family="Arial" font-size="10" fill="#374151">• C4 Model</text>
+    <text x="15" y="62" font-family="Arial" font-size="10" fill="#374151">• arc42</text>
+    <text x="15" y="79" font-family="Arial" font-size="10" fill="#374151">• ADR</text>
+    <text x="15" y="96" font-family="Arial" font-size="10" fill="#374151">• Domain-Driven Design</text>
+    <text x="15" y="113" font-family="Arial" font-size="10" fill="#374151">• Ports &amp; Adapters</text>
+  </g>
+
+  <!-- Testing -->
+  <g transform="translate(240, 85)">
+    <rect x="0" y="0" width="170" height="130" rx="10" fill="white" stroke="#3b82f6" stroke-width="2"/>
+    <text x="85" y="22" font-family="Arial" font-size="12" fill="#3b82f6" text-anchor="middle" font-weight="bold">🧪 Testing</text>
+    <text x="15" y="45" font-family="Arial" font-size="10" fill="#374151">• TDD London School</text>
+    <text x="15" y="62" font-family="Arial" font-size="10" fill="#374151">• TDD Detroit School</text>
+    <text x="15" y="79" font-family="Arial" font-size="10" fill="#374151">• Given-When-Then</text>
+    <text x="15" y="96" font-family="Arial" font-size="10" fill="#374151">• Arrange-Act-Assert</text>
+    <text x="15" y="113" font-family="Arial" font-size="10" fill="#374151">• Test Pyramid</text>
+  </g>
+
+  <!-- Requirements -->
+  <g transform="translate(430, 85)">
+    <rect x="0" y="0" width="170" height="130" rx="10" fill="white" stroke="#f59e0b" stroke-width="2"/>
+    <text x="85" y="22" font-family="Arial" font-size="12" fill="#f59e0b" text-anchor="middle" font-weight="bold">📋 Requirements</text>
+    <text x="15" y="45" font-family="Arial" font-size="10" fill="#374151">• User Story</text>
+    <text x="15" y="62" font-family="Arial" font-size="10" fill="#374151">• Job Story</text>
+    <text x="15" y="79" font-family="Arial" font-size="10" fill="#374151">• INVEST Criteria</text>
+    <text x="15" y="96" font-family="Arial" font-size="10" fill="#374151">• Acceptance Criteria</text>
+    <text x="15" y="113" font-family="Arial" font-size="10" fill="#374151">• Definition of Done</text>
+  </g>
+
+  <!-- Decision Making -->
+  <g transform="translate(620, 85)">
+    <rect x="0" y="0" width="130" height="130" rx="10" fill="white" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="65" y="22" font-family="Arial" font-size="12" fill="#8b5cf6" text-anchor="middle" font-weight="bold">🎯 Decisions</text>
+    <text x="15" y="45" font-family="Arial" font-size="10" fill="#374151">• SWOT</text>
+    <text x="15" y="62" font-family="Arial" font-size="10" fill="#374151">• Pros/Cons</text>
+    <text x="15" y="79" font-family="Arial" font-size="10" fill="#374151">• Risk Matrix</text>
+    <text x="15" y="96" font-family="Arial" font-size="10" fill="#374151">• Cost-Benefit</text>
+    <text x="15" y="113" font-family="Arial" font-size="10" fill="#374151">• 5 Whys</text>
+  </g>
+
+  <!-- Documentation & Communication -->
+  <g transform="translate(145, 230)">
+    <rect x="0" y="0" width="220" height="100" rx="10" fill="white" stroke="#ec4899" stroke-width="2"/>
+    <text x="110" y="22" font-family="Arial" font-size="12" fill="#ec4899" text-anchor="middle" font-weight="bold">📝 Documentation</text>
+    <text x="15" y="45" font-family="Arial" font-size="10" fill="#374151">• Docs-as-Code</text>
+    <text x="15" y="62" font-family="Arial" font-size="10" fill="#374151">• Diátaxis Framework</text>
+    <text x="15" y="79" font-family="Arial" font-size="10" fill="#374151">• Pyramid Principle</text>
+  </g>
+
+  <!-- Coding -->
+  <g transform="translate(435, 230)">
+    <rect x="0" y="0" width="220" height="100" rx="10" fill="white" stroke="#06b6d4" stroke-width="2"/>
+    <text x="110" y="22" font-family="Arial" font-size="12" fill="#06b6d4" text-anchor="middle" font-weight="bold">💻 Coding Patterns</text>
+    <text x="15" y="45" font-family="Arial" font-size="10" fill="#374151">• SOLID Principles</text>
+    <text x="15" y="62" font-family="Arial" font-size="10" fill="#374151">• Clean Code</text>
+    <text x="15" y="79" font-family="Arial" font-size="10" fill="#374151">• Design Patterns (GoF)</text>
+  </g>
+
+  <!-- GitHub badge -->
+  <g transform="translate(300, 345)">
+    <rect x="0" y="0" width="200" height="35" rx="17" fill="#24292e"/>
+    <text x="100" y="23" font-family="Arial" font-size="12" fill="white" text-anchor="middle">⭐ Open Source on GitHub</text>
+  </g>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef2f2"/>
+      <stop offset="100%" style="stop-color:#fee2e2"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bg5)" width="800" height="400"/>
+
+  <!-- Code symbol crossed out -->
+  <g transform="translate(100, 100)">
+    <rect x="0" y="0" width="150" height="150" rx="10" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="75" y="60" font-family="monospace" font-size="14" fill="#64748b" text-anchor="middle">&lt;code/&gt;</text>
+    <text x="75" y="85" font-family="monospace" font-size="12" fill="#94a3b8" text-anchor="middle">function()</text>
+    <text x="75" y="105" font-family="monospace" font-size="12" fill="#94a3b8" text-anchor="middle">{...}</text>
+    <line x1="10" y1="140" x2="140" y2="10" stroke="#ef4444" stroke-width="4"/>
+    <line x1="10" y1="10" x2="140" y2="140" stroke="#ef4444" stroke-width="4"/>
+  </g>
+
+  <!-- Arrow -->
+  <path d="M280 175 L350 175" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow4)"/>
+  <defs>
+    <marker id="arrow4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- What matters -->
+  <g transform="translate(380, 60)">
+    <text x="0" y="0" font-family="Arial" font-size="14" fill="#16a34a" font-weight="bold">What Actually Matters:</text>
+
+    <g transform="translate(0, 25)">
+      <rect x="0" y="0" width="160" height="40" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+      <text x="80" y="25" font-family="Arial" font-size="12" fill="#16a34a" text-anchor="middle">🌐 Network Effects</text>
+    </g>
+    <g transform="translate(180, 25)">
+      <rect x="0" y="0" width="160" height="40" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+      <text x="80" y="25" font-family="Arial" font-size="12" fill="#16a34a" text-anchor="middle">📊 Proprietary Data</text>
+    </g>
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="160" height="40" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+      <text x="80" y="25" font-family="Arial" font-size="12" fill="#16a34a" text-anchor="middle">⚡ Speed</text>
+    </g>
+    <g transform="translate(180, 80)">
+      <rect x="0" y="0" width="160" height="40" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+      <text x="80" y="25" font-family="Arial" font-size="12" fill="#16a34a" text-anchor="middle">🤝 Customer Trust</text>
+    </g>
+    <g transform="translate(90, 135)">
+      <rect x="0" y="0" width="160" height="40" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+      <text x="80" y="25" font-family="Arial" font-size="12" fill="#16a34a" text-anchor="middle">🎯 Operational Excellence</text>
+    </g>
+  </g>
+
+  <text x="400" y="340" font-family="Arial" font-size="18" fill="#ef4444" text-anchor="middle" font-weight="bold">"AI can rebuild 80% of your code in days"</text>
+  <text x="400" y="370" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Software development has become a commodity skill</text>
+</svg>

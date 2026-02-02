@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgkreativ" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff7ed"/>
+      <stop offset="100%" style="stop-color:#ffedd5"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bgkreativ)" width="800" height="400"/>
+
+  <!-- Thomas Mann side -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="220" height="200" rx="10" fill="white" stroke="#ea580c" stroke-width="2"/>
+    <text x="110" y="30" font-family="Arial" font-size="14" fill="#ea580c" text-anchor="middle" font-weight="bold">📚 Thomas Mann</text>
+    <text x="110" y="60" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Erfahrungen sammeln</text>
+    <text x="110" y="80" font-family="Arial" font-size="20" text-anchor="middle">📖 + 🎭 + 💭</text>
+    <text x="110" y="110" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Geschichten hören</text>
+    <path d="M60,130 L160,130" stroke="#ea580c" stroke-width="2"/>
+    <text x="110" y="155" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Intelligent neu kombinieren</text>
+    <text x="110" y="180" font-family="Arial" font-size="24" text-anchor="middle">✍️</text>
+    <text x="110" y="195" font-family="Arial" font-size="10" fill="#22c55e" text-anchor="middle">"Wortkünstler" ✓</text>
+  </g>
+
+  <!-- Equals sign -->
+  <text x="400" y="180" font-family="Arial" font-size="48" fill="#ea580c" text-anchor="middle">=</text>
+
+  <!-- LLM side -->
+  <g transform="translate(500, 80)">
+    <rect x="0" y="0" width="220" height="200" rx="10" fill="white" stroke="#ea580c" stroke-width="2"/>
+    <text x="110" y="30" font-family="Arial" font-size="14" fill="#ea580c" text-anchor="middle" font-weight="bold">🤖 LLM</text>
+    <text x="110" y="60" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Trainingsdaten</text>
+    <text x="110" y="80" font-family="Arial" font-size="20" text-anchor="middle">📚 + 🌐 + 💻</text>
+    <text x="110" y="110" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Muster lernen</text>
+    <path d="M60,130 L160,130" stroke="#ea580c" stroke-width="2"/>
+    <text x="110" y="155" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Intelligent neu kombinieren</text>
+    <text x="110" y="180" font-family="Arial" font-size="24" text-anchor="middle">🤖</text>
+    <text x="110" y="195" font-family="Arial" font-size="10" fill="#ef4444" text-anchor="middle">"Nur kopiert" ✗</text>
+  </g>
+
+  <!-- Bottom question -->
+  <text x="400" y="320" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Beide machen dasselbe: Erfahrungen und Geschichten intelligent neu kombinieren</text>
+  <text x="400" y="355" font-family="Arial" font-size="18" fill="#ea580c" text-anchor="middle" font-weight="bold">Sollten wir "Kreativität" neu definieren?</text>
+</svg>

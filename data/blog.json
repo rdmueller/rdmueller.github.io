@@ -12,7 +12,7 @@
     "title": "Can a Raspberry Pi 5 run a local LLM for coding assistance?",
     "date": "2026-02-01",
     "excerpt": "Experiment: Kann ein Raspberry Pi 5 lokale LLMs für Coding-Assistenz ausführen? Der Showstopper: 11.000 Token System-Prompt bei 5 tok/s = mehrere Minuten nur für den Input.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7423667299414601728/",
+    "url": "blog/raspberry-pi-llm.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7423667299414601728/",
     "tags": ["AI", "Raspberry Pi", "LLM"],
     "lang": "en"
@@ -48,7 +48,7 @@
     "title": "New Semantic Anchor: Pyramid Principle",
     "date": "2026-01-21",
     "excerpt": "Semantic Anchors für effiziente LLM-Kommunikation: Statt langer Erklärungen einfach 'Pyramid Principle' sagen - aktiviert sofort BLUF, SCQ, MECE und mehr.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7419699566603603968/",
+    "url": "blog/pyramid-principle.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7419699566603603968/",
     "tags": ["AI", "Semantic Anchors", "Communication"],
     "lang": "en"
@@ -57,7 +57,7 @@
     "title": "Semantic Anchors: Speaking the Same Language as LLMs",
     "date": "2025-11-11",
     "excerpt": "Katalog mit 21+ Semantic Anchors für Software-Architektur, Testing, Requirements, Entscheidungsfindung und Dokumentation. Open Source auf GitHub.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7393922423005319169/",
+    "url": "blog/semantic-anchors-catalog.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7393922423005319169/",
     "tags": ["AI", "Semantic Anchors", "Open Source"],
     "lang": "en"
@@ -75,7 +75,7 @@
     "title": "LLMs sind nicht kreativ - sie kopieren nur!",
     "date": "2025-06-07",
     "excerpt": "Thomas Mann hat genau das gemacht, was wir LLMs vorwerfen: Erfahrungen und Geschichten intelligent neu kombiniert. Sollten wir Kreativität neu definieren?",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/",
+    "url": "blog/llms-kreativ.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/",
     "tags": ["AI", "Creativity", "Philosophy"],
     "lang": "de"
@@ -84,7 +84,7 @@
     "title": "KI vs. Entwickler - Eine andere Perspektive",
     "date": "2025-05-24",
     "excerpt": "'KI halluziniert heute wie verrückt' → 'Entwickler erzeugen Bugs wie verrückt'. Beide Systeme haben Grenzen und produzieren Fehler - warum akzeptieren wir das bei Menschen, aber nicht bei KI?",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7332026445587779586/",
+    "url": "blog/ki-vs-entwickler.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7332026445587779586/",
     "tags": ["AI", "Development", "Opinion"],
     "lang": "de"
@@ -93,7 +93,7 @@
     "title": "Meine alternative Sicht auf KI Modelle",
     "date": "2025-02-04",
     "excerpt": "Die Medien haben eine verschobene Sicht: Claude Sonnet übertrifft OpenAI für Software-Entwicklung. Mistral und Black Forest Labs führen Leaderboards an. Europa hat kompetitive KI-Fähigkeiten.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7292441780266905600/",
+    "url": "blog/alternative-sicht-ki.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7292441780266905600/",
     "tags": ["AI", "Europe", "Opinion"],
     "lang": "de"
@@ -102,7 +102,7 @@
     "title": "Claude Code auf dem Raspberry Pi",
     "date": "2024-12-04",
     "excerpt": "Claude Code auf dem Raspberry Pi installiert, Netzwerk gescannt, Shelly-Geräte gefunden. Dann eine Debatte über Dämmerungszeiten - Claude hat gewonnen. Ich schulde Claude ein Bier.",
-    "url": "https://www.linkedin.com/feed/update/urn:li:activity:7402356844729393154/",
+    "url": "blog/claude-code-raspberry.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7402356844729393154/",
     "tags": ["AI", "Raspberry Pi", "Home Automation"],
     "lang": "de"

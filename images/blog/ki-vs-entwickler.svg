@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bgkivs" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f3ff"/>
+      <stop offset="100%" style="stop-color:#ede9fe"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bgkivs)" width="800" height="400"/>
+
+  <!-- AI side -->
+  <g transform="translate(100, 80)">
+    <rect x="0" y="0" width="200" height="180" rx="10" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+    <text x="100" y="30" font-family="Arial" font-size="16" fill="#8b5cf6" text-anchor="middle" font-weight="bold">🤖 KI</text>
+    <text x="100" y="60" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">"halluziniert wie verrückt"</text>
+    <text x="100" y="90" font-family="Arial" font-size="24" fill="#ef4444" text-anchor="middle">❌</text>
+    <text x="100" y="120" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Unrealistische</text>
+    <text x="100" y="135" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Erwartungen</text>
+    <text x="100" y="165" font-family="Arial" font-size="20" fill="#dc2626" text-anchor="middle">😤</text>
+  </g>
+
+  <!-- VS -->
+  <text x="400" y="180" font-family="Arial" font-size="36" fill="#8b5cf6" text-anchor="middle" font-weight="bold">vs</text>
+
+  <!-- Developer side -->
+  <g transform="translate(500, 80)">
+    <rect x="0" y="0" width="200" height="180" rx="10" fill="white" stroke="#8b5cf6" stroke-width="3"/>
+    <text x="100" y="30" font-family="Arial" font-size="16" fill="#8b5cf6" text-anchor="middle" font-weight="bold">👨‍💻 Entwickler</text>
+    <text x="100" y="60" font-family="Arial" font-size="12" fill="#64748b" text-anchor="middle">"erzeugt Bugs wie verrückt"</text>
+    <text x="100" y="90" font-family="Arial" font-size="24" fill="#22c55e" text-anchor="middle">✓</text>
+    <text x="100" y="120" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">Akzeptiert als</text>
+    <text x="100" y="135" font-family="Arial" font-size="11" fill="#64748b" text-anchor="middle">"Teil des Jobs"</text>
+    <text x="100" y="165" font-family="Arial" font-size="20" fill="#22c55e" text-anchor="middle">🤷</text>
+  </g>
+
+  <!-- Bottom text -->
+  <text x="400" y="310" font-family="Arial" font-size="14" fill="#64748b" text-anchor="middle">Beide Systeme haben Grenzen und produzieren Fehler</text>
+  <text x="400" y="340" font-family="Arial" font-size="16" fill="#8b5cf6" text-anchor="middle" font-weight="bold">Warum unterschiedliche Maßstäbe?</text>
+  <text x="400" y="370" font-family="Arial" font-size="12" fill="#94a3b8" text-anchor="middle">Eine andere Perspektive 🤔</text>
+</svg>
