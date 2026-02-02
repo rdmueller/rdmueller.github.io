@@ -37,7 +37,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <p class="hero-subtitle">Software Engineering Advocate @ DB Systel</p>
+                    <p class="hero-subtitle">Software Engineering Advocate</p>
                     <h1>Ralf D. Müller</h1>
                     <p class="hero-description">
                         Ich mache die Software-Welt ein Dokument nach dem anderen besser.
@@ -468,44 +468,72 @@
     <script>
         // Konferenzen mit Talk-Statistiken laden
         (function() {
+            const cacheBuster = Date.now();
             Promise.all([
-                fetch('data/conferences.json').then(r => r.json()),
-                fetch('data/talks.json').then(r => r.json())
+                fetch(`data/conferences.json?v=${cacheBuster}`).then(r => r.json()),
+                fetch(`data/talks.json?v=${cacheBuster}`).then(r => r.json())
             ]).then(([conferences, talks]) => {
                 const container = document.getElementById('conference-logos');
 
-                // Tooltip-Element erstellen
-                const tooltip = document.createElement('div');
-                tooltip.className = 'conf-tooltip';
-                document.body.appendChild(tooltip);
+                // Lightbox erstellen
+                const lightbox = document.createElement('div');
+                lightbox.className = 'conf-lightbox';
+                lightbox.innerHTML = `
+                    <div class="conf-lightbox-content">
+                        <div class="conf-lightbox-header"></div>
+                        <div class="conf-lightbox-body"></div>
+                    </div>
+                `;
+                document.body.appendChild(lightbox);
+
+                const closeLightbox = () => lightbox.classList.remove('visible');
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox) closeLightbox();
+                });
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') closeLightbox();
+                });
 
                 // Talks zu Konferenzen zuordnen
                 const confStats = new Map();
                 conferences.forEach(conf => {
                     const matchingTalks = talks.filter(talk =>
+                        talk.event && talk.event.trim() !== '' &&
                         conf.aliases.some(alias =>
                             talk.event.toLowerCase().includes(alias.toLowerCase()) ||
                             alias.toLowerCase().includes(talk.event.toLowerCase())
                         )
                     );
                     if (matchingTalks.length > 0) {
-                        const years = matchingTalks.map(t => new Date(t.date).getFullYear());
+                        // Deduplizieren nach Titel + Jahr
+                        const seen = new Set();
+                        const uniqueTalks = matchingTalks.filter(t => {
+                            const key = t.title + new Date(t.date).getFullYear();
+                            if (seen.has(key)) return false;
+                            seen.add(key);
+                            return true;
+                        });
+                        const years = uniqueTalks.map(t => new Date(t.date).getFullYear());
                         confStats.set(conf.name, {
-                            count: matchingTalks.length,
+                            count: uniqueTalks.length,
                             minYear: Math.min(...years),
                             maxYear: Math.max(...years),
-                            talks: matchingTalks.sort((a, b) => new Date(b.date) - new Date(a.date))
+                            talks: uniqueTalks.sort((a, b) => new Date(b.date) - new Date(a.date)),
+                            conf: conf
                         });
                     }
                 });
 
-                // Nach Anzahl der Talks sortieren
+                // Nach Anzahl der Talks sortieren (Rollen wie Co-Moderator oben)
                 const sortedConfs = conferences
                     .filter(c => c.logo)
                     .sort((a, b) => {
                         const statsA = confStats.get(a.name);
                         const statsB = confStats.get(b.name);
-                        return (statsB?.count || 0) - (statsA?.count || 0);
+                        // Spezielle Rollen bekommen hohe Priorität
+                        const countA = a.role ? 100 : (statsA?.count || 0);
+                        const countB = b.role ? 100 : (statsB?.count || 0);
+                        return countB - countA;
                     });
 
                 // Konferenzen rendern
@@ -513,14 +541,19 @@
                     const stats = confStats.get(conf.name);
                     const logoClass = conf.inverted ? 'conf-logo-inverted' : 'conf-logo';
 
-                    const card = document.createElement('a');
-                    card.href = conf.url;
+                    const card = document.createElement('div');
                     card.className = 'conference-card';
-                    card.target = '_blank';
-                    card.rel = 'noopener';
+                    card.style.cursor = 'pointer';
 
                     let statsHtml = '';
-                    if (stats) {
+                    if (conf.role) {
+                        // Spezielle Rolle (z.B. Co-Moderator)
+                        statsHtml = `
+                            <div class="conf-stats">
+                                <span class="conf-badge">${conf.role}</span>
+                            </div>
+                        `;
+                    } else if (stats) {
                         const yearRange = stats.minYear === stats.maxYear
                             ? stats.minYear
                             : `${stats.minYear}–${stats.maxYear}`;
@@ -538,32 +571,38 @@
                         ${statsHtml}
                     `;
 
-                    // Tooltip bei Hover
-                    if (stats) {
-                        card.addEventListener('mouseenter', (e) => {
-                            const talksHtml = stats.talks.slice(0, 8).map(t => {
-                                const year = new Date(t.date).getFullYear();
-                                return `<li><span class="conf-tooltip-year">${year}</span>${t.title}</li>`;
+                    // Klick-Handler
+                    card.addEventListener('click', () => {
+                        // Bei spezieller Rolle direkt zur Website
+                        if (conf.role) {
+                            window.open(conf.url, '_blank');
+                            return;
+                        }
+
+                        const header = lightbox.querySelector('.conf-lightbox-header');
+                        const body = lightbox.querySelector('.conf-lightbox-body');
+
+                        header.innerHTML = `
+                            <img src="${conf.logo}" alt="${conf.name}" class="${logoClass}" style="height:60px;max-width:200px">
+                            <h3>${conf.name}</h3>
+                            <p>${conf.location} · <a href="${conf.url}" target="_blank" rel="noopener">Website →</a></p>
+                        `;
+
+                        if (stats) {
+                            const talksHtml = stats.talks.map(t => {
+                                const date = new Date(t.date);
+                                const dateStr = date.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+                                const linkHtml = t.url ? `<a href="${t.url}" target="_blank" rel="noopener">${t.title}</a>` : t.title;
+                                const videoHtml = t.video ? ` <a href="${t.video}" target="_blank" rel="noopener" class="video-link">▶</a>` : '';
+                                return `<li><span class="talk-date">${dateStr}</span><span class="talk-type">${t.type}</span><span class="talk-title">${linkHtml}${videoHtml}</span></li>`;
                             }).join('');
-                            const moreText = stats.talks.length > 8
-                                ? `<li style="color: var(--color-primary-light)">+ ${stats.talks.length - 8} weitere...</li>`
-                                : '';
-                            tooltip.innerHTML = `
-                                <div class="conf-tooltip-title">${conf.name}</div>
-                                <ul class="conf-tooltip-talks">${talksHtml}${moreText}</ul>
-                            `;
-                            tooltip.classList.add('visible');
-                        });
+                            body.innerHTML = `<ul class="conf-talks-list">${talksHtml}</ul>`;
+                        } else {
+                            body.innerHTML = '<p>Keine Talks gefunden.</p>';
+                        }
 
-                        card.addEventListener('mousemove', (e) => {
-                            tooltip.style.left = (e.clientX + 15) + 'px';
-                            tooltip.style.top = (e.clientY + 15) + 'px';
-                        });
-
-                        card.addEventListener('mouseleave', () => {
-                            tooltip.classList.remove('visible');
-                        });
-                    }
+                        lightbox.classList.add('visible');
+                    });
 
                     container.appendChild(card);
                 });

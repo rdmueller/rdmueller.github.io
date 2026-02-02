@@ -197,6 +197,7 @@
     "logo": "images/conferences/software-architektur-tv.png",
     "url": "https://software-architektur.tv",
     "location": "Online",
-    "inverted": false
+    "inverted": false,
+    "role": "Co-Moderator"
   }
 ]
