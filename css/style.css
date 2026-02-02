@@ -732,6 +732,78 @@ ul, ol {
     text-align: center;
 }
 
+.conf-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.conf-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: var(--radius-full);
+}
+
+.conf-years {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+}
+
+/* Conference Tooltip */
+.conf-tooltip {
+    position: fixed;
+    z-index: 1000;
+    max-width: 300px;
+    padding: var(--spacing-md);
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-inverse);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    font-size: var(--font-size-sm);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.conf-tooltip.visible {
+    opacity: 1;
+}
+
+.conf-tooltip-title {
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.conf-tooltip-talks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.conf-tooltip-talks li {
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.conf-tooltip-talks li:last-child {
+    border-bottom: none;
+}
+
+.conf-tooltip-year {
+    color: var(--color-primary-light);
+    font-size: var(--font-size-xs);
+    margin-right: 6px;
+}
+
 /* --------------------------------------------------------------------------
    Stream Section - Video Grid
    -------------------------------------------------------------------------- */

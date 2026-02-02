@@ -466,24 +466,108 @@
 
     <script src="js/main.js"></script>
     <script>
-        // Konferenzen aus JSON laden
+        // Konferenzen mit Talk-Statistiken laden
         (function() {
-            fetch('data/conferences.json')
-                .then(r => r.json())
-                .then(conferences => {
-                    const container = document.getElementById('conference-logos');
-                    // Nur Konferenzen mit Logo anzeigen
-                    conferences.filter(c => c.logo).forEach(conf => {
-                        const logoClass = conf.inverted ? 'conf-logo-inverted' : 'conf-logo';
-                        container.innerHTML += `
-                            <a href="${conf.url}" class="conference-card" target="_blank" rel="noopener">
-                                <img src="${conf.logo}" alt="${conf.name}" class="${logoClass}">
-                                <span class="conf-location">${conf.location}</span>
-                            </a>
-                        `;
+            Promise.all([
+                fetch('data/conferences.json').then(r => r.json()),
+                fetch('data/talks.json').then(r => r.json())
+            ]).then(([conferences, talks]) => {
+                const container = document.getElementById('conference-logos');
+
+                // Tooltip-Element erstellen
+                const tooltip = document.createElement('div');
+                tooltip.className = 'conf-tooltip';
+                document.body.appendChild(tooltip);
+
+                // Talks zu Konferenzen zuordnen
+                const confStats = new Map();
+                conferences.forEach(conf => {
+                    const matchingTalks = talks.filter(talk =>
+                        conf.aliases.some(alias =>
+                            talk.event.toLowerCase().includes(alias.toLowerCase()) ||
+                            alias.toLowerCase().includes(talk.event.toLowerCase())
+                        )
+                    );
+                    if (matchingTalks.length > 0) {
+                        const years = matchingTalks.map(t => new Date(t.date).getFullYear());
+                        confStats.set(conf.name, {
+                            count: matchingTalks.length,
+                            minYear: Math.min(...years),
+                            maxYear: Math.max(...years),
+                            talks: matchingTalks.sort((a, b) => new Date(b.date) - new Date(a.date))
+                        });
+                    }
+                });
+
+                // Nach Anzahl der Talks sortieren
+                const sortedConfs = conferences
+                    .filter(c => c.logo)
+                    .sort((a, b) => {
+                        const statsA = confStats.get(a.name);
+                        const statsB = confStats.get(b.name);
+                        return (statsB?.count || 0) - (statsA?.count || 0);
                     });
-                })
-                .catch(err => console.error('Fehler beim Laden der Konferenzen:', err));
+
+                // Konferenzen rendern
+                sortedConfs.forEach(conf => {
+                    const stats = confStats.get(conf.name);
+                    const logoClass = conf.inverted ? 'conf-logo-inverted' : 'conf-logo';
+
+                    const card = document.createElement('a');
+                    card.href = conf.url;
+                    card.className = 'conference-card';
+                    card.target = '_blank';
+                    card.rel = 'noopener';
+
+                    let statsHtml = '';
+                    if (stats) {
+                        const yearRange = stats.minYear === stats.maxYear
+                            ? stats.minYear
+                            : `${stats.minYear}–${stats.maxYear}`;
+                        statsHtml = `
+                            <div class="conf-stats">
+                                <span class="conf-badge">${stats.count}× Speaker</span>
+                                <span class="conf-years">${yearRange}</span>
+                            </div>
+                        `;
+                    }
+
+                    card.innerHTML = `
+                        <img src="${conf.logo}" alt="${conf.name}" class="${logoClass}">
+                        <span class="conf-location">${conf.location}</span>
+                        ${statsHtml}
+                    `;
+
+                    // Tooltip bei Hover
+                    if (stats) {
+                        card.addEventListener('mouseenter', (e) => {
+                            const talksHtml = stats.talks.slice(0, 8).map(t => {
+                                const year = new Date(t.date).getFullYear();
+                                return `<li><span class="conf-tooltip-year">${year}</span>${t.title}</li>`;
+                            }).join('');
+                            const moreText = stats.talks.length > 8
+                                ? `<li style="color: var(--color-primary-light)">+ ${stats.talks.length - 8} weitere...</li>`
+                                : '';
+                            tooltip.innerHTML = `
+                                <div class="conf-tooltip-title">${conf.name}</div>
+                                <ul class="conf-tooltip-talks">${talksHtml}${moreText}</ul>
+                            `;
+                            tooltip.classList.add('visible');
+                        });
+
+                        card.addEventListener('mousemove', (e) => {
+                            tooltip.style.left = (e.clientX + 15) + 'px';
+                            tooltip.style.top = (e.clientY + 15) + 'px';
+                        });
+
+                        card.addEventListener('mouseleave', () => {
+                            tooltip.classList.remove('visible');
+                        });
+                    }
+
+                    container.appendChild(card);
+                });
+            }).catch(err => console.error('Fehler beim Laden der Konferenzen:', err));
         })();
     </script>
 </body>
