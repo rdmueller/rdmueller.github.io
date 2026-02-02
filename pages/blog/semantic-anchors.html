@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semantic Anchors - Warum etablierte Begriffe besseren Code generieren als lange Erklärungen">
+    <title>Semantische Anker für LLMs | Ralf D. Müller</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">DE</span>
+                    <span class="article-date">7. November 2025</span>
+                </div>
+                <h1>Semantische Anker: Warum "TDD London School" besseren Code generiert als lange Erklärungen</h1>
+                <p class="article-subtitle">LLMs machen Pattern-Completion, kein logisches Denken</p>
+            </header>
+
+            <div class="article-content">
+                <p class="lead">Warum generieren LLMs manchmal exzellenten Code und manchmal schlechten? Die Antwort liegt in "semantischen Ankern" — kompakten, etablierten Begriffen, die umfassende Wissensmuster in Sprachmodellen aktivieren.</p>
+
+                <h2>Das Problem</h2>
+                <p>Vergleiche diese zwei Prompts:</p>
+
+                <div class="code-comparison">
+                    <div class="code-bad">
+                        <span class="code-label">❌ Verbose</span>
+                        <p>"Implementiere Test-Driven Development mit Mocks, teste Interfaces zuerst, arbeite outside-in..."</p>
+                    </div>
+                    <div class="code-good">
+                        <span class="code-label">✅ Semantic Anchor</span>
+                        <p>"TDD, London School"</p>
+                    </div>
+                </div>
+
+                <h2>Warum funktioniert das?</h2>
+                <p>LLMs machen <strong>Pattern-Completion</strong>, kein logisches Denken. Wenn ein Begriff konsistent mit bestimmten Mustern in den Trainingsdaten erscheint, aktiviert dieser Begriff genau diese Muster.</p>
+
+                <h2>Weitere Beispiele</h2>
+                <ul>
+                    <li><strong>"ADRs nach Nygard"</strong> → Architecture Decision Records im Originalformat</li>
+                    <li><strong>"Pugh-Matrix"</strong> → Strukturierte Entscheidungsfindung</li>
+                    <li><strong>"EARS Syntax"</strong> → Easy Approach to Requirements Syntax</li>
+                    <li><strong>"C4 Model"</strong> → Context, Container, Component, Code Diagramme</li>
+                </ul>
+
+                <h2>Der Katalog</h2>
+                <p>Ich habe einen Katalog mit <strong>21+ Semantic Anchors</strong> erstellt, der fünf Bereiche abdeckt:</p>
+                <ul>
+                    <li>🏛️ Software-Architektur (DDD, Clean Architecture, C4)</li>
+                    <li>🧪 Testing-Methodologien (TDD Schools, Property-Based Testing)</li>
+                    <li>📋 Requirements & Kommunikation (EARS, Impact Mapping, JTBD)</li>
+                    <li>🎯 Entscheidungsfindung (Pugh-Matrix, Wardley Mapping)</li>
+                    <li>📚 Dokumentation (Docs-as-Code, Diátaxis)</li>
+                </ul>
+
+                <p><a href="https://github.com/LLM-Coding/Semantic-Anchors" target="_blank" rel="noopener">→ Semantic Anchors auf GitHub</a></p>
+
+                <h2>Praktischer Tipp</h2>
+                <blockquote>
+                    <p>Etablierte Domain-Terminologie übertrifft lange Erklärungen beim Prompting von LLMs für Code-Generierung.</p>
+                </blockquote>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">TDD</span>
+                </div>
+                <div class="article-discuss">
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/" class="btn btn-primary" target="_blank" rel="noopener">
+                        💬 Auf LinkedIn diskutieren
+                    </a>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

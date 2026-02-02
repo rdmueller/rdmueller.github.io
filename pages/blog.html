@@ -111,6 +111,11 @@
                                 ? '<span class="lang-badge">EN</span>'
                                 : '<span class="lang-badge">DE</span>';
 
+                            // Unterscheide lokale und externe Links
+                            const isLocal = !post.url.startsWith('http');
+                            const linkTarget = isLocal ? '' : ' target="_blank" rel="noopener"';
+                            const linkText = isLocal ? 'Artikel lesen →' : 'Auf LinkedIn lesen →';
+
                             blogList.innerHTML += `
                                 <article class="blog-item">
                                     <div class="blog-date">
@@ -123,10 +128,10 @@
                                             ${langBadge}
                                             ${tagsHtml}
                                         </div>
-                                        <h2><a href="${post.url}" target="_blank" rel="noopener">${post.title}</a></h2>
+                                        <h2><a href="${post.url}"${linkTarget}>${post.title}</a></h2>
                                         <p>${post.excerpt}</p>
-                                        <a href="${post.url}" class="blog-link" target="_blank" rel="noopener">
-                                            Auf LinkedIn lesen →
+                                        <a href="${post.url}" class="blog-link"${linkTarget}>
+                                            ${linkText}
                                         </a>
                                     </div>
                                 </article>
