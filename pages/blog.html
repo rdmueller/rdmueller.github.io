@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog-Artikel von Ralf D. Müller über AI, Software-Architektur und Dokumentation">
+    <title>Blog | Ralf D. Müller</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">Über mich</a></li>
+                <li><a href="../index.html#trainings">Trainings</a></li>
+                <li><a href="talks.html">Vorträge</a></li>
+                <li><a href="../index.html#publications">Publikationen</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="page-content">
+        <div class="container">
+            <h1>Blog</h1>
+            <p class="page-intro" id="blog-intro">
+                Gedanken zu AI, Software-Architektur, Dokumentation und der Zukunft der Softwareentwicklung.
+                Ursprünglich auf LinkedIn veröffentlicht.
+            </p>
+
+            <!-- Filter Tags -->
+            <div class="blog-filters" id="blog-filters">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+            </div>
+
+            <!-- Blog Posts -->
+            <div class="blog-list" id="blog-list">
+                <!-- Dynamisch generiert -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        (function() {
+            const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+
+            fetch('../data/blog.json')
+                .then(r => r.json())
+                .then(posts => {
+                    // Nach Datum sortieren (neueste zuerst)
+                    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                    // Alle Tags sammeln
+                    const allTags = new Set();
+                    posts.forEach(post => post.tags.forEach(tag => allTags.add(tag)));
+
+                    // Filter-Buttons generieren
+                    const filtersContainer = document.getElementById('blog-filters');
+                    allTags.forEach(tag => {
+                        const btn = document.createElement('button');
+                        btn.className = 'filter-btn';
+                        btn.setAttribute('data-filter', tag);
+                        btn.textContent = tag;
+                        filtersContainer.appendChild(btn);
+                    });
+
+                    // Blog-Liste generieren
+                    const blogList = document.getElementById('blog-list');
+
+                    function renderPosts(filter = 'all') {
+                        blogList.innerHTML = '';
+                        const filtered = filter === 'all'
+                            ? posts
+                            : posts.filter(p => p.tags.includes(filter));
+
+                        filtered.forEach(post => {
+                            const date = new Date(post.date);
+                            const day = String(date.getDate()).padStart(2, '0');
+                            const month = months[date.getMonth()];
+                            const year = date.getFullYear();
+
+                            const tagsHtml = post.tags.map(tag =>
+                                `<span class="blog-tag">${tag}</span>`
+                            ).join('');
+
+                            const langBadge = post.lang === 'en'
+                                ? '<span class="lang-badge">EN</span>'
+                                : '<span class="lang-badge">DE</span>';
+
+                            blogList.innerHTML += `
+                                <article class="blog-item">
+                                    <div class="blog-date">
+                                        <span class="day">${day}</span>
+                                        <span class="month">${month}</span>
+                                        <span class="year">${year}</span>
+                                    </div>
+                                    <div class="blog-content">
+                                        <div class="blog-meta">
+                                            ${langBadge}
+                                            ${tagsHtml}
+                                        </div>
+                                        <h2><a href="${post.url}" target="_blank" rel="noopener">${post.title}</a></h2>
+                                        <p>${post.excerpt}</p>
+                                        <a href="${post.url}" class="blog-link" target="_blank" rel="noopener">
+                                            Auf LinkedIn lesen →
+                                        </a>
+                                    </div>
+                                </article>
+                            `;
+                        });
+                    }
+
+                    renderPosts();
+
+                    // Filter-Klick-Handler
+                    filtersContainer.querySelectorAll('.filter-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            filtersContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                            this.classList.add('active');
+                            renderPosts(this.getAttribute('data-filter'));
+                        });
+                    });
+                })
+                .catch(err => console.error('Fehler beim Laden der Blog-Posts:', err));
+        })();
+    </script>
+</body>
+</html>
