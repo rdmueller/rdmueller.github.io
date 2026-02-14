@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rdmueller.github.io/sitemap.xml

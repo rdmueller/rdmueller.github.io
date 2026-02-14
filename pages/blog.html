@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog-Artikel von Ralf D. Müller über AI, Software-Architektur und Dokumentation">
+    <link rel="canonical" href="blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog | Ralf D. Müller">
+    <meta property="og:description" content="Blog-Artikel über AI, Software-Architektur und Dokumentation">
+    <meta property="og:image" content="../images/ralf-mueller.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog | Ralf D. Müller">
+    <meta name="twitter:description" content="Blog-Artikel über AI, Software-Architektur und Dokumentation">
+    <meta name="twitter:image" content="../images/ralf-mueller.jpg">
     <title>Blog | Ralf D. Müller</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="../css/style.css">
@@ -56,7 +65,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
                 <a href="impressum.html">Impressum</a>
                 <a href="datenschutz.html">Datenschutz</a>
@@ -68,6 +77,21 @@
     <script>
         (function() {
             const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+            const blogList = document.getElementById('blog-list');
+
+            function isSafeHttpUrl(url) {
+                if (!url || typeof url !== 'string') return false;
+                try {
+                    const parsed = new URL(url);
+                    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            function isSafeRelativePath(path) {
+                return typeof path === 'string' && !path.includes('..') && !path.includes('//') && !path.includes(':');
+            }
 
             fetch('../data/blog.json')
                 .then(r => r.json())
@@ -90,10 +114,8 @@
                     });
 
                     // Blog-Liste generieren
-                    const blogList = document.getElementById('blog-list');
-
                     function renderPosts(filter = 'all') {
-                        blogList.innerHTML = '';
+                        blogList.replaceChildren();
                         const filtered = filter === 'all'
                             ? posts
                             : posts.filter(p => p.tags.includes(filter));
@@ -104,43 +126,89 @@
                             const month = months[date.getMonth()];
                             const year = date.getFullYear();
 
-                            const tagsHtml = post.tags.map(tag =>
-                                `<span class="blog-tag">${tag}</span>`
-                            ).join('');
-
-                            const langBadge = post.lang === 'en'
-                                ? '<span class="lang-badge">EN</span>'
-                                : '<span class="lang-badge">DE</span>';
-
-                            // Unterscheide lokale und externe Links
-                            const isLocal = !post.url.startsWith('http');
-                            const linkTarget = isLocal ? '' : ' target="_blank" rel="noopener"';
+                            const isExternal = isSafeHttpUrl(post.url);
+                            const isLocal = typeof post.url === 'string' && !isExternal && isSafeRelativePath(post.url);
+                            const safePostUrl = isExternal || isLocal ? post.url : '#';
                             const linkText = isLocal ? 'Artikel lesen →' : 'Auf LinkedIn lesen →';
 
-                            const iconPath = post.icon ? '../' + post.icon : '';
-                            const iconHtml = iconPath ? `<div class="blog-icon"><img src="${iconPath}" alt=""></div>` : '';
+                            const article = document.createElement('article');
+                            article.className = 'blog-item';
 
-                            blogList.innerHTML += `
-                                <article class="blog-item">
-                                    ${iconHtml}
-                                    <div class="blog-date">
-                                        <span class="day">${day}</span>
-                                        <span class="month">${month}</span>
-                                        <span class="year">${year}</span>
-                                    </div>
-                                    <div class="blog-content">
-                                        <div class="blog-meta">
-                                            ${langBadge}
-                                            ${tagsHtml}
-                                        </div>
-                                        <h2><a href="${post.url}"${linkTarget}>${post.title}</a></h2>
-                                        <p>${post.excerpt}</p>
-                                        <a href="${post.url}" class="blog-link"${linkTarget}>
-                                            ${linkText}
-                                        </a>
-                                    </div>
-                                </article>
-                            `;
+                            if (post.icon && isSafeRelativePath(post.icon)) {
+                                const icon = document.createElement('div');
+                                icon.className = 'blog-icon';
+                                const img = document.createElement('img');
+                                img.src = `../${post.icon}`;
+                                img.alt = '';
+                                icon.appendChild(img);
+                                article.appendChild(icon);
+                            }
+
+                            const dateBox = document.createElement('div');
+                            dateBox.className = 'blog-date';
+
+                            const dayEl = document.createElement('span');
+                            dayEl.className = 'day';
+                            dayEl.textContent = day;
+                            const monthEl = document.createElement('span');
+                            monthEl.className = 'month';
+                            monthEl.textContent = month;
+                            const yearEl = document.createElement('span');
+                            yearEl.className = 'year';
+                            yearEl.textContent = String(year);
+
+                            dateBox.appendChild(dayEl);
+                            dateBox.appendChild(monthEl);
+                            dateBox.appendChild(yearEl);
+                            article.appendChild(dateBox);
+
+                            const content = document.createElement('div');
+                            content.className = 'blog-content';
+
+                            const meta = document.createElement('div');
+                            meta.className = 'blog-meta';
+
+                            const langBadge = document.createElement('span');
+                            langBadge.className = 'lang-badge';
+                            langBadge.textContent = post.lang === 'en' ? 'EN' : 'DE';
+                            meta.appendChild(langBadge);
+
+                            post.tags.forEach(tag => {
+                                const tagEl = document.createElement('span');
+                                tagEl.className = 'blog-tag';
+                                tagEl.textContent = tag;
+                                meta.appendChild(tagEl);
+                            });
+                            content.appendChild(meta);
+
+                            const h2 = document.createElement('h2');
+                            const titleLink = document.createElement('a');
+                            titleLink.href = safePostUrl;
+                            if (isExternal) {
+                                titleLink.target = '_blank';
+                                titleLink.rel = 'noopener';
+                            }
+                            titleLink.textContent = post.title || 'Ohne Titel';
+                            h2.appendChild(titleLink);
+                            content.appendChild(h2);
+
+                            const excerpt = document.createElement('p');
+                            excerpt.textContent = post.excerpt || '';
+                            content.appendChild(excerpt);
+
+                            const readMore = document.createElement('a');
+                            readMore.className = 'blog-link';
+                            readMore.href = safePostUrl;
+                            if (isExternal) {
+                                readMore.target = '_blank';
+                                readMore.rel = 'noopener';
+                            }
+                            readMore.textContent = linkText;
+                            content.appendChild(readMore);
+
+                            article.appendChild(content);
+                            blogList.appendChild(article);
+
                         });
                     }
 

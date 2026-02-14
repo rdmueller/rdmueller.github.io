@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ralf D. Müller - Software Engineering Advocate, docToolchain Creator, arc42 Committer und Co-Host bei software-architektur.tv">
+    <link rel="canonical" href="index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ralf D. Müller | Software Engineering Advocate">
+    <meta property="og:description" content="Software Engineering Advocate, docToolchain Creator, arc42 Committer und Co-Host bei software-architektur.tv">
+    <meta property="og:image" content="images/ralf-mueller.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ralf D. Müller | Software Engineering Advocate">
+    <meta name="twitter:description" content="Software Engineering Advocate, docToolchain Creator, arc42 Committer und Co-Host bei software-architektur.tv">
+    <meta name="twitter:image" content="images/ralf-mueller.jpg">
     <title>Ralf D. Müller | Software Engineering Advocate</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +24,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="/" class="logo">Ralf D. Müller</a>
+            <a href="index.html" class="logo">Ralf D. Müller</a>
             <ul class="nav-links">
                 <li><a href="#about">Über mich</a></li>
                 <li><a href="#trainings">Trainings</a></li>
@@ -465,7 +474,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
                 <a href="pages/impressum.html">Impressum</a>
                 <a href="pages/datenschutz.html">Datenschutz</a>
@@ -474,38 +483,87 @@
     </footer>
 
     <!-- Video Lightbox -->
-    <div id="video-lightbox" class="video-lightbox">
-        <div class="video-lightbox-content">
+    <div id="video-lightbox" class="video-lightbox" aria-hidden="true">
+        <div class="video-lightbox-content" role="dialog" aria-modal="true" aria-label="Video-Player">
             <button class="video-lightbox-close" aria-label="Schließen">&times;</button>
             <div class="video-container">
-                <iframe id="video-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video-iframe" title="YouTube Video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
     <script src="js/main.js"></script>
     <script>
-        // Konferenzen mit Talk-Statistiken laden
         (function() {
-            const cacheBuster = Date.now();
+            function isSafeUrl(url) {
+                if (!url || typeof url !== 'string') return false;
+                try {
+                    const parsed = new URL(url, window.location.origin);
+                    return parsed.protocol === 'https:' || parsed.protocol === 'http:';
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            function createSafeLink(url, text, className) {
+                if (!isSafeUrl(url)) {
+                    return document.createTextNode(text);
+                }
+                const link = document.createElement('a');
+                link.href = url;
+                link.target = '_blank';
+                link.rel = 'noopener';
+                link.textContent = text;
+                if (className) {
+                    link.className = className;
+                }
+                return link;
+            }
+
             Promise.all([
-                fetch(`data/conferences.json?v=${cacheBuster}`).then(r => r.json()),
-                fetch(`data/talks.json?v=${cacheBuster}`).then(r => r.json())
+                fetch('data/conferences.json').then(r => r.json()),
+                fetch('data/talks.json').then(r => r.json())
             ]).then(([conferences, talks]) => {
                 const container = document.getElementById('conference-logos');
+                if (!container) return;
 
-                // Lightbox erstellen
                 const lightbox = document.createElement('div');
                 lightbox.className = 'conf-lightbox';
-                lightbox.innerHTML = `
-                    <div class="conf-lightbox-content">
-                        <div class="conf-lightbox-header"></div>
-                        <div class="conf-lightbox-body"></div>
-                    </div>
-                `;
+                lightbox.setAttribute('aria-hidden', 'true');
+
+                const lightboxContent = document.createElement('div');
+                lightboxContent.className = 'conf-lightbox-content';
+                lightboxContent.setAttribute('role', 'dialog');
+                lightboxContent.setAttribute('aria-modal', 'true');
+                lightboxContent.setAttribute('aria-labelledby', 'conf-lightbox-title');
+
+                const closeButton = document.createElement('button');
+                closeButton.className = 'conf-lightbox-close';
+                closeButton.setAttribute('type', 'button');
+                closeButton.setAttribute('aria-label', 'Schließen');
+                closeButton.textContent = '×';
+
+                const header = document.createElement('div');
+                header.className = 'conf-lightbox-header';
+
+                const body = document.createElement('div');
+                body.className = 'conf-lightbox-body';
+
+                lightboxContent.appendChild(closeButton);
+                lightboxContent.appendChild(header);
+                lightboxContent.appendChild(body);
+                lightbox.appendChild(lightboxContent);
                 document.body.appendChild(lightbox);
 
-                const closeLightbox = () => lightbox.classList.remove('visible');
+                let lastFocusedElement = null;
+                const closeLightbox = () => {
+                    lightbox.classList.remove('visible');
+                    lightbox.setAttribute('aria-hidden', 'true');
+                    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+                        lastFocusedElement.focus();
+                    }
+                };
+                closeButton.addEventListener('click', closeLightbox);
                 lightbox.addEventListener('click', (e) => {
                     if (e.target === lightbox) closeLightbox();
                 });
@@ -513,7 +571,6 @@
                     if (e.key === 'Escape') closeLightbox();
                 });
 
-                // Talks zu Konferenzen zuordnen
                 const confStats = new Map();
                 conferences.forEach(conf => {
                     const matchingTalks = talks.filter(talk =>
@@ -524,7 +581,6 @@
                         )
                     );
                     if (matchingTalks.length > 0) {
-                        // Deduplizieren nach Titel + Jahr
                         const seen = new Set();
                         const uniqueTalks = matchingTalks.filter(t => {
                             const key = t.title + new Date(t.date).getFullYear();
@@ -549,72 +605,130 @@
                     .sort((a, b) => {
                         const statsA = confStats.get(a.name);
                         const statsB = confStats.get(b.name);
-                        // Spezielle Rollen bekommen hohe Priorität
                         const countA = a.role ? 100 : (statsA?.count || 0);
                         const countB = b.role ? 100 : (statsB?.count || 0);
                         return countB - countA;
                     });
 
-                // Konferenzen rendern
                 sortedConfs.forEach(conf => {
                     const stats = confStats.get(conf.name);
                     const logoClass = conf.inverted ? 'conf-logo-inverted' : 'conf-logo';
 
-                    const card = document.createElement('div');
+                    const card = document.createElement('button');
+                    card.type = 'button';
                     card.className = 'conference-card';
-                    card.style.cursor = 'pointer';
+                    card.setAttribute('aria-label', `Details zu ${conf.name}`);
 
-                    let statsHtml = '';
+                    const logo = document.createElement('img');
+                    logo.src = conf.logo;
+                    logo.alt = conf.name;
+                    logo.className = logoClass;
+                    card.appendChild(logo);
+
+                    const location = document.createElement('span');
+                    location.className = 'conf-location';
+                    location.textContent = conf.location || '';
+                    card.appendChild(location);
+
                     if (conf.role) {
-                        // Spezielle Rolle (z.B. Co-Moderator)
-                        statsHtml = `
-                            <div class="conf-stats">
-                                <span class="conf-badge">${conf.role}</span>
-                            </div>
-                        `;
+                        const statsWrap = document.createElement('div');
+                        statsWrap.className = 'conf-stats';
+                        const badge = document.createElement('span');
+                        badge.className = 'conf-badge';
+                        badge.textContent = conf.role;
+                        statsWrap.appendChild(badge);
+                        card.appendChild(statsWrap);
                     } else if (stats) {
                         const yearRange = stats.minYear === stats.maxYear
                             ? stats.minYear
                             : `${stats.minYear}–${stats.maxYear}`;
-                        statsHtml = `
-                            <div class="conf-stats">
-                                <span class="conf-badge">${stats.count}× Speaker</span>
-                                <span class="conf-years">${yearRange}</span>
-                            </div>
-                        `;
+                        const statsWrap = document.createElement('div');
+                        statsWrap.className = 'conf-stats';
+                        const badge = document.createElement('span');
+                        badge.className = 'conf-badge';
+                        badge.textContent = `${stats.count}× Speaker`;
+                        const years = document.createElement('span');
+                        years.className = 'conf-years';
+                        years.textContent = String(yearRange);
+                        statsWrap.appendChild(badge);
+                        statsWrap.appendChild(years);
+                        card.appendChild(statsWrap);
                     }
 
-                    card.innerHTML = `
-                        <img src="${conf.logo}" alt="${conf.name}" class="${logoClass}">
-                        <span class="conf-location">${conf.location}</span>
-                        ${statsHtml}
-                    `;
+                    card.addEventListener('click', function() {
+                        lastFocusedElement = document.activeElement;
+                        header.replaceChildren();
+                        body.replaceChildren();
 
-                    // Klick-Handler
-                    card.addEventListener('click', () => {
-                        const header = lightbox.querySelector('.conf-lightbox-header');
-                        const body = lightbox.querySelector('.conf-lightbox-body');
+                        const logoEl = document.createElement('img');
+                        logoEl.src = conf.logo;
+                        logoEl.alt = conf.name;
+                        logoEl.className = logoClass;
+                        logoEl.style.height = '60px';
+                        logoEl.style.maxWidth = '200px';
+                        header.appendChild(logoEl);
 
-                        header.innerHTML = `
-                            <img src="${conf.logo}" alt="${conf.name}" class="${logoClass}" style="height:60px;max-width:200px">
-                            <h3>${conf.name}</h3>
-                            <p>${conf.location} · <a href="${conf.url}" target="_blank" rel="noopener">Website →</a></p>
-                        `;
+                        const heading = document.createElement('h3');
+                        heading.id = 'conf-lightbox-title';
+                        heading.textContent = conf.name;
+                        header.appendChild(heading);
+
+                        const subline = document.createElement('p');
+                        if (conf.location) {
+                            subline.appendChild(document.createTextNode(conf.location));
+                        }
+                        if (isSafeUrl(conf.url)) {
+                            if (conf.location) {
+                                subline.appendChild(document.createTextNode(' · '));
+                            }
+                            subline.appendChild(createSafeLink(conf.url, 'Website →'));
+                        }
+                        header.appendChild(subline);
 
                         if (stats) {
-                            const talksHtml = stats.talks.map(t => {
+                            const list = document.createElement('ul');
+                            list.className = 'conf-talks-list';
+                            stats.talks.forEach(t => {
                                 const date = new Date(t.date);
                                 const dateStr = date.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
-                                const linkHtml = t.url ? `<a href="${t.url}" target="_blank" rel="noopener">${t.title}</a>` : t.title;
-                                const videoHtml = t.video ? ` <a href="${t.video}" target="_blank" rel="noopener" class="video-link">▶</a>` : '';
-                                return `<li><span class="talk-date">${dateStr}</span><span class="talk-type">${t.type}</span><span class="talk-title">${linkHtml}${videoHtml}</span></li>`;
-                            }).join('');
-                            body.innerHTML = `<ul class="conf-talks-list">${talksHtml}</ul>`;
+                                const item = document.createElement('li');
+
+                                const dateEl = document.createElement('span');
+                                dateEl.className = 'talk-date';
+                                dateEl.textContent = dateStr;
+
+                                const typeEl = document.createElement('span');
+                                typeEl.className = 'talk-type';
+                                typeEl.textContent = t.type || '';
+
+                                const titleEl = document.createElement('span');
+                                titleEl.className = 'talk-title';
+                                if (t.url && isSafeUrl(t.url)) {
+                                    titleEl.appendChild(createSafeLink(t.url, t.title || 'Talk'));
+                                } else {
+                                    titleEl.textContent = t.title || 'Talk';
+                                }
+
+                                if (t.video && isSafeUrl(t.video)) {
+                                    titleEl.appendChild(document.createTextNode(' '));
+                                    titleEl.appendChild(createSafeLink(t.video, '▶', 'video-link'));
+                                }
+
+                                item.appendChild(dateEl);
+                                item.appendChild(typeEl);
+                                item.appendChild(titleEl);
+                                list.appendChild(item);
+                            });
+                            body.appendChild(list);
                         } else {
-                            body.innerHTML = '<p>Keine Talks gefunden.</p>';
+                            const noTalks = document.createElement('p');
+                            noTalks.textContent = 'Keine Talks gefunden.';
+                            body.appendChild(noTalks);
                         }
 
                         lightbox.classList.add('visible');
+                        lightbox.setAttribute('aria-hidden', 'false');
+                        closeButton.focus();
                     });
 
                     container.appendChild(card);

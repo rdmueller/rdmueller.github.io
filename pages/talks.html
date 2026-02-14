@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vorträge und Workshops von Ralf D. Müller zu Software-Architektur, GenAI und Dokumentation">
+    <link rel="canonical" href="talks.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vorträge | Ralf D. Müller">
+    <meta property="og:description" content="Vorträge und Workshops zu Software-Architektur, GenAI und Dokumentation">
+    <meta property="og:image" content="../images/ralf-mueller.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vorträge | Ralf D. Müller">
+    <meta name="twitter:description" content="Vorträge und Workshops zu Software-Architektur, GenAI und Dokumentation">
+    <meta name="twitter:image" content="../images/ralf-mueller.jpg">
     <title>Vorträge | Ralf D. Müller</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="../css/style.css">
@@ -62,7 +71,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
                 <a href="impressum.html">Impressum</a>
                 <a href="datenschutz.html">Datenschutz</a>
@@ -75,6 +84,19 @@
         // Talks und Konferenzen aus JSON laden und rendern
         (function() {
             const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
+            function isSafeHttpUrl(url) {
+                if (!url || typeof url !== 'string') return false;
+                try {
+                    const parsed = new URL(url);
+                    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            function isSafeRelativePath(path) {
+                return typeof path === 'string' && !path.includes('..') && !path.includes('//') && !path.includes(':');
+            }
 
             // Beide JSONs parallel laden
             Promise.all([
@@ -134,40 +156,88 @@
 
                         // Konferenz-Logo finden
                         const conf = talk.event ? confLookup[talk.event.toLowerCase()] : null;
-                        let logoHtml = '';
+                        const logoWrap = document.createElement('div');
+                        logoWrap.className = 'talk-logo';
                         if (conf && conf.logo) {
                             const invertedClass = conf.inverted ? ' conf-logo-inverted' : '';
                             // Lokale Pfade anpassen (von pages/ aus)
-                            const logoSrc = conf.logo.startsWith('http') ? conf.logo : '../' + conf.logo;
-                            logoHtml = `<img src="${logoSrc}" alt="${conf.name}" class="talk-conf-logo${invertedClass}">`;
-                        }
-
-                        let linksHtml = '';
-                        if (talk.url || talk.video) {
-                            linksHtml = '<div class="talk-links">';
-                            if (talk.url) {
-                                linksHtml += `<a href="${talk.url}" target="_blank" rel="noopener">Event</a>`;
+                            const hasExternalLogo = isSafeHttpUrl(conf.logo);
+                            const hasLocalLogo = isSafeRelativePath(conf.logo);
+                            if (hasExternalLogo || hasLocalLogo) {
+                                const logoSrc = hasExternalLogo ? conf.logo : `../${conf.logo}`;
+                                const logo = document.createElement('img');
+                                logo.src = logoSrc;
+                                logo.alt = conf.name || '';
+                                logo.className = `talk-conf-logo${invertedClass}`;
+                                logoWrap.appendChild(logo);
                             }
-                            if (talk.video) {
-                                linksHtml += `<a href="${talk.video}" target="_blank" rel="noopener">Video</a>`;
-                            }
-                            linksHtml += '</div>';
                         }
 
                         const eventLocation = [talk.event, talk.location].filter(x => x).join(', ');
 
-                        list.innerHTML += `
-                            <article class="talk-item">
-                                <div class="talk-date"><span class="day">${day}</span><span class="month">${month}</span></div>
-                                <div class="talk-logo">${logoHtml}</div>
-                                <div class="talk-info">
-                                    <span class="talk-type">${talk.type}</span>
-                                    <h3>${talk.title}</h3>
-                                    ${eventLocation ? `<p class="talk-event">${eventLocation}</p>` : ''}
-                                    ${linksHtml}
-                                </div>
-                            </article>
-                        `;
+                        const article = document.createElement('article');
+                        article.className = 'talk-item';
+
+                        const dateBox = document.createElement('div');
+                        dateBox.className = 'talk-date';
+                        const dayEl = document.createElement('span');
+                        dayEl.className = 'day';
+                        dayEl.textContent = day;
+                        const monthEl = document.createElement('span');
+                        monthEl.className = 'month';
+                        monthEl.textContent = month;
+                        dateBox.appendChild(dayEl);
+                        dateBox.appendChild(monthEl);
+
+                        const info = document.createElement('div');
+                        info.className = 'talk-info';
+
+                        const type = document.createElement('span');
+                        type.className = 'talk-type';
+                        type.textContent = talk.type || '';
+                        info.appendChild(type);
+
+                        const title = document.createElement('h3');
+                        title.textContent = talk.title || 'Ohne Titel';
+                        info.appendChild(title);
+
+                        if (eventLocation) {
+                            const event = document.createElement('p');
+                            event.className = 'talk-event';
+                            event.textContent = eventLocation;
+                            info.appendChild(event);
+                        }
+
+                        if (talk.url || talk.video) {
+                            const links = document.createElement('div');
+                            links.className = 'talk-links';
+
+                            if (talk.url && isSafeHttpUrl(talk.url)) {
+                                const eventLink = document.createElement('a');
+                                eventLink.href = talk.url;
+                                eventLink.target = '_blank';
+                                eventLink.rel = 'noopener';
+                                eventLink.textContent = 'Event';
+                                links.appendChild(eventLink);
+                            }
+                            if (talk.video && isSafeHttpUrl(talk.video)) {
+                                const videoLink = document.createElement('a');
+                                videoLink.href = talk.video;
+                                videoLink.target = '_blank';
+                                videoLink.rel = 'noopener';
+                                videoLink.textContent = 'Video';
+                                links.appendChild(videoLink);
+                            }
+
+                            if (links.childElementCount > 0) {
+                                info.appendChild(links);
+                            }
+                        }
+
+                        article.appendChild(dateBox);
+                        article.appendChild(logoWrap);
+                        article.appendChild(info);
+                        list.appendChild(article);
                     });
 
                     content.appendChild(list);
@@ -181,7 +251,10 @@
                         tabsNav.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
                         tabsContent.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
                         this.classList.add('active');
-                        tabsContent.querySelector(`.tab-content[data-year="${year}"]`).classList.add('active');
+                        const yearContent = tabsContent.querySelector(`.tab-content[data-year="${year}"]`);
+                        if (yearContent) {
+                            yearContent.classList.add('active');
+                        }
                     });
                 });
             })
