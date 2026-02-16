@@ -526,6 +526,26 @@ ul, ol {
     transition: all var(--transition-normal);
 }
 
+.publication-card-full {
+    grid-column: 1 / -1;
+}
+
+.publication-card-horizontal {
+    flex-direction: row;
+}
+
+.publication-card-horizontal .publication-cover,
+.publication-card-horizontal .publication-icon {
+    flex-shrink: 0;
+    width: 100px;
+    max-width: 100px;
+    align-self: flex-start;
+}
+
+.publication-card-horizontal .publication-icon {
+    height: 100px;
+}
+
 .publication-card:hover {
     background-color: var(--color-bg);
     box-shadow: var(--shadow-md);
@@ -541,7 +561,6 @@ ul, ol {
     background-color: var(--color-primary);
     border-radius: var(--radius-md);
     color: white;
-    align-self: center;
 }
 
 .publication-icon svg {
@@ -553,8 +572,11 @@ ul, ol {
     flex-shrink: 0;
     width: 100%;
     max-width: 300px;
-    align-self: center;
     transition: transform var(--transition-normal);
+}
+
+.publication-card:not(.publication-card-horizontal) .publication-cover {
+    align-self: center;
 }
 
 .publication-cover:hover {
