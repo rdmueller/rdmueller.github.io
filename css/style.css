@@ -542,6 +542,11 @@ ul, ol {
     align-self: flex-start;
 }
 
+.publication-card-horizontal .publication-cover-wide {
+    width: 200px;
+    max-width: 200px;
+}
+
 .publication-card-horizontal .publication-icon {
     height: 100px;
 }
