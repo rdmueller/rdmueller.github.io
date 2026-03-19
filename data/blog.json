@@ -62,7 +62,7 @@
     "excerpt": "Spec-Driven Development: PRD, Architektur, Tests, dann Code. Der Workflow für produktionsreife AI-generierte Software.",
     "url": "blog/show-me-the-code.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/show-me-the-code.png",
     "tags": [
       "AI",
       "Software Architecture",
@@ -76,7 +76,7 @@
     "excerpt": "Semantic Contracts erweitern Semantic Anchors um projektspezifisches Wissen. AGENTS.md als Vertrag zwischen Mensch und AI.",
     "url": "blog/semantic-contracts.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/semantic-contracts.png",
     "tags": [
       "AI",
       "Semantic Anchors"
@@ -103,7 +103,7 @@
     "excerpt": "Die klassische IDE verliert ihre Relevanz. AI-Agenten brauchen keine GUI, sie brauchen CLI-Tools und Feedback-Loops.",
     "url": "blog/ide-is-dead.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/ide-is-dead.png",
     "tags": [
       "AI",
       "Development Tools",
@@ -117,7 +117,7 @@
     "excerpt": "Was Staubsauger-Philosophie mit Duck Typing zu tun hat: Wenn es funktioniert, ist es richtig.",
     "url": "blog/vacuum-cleaner-duck-typing.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/vacuum-cleaner-duck-typing.png",
     "tags": [
       "Philosophy",
       "Programming"
@@ -130,7 +130,7 @@
     "excerpt": "Die Sokratische Methode als Semantic Anchor: LLMs stellen bessere Fragen statt vorschnelle Antworten zu geben.",
     "url": "blog/socratic-method-anchor.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/socratic-method-anchor.png",
     "tags": [
       "AI",
       "Semantic Anchors"
@@ -143,7 +143,7 @@
     "excerpt": "Architektur-Diagramme als Code in draw.io: Versionierbar, diffbar, automatisiert generierbar.",
     "url": "blog/bausteinsicht-drawio.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/bausteinsicht-drawio.png",
     "tags": [
       "Software Architecture",
       "draw.io",
@@ -157,7 +157,7 @@
     "excerpt": "Semantic Anchors erreicht 200 GitHub-Stars in 10 Tagen. Was funktioniert hat und warum.",
     "url": "blog/200-stars.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/200-stars.png",
     "tags": [
       "AI",
       "Semantic Anchors",
@@ -171,7 +171,7 @@
     "excerpt": "Ein 200-Zeilen System-Prompt vs. fünf Wörter mit Semantic Anchors. Weniger ist mehr, wenn die Anker stimmen.",
     "url": "blog/200-line-prompt.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/200-line-prompt.png",
     "tags": [
       "AI",
       "Semantic Anchors",
@@ -185,7 +185,7 @@
     "excerpt": "Claude Code in einem DevContainer ausführen: Reproduzierbare, isolierte Entwicklungsumgebung für AI-Coding.",
     "url": "blog/devcontainer-claude.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/devcontainer-claude.png",
     "tags": [
       "AI",
       "DevContainer",
@@ -199,7 +199,7 @@
     "excerpt": "Warum 'Agent' als Semantic Anchor versagt: Jedes LLM versteht etwas anderes darunter. Ein Beispiel für schwache Anker.",
     "url": "blog/agent-worst-anchor.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/agent-worst-anchor.png",
     "tags": [
       "AI",
       "Semantic Anchors"
@@ -212,7 +212,7 @@
     "excerpt": "Prompt Engineering ist nicht der Schlüssel. Wer Software-Architektur versteht, schreibt automatisch bessere Prompts.",
     "url": "blog/best-vibe-coder.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/best-vibe-coder.png",
     "tags": [
       "AI",
       "Vibe Coding",
@@ -254,7 +254,7 @@
     "excerpt": "Die Semantic Anchors Website ist jetzt eine interaktive Web-App mit Suche, Filtern und Qualitätsbewertung.",
     "url": "blog/semantic-anchors-webapp.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/semantic-anchors-webapp.png",
     "tags": [
       "AI",
       "Semantic Anchors",
