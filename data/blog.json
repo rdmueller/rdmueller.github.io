@@ -207,20 +207,6 @@
     "lang": "en"
   },
   {
-    "title": "The Best Vibe-Coder Never Took a Prompt Engineering Course",
-    "date": "2026-02-25",
-    "excerpt": "Prompt Engineering ist nicht der Schlüssel. Wer Software-Architektur versteht, schreibt automatisch bessere Prompts.",
-    "url": "blog/best-vibe-coder.html",
-    "linkedin": "",
-    "icon": "images/blog/linkedin/best-vibe-coder.jpg",
-    "tags": [
-      "AI",
-      "Vibe Coding",
-      "Software Architecture"
-    ],
-    "lang": "en"
-  },
-  {
     "title": "Documentation-as-Code Training with Socreatory",
     "date": "2026-02-24",
     "excerpt": "Neues Docs-as-Code Training bei Socreatory: arc42, AsciiDoc, docToolchain, CI/CD-Pipelines für Dokumentation.",
