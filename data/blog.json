@@ -268,7 +268,7 @@
     "excerpt": "TLDR als Semantic Anchor getestet: Aktiviert es zuverlässig dasselbe Verhalten in verschiedenen LLMs?",
     "url": "blog/tldr-semantic-anchor.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/tldr-semantic-anchor.jpg",
     "tags": [
       "AI",
       "Semantic Anchors"
