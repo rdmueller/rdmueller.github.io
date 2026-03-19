@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ein 200-Zeilen System-Prompt vs. fünf Wörter mit Semantic Anchors. Weniger ist mehr, wenn die Anker stimmen.">
+    <link rel="canonical" href="200-line-prompt.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="200-Line Prompt vs. 5 Words: Why Semantic Anchors Win | Ralf D. Müller">
+    <meta property="og:description" content="Ein 200-Zeilen System-Prompt vs. fünf Wörter mit Semantic Anchors. Weniger ist mehr, wenn die Anker stimmen.">
+    <meta property="og:image" content="../../images/ralf-mueller.jpg">
+    <title>200-Line Prompt vs. 5 Words: Why Semantic Anchors Win | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">2. März 2026</span>
+                </div>
+                <h1>200-Line Prompt vs. 5 Words: Why Semantic Anchors Win</h1>
+            </header>
+
+            <div class="article-content">
+                <p>Why your 200-line prompt might be worse than five words</p>
+                <p>I keep seeing the same pattern: someone asks an LLM to generate a detailed system prompt for coding assistance. The result is a 200-line wall of instructions -- "always write tests before implementation, use mock objects to isolate each unit from its dependencies, start from the outermost layer and work inward..."</p>
+                <p>Then they paste that into their next session and wonder why the results are mediocre.</p>
+                <p>Here's what I'd write instead: "Use TDD, London School."</p>
+                <p>Five words. Better results. Because the model doesn't just follow a checklist -- it activates the entire concept: Freeman &amp; Pryce, outside-in development, interaction-based verification, walking skeleton. The 200-line prompt tries to describe what the model already knows.</p>
+                <p>This led me to curate Semantic Anchors -- an open-source catalog of 52 precision terms that reliably activate rich knowledge domains in LLMs.</p>
+                <p>https://llm-coding.github.io/Semantic-Anchors/</p>
+                <p>---</p>
+                <p>Why this works</p>
+                <p>A good semantic anchor is a compression heuristic: maximum context transfer with minimal tokens. But not every term qualifies. Four quality criteria separate anchors from buzzwords:</p>
+                <p>- Precise -- references a specific, well-bounded body of knowledge - Rich -- activates interconnected concepts, not just a single instruction - Consistent -- different users get similar results - Attributable -- traceable to concrete sources</p>
+                <p>"Best practices" is not an anchor. "SOLID Principles" is one.</p>
+                <p>---</p>
+                <p>Where it gets interesting: layering anchors</p>
+                <p>"Create an arc42 architecture documentation with ADRs according to Nygard. Add a 3-point (-1,0,1) Pugh Matrix to the ADRs."</p>
+                <p>Four anchors working together: arc42 provides structure, ADR the decision format, Pugh Matrix the evaluation method -- and "3-point (-1,0,1)" refines the variant. This isn't prompt engineering. This is professional communication with a machine that understands domain language.</p>
+                <p>---</p>
+                <p>The limits</p>
+                <p>A discussion with Edmund Siegfried Haselwanter challenged me on the failure modes. His core point: anchors are compression, not replacement for precise instructions.</p>
+                <p>When your understanding diverges from the mainstream, you need to make that explicit. Example: you follow TDD London School but use Testcontainers instead of mocks for infrastructure boundaries. The model won't guess that.</p>
+                <p>We converged on a layered approach:</p>
+                <p>1. Set the anchor as baseline 2. Make the delta explicit -- where you diverge from the mainstream 3. Verify -- test whether the model understands the concept as you intend it</p>
+                <p>Same principle as any professional communication: assume shared vocabulary, make deviations explicit, verify understanding.</p>
+                <p>The catalog is open source: https://github.com/LLM-Coding/Semantic-Anchors</p>
+                <p>Do you consciously use semantic anchors in your work with LLMs?</p>
+                <p>Thanks to Edmund Siegfried Haselwanter for sparking this post.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">Prompting</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

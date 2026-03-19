@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.">
+    <link rel="canonical" href="eichhorsts-principle.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding | Ralf D. Müller">
+    <meta property="og:description" content="Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.">
+    <meta property="og:image" content="../../images/ralf-mueller.jpg">
+    <title>Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">18. März 2026</span>
+                </div>
+                <h1>Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding</h1>
+            </header>
+
+            <div class="article-content">
+                <p>Claude Shannon proved in 1948 that a noisy channel can deliver error-free transmission if you invest enough redundancy. Ingo Eichhorst applied this to LLM agents in his JavaLand keynote last week. I think he is right.</p>
+                <p>An LLM is not a deterministic tool. It is a noisy, non-deterministic channel. It hallucinates. It loses context. It is sometimes plain wrong. But an agent in a loop corrects itself. The compiler reports line 5. The LLM reads the error. It fixes the code. The build passes. That is not magic, that is error correction. Exactly like Shannon described.</p>
+                <p>Different tests correct different error classes. The compiler catches syntax errors. Unit tests catch logic errors. BDD tests catch domain errors. Each layer increases the reliability of the channel. The token cost is the redundancy overhead, the price for correctness on an unreliable channel.</p>
+                <p>The consequence CTOs need to understand: if the complexity of a specification exceeds the capacity of the LLM, more tokens will not help. The system is structurally overwhelmed. The answer is not better prompts. The answer is smaller specifications, clearer boundaries, and better tests.</p>
+                <p>Shannon's proof took 60 years before engineers translated it into real codes. We are at the beginning of translating Eichhorst's Principle into software processes.</p>
+                <p>Anyone at JavaLand who saw the talk? Is the agentic loop the turbo code of our time?</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Software Engineering</span>
+                    <span class="blog-tag">Theory</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,12 +1,320 @@
 [
   {
+    "title": "Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding",
+    "date": "2026-03-18",
+    "excerpt": "Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.",
+    "url": "blog/eichhorsts-principle.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Software Engineering",
+      "Theory"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Closed Loop vs. Open Loop: Why the Feedback Loop Is Everything",
+    "date": "2026-03-18",
+    "excerpt": "Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.",
+    "url": "blog/closed-loop-coding.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Software Engineering",
+      "Testing"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "SOLID: Semantic Anchors Video Series Episode 2",
+    "date": "2026-03-17",
+    "excerpt": "SOLID als Semantic Anchor: Wie fünf Buchstaben ein ganzes Architekturparadigma in LLMs aktivieren.",
+    "url": "blog/solid-semantic-anchor.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "Video",
+      "SOLID"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Vibe Coding Risk Radar: First Community Contribution",
+    "date": "2026-03-16",
+    "excerpt": "Erster Community-Beitrag zum Vibe-Coding Risk Radar: Maria Virk ergänzt das Framework um neue Perspektiven.",
+    "url": "blog/risk-radar-community.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Risk Management",
+      "Open Source"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Show Me the Code: Spec-Driven Development with AI",
+    "date": "2026-03-13",
+    "excerpt": "Spec-Driven Development: PRD, Architektur, Tests, dann Code. Der Workflow für produktionsreife AI-generierte Software.",
+    "url": "blog/show-me-the-code.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Software Architecture",
+      "Workflow"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Semantic Contracts: Private vs. Public Knowledge",
+    "date": "2026-03-12",
+    "excerpt": "Semantic Contracts erweitern Semantic Anchors um projektspezifisches Wissen. AGENTS.md als Vertrag zwischen Mensch und AI.",
+    "url": "blog/semantic-contracts.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Semantic Anchors Video Series",
+    "date": "2026-03-11",
+    "excerpt": "Neue Video-Serie zu Semantic Anchors: Konzept, Anwendung, Katalog. Auf YouTube und der Semantic Anchors Website.",
+    "url": "blog/semantic-anchors-video.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "Video"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "The IDE Is Dead",
+    "date": "2026-03-10",
+    "excerpt": "Die klassische IDE verliert ihre Relevanz. AI-Agenten brauchen keine GUI, sie brauchen CLI-Tools und Feedback-Loops.",
+    "url": "blog/ide-is-dead.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Development Tools",
+      "Opinion"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Vacuum Cleaner Philosophy: Duck Typing in Real Life",
+    "date": "2026-03-10",
+    "excerpt": "Was Staubsauger-Philosophie mit Duck Typing zu tun hat: Wenn es funktioniert, ist es richtig.",
+    "url": "blog/vacuum-cleaner-duck-typing.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "Philosophy",
+      "Programming"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Socratic Method as a Semantic Anchor",
+    "date": "2026-03-08",
+    "excerpt": "Die Sokratische Methode als Semantic Anchor: LLMs stellen bessere Fragen statt vorschnelle Antworten zu geben.",
+    "url": "blog/socratic-method-anchor.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Bausteinsicht: Architecture as Code with draw.io",
+    "date": "2026-03-05",
+    "excerpt": "Architektur-Diagramme als Code in draw.io: Versionierbar, diffbar, automatisiert generierbar.",
+    "url": "blog/bausteinsicht-drawio.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "Software Architecture",
+      "draw.io",
+      "Docs-as-Code"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "200 Stars on GitHub in 10 Days",
+    "date": "2026-03-04",
+    "excerpt": "Semantic Anchors erreicht 200 GitHub-Stars in 10 Tagen. Was funktioniert hat und warum.",
+    "url": "blog/200-stars.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "Open Source"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "200-Line Prompt vs. 5 Words: Why Semantic Anchors Win",
+    "date": "2026-03-02",
+    "excerpt": "Ein 200-Zeilen System-Prompt vs. fünf Wörter mit Semantic Anchors. Weniger ist mehr, wenn die Anker stimmen.",
+    "url": "blog/200-line-prompt.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "Prompting"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "devcontainer exec claude",
+    "date": "2026-03-01",
+    "excerpt": "Claude Code in einem DevContainer ausführen: Reproduzierbare, isolierte Entwicklungsumgebung für AI-Coding.",
+    "url": "blog/devcontainer-claude.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "DevContainer",
+      "Claude Code"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "\"Agent\" Is the Worst Semantic Anchor in AI",
+    "date": "2026-02-25",
+    "excerpt": "Warum 'Agent' als Semantic Anchor versagt: Jedes LLM versteht etwas anderes darunter. Ein Beispiel für schwache Anker.",
+    "url": "blog/agent-worst-anchor.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "The Best Vibe-Coder Never Took a Prompt Engineering Course",
+    "date": "2026-02-25",
+    "excerpt": "Prompt Engineering ist nicht der Schlüssel. Wer Software-Architektur versteht, schreibt automatisch bessere Prompts.",
+    "url": "blog/best-vibe-coder.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Vibe Coding",
+      "Software Architecture"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Documentation-as-Code Training with Socreatory",
+    "date": "2026-02-24",
+    "excerpt": "Neues Docs-as-Code Training bei Socreatory: arc42, AsciiDoc, docToolchain, CI/CD-Pipelines für Dokumentation.",
+    "url": "blog/docs-as-code-training.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "Documentation",
+      "Training",
+      "docToolchain"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Risk Radar Skills: The Automation Layer",
+    "date": "2026-02-17",
+    "excerpt": "Claude Code Skills automatisieren den Vibe-Coding Risk Radar Workflow: Risikobewertung direkt im Entwicklungsprozess.",
+    "url": "blog/risk-radar-skills.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Risk Management",
+      "Claude Code"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Semantic Anchors Goes Interactive",
+    "date": "2026-02-13",
+    "excerpt": "Die Semantic Anchors Website ist jetzt eine interaktive Web-App mit Suche, Filtern und Qualitätsbewertung.",
+    "url": "blog/semantic-anchors-webapp.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "Open Source"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Is TLDR a Semantic Anchor?",
+    "date": "2026-02-12",
+    "excerpt": "TLDR als Semantic Anchor getestet: Aktiviert es zuverlässig dasselbe Verhalten in verschiedenen LLMs?",
+    "url": "blog/tldr-semantic-anchor.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Semantic Anchors"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "9 Hours, 65 Images: What I Learned About AI Image Generation",
+    "date": "2026-02-10",
+    "excerpt": "Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.",
+    "url": "blog/ai-image-generation.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Image Generation",
+      "OpenAI"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Vibe-Coding Risk Radar: MECE Risk Framework for AI-Generated Code",
+    "date": "2026-02-10",
+    "excerpt": "5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.",
+    "url": "blog/vibe-coding-risk-radar.html",
+    "linkedin": "",
+    "icon": "",
+    "tags": [
+      "AI",
+      "Risk Management",
+      "Vibe Coding"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Your Code Is Worthless: What Actually Protects Your Business in the AI Age",
     "date": "2026-02-02",
     "excerpt": "AI kann 80% Deines sorgfältig gehüteten Codes in Tagen nachbauen. Was schützt Dein Geschäft wirklich? Network Effects, proprietäre Daten, operative Exzellenz und Kundenvertrauen.",
     "url": "blog/code-is-worthless.html",
     "linkedin": "https://www.linkedin.com/pulse/your-code-worthless-what-actually-protects-business-ai-ralf-d-m%C3%BCller-h1ndf/",
     "icon": "images/blog/linkedin/code-is-worthless.jpg",
-    "tags": ["AI", "Business", "Strategy"],
+    "tags": [
+      "AI",
+      "Business",
+      "Strategy"
+    ],
     "lang": "en"
   },
   {
@@ -16,7 +324,11 @@
     "url": "blog/raspberry-pi-llm.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7423667299414601728/",
     "icon": "images/blog/linkedin/raspberry-pi-llm.jpg",
-    "tags": ["AI", "Raspberry Pi", "LLM"],
+    "tags": [
+      "AI",
+      "Raspberry Pi",
+      "LLM"
+    ],
     "lang": "en"
   },
   {
@@ -26,7 +338,11 @@
     "url": "blog/doctoolchain-rb.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7422904560005865472/",
     "icon": "images/blog/linkedin/doctoolchain-rb.jpg",
-    "tags": ["docToolchain", "AI", "Documentation"],
+    "tags": [
+      "docToolchain",
+      "AI",
+      "Documentation"
+    ],
     "lang": "en"
   },
   {
@@ -36,7 +352,11 @@
     "url": "blog/ai-license-paradox.html",
     "linkedin": "https://www.linkedin.com/pulse/person-rights-responsibility-why-ai-contributors-break-ralf-d-m%C3%BCller-m2k9f/",
     "icon": "images/blog/linkedin/ai-license-paradox.jpg",
-    "tags": ["AI", "Open Source", "Legal"],
+    "tags": [
+      "AI",
+      "Open Source",
+      "Legal"
+    ],
     "lang": "en"
   },
   {
@@ -46,7 +366,12 @@
     "url": "blog/dacli-llm-tool.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7420718516548419584/",
     "icon": "images/blog/linkedin/dacli-llm-tool.jpg",
-    "tags": ["dacli", "AI", "Documentation", "Tools"],
+    "tags": [
+      "dacli",
+      "AI",
+      "Documentation",
+      "Tools"
+    ],
     "lang": "en"
   },
   {
@@ -56,7 +381,11 @@
     "url": "blog/pyramid-principle.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7419699566603603968/",
     "icon": "images/blog/linkedin/pyramid-principle.jpg",
-    "tags": ["AI", "Semantic Anchors", "Communication"],
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "Communication"
+    ],
     "lang": "en"
   },
   {
@@ -66,7 +395,11 @@
     "url": "blog/semantic-anchors-catalog.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7393922423005319169/",
     "icon": "images/blog/semantic-anchors-catalog.svg",
-    "tags": ["AI", "Semantic Anchors", "Open Source"],
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "Open Source"
+    ],
     "lang": "en"
   },
   {
@@ -76,7 +409,11 @@
     "url": "blog/semantic-anchors.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/",
     "icon": "images/blog/semantic-anchors.svg",
-    "tags": ["AI", "Semantic Anchors", "TDD"],
+    "tags": [
+      "AI",
+      "Semantic Anchors",
+      "TDD"
+    ],
     "lang": "de"
   },
   {
@@ -86,7 +423,11 @@
     "url": "blog/llms-kreativ.html",
     "linkedin": "",
     "icon": "images/blog/linkedin/llms-kreativ.jpg",
-    "tags": ["AI", "Creativity", "Philosophy"],
+    "tags": [
+      "AI",
+      "Creativity",
+      "Philosophy"
+    ],
     "lang": "de"
   },
   {
@@ -96,7 +437,11 @@
     "url": "blog/ki-vs-entwickler.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7332026445587779586/",
     "icon": "images/blog/linkedin/ki-vs-entwickler.jpg",
-    "tags": ["AI", "Development", "Opinion"],
+    "tags": [
+      "AI",
+      "Development",
+      "Opinion"
+    ],
     "lang": "de"
   },
   {
@@ -106,7 +451,11 @@
     "url": "blog/alternative-sicht-ki.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7292441780266905600/",
     "icon": "images/blog/linkedin/alternative-sicht-ki.jpg",
-    "tags": ["AI", "Europe", "Opinion"],
+    "tags": [
+      "AI",
+      "Europe",
+      "Opinion"
+    ],
     "lang": "de"
   },
   {
@@ -116,7 +465,11 @@
     "url": "blog/claude-code-raspberry.html",
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7402356844729393154/",
     "icon": "images/blog/claude-code-raspberry.svg",
-    "tags": ["AI", "Raspberry Pi", "Home Automation"],
+    "tags": [
+      "AI",
+      "Raspberry Pi",
+      "Home Automation"
+    ],
     "lang": "de"
   }
 ]

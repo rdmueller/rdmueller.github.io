@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Warum 'Agent' als Semantic Anchor versagt: Jedes LLM versteht etwas anderes darunter. Ein Beispiel für schwache Anker.">
+    <link rel="canonical" href="agent-worst-anchor.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content=""Agent" Is the Worst Semantic Anchor in AI | Ralf D. Müller">
+    <meta property="og:description" content="Warum 'Agent' als Semantic Anchor versagt: Jedes LLM versteht etwas anderes darunter. Ein Beispiel für schwache Anker.">
+    <meta property="og:image" content="../../images/ralf-mueller.jpg">
+    <title>"Agent" Is the Worst Semantic Anchor in AI | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">25. Februar 2026</span>
+                </div>
+                <h1>"Agent" Is the Worst Semantic Anchor in AI</h1>
+            </header>
+
+            <div class="article-content">
+                <p>🤖 "Agent" — the worst Semantic Anchor in AI right now.</p>
+                <p>Ask a developer: "What's an Agent?" → An LLM with tool access that can autonomously complete tasks.</p>
+                <p>Ask a manager: "What's an Agent?" → That magic thing that solves all my problems and replaces my employees. 😄</p>
+                <p>Ask a customer service lead: "What's an Agent?" → The person picking up the phone in our call center.</p>
+                <p>Same word. Three completely different mental models. And everyone in the room assumes they're talking about the same thing.</p>
+                <p>This is exactly why "Agent" fails as a Semantic Anchor.</p>
+                <p>Semantic Anchors work because they tap into well-defined concepts from training data — terms so precisely established that an LLM immediately retrieves the correct definition. Think "TDD, London School" or "ADRs according to Nygard". One phrase, one meaning, zero ambiguity.</p>
+                <p>"Agent" is the opposite: a term hijacked by hype, stretched across disciplines, and carrying different baggage depending on who's in the room.</p>
+                <p>Compare it to "DRY" — short for "Don't Repeat Yourself". Yes, it also means "not wet" in English. But two signals make it a strong anchor: the capitalization (DRY vs. dry) and the software development context. The LLM resolves this correctly every time.</p>
+                <p>"Agent" has no such saving grace. The context doesn't help, because every domain claims it.</p>
+                <p>So what's the fix?</p>
+                <p>Define it explicitly in your team's context — for example in an `agents.md` file that every AI session loads:</p>
+                <p>&gt; "When we say Agent, we mean an LLM-based system with access to tools that can autonomously complete multi-step tasks — not a human, not a magic wand."</p>
+                <p>That's not a workaround. That's the whole point of project-specific Semantic Anchors: closing the communication gap that's otherwise filled by intuition and assumption.</p>
+                <p>The word "Agent" isn't broken. It just needs a definition.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Semantic Anchors</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

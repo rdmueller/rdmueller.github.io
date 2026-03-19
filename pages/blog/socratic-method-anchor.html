@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Die Sokratische Methode als Semantic Anchor: LLMs stellen bessere Fragen statt vorschnelle Antworten zu geben.">
+    <link rel="canonical" href="socratic-method-anchor.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Socratic Method as a Semantic Anchor | Ralf D. Müller">
+    <meta property="og:description" content="Die Sokratische Methode als Semantic Anchor: LLMs stellen bessere Fragen statt vorschnelle Antworten zu geben.">
+    <meta property="og:image" content="../../images/ralf-mueller.jpg">
+    <title>Socratic Method as a Semantic Anchor | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">8. März 2026</span>
+                </div>
+                <h1>Socratic Method as a Semantic Anchor</h1>
+            </header>
+
+            <div class="article-content">
+                <p>How to use the Socratic Method as a Semantic Anchor for requirements</p>
+                <p>Most developers start a new project by writing requirements. The problem: you're documenting assumptions you haven't questioned yet.</p>
+                <p>Try this instead:</p>
+                <p>"Use the Socratic Method to help me clarify requirements for [your project]."</p>
+                <p>One sentence. The model won't list requirements -- it will ask questions that expose your blind spots. It activates the full concept: targeted questioning, challenging assumptions, productive use of not-knowing, dialogue-driven clarity.</p>
+                <p>---</p>
+                <p>Layering anchors makes it stronger</p>
+                <p>"Use the Socratic Method combined with MECE to clarify requirements for [project]. Challenge my assumptions before documenting anything."</p>
+                <p>Two anchors working together: - Socratic Method -- asks instead of answers - MECE -- ensures questions cover all areas without overlap</p>
+                <p>The result: structured questioning that systematically uncovers what you don't know yet.</p>
+                <p>---</p>
+                <p>A concrete example</p>
+                <p>Me: "Use the Socratic Method to help me clarify requirements for a CLI tool that generates draw.io diagrams from a JSON architecture model."</p>
+                <p>The model asked: - "Who is the primary user -- an architect defining the model, or a developer consuming it?" - "When you say 'generates', do you mean one-time export or continuous sync?" - "What happens when someone edits the diagram in draw.io -- is that a valid workflow or a corruption?"</p>
+                <p>That third question uncovered a requirement I hadn't considered: bidirectional sync. It became the core feature of the tool.</p>
+                <p>---</p>
+                <p>The delta pattern</p>
+                <p>Add constraints to prevent question overload:</p>
+                <p>"Use the Socratic Method to clarify requirements. Focus on: stakeholder conflicts, implicit assumptions, and boundary conditions. Don't ask more than 3 questions at a time."</p>
+                <p>The delta ("max 3 questions") keeps the dialogue productive instead of overwhelming.</p>
+                <p>This follows the Anchor, Delta, Verify pattern: 1. Set the anchor -- activate the established concept 2. Make the delta explicit -- constrain to your context 3. Verify -- check if the questions actually expose assumptions</p>
+                <p>---</p>
+                <p>"Socratic Method" is one of 52 curated Semantic Anchors -- precision terms that reliably activate rich knowledge domains in LLMs: https://github.com/LLM-Coding/Semantic-Anchors</p>
+                <p>What's your go-to technique for uncovering hidden requirements?</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Semantic Anchors</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semantic Contracts erweitern Semantic Anchors um projektspezifisches Wissen. AGENTS.md als Vertrag zwischen Mensch und AI.">
+    <link rel="canonical" href="semantic-contracts.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Semantic Contracts: Private vs. Public Knowledge | Ralf D. Müller">
+    <meta property="og:description" content="Semantic Contracts erweitern Semantic Anchors um projektspezifisches Wissen. AGENTS.md als Vertrag zwischen Mensch und AI.">
+    <meta property="og:image" content="../../images/ralf-mueller.jpg">
+    <title>Semantic Contracts: Private vs. Public Knowledge | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">12. März 2026</span>
+                </div>
+                <h1>Semantic Contracts: Private vs. Public Knowledge</h1>
+            </header>
+
+            <div class="article-content">
+                <p>LLMs understand your code. But do they understand your language?</p>
+                <p>Tell an AI "write arc42 documentation" and it knows exactly what to do. Twelve sections, from context and constraints to deployment view. arc42 is a Semantic Anchor: a public, well-defined term that activates an entire body of knowledge in the model. No explanation needed.</p>
+                <p>Now tell it "write an operations manual." What format? What sections? What level of detail? The model has seen thousands of operations manuals during training, all structured differently. It will produce something. But not what your team expects, because your internal template exists nowhere in the training data. It only exists in the heads of your team.</p>
+                <p>That's the gap between public and private knowledge. Semantic Anchors work because they reference concepts the model already knows. But your team's conventions, templates, and definitions? Those need something else.</p>
+                <p>We call them Semantic Contracts. A contract says: "An operations manual in our company follows this template: overview, dependencies, runbooks, escalation paths, SLA definitions." The model now knows exactly what you mean. Not because it learned it from the internet, but because you defined it explicitly for this context. No room for interpretation.</p>
+                <p>Technically, we implement these as skills in an LLM workflow. They load exactly when they're needed. What always applies goes into the core. What's only relevant for infrastructure questions stays there. Precise building blocks the model only sees when it needs them.</p>
+                <p>The interesting part isn't the technology. It's the discipline behind it. When you have to define your terms precisely for a model, you start thinking more clearly about your own language. Ambiguities that the team has been carrying around for years suddenly surface. Not because the model finds them, but because you have to write them down.</p>
+                <p>Maybe that's the real benefit.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Semantic Anchors</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

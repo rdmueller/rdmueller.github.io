@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.">
+    <link rel="canonical" href="vibe-coding-risk-radar.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Vibe-Coding Risk Radar: MECE Risk Framework for AI-Generated Code | Ralf D. Müller">
+    <meta property="og:description" content="5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.">
+    <meta property="og:image" content="../../images/ralf-mueller.jpg">
+    <title>Vibe-Coding Risk Radar: MECE Risk Framework for AI-Generated Code | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">10. Februar 2026</span>
+                </div>
+                <h1>Vibe-Coding Risk Radar: MECE Risk Framework for AI-Generated Code</h1>
+            </header>
+
+            <div class="article-content">
+                <p>"Just vibe-code it" is the new "just ship it."</p>
+                <p>But here's the uncomfortable truth: Not all code carries the same risk. CSS for a landing page? Go ahead, let the AI write it. Auth module for a fintech app? That's a completely different story.</p>
+                <p>The problem: Most teams treat AI-generated code as either "always review everything" (doesn't scale) or "never review anything" (negligent for critical code).</p>
+                <p>We built an open-source tool to solve this: The Vibe-Coding Risk Radar.</p>
+                <p>5 MECE dimensions (Code Type, Language Safety, Deployment Context, Data Sensitivity, Blast Radius) classify risk across orthogonal axes. The highest dimension determines the overall tier -- inspired by IEC 61508's "highest applicable SIL" principle.</p>
+                <p>4 cumulative tiers map to concrete mitigations: - Tier 1: Automated gates only (linters, SAST, dependency checks) - Tier 2: Extended assurance (AI code review, integration tests) - Tier 3: Mandatory human review, threat modeling, penetration testing - Tier 4: Severely restrict AI use, independent verification</p>
+                <p>The key insight: The answer to "Should we review AI code?" is neither yes nor no. It's "it depends" -- and now you have a framework to decide.</p>
+                <p>Built with Semantic Anchors -- well-defined terms that activate specific LLM knowledge domains. The MECE principle (Mutually Exclusive, Collectively Exhaustive) is one such anchor: it guided GPT and Claude to produce non-overlapping, complete risk categories backed by 30+ verified references.</p>
+                <p>Try it yourself (interactive, bilingual DE/EN): https://llm-coding.github.io/vibe-coding-risk-radar/</p>
+                <p>Source + full AsciiDoc documentation: https://github.com/LLM-Coding/vibe-coding-risk-radar</p>
+                <p>Semantic Anchors framework: https://github.com/LLM-Coding/Semantic-Anchors</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Risk Management</span>
+                    <span class="blog-tag">Vibe Coding</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

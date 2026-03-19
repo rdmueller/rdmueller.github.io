@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.">
+    <link rel="canonical" href="ai-image-generation.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="9 Hours, 65 Images: What I Learned About AI Image Generation | Ralf D. Müller">
+    <meta property="og:description" content="Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.">
+    <meta property="og:image" content="../../images/ralf-mueller.jpg">
+    <title>9 Hours, 65 Images: What I Learned About AI Image Generation | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">10. Februar 2026</span>
+                </div>
+                <h1>9 Hours, 65 Images: What I Learned About AI Image Generation</h1>
+            </header>
+
+            <div class="article-content">
+                <p>9 hours. 65 images. 13 dollars. And the breakthrough came at the very end.</p>
+                <p>I'm building a Claude Code skill that automatically generates images for my LinkedIn posts. In the style of my ChatGPT illustrations -- featuring me and my cat Elfi.</p>
+                <p>The problem: The OpenAI API consistently produced worse images than ChatGPT. Same reference photos, same model (gpt-image-1.5) -- but the API images looked like generic stock illustrations.</p>
+                <p>After 7 different approaches and a lot of trial and error, the key insight:</p>
+                <p>The problem isn't the image model. The problem is the middleman.</p>
+                <p>The Responses API sends your reference images to GPT-5.2, which "understands" them and then forwards a text prompt to the image model. Visual details get lost in translation. In one case, GPT-5.2 even wrote "generic, not a real person" in its internal prompt -- despite receiving reference photos.</p>
+                <p>The solution: The Images Edit API. It sends reference images directly to the image model, no middleman. Result: All 3 variants showed me with glasses and gray beard, Elfi as a Ragdoll with blue eyes. Consistent. Recognizable.</p>
+                <p>My three practical tips for AI image generation via API:</p>
+                <p>1. Use images.edit instead of the Responses API when you have reference images 2. Log the revised_prompt field -- it reveals what the orchestrator actually sends to the image model 3. Avoid textual style descriptions alongside visual references -- text overrides images</p>
+                <p>The header image of this post? Fully API-generated. No ChatGPT, no manual editing.</p>
+                <p>If you're interested in the technical details: I'm happy to share the full report with all 65 images, code examples, and API comparisons.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Image Generation</span>
+                    <span class="blog-tag">OpenAI</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
