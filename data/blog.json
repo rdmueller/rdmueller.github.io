@@ -5,7 +5,7 @@
     "excerpt": "Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.",
     "url": "blog/eichhorsts-principle.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/eichhorsts-principle.png",
     "tags": [
       "AI",
       "Software Engineering",
@@ -19,7 +19,7 @@
     "excerpt": "Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.",
     "url": "blog/closed-loop-coding.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/closed-loop-coding.png",
     "tags": [
       "AI",
       "Software Engineering",
@@ -48,7 +48,7 @@
     "excerpt": "Erster Community-Beitrag zum Vibe-Coding Risk Radar: Maria Virk ergänzt das Framework um neue Perspektiven.",
     "url": "blog/risk-radar-community.html",
     "linkedin": "",
-    "icon": "",
+    "icon": "images/blog/linkedin/risk-radar-community.png",
     "tags": [
       "AI",
       "Risk Management",
