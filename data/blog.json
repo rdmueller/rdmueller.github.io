@@ -1,5 +1,19 @@
 [
   {
+    "title": "Closed Loop vs. Open Loop: Why the Feedback Loop Is Everything",
+    "date": "2026-03-19",
+    "excerpt": "Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.",
+    "url": "blog/closed-loop-coding.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/closed-loop-coding.png",
+    "tags": [
+      "AI",
+      "Software Engineering",
+      "Testing"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding",
     "date": "2026-03-18",
     "excerpt": "Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.",
@@ -10,20 +24,6 @@
       "AI",
       "Software Engineering",
       "Theory"
-    ],
-    "lang": "en"
-  },
-  {
-    "title": "Closed Loop vs. Open Loop: Why the Feedback Loop Is Everything",
-    "date": "2026-03-18",
-    "excerpt": "Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.",
-    "url": "blog/closed-loop-coding.html",
-    "linkedin": "",
-    "icon": "images/blog/linkedin/closed-loop-coding.png",
-    "tags": [
-      "AI",
-      "Software Engineering",
-      "Testing"
     ],
     "lang": "en"
   },
