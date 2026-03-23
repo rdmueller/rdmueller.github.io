@@ -7,10 +7,9 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/arc42-ai-cockpit.png",
     "tags": [
+      "AI",
       "Software Architecture",
-      "arc42",
-      "GenAI",
-      "Agentic Coding"
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -23,8 +22,8 @@
     "icon": "images/blog/linkedin/closed-loop-coding.png",
     "tags": [
       "AI",
-      "Software Engineering",
-      "Testing"
+      "Testing",
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -37,8 +36,8 @@
     "icon": "images/blog/linkedin/eichhorsts-principle.png",
     "tags": [
       "AI",
-      "Software Engineering",
-      "Theory"
+      "AI Coding",
+      "Testing"
     ],
     "lang": "en"
   },
@@ -51,9 +50,7 @@
     "icon": "images/blog/linkedin/solid-semantic-anchor.jpg",
     "tags": [
       "AI",
-      "Semantic Anchors",
-      "Video",
-      "SOLID"
+      "Semantic Anchors"
     ],
     "lang": "en"
   },
@@ -66,8 +63,7 @@
     "icon": "images/blog/linkedin/risk-radar-community.png",
     "tags": [
       "AI",
-      "Risk Management",
-      "Open Source"
+      "Testing"
     ],
     "lang": "en"
   },
@@ -81,7 +77,7 @@
     "tags": [
       "AI",
       "Software Architecture",
-      "Workflow"
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -107,8 +103,7 @@
     "icon": "images/blog/linkedin/semantic-anchors-video.jpg",
     "tags": [
       "AI",
-      "Semantic Anchors",
-      "Video"
+      "Semantic Anchors"
     ],
     "lang": "en"
   },
@@ -121,7 +116,7 @@
     "icon": "images/blog/linkedin/ide-is-dead.png",
     "tags": [
       "AI",
-      "Development Tools",
+      "Tools",
       "Opinion"
     ],
     "lang": "en"
@@ -134,8 +129,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/vacuum-cleaner-duck-typing.png",
     "tags": [
-      "Philosophy",
-      "Programming"
+      "Opinion"
     ],
     "lang": "en"
   },
@@ -161,8 +155,8 @@
     "icon": "images/blog/linkedin/bausteinsicht-drawio.jpg",
     "tags": [
       "Software Architecture",
-      "draw.io",
-      "Docs-as-Code"
+      "Documentation",
+      "Tools"
     ],
     "lang": "en"
   },
@@ -175,8 +169,7 @@
     "icon": "images/blog/linkedin/200-stars.png",
     "tags": [
       "AI",
-      "Semantic Anchors",
-      "Open Source"
+      "Semantic Anchors"
     ],
     "lang": "en"
   },
@@ -189,8 +182,7 @@
     "icon": "images/blog/linkedin/200-line-prompt.png",
     "tags": [
       "AI",
-      "Semantic Anchors",
-      "Prompting"
+      "Semantic Anchors"
     ],
     "lang": "en"
   },
@@ -203,8 +195,8 @@
     "icon": "images/blog/linkedin/devcontainer-claude.jpg",
     "tags": [
       "AI",
-      "DevContainer",
-      "Claude Code"
+      "AI Coding",
+      "Tools"
     ],
     "lang": "en"
   },
@@ -217,8 +209,7 @@
     "icon": "images/blog/linkedin/docs-as-code-training.jpg",
     "tags": [
       "Documentation",
-      "Training",
-      "docToolchain"
+      "Software Architecture"
     ],
     "lang": "en"
   },
@@ -231,8 +222,8 @@
     "icon": "images/blog/linkedin/risk-radar-skills.jpg",
     "tags": [
       "AI",
-      "Risk Management",
-      "Claude Code"
+      "Testing",
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -245,8 +236,7 @@
     "icon": "images/blog/linkedin/semantic-anchors-webapp.png",
     "tags": [
       "AI",
-      "Semantic Anchors",
-      "Open Source"
+      "Semantic Anchors"
     ],
     "lang": "en"
   },
@@ -272,8 +262,7 @@
     "icon": "images/blog/linkedin/ai-image-generation.jpg",
     "tags": [
       "AI",
-      "Image Generation",
-      "OpenAI"
+      "Tools"
     ],
     "lang": "en"
   },
@@ -286,8 +275,8 @@
     "icon": "images/blog/linkedin/vibe-coding-risk-radar.jpg",
     "tags": [
       "AI",
-      "Risk Management",
-      "Vibe Coding"
+      "Testing",
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -300,8 +289,7 @@
     "icon": "images/blog/linkedin/code-is-worthless.jpg",
     "tags": [
       "AI",
-      "Business",
-      "Strategy"
+      "Opinion"
     ],
     "lang": "en"
   },
@@ -314,8 +302,7 @@
     "icon": "images/blog/linkedin/raspberry-pi-llm.jpg",
     "tags": [
       "AI",
-      "Raspberry Pi",
-      "LLM"
+      "Tools"
     ],
     "lang": "en"
   },
@@ -327,7 +314,6 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7422904560005865472/",
     "icon": "images/blog/linkedin/doctoolchain-rb.jpg",
     "tags": [
-      "docToolchain",
       "AI",
       "Documentation"
     ],
@@ -342,8 +328,7 @@
     "icon": "images/blog/linkedin/ai-license-paradox.jpg",
     "tags": [
       "AI",
-      "Open Source",
-      "Legal"
+      "Opinion"
     ],
     "lang": "en"
   },
@@ -355,7 +340,6 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7420718516548419584/",
     "icon": "images/blog/linkedin/dacli-llm-tool.jpg",
     "tags": [
-      "dacli",
       "AI",
       "Documentation",
       "Tools"
@@ -371,8 +355,7 @@
     "icon": "images/blog/linkedin/pyramid-principle.jpg",
     "tags": [
       "AI",
-      "Semantic Anchors",
-      "Communication"
+      "Semantic Anchors"
     ],
     "lang": "en"
   },
@@ -385,8 +368,7 @@
     "icon": "images/blog/semantic-anchors-catalog.svg",
     "tags": [
       "AI",
-      "Semantic Anchors",
-      "Open Source"
+      "Semantic Anchors"
     ],
     "lang": "en"
   },
@@ -400,7 +382,7 @@
     "tags": [
       "AI",
       "Semantic Anchors",
-      "TDD"
+      "Testing"
     ],
     "lang": "de"
   },
@@ -413,8 +395,7 @@
     "icon": "images/blog/linkedin/llms-kreativ.jpg",
     "tags": [
       "AI",
-      "Creativity",
-      "Philosophy"
+      "Opinion"
     ],
     "lang": "de"
   },
@@ -427,7 +408,6 @@
     "icon": "images/blog/linkedin/ki-vs-entwickler.jpg",
     "tags": [
       "AI",
-      "Development",
       "Opinion"
     ],
     "lang": "de"
@@ -441,7 +421,6 @@
     "icon": "images/blog/linkedin/alternative-sicht-ki.jpg",
     "tags": [
       "AI",
-      "Europe",
       "Opinion"
     ],
     "lang": "de"
@@ -455,8 +434,7 @@
     "icon": "images/blog/claude-code-raspberry.svg",
     "tags": [
       "AI",
-      "Raspberry Pi",
-      "Home Automation"
+      "Tools"
     ],
     "lang": "de"
   }
