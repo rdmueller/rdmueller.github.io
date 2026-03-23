@@ -1,5 +1,19 @@
 [
   {
+    "title": "Review the Review: Mini ATAM with a Coding Agent",
+    "date": "2026-03-23",
+    "excerpt": "I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.",
+    "url": "blog/mini-atam-review.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/mini-atam-review.png",
+    "tags": [
+      "Software Architecture",
+      "AI",
+      "Testing"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "arc42: My Cockpit for AI-Generated Code",
     "date": "2026-03-23",
     "excerpt": "We spent 30 years begging developers to write documentation. Now AI writes it for free. And we're still staring at the code. arc42 as verification instrument for AI-generated code.",

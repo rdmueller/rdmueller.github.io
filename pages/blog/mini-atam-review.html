@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.">
+    <link rel="canonical" href="mini-atam-review.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Review the Review: Mini ATAM with a Coding Agent | Ralf D. Müller">
+    <meta property="og:description" content="I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.">
+    <meta property="og:image" content="../../images/blog/linkedin/mini-atam-review.png">
+    <title>Review the Review: Mini ATAM with a Coding Agent | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">23. März 2026</span>
+                </div>
+                <h1>Review the Review: Mini ATAM with a Coding Agent</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/mini-atam-review.png" alt="AI detective robot investigating architecture diagram with magnifying glass">
+            </figure>
+
+            <div class="article-content">
+                <p>Last week I asked my coding agent to review its own architecture. It found three problems I had missed.</p>
+                <p>I gave it quality scenarios. Response time under 200ms for the search endpoint. The system must handle 500 concurrent users. A new developer should understand the module structure within one hour. Then I told the agent: "Check your architecture against these scenarios. Be honest."</p>
+                <p>It came back with a list. The caching layer wouldn't hold under 500 concurrent users because it used in-memory state without eviction. The module structure had a circular dependency that would confuse any newcomer. And the search endpoint made two redundant database calls that would blow the latency budget.</p>
+                <p>This is a mini ATAM. The Architecture Tradeoff Analysis Method, developed by the SEI, is one of the most effective ways to evaluate software architecture. You define quality attribute scenarios, then systematically check whether the architecture satisfies them. It has always been powerful. It has also always been expensive. Getting the right people in a room, walking through scenarios, documenting tradeoffs. That's days of work.</p>
+                <p>A coding agent can do a first pass in minutes. It built the architecture. It knows every component, every dependency, every design decision. When you give it quality scenarios, it can trace them through its own building blocks and flag where things don't add up. That's not a replacement for a real ATAM with stakeholders. But it's a brutal filter. You catch the obvious problems before you invest the expensive human hours.</p>
+                <p>This only works if your architecture is explicit. You need structure, not just code. That's where quality-driven architecture comes in: every design decision is tied to a quality requirement. Not "we chose microservices because they're modern" but "we chose microservices because the deployment independence scenario requires it, and here's the tradeoff we accepted in data consistency."</p>
+                <p>When the agent documents its decisions this way, you can actually verify them. When it doesn't, you're back to reading source files and guessing.</p>
+                <p>The tools for this exist. arc42 gives you the documentation structure. ATAM gives you the evaluation method. Quality scenarios give you the acceptance criteria. The coding agent gives you the speed. Put them together and you get architecture verification at a pace that was never possible before.</p>
+                <p>As a result, you will get a clean report which you can easily review.</p>
+                <p>Review the Review ;-)</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Software Architecture</span>
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Testing</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
