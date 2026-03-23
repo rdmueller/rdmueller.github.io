@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="30 Jahre Doku erbettelt, jetzt schreibt AI sie kostenlos. Und wir starren immer noch auf den Code. arc42 als Verifikationsinstrument für AI-generierten Code.">
+    <link rel="canonical" href="arc42-ai-cockpit.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="arc42: My Cockpit for AI-Generated Code | Ralf D. Müller">
+    <meta property="og:description" content="30 Jahre Doku erbettelt, jetzt schreibt AI sie kostenlos. Und wir starren immer noch auf den Code. arc42 als Verifikationsinstrument für AI-generierten Code.">
+    <meta property="og:image" content="../../images/blog/linkedin/arc42-ai-cockpit.png">
+    <title>arc42: My Cockpit for AI-Generated Code | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">23. März 2026</span>
+                </div>
+                <h1>arc42: My Cockpit for AI-Generated Code</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/arc42-ai-cockpit.png" alt="Split-screen: developer overwhelmed by code review vs. architect calmly reading arc42 dashboard">
+            </figure>
+
+            <div class="article-content">
+                <p>We spent 30 years begging developers to write documentation. Now AI writes it for free. And we're still staring at the code.</p>
+                <p>Remember the early demos? "Look, the AI can document your code!" And all it did was explain what the code does. A for-loop iterates. A getter returns a value. Thanks, we could see that. The "why" was missing, and without the "why", documentation is noise.</p>
+                <p>That has changed. When a coding agent builds an entire feature from a spec, it knows why every line exists. It made the decisions. It chose the patterns. It can explain the reasoning, not just describe the syntax. For the first time, generated documentation actually carries the "why". And that makes it valuable.</p>
+                <p>Everyone talks about spec-driven development with LLMs. Write a spec, let the agent code, review the output. But "review the output" somehow always means: read the generated code. Line by line. Thousands of lines. Every day. That doesn't scale. A coding agent can generate 10,000 lines in an afternoon. Nobody is going to review that properly.</p>
+                <p>Here's what I do instead: I don't review the code. I review the architecture documentation. When I want to understand what an agent built, I open the generated arc42 document. Building block view, runtime scenarios, architecture decisions, cross-cutting concepts. That's where I see if the agent understood the problem or just produced something that compiles.</p>
+                <p>The spec tells the agent what to build. The architecture documentation tells me whether what was built fits the bigger picture. Did the agent create a second database connection pool because it didn't know about the first one? That's not a code review problem. That's an architecture problem. You'll spot it in the building block view in two seconds, not by reading 47 source files.</p>
+                <p>arc42 gives you the structure for exactly this. The building block view shows structural problems. Architecture decisions capture the reasoning. The runtime view shows if components talk to each other the way they should. All generated. All carrying the "why".</p>
+                <p>Kudos to Gernot Starke and Peter Hruschka for creating arc42 over two decades ago. They built a shared language for software architecture long before anyone could have predicted that AI would be the one writing the code. Now that AI generates the code and finally knows why it wrote what it wrote, that language is more useful than ever.</p>
+                <p>Stop scrolling through generated source files. Start reading the architecture.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Software Architecture</span>
+                    <span class="blog-tag">arc42</span>
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">Agentic Coding</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
