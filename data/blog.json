@@ -7,9 +7,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/mini-atam-review.png",
     "tags": [
-      "Software Architecture",
-      "AI",
-      "Testing"
+      "Architecture",
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -21,9 +20,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/arc42-ai-cockpit.png",
     "tags": [
-      "AI",
-      "Software Architecture",
-      "AI Coding"
+      "Architecture",
+      "Documentation"
     ],
     "lang": "en"
   },
@@ -35,8 +33,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/closed-loop-coding.png",
     "tags": [
-      "AI",
-      "Testing",
+      "Theory",
       "AI Coding"
     ],
     "lang": "en"
@@ -49,9 +46,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/eichhorsts-principle.png",
     "tags": [
-      "AI",
-      "AI Coding",
-      "Testing"
+      "Theory",
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -63,7 +59,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/solid-semantic-anchor.jpg",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -76,8 +71,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/risk-radar-community.png",
     "tags": [
-      "AI",
-      "Testing"
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -89,8 +83,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/show-me-the-code.png",
     "tags": [
-      "AI",
-      "Software Architecture",
+      "Architecture",
       "AI Coding"
     ],
     "lang": "en"
@@ -103,7 +96,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/semantic-contracts.png",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -116,7 +108,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/semantic-anchors-video.jpg",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -129,8 +120,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/ide-is-dead.png",
     "tags": [
-      "AI",
-      "Tools",
+      "AI Coding",
       "Opinion"
     ],
     "lang": "en"
@@ -155,7 +145,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/socratic-method-anchor.jpg",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -168,9 +157,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/bausteinsicht-drawio.jpg",
     "tags": [
-      "Software Architecture",
-      "Documentation",
-      "Tools"
+      "Architecture",
+      "Documentation"
     ],
     "lang": "en"
   },
@@ -182,7 +170,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/200-stars.png",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -195,7 +182,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/200-line-prompt.png",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -208,9 +194,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/devcontainer-claude.jpg",
     "tags": [
-      "AI",
-      "AI Coding",
-      "Tools"
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -223,7 +207,7 @@
     "icon": "images/blog/linkedin/docs-as-code-training.jpg",
     "tags": [
       "Documentation",
-      "Software Architecture"
+      "Architecture"
     ],
     "lang": "en"
   },
@@ -235,8 +219,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/risk-radar-skills.jpg",
     "tags": [
-      "AI",
-      "Testing",
       "AI Coding"
     ],
     "lang": "en"
@@ -249,7 +231,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/semantic-anchors-webapp.png",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -262,7 +243,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/tldr-semantic-anchor.jpg",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -275,8 +255,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/ai-image-generation.jpg",
     "tags": [
-      "AI",
-      "Tools"
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -288,9 +267,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/vibe-coding-risk-radar.jpg",
     "tags": [
-      "AI",
-      "Testing",
-      "AI Coding"
+      "AI Coding",
+      "Theory"
     ],
     "lang": "en"
   },
@@ -302,7 +280,6 @@
     "linkedin": "https://www.linkedin.com/pulse/your-code-worthless-what-actually-protects-business-ai-ralf-d-m%C3%BCller-h1ndf/",
     "icon": "images/blog/linkedin/code-is-worthless.jpg",
     "tags": [
-      "AI",
       "Opinion"
     ],
     "lang": "en"
@@ -315,8 +292,7 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7423667299414601728/",
     "icon": "images/blog/linkedin/raspberry-pi-llm.jpg",
     "tags": [
-      "AI",
-      "Tools"
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -328,7 +304,6 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7422904560005865472/",
     "icon": "images/blog/linkedin/doctoolchain-rb.jpg",
     "tags": [
-      "AI",
       "Documentation"
     ],
     "lang": "en"
@@ -341,7 +316,6 @@
     "linkedin": "https://www.linkedin.com/pulse/person-rights-responsibility-why-ai-contributors-break-ralf-d-m%C3%BCller-m2k9f/",
     "icon": "images/blog/linkedin/ai-license-paradox.jpg",
     "tags": [
-      "AI",
       "Opinion"
     ],
     "lang": "en"
@@ -354,9 +328,8 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7420718516548419584/",
     "icon": "images/blog/linkedin/dacli-llm-tool.jpg",
     "tags": [
-      "AI",
       "Documentation",
-      "Tools"
+      "AI Coding"
     ],
     "lang": "en"
   },
@@ -368,7 +341,6 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7419699566603603968/",
     "icon": "images/blog/linkedin/pyramid-principle.jpg",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -381,7 +353,6 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7393922423005319169/",
     "icon": "images/blog/semantic-anchors-catalog.svg",
     "tags": [
-      "AI",
       "Semantic Anchors"
     ],
     "lang": "en"
@@ -394,9 +365,8 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7337120686999580673/",
     "icon": "images/blog/semantic-anchors.svg",
     "tags": [
-      "AI",
       "Semantic Anchors",
-      "Testing"
+      "Theory"
     ],
     "lang": "de"
   },
@@ -408,7 +378,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/llms-kreativ.jpg",
     "tags": [
-      "AI",
       "Opinion"
     ],
     "lang": "de"
@@ -421,7 +390,6 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7332026445587779586/",
     "icon": "images/blog/linkedin/ki-vs-entwickler.jpg",
     "tags": [
-      "AI",
       "Opinion"
     ],
     "lang": "de"
@@ -434,7 +402,6 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7292441780266905600/",
     "icon": "images/blog/linkedin/alternative-sicht-ki.jpg",
     "tags": [
-      "AI",
       "Opinion"
     ],
     "lang": "de"
@@ -447,8 +414,7 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7402356844729393154/",
     "icon": "images/blog/claude-code-raspberry.svg",
     "tags": [
-      "AI",
-      "Tools"
+      "AI Coding"
     ],
     "lang": "de"
   }
