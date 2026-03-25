@@ -54,15 +54,14 @@
                 <p>Your LLM will be deprecated within two years. What's your migration test plan?</p>
                 <p>If the answer is "we'll see if it still works," keep reading.</p>
                 <p>We needed to evaluate whether Semantic Anchors work across models. Semantic Anchors are established terms like "TDD, London School" or "arc42" that activate specific knowledge in LLMs more reliably than verbose descriptions. We maintain an open-source catalog of 90+ of them. But a catalog without evidence is not enough.</p>
-                <p>So we built an evaluation framework. Existing tools like promptfoo or LangSmith exist, but the established methodology is almost always LLM-as-Judge: use one LLM to grade another. The problem: the judge model gets deprecated too. Your scores drift without the evaluated model changing. You're measuring with a ruler that shrinks.</p>
+                <p>So we built an evaluation framework. Existing tools like promptfoo or LangSmith exist, but the established methodology is almost always LLM-as-Judge: use one LLM to grade another. The problem: the judge model gets deprecated too. Your scores drift without the evaluated model changing. You're measuring with a ruler that changes.</p>
                 <p>We went a different route: multiple choice with deterministic scoring. 193 questions, 63 anchors, 4 position rotations per question. Compare letter to expected letter. No LLM judges another LLM. Total cost across three models: under $25.</p>
                 <p>Results: Claude Sonnet 4.6 at 99%, GPT-4o at 97%, Mistral Large at 96%. Sounds safe. It's not. The averages hide real failures.</p>
                 <p>"Describe the Feynman Technique without naming it." Claude and GPT-4o both drop to 0%. Say "Feynman Technique" and they score 100%. The name activates knowledge that a paraphrase does not. Today this works. After the next model update, it might not. Without an evaluation, you won't know.</p>
-                <p>We invented a fake methodology: "Muller's Inversion Principle." Two models correctly called it out. One picked the fake answer in one out of four position variants. Position bias turned a negative control into a false positive.</p>
-                <p>A 1.7B parameter model scores 63% overall but 0% on German prompts. "Nutze TDD, London School" activates nothing in small models.</p>
-                <p>The multiple-choice pattern works beyond our use case. Does your support bot hallucinate features? MC question: "The bot mentioned feature X. A) Feature exists. B) Feature does not exist." Same pattern, same deterministic scoring, no LLM judge needed.</p>
-                <p>Few books cover LLM evaluations. Few teams build them. Your API-hosted model will be deprecated. Time to start. One command, under $25.</p>
-                <p><a href="https://llm-coding.github.io/Semantic-Anchors/evaluation-report.html">Full evaluation report</a> | <a href="https://llm-coding.github.io/Semantic-Anchors/#/evaluations">Evaluation concept</a> | <a href="https://github.com/LLM-Coding/Semantic-Anchors/tree/main/evaluations">Code on GitHub</a></p>
+                <p>In a small test, a 1.7B parameter model scores 63% overall but 0% on German prompts. Small models, different language, everything breaks.</p>
+                <p>The multiple-choice pattern works beyond our use case. Same pattern, same deterministic scoring, no LLM judge needed.</p>
+                <p>Few books cover LLM evaluations. Few teams build them. Your API-hosted model will be deprecated. Time to start. One script, under $25 per run.</p>
+                <p><a href="https://llm-coding.github.io/Semantic-Anchors/#/evaluations">Evaluation concept</a> | <a href="https://llm-coding.github.io/Semantic-Anchors/evaluation-report.html">Full evaluation report</a></p>
             </div>
 
             <footer class="article-footer">
