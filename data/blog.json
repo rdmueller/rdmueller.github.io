@@ -1,5 +1,18 @@
 [
   {
+    "title": "Your LLM Will Be Deprecated. What's Your Test Plan?",
+    "date": "2026-03-25",
+    "excerpt": "We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.",
+    "url": "blog/semantic-anchors-evaluation.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/semantic-anchors-evaluation.png",
+    "tags": [
+      "Semantic Anchors",
+      "AI Coding"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Review the Review: Mini ATAM with a Coding Agent",
     "date": "2026-03-23",
     "excerpt": "I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.",

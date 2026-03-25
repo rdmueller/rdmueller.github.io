@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your LLM will be deprecated within two years. We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25.">
+    <link rel="canonical" href="semantic-anchors-evaluation.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Your LLM Will Be Deprecated. What's Your Test Plan? | Ralf D. Müller">
+    <meta property="og:description" content="We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.">
+    <meta property="og:image" content="../../images/blog/linkedin/semantic-anchors-evaluation.png">
+    <title>Your LLM Will Be Deprecated. What's Your Test Plan? | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">25. März 2026</span>
+                </div>
+                <h1>Your LLM Will Be Deprecated. What's Your Test Plan?</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/semantic-anchors-evaluation.png" alt="AI robot confidently picking a fake answer on a multiple-choice test while teacher looks shocked">
+            </figure>
+
+            <div class="article-content">
+                <p>Your LLM will be deprecated within two years. What's your migration test plan?</p>
+                <p>If the answer is "we'll see if it still works," keep reading.</p>
+                <p>We needed to evaluate whether Semantic Anchors work across models. Semantic Anchors are established terms like "TDD, London School" or "arc42" that activate specific knowledge in LLMs more reliably than verbose descriptions. We maintain an open-source catalog of 90+ of them. But a catalog without evidence is not enough.</p>
+                <p>So we built an evaluation framework. Existing tools like promptfoo or LangSmith exist, but the established methodology is almost always LLM-as-Judge: use one LLM to grade another. The problem: the judge model gets deprecated too. Your scores drift without the evaluated model changing. You're measuring with a ruler that shrinks.</p>
+                <p>We went a different route: multiple choice with deterministic scoring. 193 questions, 63 anchors, 4 position rotations per question. Compare letter to expected letter. No LLM judges another LLM. Total cost across three models: under $25.</p>
+                <p>Results: Claude Sonnet 4.6 at 99%, GPT-4o at 97%, Mistral Large at 96%. Sounds safe. It's not. The averages hide real failures.</p>
+                <p>"Describe the Feynman Technique without naming it." Claude and GPT-4o both drop to 0%. Say "Feynman Technique" and they score 100%. The name activates knowledge that a paraphrase does not. Today this works. After the next model update, it might not. Without an evaluation, you won't know.</p>
+                <p>We invented a fake methodology: "Muller's Inversion Principle." Two models correctly called it out. One picked the fake answer in one out of four position variants. Position bias turned a negative control into a false positive.</p>
+                <p>A 1.7B parameter model scores 63% overall but 0% on German prompts. "Nutze TDD, London School" activates nothing in small models.</p>
+                <p>The multiple-choice pattern works beyond our use case. Does your support bot hallucinate features? MC question: "The bot mentioned feature X. A) Feature exists. B) Feature does not exist." Same pattern, same deterministic scoring, no LLM judge needed.</p>
+                <p>Few books cover LLM evaluations. Few teams build them. Your API-hosted model will be deprecated. Time to start. One command, under $25.</p>
+                <p><a href="https://llm-coding.github.io/Semantic-Anchors/evaluation-report.html">Full evaluation report</a> | <a href="https://llm-coding.github.io/Semantic-Anchors/#/evaluations">Evaluation concept</a> | <a href="https://github.com/LLM-Coding/Semantic-Anchors/tree/main/evaluations">Code on GitHub</a></p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">AI Coding</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
