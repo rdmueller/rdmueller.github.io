@@ -1,5 +1,18 @@
 [
   {
+    "title": "Semantic Contracts: When Anchors Are Not Enough",
+    "date": "2026-03-30",
+    "excerpt": "12 Contracts that cover a complete development workflow. Download them into your AGENTS.md.",
+    "url": "blog/semantic-contracts-live.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/semantic-contracts.png",
+    "tags": [
+      "Semantic Anchors",
+      "AI Coding"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Your LLM Will Be Deprecated. What's Your Test Plan?",
     "date": "2026-03-25",
     "excerpt": "We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.",
