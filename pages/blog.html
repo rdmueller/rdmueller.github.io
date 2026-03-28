@@ -22,7 +22,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <a href="../index.html" class="logo">Ralf D. Müller</a>
@@ -42,28 +41,713 @@
         </div>
     </nav>
 
-    <!-- Content -->
     <main class="page-content">
         <div class="container">
             <h1>Blog</h1>
-            <p class="page-intro" id="blog-intro">
+            <p class="page-intro">
                 Gedanken zu AI, Software-Architektur, Dokumentation und der Zukunft der Softwareentwicklung.
                 Ursprünglich auf LinkedIn veröffentlicht.
             </p>
 
-            <!-- Filter Tags -->
             <div class="blog-filters" id="blog-filters">
                 <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="AI Coding">AI Coding</button>
+                <button class="filter-btn" data-filter="Architecture">Architecture</button>
+                <button class="filter-btn" data-filter="Documentation">Documentation</button>
+                <button class="filter-btn" data-filter="Opinion">Opinion</button>
+                <button class="filter-btn" data-filter="Semantic Anchors">Semantic Anchors</button>
+                <button class="filter-btn" data-filter="Theory">Theory</button>
             </div>
 
-            <!-- Blog Posts -->
             <div class="blog-list" id="blog-list">
-                <!-- Dynamisch generiert -->
+
+                <article class="blog-item" data-tags="Semantic Anchors AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/semantic-contracts.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">30</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/semantic-contracts-live.html">Semantic Contracts: When Anchors Are Not Enough</a></h2>
+                        <p>12 Contracts that cover a complete development workflow. Download them into your AGENTS.md.</p>
+                        <a class="blog-link" href="blog/semantic-contracts-live.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/semantic-anchors-evaluation.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">25</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/semantic-anchors-evaluation.html">Your LLM Will Be Deprecated. What's Your Test Plan?</a></h2>
+                        <p>We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.</p>
+                        <a class="blog-link" href="blog/semantic-anchors-evaluation.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Architecture AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/mini-atam-review.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">23</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Architecture</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/mini-atam-review.html">Review the Review: Mini ATAM with a Coding Agent</a></h2>
+                        <p>I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.</p>
+                        <a class="blog-link" href="blog/mini-atam-review.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Architecture Documentation">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/arc42-ai-cockpit.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">23</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Architecture</span><span class="blog-tag">Documentation</span>
+                        </div>
+                        <h2><a href="blog/arc42-ai-cockpit.html">arc42: My Cockpit for AI-Generated Code</a></h2>
+                        <p>We spent 30 years begging developers to write documentation. Now AI writes it for free. And we're still staring at the code. arc42 as verification instrument for AI-generated code.</p>
+                        <a class="blog-link" href="blog/arc42-ai-cockpit.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Theory AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/closed-loop-coding.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">19</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Theory</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/closed-loop-coding.html">Closed Loop vs. Open Loop: Why the Feedback Loop Is Everything</a></h2>
+                        <p>Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.</p>
+                        <a class="blog-link" href="blog/closed-loop-coding.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Theory AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/eichhorsts-principle.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">18</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Theory</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/eichhorsts-principle.html">Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding</a></h2>
+                        <p>Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.</p>
+                        <a class="blog-link" href="blog/eichhorsts-principle.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/solid-semantic-anchor.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">17</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/solid-semantic-anchor.html">SOLID: Semantic Anchors Video Series Episode 2</a></h2>
+                        <p>SOLID als Semantic Anchor: Wie fünf Buchstaben ein ganzes Architekturparadigma in LLMs aktivieren.</p>
+                        <a class="blog-link" href="blog/solid-semantic-anchor.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/risk-radar-community.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">16</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/risk-radar-community.html">Vibe Coding Risk Radar: First Community Contribution</a></h2>
+                        <p>Erster Community-Beitrag zum Vibe-Coding Risk Radar: Maria Virk ergänzt das Framework um neue Perspektiven.</p>
+                        <a class="blog-link" href="blog/risk-radar-community.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Architecture AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/show-me-the-code.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">13</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Architecture</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/show-me-the-code.html">Show Me the Code: Spec-Driven Development with AI</a></h2>
+                        <p>Spec-Driven Development: PRD, Architektur, Tests, dann Code. Der Workflow für produktionsreife AI-generierte Software.</p>
+                        <a class="blog-link" href="blog/show-me-the-code.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/semantic-contracts.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">12</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/semantic-contracts.html">Semantic Contracts: Private vs. Public Knowledge</a></h2>
+                        <p>Semantic Contracts erweitern Semantic Anchors um projektspezifisches Wissen. AGENTS.md als Vertrag zwischen Mensch und AI.</p>
+                        <a class="blog-link" href="blog/semantic-contracts.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/semantic-anchors-video.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">11</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/semantic-anchors-video.html">Semantic Anchors Video Series</a></h2>
+                        <p>Neue Video-Serie zu Semantic Anchors: Konzept, Anwendung, Katalog. Auf YouTube und der Semantic Anchors Website.</p>
+                        <a class="blog-link" href="blog/semantic-anchors-video.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding Opinion">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/ide-is-dead.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">10</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">AI Coding</span><span class="blog-tag">Opinion</span>
+                        </div>
+                        <h2><a href="blog/ide-is-dead.html">The IDE Is Dead</a></h2>
+                        <p>Die klassische IDE verliert ihre Relevanz. AI-Agenten brauchen keine GUI, sie brauchen CLI-Tools und Feedback-Loops.</p>
+                        <a class="blog-link" href="blog/ide-is-dead.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Opinion">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/vacuum-cleaner-duck-typing.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">10</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Opinion</span>
+                        </div>
+                        <h2><a href="blog/vacuum-cleaner-duck-typing.html">Vacuum Cleaner Philosophy: Duck Typing in Real Life</a></h2>
+                        <p>Was Staubsauger-Philosophie mit Duck Typing zu tun hat: Wenn es funktioniert, ist es richtig.</p>
+                        <a class="blog-link" href="blog/vacuum-cleaner-duck-typing.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/socratic-method-anchor.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">08</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/socratic-method-anchor.html">Socratic Method as a Semantic Anchor</a></h2>
+                        <p>Die Sokratische Methode als Semantic Anchor: LLMs stellen bessere Fragen statt vorschnelle Antworten zu geben.</p>
+                        <a class="blog-link" href="blog/socratic-method-anchor.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Architecture Documentation">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/bausteinsicht-drawio.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">05</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Architecture</span><span class="blog-tag">Documentation</span>
+                        </div>
+                        <h2><a href="blog/bausteinsicht-drawio.html">Bausteinsicht: Architecture as Code with draw.io</a></h2>
+                        <p>Architektur-Diagramme als Code in draw.io: Versionierbar, diffbar, automatisiert generierbar.</p>
+                        <a class="blog-link" href="blog/bausteinsicht-drawio.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/200-stars.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">04</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/200-stars.html">200 Stars on GitHub in 10 Days</a></h2>
+                        <p>Semantic Anchors erreicht 200 GitHub-Stars in 10 Tagen. Was funktioniert hat und warum.</p>
+                        <a class="blog-link" href="blog/200-stars.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/200-line-prompt.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">02</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/200-line-prompt.html">200-Line Prompt vs. 5 Words: Why Semantic Anchors Win</a></h2>
+                        <p>Ein 200-Zeilen System-Prompt vs. fünf Wörter mit Semantic Anchors. Weniger ist mehr, wenn die Anker stimmen.</p>
+                        <a class="blog-link" href="blog/200-line-prompt.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/devcontainer-claude.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">01</span>
+                        <span class="month">Mär</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/devcontainer-claude.html">devcontainer exec claude</a></h2>
+                        <p>Claude Code in einem DevContainer ausführen: Reproduzierbare, isolierte Entwicklungsumgebung für AI-Coding.</p>
+                        <a class="blog-link" href="blog/devcontainer-claude.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Documentation Architecture">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/docs-as-code-training.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">24</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Documentation</span><span class="blog-tag">Architecture</span>
+                        </div>
+                        <h2><a href="blog/docs-as-code-training.html">Documentation-as-Code Training with Socreatory</a></h2>
+                        <p>Neues Docs-as-Code Training bei Socreatory: arc42, AsciiDoc, docToolchain, CI/CD-Pipelines für Dokumentation.</p>
+                        <a class="blog-link" href="blog/docs-as-code-training.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/risk-radar-skills.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">17</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/risk-radar-skills.html">Risk Radar Skills: The Automation Layer</a></h2>
+                        <p>Claude Code Skills automatisieren den Vibe-Coding Risk Radar Workflow: Risikobewertung direkt im Entwicklungsprozess.</p>
+                        <a class="blog-link" href="blog/risk-radar-skills.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/semantic-anchors-webapp.png" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">13</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/semantic-anchors-webapp.html">Semantic Anchors Goes Interactive</a></h2>
+                        <p>Die Semantic Anchors Website ist jetzt eine interaktive Web-App mit Suche, Filtern und Qualitätsbewertung.</p>
+                        <a class="blog-link" href="blog/semantic-anchors-webapp.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/tldr-semantic-anchor.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">12</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/tldr-semantic-anchor.html">Is TLDR a Semantic Anchor?</a></h2>
+                        <p>TLDR als Semantic Anchor getestet: Aktiviert es zuverlässig dasselbe Verhalten in verschiedenen LLMs?</p>
+                        <a class="blog-link" href="blog/tldr-semantic-anchor.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/ai-image-generation.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">10</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/ai-image-generation.html">9 Hours, 65 Images: What I Learned About AI Image Generation</a></h2>
+                        <p>Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.</p>
+                        <a class="blog-link" href="blog/ai-image-generation.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding Theory">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/vibe-coding-risk-radar.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">10</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">AI Coding</span><span class="blog-tag">Theory</span>
+                        </div>
+                        <h2><a href="blog/vibe-coding-risk-radar.html">Vibe-Coding Risk Radar: MECE Risk Framework for AI-Generated Code</a></h2>
+                        <p>5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.</p>
+                        <a class="blog-link" href="blog/vibe-coding-risk-radar.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Opinion">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/code-is-worthless.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">02</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Opinion</span>
+                        </div>
+                        <h2><a href="blog/code-is-worthless.html">Your Code Is Worthless: What Actually Protects Your Business in the AI Age</a></h2>
+                        <p>AI kann 80% Deines sorgfältig gehüteten Codes in Tagen nachbauen. Was schützt Dein Geschäft wirklich? Network Effects, proprietäre Daten, operative Exzellenz und Kundenvertrauen.</p>
+                        <a class="blog-link" href="blog/code-is-worthless.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/raspberry-pi-llm.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">01</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/raspberry-pi-llm.html">Can a Raspberry Pi 5 run a local LLM for coding assistance?</a></h2>
+                        <p>Experiment: Kann ein Raspberry Pi 5 lokale LLMs für Coding-Assistenz ausführen? Der Showstopper: 11.000 Token System-Prompt bei 5 tok/s = mehrere Minuten nur für den Input.</p>
+                        <a class="blog-link" href="blog/raspberry-pi-llm.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Documentation">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/doctoolchain-rb.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">30</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Documentation</span>
+                        </div>
+                        <h2><a href="blog/doctoolchain-rb.html">docToolchain rb - Documentation reborn for the AI age</a></h2>
+                        <p>Nach 8 Jahren Docs-as-Code: Dokumentation muss jetzt zwei Zielgruppen bedienen - Menschen UND KI-Systeme. Die Frage ist nicht mehr 'Wie schreiben wir Docs?' sondern 'Wie wird KI unsere Docs lesen?'</p>
+                        <a class="blog-link" href="blog/doctoolchain-rb.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Opinion">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/ai-license-paradox.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">29</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Opinion</span>
+                        </div>
+                        <h2><a href="blog/ai-license-paradox.html">No Person, No Rights, No Responsibility: Why AI Contributors Break Our License System</a></h2>
+                        <p>KI kann rechtlich nichts besitzen. Copyright erfordert menschliche Urheberschaft. Wenn niemand den Code besitzt, bricht das gesamte Lizenz-Framework zusammen.</p>
+                        <a class="blog-link" href="blog/ai-license-paradox.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Documentation AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/dacli-llm-tool.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">24</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Documentation</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/dacli-llm-tool.html">5 LLMs tested the new tool. Their verdict is clear.</a></h2>
+                        <p>dacli: Ein CLI-Tool das LLMs strukturierten Zugang zu Dokumentation gibt - wie LSP für Code. Hierarchische Navigation, Relevanz-Suche, programmatische Bearbeitung.</p>
+                        <a class="blog-link" href="blog/dacli-llm-tool.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/pyramid-principle.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">21</span>
+                        <span class="month">Jan</span>
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/pyramid-principle.html">New Semantic Anchor: Pyramid Principle</a></h2>
+                        <p>Semantic Anchors für effiziente LLM-Kommunikation: Statt langer Erklärungen einfach 'Pyramid Principle' sagen - aktiviert sofort BLUF, SCQ, MECE und mehr.</p>
+                        <a class="blog-link" href="blog/pyramid-principle.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors">
+                    <div class="blog-icon">
+                        <img src="../images/blog/semantic-anchors-catalog.svg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">11</span>
+                        <span class="month">Nov</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">EN</span><span class="blog-tag">Semantic Anchors</span>
+                        </div>
+                        <h2><a href="blog/semantic-anchors-catalog.html">Semantic Anchors: Speaking the Same Language as LLMs</a></h2>
+                        <p>Katalog mit 21+ Semantic Anchors für Software-Architektur, Testing, Requirements, Entscheidungsfindung und Dokumentation. Open Source auf GitHub.</p>
+                        <a class="blog-link" href="blog/semantic-anchors-catalog.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Semantic Anchors Theory">
+                    <div class="blog-icon">
+                        <img src="../images/blog/semantic-anchors.svg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">07</span>
+                        <span class="month">Nov</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">DE</span><span class="blog-tag">Semantic Anchors</span><span class="blog-tag">Theory</span>
+                        </div>
+                        <h2><a href="blog/semantic-anchors.html">Semantische Anker: Warum 'TDD London School' besseren Code generiert als lange Erklärungen</a></h2>
+                        <p>LLMs machen Pattern-Completion, kein logisches Denken. Etablierte Begriffe wie 'TDD, London School' aktivieren relevante Trainingsmuster besser als lange Erklärungen.</p>
+                        <a class="blog-link" href="blog/semantic-anchors.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Opinion">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/llms-kreativ.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">07</span>
+                        <span class="month">Jun</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">DE</span><span class="blog-tag">Opinion</span>
+                        </div>
+                        <h2><a href="blog/llms-kreativ.html">LLMs sind nicht kreativ - sie kopieren nur!</a></h2>
+                        <p>Thomas Mann hat genau das gemacht, was wir LLMs vorwerfen: Erfahrungen und Geschichten intelligent neu kombiniert. Sollten wir Kreativität neu definieren?</p>
+                        <a class="blog-link" href="blog/llms-kreativ.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Opinion">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/ki-vs-entwickler.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">24</span>
+                        <span class="month">Mai</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">DE</span><span class="blog-tag">Opinion</span>
+                        </div>
+                        <h2><a href="blog/ki-vs-entwickler.html">KI vs. Entwickler - Eine andere Perspektive</a></h2>
+                        <p>'KI halluziniert heute wie verrückt' → 'Entwickler erzeugen Bugs wie verrückt'. Beide Systeme haben Grenzen und produzieren Fehler - warum akzeptieren wir das bei Menschen, aber nicht bei KI?</p>
+                        <a class="blog-link" href="blog/ki-vs-entwickler.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="Opinion">
+                    <div class="blog-icon">
+                        <img src="../images/blog/linkedin/alternative-sicht-ki.jpg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">04</span>
+                        <span class="month">Feb</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">DE</span><span class="blog-tag">Opinion</span>
+                        </div>
+                        <h2><a href="blog/alternative-sicht-ki.html">Meine alternative Sicht auf KI Modelle</a></h2>
+                        <p>Die Medien haben eine verschobene Sicht: Claude Sonnet übertrifft OpenAI für Software-Entwicklung. Mistral und Black Forest Labs führen Leaderboards an. Europa hat kompetitive KI-Fähigkeiten.</p>
+                        <a class="blog-link" href="blog/alternative-sicht-ki.html">Artikel lesen</a>
+                    </div>
+                </article>
+
+                <article class="blog-item" data-tags="AI Coding">
+                    <div class="blog-icon">
+                        <img src="../images/blog/claude-code-raspberry.svg" alt="" loading="lazy">
+                    </div>
+                    <div class="blog-date">
+                        <span class="day">04</span>
+                        <span class="month">Dez</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="lang-badge">DE</span><span class="blog-tag">AI Coding</span>
+                        </div>
+                        <h2><a href="blog/claude-code-raspberry.html">Claude Code auf dem Raspberry Pi</a></h2>
+                        <p>Claude Code auf dem Raspberry Pi installiert, Netzwerk gescannt, Shelly-Geräte gefunden. Dann eine Debatte über Dämmerungszeiten - Claude hat gewonnen. Ich schulde Claude ein Bier.</p>
+                        <a class="blog-link" href="blog/claude-code-raspberry.html">Artikel lesen</a>
+                    </div>
+                </article>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
@@ -76,155 +760,23 @@
 
     <script src="../js/main.js"></script>
     <script>
+        // Tag filtering on static HTML
         (function() {
-            const months = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'];
-            const blogList = document.getElementById('blog-list');
-
-            function isSafeHttpUrl(url) {
-                if (!url || typeof url !== 'string') return false;
-                try {
-                    const parsed = new URL(url);
-                    return parsed.protocol === 'http:' || parsed.protocol === 'https:';
-                } catch (e) {
-                    return false;
-                }
-            }
-
-            function isSafeRelativePath(path) {
-                return typeof path === 'string' && !path.includes('..') && !path.includes('//') && !path.includes(':');
-            }
-
-            fetch('../data/blog.json')
-                .then(r => r.json())
-                .then(posts => {
-                    // Nach Datum sortieren (neueste zuerst)
-                    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                    // Alle Tags sammeln
-                    const allTags = new Set();
-                    posts.forEach(post => post.tags.forEach(tag => allTags.add(tag)));
-
-                    // Filter-Buttons generieren
-                    const filtersContainer = document.getElementById('blog-filters');
-                    allTags.forEach(tag => {
-                        const btn = document.createElement('button');
-                        btn.className = 'filter-btn';
-                        btn.setAttribute('data-filter', tag);
-                        btn.textContent = tag;
-                        filtersContainer.appendChild(btn);
-                    });
-
-                    // Blog-Liste generieren
-                    function renderPosts(filter = 'all') {
-                        blogList.replaceChildren();
-                        const filtered = filter === 'all'
-                            ? posts
-                            : posts.filter(p => p.tags.includes(filter));
-
-                        filtered.forEach(post => {
-                            const date = new Date(post.date);
-                            const day = String(date.getDate()).padStart(2, '0');
-                            const month = months[date.getMonth()];
-                            const year = date.getFullYear();
-
-                            const isExternal = isSafeHttpUrl(post.url);
-                            const isLocal = typeof post.url === 'string' && !isExternal && isSafeRelativePath(post.url);
-                            const safePostUrl = isExternal || isLocal ? post.url : '#';
-                            const linkText = isLocal ? 'Artikel lesen →' : 'Auf LinkedIn lesen →';
-
-                            const article = document.createElement('article');
-                            article.className = 'blog-item';
-
-                            if (post.icon && isSafeRelativePath(post.icon)) {
-                                const icon = document.createElement('div');
-                                icon.className = 'blog-icon';
-                                const img = document.createElement('img');
-                                img.src = `../${post.icon}`;
-                                img.alt = '';
-                                icon.appendChild(img);
-                                article.appendChild(icon);
-                            }
-
-                            const dateBox = document.createElement('div');
-                            dateBox.className = 'blog-date';
-
-                            const dayEl = document.createElement('span');
-                            dayEl.className = 'day';
-                            dayEl.textContent = day;
-                            const monthEl = document.createElement('span');
-                            monthEl.className = 'month';
-                            monthEl.textContent = month;
-                            const yearEl = document.createElement('span');
-                            yearEl.className = 'year';
-                            yearEl.textContent = String(year);
-
-                            dateBox.appendChild(dayEl);
-                            dateBox.appendChild(monthEl);
-                            dateBox.appendChild(yearEl);
-                            article.appendChild(dateBox);
-
-                            const content = document.createElement('div');
-                            content.className = 'blog-content';
-
-                            const meta = document.createElement('div');
-                            meta.className = 'blog-meta';
-
-                            const langBadge = document.createElement('span');
-                            langBadge.className = 'lang-badge';
-                            langBadge.textContent = post.lang === 'en' ? 'EN' : 'DE';
-                            meta.appendChild(langBadge);
-
-                            post.tags.forEach(tag => {
-                                const tagEl = document.createElement('span');
-                                tagEl.className = 'blog-tag';
-                                tagEl.textContent = tag;
-                                meta.appendChild(tagEl);
-                            });
-                            content.appendChild(meta);
-
-                            const h2 = document.createElement('h2');
-                            const titleLink = document.createElement('a');
-                            titleLink.href = safePostUrl;
-                            if (isExternal) {
-                                titleLink.target = '_blank';
-                                titleLink.rel = 'noopener';
-                            }
-                            titleLink.textContent = post.title || 'Ohne Titel';
-                            h2.appendChild(titleLink);
-                            content.appendChild(h2);
-
-                            const excerpt = document.createElement('p');
-                            excerpt.textContent = post.excerpt || '';
-                            content.appendChild(excerpt);
-
-                            const readMore = document.createElement('a');
-                            readMore.className = 'blog-link';
-                            readMore.href = safePostUrl;
-                            if (isExternal) {
-                                readMore.target = '_blank';
-                                readMore.rel = 'noopener';
-                            }
-                            readMore.textContent = linkText;
-                            content.appendChild(readMore);
-
-                            article.appendChild(content);
-                            blogList.appendChild(article);
-
-                        });
+            const filters = document.getElementById('blog-filters');
+            const items = document.querySelectorAll('.blog-item');
+            filters.addEventListener('click', function(e) {
+                if (!e.target.classList.contains('filter-btn')) return;
+                filters.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                const filter = e.target.getAttribute('data-filter');
+                items.forEach(item => {
+                    if (filter === 'all' || item.dataset.tags.includes(filter)) {
+                        item.style.display = '';
+                    } else {
+                        item.style.display = 'none';
                     }
-
-                    renderPosts();
-
-                    // Filter-Klick-Handler
-                    filtersContainer.querySelectorAll('.filter-btn').forEach(btn => {
-                        btn.addEventListener('click', function() {
-                            filtersContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                            this.classList.add('active');
-                            renderPosts(this.getAttribute('data-filter'));
-                        });
-                    });
-                })
-                .catch(err => console.error('Fehler beim Laden der Blog-Posts:', err));
+                });
+            });
         })();
     </script>
 </body>
