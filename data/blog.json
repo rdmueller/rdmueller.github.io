@@ -1,5 +1,18 @@
 [
   {
+    "title": "The Agent Made Itself Obsolete. That Was Its Best Work.",
+    "date": "2026-04-02",
+    "excerpt": "I produced 32 videos with AI. The agent's best contribution was making itself obsolete by building a fixed workflow.",
+    "url": "blog/agents-vs-workflows.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/agents-vs-workflows.png",
+    "tags": [
+      "AI Coding",
+      "Agentic Coding"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Semantic Contracts: When Anchors Are Not Enough",
     "date": "2026-03-30",
     "excerpt": "12 Contracts that cover a complete development workflow. Download them into your AGENTS.md.",
