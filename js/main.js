@@ -7,6 +7,9 @@
 (function() {
     'use strict';
 
+    // Signal that JS is active (progressive enhancement for animations)
+    document.documentElement.classList.add('js-enabled');
+
     const currentYear = new Date().getFullYear();
     document.querySelectorAll('.current-year').forEach(el => {
         el.textContent = String(currentYear);
