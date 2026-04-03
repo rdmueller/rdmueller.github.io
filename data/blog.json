@@ -1,5 +1,18 @@
 [
   {
+    "title": "I Inventoried My Entire Apartment with AI",
+    "date": "2026-04-03",
+    "excerpt": "Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.",
+    "url": "blog/ai-inventory.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/agents-inventory.png",
+    "tags": [
+      "AI Coding",
+      "Agentic Coding"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "The Agent Made Itself Obsolete. That Was Its Best Work.",
     "date": "2026-04-02",
     "excerpt": "I produced 32 videos with AI. The agent's best contribution was making itself obsolete by building a fixed workflow.",

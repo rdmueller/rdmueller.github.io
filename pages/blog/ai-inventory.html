@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I used Claude Code to build a photo-based inventory system for my apartment. AI recognizes books, games and objects from shelf photos, including vertical spine text.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/ai-inventory.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/ai-inventory.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="I Inventoried My Entire Apartment with AI | Ralf D. Müller">
+    <meta property="og:description" content="Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/agents-inventory.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I Inventoried My Entire Apartment with AI | Ralf D. Müller">
+    <meta name="twitter:description" content="Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/agents-inventory.png">
+    <title>I Inventoried My Entire Apartment with AI | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "I Inventoried My Entire Apartment with AI",
+      "description": "Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/agents-inventory.png",
+      "url": "https://rdmueller.github.io/pages/blog/ai-inventory.html",
+      "datePublished": "2026-04-03",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">3. April 2026</span>
+                </div>
+                <h1>I Inventoried My Entire Apartment with AI</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/agents-inventory.png" alt="Ralf reaching for a book on a white bookshelf while a ragdoll cat watches from an armchair, laptop with search results on the floor">
+            </figure>
+
+            <div class="article-content">
+                <p>I inventoried my entire apartment with AI. Not with a barcode scanner. Not with a spreadsheet. With photos and Claude Code.</p>
+
+                <p>It started during spring cleaning. "Where was Catan again?" "Did we have a book by Kawasaki?" "Which drawer has the Xbox controllers?" I had this idea: what if I just photograph every shelf, drawer and cabinet, and let an AI figure out what's inside?</p>
+
+                <p>The setup was simple. Take a photo of each storage location. Let Claude analyze the image. Store the results in JSON. Build a search page that answers "Where is X?" with the actual photo and a position marker.</p>
+
+                <p>The first attempt was humbling. Claude recognized objects well, but book titles on vertical spines were mostly unreadable. Makes sense. The text is rotated 90 degrees. Even multimodal AI struggles with that.</p>
+
+                <p>So I wrote a preprocessing step. Each photo gets sliced into overlapping strips and rotated 90 degrees. Vertical text becomes horizontal. Suddenly Claude reads "The Macintosh Way, Guy Kawasaki" instead of returning "unreadable spine." One photo becomes 14 image crops: 5 rotated strips for book spines, 9 unrotated quarters for objects like figurines, games or vases. The 50% overlap ensures nothing gets lost at a cut boundary.</p>
+
+                <p>Then the scaling problem hit. My bookshelf has 18 compartments. At 14 crops each, that's 250+ images for one piece of furniture. After 12 compartments, the context window was full and previous results were gone.</p>
+
+                <p>The fix: subagents. Each compartment gets its own agent. The agent receives 15 images (the original plus 14 crops), analyzes them, and returns a compact text list. The image data stays in the agent's context. The main context only gets the results. 18 agents in parallel. All 18 compartments analyzed in under 60 seconds.</p>
+
+                <p>The result is a JSON database with around 200 items and a searchable HTML page. Search for "Kawasaki" and you get 3 hits in 2 compartments, each with a colored position overlay on the detail photo. Search for "Xbox" and you see controllers, console and games in the sideboard, each marked on the drawer photo. Red overlays for book positions, blue overlays for objects.</p>
+
+                <p>What I learned: Image preprocessing makes or breaks the result. The crop-and-rotate technique turned spine recognition from "barely usable" to "surprisingly good." Subagents are the key to scaling. Without them, the project would have died at context limits. With them, it scales linearly: one agent per compartment, all in parallel.</p>
+
+                <p>Claude Code did more than analyze images. It wrote the ffmpeg preprocessing code, designed the JSON structure, built the search page, and documented the workflow as a reusable skill. I didn't write a single line of code by hand.</p>
+
+                <p>From "I have a photo" to "searchable database with position markers" in one CLI tool. Next up: the rest of the apartment. About 50 storage locations, probably 1000+ items.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI Coding</span>
+                    <span class="blog-tag">Agentic Coding</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
