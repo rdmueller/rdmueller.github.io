@@ -1,5 +1,19 @@
 [
   {
+    "title": "I DID it!",
+    "date": "2026-04-11",
+    "excerpt": "Replacing Zoom with a European alternative. A systematic Pugh matrix comparison of 7 video conferencing tools.",
+    "url": "blog/digital-independence-day.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/digital-independence-day.png",
+    "tags": [
+      "Digital Independence",
+      "GDPR",
+      "Open Source"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "I Inventoried My Entire Apartment with AI",
     "date": "2026-04-03",
     "excerpt": "Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.",
