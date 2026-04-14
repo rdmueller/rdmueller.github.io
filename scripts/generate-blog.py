@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Generate static blog.html from blog.json.
+"""Generate static blog.html and blog/feed.xml from blog.json.
 
 Posts are rendered as static HTML for search engine crawlers.
 JavaScript enhances with tag filtering on top.
+An Atom 1.0 feed is generated for feed readers.
 """
 
 import json
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 MONTHS_DE = ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun',
@@ -89,6 +91,7 @@ def main():
     <meta name="twitter:description" content="Blog-Artikel über AI, Software-Architektur und Dokumentation">
     <meta name="twitter:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
     <title>Blog | Ralf D. Müller</title>
+    <link rel="alternate" type="application/atom+xml" title="Blog | Ralf D. Müller" href="blog/feed.xml">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,6 +172,74 @@ def main():
     output = ROOT / "pages" / "blog.html"
     output.write_text(html)
     print(f"Generated {output} with {len(posts)} posts")
+
+    generate_feed(posts)
+
+
+def generate_feed(posts):
+    """Generate an Atom 1.0 feed from the given list of posts (already sorted)."""
+    BASE_URL = "https://rdmueller.github.io"
+    FEED_URL = f"{BASE_URL}/pages/blog/feed.xml"
+    BLOG_URL = f"{BASE_URL}/pages/blog.html"
+
+    ET.register_namespace("", "http://www.w3.org/2005/Atom")
+    feed = ET.Element("{http://www.w3.org/2005/Atom}feed")
+    feed.set("{http://www.w3.org/XML/1998/namespace}lang", "en")
+
+    def sub(parent, tag, text=None, **attrib):
+        el = ET.SubElement(parent, f"{{http://www.w3.org/2005/Atom}}{tag}", **attrib)
+        if text is not None:
+            el.text = text
+        return el
+
+    sub(feed, "title", "Blog | Ralf D. Müller")
+    sub(feed, "subtitle", "Gedanken zu AI, Software-Architektur, Dokumentation und der Zukunft der Softwareentwicklung.")
+    sub(feed, "link", rel="self", href=FEED_URL)
+    sub(feed, "link", rel="alternate", href=BLOG_URL)
+    sub(feed, "id", FEED_URL)
+
+    most_recent_date = posts[0]["date"] if posts else "1970-01-01"
+    sub(feed, "updated", f"{most_recent_date}T00:00:00Z")
+
+    author = sub(feed, "author")
+    sub(author, "name", "Ralf D. Müller")
+    sub(author, "uri", f"{BASE_URL}/")
+
+    for post in posts:
+        url = post.get("url", "")
+        if not url:
+            continue
+        abs_url = url if url.startswith("http") else f"{BASE_URL}/pages/{url}"
+
+        entry = sub(feed, "entry")
+        sub(entry, "id", abs_url)
+        sub(entry, "title", post["title"])
+        sub(entry, "updated", f"{post['date']}T00:00:00Z")
+        sub(entry, "link", rel="alternate", href=abs_url)
+
+        excerpt = post.get("excerpt", "")
+        if excerpt:
+            sub(entry, "summary", excerpt)
+
+        for tag in post.get("tags", []):
+            sub(entry, "category", term=tag)
+
+        # Include a content element for local (non-external) posts
+        if not url.startswith("http"):
+            content = sub(entry, "content", type="html")
+            content.text = (
+                f'<p>{excerpt}</p>'
+                f'<p><a href="{abs_url}">Artikel lesen</a></p>'
+            )
+
+    ET.indent(feed, space="    ")
+    tree = ET.ElementTree(feed)
+
+    output = ROOT / "pages" / "blog" / "feed.xml"
+    with open(output, "wb") as f:
+        f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
+        tree.write(f, encoding="UTF-8", xml_declaration=False)
+    print(f"Generated {output} with {len([p for p in posts if p.get('url')])} entries")
 
 
 if __name__ == "__main__":
