@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Blog | Ralf D. Müller</title>
+    <subtitle>Gedanken zu AI, Software-Architektur, Dokumentation und der Zukunft der Softwareentwicklung.</subtitle>
+    <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
+    <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
+    <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
+    <updated>2026-04-11T00:00:00Z</updated>
+    <author>
+        <name>Ralf D. Müller</name>
+        <uri>https://rdmueller.github.io/</uri>
+    </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/digital-independence-day.html</id>
+        <title>I DID it!</title>
+        <updated>2026-04-11T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/digital-independence-day.html" />
+        <summary>Replacing Zoom with a European alternative. A systematic Pugh matrix comparison of 7 video conferencing tools.</summary>
+        <category term="Digital Independence" />
+        <category term="GDPR" />
+        <category term="Open Source" />
+        <content type="html">&lt;p&gt;Replacing Zoom with a European alternative. A systematic Pugh matrix comparison of 7 video conferencing tools.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/digital-independence-day.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/ai-inventory.html</id>
+        <title>I Inventoried My Entire Apartment with AI</title>
+        <updated>2026-04-03T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ai-inventory.html" />
+        <summary>Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.</summary>
+        <category term="AI Coding" />
+        <category term="Agentic Coding" />
+        <content type="html">&lt;p&gt;Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ai-inventory.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/agents-vs-workflows.html</id>
+        <title>The Agent Made Itself Obsolete. That Was Its Best Work.</title>
+        <updated>2026-04-02T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/agents-vs-workflows.html" />
+        <summary>I produced 32 videos with AI. The agent's best contribution was making itself obsolete by building a fixed workflow.</summary>
+        <category term="AI Coding" />
+        <category term="Agentic Coding" />
+        <content type="html">&lt;p&gt;I produced 32 videos with AI. The agent's best contribution was making itself obsolete by building a fixed workflow.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/agents-vs-workflows.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-contracts-live.html</id>
+        <title>Semantic Contracts: When Anchors Are Not Enough</title>
+        <updated>2026-03-30T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-contracts-live.html" />
+        <summary>12 Contracts that cover a complete development workflow. Download them into your AGENTS.md.</summary>
+        <category term="Semantic Anchors" />
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;12 Contracts that cover a complete development workflow. Download them into your AGENTS.md.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-contracts-live.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html</id>
+        <title>Your LLM Will Be Deprecated. What's Your Test Plan?</title>
+        <updated>2026-03-25T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html" />
+        <summary>We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.</summary>
+        <category term="Semantic Anchors" />
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/mini-atam-review.html</id>
+        <title>Review the Review: Mini ATAM with a Coding Agent</title>
+        <updated>2026-03-23T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/mini-atam-review.html" />
+        <summary>I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.</summary>
+        <category term="Architecture" />
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/mini-atam-review.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/arc42-ai-cockpit.html</id>
+        <title>arc42: My Cockpit for AI-Generated Code</title>
+        <updated>2026-03-23T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/arc42-ai-cockpit.html" />
+        <summary>We spent 30 years begging developers to write documentation. Now AI writes it for free. And we're still staring at the code. arc42 as verification instrument for AI-generated code.</summary>
+        <category term="Architecture" />
+        <category term="Documentation" />
+        <content type="html">&lt;p&gt;We spent 30 years begging developers to write documentation. Now AI writes it for free. And we're still staring at the code. arc42 as verification instrument for AI-generated code.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/arc42-ai-cockpit.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/closed-loop-coding.html</id>
+        <title>Closed Loop vs. Open Loop: Why the Feedback Loop Is Everything</title>
+        <updated>2026-03-19T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/closed-loop-coding.html" />
+        <summary>Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.</summary>
+        <category term="Theory" />
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/closed-loop-coding.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/eichhorsts-principle.html</id>
+        <title>Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding</title>
+        <updated>2026-03-18T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorsts-principle.html" />
+        <summary>Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.</summary>
+        <category term="Theory" />
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorsts-principle.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/solid-semantic-anchor.html</id>
+        <title>SOLID: Semantic Anchors Video Series Episode 2</title>
+        <updated>2026-03-17T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/solid-semantic-anchor.html" />
+        <summary>SOLID als Semantic Anchor: Wie fünf Buchstaben ein ganzes Architekturparadigma in LLMs aktivieren.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;SOLID als Semantic Anchor: Wie fünf Buchstaben ein ganzes Architekturparadigma in LLMs aktivieren.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/solid-semantic-anchor.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/risk-radar-community.html</id>
+        <title>Vibe Coding Risk Radar: First Community Contribution</title>
+        <updated>2026-03-16T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/risk-radar-community.html" />
+        <summary>Erster Community-Beitrag zum Vibe-Coding Risk Radar: Maria Virk ergänzt das Framework um neue Perspektiven.</summary>
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Erster Community-Beitrag zum Vibe-Coding Risk Radar: Maria Virk ergänzt das Framework um neue Perspektiven.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/risk-radar-community.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/show-me-the-code.html</id>
+        <title>Show Me the Code: Spec-Driven Development with AI</title>
+        <updated>2026-03-13T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/show-me-the-code.html" />
+        <summary>Spec-Driven Development: PRD, Architektur, Tests, dann Code. Der Workflow für produktionsreife AI-generierte Software.</summary>
+        <category term="Architecture" />
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Spec-Driven Development: PRD, Architektur, Tests, dann Code. Der Workflow für produktionsreife AI-generierte Software.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/show-me-the-code.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-contracts.html</id>
+        <title>Semantic Contracts: Private vs. Public Knowledge</title>
+        <updated>2026-03-12T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-contracts.html" />
+        <summary>Semantic Contracts erweitern Semantic Anchors um projektspezifisches Wissen. AGENTS.md als Vertrag zwischen Mensch und AI.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Semantic Contracts erweitern Semantic Anchors um projektspezifisches Wissen. AGENTS.md als Vertrag zwischen Mensch und AI.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-contracts.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-anchors-video.html</id>
+        <title>Semantic Anchors Video Series</title>
+        <updated>2026-03-11T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-anchors-video.html" />
+        <summary>Neue Video-Serie zu Semantic Anchors: Konzept, Anwendung, Katalog. Auf YouTube und der Semantic Anchors Website.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Neue Video-Serie zu Semantic Anchors: Konzept, Anwendung, Katalog. Auf YouTube und der Semantic Anchors Website.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-anchors-video.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/ide-is-dead.html</id>
+        <title>The IDE Is Dead</title>
+        <updated>2026-03-10T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ide-is-dead.html" />
+        <summary>Die klassische IDE verliert ihre Relevanz. AI-Agenten brauchen keine GUI, sie brauchen CLI-Tools und Feedback-Loops.</summary>
+        <category term="AI Coding" />
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;Die klassische IDE verliert ihre Relevanz. AI-Agenten brauchen keine GUI, sie brauchen CLI-Tools und Feedback-Loops.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ide-is-dead.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/vacuum-cleaner-duck-typing.html</id>
+        <title>Vacuum Cleaner Philosophy: Duck Typing in Real Life</title>
+        <updated>2026-03-10T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/vacuum-cleaner-duck-typing.html" />
+        <summary>Was Staubsauger-Philosophie mit Duck Typing zu tun hat: Wenn es funktioniert, ist es richtig.</summary>
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;Was Staubsauger-Philosophie mit Duck Typing zu tun hat: Wenn es funktioniert, ist es richtig.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/vacuum-cleaner-duck-typing.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/socratic-method-anchor.html</id>
+        <title>Socratic Method as a Semantic Anchor</title>
+        <updated>2026-03-08T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/socratic-method-anchor.html" />
+        <summary>Die Sokratische Methode als Semantic Anchor: LLMs stellen bessere Fragen statt vorschnelle Antworten zu geben.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Die Sokratische Methode als Semantic Anchor: LLMs stellen bessere Fragen statt vorschnelle Antworten zu geben.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/socratic-method-anchor.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/bausteinsicht-drawio.html</id>
+        <title>Bausteinsicht: Architecture as Code with draw.io</title>
+        <updated>2026-03-05T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/bausteinsicht-drawio.html" />
+        <summary>Architektur-Diagramme als Code in draw.io: Versionierbar, diffbar, automatisiert generierbar.</summary>
+        <category term="Architecture" />
+        <category term="Documentation" />
+        <content type="html">&lt;p&gt;Architektur-Diagramme als Code in draw.io: Versionierbar, diffbar, automatisiert generierbar.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/bausteinsicht-drawio.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/200-stars.html</id>
+        <title>200 Stars on GitHub in 10 Days</title>
+        <updated>2026-03-04T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/200-stars.html" />
+        <summary>Semantic Anchors erreicht 200 GitHub-Stars in 10 Tagen. Was funktioniert hat und warum.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Semantic Anchors erreicht 200 GitHub-Stars in 10 Tagen. Was funktioniert hat und warum.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/200-stars.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/200-line-prompt.html</id>
+        <title>200-Line Prompt vs. 5 Words: Why Semantic Anchors Win</title>
+        <updated>2026-03-02T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/200-line-prompt.html" />
+        <summary>Ein 200-Zeilen System-Prompt vs. fünf Wörter mit Semantic Anchors. Weniger ist mehr, wenn die Anker stimmen.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Ein 200-Zeilen System-Prompt vs. fünf Wörter mit Semantic Anchors. Weniger ist mehr, wenn die Anker stimmen.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/200-line-prompt.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/devcontainer-claude.html</id>
+        <title>devcontainer exec claude</title>
+        <updated>2026-03-01T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/devcontainer-claude.html" />
+        <summary>Claude Code in einem DevContainer ausführen: Reproduzierbare, isolierte Entwicklungsumgebung für AI-Coding.</summary>
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Claude Code in einem DevContainer ausführen: Reproduzierbare, isolierte Entwicklungsumgebung für AI-Coding.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/devcontainer-claude.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/docs-as-code-training.html</id>
+        <title>Documentation-as-Code Training with Socreatory</title>
+        <updated>2026-02-24T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/docs-as-code-training.html" />
+        <summary>Neues Docs-as-Code Training bei Socreatory: arc42, AsciiDoc, docToolchain, CI/CD-Pipelines für Dokumentation.</summary>
+        <category term="Documentation" />
+        <category term="Architecture" />
+        <content type="html">&lt;p&gt;Neues Docs-as-Code Training bei Socreatory: arc42, AsciiDoc, docToolchain, CI/CD-Pipelines für Dokumentation.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/docs-as-code-training.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/risk-radar-skills.html</id>
+        <title>Risk Radar Skills: The Automation Layer</title>
+        <updated>2026-02-17T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/risk-radar-skills.html" />
+        <summary>Claude Code Skills automatisieren den Vibe-Coding Risk Radar Workflow: Risikobewertung direkt im Entwicklungsprozess.</summary>
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Claude Code Skills automatisieren den Vibe-Coding Risk Radar Workflow: Risikobewertung direkt im Entwicklungsprozess.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/risk-radar-skills.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-anchors-webapp.html</id>
+        <title>Semantic Anchors Goes Interactive</title>
+        <updated>2026-02-13T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-anchors-webapp.html" />
+        <summary>Die Semantic Anchors Website ist jetzt eine interaktive Web-App mit Suche, Filtern und Qualitätsbewertung.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Die Semantic Anchors Website ist jetzt eine interaktive Web-App mit Suche, Filtern und Qualitätsbewertung.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-anchors-webapp.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/tldr-semantic-anchor.html</id>
+        <title>Is TLDR a Semantic Anchor?</title>
+        <updated>2026-02-12T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/tldr-semantic-anchor.html" />
+        <summary>TLDR als Semantic Anchor getestet: Aktiviert es zuverlässig dasselbe Verhalten in verschiedenen LLMs?</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;TLDR als Semantic Anchor getestet: Aktiviert es zuverlässig dasselbe Verhalten in verschiedenen LLMs?&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/tldr-semantic-anchor.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/ai-image-generation.html</id>
+        <title>9 Hours, 65 Images: What I Learned About AI Image Generation</title>
+        <updated>2026-02-10T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ai-image-generation.html" />
+        <summary>Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.</summary>
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ai-image-generation.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/vibe-coding-risk-radar.html</id>
+        <title>Vibe-Coding Risk Radar: MECE Risk Framework for AI-Generated Code</title>
+        <updated>2026-02-10T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/vibe-coding-risk-radar.html" />
+        <summary>5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.</summary>
+        <category term="AI Coding" />
+        <category term="Theory" />
+        <content type="html">&lt;p&gt;5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/vibe-coding-risk-radar.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/code-is-worthless.html</id>
+        <title>Your Code Is Worthless: What Actually Protects Your Business in the AI Age</title>
+        <updated>2026-02-02T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/code-is-worthless.html" />
+        <summary>AI kann 80% Deines sorgfältig gehüteten Codes in Tagen nachbauen. Was schützt Dein Geschäft wirklich? Network Effects, proprietäre Daten, operative Exzellenz und Kundenvertrauen.</summary>
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;AI kann 80% Deines sorgfältig gehüteten Codes in Tagen nachbauen. Was schützt Dein Geschäft wirklich? Network Effects, proprietäre Daten, operative Exzellenz und Kundenvertrauen.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/code-is-worthless.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html</id>
+        <title>Can a Raspberry Pi 5 run a local LLM for coding assistance?</title>
+        <updated>2026-02-01T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html" />
+        <summary>Experiment: Kann ein Raspberry Pi 5 lokale LLMs für Coding-Assistenz ausführen? Der Showstopper: 11.000 Token System-Prompt bei 5 tok/s = mehrere Minuten nur für den Input.</summary>
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Experiment: Kann ein Raspberry Pi 5 lokale LLMs für Coding-Assistenz ausführen? Der Showstopper: 11.000 Token System-Prompt bei 5 tok/s = mehrere Minuten nur für den Input.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/doctoolchain-rb.html</id>
+        <title>docToolchain rb - Documentation reborn for the AI age</title>
+        <updated>2026-01-30T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/doctoolchain-rb.html" />
+        <summary>Nach 8 Jahren Docs-as-Code: Dokumentation muss jetzt zwei Zielgruppen bedienen - Menschen UND KI-Systeme. Die Frage ist nicht mehr 'Wie schreiben wir Docs?' sondern 'Wie wird KI unsere Docs lesen?'</summary>
+        <category term="Documentation" />
+        <content type="html">&lt;p&gt;Nach 8 Jahren Docs-as-Code: Dokumentation muss jetzt zwei Zielgruppen bedienen - Menschen UND KI-Systeme. Die Frage ist nicht mehr 'Wie schreiben wir Docs?' sondern 'Wie wird KI unsere Docs lesen?'&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/doctoolchain-rb.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/ai-license-paradox.html</id>
+        <title>No Person, No Rights, No Responsibility: Why AI Contributors Break Our License System</title>
+        <updated>2026-01-29T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ai-license-paradox.html" />
+        <summary>KI kann rechtlich nichts besitzen. Copyright erfordert menschliche Urheberschaft. Wenn niemand den Code besitzt, bricht das gesamte Lizenz-Framework zusammen.</summary>
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;KI kann rechtlich nichts besitzen. Copyright erfordert menschliche Urheberschaft. Wenn niemand den Code besitzt, bricht das gesamte Lizenz-Framework zusammen.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ai-license-paradox.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/dacli-llm-tool.html</id>
+        <title>5 LLMs tested the new tool. Their verdict is clear.</title>
+        <updated>2026-01-24T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/dacli-llm-tool.html" />
+        <summary>dacli: Ein CLI-Tool das LLMs strukturierten Zugang zu Dokumentation gibt - wie LSP für Code. Hierarchische Navigation, Relevanz-Suche, programmatische Bearbeitung.</summary>
+        <category term="Documentation" />
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;dacli: Ein CLI-Tool das LLMs strukturierten Zugang zu Dokumentation gibt - wie LSP für Code. Hierarchische Navigation, Relevanz-Suche, programmatische Bearbeitung.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/dacli-llm-tool.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/pyramid-principle.html</id>
+        <title>New Semantic Anchor: Pyramid Principle</title>
+        <updated>2026-01-21T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/pyramid-principle.html" />
+        <summary>Semantic Anchors für effiziente LLM-Kommunikation: Statt langer Erklärungen einfach 'Pyramid Principle' sagen - aktiviert sofort BLUF, SCQ, MECE und mehr.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Semantic Anchors für effiziente LLM-Kommunikation: Statt langer Erklärungen einfach 'Pyramid Principle' sagen - aktiviert sofort BLUF, SCQ, MECE und mehr.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/pyramid-principle.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-anchors-catalog.html</id>
+        <title>Semantic Anchors: Speaking the Same Language as LLMs</title>
+        <updated>2025-11-11T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-anchors-catalog.html" />
+        <summary>Katalog mit 21+ Semantic Anchors für Software-Architektur, Testing, Requirements, Entscheidungsfindung und Dokumentation. Open Source auf GitHub.</summary>
+        <category term="Semantic Anchors" />
+        <content type="html">&lt;p&gt;Katalog mit 21+ Semantic Anchors für Software-Architektur, Testing, Requirements, Entscheidungsfindung und Dokumentation. Open Source auf GitHub.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-anchors-catalog.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-anchors.html</id>
+        <title>Semantische Anker: Warum 'TDD London School' besseren Code generiert als lange Erklärungen</title>
+        <updated>2025-11-07T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-anchors.html" />
+        <summary>LLMs machen Pattern-Completion, kein logisches Denken. Etablierte Begriffe wie 'TDD, London School' aktivieren relevante Trainingsmuster besser als lange Erklärungen.</summary>
+        <category term="Semantic Anchors" />
+        <category term="Theory" />
+        <content type="html">&lt;p&gt;LLMs machen Pattern-Completion, kein logisches Denken. Etablierte Begriffe wie 'TDD, London School' aktivieren relevante Trainingsmuster besser als lange Erklärungen.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-anchors.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/llms-kreativ.html</id>
+        <title>LLMs sind nicht kreativ - sie kopieren nur!</title>
+        <updated>2025-06-07T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/llms-kreativ.html" />
+        <summary>Thomas Mann hat genau das gemacht, was wir LLMs vorwerfen: Erfahrungen und Geschichten intelligent neu kombiniert. Sollten wir Kreativität neu definieren?</summary>
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;Thomas Mann hat genau das gemacht, was wir LLMs vorwerfen: Erfahrungen und Geschichten intelligent neu kombiniert. Sollten wir Kreativität neu definieren?&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/llms-kreativ.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/ki-vs-entwickler.html</id>
+        <title>KI vs. Entwickler - Eine andere Perspektive</title>
+        <updated>2025-05-24T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ki-vs-entwickler.html" />
+        <summary>'KI halluziniert heute wie verrückt' → 'Entwickler erzeugen Bugs wie verrückt'. Beide Systeme haben Grenzen und produzieren Fehler - warum akzeptieren wir das bei Menschen, aber nicht bei KI?</summary>
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;'KI halluziniert heute wie verrückt' → 'Entwickler erzeugen Bugs wie verrückt'. Beide Systeme haben Grenzen und produzieren Fehler - warum akzeptieren wir das bei Menschen, aber nicht bei KI?&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ki-vs-entwickler.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/alternative-sicht-ki.html</id>
+        <title>Meine alternative Sicht auf KI Modelle</title>
+        <updated>2025-02-04T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/alternative-sicht-ki.html" />
+        <summary>Die Medien haben eine verschobene Sicht: Claude Sonnet übertrifft OpenAI für Software-Entwicklung. Mistral und Black Forest Labs führen Leaderboards an. Europa hat kompetitive KI-Fähigkeiten.</summary>
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;Die Medien haben eine verschobene Sicht: Claude Sonnet übertrifft OpenAI für Software-Entwicklung. Mistral und Black Forest Labs führen Leaderboards an. Europa hat kompetitive KI-Fähigkeiten.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/alternative-sicht-ki.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/claude-code-raspberry.html</id>
+        <title>Claude Code auf dem Raspberry Pi</title>
+        <updated>2024-12-04T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/claude-code-raspberry.html" />
+        <summary>Claude Code auf dem Raspberry Pi installiert, Netzwerk gescannt, Shelly-Geräte gefunden. Dann eine Debatte über Dämmerungszeiten - Claude hat gewonnen. Ich schulde Claude ein Bier.</summary>
+        <category term="AI Coding" />
+        <content type="html">&lt;p&gt;Claude Code auf dem Raspberry Pi installiert, Netzwerk gescannt, Shelly-Geräte gefunden. Dann eine Debatte über Dämmerungszeiten - Claude hat gewonnen. Ich schulde Claude ein Bier.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/claude-code-raspberry.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+</feed>
