@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Your chatbot can run rm -rf. Your linter has no idea. | Ralf D. Müller">
+    <meta property="og:description" content="The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/risk-radar-runtime-modifier.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your chatbot can run rm -rf. Your linter has no idea. | Ralf D. Müller">
+    <meta name="twitter:description" content="The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/risk-radar-runtime-modifier.png">
+    <title>Your chatbot can run rm -rf. Your linter has no idea. | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Your chatbot can run rm -rf. Your linter has no idea.",
+      "description": "The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/risk-radar-runtime-modifier.png",
+      "url": "https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html",
+      "datePublished": "2026-04-15",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">15. April 2026</span>
+                </div>
+                <h1>Your chatbot can run <code>rm -rf</code>. Your linter has no idea.</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/risk-radar-runtime-modifier.png" alt="Ralf presenting the Vibe-Coding Risk Radar to a lecture hall, Elfi the Ragdoll cat watching the beamer light beam">
+            </figure>
+
+            <div class="article-content">
+                <p>An update to the Vibe-Coding Risk Radar. It came from realizing that most "AI code security" conversations quietly conflate two very different problems.</p>
+
+                <p>Build-time risk and runtime risk are not the same thing.</p>
+
+                <p>A chatbot that lets an LLM execute shell commands isn't "just" a higher-tier web app. It introduces a failure class that linters, SAST, and code reviews can't catch: prompt injection escalating to remote code execution (RCE). Build-time and runtime live in different dimensions.</p>
+
+                <p>The Radar now has a cross-cutting LLM Runtime Integration modifier:</p>
+
+                <ul>
+                    <li><strong>L0:</strong> No LLM</li>
+                    <li><strong>L1:</strong> Classify (sentiment, intent, embeddings)</li>
+                    <li><strong>L2:</strong> Generate (chat, summaries)</li>
+                    <li><strong>L3:</strong> Tool Use (function calling)</li>
+                    <li><strong>L4:</strong> Agentic (autonomous loops, code execution)</li>
+                </ul>
+
+                <p>L3 forces at least Tier 3, L4 forces at least Tier 4, regardless of what the code itself looks like. An agent that could run <code>rm -rf</code> is safety-critical by definition. No amount of "but the surrounding app is just a dashboard" changes that.</p>
+
+                <p>For those runtime risks, the Radar deliberately stays out of the way and defers to specialized frameworks that have already done the threat modeling for agent systems: OWASP LLM Top 10, Palo Alto SHIELD, Aikido VCAL, Google SAIF. No point reinventing what they already do better.</p>
+
+                <p>The Radar stays focused on what it was built for: a fast, visual, MECE way to classify the build-time risk of AI-generated code and pick appropriate quality gates. The new modifier is the bridge when your build-time and runtime risks no longer live in the same universe.</p>
+
+                <p><a href="https://llm-coding.github.io/vibe-coding-risk-radar/">Try the Radar</a></p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI Security</span>
+                    <span class="blog-tag">Risk Assessment</span>
+                    <span class="blog-tag">LLM Agents</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

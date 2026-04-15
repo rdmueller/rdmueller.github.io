@@ -1,5 +1,19 @@
 [
   {
+    "title": "Your chatbot can run rm -rf. Your linter has no idea.",
+    "date": "2026-04-15",
+    "excerpt": "The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.",
+    "url": "blog/risk-radar-runtime-modifier.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/risk-radar-runtime-modifier.png",
+    "tags": [
+      "AI Security",
+      "Risk Assessment",
+      "LLM Agents"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "I DID it!",
     "date": "2026-04-11",
     "excerpt": "Replacing Zoom with a European alternative. A systematic Pugh matrix comparison of 7 video conferencing tools.",
