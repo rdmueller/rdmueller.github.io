@@ -1,0 +1,46 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": ".",
+      "url": [
+        "http://localhost/index.html",
+        "http://localhost/pages/blog.html",
+        "http://localhost/pages/talks.html",
+        "http://localhost/pages/blog/risk-radar-runtime-modifier.html",
+        "http://localhost/pages/blog/digital-independence-day.html",
+        "http://localhost/pages/blog/vibe-coding-risk-radar.html"
+      ],
+      "numberOfRuns": 3
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["warn", { "minScore": 0.8 }],
+        "categories:accessibility": ["error", { "minScore": 0.9 }],
+        "categories:seo": ["error", { "minScore": 0.9 }],
+        "categories:best-practices": ["warn", { "minScore": 0.9 }],
+        "color-contrast": "error",
+        "heading-order": "error",
+        "image-alt": "error",
+        "link-name": "error",
+        "meta-description": "error",
+        "document-title": "error",
+        "unsized-images": "warn",
+        "modern-image-formats": "warn",
+        "uses-responsive-images": "warn",
+        "unminified-css": "warn",
+        "non-composited-animations": "off",
+        "prioritize-lcp-image": "off",
+        "lcp-lazy-loaded": "off",
+        "inspector-issues": "off",
+        "label-content-name-mismatch": "off",
+        "offscreen-images": "off",
+        "unused-javascript": "off",
+        "uses-long-cache-ttl": "off",
+        "total-byte-weight": "off"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}

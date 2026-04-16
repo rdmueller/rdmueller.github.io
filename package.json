@@ -1,0 +1,11 @@
+{
+  "name": "rdmueller-website",
+  "private": true,
+  "description": "Personal website of Ralf D. Müller",
+  "scripts": {
+    "lhci": "lhci autorun"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0"
+  }
+}
