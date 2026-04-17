@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Choose Your Language, Choose Your Channel Capacity | Ralf D. Müller">
+    <meta property="og:description" content="Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-language-choice.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Choose Your Language, Choose Your Channel Capacity | Ralf D. Müller">
+    <meta name="twitter:description" content="Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-language-choice.png">
+    <title>Choose Your Language, Choose Your Channel Capacity | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Choose Your Language, Choose Your Channel Capacity",
+      "description": "Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/eichhorst-language-choice.png",
+      "url": "https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html",
+      "datePublished": "2026-05-07",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">7. May 2026</span>
+                </div>
+                <h1>Choose Your Language, Choose Your Channel Capacity</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/eichhorst-language-choice.png" alt="Illustration comparing programming language strictness as channel capacity for LLM coding">
+            </figure>
+
+            <div class="article-content">
+                <p>Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are "better" languages. Because they have thicker error correction.</p>
+
+                <p>This is the practical consequence of applying Shannon's theorem to agentic coding, and it is the fourth post in the Eichhorst's Principle series.</p>
+
+                <p>When an LLM writes JavaScript, the feedback it gets from the runtime is thin. No type errors at compile time. No access violation warnings. The code runs, produces a wrong result, and the only signal is a failing test (if you have one). The agent must reason about what went wrong from a behavioral failure. That is expensive: multiple round trips, deep reasoning, high token cost.</p>
+
+                <p>When an LLM writes Go, the compiler catches type mismatches, unused variables, and import errors before the code ever runs. <code>gofmt</code> auto-corrects formatting without the LLM lifting a finger. The agent gets precise, actionable error messages after every attempt. Most errors are fixed in one round trip.</p>
+
+                <p>When an LLM writes Java with strict modifiers, the compiler catches even more: access violations on private fields, final reassignments, interface contract breaches. Each modifier is an additional error-correcting bit in the channel.</p>
+
+                <p>The informal throughput formula:</p>
+
+                <p>Throughput = generated code / (generation time + round trips x cost per trip)</p>
+
+                <p>The numerator is roughly the same across languages. The denominator is where the difference lives. Thicker error correction means fewer round trips means higher throughput.</p>
+
+                <p>But there is a catch. Strictness alone is not enough. The error messages must be actionable. A Java compiler error ("expected int, got String") tells the agent exactly what to fix. A Rust borrow checker error ("cannot borrow x as mutable because it is also borrowed as immutable") requires the agent to understand the ownership model deeply enough to restructure the code.</p>
+
+                <p>Actionable error messages have always been a quality marker of programming languages. Elm is famous for it. The <code>clang</code> vs. <code>gcc</code> competition was fought partly on diagnostic quality. What is new is that the same quality now directly affects LLM throughput.</p>
+
+                <p>The ideal language for agentic coding is strict, produces clear error messages, and has strong auto-formatting. Today, that points to Go, Kotlin, and Java. Rust has the strictest compiler but the steepest actionability curve. JavaScript and Python have the weakest error correction but the largest ecosystems.</p>
+
+                <p>Choose your language. You are choosing your channel capacity.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Software Architecture</span>
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Eichhorst's Principle</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

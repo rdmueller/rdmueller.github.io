@@ -1,5 +1,61 @@
 [
   {
+    "title": "Choose Your Language, Choose Your Channel Capacity",
+    "date": "2026-05-07",
+    "excerpt": "Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.",
+    "url": "blog/eichhorst-language-choice.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/eichhorst-language-choice.png",
+    "tags": [
+      "Software Architecture",
+      "AI",
+      "Eichhorst's Principle"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "The Correction Radius: When to Stop the Feedback Loop",
+    "date": "2026-04-30",
+    "excerpt": "Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.",
+    "url": "blog/eichhorst-correction-radius.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/eichhorst-correction-radius.png",
+    "tags": [
+      "Software Architecture",
+      "AI",
+      "Eichhorst's Principle"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Purpose vs. Task: Where the Human-Machine Boundary Actually Sits",
+    "date": "2026-04-24",
+    "excerpt": "The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.",
+    "url": "blog/eichhorst-purpose-vs-task.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/eichhorst-purpose-vs-task.png",
+    "tags": [
+      "Software Architecture",
+      "AI",
+      "Eichhorst's Principle"
+    ],
+    "lang": "en"
+  },
+  {
+    "title": "Your Compiler Is Shannon's Noiseless Channel",
+    "date": "2026-04-17",
+    "excerpt": "The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.",
+    "url": "blog/eichhorst-noiseless-channel.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/eichhorst-noiseless-channel.png",
+    "tags": [
+      "Software Architecture",
+      "AI",
+      "Eichhorst's Principle"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Your chatbot can run rm -rf. Your linter has no idea.",
     "date": "2026-04-15",
     "excerpt": "The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.",

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Purpose vs. Task: Where the Human-Machine Boundary Actually Sits | Ralf D. Müller">
+    <meta property="og:description" content="The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-purpose-vs-task.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Purpose vs. Task: Where the Human-Machine Boundary Actually Sits | Ralf D. Müller">
+    <meta name="twitter:description" content="The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-purpose-vs-task.png">
+    <title>Purpose vs. Task: Where the Human-Machine Boundary Actually Sits | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Purpose vs. Task: Where the Human-Machine Boundary Actually Sits",
+      "description": "The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/eichhorst-purpose-vs-task.png",
+      "url": "https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html",
+      "datePublished": "2026-04-24",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">24. April 2026</span>
+                </div>
+                <h1>Purpose vs. Task: Where the Human-Machine Boundary Actually Sits</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/eichhorst-purpose-vs-task.png" alt="Illustration of purpose vs task boundary in AI-assisted development">
+            </figure>
+
+            <div class="article-content">
+                <p>The LLM does not know why you are building this.</p>
+
+                <p>Last week I wrote about Eichhorst's Principle and the compiler as Shannon's noiseless channel. Today a different angle from the same conversation with Avraham Poupko.</p>
+
+                <p>We talked about where the human-machine boundary actually sits. Not in the code. Not in the tools. In the question "why?"</p>
+
+                <p>Purpose vs. Task. Two words that clarify everything.</p>
+
+                <p>Purpose is "why are we doing this?" It is meaning, goals, value, context. It lives in the heads of stakeholders, in conversations, in the messy reality of a business that changes every quarter. Purpose is not delegable.</p>
+
+                <p>Task is "what should the machine do?" Execution, implementation, code generation. Tasks are delegable, and LLMs are getting remarkably good at them.</p>
+
+                <p>As long as the human defines the purpose and the machine executes tasks, we are using the machine to our benefit. The danger is when the boundary blurs.</p>
+
+                <p>And it blurs quietly. An LLM that always suggests microservices when you ask for architecture advice is not just completing a task. It is shaping your purpose. An LLM that generates a requirements document from a vague briefing is not just writing, it is deciding what matters. Not because it intends to, but because you did not specify it clearly enough, and the model filled in the gaps with its training distribution.</p>
+
+                <p>This is the "tool shapes the hand" problem. The saw does not decide what to build, but the carpenter who only owns a saw will see every problem as a cutting problem.</p>
+
+                <p>In my Semantic Anchors Workflow, this maps cleanly to phases. Phase 1, Requirements Discovery with the Socratic Method, is purpose work. The human drives. The LLM asks clarifying questions but does not decide. Phase 4, Implementation, is task work. The LLM drives. The human reviews.</p>
+
+                <p>The separation of phases is not process overhead. It is the mechanism that keeps purpose in human hands.</p>
+
+                <p>Avraham put it simply: as long as we maintain this distinction, AI is a tool we use. The moment we stop asking "why," it becomes a tool that uses us.</p>
+
+                <p>The full workflow: <a href="https://llm-coding.github.io/Semantic-Anchors/workflow">https://llm-coding.github.io/Semantic-Anchors/workflow</a></p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Software Architecture</span>
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Eichhorst's Principle</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

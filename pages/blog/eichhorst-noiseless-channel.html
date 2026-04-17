@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Your Compiler Is Shannon's Noiseless Channel | Ralf D. Müller">
+    <meta property="og:description" content="The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-noiseless-channel.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Compiler Is Shannon's Noiseless Channel | Ralf D. Müller">
+    <meta name="twitter:description" content="The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-noiseless-channel.png">
+    <title>Your Compiler Is Shannon's Noiseless Channel | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Your Compiler Is Shannon's Noiseless Channel",
+      "description": "The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/eichhorst-noiseless-channel.png",
+      "url": "https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html",
+      "datePublished": "2026-04-17",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">17. April 2026</span>
+                </div>
+                <h1>Your Compiler Is Shannon's Noiseless Channel</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/eichhorst-noiseless-channel.png" alt="Illustration of a compiler as Shannon's noiseless channel in agentic coding">
+            </figure>
+
+            <div class="article-content">
+                <p>Your compiler is not a tool. It is Shannon's noiseless channel.</p>
+
+                <p>I had a conversation with Avraham Poupko that changed how I think about Eichhorst's Principle. Eichhorst's Principle applies Shannon's noisy channel theorem to LLM coding: an LLM is a noisy, non-deterministic channel, and an agent in a feedback loop is error correction.</p>
+
+                <p>But Shannon's theorem has a prerequisite that I had been overlooking. Before you can do error correction, sender and receiver must agree on the correction method over a separate, noiseless channel. In agentic coding, that noiseless channel is the compiler. It is deterministic, unambiguous, and not open to interpretation. When it says "type mismatch," there is no negotiation.</p>
+
+                <p>This has a consequence that surprised me.</p>
+
+                <p>Modifiers like <code>private</code>, <code>static</code>, <code>final</code> were invented for human programmers. They protect API boundaries. The running program does not care whether a field is private. But the compiler does. And now the LLM does too. When an agent tries to access a private field, the compiler returns an error, the agent reads it, and corrects itself. A language feature designed for human discipline turns out to be error correction for machines.</p>
+
+                <p>The stricter the language, the stronger the error correction. That makes language choice a channel capacity decision, not just a preference.</p>
+
+                <p>But here is where it gets practical. The real cost of error correction is not the compiler running (milliseconds). It is the full round trip: LLM generates, compiler rejects, error goes back to the LLM, LLM reasons about the fix, generates again. Every round trip costs tokens and time.</p>
+
+                <p>The optimization is obvious once you see it: push error correction into layers that do not need the LLM at all. A formatter like <code>gofmt</code> or <code>prettier</code> fixes an entire class of errors without a single LLM round trip. An <code>eslint --fix</code> corrects patterns before the LLM even sees them. Every auto-corrected error is an error the LLM does not spend tokens on.</p>
+
+                <p>Three levels of error correction, ranked by cost:</p>
+
+                <p>Auto-correction (prettier, gofmt, eslint --fix): zero LLM involvement, near-zero cost.<br>
+                Diagnostics (compiler, type checker): LLM reads the error and fixes it. Medium cost.<br>
+                Behavioral verification (tests, BDD): LLM must understand the failing test, find the root cause, and fix it. High cost, often multiple round trips.</p>
+
+                <p>The goal: maximize the first level. Free the LLM budget for the errors that actually require reasoning.</p>
+
+                <p>"You can communicate over noisy channels, but you should invest in clear channels." That line from our conversation stuck with me. Better models give us a clearer channel. Better error correction gives us a safety net. Both matter.</p>
+
+                <p>Thanks Avraham Poupko for a conversation that made me rethink the fundamentals.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Software Architecture</span>
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Eichhorst's Principle</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

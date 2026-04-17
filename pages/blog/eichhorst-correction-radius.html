@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The Correction Radius: When to Stop the Feedback Loop | Ralf D. Müller">
+    <meta property="og:description" content="Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-correction-radius.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Correction Radius: When to Stop the Feedback Loop | Ralf D. Müller">
+    <meta name="twitter:description" content="Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorst-correction-radius.png">
+    <title>The Correction Radius: When to Stop the Feedback Loop | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The Correction Radius: When to Stop the Feedback Loop",
+      "description": "Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/eichhorst-correction-radius.png",
+      "url": "https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html",
+      "datePublished": "2026-04-30",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">30. April 2026</span>
+                </div>
+                <h1>The Correction Radius: When to Stop the Feedback Loop</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/eichhorst-correction-radius.png" alt="Illustration of the correction radius concept in agentic coding feedback loops">
+            </figure>
+
+            <div class="article-content">
+                <p>Your feedback loop has a correction radius. Beyond it, the agent just makes things worse.</p>
+
+                <p>Third post in the Eichhorst's Principle series. The first was about the compiler as Shannon's noiseless channel. The second about Purpose vs. Task. This one is about knowing when to stop the loop.</p>
+
+                <p>Agentic coding works because the agent corrects itself. It writes code, the compiler rejects it, the agent reads the error, fixes the code, tries again. That loop is powerful. It turns a noisy, non-deterministic LLM into a reliable coding partner. Shannon's error correction, applied to software.</p>
+
+                <p>But error-correcting codes have a fundamental limit. They can detect and correct errors up to a certain distance from the correct signal. In coding theory, that is the Hamming distance. Beyond it, the code cannot recover. The signal is too far from anything correct.</p>
+
+                <p>The same applies to agentic coding.</p>
+
+                <p>A syntax error is a small distance from correct code. The compiler says "missing semicolon on line 42." The agent adds the semicolon. One round trip, done.</p>
+
+                <p>A type mismatch is a medium distance. The compiler says "expected int, got String." The agent reasons about the conversion, fixes the call site. Maybe two round trips.</p>
+
+                <p>A wrong algorithm is a large distance. The tests fail, the agent reads the failure, tries a different approach, the tests fail differently, the agent tries again. Five round trips, ten round trips. The cost escalates. Sometimes the agent finds a fix. Sometimes it oscillates between two wrong approaches.</p>
+
+                <p>A fundamental architectural mistake is beyond the correction radius. The agent cannot fix it because the fix requires understanding the purpose behind the architecture, and that purpose lives outside the code. No number of round trips will help. The feedback loop is optimizing in the wrong search space.</p>
+
+                <p>When you see an agent cycling through increasingly desperate fixes, it has exceeded its correction radius. The correct intervention is not a better prompt or a longer context window. It is a human stepping in and redirecting at the purpose level.</p>
+
+                <p>This connects to something practical. The Semantic Anchors Workflow breaks work into small, well-defined steps. Each step is a short transmission over the noisy channel. Short transmissions stay within the correction radius. The paradox: the smaller you make each task, the more autonomy you can give the agent. Not despite the correction radius, but because of it.</p>
+
+                <p>Small steps are not caution. They are information theory.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Software Architecture</span>
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Eichhorst's Principle</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

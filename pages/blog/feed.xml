@@ -5,11 +5,66 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-04-11T00:00:00Z</updated>
+    <updated>2026-05-07T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html</id>
+        <title>Choose Your Language, Choose Your Channel Capacity</title>
+        <updated>2026-05-07T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html" />
+        <summary>Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.</summary>
+        <category term="Software Architecture" />
+        <category term="AI" />
+        <category term="Eichhorst's Principle" />
+        <content type="html">&lt;p&gt;Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html</id>
+        <title>The Correction Radius: When to Stop the Feedback Loop</title>
+        <updated>2026-04-30T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html" />
+        <summary>Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.</summary>
+        <category term="Software Architecture" />
+        <category term="AI" />
+        <category term="Eichhorst's Principle" />
+        <content type="html">&lt;p&gt;Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html</id>
+        <title>Purpose vs. Task: Where the Human-Machine Boundary Actually Sits</title>
+        <updated>2026-04-24T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html" />
+        <summary>The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.</summary>
+        <category term="Software Architecture" />
+        <category term="AI" />
+        <category term="Eichhorst's Principle" />
+        <content type="html">&lt;p&gt;The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html</id>
+        <title>Your Compiler Is Shannon's Noiseless Channel</title>
+        <updated>2026-04-17T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html" />
+        <summary>The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.</summary>
+        <category term="Software Architecture" />
+        <category term="AI" />
+        <category term="Eichhorst's Principle" />
+        <content type="html">&lt;p&gt;The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html</id>
+        <title>Your chatbot can run rm -rf. Your linter has no idea.</title>
+        <updated>2026-04-15T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html" />
+        <summary>The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.</summary>
+        <category term="AI Security" />
+        <category term="Risk Assessment" />
+        <category term="LLM Agents" />
+        <content type="html">&lt;p&gt;The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/digital-independence-day.html</id>
         <title>I DID it!</title>
