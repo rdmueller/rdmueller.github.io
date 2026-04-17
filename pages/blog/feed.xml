@@ -142,8 +142,9 @@
         <updated>2026-03-19T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/closed-loop-coding.html" />
         <summary>Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.</summary>
-        <category term="Theory" />
-        <category term="AI Coding" />
+        <category term="Software Architecture" />
+        <category term="AI" />
+        <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/closed-loop-coding.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -152,8 +153,9 @@
         <updated>2026-03-18T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorsts-principle.html" />
         <summary>Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.</summary>
-        <category term="Theory" />
-        <category term="AI Coding" />
+        <category term="Software Architecture" />
+        <category term="AI" />
+        <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorsts-principle.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>

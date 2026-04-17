@@ -169,8 +169,9 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/closed-loop-coding.png",
     "tags": [
-      "Theory",
-      "AI Coding"
+      "Software Architecture",
+      "AI",
+      "Eichhorst's Principle"
     ],
     "lang": "en"
   },
@@ -182,8 +183,9 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/eichhorsts-principle.png",
     "tags": [
-      "Theory",
-      "AI Coding"
+      "Software Architecture",
+      "AI",
+      "Eichhorst's Principle"
     ],
     "lang": "en"
   },
