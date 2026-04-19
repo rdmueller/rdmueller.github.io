@@ -1,5 +1,18 @@
 [
   {
+    "title": "Agentic Coding mit Magic Spells: Semantic Anchors",
+    "date": "2026-04-19",
+    "excerpt": "Semantic Anchors sind Begriffe, die Wissensinseln in LLMs aktivieren. \"TDD London School\" ersetzt 150 Zeilen Prompt — und ist wartbar. Zu Gast beim HMZE Beyond Vibe Coding Podcast.",
+    "url": "blog/hmze-semantic-anchors.html",
+    "linkedin": "https://www.linkedin.com/feed/update/",
+    "icon": "images/blog/linkedin/hmze-semantic-anchors.png",
+    "tags": [
+      "Semantic Anchors",
+      "Podcast"
+    ],
+    "lang": "de"
+  },
+  {
     "title": "Choose Your Language, Choose Your Channel Capacity",
     "date": "2026-05-07",
     "excerpt": "Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.",

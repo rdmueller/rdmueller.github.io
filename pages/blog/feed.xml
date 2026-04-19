@@ -44,6 +44,16 @@
         <content type="html">&lt;p&gt;The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
+        <id>https://rdmueller.github.io/pages/blog/hmze-semantic-anchors.html</id>
+        <title>Agentic Coding mit Magic Spells: Semantic Anchors</title>
+        <updated>2026-04-19T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/hmze-semantic-anchors.html" />
+        <summary>Semantic Anchors sind Begriffe, die Wissensinseln in LLMs aktivieren. "TDD London School" ersetzt 150 Zeilen Prompt — und ist wartbar. Zu Gast beim HMZE Beyond Vibe Coding Podcast.</summary>
+        <category term="Semantic Anchors" />
+        <category term="Podcast" />
+        <content type="html">&lt;p&gt;Semantic Anchors sind Begriffe, die Wissensinseln in LLMs aktivieren. "TDD London School" ersetzt 150 Zeilen Prompt — und ist wartbar. Zu Gast beim HMZE Beyond Vibe Coding Podcast.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/hmze-semantic-anchors.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
         <id>https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html</id>
         <title>Your Compiler Is Shannon's Noiseless Channel</title>
         <updated>2026-04-17T00:00:00Z</updated>
