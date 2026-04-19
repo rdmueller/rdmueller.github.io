@@ -1,5 +1,18 @@
 [
   {
+    "title": "Agentic Coding vs. CNC Fräsen",
+    "date": "2026-04-19",
+    "excerpt": "Panel-Diskussion bei betterCode Modern Architecture 2026: CNC-Analogie, Senior/Junior-Produktivität mit KI und autonome Agenten — mit Ingo Eichhorst und Ferdinand Adé.",
+    "url": "blog/bettercode-panel-ki.html",
+    "linkedin": "https://www.linkedin.com/feed/update/",
+    "icon": "images/blog/linkedin/bettercode-panel-ki.jpg",
+    "tags": [
+      "Software Architektur",
+      "Panel"
+    ],
+    "lang": "de"
+  },
+  {
     "title": "Agentic Coding mit Magic Spells: Semantic Anchors",
     "date": "2026-04-19",
     "excerpt": "Semantic Anchors sind Begriffe, die Wissensinseln in LLMs aktivieren. \"TDD London School\" ersetzt 150 Zeilen Prompt — und ist wartbar. Zu Gast beim HMZE Beyond Vibe Coding Podcast.",
