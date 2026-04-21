@@ -1,5 +1,19 @@
 [
   {
+    "title": "5 Blind Spots in Coding LLMs",
+    "date": "2026-04-27",
+    "excerpt": "Deprecated APIs, domain gaps, cross-file failures, and the meta-gap. What AI-generated tube radios teach us about AI-generated code.",
+    "url": "blog/llm-blind-spots.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/llm-blind-spots.png",
+    "tags": [
+      "GenAI",
+      "LLM",
+      "Context Engineering"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Agentic Coding vs. CNC Fräsen",
     "date": "2026-04-19",
     "excerpt": "Panel-Diskussion bei betterCode Modern Architecture 2026: CNC-Analogie, Senior/Junior-Produktivität mit KI und autonome Agenten — mit Ingo Eichhorst und Ferdinand Adé.",

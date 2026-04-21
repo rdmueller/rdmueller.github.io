@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="5 blind spots in coding LLMs: time gap, domain gap, context gap, structure gap, and the meta-gap. Why AI-generated code breaks like AI-generated tube radios.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/llm-blind-spots.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/llm-blind-spots.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="5 Blind Spots in Coding LLMs | Ralf D. Müller">
+    <meta property="og:description" content="Deprecated APIs, domain gaps, cross-file failures, and the meta-gap. What AI-generated tube radios teach us about AI-generated code.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/llm-blind-spots.png">
+    <title>5 Blind Spots in Coding LLMs | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "5 Blind Spots in Coding LLMs",
+      "description": "Deprecated APIs, domain gaps, cross-file failures, and the meta-gap. What AI-generated tube radios teach us about AI-generated code.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/llm-blind-spots.png",
+      "url": "https://rdmueller.github.io/pages/blog/llm-blind-spots.html",
+      "datePublished": "2026-04-27",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">27. April 2026</span>
+                </div>
+                <h1>5 Blind Spots in Coding LLMs</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/llm-blind-spots.png" alt="AI-generated vintage tube radio with impossible dials and wrong buttons">
+            </figure>
+
+            <div class="article-content">
+                <p>Ask an image generator for a vintage tube radio and you'll spot the blind spot instantly. The dials are wrong, the buttons don't exist, the whole thing looks like a fever dream of a radio.</p>
+
+                <p>Coding LLMs have the same blind spots. We just don't see them as clearly, because broken code compiles often enough to feel right.</p>
+
+                <h2>1. Time gap</h2>
+                <p>Deprecated APIs show up in 25-38% of completions (<a href="https://arxiv.org/abs/2406.09834" target="_blank">ICSE 2025</a>). Your model's favorite React hook might have been removed 14 months ago.</p>
+
+                <h2>2. Domain gap</h2>
+                <p>The tube-radio zone. COBOL, ABAP, IEC 61131-3, AUTOSAR, BaFin specifics, internal frameworks of large enterprises. Exists, runs production, barely in training data.</p>
+
+                <h2>3. Context gap</h2>
+                <p>Your codebase. Your ADRs. Your team's naming conventions. Structurally unknowable.</p>
+
+                <h2>4. Structure gap</h2>
+                <p>Models scoring 80%+ on isolated tasks can drop below 25% on repository-level benchmarks (<a href="https://github.com/amazon-science/cceval" target="_blank">CrossCodeEval</a>, <a href="https://arxiv.org/abs/2408.03519" target="_blank">RepoMasterEval</a>). A function the model nails in isolation breaks when it has to reach across three files.</p>
+
+                <h2>5. The meta-gap</h2>
+                <p>The model doesn't know which of the above it's in. Hallucination confidence scales inversely with training-data density. The thinner the spot, the more convincing the fabrication.</p>
+
+                <p>That last one is why the others are dangerous.</p>
+
+                <p><strong>Practical move:</strong> before every non-trivial LLM task, ask which zone you're in. If it's 1-4, feed context (llms.txt, MCP, AGENTS.md, pinned versions). If it's 5, read more carefully than you want to.</p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">Context Engineering</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">&larr; Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ralf D. Müller. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
