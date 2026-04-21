@@ -1,4 +1,6 @@
 [
+  {"title": "Beyond Vibe Coding: Semantic Anchors als Magic Spells (Episode 58)", "event": "HMZE Podcast", "location": "Online", "date": "2026-04-18", "url": "https://www.youtube.com/watch?v=rQj-B3VTx48", "type": "Podcast", "video": "https://www.youtube.com/watch?v=rQj-B3VTx48"},
+  {"title": "Panel: KI in der Softwarearchitektur", "event": "betterCode() Modern Architecture", "location": "Online", "date": "2026-04-17", "url": "https://youtu.be/6UoOkR841oo", "type": "Panel", "video": "https://youtu.be/6UoOkR841oo"},
   {"title": "Agile Doku (mit Liam Bergh)", "event": "software-architektur.tv", "location": "Online", "date": "2026-01-30", "url": "https://software-architektur.tv/2026/01/30/folge300.html", "type": "Podcast"},
   {"title": "Spec-Driven-Development (mit Simon Martinelli)", "event": "software-architektur.tv", "location": "Online", "date": "2026-01-16", "url": "https://software-architektur.tv/2026/01/16/folge298.html", "type": "Podcast"},
   {"title": "Future of Software Architecture: How GenAI & LLMs Are Shaping the Code of Tomorrow", "event": "software-architektur.tv", "location": "Online", "date": "2026-01-05", "url": "https://software-architektur.tv/2026/01/05/folge297.html", "type": "Podcast"},
