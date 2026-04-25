@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vortrag: Spec-Driven Agentic Coding mit semantischen Ankern — wie ein gemeinsames Vokabular die Qualität von AI-generiertem Code verändert">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/talks/spec-driven-agentic-coding.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/talks/spec-driven-agentic-coding.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Spec-Driven Agentic Coding mit semantischen Ankern | Ralf D. Müller">
+    <meta property="og:description" content="Wie semantische Anker und Eichhorst's Principle einen reproduzierbaren AI-Entwicklungsworkflow ermöglichen">
+    <meta property="og:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spec-Driven Agentic Coding mit semantischen Ankern">
+    <meta name="twitter:description" content="Wie semantische Anker und Eichhorst's Principle einen reproduzierbaren AI-Entwicklungsworkflow ermöglichen">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
+    <title>Spec-Driven Agentic Coding mit semantischen Ankern | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .talk-detail { max-width: 720px; margin: 0 auto; }
+        .talk-meta { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 24px; }
+        .talk-meta-item {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 4px 12px; border-radius: 6px;
+            font-size: 14px; background: #f0f0f0; color: #555;
+        }
+        .talk-abstract { font-size: 16px; line-height: 1.7; color: #333; }
+        .talk-abstract p { margin-bottom: 16px; }
+        .talk-keywords { margin-top: 24px; }
+        .talk-keywords span {
+            display: inline-block; padding: 4px 10px; margin: 3px 4px 3px 0;
+            border-radius: 4px; font-size: 13px;
+            background: #e8f4f8; color: #1a5276;
+        }
+        .talk-cta {
+            margin-top: 32px; padding: 24px;
+            background: #f8f8f5; border-radius: 8px; text-align: center;
+        }
+        .talk-cta p { margin-bottom: 12px; font-size: 15px; color: #555; }
+        .back-link { display: inline-block; margin-bottom: 16px; font-size: 14px; color: #666; }
+        .back-link:hover { color: #333; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html" class="active">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="talk-detail">
+                <a href="../talks.html" class="back-link">&larr; Alle Vorträge</a>
+                <h1>Spec-Driven Agentic Coding mit semantischen Ankern</h1>
+
+                <div class="talk-meta">
+                    <span class="talk-meta-item">Vortrag, 45 Minuten</span>
+                    <span class="talk-meta-item">Deutsch oder Englisch</span>
+                    <span class="talk-meta-item">Fortgeschritten</span>
+                </div>
+
+                <div class="talk-abstract">
+                    <p>KI-Coding-Assistenten schreiben inzwischen funktionierenden Code. Aber sie schreiben den falschen Code, weil sie nicht verstehen, was wir meinen. Wer "schreib mir einen Test" sagt, bekommt irgendeinen Test. Wer "TDD nach London School" sagt, bekommt genau den richtigen.</p>
+
+                    <p>Dieses Prinzip steckt hinter semantischen Ankern: etablierte Fachbegriffe, Methodiken und Frameworks, die als gemeinsames Vokabular zwischen Mensch und KI funktionieren. Statt langer Prompts reicht ein einzelner Begriff wie "arc42", "Fagan Inspection" oder "INVEST-Kriterien", um präzise Ergebnisse zu erzielen. Der KI-Assistent kennt diese Konzepte aus seinen Trainingsdaten und kann sie sofort anwenden.</p>
+
+                    <p>Die theoretische Grundlage liefert Eichhorst's Principle: Analog zu Shannons Informationstheorie ist das LLM ein nicht-deterministischer Kommunikationskanal. Tests übernehmen die Rolle der Fehlerkorrektur — deshalb ist TDD im AI-Workflow nicht optional, sondern zwingend. Daraus ergibt sich ein vollständiger Entwicklungsworkflow: Spec-Driven Agentic Coding. Statt direkt Code zu schreiben, beginnt jedes Feature mit einer Spezifikation — Use Cases, Akzeptanzkriterien in Gherkin, Architekturentscheidungen als ADRs mit Pugh-Matrix. Erst wenn die Spec steht, generiert der AI-Agent den Code per TDD, prüft ihn mit Fagan Inspection und OWASP Top 10, und dokumentiert mit Docs-as-Code.</p>
+
+                    <p>Anhand konkreter Beispiele aus realen Projekten zeige ich, was semantische Anker sind, wie semantische Contracts funktionieren und wie alles zu einem funktionierenden Greenfield Workflow zusammen gebaut wird. Versteht man diesen, weiss man auch, wie man brownfield Projekte mit LLMs angehen kann.</p>
+                </div>
+
+                <h2>Teilnehmer lernen</h2>
+                <ul>
+                    <li>Was semantische Anker sind und wie sie Prompt-Qualität und Code-Qualität gleichzeitig verbessern</li>
+                    <li>Warum Eichhorst's Principle TDD im AI-Workflow zwingend macht</li>
+                    <li>Einen reproduzierbaren Workflow von der Spezifikation bis zum Review</li>
+                    <li>Wie man AI-Konfiguration (CLAUDE.md, AGENTS.md) als Code versioniert und im Team teilt</li>
+                    <li>Wie sich der Greenfield-Workflow auf brownfield Projekte übertragen lässt</li>
+                </ul>
+
+                <div class="talk-keywords">
+                    <span>Semantic Anchors</span>
+                    <span>GenAI / LLMs</span>
+                    <span>Prompt Engineering</span>
+                    <span>TDD</span>
+                    <span>Software-Architektur</span>
+                    <span>arc42</span>
+                    <span>Docs-as-Code</span>
+                    <span>Eichhorst's Principle</span>
+                </div>
+
+                <div class="talk-cta">
+                    <p>Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?</p>
+                    <a href="../../index.html#contact" class="btn btn-primary">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

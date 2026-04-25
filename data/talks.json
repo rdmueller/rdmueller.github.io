@@ -1,4 +1,5 @@
 [
+  {"title": "Spec-Driven Agentic Coding mit semantischen Ankern", "event": "IT-Tage", "location": "Frankfurt", "date": "2026-12-07", "url": "pages/talks/spec-driven-agentic-coding.html", "type": "Talk"},
   {"title": "Beyond Vibe Coding: Semantic Anchors als Magic Spells (Episode 58)", "event": "HMZE Podcast", "location": "Online", "date": "2026-04-18", "url": "https://www.youtube.com/watch?v=rQj-B3VTx48", "type": "Podcast", "video": "https://www.youtube.com/watch?v=rQj-B3VTx48"},
   {"title": "Panel: KI in der Softwarearchitektur", "event": "betterCode() Modern Architecture", "location": "Online", "date": "2026-04-17", "url": "https://youtu.be/6UoOkR841oo", "type": "Panel", "video": "https://youtu.be/6UoOkR841oo"},
   {"title": "Agile Doku (mit Liam Bergh)", "event": "software-architektur.tv", "location": "Online", "date": "2026-01-30", "url": "https://software-architektur.tv/2026/01/30/folge300.html", "type": "Podcast"},

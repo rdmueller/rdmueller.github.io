@@ -213,12 +213,15 @@
                             const links = document.createElement('div');
                             links.className = 'talk-links';
 
-                            if (talk.url && isSafeHttpUrl(talk.url)) {
+                            if (talk.url && (isSafeHttpUrl(talk.url) || isSafeRelativePath(talk.url))) {
                                 const eventLink = document.createElement('a');
-                                eventLink.href = talk.url;
-                                eventLink.target = '_blank';
-                                eventLink.rel = 'noopener';
-                                eventLink.textContent = 'Event';
+                                const isRelative = isSafeRelativePath(talk.url) && !isSafeHttpUrl(talk.url);
+                                eventLink.href = isRelative ? '../' + talk.url : talk.url;
+                                if (!isRelative) {
+                                    eventLink.target = '_blank';
+                                    eventLink.rel = 'noopener';
+                                }
+                                eventLink.textContent = isRelative ? 'Abstract' : 'Event';
                                 links.appendChild(eventLink);
                             }
                             if (talk.video && isSafeHttpUrl(talk.video)) {
