@@ -2310,6 +2310,30 @@ ul, ol {
     margin-top: 4px;
 }
 
+.comment-reply-btn {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #888;
+    text-decoration: none;
+}
+
+.comment-reply-btn:hover {
+    color: var(--color-primary);
+}
+
+.comment-discussion-link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #666;
+    text-decoration: none;
+}
+
+.comment-discussion-link:hover {
+    color: var(--color-primary);
+}
+
 .profile-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

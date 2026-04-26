@@ -167,6 +167,16 @@
         bodyDiv.appendChild(headerDiv);
         bodyDiv.appendChild(p);
 
+        if (comment.html_url) {
+            var replyLink = document.createElement('a');
+            replyLink.href = comment.html_url;
+            replyLink.target = '_blank';
+            replyLink.rel = 'noopener';
+            replyLink.className = 'comment-reply-btn';
+            replyLink.textContent = 'Reply';
+            bodyDiv.appendChild(replyLink);
+        }
+
         div.appendChild(avatarDiv);
         div.appendChild(bodyDiv);
         return div;
