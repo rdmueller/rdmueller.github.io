@@ -80,11 +80,27 @@
     }
 
     function renderComments(comments, discussionNumber) {
-        var fragment = document.createDocumentFragment();
+        var topLevel = [];
+        var replies = {};
 
-        comments.forEach(function(comment) {
+        comments.forEach(function(c) {
+            if (c.parent_id) {
+                if (!replies[c.parent_id]) replies[c.parent_id] = [];
+                replies[c.parent_id].push(c);
+            } else {
+                topLevel.push(c);
+            }
+        });
+
+        var fragment = document.createDocumentFragment();
+        topLevel.forEach(function(comment) {
             var el = createComment(comment, false);
             if (el) fragment.appendChild(el);
+            var children = replies[comment.id] || [];
+            children.forEach(function(reply) {
+                var replyEl = createComment(reply, true);
+                if (replyEl) fragment.appendChild(replyEl);
+            });
         });
 
         container.appendChild(fragment);
