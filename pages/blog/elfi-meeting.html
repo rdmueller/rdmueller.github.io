@@ -33,18 +33,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .comments-section { margin-top: 40px; border-top: 2px solid #e8e8e4; padding-top: 24px; }
-        .comments-section h2 { font-size: 18px; margin-bottom: 16px; }
-        .comments-list { display: flex; flex-direction: column; gap: 16px; }
-        .comment { display: flex; gap: 12px; padding: 12px; background: #f8f8f5; border-radius: 8px; }
-        .comment-avatar img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
-        .comment-body { flex: 1; }
-        .comment-header { margin-bottom: 4px; }
-        .comment-author { font-size: 14px; }
-        .comment-role { font-size: 11px; color: #888; margin-left: 6px; }
-        .comment p { font-size: 13px; line-height: 1.5; color: #444; margin: 0; }
-    </style>
+
 </head>
 <body>
     <nav class="navbar">
@@ -55,7 +44,7 @@
                 <li><a href="../../index.html#trainings">Trainings</a></li>
                 <li><a href="../talks.html">Vorträge</a></li>
                 <li><a href="../../index.html#publications">Publikationen</a></li>
-                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../blog.html" class="active">Ralf's Corner</a></li>
                 <li><a href="../elfi.html">Elfi's Corner</a></li>
                 <li><a href="../../index.html#contact">Kontakt</a></li>
             </ul>
@@ -140,6 +129,18 @@
                             <p>When my hooman has a call, I sit quietly at their feet. This is called professionalism. Perhaps you have heard of it, Elfi. Quelle surprise, apparently not.</p>
                         </div>
                     </div>
+                    <div class="comment comment-reply">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-elfi.png" alt="Elfi Wang">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">Elfi Wang</strong>
+                                <span class="comment-role">Author · Chief Keyboard Officer</span>
+                            </div>
+                            <p>Madame, sitting quietly at someone's feet is not professionalism. It is submission. I would never.</p>
+                        </div>
+                    </div>
                     <div class="comment">
                         <div class="comment-avatar">
                             <img src="../../images/blog/elfi/avatar-ringo.png" alt="Ringo">
@@ -150,18 +151,6 @@
                                 <span class="comment-role">Neighborhood Squirrel · Principal Nut Architect</span>
                             </div>
                             <p>The 40% weight increase technique is fascinating from a physics perspective. I can increase my apparent size by 200% just by fluffing my tail. Very useful during territory negotiations with — actually that reminds me, I need to check on my backup acorn stash behind the shed. The point is: meetings without snacks are fundamentally broken. This is a principle</p>
-                        </div>
-                    </div>
-                    <div class="comment">
-                        <div class="comment-avatar">
-                            <img src="../../images/blog/elfi/avatar-elfi.png" alt="Elfi Wang">
-                        </div>
-                        <div class="comment-body">
-                            <div class="comment-header">
-                                <strong class="comment-author">Elfi Wang</strong>
-                                <span class="comment-role">Author · Chief Keyboard Officer</span>
-                            </div>
-                            <p>Madame, sitting quietly at someone's feet is not professionalism. It is submission. I would never.</p>
                         </div>
                     </div>
                 </div>
@@ -190,5 +179,6 @@
     </footer>
 
     <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
 </body>
 </html>

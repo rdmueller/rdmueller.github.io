@@ -1,0 +1,250 @@
+= LinkedWild — Architekturdokumentation
+:toc: left
+:toclevels: 3
+:icons: font
+:source-highlighter: highlight.js
+
+== 1. Einführung und Ziele
+
+LinkedWild ist ein fiktives Tier-Social-Network, eingebettet in die statische Website rdmueller.github.io. Es parodiert LinkedIn und bietet zwei Perspektiven:
+
+* **Elfi's Corner** — Posts aus Sicht einer Ragdoll-Katze
+* **Ralf's Corner** — Ralfs Blog-Posts über Software-Architektur und GenAI
+
+Fünf Tier-Charaktere kommentieren auf allen Posts. Echte Besucher können via giscus (GitHub Discussions) mitdiskutieren.
+
+=== Qualitätsziele
+
+[cols="1,3,1"]
+|===
+| Priorität | Qualitätsziel | Szenario
+
+| 1 | SEO-Indexierbarkeit | Inhalte müssen ohne JavaScript lesbar sein
+| 2 | Ladegeschwindigkeit | Seite muss unter 2s laden (ohne Bilder)
+| 3 | Wartbarkeit | Kommentare zentral in JSON pflegen, nicht pro HTML-Datei
+| 4 | Mobile-Responsive | Alle Komponenten auf Mobilgeräten nutzbar
+|===
+
+=== Stakeholder
+
+[cols="1,2"]
+|===
+| Stakeholder | Interesse
+
+| Ralf D. Müller | Website-Betreiber, Content-Autor
+| Website-Besucher | Lesen, kommentieren, interagieren
+| Suchmaschinen/LLMs | Inhalte crawlen und indexieren
+|===
+
+== 2. Randbedingungen
+
+[cols="1,3"]
+|===
+| Randbedingung | Beschreibung
+
+| Static-First | Alle Inhalte direkt im HTML. JavaScript nur zur Anreicherung.
+| GitHub Pages | Hosting ohne Backend, kein serverseitiger Code.
+| Keine Frameworks | Vanilla HTML + CSS + JS. Kein React, Vue, Build-System.
+| Max 500 Zeilen | Einzelne Dateien sollen 500 Zeilen nicht überschreiten.
+| Bestehende Struktur | ~46 Blog-Posts, 6 Elfi-Posts, CSS in `css/style.css`, JS in `js/`.
+|===
+
+== 3. Kontextabgrenzung
+
+=== C4 Context Diagram
+
+[plantuml]
+----
+@startuml
+!include <C4/C4_Context>
+
+title LinkedWild — System Context
+
+Person(visitor, "Website-Besucher", "Liest Posts, kommentiert via giscus")
+Person(author, "Ralf D. Müller", "Schreibt Posts, pflegt Tier-Kommentare")
+
+System(website, "rdmueller.github.io", "Statische Website mit Elfi's Corner und Ralf's Corner, powered by LinkedWild")
+
+System_Ext(ghpages, "GitHub Pages", "Hosting der statischen Website")
+System_Ext(giscus, "giscus", "Kommentar-Widget basierend auf GitHub Discussions")
+System_Ext(ghdiscussions, "GitHub Discussions", "Speichert echte User-Kommentare")
+
+Rel(visitor, website, "Liest Posts, sieht Tier-Kommentare")
+Rel(visitor, giscus, "Postet Kommentare")
+Rel(author, website, "Erstellt Posts und Tier-Kommentare")
+Rel(website, ghpages, "Deployed via git push")
+Rel(giscus, ghdiscussions, "Liest/schreibt Kommentare")
+@enduml
+----
+
+== 4. Lösungsstrategie
+
+Hybrid-Ansatz mit drei Schichten:
+
+1. **Statische Tier-Kommentare** (Elfi-Posts): Hardcoded im HTML, funktionieren ohne JS, SEO-indexierbar.
+2. **Dynamische Tier-Kommentare** (alle Posts): Aus `data/comments.json` per `js/comments.js` geladen. Skalierbar, zentral pflegbar.
+3. **Echte User-Kommentare** (giscus): Via GitHub Discussions, erscheinen unter den Tier-Kommentaren.
+
+Progressive Enhancement: HTML → CSS → statische Kommentare sichtbar → JS lädt JSON → rendert dynamische Kommentare → giscus initialisiert.
+
+== 5. Bausteinsicht
+
+=== C4 Container Diagram
+
+[plantuml]
+----
+@startuml
+!include <C4/C4_Container>
+
+title LinkedWild — Container Diagram
+
+Person(visitor, "Besucher")
+
+System_Boundary(website, "rdmueller.github.io") {
+    Container(html, "HTML-Seiten", "Static HTML", "~55 Seiten: Elfi-Posts, Ralf-Posts, Hub, Navigation")
+    Container(css, "css/style.css", "CSS", "Zentrale Styles inkl. Comment, Threading, Profile Cards")
+    Container(commentsjs, "js/comments.js", "Vanilla JS", "Lädt JSON, rendert Kommentare, initialisiert giscus")
+    Container(commentsjson, "data/comments.json", "JSON", "Tier-Kommentare pro Post-Slug mit Likes und Replies")
+    Container(avatars, "images/blog/elfi/", "PNG", "Avatare: Elfi, Lala, Peter, Madame, Ringo")
+}
+
+System_Ext(giscus, "giscus Widget", "Kommentar-Eingabe")
+System_Ext(ghdiscussions, "GitHub Discussions", "Kommentar-Speicher")
+
+Rel(visitor, html, "GET")
+Rel(html, css, "Referenziert")
+Rel(html, commentsjs, "Lädt")
+Rel(commentsjs, commentsjson, "Fetch")
+Rel(commentsjs, avatars, "Referenziert Bilder")
+Rel(commentsjs, giscus, "Initialisiert")
+Rel(giscus, ghdiscussions, "API")
+@enduml
+----
+
+== 6. Laufzeitsicht
+
+=== Pageload-Sequenz
+
+1. Browser lädt HTML-Seite von GitHub Pages
+2. CSS wird geladen — Layout und Styles sofort sichtbar
+3. Bei Elfi-Posts: statische Kommentare im HTML sofort sichtbar (kein JS nötig)
+4. `js/comments.js` wird geladen
+5. Script extrahiert Post-Slug aus URL
+6. Script fetcht `data/comments.json`
+7. Kommentare für diesen Slug werden gerendert (Avatar, Name, Rolle, Text, Likes, Replies)
+8. giscus-Widget wird als `<script>` in den DOM eingefügt
+9. giscus lädt echte Kommentare aus GitHub Discussions
+
+Bei deaktiviertem JavaScript: Schritte 4-9 entfallen. Elfi-Posts zeigen statische Kommentare. Ralf-Posts zeigen keine Kommentare (akzeptabel).
+
+== 7. Architekturentscheidungen
+
+=== ADR-1: Hybrid-Kommentarsystem
+
+**Kontext:** Kommentare sollen auf allen ~46 Posts erscheinen. Elfi-Posts haben bereits statische HTML-Kommentare. Neue Kommentare müssen skalierbar hinzufügbar sein.
+
+**Entscheidung:** Hybrid — bestehende statische Kommentare behalten, neue aus JSON laden, giscus für echte User.
+
+**Pugh-Matrix:**
+
+[cols="3,1,1,1"]
+|===
+| Kriterium | Rein statisch | Rein JSON/JS | Hybrid
+
+| SEO (Kommentare indexierbar) | +1 | -1 | 0
+| Skalierbarkeit (40+ Posts) | -1 | +1 | +1
+| Funktioniert ohne JS | +1 | -1 | 0
+| Wartbarkeit | -1 | +1 | +1
+| Aufwand Erstimplementation | 0 | 0 | 0
+| **Summe** | **0** | **0** | **+2**
+|===
+
+**Status:** Accepted
+
+**Konsequenzen:** Zwei Rendering-Pfade (statisch + dynamisch). Elfi-Posts haben doppelte Datenhaltung (HTML + JSON).
+
+=== ADR-2: Kommentare in JSON statt in HTML pro Post
+
+**Kontext:** 40+ Ralf-Posts sollen Tier-Kommentare bekommen. Jeden Post einzeln editieren skaliert nicht.
+
+**Entscheidung:** Zentrale `data/comments.json` Datei, geordnet nach Post-Slug.
+
+**Pugh-Matrix:**
+
+[cols="3,1,1"]
+|===
+| Kriterium | HTML pro Post | Zentrale JSON
+
+| Skalierbarkeit | -1 | +1
+| Wartbarkeit | -1 | +1
+| SEO-Indexierung | +1 | -1
+| Kein JS nötig | +1 | -1
+| Batch-Updates möglich | -1 | +1
+| **Summe** | **-1** | **+1**
+|===
+
+**Status:** Accepted
+
+**Konsequenzen:** Kommentare auf Ralf-Posts sind ohne JS nicht sichtbar. Akzeptabel, da diese Posts bisher keine Kommentare hatten.
+
+=== ADR-3: giscus statt eigenes Backend
+
+**Kontext:** Echte User sollen kommentieren können. Die Website hat kein Backend.
+
+**Entscheidung:** giscus (GitHub Discussions-basiert).
+
+**Pugh-Matrix:**
+
+[cols="3,1,1,1"]
+|===
+| Kriterium | Eigenes Backend | giscus | Disqus/Extern
+
+| Kein Server nötig | -1 | +1 | +1
+| Datenschutz (DSGVO) | 0 | +1 | -1
+| GitHub-Integration | 0 | +1 | 0
+| Anpassbarkeit | +1 | 0 | -1
+| Kosten | -1 | +1 | 0
+| **Summe** | **-1** | **+4** | **-1**
+|===
+
+**Status:** Accepted
+
+**Konsequenzen:** User brauchen GitHub-Account zum Kommentieren. Akzeptabel für die technische Zielgruppe.
+
+=== ADR-4: Elfi's Corner + Ralf's Corner statt gemeinsamer Feed
+
+**Kontext:** Elfis Tier-Posts und Ralfs Tech-Posts haben verschiedene Zielgruppen und Tonalitäten.
+
+**Entscheidung:** Zwei getrennte Corners mit gemeinsamen LinkedWild-Kommentarsystem.
+
+**Pugh-Matrix:**
+
+[cols="3,1,1"]
+|===
+| Kriterium | Ein Feed | Zwei Corners
+
+| Klare Trennung der Perspektiven | -1 | +1
+| Einfache Navigation | +1 | 0
+| Cross-Promotion möglich | 0 | +1
+| Wartungsaufwand | +1 | 0
+| Wiedererkennungswert Elfi-Marke | -1 | +1
+| **Summe** | **0** | **+3**
+|===
+
+**Status:** Accepted
+
+**Konsequenzen:** "Blog" wird zu "Ralf's Corner" umbenannt. Navigation hat zwei Einträge statt einem.
+
+== 8. Qualitätsszenarien
+
+[cols="1,2,3,2"]
+|===
+| ID | Szenario | Stimulus | Erwartetes Verhalten
+
+| QS-1 | SEO-Indexierung | Suchmaschine crawlt Elfi-Post | Statische Kommentare im HTML indexierbar
+| QS-2 | JS deaktiviert | Besucher ohne JS öffnet Elfi-Post | Post + statische Kommentare sichtbar, kein Fehler
+| QS-3 | JS deaktiviert | Besucher ohne JS öffnet Ralf-Post | Post sichtbar, keine Kommentare, kein Fehler
+| QS-4 | Mobile | Besucher auf Smartphone | Profile Cards, Kommentare, giscus responsive
+| QS-5 | Neuer Kommentar | Autor fügt Tier-Kommentar hinzu | Nur `data/comments.json` editieren, kein HTML
+| QS-6 | Erster giscus-Kommentar | User postet via giscus | GitHub Discussion wird automatisch erstellt
+|===
