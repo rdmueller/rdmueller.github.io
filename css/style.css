@@ -2341,3 +2341,15 @@ ul, ol {
     color: var(--color-text-light);
     margin: 0;
 }
+
+.profile-role {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.wildlink-profiles h2 {
+    margin-bottom: var(--spacing-md);
+}
