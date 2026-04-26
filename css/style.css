@@ -2322,16 +2322,10 @@ ul, ol {
     color: var(--color-primary);
 }
 
-.comment-discussion-link {
-    display: inline-block;
-    margin-top: 16px;
-    font-size: 13px;
-    color: #666;
-    text-decoration: none;
-}
-
-.comment-discussion-link:hover {
-    color: var(--color-primary);
+.giscus-wrapper {
+    margin-top: 24px;
+    border-top: 1px solid #e8e8e4;
+    padding-top: 16px;
 }
 
 .profile-grid {

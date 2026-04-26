@@ -104,14 +104,30 @@
         });
 
         container.appendChild(fragment);
+        addGiscusWidget(container.parentNode);
+    }
 
-        var link = document.createElement('a');
-        link.href = 'https://github.com/' + REPO + '/discussions/' + discussionNumber;
-        link.target = '_blank';
-        link.rel = 'noopener';
-        link.className = 'comment-discussion-link';
-        link.textContent = 'Comment on GitHub';
-        container.parentNode.appendChild(link);
+    function addGiscusWidget(section) {
+        var wrapper = document.createElement('div');
+        wrapper.className = 'giscus-wrapper';
+        var giscusScript = document.createElement('script');
+        giscusScript.src = 'https://giscus.app/client.js';
+        giscusScript.setAttribute('data-repo', REPO);
+        giscusScript.setAttribute('data-repo-id', 'R_kgDORG0f8Q');
+        giscusScript.setAttribute('data-category', 'LinkedWild');
+        giscusScript.setAttribute('data-category-id', CATEGORY_ID);
+        giscusScript.setAttribute('data-mapping', 'pathname');
+        giscusScript.setAttribute('data-strict', '0');
+        giscusScript.setAttribute('data-reactions-enabled', '0');
+        giscusScript.setAttribute('data-emit-metadata', '0');
+        giscusScript.setAttribute('data-input-position', 'top');
+        giscusScript.setAttribute('data-theme', 'light');
+        giscusScript.setAttribute('data-lang', 'en');
+        giscusScript.setAttribute('data-loading', 'lazy');
+        giscusScript.crossOrigin = 'anonymous';
+        giscusScript.async = true;
+        wrapper.appendChild(giscusScript);
+        section.appendChild(wrapper);
     }
 
     function createComment(comment, isReply) {
