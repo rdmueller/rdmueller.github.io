@@ -42,7 +42,11 @@
             if (!num) throw new Error('No discussion for ' + slug);
             return fetchDiscussion(num);
         })
-        .catch(function() { return fetchFromJSON(); })
+        .catch(function(err) {
+            if (container.children.length === 0) {
+                return fetchFromJSON();
+            }
+        })
         .catch(function() { /* silent */ });
 
     function fetchDiscussion(number) {
