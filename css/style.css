@@ -2340,6 +2340,9 @@ ul, ol {
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
     text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .profile-card img {
