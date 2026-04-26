@@ -33,6 +33,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .comments-section { margin-top: 40px; border-top: 2px solid #e8e8e4; padding-top: 24px; }
+        .comments-section h2 { font-size: 18px; margin-bottom: 16px; }
+        .comments-list { display: flex; flex-direction: column; gap: 16px; }
+        .comment { display: flex; gap: 12px; padding: 12px; background: #f8f8f5; border-radius: 8px; }
+        .comment-avatar img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+        .comment-body { flex: 1; }
+        .comment-header { margin-bottom: 4px; }
+        .comment-author { font-size: 14px; }
+        .comment-role { font-size: 11px; color: #888; margin-left: 6px; }
+        .comment p { font-size: 13px; line-height: 1.5; color: #444; margin: 0; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -88,6 +100,60 @@
 
                 <p>I say: if you're not sure whether the dot is real, just pounce anyway. You'll learn something either way.</p>
             </div>
+
+            <section class="comments-section">
+                <h2>Comments</h2>
+                <div class="comments-list">
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-lala.png" alt="lala">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">lala</strong>
+                                <span class="comment-role">Neighborhood Cat · Freelance Territory Disruptor</span>
+                            </div>
+                            <p>blind spot number 6: thinking you are the only cat with opinions. i have opinions. i just do not need a linkedin account to share them. i share them on your lawn</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-peter.png" alt="Peter Pigeon">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">Peter Pigeon</strong>
+                                <span class="comment-role">Aerial Observer · Oak Tree Branch Manager</span>
+                            </div>
+                            <p>The meta-gap is real. I once spent an entire afternoon trying to eat my own reflection in a car window. I was very confident about it. The parallel to LLMs is uncomfortably accurate.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-madame.png" alt="Madame">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">Madame</strong>
+                                <span class="comment-role">Head of Garden Security · Loyalty Consultant</span>
+                            </div>
+                            <p>Point 3, the context gap, is precisely why dogs are superior to both cats and LLMs. We know OUR couch. We know OUR hooman. We do not generalize. Contextual loyalty is our core competency.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-elfi.png" alt="Elfi Wang">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">Elfi Wang</strong>
+                                <span class="comment-role">Author · Chief Keyboard Officer</span>
+                            </div>
+                            <p>Peter, I appreciate the honesty. That takes courage. Also, I saw you do it. It was Tuesday. I have photos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <footer class="article-footer">
                 <div class="article-tags">

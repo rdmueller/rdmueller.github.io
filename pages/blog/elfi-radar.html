@@ -33,6 +33,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .comments-section { margin-top: 40px; border-top: 2px solid #e8e8e4; padding-top: 24px; }
+        .comments-section h2 { font-size: 18px; margin-bottom: 16px; }
+        .comments-list { display: flex; flex-direction: column; gap: 16px; }
+        .comment { display: flex; gap: 12px; padding: 12px; background: #f8f8f5; border-radius: 8px; }
+        .comment-avatar img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+        .comment-body { flex: 1; }
+        .comment-header { margin-bottom: 4px; }
+        .comment-author { font-size: 14px; }
+        .comment-role { font-size: 11px; color: #888; margin-left: 6px; }
+        .comment p { font-size: 13px; line-height: 1.5; color: #444; margin: 0; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -92,6 +104,60 @@
 
                 <p>P.S. The hooman is fine. He sat in the front row and took notes.</p>
             </div>
+
+            <section class="comments-section">
+                <h2>Comments</h2>
+                <div class="comments-list">
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-lala.png" alt="lala">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">lala</strong>
+                                <span class="comment-role">Neighborhood Cat · Freelance Territory Disruptor</span>
+                            </div>
+                            <p>tier 3 is the only tier. everything moves unpredictably if you are fast enough. the hooman the vacuum the other cat. all tier 3</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-peter.png" alt="Peter Pigeon">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">Peter Pigeon</strong>
+                                <span class="comment-role">Aerial Observer · Oak Tree Branch Manager</span>
+                            </div>
+                            <p>From up here, your entire risk framework is Tier 2. You move predictably. You sit in the window from 9 to 11. You eat at 7 and 18. You are the most predictable creature in the neighborhood. I have data.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-madame.png" alt="Madame">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">Madame</strong>
+                                <span class="comment-role">Head of Garden Security · Loyalty Consultant</span>
+                            </div>
+                            <p>Mon dieu. Three tiers and a paw. In my household we have one tier: is it a threat to my hooman, yes or no. If yes, bark. If no, sleep. Your framework is over-engineered.</p>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-avatar">
+                            <img src="../../images/blog/elfi/avatar-elfi.png" alt="Elfi Wang">
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-header">
+                                <strong class="comment-author">Elfi Wang</strong>
+                                <span class="comment-role">Author · Chief Keyboard Officer</span>
+                            </div>
+                            <p>Peter, if I am so predictable, why do you still panic every time I look at you through the window? Your data has a confidence problem.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <footer class="article-footer">
                 <div class="article-tags">
