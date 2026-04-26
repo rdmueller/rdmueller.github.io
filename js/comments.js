@@ -117,4 +117,33 @@
 
         return div;
     }
+
+    // giscus integration
+    var giscusContainer = document.getElementById('giscus-container');
+    if (!giscusContainer) {
+        giscusContainer = document.createElement('div');
+        giscusContainer.id = 'giscus-container';
+        giscusContainer.style.marginTop = '24px';
+        var section = container.closest('.comments-section');
+        if (section) {
+            section.appendChild(giscusContainer);
+        }
+    }
+
+    var giscusScript = document.createElement('script');
+    giscusScript.src = 'https://giscus.app/client.js';
+    giscusScript.setAttribute('data-repo', 'rdmueller/rdmueller.github.io');
+    giscusScript.setAttribute('data-repo-id', 'R_kgDORG0f8Q');
+    giscusScript.setAttribute('data-category', 'LinkedWild');
+    giscusScript.setAttribute('data-category-id', 'DIC_kwDORG0f8c4C7uSW');
+    giscusScript.setAttribute('data-mapping', 'pathname');
+    giscusScript.setAttribute('data-strict', '0');
+    giscusScript.setAttribute('data-reactions-enabled', '1');
+    giscusScript.setAttribute('data-emit-metadata', '0');
+    giscusScript.setAttribute('data-input-position', 'bottom');
+    giscusScript.setAttribute('data-theme', 'light');
+    giscusScript.setAttribute('data-lang', 'en');
+    giscusScript.crossOrigin = 'anonymous';
+    giscusScript.async = true;
+    giscusContainer.appendChild(giscusScript);
 })();
