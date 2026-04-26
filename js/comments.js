@@ -1,7 +1,7 @@
 /**
- * LinkedWild Comments — fetches from GitHub Discussions, renders with character detection.
+ * LinkedWild Comments — fetches from GitHub Discussions REST API.
  * Falls back to data/comments.json if API fails.
- * Version: 2.0.0
+ * Version: 3.0.0
  */
 (function() {
     'use strict';
@@ -20,110 +20,105 @@
     for (var i = 0; i < depth; i++) basePath += '../';
     if (basePath === '') basePath = './';
 
-    var REPO_OWNER = 'rdmueller';
+    var REPO = 'rdmueller/rdmueller.github.io';
     var CHARACTER_BOT = 'raifdmueller';
-    var REPO_NAME = 'rdmueller.github.io';
-    var CATEGORY_ID = 'DIC_kwDORG0f8c4C7uSW';
-    var DISCUSSION_TITLE = 'pages/blog/' + slug + '.html';
     var IMG_BASE = basePath + 'images/blog/elfi/';
 
     var CHARACTERS = {
-        'Elfi Wang':    { avatar: 'avatar-elfi.png',   emoji: '🐾', role: 'Chief Keyboard Officer' },
-        'lala':         { avatar: 'avatar-lala.png',    emoji: '🐈‍⬛', role: 'Freelance Territory Disruptor' },
-        'Peter Pigeon': { avatar: 'avatar-peter.png',   emoji: '🕊️', role: 'Oak Tree Branch Manager' },
-        'Madame':       { avatar: 'avatar-madame.png',  emoji: '🐕', role: 'Head of Garden Security' },
-        'Ringo':        { avatar: 'avatar-ringo.png',   emoji: '🐿️', role: 'Principal Nut Architect' }
+        'Elfi Wang':    { avatar: 'avatar-elfi.png',   role: 'Chief Keyboard Officer' },
+        'lala':         { avatar: 'avatar-lala.png',    role: 'Freelance Territory Disruptor' },
+        'Peter Pigeon': { avatar: 'avatar-peter.png',   role: 'Oak Tree Branch Manager' },
+        'Madame':       { avatar: 'avatar-madame.png',  role: 'Head of Garden Security' },
+        'Ringo':        { avatar: 'avatar-ringo.png',   role: 'Principal Nut Architect' }
     };
 
-    fetchFromGitHub()
+    var titleWithHtml = 'pages/blog/' + slug + '.html';
+    var titleWithout = 'pages/blog/' + slug;
+
+    fetch(basePath + 'data/discussions.json')
+        .then(function(r) { return r.json(); })
+        .then(function(mapping) {
+            var num = mapping[titleWithHtml] || mapping[titleWithout];
+            if (!num) throw new Error('No discussion for ' + slug);
+            return fetchDiscussion(num);
+        })
         .catch(function() { return fetchFromJSON(); })
         .catch(function() { /* silent */ });
 
-    function fetchFromGitHub() {
-        var query = '{ repository(owner: "' + REPO_OWNER + '", name: "' + REPO_NAME + '") { ' +
-            'discussions(categoryId: "' + CATEGORY_ID + '", first: 100) { nodes { title, number, ' +
-            'comments(first: 50) { nodes { author { login, avatarUrl }, body, ' +
-            'replies(first: 20) { nodes { author { login, avatarUrl }, body } } } } } } } }';
-
-        return fetch('https://api.github.com/graphql', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ query: query })
-        })
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-            if (!data.data) throw new Error('No data');
-            var discussions = data.data.repository.discussions.nodes;
-            var disc = discussions.find(function(d) { return d.title === DISCUSSION_TITLE; });
-            if (!disc || disc.comments.nodes.length === 0) throw new Error('No discussion');
-            renderGitHubComments(disc);
-        });
+    function fetchDiscussion(number) {
+        return fetch('https://api.github.com/repos/' + REPO + '/discussions/' + number + '/comments?per_page=100')
+            .then(function(r) {
+                if (!r.ok) throw new Error('API error');
+                return r.json();
+            })
+            .then(function(comments) {
+                if (!comments.length) throw new Error('No comments');
+                renderComments(comments, number);
+            });
     }
 
-    function detectCharacter(body) {
+    function detectCharacter(login, body) {
+        if (login !== CHARACTER_BOT) return null;
         var firstLine = body.split('\n')[0].trim();
         for (var name in CHARACTERS) {
             if (firstLine.indexOf(name) !== -1) {
-                var text = body.replace(/^[^\n]*\n+/, '').trim();
+                var text = body.substring(body.indexOf('\n') + 1).trim();
                 return { name: name, char: CHARACTERS[name], text: text };
             }
         }
         return null;
     }
 
-    function extractLikes(body) {
-        var match = body.match(/_([^_]*liked this)_/);
-        if (match) {
-            return {
-                text: match[1],
-                body: body.replace(/_[^_]*liked this_/, '').trim()
-            };
-        }
-        return { text: '', body: body };
+    function cleanText(text) {
+        return text
+            .replace(/<img[^>]*>/g, '')
+            .replace(/\*\*[^*]+\*\*\s*·\s*\*[^*]+\*/g, '')
+            .replace(/_[^_]*liked this_/g, '')
+            .replace(/^[\s\n]+/, '')
+            .replace(/\s*[🐾🐈‍⬛🕊️🐕🐿️]\s*$/g, '')
+            .trim();
     }
 
-    function renderGitHubComments(discussion) {
+    function renderComments(comments, discussionNumber) {
         var fragment = document.createDocumentFragment();
-        discussion.comments.nodes.forEach(function(comment) {
-            var el = createFromGitHub(comment);
-            fragment.appendChild(el);
-            if (comment.replies && comment.replies.nodes) {
-                comment.replies.nodes.forEach(function(reply) {
-                    fragment.appendChild(createFromGitHub(reply, true));
-                });
-            }
+
+        comments.forEach(function(comment) {
+            var el = createComment(comment, false);
+            if (el) fragment.appendChild(el);
         });
+
         container.appendChild(fragment);
-        addDiscussionLink(discussion.number);
+
+        var link = document.createElement('a');
+        link.href = 'https://github.com/' + REPO + '/discussions/' + discussionNumber;
+        link.target = '_blank';
+        link.rel = 'noopener';
+        link.className = 'comment-discussion-link';
+        link.textContent = 'Comment on GitHub';
+        container.parentNode.appendChild(link);
     }
 
-    function createFromGitHub(comment, isReply) {
-        var author = comment.author || {};
-        var login = author.login || 'unknown';
+    function createComment(comment, isReply) {
+        var user = comment.user || {};
+        var login = user.login || 'unknown';
         var body = comment.body || '';
-        var detected = (login === CHARACTER_BOT) ? detectCharacter(body) : null;
+        var detected = detectCharacter(login, body);
 
-        var displayName, avatarSrc, role, likesText;
+        var displayName, avatarSrc, role, text;
         if (detected) {
             displayName = detected.name;
             avatarSrc = IMG_BASE + detected.char.avatar;
             role = detected.char.role;
-            var extracted = extractLikes(detected.text);
-            body = extracted.body;
-            likesText = extracted.text;
+            text = cleanText(detected.text);
         } else {
             displayName = login;
-            avatarSrc = author.avatarUrl || '';
+            avatarSrc = user.avatar_url || '';
             role = '';
-            var extracted = extractLikes(body);
-            body = extracted.body;
-            likesText = extracted.text;
+            text = cleanText(body);
         }
 
-        return buildCommentEl(displayName, avatarSrc, role, body, likesText, !!isReply);
-    }
+        if (!text) return null;
 
-    function buildCommentEl(name, avatarSrc, role, text, likesText, isReply) {
         var div = document.createElement('div');
         div.className = isReply ? 'comment comment-reply' : 'comment';
 
@@ -131,7 +126,7 @@
         avatarDiv.className = 'comment-avatar';
         var img = document.createElement('img');
         img.src = avatarSrc;
-        img.alt = name;
+        img.alt = displayName;
         avatarDiv.appendChild(img);
 
         var bodyDiv = document.createElement('div');
@@ -141,40 +136,24 @@
         headerDiv.className = 'comment-header';
         var strong = document.createElement('strong');
         strong.className = 'comment-author';
-        strong.textContent = name;
-        var span = document.createElement('span');
-        span.className = 'comment-role';
-        span.textContent = role;
+        strong.textContent = displayName;
         headerDiv.appendChild(strong);
-        headerDiv.appendChild(span);
+        if (role) {
+            var span = document.createElement('span');
+            span.className = 'comment-role';
+            span.textContent = role;
+            headerDiv.appendChild(span);
+        }
 
         var p = document.createElement('p');
-        p.textContent = text.replace(/\n\n/g, ' ').replace(/\n/g, ' ');
+        p.textContent = text;
 
         bodyDiv.appendChild(headerDiv);
         bodyDiv.appendChild(p);
 
-        if (likesText) {
-            var likesDiv = document.createElement('div');
-            likesDiv.className = 'comment-likes';
-            likesDiv.textContent = likesText;
-            bodyDiv.appendChild(likesDiv);
-        }
-
         div.appendChild(avatarDiv);
         div.appendChild(bodyDiv);
         return div;
-    }
-
-    function addDiscussionLink(number) {
-        var link = document.createElement('a');
-        link.href = 'https://github.com/' + REPO_OWNER + '/' + REPO_NAME + '/discussions/' + number;
-        link.target = '_blank';
-        link.rel = 'noopener';
-        link.className = 'comment-reply-link';
-        link.textContent = 'Join the discussion on GitHub';
-        link.style.cssText = 'display:inline-block;margin-top:16px;font-size:13px;color:#666;';
-        container.parentNode.appendChild(link);
     }
 
     function fetchFromJSON() {
@@ -184,18 +163,52 @@
                 if (!data[slug] || data[slug].length === 0) return;
                 var fragment = document.createDocumentFragment();
                 data[slug].forEach(function(c) {
-                    fragment.appendChild(buildCommentEl(
-                        c.author, IMG_BASE + c.avatar, c.role, c.text,
-                        (c.likes || []).length ? c.likes.join(', ') + ' liked this' : '', false
-                    ));
+                    fragment.appendChild(buildFallback(c, false));
                     (c.replies || []).forEach(function(r) {
-                        fragment.appendChild(buildCommentEl(
-                            r.author, IMG_BASE + r.avatar, r.role, r.text,
-                            (r.likes || []).length ? r.likes.join(', ') + ' liked this' : '', true
-                        ));
+                        fragment.appendChild(buildFallback(r, true));
                     });
                 });
                 container.appendChild(fragment);
             });
+    }
+
+    function buildFallback(c, isReply) {
+        var div = document.createElement('div');
+        div.className = isReply ? 'comment comment-reply' : 'comment';
+
+        var avatarDiv = document.createElement('div');
+        avatarDiv.className = 'comment-avatar';
+        var img = document.createElement('img');
+        img.src = IMG_BASE + c.avatar;
+        img.alt = c.author;
+        avatarDiv.appendChild(img);
+
+        var bodyDiv = document.createElement('div');
+        bodyDiv.className = 'comment-body';
+        var headerDiv = document.createElement('div');
+        headerDiv.className = 'comment-header';
+        var strong = document.createElement('strong');
+        strong.className = 'comment-author';
+        strong.textContent = c.author;
+        var span = document.createElement('span');
+        span.className = 'comment-role';
+        span.textContent = c.role;
+        headerDiv.appendChild(strong);
+        headerDiv.appendChild(span);
+        var p = document.createElement('p');
+        p.textContent = c.text;
+        bodyDiv.appendChild(headerDiv);
+        bodyDiv.appendChild(p);
+
+        if (c.likes && c.likes.length) {
+            var likesDiv = document.createElement('div');
+            likesDiv.className = 'comment-likes';
+            likesDiv.textContent = c.likes.join(', ') + ' liked this';
+            bodyDiv.appendChild(likesDiv);
+        }
+
+        div.appendChild(avatarDiv);
+        div.appendChild(bodyDiv);
+        return div;
     }
 })();
