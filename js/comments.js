@@ -121,7 +121,7 @@
         giscusScript.setAttribute('data-reactions-enabled', '0');
         giscusScript.setAttribute('data-emit-metadata', '0');
         giscusScript.setAttribute('data-input-position', 'top');
-        giscusScript.setAttribute('data-theme', 'light');
+        giscusScript.setAttribute('data-theme', 'https://rdmueller.github.io/css/giscus-input-only.css');
         giscusScript.setAttribute('data-lang', 'en');
         giscusScript.setAttribute('data-loading', 'lazy');
         giscusScript.crossOrigin = 'anonymous';
