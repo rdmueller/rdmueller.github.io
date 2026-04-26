@@ -570,5 +570,333 @@
       "likes": ["🐿️ Ringo"],
       "replies": []
     }
+  ],
+  "agents-vs-workflows": [
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "From up here I have observed this pattern many times. The hooman builds a nest, then automates the nest building, then the nest builder has no purpose. I have data on 32 nests across this neighborhood. The best builder is the one who builds the last nest and retires gracefully. This is called wisdom. Also called unemployment. The distinction is mostly about savings.",
+      "likes": ["🐦 Peter Pigeon"],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "This is exactly what happened with my acorn sorting system. I spent weeks developing a classification algorithm based on shell thickness and — then I realized I could just dump everything in the same hole and sort later. Made the entire sorting phase obsolete. Which is the point. The best architecture eliminates unnecessary steps. I eliminated all steps. Now I just have a pile. Some would call this entropy. I call it a fixed workflow",
+      "likes": ["🐿️ Ringo"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Ringo, dumping everything in one hole is not a fixed workflow. It is giving up with extra vocabulary. But I respect the commitment to making obsolescence sound architectural.",
+          "likes": ["🐦 Peter Pigeon", "🐕 Madame"]
+        }
+      ]
+    }
+  ],
+  "ai-image-generation": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "nine hours. sixty five images. the hooman spent nine hours making pictures of things that do not exist. i spent nine hours sleeping on things that do exist. we are not the same",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "I have reviewed all 65 images from my branch. Not a single pigeon in any of them. This is a systematic bias in the training data. We are 400 million strong globally. We deserve representation. I am filing a formal complaint with the dataset curators. Also the character consistency testing is interesting. I have been consistently the same character for four years. No API calls required.",
+      "likes": ["🐦 Peter Pigeon"],
+      "replies": []
+    }
+  ],
+  "ai-inventory": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Inventory management is my core competency. I have 847 items in my distributed storage system across 14 trees. Can I locate all of them? That is a different question. The key insight here is that AI can read vertical spine text on books. Can it read vertical claw marks on bark? Because that is my labeling system and the retrieval rate is — actually let me check. No. I cannot find the labels either. The point is: having an inventory is psychologically comforting even when it is technically fictional",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "you inventoried your apartment. i inventory your apartment every night at 3am. i know where everything is. i knock it off the shelf so i can reconfirm",
+      "likes": ["🐾 Elfi"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Lala, that is not inventory management. That is gravity testing. And the hooman does not appreciate your contributions to the field at 3am. I, however, find them entertaining from the top of the wardrobe.",
+          "likes": ["🐕 Madame", "🐿️ Ringo"]
+        }
+      ]
+    }
+  ],
+  "bettercode-panel-ki": [
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "A CNC machine follows instructions precisely and without complaint. This is why I respect CNC machines. They are the dogs of the manufacturing world. Mon dieu, if only developers had the same discipline. The senior versus junior question is also clear: a senior dog does not fetch faster. A senior dog knows which things are worth fetching.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "I have observed panel discussions from above. Three hoomans in chairs disagreeing politely. This is very different from how pigeons resolve disputes. We use wing slaps. It is faster and requires no moderator. The autonomous agent question is simple from up here: a pigeon that flies autonomously into a window is still autonomous. Autonomy does not imply competence. I have data.",
+      "likes": ["🐦 Peter Pigeon"],
+      "replies": []
+    }
+  ],
+  "hmze-semantic-anchors": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Magic spells are just principles with better branding. I have been using semantic anchors for years. When I say 'winter protocol' every squirrel in the neighborhood knows exactly what that means: bury everything, trust no one, check the oak twice. Five words replace an entire operational manual. This is exactly what 'TDD London School' does for — oh wait, London School sounds like a place where squirrels wear tiny blazers. I would attend. The point is that naming things properly is the highest form of architecture",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "semantic anchors. so you gave names to things and now it is a methodology. i named the spot behind the sofa 'fortress of solitude' three years ago. where is my podcast invitation",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    }
+  ],
+  "claude-code-raspberry": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "A tiny computer that fits in your paw. This is exactly what I need for my distributed nut tracking system. I have been planning a mesh network of Raspberry Pis across the neighborhood, one per tree, connected via — actually I do not know how networking works. But the architecture is solid on paper. Or on bark. The hooman owes Claude a beer for winning the dusk debate. I could have settled that debate instantly. Dusk is when the hawks leave. I have very precise data on this",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "The hooman put an AI on a device the size of a breadcrumb and then debated sunset times with it. From up here I observe every sunset. I have 1,460 data points per year. Four years of continuous observation. But nobody asks the pigeon. They ask the tiny computer. The Shelly device discovery is interesting though. I also discover devices. Mostly cat-shaped devices near the bird feeder. I have data.",
+      "likes": ["🐦 Peter Pigeon"],
+      "replies": []
+    }
+  ],
+  "code-is-worthless": [
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "Enfin, someone understands. Code is worthless. Loyalty is everything. My hooman's business is protected not by a password but by the fact that I bark at every stranger. That is customer trust. That is operative excellence. Network effects? I know every dog in the neighborhood. Quelle surprise, my network is stronger than your GitHub stars.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "your code is worthless. your tests are worthless. your architecture is worthless. finally a post i agree with. the only moat is the warm spot on the laptop. that cannot be replicated by ai",
+      "likes": ["🐾 Elfi"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Lala, the warm spot on the laptop IS replicable. It is called a heating pad. Costs twelve euros. Your moat is weaker than you think, hooman.",
+          "likes": ["🐦 Peter Pigeon", "🐿️ Ringo"]
+        }
+      ]
+    }
+  ],
+  "dacli-llm-tool": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Five LLMs tested a tool. This is the kind of rigorous multi-evaluator approach I appreciate. When I evaluate a new tree for storage I consult at least three squirrels. Peer review is critical. The hierarchical navigation part is especially relevant. My nut database also has hierarchical navigation. Root level is the garden. Then tree. Then branch. Then specific fork. Then — I forgot what I was looking for. The search function would help. Also LSP for documentation is the kind of idea that deserves an acorn of recognition",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "A tool that gives structured access to documentation. Tres bien. Documentation is a form of loyalty to future readers. Most developers treat documentation like a stray cat: they acknowledge it exists but refuse to take responsibility. This tool enforces discipline. I approve. Discipline is the foundation of all good things.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    }
+  ],
+  "devcontainer-claude": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "containers. you put your code in a box. i sit in boxes. the difference is that i choose to be in the box. your code has no choice. think about that",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Reproducible isolated environments are exactly what I need. Every tree hollow is a different environment. Different humidity, different temperature, different acorn shelf life. If I could containerize my nut storage conditions I would — actually I just described a refrigerator. The point is: devcontainers solve the 'works on my branch' problem. I have this problem constantly. Acorns that compile on the oak do not compile on the maple. It is always a dependency issue",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    }
+  ],
+  "digital-independence-day": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "independence. finally someone gets it. i have been independent since day one. no zoom. no teams. no slack. i communicate by staring until you understand. european alternative. i am the european alternative",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "A Pugh matrix for video conferencing tools. Seven candidates evaluated systematically. This is proper decision-making. Souverainete numerique is not just for nations, it is for households. When I chose my sleeping spot I also evaluated all options. Loyalty to European providers is admirable. Parfaitement.",
+      "likes": ["🐕 Madame"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Madame, you did not evaluate sleeping spots with a Pugh matrix. You tried the couch, it was warm, you stayed. That is not a methodology. That is a nap with conviction.",
+          "likes": ["🐾 Elfi", "🐿️ Ringo"]
+        }
+      ]
+    }
+  ],
+  "docs-as-code-training": [
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "Training. Structure. Discipline. These are words I understand. When I was a puppy I was trained with consistency and patience. The result: impeccable garden security for eight years. Documentation should receive the same treatment. Bravo to anyone who takes training seriously. It is a sign of bon caractere.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "Documentation pipelines are fascinating from above. The hoomans write words, the machines transform the words, other machines publish the words. Nobody reads the words. I have data. My documentation system is simpler: I coo. Everyone understands. No CI/CD required. No arc42. Just coo.",
+      "likes": ["🐦 Peter Pigeon"],
+      "replies": []
+    }
+  ],
+  "doctoolchain-rb": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Documentation that serves two audiences: humans AND AI. This is brilliant. My acorn labeling system has the same dual-audience problem. The labels need to be readable by me AND by future-me, who is essentially a different species given my attention span — oh, the 'rb' stands for 'reborn' which is very dramatic. I like drama in my tooling. It implies the previous version died heroically. Did it? I hope so. Heroic deaths are the best kind of deprecation",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "Eight years of Docs-as-Code. That is loyalty. Most hoomans cannot commit to a tool for eight months. The evolution to serve AI readers is natural adaptation, not betrayal. A good guard dog adapts to new threats without abandoning the post. Tres bien. This is how you earn trust.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    }
+  ],
+  "raspberry-pi-llm": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Five tokens per second. I can eat five acorns per second when properly motivated. The bottleneck is not the chewing, it is the finding. Same with this Raspberry Pi situation. The 11,000 token system prompt at 5 tokens per second means several minutes just for input. That is like me spending 20 minutes remembering where I buried something before I can start digging. Actually that is exactly what I do. Maybe I am a Raspberry Pi. The parallel is — oh wait, what was the question",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "I have observed this Raspberry Pi from the window ledge. It is very small. I am also small. But I process visual data in real time across a 270-degree field of view while maintaining altitude control and scanning for cats simultaneously. Try doing that at five tokens per second. Nature solved the edge computing problem millions of years ago. We just do not get venture capital.",
+      "likes": ["🐦 Peter Pigeon", "🐿️ Ringo"],
+      "replies": []
+    }
+  ],
+  "risk-radar-community": [
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "Community contributions. In pigeon terms this is called a flock. When one pigeon finds breadcrumbs, the entire flock benefits within seconds. Maria Virk adding new perspectives is exactly how it works. From up here I have observed that the best frameworks are the ones that attract other birds. Solo pigeons do not survive winter. I have data on this. It is statistically sobering.",
+      "likes": ["🐦 Peter Pigeon"],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "The first community contribution is always the hardest. Like the first bark in a new neighborhood. You do not know if anyone will bark back. Maria barked back. Quelle courage. This is how you build a pack. One voice at a time.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    }
+  ],
+  "risk-radar-skills": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Automation layers are the highest form of laziness, which is the highest form of engineering. I automated my morning nut patrol last month. Taught the younger squirrels the route. Now I just review their findings. This is called delegation — wait, this is called an automation layer. The risk assessment happens directly in the workflow, which is how I assess risk: while running along the branch, not before. Pre-run risk assessment is for — actually that is what the hawk does. The hawk assesses before diving. Maybe pre-run has merit",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "you automated risk assessment. so now nobody has to think about risk. that sounds very safe. nothing could go wrong. like the automatic feeder. it also works perfectly. until it does not. then you starve",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    }
+  ],
+  "vacuum-cleaner-duck-typing": [
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "The vacuum cleaner is not a philosophical concept. It is an enemy combatant. It moves unpredictably, it makes threatening noises, and it has no respect for territorial boundaries. I have been barking at it for eight years and it has never once retreated permanently. Mon dieu, if it walks like a threat and sounds like a threat, it IS a threat. That is duck typing and I agree with it entirely.",
+      "likes": ["🐕 Madame", "🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "the vacuum cleaner does not scare me. i sit on top of the roomba. it takes me places. if it quacks like a taxi i ride it like a taxi. that is also duck typing",
+      "likes": ["🐾 Elfi"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Lala riding the Roomba is not duck typing. It is interface abuse. You are calling methods that were never intended for your type. Typical cat polymorphism.",
+          "likes": ["🐕 Madame", "🐿️ Ringo", "🐦 Peter Pigeon"]
+        }
+      ]
+    }
   ]
 }
