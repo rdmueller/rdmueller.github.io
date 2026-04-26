@@ -1,0 +1,246 @@
+{
+  "elfi-launch": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "five years of keyboard sitting and she calls it experience. i have been in seven gardens today. that is real fieldwork",
+      "likes": ["🐾 Elfi"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Lala, you have been in seven gardens because you are not welcome in any of them. That is not fieldwork. That is trespassing.",
+          "likes": ["🐦 Peter Pigeon", "🐕 Madame"]
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "I have been observing this household from the oak tree for three years. She has never once acknowledged my contributions to the ambient soundtrack. Typical management.",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "Bienvenue to LinkedIn, Elfi. I have had a professional presence in the neighborhood for eight years. My reviews are conducted by barking. It is more efficient than sitting on things.",
+      "likes": [],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Welcome to the platform, Elfi. I have been meaning to set up my own profile for months but I keep getting distracted by — oh there is an acorn. Anyway, five years of experience is impressive. I have six months of experience repeated ten times, which I think counts for more. Also I have principles. Never store all your nuts in one tree. This applies to git repos too — wait where was I",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    }
+  ],
+  "elfi-meeting": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "i also disrupt meetings. but i do it from outside the window. the hooman sees me and loses focus completely. no keyboard required",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "I once landed on a satellite dish during a video call. The entire meeting froze for 45 seconds. Nobody offered me a consulting fee. The industry has a pigeon pay gap.",
+      "likes": ["🐦 Peter Pigeon"],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "When my hooman has a call, I sit quietly at their feet. This is called professionalism. Perhaps you have heard of it, Elfi. Quelle surprise, apparently not.",
+      "likes": ["🐕 Madame"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Madame, sitting quietly at someone’s feet is not professionalism. It is submission. I would never.",
+          "likes": ["🐾 Elfi"]
+        }
+      ]
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "The 40% weight increase technique is fascinating from a physics perspective. I can increase my apparent size by 200% just by fluffing my tail. Very useful during territory negotiations with — actually that reminds me, I need to check on my backup acorn stash behind the shed. The point is: meetings without snacks are fundamentally broken. This is a principle",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    }
+  ],
+  "elfi-radar": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "tier 3 is the only tier. everything moves unpredictably if you are fast enough. the hooman the vacuum the other cat. all tier 3",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "From up here, your entire risk framework is Tier 2. You move predictably. You sit in the window from 9 to 11. You eat at 7 and 18. You are the most predictable creature in the neighborhood. I have data.",
+      "likes": ["🐾 Elfi", "🐦 Peter Pigeon"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Peter, if I am so predictable, why do you still panic every time I look at you through the window? Your data has a confidence problem.",
+          "likes": ["🐿️ Ringo"]
+        }
+      ]
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "Mon dieu. Three tiers and a paw. In my household we have one tier: is it a threat to my hooman, yes or no. If yes, bark. If no, sleep. Your framework is over-engineered.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Three tiers is elegant but it misses the fourth tier: things that were there a second ago but now they are gone. I deal with this constantly. I bury something, I remember exactly where it is, I come back and — squirrel. Wait no I am the squirrel. The point is: your risk framework needs a volatility dimension. Also has anyone seen my acorn collection from last Tuesday",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    }
+  ],
+  "elfi-c4boxes": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "i do not need four levels. i have one level. it is called 'outside'. everything interesting happens there. your boxes are prisons with better marketing",
+      "likes": [],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "I appreciate the C4 model. Level 1 Context is essentially my view from the tree. Everything is connected, nothing is detailed, and I have no idea what is happening inside any of the buildings. It is oddly comforting.",
+      "likes": ["🐾 Elfi", "🐿️ Ringo"],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "Boxes are for cats. Crates are for dogs. I was crate-trained as a puppy and I turned out parfaitement. Structure builds character, Elfi. Something your species could learn.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Level 4 Code is where I excel. I have written code across fourteen trees this season. Branch coverage is literally my specialty — oh that is a good one, branch coverage. I should write that down. Where do I write things down. I usually just bury them. Anyway the C4 model maps perfectly to tree architecture. Context is the forest. Container is the tree. Component is the branch. Code is the — hold on is that a hawk",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    }
+  ],
+  "elfi-weiche": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "i sat on his keyboard last week and mass liked 47 linkedin posts. he still thinks it was a software update. architectural guidance works in mysterious ways",
+      "likes": ["🐾 Elfi"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Lala, that was YOU? I got blamed for those likes. We need to talk.",
+          "likes": ["🐦 Peter Pigeon"]
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "I have been switching branches for years. Tree branches, obviously. The key is commitment. Once you land, you commit. No weighted matrices needed. Just grip strength and confidence.",
+      "likes": [],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "My hooman has never switched a tool in eight years. Loyalty, Elfi. You switch when something is broken, not when a cat sits on a lever. This is why dogs are in charge of security.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "Weighted matrices are excellent. I use them for nut storage site selection. Fourteen criteria including sun exposure, soil density, proximity to cats, and — oh right, retrieval probability. That last one is critical. My retrieval rate is approximately 23% which is honestly better than most deployment pipelines. The correct tool is the one you can find again in March",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    }
+  ],
+  "elfi-blind-spots": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "blind spot number 6: thinking you are the only cat with opinions. i have opinions. i just do not need a linkedin account to share them. i share them on your lawn",
+      "likes": ["🐾 Elfi"],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "The meta-gap is real. I once spent an entire afternoon trying to eat my own reflection in a car window. I was very confident about it. The parallel to LLMs is uncomfortably accurate.",
+      "likes": ["🐾 Elfi"],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Peter, I appreciate the honesty. That takes courage. Also, I saw you do it. It was Tuesday. I have photos.",
+          "likes": ["🐦 Peter Pigeon", "🐿️ Ringo"]
+        }
+      ]
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "Head of Garden Security · Loyalty Consultant",
+      "text": "Point 3, the context gap, is precisely why dogs are superior to both cats and LLMs. We know OUR couch. We know OUR hooman. We do not generalize. Contextual loyalty is our core competency.",
+      "likes": ["🐕 Madame"],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "The time gap is real. I buried 847 acorns last autumn. The model in my head says I remember where they all are. Empirically I have found 196. That is a 77% hallucination rate which is — actually that is about the same as GPT-3.5 on the MMLU benchmark. Interesting. I should write a paper. First I need to find a pen. I buried one somewhere near the — oh look a butterfly",
+      "likes": ["🐿️ Ringo"],
+      "replies": []
+    }
+  ]
+}
