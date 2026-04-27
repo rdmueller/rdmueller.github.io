@@ -1142,7 +1142,7 @@ ul, ol {
 .footer {
     padding: var(--spacing-xl) 0;
     background-color: var(--color-bg-dark);
-    color: var(--color-text-muted);
+    color: #94a3b8;
 }
 
 .footer .container {
@@ -1159,7 +1159,7 @@ ul, ol {
 }
 
 .footer-nav a {
-    color: var(--color-text-muted);
+    color: #94a3b8;
     font-size: var(--font-size-sm);
 }
 
@@ -1560,7 +1560,7 @@ ul, ol {
     margin-bottom: var(--spacing-sm);
 }
 
-.talk-info h3 {
+.talk-info h2.talk-title {
     font-size: var(--font-size-xl);
     margin-bottom: var(--spacing-xs);
     color: var(--color-text);
@@ -2287,7 +2287,7 @@ ul, ol {
 
 .comment-role {
     font-size: 11px;
-    color: #888;
+    color: #666;
     margin-left: 6px;
 }
 
@@ -2306,7 +2306,7 @@ ul, ol {
 
 .comment-likes {
     font-size: 12px;
-    color: #999;
+    color: #666;
     margin-top: 4px;
 }
 
@@ -2314,7 +2314,7 @@ ul, ol {
     display: inline-block;
     margin-top: 6px;
     font-size: 12px;
-    color: #888;
+    color: #666;
     text-decoration: none;
 }
 

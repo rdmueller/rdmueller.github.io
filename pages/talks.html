@@ -201,7 +201,8 @@
                         type.textContent = talk.type || '';
                         info.appendChild(type);
 
-                        const title = document.createElement('h3');
+                        const title = document.createElement('h2');
+                        title.className = 'talk-title';
                         title.textContent = talk.title || 'Ohne Titel';
                         info.appendChild(title);
 
