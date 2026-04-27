@@ -7,6 +7,7 @@ An Atom 1.0 feed is generated for feed readers.
 """
 
 import json
+import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -51,9 +52,15 @@ def main():
         icon_html = ""
         icon = post.get("icon", "")
         if icon:
+            thumb = re.sub(r'/linkedin/(.+)\.(png|jpg|jpeg)$', r'/linkedin/thumb/\1.jpg', icon)
+            thumb_path = ROOT / thumb
+            if thumb_path.exists():
+                icon_src = f"../{thumb}"
+            else:
+                icon_src = f"../{icon}"
             icon_html = f"""
                     <div class="blog-icon">
-                        <img src="../{icon}" alt="" loading="lazy">
+                        <img src="{icon_src}" alt="" loading="lazy" width="240" height="160">
                     </div>"""
 
         posts_html += f"""
@@ -93,7 +100,7 @@ def main():
     <title>Blog | Ralf D. Müller</title>
     <link rel="alternate" type="application/atom+xml" title="Blog | Ralf D. Müller" href="blog/feed.xml">
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">

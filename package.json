@@ -3,9 +3,14 @@
   "private": true,
   "description": "Personal website of Ralf D. Müller",
   "scripts": {
+    "build:css": "cleancss -o css/style.min.css css/style.css",
+    "build:images": "node scripts/optimize-images.mjs",
+    "build": "npm run build:css && npm run build:images",
     "lhci": "lhci autorun"
   },
   "devDependencies": {
-    "@lhci/cli": "^0.14.0"
+    "@lhci/cli": "^0.14.0",
+    "clean-css-cli": "^5.6.3",
+    "sharp": "^0.34.4"
   }
 }

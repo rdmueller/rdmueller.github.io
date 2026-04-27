@@ -23,6 +23,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build CSS
+        run: npm run build:css
+
       - name: Run Lighthouse CI
         run: npm run lhci
         env:
