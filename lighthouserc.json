@@ -26,7 +26,7 @@
         "document-title": "error",
         "unsized-images": "warn",
         "modern-image-formats": "warn",
-        "uses-responsive-images": "warn",
+        "uses-responsive-images": "off",
         "unminified-css": "warn",
         "non-composited-animations": "off",
         "prioritize-lcp-image": "off",

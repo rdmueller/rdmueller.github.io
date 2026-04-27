@@ -16,7 +16,7 @@
     <meta name="twitter:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
     <title>Vorträge | Ralf D. Müller</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -171,6 +171,8 @@
                                 logo.src = logoSrc;
                                 logo.alt = conf.name || '';
                                 logo.className = `talk-conf-logo${invertedClass}`;
+                                logo.width = 120;
+                                logo.height = 40;
                                 logoWrap.appendChild(logo);
                             }
                         }
