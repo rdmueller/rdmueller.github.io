@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Docs-as-Code is infrastructure for your AI toolchain. Bausteinsicht is now open source: architecture-as-code with draw.io and LLM-friendly JSON models.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Docs-as-Code Is Now AI Infrastructure | Ralf D. Müller">
+    <meta property="og:description" content="Docs-as-Code is infrastructure for your AI toolchain. Bausteinsicht is now open source: architecture-as-code with draw.io and LLM-friendly JSON models.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/bausteinsicht-launch.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Docs-as-Code Is Now AI Infrastructure | Ralf D. Müller">
+    <meta name="twitter:description" content="Docs-as-Code is infrastructure for your AI toolchain. Bausteinsicht is now open source.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/bausteinsicht-launch.png">
+    <title>Docs-as-Code Is Now AI Infrastructure | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Docs-as-Code Is Now AI Infrastructure",
+      "description": "Docs-as-Code is infrastructure for your AI toolchain. Bausteinsicht is now open source: architecture-as-code with draw.io and LLM-friendly JSON models.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/bausteinsicht-launch.png",
+      "url": "https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html",
+      "datePublished": "2026-04-28",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">28. April 2026</span>
+                </div>
+                <h1>Docs-as-Code Is Now AI Infrastructure</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/bausteinsicht-launch.png" alt="A confused robot holding an outdated city map while standing in a modern city that no longer matches, with a Ragdoll cat beside it" width="800" height="533">
+            </figure>
+
+            <div class="article-content">
+                <p>Docs-as-Code is more relevant today than it was five years ago. Not less. And the reason is GenAI.</p>
+
+                <p>Your LLM-based coding assistant starts every session like a new colleague on their first day. No institutional memory. No hallway conversations from last week. It reads your repo, your docs, your architecture decisions. If those are outdated, inconsistent, or buried in a wiki nobody maintains, the assistant works from a broken map. Every decision it makes downstream inherits that drift.</p>
+
+                <p>This changes for whom documentation is written. It used to be written for humans who could fill gaps from context and memory. Now there is a second stakeholder that cannot do that. The LLM reads literally. If the building block view says service A talks to service B, but in production it has been service C for six months, the LLM will generate code that talks to B. No gut feeling corrects that.</p>
+
+                <p>That means Docs-as-Code is no longer just a developer convenience. It is infrastructure for your AI toolchain. Architecture docs that stay in sync with code are not a nice-to-have. They are the context window your assistant depends on.</p>
+
+                <p>This is why we are rebuilding <a href="https://doctoolchain.org" target="_blank" rel="noopener">docToolchain</a>. The first piece of that rebuild is <a href="https://doctoolchain.org/Bausteinsicht" target="_blank" rel="noopener">Bausteinsicht</a> (short b11t), and it is now open source.</p>
+
+                <p>Bausteinsicht lets you define your architecture in a JSON model and generates draw.io diagrams automatically. Bidirectional sync, real-time. Built in Go, single binary, zero dependencies. The visual layer is draw.io, the tool your team already knows. No proprietary viewer, no new software to learn. And unlike PlantUML or Mermaid, you keep full control over the layout. Auto-generated diagrams show structure. Hand-arranged diagrams communicate intent.</p>
+
+                <p>But the features are not the point. The point is what they enable.</p>
+
+                <p>The JSON model is machine-readable. An LLM agent can query the architecture via CLI, understand module boundaries, and modify the model directly. No screenshot parsing, no diagram archaeology. The architecture becomes a first-class API for your coding assistant. The project even ships an <code>llms.txt</code> so your assistant understands the tool itself, not just the architecture it describes.</p>
+
+                <p>Thanks to <a href="https://www.linkedin.com/in/paul-fleischmann/" target="_blank" rel="noopener">Paul Fleischmann</a> for his support in preparing this release and for continuing to help shape the tool going forward.</p>
+
+                <p><a href="https://doctoolchain.org/Bausteinsicht" target="_blank" rel="noopener">Try Bausteinsicht</a></p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">DocToolchain</span>
+                    <span class="blog-tag">Software Architecture</span>
+                    <span class="blog-tag">Docs-as-Code</span>
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">Open Source</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">&larr; Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

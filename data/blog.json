@@ -1,5 +1,21 @@
 [
   {
+    "title": "Docs-as-Code Is Now AI Infrastructure",
+    "date": "2026-04-28",
+    "excerpt": "Your LLM assistant starts every session like a new colleague on their first day. Docs-as-Code is no longer a convenience. It is infrastructure. Bausteinsicht is now open source.",
+    "url": "blog/bausteinsicht-launch.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/bausteinsicht-launch.png",
+    "tags": [
+      "DocToolchain",
+      "Software Architecture",
+      "Docs-as-Code",
+      "GenAI",
+      "Open Source"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "5 Blind Spots in Coding LLMs",
     "date": "2026-04-27",
     "excerpt": "Deprecated APIs, domain gaps, cross-file failures, and the meta-gap. What AI-generated tube radios teach us about AI-generated code.",

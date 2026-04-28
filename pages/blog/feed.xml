@@ -33,6 +33,19 @@
         <content type="html">&lt;p&gt;Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
+        <id>https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html</id>
+        <title>Docs-as-Code Is Now AI Infrastructure</title>
+        <updated>2026-04-28T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html" />
+        <summary>Your LLM assistant starts every session like a new colleague on their first day. Docs-as-Code is no longer a convenience. It is infrastructure. Bausteinsicht is now open source.</summary>
+        <category term="DocToolchain" />
+        <category term="Software Architecture" />
+        <category term="Docs-as-Code" />
+        <category term="GenAI" />
+        <category term="Open Source" />
+        <content type="html">&lt;p&gt;Your LLM assistant starts every session like a new colleague on their first day. Docs-as-Code is no longer a convenience. It is infrastructure. Bausteinsicht is now open source.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
         <id>https://rdmueller.github.io/pages/blog/llm-blind-spots.html</id>
         <title>5 Blind Spots in Coding LLMs</title>
         <updated>2026-04-27T00:00:00Z</updated>
