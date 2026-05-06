@@ -22,6 +22,17 @@
         <content type="html">&lt;p&gt;Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
+        <id>https://rdmueller.github.io/pages/blog/unscharfe-fotos.html</id>
+        <title>Unscharfe Fotos? Wer hat eigentlich erlaubt, dass die KI urteilt?</title>
+        <updated>2026-05-06T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/unscharfe-fotos.html" />
+        <summary>Google Photos schlägt vor, unscharfe Fotos zu löschen. Solange die KI beschreibt, fühlt es sich harmlos an. Aber jetzt urteilt sie.</summary>
+        <category term="KI" />
+        <category term="Datenschutz" />
+        <category term="Digitale Souveränität" />
+        <content type="html">&lt;p&gt;Google Photos schlägt vor, unscharfe Fotos zu löschen. Solange die KI beschreibt, fühlt es sich harmlos an. Aber jetzt urteilt sie.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/unscharfe-fotos.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
         <id>https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html</id>
         <title>The Correction Radius: When to Stop the Feedback Loop</title>
         <updated>2026-04-30T00:00:00Z</updated>

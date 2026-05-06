@@ -1,5 +1,19 @@
 [
   {
+    "title": "Unscharfe Fotos? Wer hat eigentlich erlaubt, dass die KI urteilt?",
+    "date": "2026-05-06",
+    "excerpt": "Google Photos schlägt vor, unscharfe Fotos zu löschen. Solange die KI beschreibt, fühlt es sich harmlos an. Aber jetzt urteilt sie.",
+    "url": "blog/unscharfe-fotos.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/unscharfe-fotos.png",
+    "tags": [
+      "KI",
+      "Datenschutz",
+      "Digitale Souveränität"
+    ],
+    "lang": "de"
+  },
+  {
     "title": "Docs-as-Code Is Now AI Infrastructure",
     "date": "2026-04-28",
     "excerpt": "Your LLM assistant starts every session like a new colleague on their first day. Docs-as-Code is no longer a convenience. It is infrastructure. Bausteinsicht is now open source.",
