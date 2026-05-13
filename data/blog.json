@@ -1,5 +1,19 @@
 [
   {
+    "title": "Six Months of Semantic Anchors",
+    "date": "2026-05-14",
+    "excerpt": "Six months in, the catalog has 147 entries and the community is now writing more anchors than I am. That was the plan.",
+    "url": "blog/semantic-anchors-six-months.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/semantic-anchors-six-months.png",
+    "tags": [
+      "Semantic Anchors",
+      "LLM",
+      "Open Source"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Unscharfe Fotos? Wer hat eigentlich erlaubt, dass die KI urteilt?",
     "date": "2026-05-06",
     "excerpt": "Google Photos schlägt vor, unscharfe Fotos zu löschen. Solange die KI beschreibt, fühlt es sich harmlos an. Aber jetzt urteilt sie.",

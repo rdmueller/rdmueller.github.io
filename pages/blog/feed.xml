@@ -5,11 +5,22 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-05-07T00:00:00Z</updated>
+    <updated>2026-05-14T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/semantic-anchors-six-months.html</id>
+        <title>Six Months of Semantic Anchors</title>
+        <updated>2026-05-14T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-anchors-six-months.html" />
+        <summary>Six months in, the catalog has 147 entries and the community is now writing more anchors than I am. That was the plan.</summary>
+        <category term="Semantic Anchors" />
+        <category term="LLM" />
+        <category term="Open Source" />
+        <content type="html">&lt;p&gt;Six months in, the catalog has 147 entries and the community is now writing more anchors than I am. That was the plan.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-anchors-six-months.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html</id>
         <title>Choose Your Language, Choose Your Channel Capacity</title>
