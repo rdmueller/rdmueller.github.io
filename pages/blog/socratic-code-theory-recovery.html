@@ -33,6 +33,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .article-hero img,
+        .article-content figure img {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 6px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .article-content figure {
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+        .article-hero figcaption,
+        .article-content figcaption {
+            margin-top: 0.9rem;
+            font-size: 0.88rem;
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            padding: 0 1rem;
+        }
+        .article-hero figcaption::before,
+        .article-content figcaption::before {
+            content: "Abbildung. ";
+            font-weight: 600;
+            font-style: normal;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
