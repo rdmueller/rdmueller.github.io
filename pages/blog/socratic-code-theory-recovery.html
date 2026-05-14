@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An independent assessment of Socratic Code-Theory Recovery: how to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor, positioned against ArchAgent, Reversa, SoHF, MIND, and the Naur debate.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding | Ralf D. Müller">
+    <meta property="og:description" content="An independent assessment of Socratic Code-Theory Recovery: how to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/socratic-code-theory-recovery.png">
+    <title>Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding",
+      "description": "An independent assessment of Socratic Code-Theory Recovery: how to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/socratic-code-theory-recovery.png",
+      "url": "https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html",
+      "datePublished": "2026-05-14",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">14. Mai 2026</span>
+                </div>
+                <h1>Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/socratic-code-theory-recovery.png" alt="Diagram of the Socratic Code-Theory Recovery workflow: bounded context scoping, Question Tree with answered and open leaves, team routing, synthesis to arc42 and ADRs">
+            </figure>
+
+            <div class="article-content">
+
+                <p><em>Abstract.</em> Socratic Code-Theory Recovery is a two-phase method for recovering the "theory" (in the sense of Naur, 1985) behind an existing codebase, using a Large Language Model as a structured Socratic interlocutor rather than as an oracle. The method differs from adjacent approaches (SoHF, MIND, Reversa, ArchAgent) along three axes: it is <em>framework-anchored</em> (arc42, Cockburn, ISO 25010, Nygard ADRs serve as decomposition heuristics), it is <em>bounded-context-scoped</em> (per Martinelli's AI Unified Process and Evans' DDD), and it produces <em>dual traceability</em> (Q-IDs to code evidence plus marked team answers). A controlled experiment using a greenfield project as its own ground truth showed that 11 targeted questions were sufficient to recover the theory of a 13 kLoC Go codebase, and that the Question Tree functions empirically as an <em>output constraint</em>, not only as an information-gathering device.</p>
+
+                <h2>1. Executive Summary</h2>
+
+                <p>The state of the art in LLM-assisted code-theory recovery splits into three lineages: prompt-pattern Socratic approaches (Chang 2023, MIND 2026, SocREval), conversational human-steering studies (SoHF at EMNLP 2024), and automated recovery pipelines (ArchAgent F1 = 0.97 for structure; Zhou et al. F1 = 0.37 for design rationale). None of these combines structural decomposition, explicit human-handoff routing, and bidirectional traceability.</p>
+
+                <p>Socratic Code-Theory Recovery occupies this gap. Its method consists of scoping a bounded context (Phase 0), building a hierarchical Question Tree where every leaf is either <code>[ANSWERED]</code> with code evidence or <code>[OPEN]</code> with a Category and Ask role (Phase 1), routing the <code>OPEN_QUESTIONS.adoc</code> to humans, synthesising arc42 documentation plus ADRs plus Cockburn use cases with Q-ID traceability (Phase 2), and finally writing baseline tests against the recovered use cases. The Question Tree is decomposed using four established frameworks as heuristics, which makes the prompt remarkably compact: one prompt of roughly 70 lines produces a tree that generates around 3850 lines of correctly structured documentation.</p>
+
+                <p>The empirical contribution is methodologically novel. Rather than evaluating against human-authored ground truth (always partial, always drifted), the method uses an LLM-documented greenfield project, discards the documentation, and measures recovery fidelity against the discarded original. A fair comparison across three approaches (Direct prompting, Socratic Question Tree only, full Two-Phase) with identical team answers shows that the Question Tree primarily acts as an output constraint: Two-Phase matches the original's 5 ADRs exactly with correct topics and status; Direct over-generates (7 ADRs, 2 hallucinated); Socratic compresses to 21 % of the original's volume with the highest Q-ID density.</p>
+
+                <p>Three structural limitations remain. Threat modelling is not surfaced naturally by the four anchor frameworks (Direct is the only variant that produces an explicit Threat Model section), bounded-context identification can fail in Big Ball of Mud codebases, and the discipline of routing <code>[OPEN]</code> leaves to humans rather than letting the LLM "plausibly" fill them is socio-technical, not methodological. This report proposes a fifth anchor (STRIDE) for security, a two-stage Phase 0 for low-modularity codebases, explicit anti-pattern guards in the Phase 2 prompt, and a "Continuous Theory Externalisation" practice that generalises the method beyond brownfield onboarding.</p>
+
+                <h2>2. Problem Statement</h2>
+
+                <p>In 1985 Peter Naur argued that programming is <em>theory building</em>: a program is the externalisation of a theory held in the developers' heads, and "the death of a program happens when the programmer team possessing its theory is dissolved" <sup><a href="#ref-1">[1]</a></sup>. Forty years later, this observation has become operationally urgent. LLM coding agents (Claude Code, Codex, Cursor, GitHub Copilot) can modify code rapidly, but they perform best when the team's theory is available to them in some written form, typically <code>CLAUDE.md</code>, <code>AGENTS.md</code>, or an arc42 document.</p>
+
+                <p>Brownfield projects do not have this artefact. The code exists; the theory exists only in the heads of the original team (if they are still available) or nowhere (if they have left). The naïve response, reverse-engineer the entire system into documentation before changing anything, fails for the same reason Big Upfront Design fails: it is expensive, drifts immediately, and does not target the parts of the system that actually need changing.</p>
+
+                <p>Two empirical findings from recent literature frame the difficulty. First, structural architecture recovery via LLM agents now achieves F1 ≈ 0.97 <sup><a href="#ref-9">[9]</a></sup>, so the structural problem is largely solved. Second, design-rationale recovery from code alone caps out at F1 ≈ 0.37 <sup><a href="#ref-11">[11]</a></sup>, so the <em>why</em> is structurally unrecoverable from the <em>what</em>. Any practical method must therefore recover structure automatically, route rationale questions to humans, and preserve traceability so that recovered documentation can be audited.</p>
+
+                <p>Socratic Code-Theory Recovery is the method this report describes. It is published as part of the Semantic Anchors project <sup><a href="#ref-21">[21]</a></sup>.</p>
+
+                <h2>3. Foundations</h2>
+
+                <h3>3.1 Naur and the irreducibility of theory</h3>
+
+                <p>Naur's claim, building on Ryle's <em>The Concept of Mind</em> (1949), is that theory is "the knowledge a person must have in order not only to do certain things intelligently but also to explain them, to answer queries about them, to argue about them." A crucial corollary is that "an essential part of any program, the theory of it, is something that could not conceivably be expressed", so complete recovery is impossible in principle.</p>
+
+                <p>Naur's pessimism has been read in two ways in the LLM era. The strong reading (Gauer, <em>Ratfactor</em>, 2025) is that LLMs process outputs (text, code, documentation) but not the process of theory making, so they cannot have theory and cannot recover it. The weaker reading (Goedecke, Bayer, 2025) is that LLMs can carry theory once it has been externalised by humans into structured form (<code>CLAUDE.md</code>, ADRs, arc42), and that the practical question is how to externalise it well. The position developed in <a href="#sec-9">Section 9</a> is closer to a Rylean operational stance: theory shows itself in successful continued development.</p>
+
+                <h3>3.2 Classical program comprehension</h3>
+
+                <p>The cognitive scaffolding for any recovery method comes from program-comprehension research developed between 1979 and 1995: Brooks (top-down hypothesis-driven), Pennington (program model and situation model), Soloway and Ehrlich (plans and rules of discourse), and von Mayrhauser and Vans' integrated metamodel. Sillito et al. (TSE 2008) catalogued 44 question types programmers ask during software evolution, organised into four categories: finding focus points, expanding focus points, understanding a subgraph, and questions over groups of subgraphs <sup><a href="#ref-4">[4]</a></sup>.</p>
+
+                <p>For this purpose, the relevant empirical bound is Xia et al.'s field study: professional developers spend about 58 % of their working time on program comprehension <sup><a href="#ref-24">[24]</a></sup>. Any method that reduces this fraction by improving recovery quality has substantial practical value.</p>
+
+                <h3>3.3 The Brownfield Paradox</h3>
+
+                <p>The Semantic Anchors project formulates the trap that motivates the method:</p>
+
+                <blockquote>
+                    <p>"In greenfield projects, you write the spec first and the code follows. In brownfield projects, the code already exists, but the spec often does not. The system is the specification, except nobody can read it."</p>
+                </blockquote>
+
+                <p>The temptation, to reverse-engineer the entire system into documentation before any change, is Big Upfront Documentation, with the same failure mode as Big Upfront Design. The escape is to specify only the bounded context about to be changed, and only enough of it to change it safely.</p>
+
+                <h2>4. The Method</h2>
+
+                <h3>4.1 The Workflow at a Glance</h3>
+
+                <p>The workflow has six steps: scope a bounded context (Phase 0), build the Question Tree with code evidence and open leaves (Phase 1), route the open leaves to the team by Ask role, synthesise documentation with Q-ID traceability (Phase 2), write baseline tests, then apply the standard spec-driven workflow for further development. Each step is described below.</p>
+
+                <p><em>Diagram placeholder: workflow overview (Phase 0 → Phase 1 → routing → Phase 2 → baseline tests → standard workflow).</em></p>
+
+                <h3>4.2 Phase 0: Scope a Bounded Context</h3>
+
+                <p>The first decision is where to start. A bounded context, in Evans' sense, is a coherent slice of the domain with clear boundaries: a module, a service, a feature area, or a screen. The criterion for choosing one is operational, not architectural: pick a context that is small enough to fit in a single recovery session and has a pending change request. Skipping this phase, attempting to recover the whole system at once, is the most common reason brownfield recovery efforts fail.</p>
+
+                <p>The LLM can assist by analysing the codebase and listing candidate bounded contexts with responsibilities, key entities, and interfaces. In healthy codebases this works well. In Big Ball of Mud codebases it may not (see <a href="#sec-bbom">Section 11.3</a>).</p>
+
+                <h3>4.3 Phase 1: The Question Tree</h3>
+
+                <p>Phase 1 is the structural core of the method. Five high-level questions about the bounded context are decomposed recursively using four Semantic Anchors as decomposition heuristics:</p>
+
+                <table class="content-table">
+                    <thead>
+                        <tr><th>Branch</th><th>Anchor</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Q1 Problem and users</td><td>free-form, the LLM elaborates</td></tr>
+                        <tr><td>Q2 Specification</td><td>Cockburn use cases (Primary Actor, Trigger, Main Success Scenario, Extensions, Postconditions)</td></tr>
+                        <tr><td>Q3 Architecture</td><td>arc42 (12 sub-questions corresponding to the 12 chapters)</td></tr>
+                        <tr><td>Q4 Quality goals</td><td>ISO/IEC 25010 (8 quality characteristics)</td></tr>
+                        <tr><td>Q5 Risks and technical debt</td><td>free-form, the LLM elaborates</td></tr>
+                    </tbody>
+                </table>
+
+                <p>ADRs sit under Q3.9 (architecture decisions) and use Nygard's template (Context, Decision, Status, Consequences). The decomposition stops when a leaf can be answered by a single piece of code evidence or a single fact from a stakeholder.</p>
+
+                <p>Each node gets a hierarchical Q-ID (Q1, Q1.2, Q1.2.3, …) so that the synthesised documentation in Phase 2 can cite back to the question that motivated each claim.</p>
+
+                <p>Every leaf is classified. An <code>[ANSWERED]</code> leaf cites code evidence as <code>&lt;file&gt;:&lt;line&gt;</code> or <code>&lt;file&gt;::&lt;function&gt;</code>. An <code>[OPEN]</code> leaf specifies a Category (<code>business-context</code>, <code>design-rationale</code>, <code>quality-goals</code>, <code>stakeholder-context</code>, <code>future-direction</code>) and an Ask role (Product Owner, Architect, Developer, Domain Expert, Operations).</p>
+
+                <p><em>Diagram placeholder: Question Tree example with green answered nodes and yellow open nodes.</em></p>
+
+                <p>The output of Phase 1 is two AsciiDoc files: <code>QUESTION_TREE.adoc</code> with the full tree and reasoning, and <code>OPEN_QUESTIONS.adoc</code> with only the open leaves, grouped by Ask role, each phrased to be answerable in 1 to 3 sentences.</p>
+
+                <h3>4.4 Between Phases: Team Routing</h3>
+
+                <p>The bridge between the two LLM phases is human work. <code>OPEN_QUESTIONS.adoc</code> is routed by Ask role to the people who can answer. The empirical anchor for the cost of this step comes from a controlled experiment on a 13 kLoC Go codebase: 11 targeted questions were sufficient to close the gap. The questions are precise because the recursive decomposition forces them to be specific rather than vague.</p>
+
+                <p>Typical categories that show up as <code>[OPEN]</code>:</p>
+
+                <table class="content-table">
+                    <thead>
+                        <tr><th>Category</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Business Context</td><td>Why was this built? What alternatives existed?</td></tr>
+                        <tr><td>Design Rationale</td><td>Why JSONC instead of YAML? Why this library?</td></tr>
+                        <tr><td>Quality Goals</td><td>Which quality goal has priority? What are the thresholds?</td></tr>
+                        <tr><td>Stakeholder Context</td><td>Who uses this? What is their skill level?</td></tr>
+                        <tr><td>Future Direction</td><td>What is planned but not yet implemented?</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>4.5 Phase 2: Synthesis with Dual Traceability</h3>
+
+                <p>Phase 2 takes the answered Question Tree plus the team's answers and produces documentation aligned to the spec-driven workflow:</p>
+
+                <ul>
+                    <li>PRD from the Q1 branch</li>
+                    <li>Cockburn use cases, CLI spec, data models, Gherkin acceptance criteria from the Q2 branch</li>
+                    <li>arc42 with all 12 chapters from the Q3 branch</li>
+                    <li>Nygard ADRs (with optional Pugh Matrix for trade-offs) from the Q3.9 branch</li>
+                    <li>Quality scenarios from the Q4 branch</li>
+                    <li>Risk register from the Q5 branch</li>
+                </ul>
+
+                <p>Every claim in the synthesised documentation references the Q-ID that motivated it. Team-provided information is marked <code>(team answer)</code>. This dual traceability, code evidence plus team input, both addressable by Q-ID, is the structural feature that distinguishes the method from any of the adjacent approaches.</p>
+
+                <h3>4.6 Baseline Tests and Spec Reconciliation</h3>
+
+                <p>Once use cases exist, the LLM writes tests that verify the current behaviour, with each test referencing its use case ID. These tests must pass against the unchanged code; a failing baseline test means the extracted use case was wrong and must be corrected first. Without baseline tests, subsequent changes cannot distinguish between "my change broke something" and "it was already broken."</p>
+
+                <p>Even with full documentation in place, the specification will drift from the code over time. The implementation LLM adds validation rules, security hardening, and edge cases that were not in the original spec. The fix is periodic spec reconciliation: re-run the recovery prompt against current code and diff against the existing spec. The diff reveals <code>NEW</code> (in code, not in spec), <code>CHANGED</code> (diverged), and <code>DEAD</code> (in spec, not in code). Three natural triggers: before a release, after a security review, before onboarding a new contributor.</p>
+
+                <h2>5. State of the Art: Adjacent Approaches</h2>
+
+                <p>This section consolidates the comparison landscape as of May 2026. Four lineages are relevant.</p>
+
+                <h3>5.1 Prompt-Pattern Socratic Approaches</h3>
+
+                <p>Edward Y. Chang (CCWC 2023, arXiv:2303.08769) named six Socratic moves usable as prompt templates: definition, elenchus, dialectic, maieutics, generalisation, and counterfactual reasoning <sup><a href="#ref-5">[5]</a></sup>. These are conversational moves, not structural decompositions. MIND (Della Porta et al., MSR 2026 Registered Reports) embeds three self-questions in code-task prompts: clarify the task, identify missing information, check intermediate conclusions <sup><a href="#ref-8">[8]</a></sup>. SocREval (Hong et al.) uses Chang's moves to make an LLM-as-judge evaluate reasoning chains. SocraticAI (Princeton, 2023) uses three role-played agents (Socrates / Theaetetus / Plato) for collaborative problem solving.</p>
+
+                <p>All four work at the level of an individual prompt or dialogue; none of them produces an artefact comparable to a Question Tree, and none of them targets brownfield comprehension as such.</p>
+
+                <h3>5.2 Conversational Human-Steering</h3>
+
+                <p>The most rigorous empirical study is SoHF (Chidambaram et al., EMNLP 2024 Findings) <sup><a href="#ref-6">[6]</a></sup>. Expert programmers worked across GPT-4, Gemini Ultra, and Claude 3.5 Sonnet; in aggregate they succeeded on 74 % of the problems the models initially failed to solve on their own. The five named feedback stages, Definition, Elenchus, Maieutic, Dialectic, Counterfactual, map to nine concrete steering strategies.</p>
+
+                <p>Kargupta et al. (EMNLP 2024) target Socratic code debugging with multi-turn planning and hierarchical questioning <sup><a href="#ref-7">[7]</a></sup>.</p>
+
+                <p>Both are about steering an LLM through a single task; neither addresses recovery of an existing codebase's theory.</p>
+
+                <h3>5.3 Recovery Pipelines</h3>
+
+                <p>ArchAgent (Pan et al., arXiv:2601.13007, Jan 2026) <sup><a href="#ref-9">[9]</a></sup> combines static analysis, adaptive code segmentation, and LLM synthesis to reconstruct multi-view, business-aligned architectures. On 8 large GitHub projects, ArchAgent reaches mean F1 = 0.966 (σ = 0.025) against DeepWiki at 0.860 (σ = 0.067), paired t-test p = 0.0036. ArchAgent is excellent at structure and does not address rationale, quality goals, or stakeholder concerns.</p>
+
+                <p>Reversa (<code>github.com/sandeco/reversa</code>) is the closest functional comparator. It orchestrates around a dozen specialist sub-agents (Scout, Archaeologist, Detective, Architect, Writer, Reviewer, and others) and labels outputs <code>CONFIRMED</code>, <code>INFERRED</code>, or <code>GAP</code>. It is heavier than Socratic Code-Theory Recovery (multi-agent orchestration, prompt-engineering complexity) and does not produce a Question Tree as a first-class artefact; the human handoff is implicit rather than structurally enforced.</p>
+
+                <p>Ouf et al. (arXiv:2509.19587, Sep 2025) <sup><a href="#ref-10">[10]</a></sup> report F1 ≈ 0.8 for user-story recovery on 1750 annotated C++ snippets at or below 200 NLOC, with performance degrading on longer code.</p>
+
+                <p>Zhou et al. (arXiv:2504.20781) <sup><a href="#ref-11">[11]</a></sup> evaluate 5 LLMs across 3 prompting strategies on 100 architecture problems for design rationale recovery: precision 0.27 to 0.28, recall 0.63 to 0.72, F1 0.35 to 0.39. This is the empirical anchor for why fully automated rationale recovery is not yet viable.</p>
+
+                <h3>5.4 Practice: CLAUDE.md, AGENTS.md, arc42-copilot</h3>
+
+                <p>Outside the academic literature, a practice pattern has crystallised: agents read and write context files (<code>CLAUDE.md</code> for Claude Code, <code>AGENTS.md</code> for Codex, now stewarded by the Linux Foundation's Agentic AI Foundation) that externalise the team's understanding of the system. Anthropic's "Effective context engineering for AI agents" endorses this pattern explicitly. The <code>awesome-arc42-copilot</code> repository <sup><a href="#ref-23">[23]</a></sup> provides LLM prompts aligned to the 12 arc42 sections plus the Q42 quality model.</p>
+
+                <p>These practices answer "what artefact carries the theory" but not "how do you produce the artefact when only code exists."</p>
+
+                <h2>6. Comparison: Positioning the Method</h2>
+
+                <h3>6.1 Comparison Matrix</h3>
+
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Dimension</th>
+                            <th>Chang / MIND</th>
+                            <th>SoHF</th>
+                            <th>ArchAgent</th>
+                            <th>Reversa</th>
+                            <th>Socratic CTR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Targets brownfield recovery</td><td>no</td><td>no</td><td>yes</td><td>yes</td><td>yes</td></tr>
+                        <tr><td>Bounded-context scoped</td><td>no</td><td>no</td><td>no</td><td>partial</td><td>yes</td></tr>
+                        <tr><td>Framework-anchored decomposition</td><td>no</td><td>no</td><td>no</td><td>no</td><td>yes</td></tr>
+                        <tr><td>Explicit human handoff artefact</td><td>no</td><td>n/a</td><td>no</td><td>partial</td><td>yes</td></tr>
+                        <tr><td>Q-ID bidirectional traceability</td><td>no</td><td>no</td><td>no</td><td>no</td><td>yes</td></tr>
+                        <tr><td>Resolution log</td><td>no</td><td>no</td><td>no</td><td>no</td><td>yes</td></tr>
+                        <tr><td>Multi-agent orchestration</td><td>no</td><td>no</td><td>yes</td><td>yes</td><td>optional</td></tr>
+                        <tr><td>Empirical recovery benchmark</td><td>n/a</td><td>task-only</td><td>structural F1 0.97</td><td>n/a</td><td>greenfield-inversion</td></tr>
+                        <tr><td>Token efficiency (output / original)</td><td>n/a</td><td>n/a</td><td>full</td><td>full</td><td>21–35 %</td></tr>
+                    </tbody>
+                </table>
+
+                <h3>6.2 Where the Method is Unique</h3>
+
+                <p>Three properties of Socratic Code-Theory Recovery have no exact counterpart in the literature.</p>
+
+                <p>The first is <em>framework-anchored decomposition</em>. Other approaches use prompt patterns (Chang's six moves; MIND's three self-questions) or agent roles (Reversa's specialist sub-agents). Socratic Code-Theory Recovery uses four widely understood software-engineering frameworks as decomposition heuristics. The prompt that drives Phase 1 is short, under 70 lines, because arc42 already implies the 12 architectural sub-questions, ISO 25010 already implies 8 quality characteristics, and so on. The vocabulary does the work that prompt verbosity would otherwise have to do.</p>
+
+                <p>The second is <em>explicit human-handoff routing</em>. Reversa labels outputs <code>INFERRED</code> or <code>GAP</code>, but the gap is a marker on a document, not an actionable artefact. Socratic Code-Theory Recovery produces <code>OPEN_QUESTIONS.adoc</code>, grouped by Ask role, where each question is short and specific enough for a domain expert to answer in 1 to 3 sentences. This converts the philosophical limit (Naur: theory cannot be fully expressed) into an operational workflow.</p>
+
+                <p>The third is <em>dual traceability</em>. Every claim in the synthesised documentation has both a Q-ID (linking it to the question that motivated it) and, where applicable, a <code>(team answer)</code> marker indicating that the source is a human, not the code. This makes the documentation auditable: a reader can ask, for any claim, "where does this come from?" and the answer is in the document itself.</p>
+
+                <h3>6.3 Empirical Positioning from the Fair Comparison</h3>
+
+                <p>The Fair Comparison Report <sup><a href="#ref-22">[22]</a></sup> ran three variants, Direct prompting, Socratic (Question Tree only), and full Two-Phase, against the same codebase with identical team answers. The headline numbers:</p>
+
+                <table class="content-table">
+                    <thead>
+                        <tr><th>Metric</th><th>Direct</th><th>Socratic</th><th>Two-Phase</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Total lines (adoc)</td><td>3,886</td><td>2,481</td><td>4,083</td></tr>
+                        <tr><td>Compression vs Original</td><td>33 %</td><td>21 %</td><td>35 %</td></tr>
+                        <tr><td>ADRs</td><td>7</td><td>3</td><td>5</td></tr>
+                        <tr><td>ADR topics match Original</td><td>no</td><td>no</td><td><strong>yes</strong></td></tr>
+                        <tr><td>Q-ID references</td><td>101</td><td>123</td><td>109</td></tr>
+                        <tr><td>Team-answer markers</td><td>26</td><td>35</td><td>50</td></tr>
+                        <tr><td>Open questions remaining</td><td>0</td><td>0</td><td>0</td></tr>
+                        <tr><td>Threat model in Ch. 10</td><td><strong>yes</strong></td><td>no</td><td>no</td></tr>
+                    </tbody>
+                </table>
+
+                <p>Three observations.</p>
+
+                <p><em>Team answers, not the structure, determine information completeness.</em> All three approaches achieved zero remaining open questions, performance budgets, quality goal priorities, and correct competitive context. This means the recovery problem is, with respect to information, an <em>answer-routing</em> problem.</p>
+
+                <p><em>The Question Tree constrains output, not only information.</em> Two-Phase exactly matched the original's 5 ADRs with correct topics and status (including ADR-004 Rejected) because Phase 1 asked "which ADRs exist?" and the team answer locked in the topics. Without that constraint, the Direct approach generated 7 ADRs (2 hallucinated). This is the strongest empirical case yet for structured Socratic decomposition over free-form prompting.</p>
+
+                <p><em>Volume control is real and matters.</em> Socratic compresses to 21 % of the original's volume while keeping all essentials. For agentic downstream consumption, where the synthesised documentation later enters another LLM's context window, this is not a stylistic preference but an economic one.</p>
+
+                <h2>7. Empirical Methodology: The Greenfield Inversion</h2>
+
+                <h3>7.1 The Problem with Conventional Ground Truth</h3>
+
+                <p>Brownfield recovery has no obvious ground truth. Human-authored documentation is typically incomplete, drifted, or both. Asking the original team to validate recovered documentation is unreliable: they cannot remember what they once knew, and confirmation bias is high. Measuring recovery "quality" against a moving or fictional target is methodologically weak.</p>
+
+                <h3>7.2 The Inversion</h3>
+
+                <p>Socratic Code-Theory Recovery's evaluation uses a different reference frame. The starting point is a <em>greenfield</em> project where the LLM produced complete documentation as part of the spec-driven workflow. This documentation has been validated operationally: the LLM was able to continue building the software using it. By the Rylean criterion, knowing-how shows itself in successful action, the documentation carries operationally sufficient theory.</p>
+
+                <p>The experiment then deletes the documentation, treats the remaining code as a brownfield codebase, runs the recovery method, and compares the recovered documentation against the deleted original. This avoids the moving-target problem entirely. The original was complete, drift-free, and operationally validated. The recovered version can be compared exactly.</p>
+
+                <h3>7.3 Why This Is Stronger Than It First Looks</h3>
+
+                <p>A natural objection is "same-LLM bias": the recovery LLM might find it easier to reconstruct documentation in a style the same model previously produced. This objection is weaker than it appears, for three reasons.</p>
+
+                <p>First, internal validity is preserved across the three approaches under comparison. Direct, Socratic, and Two-Phase all face the same potential bias. Differences between them therefore measure the structural property under test (the value of the Question Tree, the value of the two-phase split) rather than model-specific affinities.</p>
+
+                <p>Second, the ground truth itself is better than typical human-authored alternatives. Most human-written brownfield documentation suffers from selection bias (people document what they remember), drift (the code moves and the docs do not), and the tacit-knowledge assumption (writers omit context they assume readers share). LLM-generated greenfield documentation, by construction, has section coverage from the template, is drift-free to the time of generation, and is explicit because the LLM does not assume shared context. For the purposes of "what counts as adequate theory documentation," it is arguably a <em>better</em> reference than typical human documentation, not a compromise.</p>
+
+                <p>Third, the operational test underlying the greenfield project is the strongest evidence available. If the LLM successfully continues development using its own documentation, then in a Rylean sense the documentation carries the theory. Anything stronger, "but it might not capture the <em>real</em> theory", presupposes a non-operational notion of theory that Ryle (and arguably Naur) reject.</p>
+
+                <p>A modest extension would replicate the experiment using a <em>different</em> LLM for the original greenfield documentation than for the recovery, to rule out same-model affinity quantitatively. This is a useful addition, not a methodological prerequisite.</p>
+
+                <h2 id="sec-9">8. The Naur Debate, Revisited</h2>
+
+                <h3>8.1 Two Camps</h3>
+
+                <p>The Naur-versus-LLM debate, currently the most contested methodological question in this area, has two camps.</p>
+
+                <p>The <em>strong-Naur</em> camp (Gauer, <em>Ratfactor</em>; partial echoes in Cekrem) reads Naur through Ryle's knowing-how vs knowing-that distinction and argues that LLMs, having trained on outputs only, cannot have built the theory and therefore cannot recover it. Documentation produced by an LLM is at best a plausible reconstruction, never the theory itself.</p>
+
+                <p>The <em>operational</em> camp (Goedecke, Bayer) accepts Naur's diagnosis but argues that the practical question is how to externalise the theory effectively so that LLMs can amplify, rather than replace, human theory-building. <code>CLAUDE.md</code> becomes, in Bayer's phrasing, the place where the team's theory of the program is recorded.</p>
+
+                <h3>8.2 Our Position</h3>
+
+                <p>Socratic Code-Theory Recovery's position aligns with a third reading: a <em>Rylean operational</em> stance that is consistent with Naur's text but rejects the strong-Naur interpretation.</p>
+
+                <p>Ryle's original argument in <em>The Concept of Mind</em> is <em>anti-mentalist</em>. For Ryle there is no privileged inner theory hiding behind successful performance; the performance <em>is</em> the theory's expression. Asking whether an LLM "really" has theory, separately from whether it can act as if it does, is the kind of question Ryle would have dismissed as a category mistake.</p>
+
+                <p>Applied to brownfield recovery, this yields a clear position:</p>
+
+                <ol>
+                    <li>The strong-Naur claim ("theory cannot be expressed at all") is empirically falsified to the extent that documented systems are successfully maintained. Some theory is in the documentation; some is in the heads.</li>
+                    <li>The question is operational: which parts of the theory are in the code, which are derivable from the code, and which require a human? Socratic Code-Theory Recovery answers this with the <code>[ANSWERED]</code> / <code>[OPEN]</code> classification.</li>
+                    <li>Naur's irreducibility holds for <em>some</em> theory components, the tacit, the unargued, the never-considered-alternatives. These are exactly the categories that surface as <code>[OPEN]</code> leaves with <code>Ask: Architect</code> or <code>Ask: Domain Expert</code>.</li>
+                    <li>The method does not refute Naur. It <em>operationalises</em> his limit.</li>
+                </ol>
+
+                <p>This is a stronger position than either of the existing camps, and it has a methodological consequence: the validity of the method does not depend on resolving the philosophical debate about what LLMs "really" know. It depends only on whether the produced documentation, plus the routed open questions, plus the team answers, allows continued development.</p>
+
+                <h2>9. Limitations</h2>
+
+                <h3>9.1 Threat-Model Blind Spot</h3>
+
+                <p>The Fair Comparison Report identified a single recurring structural gap: Direct prompting produces an explicit Threat Model section in arc42 Chapter 10 with three trust boundaries; Socratic and Two-Phase do not. The information is equivalent (all three name the relevant security mechanisms), but only Direct surfaces a named Threat Model.</p>
+
+                <p>The cause is structural, not a prompt-engineering bug. arc42 distributes security across Chapter 8 (crosscutting concerns) and Chapter 10 (quality scenarios); ISO 25010 treats security as a quality characteristic; Nygard ADRs are decision-centric, not threat-centric. None of the four decomposition anchors prompts the LLM to produce a STRIDE-style trust-boundary analysis. The pragmatic workaround (Direct follow-up for security-critical projects) treats the symptom; a structural fix is described in <a href="#sec-threat-ext">Section 10.1</a>.</p>
+
+                <h3>9.2 OPEN-Leaf Discipline Risk</h3>
+
+                <p>The method's value depends on the discipline of routing <code>[OPEN]</code> leaves to humans rather than letting the LLM fill them with plausible inferences. This is a socio-technical risk, not a methodological one. An <code>[OPEN]</code> leaf filled by the LLM is <em>worse</em> than an unanswered one because it cannot be distinguished from team-confirmed knowledge by a downstream reader, the dual traceability is silently broken.</p>
+
+                <p>The current Phase 1 prompt does not explicitly prohibit this behaviour. A short addition (see <a href="#sec-anti-ext">Section 10.2</a>) closes the gap.</p>
+
+                <h3>9.3 Bounded-Context Identification</h3>
+
+                <p>Phase 0 assumes that bounded contexts are identifiable in the codebase. For healthy codebases this is realistic; for Big Ball of Mud systems it may not be. The method does not currently distinguish "the LLM identified bounded contexts well" from "the LLM imposed bounded contexts that do not really exist." Wrong contexts at Phase 0 produce locally coherent but globally misleading recovery.</p>
+
+                <p>This is the single most important scalability risk for the method. If bounded contexts are reliable, the per-context recovery scales over the whole codebase. If they are not, no amount of per-context quality compensates.</p>
+
+                <h3>9.4 Domain Generalisation</h3>
+
+                <p>The empirical evidence currently rests on a single greenfield-inverted codebase (13 kLoC, Go). The methodology is sound, but generalisation to other languages, domains, and team-size conventions remains to be demonstrated. A modest replication across 3 to 5 codebases would close this gap.</p>
+
+                <h2>10. Proposed Extensions</h2>
+
+                <h3 id="sec-threat-ext">10.1 Add a Fifth Anchor: STRIDE for Security</h3>
+
+                <p>The cleanest fix for the threat-model blind spot is to add a fifth, optional decomposition anchor for security. STRIDE is the natural choice: it is widely known, it is concise (six mnemonic categories), and it surfaces trust boundaries explicitly. The proposed addition to Phase 1:</p>
+
+                <pre><code>Q6 What is the threat model?  (optional, security-relevant systems)
+  Q6.1 Spoofing — where does identity authentication happen?
+  Q6.2 Tampering — what data is mutable and by whom?
+  Q6.3 Repudiation — what is logged or signed?
+  Q6.4 Information Disclosure — what data has confidentiality requirements?
+  Q6.5 Denial of Service — which components are availability-critical?
+  Q6.6 Elevation of Privilege — what authorisation boundaries exist?</code></pre>
+
+                <p>This branch should be opt-in (set by a flag at Phase 0) so that non-security-critical projects retain a lightweight tree.</p>
+
+                <h3 id="sec-anti-ext">10.2 Anti-Pattern Guards</h3>
+
+                <p>Two short additions to the existing prompts close the OPEN-leaf discipline gap.</p>
+
+                <p>In Phase 1, after the leaf classification instructions:</p>
+
+                <pre><code>Do NOT fill [OPEN] leaves with plausible inferences. An [OPEN] leaf with
+an LLM-generated answer is worse than an empty one, because it cannot be
+distinguished from team-confirmed knowledge in downstream documentation.
+If the answer is not derivable from code with file:line evidence, classify
+[OPEN].</code></pre>
+
+                <p>In Phase 2, before synthesis:</p>
+
+                <pre><code>Before synthesising, verify that every claim marked (team answer) corresponds
+to an entry in the answered Open Questions document. Do not introduce
+(team answer) markers for content that has no source in either code or
+answered questions.</code></pre>
+
+                <h3 id="sec-bbom">10.3 Two-Stage Phase 0 for Low-Modularity Codebases</h3>
+
+                <p>Phase 0 should distinguish "DDD-decomposable" codebases from "Big Ball of Mud" codebases before attempting bounded-context identification.</p>
+
+                <p><em>Phase 0a: Modularity Assessment.</em> Compute coupling, cohesion, package-level cyclomatic dependencies, and import-cluster structure. Output a modularity score and a recommendation: <code>DDD-decomposable</code>, <code>refactoring-first</code>, or <code>vertical-slice-recovery</code>.</p>
+
+                <p><em>Phase 0b: Fallback to Vertical Slices.</em> If modularity is too low for sound bounded-context identification, fall back to recovering a single end-to-end use case as the unit of recovery, rather than a module. This aligns with Feathers' <em>Working Effectively with Legacy Code</em> and is more realistic for the codebases that most need the method.</p>
+
+                <h3>10.4 Continuous Theory Externalisation</h3>
+
+                <p>The most ambitious extension reframes the method beyond brownfield onboarding. If LLM-generated documentation operationally carries theory (per the greenfield evidence), and if spec drift can be detected and reconciled, then the same machinery can run <em>continuously</em>: on every merge to main, regenerate the affected documentation, diff against the previous version, and surface drift as NEW, CHANGED, or DEAD findings to the team.</p>
+
+                <p>This generalises Naur's claim from a one-time observation about brownfield risk to an ongoing maintenance practice. A program need not "die" when its team dissolves if the team has continuously externalised its theory into machine-checkable, LLM-regenerable form.</p>
+
+                <p>This is a research direction more than a feature, but it is the natural endpoint of the method's logic.</p>
+
+                <h2>11. Recommendations</h2>
+
+                <p>For teams adopting Socratic Code-Theory Recovery in 2026:</p>
+
+                <ol>
+                    <li><em>Start with one bounded context, with a pending change request.</em> Never attempt full-system recovery upfront. Incremental coverage emerges naturally over 3 to 10 contexts.</li>
+                    <li><em>Use the Two-Phase variant for production-quality documentation</em> where ADR fidelity and traceability matter. Use the Socratic-only variant when the goal is gap-finding (cheapest way to produce the targeted team questions). Use Direct prompting only when no team access is available and you accept some over-generation.</li>
+                    <li><em>Treat <code>[OPEN]</code> leaves as work, not as failure.</em> A high count of <code>[OPEN]</code> leaves in Phase 1 is a sign the method is functioning: it surfaces what code cannot answer. Route them by Ask role and budget human time accordingly.</li>
+                    <li><em>Add baseline tests before any modification.</em> Without them, the safety net is missing and brownfield changes carry needless risk.</li>
+                    <li><em>Schedule spec reconciliation</em> at three natural triggers: before a release, after a security review, before onboarding. Treat reconciliation as a regular practice, not a one-time activity.</li>
+                    <li><em>For security-critical systems</em>, either use the proposed STRIDE extension (preferred once published) or run a Direct-prompt follow-up specifically for trust boundaries and threat model.</li>
+                    <li><em>Version-control all generated artefacts</em> (<code>QUESTION_TREE.adoc</code>, <code>OPEN_QUESTIONS.adoc</code>, the synthesised arc42, ADRs, baseline tests). Treat them as first-class repository content, not as ephemeral LLM output.</li>
+                </ol>
+
+                <h2>12. Conclusion</h2>
+
+                <p>Socratic Code-Theory Recovery is, as far as the May 2026 literature shows, the first method to combine structural decomposition through established software-engineering frameworks, explicit human-handoff routing, and bidirectional Q-ID traceability into a single brownfield-onboarding workflow. It operationalises Naur's irreducibility claim rather than arguing past it: the <code>[OPEN]</code> leaves are the theory residue that no amount of code analysis can recover.</p>
+
+                <p>The empirical contribution, using a greenfield-inverted codebase as ground truth, is methodologically novel and arguably stronger than evaluation against human-authored documentation. The Fair Comparison demonstrates that the Question Tree functions as an <em>output constraint</em>: Two-Phase reproduces the original's ADR structure exactly while unconstrained Direct prompting hallucinates additional artefacts.</p>
+
+                <p>Three structural risks remain: threat modelling is not surfaced by the four decomposition anchors; Big Ball of Mud codebases break bounded-context identification; and the discipline of routing <code>[OPEN]</code> leaves to humans is socio-technical, not methodological. Four extensions address them: a STRIDE branch for security, anti-pattern guards in the prompts, a two-stage Phase 0 for low-modularity codebases, and a continuous-externalisation generalisation that turns the method from one-shot recovery into ongoing practice.</p>
+
+                <p>The longer-term significance is not the method itself but the methodological pattern it establishes. LLM coding assistants do their best work when the team's theory is externalised in structured, machine-readable form. Socratic Code-Theory Recovery is one answer to the question that pattern raises: <em>how do you produce the externalised theory when only code exists?</em></p>
+
+                <h2>References</h2>
+
+                <ol class="references">
+                    <li id="ref-1">Naur, P. (1985). "Programming as Theory Building." <em>Microprocessing and Microprogramming</em> 15(5):253–261.</li>
+                    <li id="ref-2">Ryle, G. (1949). <em>The Concept of Mind.</em> London: Hutchinson.</li>
+                    <li id="ref-3">Biggerstaff, T. J. (1989). "Design Recovery for Maintenance and Reuse." <em>IEEE Computer</em> 22(7):36–49.</li>
+                    <li id="ref-4">Sillito, J., Murphy, G. C., De Volder, K. (2008). "Asking and Answering Questions during a Programming Change Task." <em>IEEE TSE</em> 34(4):434–451.</li>
+                    <li id="ref-5">Chang, E. Y. (2023). "Prompting Large Language Models with the Socratic Method." IEEE CCWC / arXiv:2303.08769.</li>
+                    <li id="ref-6">Chidambaram, S. et al. (2024). "Socratic Human Feedback (SoHF): Expert Steering Strategies for LLM Code Generation." Findings of EMNLP 2024:15491–15502.</li>
+                    <li id="ref-7">Kargupta, P. et al. (2024). "Instruct, Not Assist: LLM-based Multi-Turn Planning and Hierarchical Questioning for Socratic Code Debugging." Findings of EMNLP 2024.</li>
+                    <li id="ref-8">Della Porta, A. et al. (2026). "Ask, Then Think: Enhancing LLM Performance with Socratic Reasoning." MSR 2026 Registered Reports / SSRN 6167610.</li>
+                    <li id="ref-9">Pan, R. et al. (2026). "ArchAgent: Scalable Legacy Software Architecture Recovery with LLMs." arXiv:2601.13007.</li>
+                    <li id="ref-10">Ouf, M. et al. (2025). "Reverse Engineering User Stories from Code using Large Language Models." arXiv:2509.19587.</li>
+                    <li id="ref-11">Zhou, X. et al. (2025). "Using LLMs in Generating Design Rationale for Software Architecture Decisions." arXiv:2504.20781.</li>
+                    <li id="ref-12">Feathers, M. (2004). <em>Working Effectively with Legacy Code.</em> Prentice Hall.</li>
+                    <li id="ref-13">Evans, E. (2003). <em>Domain-Driven Design: Tackling Complexity in the Heart of Software.</em> Addison-Wesley.</li>
+                    <li id="ref-14">Starke, G., Hruschka, P. arc42 Template. <a href="https://arc42.org">https://arc42.org</a></li>
+                    <li id="ref-15">Nygard, M. (2011). "Documenting Architecture Decisions."</li>
+                    <li id="ref-16">Martinelli, S. AI Unified Process. <a href="https://unifiedprocess.ai">https://unifiedprocess.ai</a></li>
+                    <li id="ref-17">Anthropic. "Effective context engineering for AI agents." (2025).</li>
+                    <li id="ref-18">Gauer, D. "Go read Peter Naur's 'Programming as Theory Building' and then come back…" <a href="https://ratfactor.com/cards/naur-vs-llms">ratfactor.com/cards/naur-vs-llms</a></li>
+                    <li id="ref-19">Bayer, P. (2025). "How I use Claude Code."</li>
+                    <li id="ref-20">Goedecke, S. (2025). "Programming (with AI agents) as theory building."</li>
+                    <li id="ref-21">LLM Coding Community. Semantic Anchors – Brownfield Workflow. <a href="https://llm-coding.github.io/Semantic-Anchors/brownfield">llm-coding.github.io/Semantic-Anchors/brownfield</a></li>
+                    <li id="ref-22">LLM Coding Community. Semantic Anchors – Fair Comparison Report. <a href="https://llm-coding.github.io/Semantic-Anchors/brownfield-fair-comparison">llm-coding.github.io/Semantic-Anchors/brownfield-fair-comparison</a></li>
+                    <li id="ref-23">MSiccDev. awesome-arc42-copilot. <a href="https://github.com/MSiccDev/awesome-arc42-copilot">github.com/MSiccDev/awesome-arc42-copilot</a></li>
+                    <li id="ref-24">Xia, X. et al. (2018). "Measuring Program Comprehension: A Large-Scale Field Study with Professionals." <em>IEEE TSE</em>.</li>
+                </ol>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">Brownfield</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">Research</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

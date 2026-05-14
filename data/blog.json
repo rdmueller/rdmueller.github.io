@@ -1,5 +1,20 @@
 [
   {
+    "title": "Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding",
+    "date": "2026-05-14",
+    "excerpt": "How to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor. Positioned against ArchAgent, Reversa, SoHF, and the Naur debate, with fact-checked references.",
+    "url": "blog/socratic-code-theory-recovery.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/socratic-code-theory-recovery.png",
+    "tags": [
+      "Semantic Anchors",
+      "Brownfield",
+      "LLM",
+      "Research"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Six Months of Semantic Anchors",
     "date": "2026-05-14",
     "excerpt": "Six months in, the catalog has 147 entries and the community is now writing more anchors than I am. That was the plan.",

@@ -11,6 +11,18 @@
         <uri>https://rdmueller.github.io/</uri>
     </author>
     <entry>
+        <id>https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html</id>
+        <title>Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding</title>
+        <updated>2026-05-14T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html" />
+        <summary>How to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor. Positioned against ArchAgent, Reversa, SoHF, and the Naur debate, with fact-checked references.</summary>
+        <category term="Semantic Anchors" />
+        <category term="Brownfield" />
+        <category term="LLM" />
+        <category term="Research" />
+        <content type="html">&lt;p&gt;How to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor. Positioned against ArchAgent, Reversa, SoHF, and the Naur debate, with fact-checked references.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
         <id>https://rdmueller.github.io/pages/blog/semantic-anchors-six-months.html</id>
         <title>Six Months of Semantic Anchors</title>
         <updated>2026-05-14T00:00:00Z</updated>
