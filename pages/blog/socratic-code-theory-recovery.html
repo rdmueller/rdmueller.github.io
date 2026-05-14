@@ -66,7 +66,8 @@
             </header>
 
             <figure class="article-hero">
-                <img src="../../images/blog/linkedin/socratic-code-theory-recovery.png" alt="Diagram of the Socratic Code-Theory Recovery workflow: bounded context scoping, Question Tree with answered and open leaves, team routing, synthesis to arc42 and ADRs">
+                <img src="../../images/blog/linkedin/socratic-code-theory-recovery.png" alt="Socratic Code-Theory Recovery: Tests and code on the right feed an LLM, which interacts with a human and produces recovered PRD, Spec, and arc42 on the left, while the original Archiv sits orphaned at the bottom.">
+                <figcaption>Socratic Code-Theory Recovery in one picture: code is read, the team is asked, recovered artefacts emerge.</figcaption>
             </figure>
 
             <div class="article-content">
@@ -115,15 +116,23 @@
                     <p>"In greenfield projects, you write the spec first and the code follows. In brownfield projects, the code already exists, but the spec often does not. The system is the specification, except nobody can read it."</p>
                 </blockquote>
 
+                <figure>
+                    <img src="../../images/blog/linkedin/socratic-greenfield.png" alt="Greenfield workflow: Idea leads to PRD, PRD branches to Spec and arc42, Spec feeds Tests and Code, arc42 feeds Code, Tests feed Code.">
+                    <figcaption>Greenfield: spec and architecture drive tests and code.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../../images/blog/linkedin/socratic-brownfield.png" alt="Brownfield: PRD, Spec, and arc42 sit greyed-out in an Archiv on the left; on the right a live Projekt contains only Tests and Code. The documentation has detached from the running system.">
+                    <figcaption>Brownfield: PRD, Spec, and arc42 are archived or never existed. The system is the specification.</figcaption>
+                </figure>
+
                 <p>The temptation, to reverse-engineer the entire system into documentation before any change, is Big Upfront Documentation, with the same failure mode as Big Upfront Design. The escape is to specify only the bounded context about to be changed, and only enough of it to change it safely.</p>
 
                 <h2>4. The Method</h2>
 
                 <h3>4.1 The Workflow at a Glance</h3>
 
-                <p>The workflow has six steps: scope a bounded context (Phase 0), build the Question Tree with code evidence and open leaves (Phase 1), route the open leaves to the team by Ask role, synthesise documentation with Q-ID traceability (Phase 2), write baseline tests, then apply the standard spec-driven workflow for further development. Each step is described below.</p>
-
-                <p><em>Diagram placeholder: workflow overview (Phase 0 → Phase 1 → routing → Phase 2 → baseline tests → standard workflow).</em></p>
+                <p>The workflow has six steps: scope a bounded context (Phase 0), build the Question Tree with code evidence and open leaves (Phase 1), route the open leaves to the team by Ask role, synthesise documentation with Q-ID traceability (Phase 2), write baseline tests, then apply the standard spec-driven workflow for further development. Each step is described below. The hero image at the top of this article shows the full loop in one picture.</p>
 
                 <h3>4.2 Phase 0: Scope a Bounded Context</h3>
 
@@ -153,8 +162,6 @@
                 <p>Each node gets a hierarchical Q-ID (Q1, Q1.2, Q1.2.3, …) so that the synthesised documentation in Phase 2 can cite back to the question that motivated each claim.</p>
 
                 <p>Every leaf is classified. An <code>[ANSWERED]</code> leaf cites code evidence as <code>&lt;file&gt;:&lt;line&gt;</code> or <code>&lt;file&gt;::&lt;function&gt;</code>. An <code>[OPEN]</code> leaf specifies a Category (<code>business-context</code>, <code>design-rationale</code>, <code>quality-goals</code>, <code>stakeholder-context</code>, <code>future-direction</code>) and an Ask role (Product Owner, Architect, Developer, Domain Expert, Operations).</p>
-
-                <p><em>Diagram placeholder: Question Tree example with green answered nodes and yellow open nodes.</em></p>
 
                 <p>The output of Phase 1 is two AsciiDoc files: <code>QUESTION_TREE.adoc</code> with the full tree and reasoning, and <code>OPEN_QUESTIONS.adoc</code> with only the open leaves, grouped by Ask role, each phrased to be answerable in 1 to 3 sentences.</p>
 
@@ -309,6 +316,11 @@
                 <p>Socratic Code-Theory Recovery's evaluation uses a different reference frame. The starting point is a <em>greenfield</em> project where the LLM produced complete documentation as part of the spec-driven workflow. This documentation has been validated operationally: the LLM was able to continue building the software using it. By the Rylean criterion, knowing-how shows itself in successful action, the documentation carries operationally sufficient theory.</p>
 
                 <p>The experiment then deletes the documentation, treats the remaining code as a brownfield codebase, runs the recovery method, and compares the recovered documentation against the deleted original. This avoids the moving-target problem entirely. The original was complete, drift-free, and operationally validated. The recovered version can be compared exactly.</p>
+
+                <figure>
+                    <img src="../../images/blog/linkedin/socratic-result-evaluation.png" alt="Result evaluation: recovered PRD prime, Spec prime, arc42 prime at the top, original PRD, Spec, arc42 from the Archiv at the bottom, an LLM-brain symbol between them with an equality-question-mark indicating direct comparison.">
+                    <figcaption>Greenfield inversion: the recovered artefacts (top) are compared directly against the deleted originals from the archive (bottom).</figcaption>
+                </figure>
 
                 <h3>7.3 Why This Is Stronger Than It First Looks</h3>
 
