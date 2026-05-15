@@ -178,4 +178,48 @@
             }
         });
     }
+
+    // Heading anchors: auto-generate IDs and hover-visible permalinks on h2/h3
+    // inside .article-content. Preserves any pre-existing id attributes.
+    const articleContent = document.querySelector('.article-content');
+    if (articleContent) {
+        const slugify = function(text) {
+            return text
+                .toLowerCase()
+                .normalize('NFKD').replace(/[̀-ͯ]/g, '')
+                .replace(/ß/g, 'ss')
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-+|-+$/g, '');
+        };
+        const used = new Set();
+        articleContent.querySelectorAll('h2, h3').forEach(function(h) {
+            let id = h.id;
+            if (!id) {
+                const base = slugify(h.textContent) || 'section';
+                let unique = base;
+                let i = 2;
+                while (used.has(unique) || document.getElementById(unique)) {
+                    unique = base + '-' + i++;
+                }
+                id = unique;
+                h.id = id;
+            }
+            used.add(id);
+            if (!h.querySelector('.heading-anchor')) {
+                const a = document.createElement('a');
+                a.className = 'heading-anchor';
+                a.href = '#' + id;
+                a.setAttribute('aria-label', 'Permalink to "' + h.textContent.trim() + '"');
+                a.textContent = '¶';
+                h.appendChild(a);
+            }
+        });
+        // If the URL had a hash that matched a JS-assigned ID, scroll to it now
+        if (window.location.hash && window.location.hash.length > 1) {
+            const target = document.getElementById(window.location.hash.slice(1));
+            if (target) {
+                target.scrollIntoView();
+            }
+        }
+    }
 })();

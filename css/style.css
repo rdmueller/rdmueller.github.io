@@ -2106,6 +2106,35 @@ ul, ol {
     color: var(--color-text);
 }
 
+.article-content h2,
+.article-content h3 {
+    position: relative;
+    scroll-margin-top: 6rem;
+}
+
+.heading-anchor {
+    display: inline-block;
+    margin-left: 0.4em;
+    color: #b0b0b0;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.15s, color 0.15s;
+    font-size: 0.75em;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+.article-content h2:hover .heading-anchor,
+.article-content h3:hover .heading-anchor,
+.heading-anchor:focus {
+    opacity: 1;
+}
+
+.heading-anchor:hover {
+    color: var(--color-primary);
+    opacity: 1;
+}
+
 .article-content p {
     margin-bottom: var(--spacing-lg);
     color: var(--color-text-light);
