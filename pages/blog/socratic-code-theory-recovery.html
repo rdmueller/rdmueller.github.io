@@ -63,6 +63,26 @@
             font-style: normal;
             color: #333;
         }
+        .method-callout {
+            background: #f4f7fa;
+            border-left: 4px solid #1F5673;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0 2.5rem 0;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        .method-callout p {
+            margin: 0;
+        }
+        .method-callout strong {
+            color: #1F5673;
+        }
+        .method-callout code {
+            background: rgba(31, 86, 115, 0.08);
+            padding: 0.1em 0.35em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
@@ -131,7 +151,7 @@
 
                 <p>Naur's claim, building on Ryle's <em>The Concept of Mind</em> (1949), is that theory is "the knowledge a person must have in order not only to do certain things intelligently but also to explain them, to answer queries about them, to argue about them." A crucial corollary is that "an essential part of any program, the theory of it, is something that could not conceivably be expressed", so complete recovery is impossible in principle.</p>
 
-                <p>Naur's pessimism has been read in two ways in the LLM era. The strong reading (Gauer, <em>Ratfactor</em>, 2025) is that LLMs process outputs (text, code, documentation) but not the process of theory making, so they cannot have theory and cannot recover it. The weaker reading (Goedecke, Bayer, 2025) is that LLMs can carry theory once it has been externalised by humans into structured form (<code>CLAUDE.md</code>, ADRs, arc42), and that the practical question is how to externalise it well. The position developed in <a href="#sec-9">Section 9</a> is closer to a Rylean operational stance: theory shows itself in successful continued development.</p>
+                <p>Naur's pessimism has been read in two ways in the LLM era. The strong reading (Gauer, <em>Ratfactor</em>, 2025) is that LLMs process outputs (text, code, documentation) but not the process of theory making, so they cannot have theory and cannot recover it. The weaker reading (Goedecke, Bayer, 2025) is that LLMs can carry theory once it has been externalised by humans into structured form (<code>CLAUDE.md</code>, ADRs, arc42), and that the practical question is how to externalise it well. The position developed in <a href="#sec-9">Section 8</a> is closer to a Rylean operational stance: theory shows itself in successful continued development.</p>
 
                 <h3>3.2 Classical program comprehension</h3>
 
@@ -161,6 +181,10 @@
 
                 <h2>4. The Method</h2>
 
+                <aside class="method-callout">
+                    <p><strong>Phase 0.5 in the spec-driven workflow.</strong> The recovery sits between Phase 0 (scope a bounded context) and the standard spec-driven Phases 1 to 12. Two LLM phases, one team handoff, two AsciiDoc artefacts: <code>QUESTION_TREE.adoc</code> (the full reasoning trace, every leaf marked <code>[ANSWERED]</code> with <code>file:line</code> evidence or <code>[OPEN]</code> with an Ask role) and <code>OPEN_QUESTIONS.adoc</code> (the handoff document, grouped by role for the team to answer in 1 to 3 sentences each). Synthesis in Phase 2 turns both into a PRD, Cockburn use cases, an arc42 document, and Nygard ADRs, every claim carrying a Q-ID back to the question that motivated it.</p>
+                </aside>
+
                 <h3>4.1 The Workflow at a Glance</h3>
 
                 <p>The workflow has six steps: scope a bounded context (Phase 0), build the Question Tree with code evidence and open leaves (Phase 1), route the open leaves to the team by Ask role, synthesise documentation with Q-ID traceability (Phase 2), write baseline tests, then apply the standard spec-driven workflow for further development. Each step is described below.</p>
@@ -174,7 +198,7 @@
 
                 <p>The first decision is where to start. A bounded context, in Evans' sense, is a coherent slice of the domain with clear boundaries: a module, a service, a feature area, or a screen. The criterion for choosing one is operational, not architectural: pick a context that is small enough to fit in a single recovery session and has a pending change request. Skipping this phase, attempting to recover the whole system at once, is the most common reason brownfield recovery efforts fail.</p>
 
-                <p>The LLM can assist by analysing the codebase and listing candidate bounded contexts with responsibilities, key entities, and interfaces. In healthy codebases this works well. In Big Ball of Mud codebases it may not (see <a href="#sec-bbom">Section 11.3</a>).</p>
+                <p>The LLM can assist by analysing the codebase and listing candidate bounded contexts with responsibilities, key entities, and interfaces. In healthy codebases this works well. In Big Ball of Mud codebases it may not (see <a href="#sec-bbom">Section 10.3</a>).</p>
 
                 <h3>4.3 Phase 1: The Question Tree</h3>
 
@@ -205,6 +229,20 @@
                 </figure>
 
                 <p>The output of Phase 1 is two AsciiDoc files: <code>QUESTION_TREE.adoc</code> with the full tree and reasoning, and <code>OPEN_QUESTIONS.adoc</code> with only the open leaves, grouped by Ask role, each phrased to be answerable in 1 to 3 sentences.</p>
+
+                <p>A short excerpt from <code>QUESTION_TREE.adoc</code> shows the format:</p>
+
+<pre><code>Q3.5.1 Top-level packages
+  [ANSWERED] cmd/server.go:14
+  Three packages: cmd/ for entrypoints, pkg/ for the public API,
+  internal/ for non-exported domain logic.
+
+Q3.5.2 Why this split?
+  [OPEN] Category: design-rationale
+  Ask: Architect
+  Why was internal/ chosen over a flat layout? Were alternatives considered?</code></pre>
+
+                <p>Phase 2 will later cite Q3.5.1 as evidence for the building-block-view chapter and treat Q3.5.2 as a routed open question whose answer becomes an ADR.</p>
 
                 <h3>4.4 Between Phases: Team Routing</h3>
 
