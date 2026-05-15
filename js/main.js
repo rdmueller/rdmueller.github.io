@@ -210,7 +210,7 @@
                 a.className = 'heading-anchor';
                 a.href = '#' + id;
                 a.setAttribute('aria-label', 'Permalink to "' + h.textContent.trim() + '"');
-                a.textContent = '¶';
+                a.textContent = '§';
                 h.appendChild(a);
             }
         });
