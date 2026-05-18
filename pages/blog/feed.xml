@@ -5,11 +5,23 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-05-14T00:00:00Z</updated>
+    <updated>2026-05-18T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/correction-loop.html</id>
+        <title>My AI Improved Its Own Process</title>
+        <updated>2026-05-18T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/correction-loop.html" />
+        <summary>An LLM reconstructed the docs of a 43,000-line codebase. When the verification failed, the fix was not a better prompt. The AI rewrote the rules it works by. A correction loop, not a prompt.</summary>
+        <category term="Semantic Anchors" />
+        <category term="LLM" />
+        <category term="arc42" />
+        <category term="Software Architecture" />
+        <content type="html">&lt;p&gt;An LLM reconstructed the docs of a 43,000-line codebase. When the verification failed, the fix was not a better prompt. The AI rewrote the rules it works by. A correction loop, not a prompt.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/correction-loop.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html</id>
         <title>Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding</title>

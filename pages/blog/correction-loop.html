@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An LLM reconstructed the docs of a 43,000-line codebase. When the verification failed, the fix was not a better prompt. The AI rewrote the rules it works by. A correction loop, not a prompt.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/correction-loop.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/correction-loop.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="My AI Improved Its Own Process | Ralf D. Müller">
+    <meta property="og:description" content="An LLM reconstructed the docs of a 43,000-line codebase. When the verification failed, the fix was not a better prompt. The AI rewrote the rules it works by.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/correction-loop.png">
+    <title>My AI Improved Its Own Process | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "My AI Improved Its Own Process",
+      "description": "An LLM reconstructed the docs of a 43,000-line codebase. When the verification failed, the fix was not a better prompt. The AI rewrote the rules it works by.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/correction-loop.png",
+      "url": "https://rdmueller.github.io/pages/blog/correction-loop.html",
+      "datePublished": "2026-05-18",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">18. Mai 2026</span>
+                </div>
+                <h1>My AI Improved Its Own Process</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/correction-loop.png" alt="A four-stage loop: Semantic Contracts govern, UnifiedProcess.ai extracts, Socratic Code-Theory Recovery makes the gaps honest, arc42 verification measures. An orange arrow bends the verdict from the last stage back to the first.">
+            </figure>
+
+            <div class="article-content">
+                <p>My AI improved its own working process this week. Not the model. The process. That is the part that matters.</p>
+
+                <p>The setup: an LLM reconstructs the documentation of an existing codebase. 43,000 lines of Python, the CLI tool Mistral Vibe. Four named pieces, each doing a different job.</p>
+
+                <h2>Four pieces, each doing a different job</h2>
+
+                <p>Semantic Contracts are the written rules the AI works by. They are the layer everything else runs under.</p>
+
+                <p>Simon Martinelli's UnifiedProcess.ai extracts the what: use cases and an entity model, fast and grounded in the code.</p>
+
+                <p><a href="socratic-code-theory-recovery.html">Socratic Code-Theory Recovery</a> adds the why. Its Question Tree recovers the program's theory in Naur's sense, and separates what the code can answer from what only the team knows. Every leaf is either ANSWERED with a file-and-line reference, or marked OPEN. That honesty is what stops the AI from inventing answers.</p>
+
+                <p>Matthias Nissen's arc42agentic then verifies the result: 24 review agents grade the generated arc42 document, chapter by chapter. Without an independent measurement, there is nothing to correct toward.</p>
+
+                <p>They are not redundant. They stack: govern, extract, make the gaps honest, measure.</p>
+
+                <h2>The loop in action</h2>
+
+                <p>Run 4: verdict RED. Cause: Chapter 10, Quality Requirements, was effectively empty. The AI had marked everything "the team must answer this."</p>
+
+                <p>Was that right? No. Timeouts, token budgets, retry policies: those are measurable in the code. The AI had written off too much as unanswerable.</p>
+
+                <p>That finding was not clicked away. It became a GitHub issue against the Semantic Contracts. One line was added: derive quality scenarios from measurable code behaviour, do not blanket-mark them open.</p>
+
+                <p>Run 5, same codebase, same pipeline: verdict YELLOW. Chapter 10: GREEN. Twelve quality scenarios, each with a file-and-line reference. No invented number.</p>
+
+                <h2>The verdict rewrites the rules</h2>
+
+                <p>This is the chain: Semantic Contracts govern, UnifiedProcess.ai extracts, Socratic Code-Theory Recovery makes the gaps honest, arc42 verification measures. The verdict from the last link rewrites the first. That bend-back is the loop. I ratify every rule change. The human stays in the loop.</p>
+
+                <p>A better prompt improves one run. A correction loop improves every next run.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">arc42</span>
+                    <span class="blog-tag">Software Architecture</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

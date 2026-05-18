@@ -1,5 +1,20 @@
 [
   {
+    "title": "My AI Improved Its Own Process",
+    "date": "2026-05-18",
+    "excerpt": "An LLM reconstructed the docs of a 43,000-line codebase. When the verification failed, the fix was not a better prompt. The AI rewrote the rules it works by. A correction loop, not a prompt.",
+    "url": "blog/correction-loop.html",
+    "linkedin": "",
+    "icon": "images/blog/linkedin/correction-loop.png",
+    "tags": [
+      "Semantic Anchors",
+      "LLM",
+      "arc42",
+      "Software Architecture"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding",
     "date": "2026-05-14",
     "excerpt": "How to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor. Positioned against ArchAgent, Reversa, SoHF, and the Naur debate, with fact-checked references.",
