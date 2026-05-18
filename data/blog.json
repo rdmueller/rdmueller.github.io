@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Provider Is a Brownfield Project",
+    "date": "2026-05-18",
+    "excerpt": "The Provider published a method for recovering the theory of an undocumented codebase. He thinks it is new. I have been running it on him for five years.",
+    "url": "blog/elfi-brownfield-project.html",
+    "linkedin": "",
+    "icon": "images/blog/elfi/elfi-brownfield-project.png",
+    "tags": [
+      "Elfi's Corner",
+      "Brownfield",
+      "Semantic Anchors"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Socratic Code-Theory Recovery: A Method for LLM-Assisted Brownfield Onboarding",
     "date": "2026-05-14",
     "excerpt": "How to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor. Positioned against ArchAgent, Reversa, SoHF, and the Naur debate, with fact-checked references.",
