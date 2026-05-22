@@ -1,5 +1,20 @@
 [
   {
+    "title": "From Legacy Code to Spec: A Socratic Code-Theory Recovery Walkthrough",
+    "date": "2026-05-21",
+    "excerpt": "A hands-on walkthrough of Socratic Code-Theory Recovery: recover the spec and architecture of an undocumented 43,000-line codebase, mark precisely what only a human can answer, and verify the result with independent reviews.",
+    "url": "blog/socratic-recovery-tutorial.html",
+    "linkedin": "",
+    "icon": "images/blog/socratic-recovery-hero.png",
+    "tags": [
+      "Semantic Anchors",
+      "Brownfield",
+      "arc42",
+      "LLM"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "My AI Improved Its Own Process",
     "date": "2026-05-18",
     "excerpt": "An LLM reconstructed the docs of a 43,000-line codebase. When the verification failed, the fix was not a better prompt. The AI rewrote the rules it works by. A correction loop, not a prompt.",
