@@ -5,11 +5,23 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-05-18T00:00:00Z</updated>
+    <updated>2026-05-21T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/socratic-recovery-tutorial.html</id>
+        <title>From Legacy Code to Spec: A Socratic Code-Theory Recovery Walkthrough</title>
+        <updated>2026-05-21T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/socratic-recovery-tutorial.html" />
+        <summary>A hands-on walkthrough of Socratic Code-Theory Recovery: recover the spec and architecture of an undocumented 43,000-line codebase, mark precisely what only a human can answer, and verify the result with independent reviews.</summary>
+        <category term="Semantic Anchors" />
+        <category term="Brownfield" />
+        <category term="arc42" />
+        <category term="LLM" />
+        <content type="html">&lt;p&gt;A hands-on walkthrough of Socratic Code-Theory Recovery: recover the spec and architecture of an undocumented 43,000-line codebase, mark precisely what only a human can answer, and verify the result with independent reviews.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/socratic-recovery-tutorial.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/correction-loop.html</id>
         <title>My AI Improved Its Own Process</title>
