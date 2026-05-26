@@ -1,5 +1,19 @@
 [
   {
+    "title": "Trust Is Good, Verification Is Better",
+    "date": "2026-05-26",
+    "excerpt": "Most agentic coding rests on trust. The harness is what turns \"it ran\" into \"I will deploy this\". This is the full inventory of layers, what each catches, and what no harness can.",
+    "url": "blog/harness-inventory.html",
+    "icon": "images/blog/linkedin/harness-inventory.png",
+    "tags": [
+      "Semantic Anchors",
+      "Agentic Coding",
+      "LLM",
+      "Software Architecture"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "From Legacy Code to Spec: A Socratic Code-Theory Recovery Walkthrough",
     "date": "2026-05-21",
     "excerpt": "A hands-on walkthrough of Socratic Code-Theory Recovery: recover the spec and architecture of an undocumented 43,000-line codebase, mark precisely what only a human can answer, and verify the result with independent reviews.",

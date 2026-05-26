@@ -5,11 +5,23 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-05-21T00:00:00Z</updated>
+    <updated>2026-05-26T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/harness-inventory.html</id>
+        <title>Trust Is Good, Verification Is Better</title>
+        <updated>2026-05-26T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/harness-inventory.html" />
+        <summary>Most agentic coding rests on trust. The harness is what turns "it ran" into "I will deploy this". This is the full inventory of layers, what each catches, and what no harness can.</summary>
+        <category term="Semantic Anchors" />
+        <category term="Agentic Coding" />
+        <category term="LLM" />
+        <category term="Software Architecture" />
+        <content type="html">&lt;p&gt;Most agentic coding rests on trust. The harness is what turns "it ran" into "I will deploy this". This is the full inventory of layers, what each catches, and what no harness can.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/harness-inventory.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/socratic-recovery-tutorial.html</id>
         <title>From Legacy Code to Spec: A Socratic Code-Theory Recovery Walkthrough</title>

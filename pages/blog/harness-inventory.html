@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trust is good, verification is better. Every agentic-coding harness catches the easy things. The honest half is what no harness can.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/harness-inventory.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/harness-inventory.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Trust Is Good, Verification Is Better | Ralf D. Müller">
+    <meta property="og:description" content="Trust is good, verification is better. Every agentic-coding harness catches the easy things. The honest half is what no harness can.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/harness-inventory.png">
+    <title>Trust Is Good, Verification Is Better | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Trust Is Good, Verification Is Better",
+      "description": "Trust is good, verification is better. Every agentic-coding harness catches the easy things. The honest half is what no harness can.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/harness-inventory.png",
+      "url": "https://rdmueller.github.io/pages/blog/harness-inventory.html",
+      "datePublished": "2026-05-26",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">26. Mai 2026</span>
+                </div>
+                <h1>Trust Is Good, Verification Is Better</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/harness-inventory.png" alt="A man stands in a meadow with a butterfly net. A few butterflies are caught in the net, more fly past freely. A Ragdoll cat watches one of the escaping butterflies from the grass.">
+            </figure>
+
+            <div class="article-content">
+                <p>Most agentic coding rests on trust. "Look, it works." That is not enough to ship serious software.</p>
+
+                <p>What turns "it ran" into "I will deploy this to production" is the harness: the set of layers around the model that verify what comes out. Compiler, type checker, linter, security scanner, tests, code review. The harness is what makes a coding agent into a coworker rather than a generator.</p>
+
+                <p>Ingo Eichhorst made the framing explicit at JavaLand 2026: an LLM is a noisy channel in Shannon's sense. Two levers improve transmission. The signal, meaning clearer specs and Semantic Anchors. The error correction, meaning every layer that checks the output. The harness is the second lever, written out in full.</p>
+
+                <h2>Catching aspects, like butterflies in a meadow</h2>
+
+                <p>For most teams, the harness is built by accident. A compiler. A test framework. A linter someone configured years ago. That works until it doesn't.</p>
+
+                <p>A systematic harness catches more, in different categories. Build and language. Tests. Security. Architecture. Data and schema. UX, accessibility, internationalisation. Operations. Formal methods. Documentation. Nine categories of layers, each catching a different aspect of software development.</p>
+
+                <p>Most of these layers are free. The compiler is free. The CVE database is free. Accessibility tools defined against WCAG are free. The cheapest twenty layers are turn-on-and-forget. Most repositories have less than a third of them active. The biggest leverage sits there.</p>
+
+                <p>The rest cost project work. Tests. Architecture rules. Threat models. ADR conformance checks. Those layers are the project's own investment in correctness.</p>
+
+                <h2>What no harness catches</h2>
+
+                <p>The honest part of the story is what no layer catches.</p>
+
+                <p>A spec describing the wrong thing. The tests verify the wrong target perfectly. Time bombs that detonate on Feb 29 or in 2038. Logic vulnerabilities, because static analysis finds patterns, not missing authorisation. Real usability beyond accessibility structure. Architectural fit for features that are not built yet. The theory of the program (Naur, 1985), which lives in your developers' heads, not in the repo.</p>
+
+                <p>These gaps are not bugs in the harness approach. They are the limit of Eichhorst's Principle, the point where humans return to the loop.</p>
+
+                <h2>The inventory</h2>
+
+                <p>I spent the long weekend writing every layer down. What each one catches. What it misses. Which ones are free and which ones cost project work. Plus the language-specific limits that decide which layers exist in your stack at all.</p>
+
+                <p><a href="https://llm-coding.github.io/Semantic-Anchors/#/harness-inventory">The Harness Inventory on Semantic Anchors</a> is the canonical reference.</p>
+
+                <p>Special credit to Avraham Poupko for the modifier insight (<code>private</code>, <code>static</code>, <code>final</code> as error correction for machines), and to Ingo Eichhorst for the Shannon framing that made the rest fall into place.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">Software Architecture</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
