@@ -11,6 +11,18 @@
         <uri>https://rdmueller.github.io/</uri>
     </author>
     <entry>
+        <id>https://rdmueller.github.io/pages/blog/gpt-image-2-switch.html</id>
+        <title>Same Prompt, New Image Model: Switching to gpt-image-2</title>
+        <updated>2026-06-10T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/gpt-image-2-switch.html" />
+        <summary>Same prompt, same references, same character description. The only variable was the image model. Top row gpt-image-1.5, bottom row gpt-image-2. Character consistency caught up, composition got more deliberate, and I switched the default in my image-generation skill.</summary>
+        <category term="AI" />
+        <category term="Image Generation" />
+        <category term="OpenAI" />
+        <category term="Tooling" />
+        <content type="html">&lt;p&gt;Same prompt, same references, same character description. The only variable was the image model. Top row gpt-image-1.5, bottom row gpt-image-2. Character consistency caught up, composition got more deliberate, and I switched the default in my image-generation skill.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/gpt-image-2-switch.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
         <id>https://rdmueller.github.io/pages/blog/silent-substitution.html</id>
         <title>An Anchor Delivers Only as Far as the Prior Reaches</title>
         <updated>2026-06-10T00:00:00Z</updated>

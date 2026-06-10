@@ -1,5 +1,19 @@
 [
   {
+    "title": "Same Prompt, New Image Model: Switching to gpt-image-2",
+    "date": "2026-06-10",
+    "excerpt": "Same prompt, same references, same character description. The only variable was the image model. Top row gpt-image-1.5, bottom row gpt-image-2. Character consistency caught up, composition got more deliberate, and I switched the default in my image-generation skill.",
+    "url": "blog/gpt-image-2-switch.html",
+    "icon": "images/blog/linkedin/gpt-image-2-switch.png",
+    "tags": [
+      "AI",
+      "Image Generation",
+      "OpenAI",
+      "Tooling"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "An Anchor Delivers Only as Far as the Prior Reaches",
     "date": "2026-06-10",
     "excerpt": "A pull request asked why our anchor still points at Cockburn instead of newer Use-Case 2.0 and 3.0. We turned it into an experiment. The result was Claude Haiku confidently printing a \"Use-Case 3.0\" document whose body was pure Cockburn from 2001. No error, no hedge. This is the failure mode no one notices.",
