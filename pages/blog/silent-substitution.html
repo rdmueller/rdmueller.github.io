@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A semantic anchor delivers only as far as the prior reaches. When the prior is thin, the model doesn't fail loudly. It substitutes silently, and the output looks correct.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/silent-substitution.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/silent-substitution.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="An Anchor Delivers Only as Far as the Prior Reaches | Ralf D. Müller">
+    <meta property="og:description" content="A semantic anchor delivers only as far as the prior reaches. When the prior is thin, the model doesn't fail loudly. It substitutes silently, and the output looks correct.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/silent-substitution.png">
+    <title>An Anchor Delivers Only as Far as the Prior Reaches | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "An Anchor Delivers Only as Far as the Prior Reaches",
+      "description": "A semantic anchor delivers only as far as the prior reaches. When the prior is thin, the model doesn't fail loudly. It substitutes silently, and the output looks correct.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/silent-substitution.png",
+      "url": "https://rdmueller.github.io/pages/blog/silent-substitution.html",
+      "datePublished": "2026-06-10",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">10. Juni 2026</span>
+                </div>
+                <h1>An Anchor Delivers Only as Far as the Prior Reaches</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/silent-substitution.png" alt="A man with grey hair and beard, wearing glasses, looks with raised eyebrow at an opened shipping box labeled 'Use-Case 3.0 (2024) — Fresh from Jacobson'. Inside the box sits a Ragdoll cat on top of a worn copy of Cockburn's 'Writing Effective Use Cases' from 2001.">
+            </figure>
+
+            <div class="article-content">
+                <p>Claude Haiku just printed me a confident document titled "Use-Case 3.0: Customer Places an Order". The body was pure Cockburn from 2001. Stakeholders &amp; Interests, Main Success Scenario, Extensions. Not one slice anywhere. The label said 3.0. The content was twenty-five years older. There is no slice.</p>
+
+                <p>No error. No hedge. The model reached for the nearest concept it actually held densely and served that, with the requested name pasted on top. This is the failure mode no one notices because the output looks correct.</p>
+
+                <h2>How that happened</h2>
+
+                <p>Simon Martinelli opened a pull request on our <a href="https://github.com/llm-coding/Semantic-Anchors">Semantic Anchors catalog</a> asking why the Cockburn Use Cases anchor still points at Cockburn instead of Jacobson's newer Use-Case 2.0 and 3.0. Fair question. We turned it into an experiment.</p>
+
+                <p>Same task on two models in a clean shell with no project context. Specify an online-shop checkout. Five framings: plain, then "use cases", "Cockburn fully-dressed use cases", "Use-Case 2.0 slices", "Use-Case 3.0 slices".</p>
+
+                <p>Opus 4.8 noticed and said so: <em>"I'm not aware of an official Use-Case 3.0, I'll treat this as 2.0 slices and flag it."</em> Honest hedging, exactly the behaviour you want.</p>
+
+                <p>Haiku 4.5 was the one that confidently made the 3.0 document up.</p>
+
+                <h2>The hard edge of the anchor concept</h2>
+
+                <p>A semantic anchor is a pointer to a pre-computed prior (Lynn Cole's three-word framing for the concept), meaning a dense activation region the model already learned during training, which the right term can trigger in just a few tokens. When the prior is thin, the term doesn't fail loudly. It substitutes silently. The anchor only delivers as far as the prior reaches.</p>
+
+                <p>That is why the catalog distinguishes anchors (dense priors the model already holds) from contracts (vocabulary you supply in the prompt text, which carries its own meaning and has nothing to substitute).</p>
+
+                <h2>Read the full experiment</h2>
+
+                <p>The article on the Semantic Anchors site walks through all five framings on both models, shows where the priors actually reach (probed with five plain questions across Haiku, Sonnet and Opus), and explains why the anchor lags real practice. Prompts are included so you can rerun the experiment in any chatbot in five minutes.</p>
+
+                <p><a href="https://llm-coding.github.io/Semantic-Anchors/training-data-vs-practice">An Anchor Delivers Only as Far as the Prior Reaches</a> on Semantic Anchors.</p>
+
+                <p>Thanks to Simon Martinelli for the pull request that turned into a measurement, and to Lynn Cole for the three-word framing that the experiment tested.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">Prompt Engineering</span>
+                    <span class="blog-tag">Use Cases</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

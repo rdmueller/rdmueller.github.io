@@ -1,5 +1,19 @@
 [
   {
+    "title": "An Anchor Delivers Only as Far as the Prior Reaches",
+    "date": "2026-06-10",
+    "excerpt": "A pull request asked why our anchor still points at Cockburn instead of newer Use-Case 2.0 and 3.0. We turned it into an experiment. The result was Claude Haiku confidently printing a \"Use-Case 3.0\" document whose body was pure Cockburn from 2001. No error, no hedge. This is the failure mode no one notices.",
+    "url": "blog/silent-substitution.html",
+    "icon": "images/blog/linkedin/silent-substitution.png",
+    "tags": [
+      "Semantic Anchors",
+      "LLM",
+      "Prompt Engineering",
+      "Use Cases"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Trust Is Good, Verification Is Better",
     "date": "2026-05-26",
     "excerpt": "Most agentic coding rests on trust. The harness is what turns \"it ran\" into \"I will deploy this\". This is the full inventory of layers, what each catches, and what no harness can.",
