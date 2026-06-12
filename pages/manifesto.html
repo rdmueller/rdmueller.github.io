@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mein GenAI-Manifest. Persönliche Haltung von Ralf D. Müller zu Intelligenz, AGI, Engineering-Disziplin, Verantwortung und der Kennzeichnungspflicht.">
+    <meta name="description" content="My GenAI Manifesto. Personal stance by Ralf D. Müller on intelligence, AGI, engineering discipline, accountability, and the duty to label AI.">
     <link rel="canonical" href="https://rdmueller.github.io/pages/manifesto.html">
+    <link rel="alternate" hreflang="en" href="https://rdmueller.github.io/pages/manifesto.html">
+    <link rel="alternate" hreflang="de" href="https://rdmueller.github.io/pages/manifesto.de.html">
+    <link rel="alternate" hreflang="x-default" href="https://rdmueller.github.io/pages/manifesto.html">
     <meta property="og:url" content="https://rdmueller.github.io/pages/manifesto.html">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Mein GenAI-Manifest | Ralf D. Müller">
-    <meta property="og:description" content="Für mich zählt das Erreichte und reicht nicht das Erzählte. Persönliche Haltung zu GenAI in der Software-Entwicklung.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:title" content="My GenAI Manifesto | Ralf D. Müller">
+    <meta property="og:description" content="A personal stance on GenAI in software development: intelligence, AGI, engineering discipline, accountability, and the duty to label AI.">
     <meta property="og:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mein GenAI-Manifest | Ralf D. Müller">
-    <meta name="twitter:description" content="Für mich zählt das Erreichte und reicht nicht das Erzählte.">
+    <meta name="twitter:title" content="My GenAI Manifesto | Ralf D. Müller">
+    <meta name="twitter:description" content="A personal stance on GenAI in software development.">
     <meta name="twitter:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
-    <title>Mein GenAI-Manifest | Ralf D. Müller</title>
+    <title>My GenAI Manifesto | Ralf D. Müller</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "Mein GenAI-Manifest",
-      "description": "Persönliche Haltung von Ralf D. Müller zu GenAI in der Software-Entwicklung.",
+      "name": "My GenAI Manifesto",
+      "description": "Personal stance by Ralf D. Müller on GenAI in software development.",
       "url": "https://rdmueller.github.io/pages/manifesto.html",
-      "inLanguage": "de",
+      "inLanguage": "en",
       "author": {
         "@type": "Person",
         "name": "Ralf D. Müller",
@@ -35,6 +40,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .lang-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; }
+        .lang-toggle a { color: var(--color-text-light, #64748b); text-decoration: none; padding: 2px 8px; border-radius: 4px; transition: all 0.15s ease; }
+        .lang-toggle a.lang-active { background: var(--color-primary, #2563eb); color: white; }
+        .lang-toggle a:not(.lang-active):hover { background: var(--color-bg-alt, #f8fafc); color: var(--color-text, #1e293b); }
+        .lang-toggle .lang-sep { color: var(--color-border, #e2e8f0); }
+    </style>
     <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -63,67 +75,70 @@
         <article class="container">
             <header class="article-header">
                 <div class="article-meta">
-                    <span class="lang-badge">DE</span>
-                    <span class="article-date">Persönliche Fassung v0.9</span>
+                    <span class="lang-toggle" role="group" aria-label="Choose language">
+                        <a href="manifesto.html" class="lang-active" hreflang="en" aria-current="page">EN</a>
+                        <span class="lang-sep" aria-hidden="true">·</span>
+                        <a href="manifesto.de.html" hreflang="de">DE</a>
+                    </span>
+                    <span class="article-date">Personal version v0.9</span>
                 </div>
-                <h1>Mein GenAI-Manifest</h1>
-                <p class="article-lead"><em>Für mich zählt das Erreichte und reicht nicht das Erzählte.</em></p>
+                <h1>My GenAI Manifesto</h1>
             </header>
 
             <div class="article-content">
-                <p>Ich bin Software-Architekt. Ich habe aufgehört zu fragen, <em>was</em> GenAI ist, und angefangen zu nutzen, <em>was</em> sie kann.</p>
+                <p>I am a software architect. I stopped asking <em>what</em> GenAI is and started using <em>what</em> it can do.</p>
 
-                <p>Die spannende Diskussion ist weitergezogen. Ich ziehe mit.</p>
+                <p>The interesting discussion has moved on. I am moving with it.</p>
 
-                <h2>Meine Haltung</h2>
+                <h2>Where I stand</h2>
 
-                <p><strong>Ich akzeptiere GenAI als eine Form von Intelligenz.</strong><br>
-                Ob sie „wirklich" intelligent ist, bringt mich nicht weiter. Ich schaue, was die Systeme leisten — und arbeite damit.</p>
+                <p><strong>I accept GenAI as a form of intelligence.</strong><br>
+                Whether it is „really" intelligent does not get me anywhere. I look at what these systems deliver, and I work with that.</p>
 
-                <p><strong>Ich definiere Fähigkeiten unabhängig vom Menschen.</strong><br>
-                Begriffe wie Kreativität, Verständnis und Intelligenz fest an den Menschen zu binden — „Kreativität ist, was Menschen tun" — engt das Denken ein und macht neue Formen unsichtbar, bevor man hinsieht. Ich messe solche Fähigkeiten an ihren Eigenschaften und Wirkungen, nicht an ihrer Herkunft. Das nimmt dem Menschen nichts — es weitet den Blick.</p>
+                <p><strong>I define capabilities independently of humans.</strong><br>
+                Tying terms like creativity, understanding, and intelligence firmly to humans — „creativity is what humans do" — narrows the field and makes new forms invisible before you look. I measure such capabilities by their properties and effects, not by their origin. That takes nothing away from humans. It widens the view.</p>
 
-                <p><strong>Ich warte nicht auf AGI.</strong><br>
-                Auf einen Begriff zu warten, den niemand definieren kann, ist keine Strategie, sondern eine Ausrede. Ich arbeite mit dem, was heute auf dem Tisch liegt — und das ist mehr als genug.</p>
+                <p><strong>I do not wait for AGI.</strong><br>
+                Waiting for a term nobody can define is not a strategy. It is an excuse. I work with what is on the table today, and that is more than enough.</p>
 
-                <p><strong>Die Büchse der Pandora ist offen.</strong><br>
-                GenAI ist in der Welt — und niemand fängt sie wieder ein. Die Frage ist nicht <em>ob</em>, sondern <em>wie</em>. Ich antizipiere und gestalte, statt zu warten, bis „sich das alles beruhigt". Das tut es nicht.</p>
+                <p><strong>Pandora's box is open.</strong><br>
+                GenAI is in the world, and nobody is putting it back. The question is not <em>whether</em>, but <em>how</em>. I anticipate and shape, instead of waiting for „all this to settle down". It will not.</p>
 
-                <p><strong>Ich wende GenAI nicht blind an — ich verstehe sie.</strong><br>
-                GenAI sinnvoll einzusetzen ist eine Ingenieursdisziplin: Man liest keine Spezifikation, man untersucht ein Verhalten. Also gehe ich empirisch vor und will wissen, <em>warum</em> etwas funktioniert, <em>wo</em> es bricht und <em>wann</em> man ihm nicht trauen darf. Das schützt vor dem Cargo-Kult auf der einen und der Angst auf der anderen Seite.</p>
+                <p><strong>I do not apply GenAI blindly. I understand it.</strong><br>
+                Using GenAI sensibly is an engineering discipline. You do not read a specification, you investigate a behavior. So I work empirically and want to know <em>why</em> something works, <em>where</em> it breaks, and <em>when</em> you should not trust it. That protects against cargo cult on one side and fear on the other.</p>
 
-                <p><strong>Ich bringe Handwerk mit, nicht nur Begeisterung.</strong><br>
-                Ein Sprachmodell ersetzt keine Architektur, keine Klarheit über das Problem, keine Disziplin im Bauen. Genau das bringe ich ein. Die Werkzeuge sind neu — der Anspruch an gute Arbeit ist es nicht.</p>
+                <p><strong>I bring craft, not just enthusiasm.</strong><br>
+                A language model does not replace architecture, clarity about the problem, or discipline in building. That is exactly what I bring. The tools are new. The standard for good work is not.</p>
 
-                <p><strong>Ich setze GenAI für Menschen ein, nicht gegen sie.</strong><br>
-                Ich messe sie nicht an dem, was sie verspricht, sondern an dem, was sie tut, wenn es etwas kostet. KI, die Menschen überwacht, herabwürdigt oder mit Desinformation flutet — oder ohne menschliche Verantwortung losgelassen wird — ist nicht, was ich meine. Gleich, wessen Logo darauf klebt.</p>
+                <p><strong>I use GenAI for people, not against them.</strong><br>
+                I do not measure it by what it promises, but by what it does when it costs something. AI that surveils people, demeans them, or floods them with disinformation — or that gets let loose without human accountability — is not what I mean. No matter whose logo is on it.</p>
 
-                <p><strong>Echte Kontrolle schlägt das Ritual der Kontrolle.</strong><br>
-                Ein erzwungenes Review, das in Review-Fatigue verläuft, ist erzählte Sicherheit — ein Haken ohne Substanz. Wo menschliche Prüfung nicht mehr echt greift, baue ich die Sicherheit in den Prozess: in Tests, in Architektur, in Abläufe, die Fehler abfangen. Der Mensch ist nicht das Gate, sondern der, der das System so baut, dass es trägt.</p>
+                <p><strong>Real control beats the ritual of control.</strong><br>
+                A mandatory review that ends in review fatigue is narrated safety, a checkmark without substance. Where human inspection no longer truly catches things, I build safety into the process: into tests, into architecture, into workflows that catch errors. The human is not the gate. The human is the one who builds the system so it holds.</p>
 
-                <p><strong>Die Pflicht, KI zu kennzeichnen, wird sich selbst überholen.</strong><br>
-                Heute soll eine Markierung warnen: „hier war eine Maschine". Wenn aber bald alles KI-berührt ist, markiert sie nichts mehr — eine Warnung auf allem ist keine Warnung. Was zählt, wandert von der Herkunft zur Sorgfalt: nicht <em>ob</em> eine Maschine beteiligt war, sondern <em>wie</em> geprüft wurde.</p>
+                <p><strong>The duty to label AI will outlive itself.</strong><br>
+                Today, a marker is supposed to warn: „a machine was here". But once almost everything is AI-touched, the marker marks nothing. A warning on everything is no warning. What matters moves from origin to care: not <em>whether</em> a machine was involved, but <em>how</em> it was checked.</p>
 
-                <h2>Kurz gesagt</h2>
+                <h2>In short</h2>
 
                 <blockquote>
-                    <p>Verstehen über Bestaunen.<br>
-                    Bauen über Debattieren.<br>
-                    Fähigkeit über Etikett.<br>
-                    Handeln über Versprechen.<br>
-                    Heute über irgendwann.</p>
+                    <p>Understanding over awe.<br>
+                    Building over debating.<br>
+                    Capability over label.<br>
+                    Action over promise.<br>
+                    Today over someday.</p>
                 </blockquote>
 
-                <h2>Worüber ich reden will</h2>
+                <h2>What I want to talk about</h2>
 
-                <p>Wenn du mir beim Abendessen erklären willst, warum „die KI ja gar nicht wirklich versteht" — das ist ein interessantes Gespräch. Es ist nur nicht <em>meins</em>.</p>
+                <p>If you want to explain to me over dinner why „AI doesn't really understand anything", that is an interesting conversation. It just is not mine.</p>
 
-                <p>Wenn du mir lieber zeigst, was du letzte Woche damit gebaut hast: jederzeit.</p>
+                <p>If you would rather show me what you built with it last week: any time.</p>
             </div>
 
             <footer class="article-footer">
                 <nav class="article-nav">
-                    <a href="../index.html" class="back-link">← Zurück zur Startseite</a>
+                    <a href="../index.html" class="back-link">← Back to home</a>
                 </nav>
             </footer>
         </article>
@@ -131,7 +146,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. All rights reserved.</p>
             <nav class="footer-nav">
                 <a href="impressum.html">Impressum</a>
                 <a href="datenschutz.html">Datenschutz</a>
