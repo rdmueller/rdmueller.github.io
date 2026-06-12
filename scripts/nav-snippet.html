@@ -1,0 +1,22 @@
+<!--
+Canonical nav-links snippet. Single source of truth for site navigation.
+Edit this file, then run `python3 scripts/sync-nav.py` to propagate the
+nav across every HTML file in the repo.
+
+Placeholders:
+  {ROOT}     replaced with the relative path back to the repo root for
+             each file (empty at the root, "../" inside pages/, etc.)
+
+Active state is set automatically by sync-nav.py based on file path.
+Do not add class="active" here.
+-->
+<ul class="nav-links">
+                <li><a href="{ROOT}index.html#about">Über mich</a></li>
+                <li><a href="{ROOT}pages/manifesto.html">Manifest</a></li>
+                <li><a href="{ROOT}index.html#trainings">Trainings</a></li>
+                <li><a href="{ROOT}pages/talks.html">Vorträge</a></li>
+                <li><a href="{ROOT}index.html#publications">Publikationen</a></li>
+                <li><a href="{ROOT}pages/blog.html">Ralf's Corner</a></li>
+                <li><a href="{ROOT}pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="{ROOT}index.html#contact">Kontakt</a></li>
+            </ul>
