@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Three days. 158 commits. 44 PRs. I did not type a single line of code. What a weekend on docToolchain main-4.x looked like when the bottleneck stopped being typing.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/agentic-coding-weekend.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/agentic-coding-weekend.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Three Days. I Did Not Type a Single Line of Code. | Ralf D. Müller">
+    <meta property="og:description" content="Three days. 158 commits. 44 PRs. I did not type a single line of code. What a weekend on docToolchain main-4.x looked like when the bottleneck stopped being typing.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/agentic-coding-weekend.png">
+    <title>Three Days. I Did Not Type a Single Line of Code. | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Three Days. I Did Not Type a Single Line of Code.",
+      "description": "Three days. 158 commits. 44 PRs. I did not type a single line of code. What a weekend on docToolchain main-4.x looked like when the bottleneck stopped being typing.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/agentic-coding-weekend.png",
+      "url": "https://rdmueller.github.io/pages/blog/agentic-coding-weekend.html",
+      "datePublished": "2026-06-21",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">21. Juni 2026</span>
+                </div>
+                <h1>Three Days. I Did Not Type a Single Line of Code.</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/agentic-coding-weekend.png" alt="Ralf as orchestra conductor with raised baton, half-circle of floating laptops around him each showing a different file type, soft beams of light flowing into an open notebook on his podium labelled main-4.x. Clean digital illustration in soft blue and white tones.">
+            </figure>
+
+            <div class="article-content">
+                <p>Three days. I did not type a single line of code.</p>
+
+                <p>This weekend I sat at my desk and watched docToolchain, an open-source project I have been building for a decade, get a runtime modernization, a new website engine, six new features, and updated architecture documentation. All of it written by a coding agent. My job was directing.</p>
+
+                <h2>The numbers from Friday morning to now</h2>
+
+                <ul>
+                    <li>158 commits.</li>
+                    <li>44 pull requests merged.</li>
+                    <li>+7,769 / -6,286 lines of code.</li>
+                    <li>192 files changed.</li>
+                </ul>
+
+                <h2>The honest part</h2>
+
+                <p>For years I have been avoiding exactly this kind of work. A runtime upgrade is invisible to users and breaks everything underneath. Replacing the website engine is the same kind of job. So those tasks sat on the backlog and rotted there, release after release. The reward was always invisible, the risk was always real, and I had paying work waiting.</p>
+
+                <p>This weekend they did not sit there anymore.</p>
+
+                <h2>For context</h2>
+
+                <p>A runtime upgrade like the one I just shipped, from Java 17 to Java 25 with the build system rebuilt around it, is usually a quarter of full-time work for a small team. We did it in an afternoon. Replacing the website generation engine with something self-contained is a multi-week refactoring. It took a few hours. Adding four new features that integrate cleanly with the toolchain, with tests and documentation, would normally fill a sprint. Done in an evening.</p>
+
+                <p>This is not a demo. It will be production code on the main branch of a project that runs in many companies' build pipelines today.</p>
+
+                <h2>What surprises me</h2>
+
+                <p>The speed surprises me, and I have been working with agents for over a year. What used to be an idea I would write down and revisit next quarter is now a thing that exists by dinner. The bottleneck is no longer typing. The bottleneck is knowing what you actually want, and being willing to start the work you have been postponing for years.</p>
+
+                <p>If you are still benchmarking AI coding tools by how well they autocomplete a function, you are measuring the wrong thing. The interesting question is what your team can ship in a weekend, when the rotting backlog stops being a sunk cost.</p>
+
+                <p>Repo, if you want to see what 158 weekend commits look like: <a href="https://github.com/docToolchain/docToolchain/tree/main-4.x">github.com/docToolchain/docToolchain/tree/main-4.x</a></p>
+
+                <p><em>PS: this is a game changer for those unpaid, single-maintainer open source projects.</em></p>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">docToolchain</span>
+                    <span class="blog-tag">Open Source</span>
+                    <span class="blog-tag">GenAI</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

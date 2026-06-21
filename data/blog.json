@@ -1,5 +1,19 @@
 [
   {
+    "title": "Three Days. I Did Not Type a Single Line of Code.",
+    "date": "2026-06-21",
+    "excerpt": "Three days. 158 commits. 44 pull requests merged. I did not type a single line of code. What a weekend on docToolchain main-4.x looked like when the bottleneck stopped being typing — and what it means for unpaid, single-maintainer open source.",
+    "url": "blog/agentic-coding-weekend.html",
+    "icon": "images/blog/linkedin/agentic-coding-weekend.png",
+    "tags": [
+      "Agentic Coding",
+      "docToolchain",
+      "Open Source",
+      "GenAI"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Same Prompt, New Image Model: Switching to gpt-image-2",
     "date": "2026-06-10",
     "excerpt": "Same prompt, same references, same character description. The only variable was the image model. Top row gpt-image-1.5, bottom row gpt-image-2. Character consistency caught up, composition got more deliberate, and I switched the default in my image-generation skill.",
