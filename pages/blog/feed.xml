@@ -5,11 +5,23 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-06-10T00:00:00Z</updated>
+    <updated>2026-06-21T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/agentic-coding-weekend.html</id>
+        <title>Three Days. I Did Not Type a Single Line of Code.</title>
+        <updated>2026-06-21T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/agentic-coding-weekend.html" />
+        <summary>Three days. 158 commits. 44 pull requests merged. I did not type a single line of code. What a weekend on docToolchain main-4.x looked like when the bottleneck stopped being typing — and what it means for unpaid, single-maintainer open source.</summary>
+        <category term="Agentic Coding" />
+        <category term="docToolchain" />
+        <category term="Open Source" />
+        <category term="GenAI" />
+        <content type="html">&lt;p&gt;Three days. 158 commits. 44 pull requests merged. I did not type a single line of code. What a weekend on docToolchain main-4.x looked like when the bottleneck stopped being typing — and what it means for unpaid, single-maintainer open source.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/agentic-coding-weekend.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/gpt-image-2-switch.html</id>
         <title>Same Prompt, New Image Model: Switching to gpt-image-2</title>
