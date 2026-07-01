@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I built a PowerPoint generator an AI drives through python-pptx. The interesting part: 'hard' comes in four different flavors, and a bigger model fixes almost none of them.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/four-kinds-of-hard.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/four-kinds-of-hard.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Four Kinds of Hard: Building an AI PowerPoint Generator | Ralf D. Müller">
+    <meta property="og:description" content="I built a PowerPoint generator an AI drives through python-pptx. The interesting part: 'hard' comes in four different flavors, and a bigger model fixes almost none of them.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/four-kinds-of-hard.png">
+    <title>Four Kinds of Hard: Building an AI PowerPoint Generator | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Four Kinds of Hard: Building an AI PowerPoint Generator",
+      "description": "I built a PowerPoint generator an AI drives through python-pptx. The interesting part: 'hard' comes in four different flavors, and a bigger model fixes almost none of them.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/four-kinds-of-hard.png",
+      "url": "https://rdmueller.github.io/pages/blog/four-kinds-of-hard.html",
+      "datePublished": "2026-07-01",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">1. Juli 2026</span>
+                </div>
+                <h1>Four Kinds of Hard: Building an AI PowerPoint Generator</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/four-kinds-of-hard.png" alt="Ralf stands at the side like a coach while Elfi the cat leaps over a row of four hurdles of increasing height. Clean digital illustration in soft blue and white tones.">
+            </figure>
+
+            <div class="article-content">
+                <p>I built a PowerPoint generator that an AI model drives through python-pptx. The interesting part was not what worked. It was writing down what stays hard, and noticing that "hard" is not one thing. It comes in four very different flavors, and each flavor needs a different answer. A bigger model fixes almost none of them.</p>
+
+                <h2>The tool simply cannot do it</h2>
+
+                <p>Some things fail because python-pptx has no API for them, full stop.</p>
+
+                <ul>
+                    <li><strong>New master and layout designs.</strong> The library fills placeholders, it does not invent slide masters. So a human authorizes the design. That turned into a clean division of labor rather than a limitation.</li>
+                    <li><strong>SmartArt and native diagrams.</strong> Not producible at all. The workaround is a diagram rendered to an image (PlantUML, Mermaid, Graphviz to PNG) and embedded. The cost: it is no longer editable inside PowerPoint.</li>
+                    <li><strong>Animations and transitions.</strong> Practically no support, only raw OOXML. Rarely worth the effort and hard to verify.</li>
+                    <li><strong>Media</strong> (video, audio, animated GIF). Very limited.</li>
+                    <li><strong>Clean SVG embedding.</strong> Only partial, usually rasterized. That hurts most with logos.</li>
+                </ul>
+
+                <p>The pattern here is engineering, not intelligence. You route around the gap: diagrams become images, layouts become a human job.</p>
+
+                <h2>The model has no eye</h2>
+
+                <p>This is the real weakness of a language model, and the most interesting class.</p>
+
+                <ul>
+                    <li><strong>Does the text fit?</strong> Overflow and line breaks only become visible after rendering. There is no built-in way to know in advance.</li>
+                    <li><strong>Aesthetics.</strong> Whitespace, optical balance, "does this look good". No reliable inner judgment.</li>
+                    <li><strong>Too much for one slide.</strong> Knowing when content must be split or cut.</li>
+                    <li><strong>Narrative, arc, and the "so what".</strong> The most important judgment of all.</li>
+                </ul>
+
+                <p>Two answers, not one. For everything visual, the generator renders the slide through a COM or LibreOffice loop and actually looks at the result. That render loop is what gives the model an eye it does not have on its own. For the narrative, no loop helps, so that work moves to a Socratic dialogue with a human up front, before a single slide exists.</p>
+
+                <h2>Determinism fights generation</h2>
+
+                <p>The generator has to produce the same bytes from the same input. Generated images break that promise: create them twice and they differ. So they are frozen and cached, and anything time, random, or network dependent is kept out of the render path. Reproducibility is a design constraint, not an afterthought.</p>
+
+                <h2>Portability is never quite solved</h2>
+
+                <ul>
+                    <li><strong>Fonts.</strong> Exact typography needs the exact fonts installed. Otherwise you get substitution, and substitution changes the line breaks. LibreOffice and PowerPoint disagree. Font embedding is possible but fiddly.</li>
+                    <li><strong>Engine drift.</strong> LibreOffice, PowerPoint, the web version and Mac all render a little differently. The last pixel is never guaranteed.</li>
+                </ul>
+
+                <h2>The useful middle ground</h2>
+
+                <p>Not everything is either trivial or impossible. A few things are half-doable and high-impact.</p>
+
+                <ul>
+                    <li><strong>Charts.</strong> python-pptx can build native bar, line and pie charts from real data. On-brand styling is fiddly, but the data binding is real, and the result stays editable.</li>
+                    <li><strong>Tables.</strong> Possible, but cell styling and merges are tedious.</li>
+                    <li><strong>Image detail.</strong> Contain versus cover cropping, masks, consistent icon sets, and image licensing all need care.</li>
+                    <li><strong>Nested bullets, inline mixed formatting, hyperlinks, auto-numbering.</strong> All doable, all fiddly.</li>
+                    <li><strong>Formulas and code.</strong> Math via OMML is hard, code blocks with syntax highlighting are tedious.</li>
+                    <li><strong>Accessibility.</strong> Alt text, reading order, contrast, tab order. Easy to forget, checked far too rarely.</li>
+                    <li><strong>Brand judgment beyond tokens.</strong> Which accent when, the photo look, the icon style. A color token does not capture taste.</li>
+                </ul>
+
+                <h2>What this means for the design</h2>
+
+                <ul>
+                    <li><strong>Lean on the strengths:</strong> fill master placeholders, native charts, frozen images, and the render loop as a quality gate.</li>
+                    <li><strong>Avoid or offload:</strong> animations, SmartArt, and bespoke per-slide layouts. Diagrams go through an image pipeline. The narrative goes to a human, up front.</li>
+                    <li><strong>Invest where it pays:</strong> native data charts and the diagram-as-image pipeline.</li>
+                </ul>
+
+                <p>The lesson I keep coming back to is simple. A bigger model fixes neither "the tool cannot" nor "the model has no eye". The first is an engineering problem, the second is a feedback-loop problem. The real work was never the slides. It was building the harness around the model: the master, the render loop, the cache, and the human where judgment belongs.</p>
+
+                <p>Which of these walls have you already gotten past?</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">PowerPoint</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
