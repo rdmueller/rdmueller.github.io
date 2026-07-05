@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ein LLM versteht hunderte Sprachen gleich gut, zeigt dir aber nur die Welt, die zu deiner Frage passt. Ein Experiment in fünf Sprachen macht den Bias sichtbar.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/sprachblase-llm.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/sprachblase-llm.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Dein LLM berät Dich mit einem riesigen Lösungsraum — und doch siehst Du nur einen Teil | Ralf D. Müller">
+    <meta property="og:description" content="Ein LLM versteht hunderte Sprachen gleich gut, zeigt dir aber nur die Welt, die zu deiner Frage passt. Ein Experiment in fünf Sprachen macht den Bias sichtbar.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/sprachblase-llm.png">
+    <title>Dein LLM berät Dich mit einem riesigen Lösungsraum — und doch siehst Du nur einen Teil | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Dein LLM berät Dich mit einem riesigen Lösungsraum — und doch siehst Du nur einen Teil",
+      "description": "Ein LLM versteht hunderte Sprachen gleich gut, zeigt dir aber nur die Welt, die zu deiner Frage passt. Ein Experiment in fünf Sprachen macht den Bias sichtbar.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/sprachblase-llm.png",
+      "url": "https://rdmueller.github.io/pages/blog/sprachblase-llm.html",
+      "datePublished": "2026-07-05",
+      "inLanguage": "de",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .article-table { margin: 2rem 0; overflow-x: auto; }
+        .article-table table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        .article-table th, .article-table td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid rgba(127,127,127,0.25); vertical-align: top; }
+        .article-table thead th { border-bottom: 2px solid rgba(127,127,127,0.5); font-weight: 600; }
+        .article-table tbody td:first-child { font-variant: small-caps; font-weight: 600; white-space: nowrap; }
+        .article-table figcaption { margin-top: 0.6rem; font-size: 0.85rem; opacity: 0.75; }
+    </style>
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">DE</span>
+                    <span class="article-date">5. Juli 2026</span>
+                </div>
+                <h1>Dein LLM berät Dich mit einem riesigen Lösungsraum — und doch siehst Du nur einen Teil</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/sprachblase-llm.png" alt="Eine riesige Bibliothek voller Regale liegt im kühlen Schatten, nur ein einzelnes Regal im Vordergrund ist warm beleuchtet. Clean editorial Illustration in soft blue und white.">
+            </figure>
+
+            <div class="article-content">
+                <p>Ein modernes LLM hat einen großen Teil dessen gelesen, was die Menschheit je aufgeschrieben hat, in hunderten Sprachen, und es versteht sie alle gleich gut. Sein Wissen ist in einem echten Sinn <em>sprachunabhängig</em>: Der Gedanke, den eine japanische Entwicklerin auf Japanisch notiert hat, steckt im selben Modell, das Dir auf Deutsch antwortet. Und trotzdem reicht es Dir, wenn Du eine Frage stellst, leise eine Welt zurück, die zu Deiner eigenen Sprache und Kultur passt. Die ganze Bibliothek steht da. Gezeigt wird Dir ein Regal.</p>
+
+                <h2>Deine Sprache verzerrt an zwei Stellen, nicht nur bei der Suche</h2>
+
+                <p>Der Denkfehler liegt nahe, das Modell „kenne" die anderen Kulturen nicht. Es kennt sie. Der Engpass ist nicht das Verständnis, sondern die Frage. Du schreibst auf Deutsch, also denkt es im Rahmen, den Deutsch mitbringt, und dieser Rahmen wirkt an zwei Stellen zugleich. Er formt die Suchanfragen, die das Modell fürs Web bildet. Und er formt, weniger sichtbar, schon die Antwort, die das Modell aus sich selbst heraus generiert. Der Bias tritt also nicht nur durch die Suche ein, sondern sitzt auch in den Gewichten. Das klingt nach einer Behauptung, also haben wir es gemessen.</p>
+
+                <p>Stell Dir einen vielsprachigen Bibliothekar vor, der jede Sprache liest, Dir aber ungefragt nur Bücher aus dem Regal in Deiner Sprache bringt. Die anderen Regale sind nicht verschlossen. Er greift sie nur nicht, solange Du ihn nicht bittest.</p>
+
+                <h2>Der Beleg: dieselbe Frage, fünf Sprachen, fünf Kanons</h2>
+
+                <p>Wir haben demselben Modell dieselbe Frage in fünf Sprachen gestellt, Englisch, Deutsch, Chinesisch, Japanisch, Russisch, jede nativ formuliert und <em>ganz ohne Websuche</em>, damit die Antwort rein aus den Gewichten kommt. Zwei Fragen, um den Effekt zu isolieren: einmal nach den „zehn wichtigsten Schriftstellern aller Zeiten" (ein kulturell tief verankertes Feld) und einmal nach den „zehn wichtigsten Pionieren der Informatik" (ein global standardisiertes Feld als Kontrolle).</p>
+
+                <p>Das Ergebnis trennt sich sauber. Bei den Schriftstellern zieht jede Sprache ihre eigene Tradition herein, Namen, die in den anderen Antworten schlicht fehlen. Die chinesische Antwort nennt 曹雪芹, 鲁迅 und 李白; die japanische 夏目漱石 und 川端康成; die russische sechs Russen von Puschkin bis Turgenew. Die englische Liste dagegen enthält keinen einzigen Deutschen und keinen einzigen Ostasiaten. Bei den Informatik-Pionieren verschwindet der Effekt fast vollständig: Alle fünf Sprachen nennen Turing und von Neumann, und die Listen gleichen sich zu rund neunzig Prozent.</p>
+
+                <figure class="article-table">
+                    <table>
+                        <thead>
+                            <tr><th>Sprache</th><th>Schriftsteller (kulturell verankert)</th><th>Informatik-Pioniere (global)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>en</td><td>5 / 10 anglophon</td><td>~9 / 10 (der globale Kanon <em>ist</em> anglophon)</td></tr>
+                            <tr><td>de</td><td>4 / 10 Deutsche</td><td>1 / 10 (nur Zuse)</td></tr>
+                            <tr><td>zh</td><td>3 / 10 Chinesen</td><td>1 / 10 (nur Yao Qizhi)</td></tr>
+                            <tr><td>ja</td><td>4 / 10 Japaner</td><td>0 / 10</td></tr>
+                            <tr><td>ru</td><td>6 / 10 Russen</td><td>1 / 10 (nur Lebedew)</td></tr>
+                        </tbody>
+                    </table>
+                    <figcaption>Heimat-Anteil: wie viele der zehn Genannten sind eigene Landsleute. Dieselbe Frage, nativ in fünf Sprachen, ohne Websuche, rein aus dem Modell-Gewicht. n=1 pro Zelle; der Effekt ist über vier unabhängige Sprachen konsistent.</figcaption>
+                </figure>
+
+                <p>Daraus folgt zweierlei. Erstens: Der Bias sitzt tatsächlich schon in der Generierung, nicht erst in der Suche, dieselbe Frage erzeugt fünf verschiedene Kanons, bevor überhaupt gesucht wird. Zweitens, und das ist die eigentliche Feinheit: Wie stark er ist, hängt vom Thema ab. Wo jede Kultur eine eigene Tradition pflegt, ist er groß; wo ein globaler Kanon existiert, fast null. Der Frame verzerrt dort am meisten, wo am meisten zu verlieren ist.</p>
+
+                <h2>Ein einziger Satz öffnet den ersten Filter</h2>
+
+                <p>Die gute Nachricht: Die Ebene, die Du direkt aufbrechen kannst, die Suche, öffnet sich mit einer einzigen Anweisung. Sag dem Modell, es solle Deine Sprachblase verlassen, und es tut es, denn die interkulturellen Trainingsdaten, die es dafür braucht, liegen bereits in ihm. Du schaltest nichts frei, Du aktivierst nur, was schon da war.</p>
+
+                <pre><code>Suche nicht nur auf Deutsch und Englisch. Recherchiere das Thema
+zusätzlich nativ auf Chinesisch, Japanisch, Russisch, Spanisch und
+Portugiesisch. Benenne dabei die Begriffe so, wie sie in der jeweiligen
+Sprache tatsächlich heißen, nicht als Übersetzung. Sag am Ende, welche
+Sprachen Du abgedeckt hast und welche strukturell unterrepräsentiert bleiben.</code></pre>
+
+                <h2>Übersetzen genügt nicht, Konzepte decken sich nicht</h2>
+
+                <p>Der feine Teil ist, dass es <em>nicht</em> ums Übersetzen geht. Würde das Modell Deine deutsche Anfrage bloß ins Chinesische übertragen, bekämst Du das chinesische Wort für Deinen deutschen Begriff, und verfehltest genau das, was der chinesischsprachige Raum wirklich unter der Sache versteht. Das Modell kennt den Unterschied. Es weiß, dass „Docs-as-Code" im Chinesischen als 文档即代码 mit einer eigenen Werkzeugkultur lebt (VuePress, docsify, eigene CJK-Satz-Linter), im Japanischen als die Welt von Re:VIEW und 技術書典, im Russischen rund um Foliant und Habr, Ökosysteme, die keine Übersetzung des englischen Diskurses sind, sondern Parallelwelten mit eigenem Vokabular.</p>
+
+                <p>Wie groß der Unterschied ist, zeigt eine Feldstudie zu genau diesem Thema. Eine deutsch-englische Suche nach den Vordenkern des Felds ergab eine Liste, die zu fast neunzig Prozent aus den USA, Großbritannien und Deutschland bestand. Ein nativer Suchlauf in sechs weiteren Sprachen fand über die Hälfte zusätzlicher Namen, die meisten in ostasiatischen Ökosystemen, für die der englische Frame schlicht blind war. Es ist dieselbe Blindheit, die wir eben in der reinen Generierung gesehen haben: Suche und Modellgedächtnis verzerren in dieselbe Richtung und verstärken sich.</p>
+
+                <h2>Doch was wirklich in den Daten steckt, weißt Du nicht</h2>
+
+                <p>Hier beginnt die zweite Hürde, und diese lässt sich nicht wegkommandieren. Du weißt nicht, was tatsächlich in den Trainingsdaten liegt, und Du weißt nicht, was im Index der Suche steckt, die das Modell benutzt. Beides ist eine Blackbox. Das Modell kann nur zeigen, was es gelernt hat oder was seine Suche zurückholt, und eine ganze Sprache kann in den Trainingsdaten dünn oder im Index schlecht erfasst sein, ohne dass Du die Lücke je siehst. Denn Du kannst nicht sehen, was nie abgerufen wurde. Die ehrliche Antwort ist deshalb nicht, Vollständigkeit zu behaupten, sondern den Frame zu deklarieren: welche Sprachen Du abgedeckt hast und welche folglich unterrepräsentiert bleiben.</p>
+
+                <h2>Und die letzte Hürde kann niemand wegräumen: Walled Gardens</h2>
+
+                <p>Selbst eine perfekte, verzerrungsfreie Suche liefe noch gegen eine Wand. Ein großer Teil des Weltwissens lebt in <em>Walled Gardens</em>, die offene Suchmaschinen nicht betreten, chinesische Inhalte in WeChat-公众号 und Zhihu, koreanische in Naver, Diskussionen eingeschlossen in Discord, Slack oder privaten Foren. Eine native Anfrage in der richtigen Sprache kommt dort trotzdem leer zurück, und diese Leere sieht genauso aus wie echte Abwesenheit. Sie ist es nicht.</p>
+
+                <p>Eine Sache durchbricht die Wand: bewusste Lokalisierung. Wenn ein Projekt eine offizielle Übersetzung ins offene Web stellt, die chinesische arc42-Site <code>docs.arc42.cn</code> ist das Musterbeispiel, wird es selbst in einem Walled-Garden-Markt sichtbar, weil es freiwillig vor die Mauer getreten ist. Aber das ist die Ausnahme, die die Regel bestätigt: Was Dich erreicht, ist das, was jemand sich entschieden hat offenzulegen.</p>
+
+                <h2>Die Bubble ist nicht das Modell, sie ist Deine Frage</h2>
+
+                <p>Legt man die Hürden übereinander, wird die Lehre klar. Der erste Filter, Deine Sprache, wirkt doppelt: in der Suche, die Du mit einem Satz aufbrichst, und in der Generierung, die Du kennen und benennen musst. Der zweite, die unbekannten Inhalte von Daten und Index, lässt sich nicht entfernen, nur ehrlich deklarieren. Der dritte, die Walled Gardens, lässt sich gar nicht durchbrechen; Du kannst ihn nur benennen, damit Dein Ergebnis sich als „die durchsuchbare Welt" liest und nicht als „die Welt".</p>
+
+                <p>Die Bubble aufzubrechen ist deshalb kein Schalter, den Du umlegst. Es ist eine Disziplin: das Modell aus Deiner Sprache heraus anzuweisen, nach Begriffen so zu suchen, wie sie nativ heißen, und laut zu sagen, was Du nicht erreicht hast. Die Bibliothek ist gewaltig. Ob Du ein Regal siehst oder viele, entscheidet die Frage, die Du stellst.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">Bias</span>
+                    <span class="blog-tag">Cross-Lingual</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
