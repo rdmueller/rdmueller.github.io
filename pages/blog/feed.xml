@@ -11,16 +11,16 @@
         <uri>https://rdmueller.github.io/</uri>
     </author>
     <entry>
-        <id>https://rdmueller.github.io/pages/blog/sprachblase-llm.html</id>
-        <title>Dein LLM berät Dich mit einem riesigen Lösungsraum — und doch siehst Du nur einen Teil</title>
+        <id>https://rdmueller.github.io/pages/blog/language-bubble-llm.html</id>
+        <title>Your LLM Holds a Whole Library. You Are Shown One Shelf.</title>
         <updated>2026-07-05T00:00:00Z</updated>
-        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/sprachblase-llm.html" />
-        <summary>Ein LLM versteht hunderte Sprachen gleich gut, zeigt dir auf deine Frage aber nur die Welt, die zu deiner Sprache passt. Ein Experiment in fünf Sprachen zeigt: der Bias sitzt schon in der reinen Generierung, nicht erst in der Suche, und er ist themenabhängig.</summary>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/language-bubble-llm.html" />
+        <summary>An LLM understands hundreds of languages equally well, yet on your question it hands you back only the world that matches your own language. A five-language experiment shows the bias sits in the raw generation, not only in search, and depends on the topic.</summary>
         <category term="LLM" />
         <category term="GenAI" />
         <category term="Bias" />
         <category term="Cross-Lingual" />
-        <content type="html">&lt;p&gt;Ein LLM versteht hunderte Sprachen gleich gut, zeigt dir auf deine Frage aber nur die Welt, die zu deiner Sprache passt. Ein Experiment in fünf Sprachen zeigt: der Bias sitzt schon in der reinen Generierung, nicht erst in der Suche, und er ist themenabhängig.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/sprachblase-llm.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+        <content type="html">&lt;p&gt;An LLM understands hundreds of languages equally well, yet on your question it hands you back only the world that matches your own language. A five-language experiment shows the bias sits in the raw generation, not only in search, and depends on the topic.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/language-bubble-llm.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/four-kinds-of-hard.html</id>

@@ -1,17 +1,17 @@
 [
   {
-    "title": "Dein LLM berät Dich mit einem riesigen Lösungsraum — und doch siehst Du nur einen Teil",
+    "title": "Your LLM Holds a Whole Library. You Are Shown One Shelf.",
     "date": "2026-07-05",
-    "excerpt": "Ein LLM versteht hunderte Sprachen gleich gut, zeigt dir auf deine Frage aber nur die Welt, die zu deiner Sprache passt. Ein Experiment in fünf Sprachen zeigt: der Bias sitzt schon in der reinen Generierung, nicht erst in der Suche, und er ist themenabhängig.",
-    "url": "blog/sprachblase-llm.html",
-    "icon": "images/blog/linkedin/sprachblase-llm.png",
+    "excerpt": "An LLM understands hundreds of languages equally well, yet on your question it hands you back only the world that matches your own language. A five-language experiment shows the bias sits in the raw generation, not only in search, and depends on the topic.",
+    "url": "blog/language-bubble-llm.html",
+    "icon": "images/blog/linkedin/language-bubble-llm.png",
     "tags": [
       "LLM",
       "GenAI",
       "Bias",
       "Cross-Lingual"
     ],
-    "lang": "de"
+    "lang": "en"
   },
   {
     "title": "Four Kinds of Hard: Building an AI PowerPoint Generator",
