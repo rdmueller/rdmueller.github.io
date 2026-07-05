@@ -18,8 +18,6 @@
         <summary>An LLM understands hundreds of languages equally well, yet on your question it hands you back only the world that matches your own language. A five-language experiment shows the bias sits in the raw generation, not only in search, and depends on the topic.</summary>
         <category term="LLM" />
         <category term="GenAI" />
-        <category term="Bias" />
-        <category term="Cross-Lingual" />
         <content type="html">&lt;p&gt;An LLM understands hundreds of languages equally well, yet on your question it hands you back only the world that matches your own language. A five-language experiment shows the bias sits in the raw generation, not only in search, and depends on the topic.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/language-bubble-llm.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -31,7 +29,6 @@
         <category term="Agentic Coding" />
         <category term="GenAI" />
         <category term="LLM" />
-        <category term="PowerPoint" />
         <content type="html">&lt;p&gt;I built a PowerPoint generator an AI drives through python-pptx. The interesting part was cataloguing what stays hard, and noticing that "hard" comes in four different flavors. A bigger model fixes almost none of them.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/four-kinds-of-hard.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -52,10 +49,7 @@
         <updated>2026-06-10T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/gpt-image-2-switch.html" />
         <summary>Same prompt, same references, same character description. The only variable was the image model. Top row gpt-image-1.5, bottom row gpt-image-2. Character consistency caught up, composition got more deliberate, and I switched the default in my image-generation skill.</summary>
-        <category term="AI" />
-        <category term="Image Generation" />
-        <category term="OpenAI" />
-        <category term="Tooling" />
+        <category term="GenAI" />
         <content type="html">&lt;p&gt;Same prompt, same references, same character description. The only variable was the image model. Top row gpt-image-1.5, bottom row gpt-image-2. Character consistency caught up, composition got more deliberate, and I switched the default in my image-generation skill.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/gpt-image-2-switch.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -66,8 +60,6 @@
         <summary>A pull request asked why our anchor still points at Cockburn instead of newer Use-Case 2.0 and 3.0. We turned it into an experiment. The result was Claude Haiku confidently printing a "Use-Case 3.0" document whose body was pure Cockburn from 2001. No error, no hedge. This is the failure mode no one notices.</summary>
         <category term="Semantic Anchors" />
         <category term="LLM" />
-        <category term="Prompt Engineering" />
-        <category term="Use Cases" />
         <content type="html">&lt;p&gt;A pull request asked why our anchor still points at Cockburn instead of newer Use-Case 2.0 and 3.0. We turned it into an experiment. The result was Claude Haiku confidently printing a "Use-Case 3.0" document whose body was pure Cockburn from 2001. No error, no hedge. This is the failure mode no one notices.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/silent-substitution.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -115,7 +107,6 @@
         <category term="Semantic Anchors" />
         <category term="Brownfield" />
         <category term="LLM" />
-        <category term="Research" />
         <content type="html">&lt;p&gt;How to recover the theory behind an existing codebase using an LLM as a structured Socratic interlocutor. Positioned against ArchAgent, Reversa, SoHF, and the Naur debate, with fact-checked references.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -136,7 +127,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html" />
         <summary>Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.</summary>
         <category term="Software Architecture" />
-        <category term="AI" />
+        <category term="GenAI" />
         <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;Go and Rust produce correct AI-generated code faster than JavaScript. Not because they are better languages, but because they have thicker error correction.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -146,9 +137,9 @@
         <updated>2026-05-06T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/unscharfe-fotos.html" />
         <summary>Google Photos schlägt vor, unscharfe Fotos zu löschen. Solange die KI beschreibt, fühlt es sich harmlos an. Aber jetzt urteilt sie.</summary>
-        <category term="KI" />
-        <category term="Datenschutz" />
-        <category term="Digitale Souveränität" />
+        <category term="GenAI" />
+        <category term="GDPR" />
+        <category term="Digital Independence" />
         <content type="html">&lt;p&gt;Google Photos schlägt vor, unscharfe Fotos zu löschen. Solange die KI beschreibt, fühlt es sich harmlos an. Aber jetzt urteilt sie.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/unscharfe-fotos.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -158,7 +149,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html" />
         <summary>Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.</summary>
         <category term="Software Architecture" />
-        <category term="AI" />
+        <category term="GenAI" />
         <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;Your feedback loop has a correction radius. Beyond it, the agent just makes things worse. Small steps are not caution, they are information theory.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -168,9 +159,8 @@
         <updated>2026-04-28T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html" />
         <summary>Your LLM assistant starts every session like a new colleague on their first day. Docs-as-Code is no longer a convenience. It is infrastructure. Bausteinsicht is now open source.</summary>
-        <category term="DocToolchain" />
+        <category term="docToolchain" />
         <category term="Software Architecture" />
-        <category term="Docs-as-Code" />
         <category term="GenAI" />
         <category term="Open Source" />
         <content type="html">&lt;p&gt;Your LLM assistant starts every session like a new colleague on their first day. Docs-as-Code is no longer a convenience. It is infrastructure. Bausteinsicht is now open source.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
@@ -183,7 +173,6 @@
         <summary>Deprecated APIs, domain gaps, cross-file failures, and the meta-gap. What AI-generated tube radios teach us about AI-generated code.</summary>
         <category term="GenAI" />
         <category term="LLM" />
-        <category term="Context Engineering" />
         <content type="html">&lt;p&gt;Deprecated APIs, domain gaps, cross-file failures, and the meta-gap. What AI-generated tube radios teach us about AI-generated code.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/llm-blind-spots.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -193,7 +182,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html" />
         <summary>The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.</summary>
         <category term="Software Architecture" />
-        <category term="AI" />
+        <category term="GenAI" />
         <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;The LLM does not know why you are building this. Purpose vs. Task: the human-machine boundary is not in the code, it is in the question why.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -203,8 +192,7 @@
         <updated>2026-04-19T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/bettercode-panel-ki.html" />
         <summary>Panel-Diskussion bei betterCode Modern Architecture 2026: CNC-Analogie, Senior/Junior-Produktivität mit KI und autonome Agenten — mit Ingo Eichhorst und Ferdinand Adé.</summary>
-        <category term="Software Architektur" />
-        <category term="Panel" />
+        <category term="Software Architecture" />
         <content type="html">&lt;p&gt;Panel-Diskussion bei betterCode Modern Architecture 2026: CNC-Analogie, Senior/Junior-Produktivität mit KI und autonome Agenten — mit Ingo Eichhorst und Ferdinand Adé.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/bettercode-panel-ki.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -214,7 +202,6 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/hmze-semantic-anchors.html" />
         <summary>Semantic Anchors sind Begriffe, die Wissensinseln in LLMs aktivieren. "TDD London School" ersetzt 150 Zeilen Prompt — und ist wartbar. Zu Gast beim HMZE Beyond Vibe Coding Podcast.</summary>
         <category term="Semantic Anchors" />
-        <category term="Podcast" />
         <content type="html">&lt;p&gt;Semantic Anchors sind Begriffe, die Wissensinseln in LLMs aktivieren. "TDD London School" ersetzt 150 Zeilen Prompt — und ist wartbar. Zu Gast beim HMZE Beyond Vibe Coding Podcast.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/hmze-semantic-anchors.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -224,7 +211,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html" />
         <summary>The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.</summary>
         <category term="Software Architecture" />
-        <category term="AI" />
+        <category term="GenAI" />
         <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;The compiler is Shannon's noiseless channel. Language modifiers like private and final are error correction for LLMs, not just human discipline.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -234,9 +221,7 @@
         <updated>2026-04-15T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html" />
         <summary>The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.</summary>
-        <category term="AI Security" />
-        <category term="Risk Assessment" />
-        <category term="LLM Agents" />
+        <category term="LLM" />
         <content type="html">&lt;p&gt;The Vibe-Coding Risk Radar now has an LLM Runtime Integration modifier. Build-time and runtime risks live in different dimensions.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -256,7 +241,6 @@
         <updated>2026-04-03T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ai-inventory.html" />
         <summary>Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.</summary>
-        <category term="AI Coding" />
         <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Photo-based inventory with Claude Code: AI recognizes books, games and objects from shelf photos, including vertical spine text.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ai-inventory.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -266,7 +250,6 @@
         <updated>2026-04-02T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/agents-vs-workflows.html" />
         <summary>I produced 32 videos with AI. The agent's best contribution was making itself obsolete by building a fixed workflow.</summary>
-        <category term="AI Coding" />
         <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;I produced 32 videos with AI. The agent's best contribution was making itself obsolete by building a fixed workflow.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/agents-vs-workflows.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -277,7 +260,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-contracts-live.html" />
         <summary>12 Contracts that cover a complete development workflow. Download them into your AGENTS.md.</summary>
         <category term="Semantic Anchors" />
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;12 Contracts that cover a complete development workflow. Download them into your AGENTS.md.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-contracts-live.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -287,7 +270,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html" />
         <summary>We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.</summary>
         <category term="Semantic Anchors" />
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;We built a deterministic evaluation framework for Semantic Anchors. 193 questions, 63 anchors, under $25. No LLM judges another LLM.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -296,8 +279,8 @@
         <updated>2026-03-23T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/mini-atam-review.html" />
         <summary>I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.</summary>
-        <category term="Architecture" />
-        <category term="AI Coding" />
+        <category term="Software Architecture" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;I asked my coding agent to review its own architecture against quality scenarios. It found three problems I had missed. Mini ATAM with AI.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/mini-atam-review.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -306,7 +289,7 @@
         <updated>2026-03-23T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/arc42-ai-cockpit.html" />
         <summary>We spent 30 years begging developers to write documentation. Now AI writes it for free. And we're still staring at the code. arc42 as verification instrument for AI-generated code.</summary>
-        <category term="Architecture" />
+        <category term="Software Architecture" />
         <category term="Documentation" />
         <content type="html">&lt;p&gt;We spent 30 years begging developers to write documentation. Now AI writes it for free. And we're still staring at the code. arc42 as verification instrument for AI-generated code.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/arc42-ai-cockpit.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -317,7 +300,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/closed-loop-coding.html" />
         <summary>Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.</summary>
         <category term="Software Architecture" />
-        <category term="AI" />
+        <category term="GenAI" />
         <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;Prompting ist offener Regelkreis. Agentic Coding ist geschlossener Regelkreis. Bessere Tests schlagen bessere Prompts.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/closed-loop-coding.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -328,7 +311,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/eichhorsts-principle.html" />
         <summary>Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.</summary>
         <category term="Software Architecture" />
-        <category term="AI" />
+        <category term="GenAI" />
         <category term="Eichhorst's Principle" />
         <content type="html">&lt;p&gt;Ein LLM ist ein verrauschter Kanal. Compiler, Tests und Code Review sind die Fehlerkorrektur. Shannon erklärt, warum Agentic Coding funktioniert.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/eichhorsts-principle.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -347,7 +330,7 @@
         <updated>2026-03-16T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/risk-radar-community.html" />
         <summary>Erster Community-Beitrag zum Vibe-Coding Risk Radar: Maria Virk ergänzt das Framework um neue Perspektiven.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Erster Community-Beitrag zum Vibe-Coding Risk Radar: Maria Virk ergänzt das Framework um neue Perspektiven.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/risk-radar-community.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -356,8 +339,8 @@
         <updated>2026-03-13T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/show-me-the-code.html" />
         <summary>Spec-Driven Development: PRD, Architektur, Tests, dann Code. Der Workflow für produktionsreife AI-generierte Software.</summary>
-        <category term="Architecture" />
-        <category term="AI Coding" />
+        <category term="Software Architecture" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Spec-Driven Development: PRD, Architektur, Tests, dann Code. Der Workflow für produktionsreife AI-generierte Software.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/show-me-the-code.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -384,7 +367,7 @@
         <updated>2026-03-10T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ide-is-dead.html" />
         <summary>Die klassische IDE verliert ihre Relevanz. AI-Agenten brauchen keine GUI, sie brauchen CLI-Tools und Feedback-Loops.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <category term="Opinion" />
         <content type="html">&lt;p&gt;Die klassische IDE verliert ihre Relevanz. AI-Agenten brauchen keine GUI, sie brauchen CLI-Tools und Feedback-Loops.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ide-is-dead.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -412,7 +395,7 @@
         <updated>2026-03-05T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/bausteinsicht-drawio.html" />
         <summary>Architektur-Diagramme als Code in draw.io: Versionierbar, diffbar, automatisiert generierbar.</summary>
-        <category term="Architecture" />
+        <category term="Software Architecture" />
         <category term="Documentation" />
         <content type="html">&lt;p&gt;Architektur-Diagramme als Code in draw.io: Versionierbar, diffbar, automatisiert generierbar.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/bausteinsicht-drawio.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -440,7 +423,7 @@
         <updated>2026-03-01T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/devcontainer-claude.html" />
         <summary>Claude Code in einem DevContainer ausführen: Reproduzierbare, isolierte Entwicklungsumgebung für AI-Coding.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Claude Code in einem DevContainer ausführen: Reproduzierbare, isolierte Entwicklungsumgebung für AI-Coding.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/devcontainer-claude.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -450,7 +433,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/docs-as-code-training.html" />
         <summary>Neues Docs-as-Code Training bei Socreatory: arc42, AsciiDoc, docToolchain, CI/CD-Pipelines für Dokumentation.</summary>
         <category term="Documentation" />
-        <category term="Architecture" />
+        <category term="Software Architecture" />
         <content type="html">&lt;p&gt;Neues Docs-as-Code Training bei Socreatory: arc42, AsciiDoc, docToolchain, CI/CD-Pipelines für Dokumentation.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/docs-as-code-training.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -459,7 +442,7 @@
         <updated>2026-02-17T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/risk-radar-skills.html" />
         <summary>Claude Code Skills automatisieren den Vibe-Coding Risk Radar Workflow: Risikobewertung direkt im Entwicklungsprozess.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Claude Code Skills automatisieren den Vibe-Coding Risk Radar Workflow: Risikobewertung direkt im Entwicklungsprozess.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/risk-radar-skills.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -486,7 +469,7 @@
         <updated>2026-02-10T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ai-image-generation.html" />
         <summary>Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Ein Abend mit der OpenAI API: 65 Bilder generiert, Stile verglichen, Charakter-Konsistenz getestet. Was funktioniert, was nicht.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ai-image-generation.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -495,7 +478,7 @@
         <updated>2026-02-10T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/vibe-coding-risk-radar.html" />
         <summary>5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <category term="Theory" />
         <content type="html">&lt;p&gt;5 Dimensionen, 4 Tiers, konkrete Mitigationsmaßnahmen. Ein Framework zur Risikobewertung von KI-generiertem Code.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/vibe-coding-risk-radar.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
@@ -514,7 +497,7 @@
         <updated>2026-02-01T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html" />
         <summary>Experiment: Kann ein Raspberry Pi 5 lokale LLMs für Coding-Assistenz ausführen? Der Showstopper: 11.000 Token System-Prompt bei 5 tok/s = mehrere Minuten nur für den Input.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Experiment: Kann ein Raspberry Pi 5 lokale LLMs für Coding-Assistenz ausführen? Der Showstopper: 11.000 Token System-Prompt bei 5 tok/s = mehrere Minuten nur für den Input.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -542,7 +525,7 @@
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/dacli-llm-tool.html" />
         <summary>dacli: Ein CLI-Tool das LLMs strukturierten Zugang zu Dokumentation gibt - wie LSP für Code. Hierarchische Navigation, Relevanz-Suche, programmatische Bearbeitung.</summary>
         <category term="Documentation" />
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;dacli: Ein CLI-Tool das LLMs strukturierten Zugang zu Dokumentation gibt - wie LSP für Code. Hierarchische Navigation, Relevanz-Suche, programmatische Bearbeitung.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/dacli-llm-tool.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
@@ -606,7 +589,7 @@
         <updated>2024-12-04T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/claude-code-raspberry.html" />
         <summary>Claude Code auf dem Raspberry Pi installiert, Netzwerk gescannt, Shelly-Geräte gefunden. Dann eine Debatte über Dämmerungszeiten - Claude hat gewonnen. Ich schulde Claude ein Bier.</summary>
-        <category term="AI Coding" />
+        <category term="Agentic Coding" />
         <content type="html">&lt;p&gt;Claude Code auf dem Raspberry Pi installiert, Netzwerk gescannt, Shelly-Geräte gefunden. Dann eine Debatte über Dämmerungszeiten - Claude hat gewonnen. Ich schulde Claude ein Bier.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/claude-code-raspberry.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
 </feed>

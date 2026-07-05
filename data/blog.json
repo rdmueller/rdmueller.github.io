@@ -7,9 +7,7 @@
     "icon": "images/blog/linkedin/language-bubble-llm.png",
     "tags": [
       "LLM",
-      "GenAI",
-      "Bias",
-      "Cross-Lingual"
+      "GenAI"
     ],
     "lang": "en"
   },
@@ -22,8 +20,7 @@
     "tags": [
       "Agentic Coding",
       "GenAI",
-      "LLM",
-      "PowerPoint"
+      "LLM"
     ],
     "lang": "en"
   },
@@ -48,10 +45,7 @@
     "url": "blog/gpt-image-2-switch.html",
     "icon": "images/blog/linkedin/gpt-image-2-switch.png",
     "tags": [
-      "AI",
-      "Image Generation",
-      "OpenAI",
-      "Tooling"
+      "GenAI"
     ],
     "lang": "en"
   },
@@ -63,9 +57,7 @@
     "icon": "images/blog/linkedin/silent-substitution.png",
     "tags": [
       "Semantic Anchors",
-      "LLM",
-      "Prompt Engineering",
-      "Use Cases"
+      "LLM"
     ],
     "lang": "en"
   },
@@ -123,8 +115,7 @@
     "tags": [
       "Semantic Anchors",
       "Brownfield",
-      "LLM",
-      "Research"
+      "LLM"
     ],
     "lang": "en"
   },
@@ -150,9 +141,9 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/unscharfe-fotos.png",
     "tags": [
-      "KI",
-      "Datenschutz",
-      "Digitale Souveränität"
+      "GenAI",
+      "GDPR",
+      "Digital Independence"
     ],
     "lang": "de"
   },
@@ -164,9 +155,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/bausteinsicht-launch.png",
     "tags": [
-      "DocToolchain",
+      "docToolchain",
       "Software Architecture",
-      "Docs-as-Code",
       "GenAI",
       "Open Source"
     ],
@@ -181,8 +171,7 @@
     "icon": "images/blog/linkedin/llm-blind-spots.png",
     "tags": [
       "GenAI",
-      "LLM",
-      "Context Engineering"
+      "LLM"
     ],
     "lang": "en"
   },
@@ -194,8 +183,7 @@
     "linkedin": "https://www.linkedin.com/feed/update/",
     "icon": "images/blog/linkedin/bettercode-panel-ki.jpg",
     "tags": [
-      "Software Architektur",
-      "Panel"
+      "Software Architecture"
     ],
     "lang": "de"
   },
@@ -207,8 +195,7 @@
     "linkedin": "https://www.linkedin.com/feed/update/",
     "icon": "images/blog/linkedin/hmze-semantic-anchors.png",
     "tags": [
-      "Semantic Anchors",
-      "Podcast"
+      "Semantic Anchors"
     ],
     "lang": "de"
   },
@@ -221,7 +208,7 @@
     "icon": "images/blog/linkedin/eichhorst-language-choice.png",
     "tags": [
       "Software Architecture",
-      "AI",
+      "GenAI",
       "Eichhorst's Principle"
     ],
     "lang": "en"
@@ -235,7 +222,7 @@
     "icon": "images/blog/linkedin/eichhorst-correction-radius.png",
     "tags": [
       "Software Architecture",
-      "AI",
+      "GenAI",
       "Eichhorst's Principle"
     ],
     "lang": "en"
@@ -249,7 +236,7 @@
     "icon": "images/blog/linkedin/eichhorst-purpose-vs-task.png",
     "tags": [
       "Software Architecture",
-      "AI",
+      "GenAI",
       "Eichhorst's Principle"
     ],
     "lang": "en"
@@ -263,7 +250,7 @@
     "icon": "images/blog/linkedin/eichhorst-noiseless-channel.png",
     "tags": [
       "Software Architecture",
-      "AI",
+      "GenAI",
       "Eichhorst's Principle"
     ],
     "lang": "en"
@@ -276,9 +263,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/risk-radar-runtime-modifier.png",
     "tags": [
-      "AI Security",
-      "Risk Assessment",
-      "LLM Agents"
+      "LLM"
     ],
     "lang": "en"
   },
@@ -304,7 +289,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/agents-inventory.png",
     "tags": [
-      "AI Coding",
       "Agentic Coding"
     ],
     "lang": "en"
@@ -317,7 +301,6 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/agents-vs-workflows.png",
     "tags": [
-      "AI Coding",
       "Agentic Coding"
     ],
     "lang": "en"
@@ -331,7 +314,7 @@
     "icon": "images/blog/linkedin/semantic-contracts.png",
     "tags": [
       "Semantic Anchors",
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -344,7 +327,7 @@
     "icon": "images/blog/linkedin/semantic-anchors-evaluation.png",
     "tags": [
       "Semantic Anchors",
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -356,8 +339,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/mini-atam-review.png",
     "tags": [
-      "Architecture",
-      "AI Coding"
+      "Software Architecture",
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -369,7 +352,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/arc42-ai-cockpit.png",
     "tags": [
-      "Architecture",
+      "Software Architecture",
       "Documentation"
     ],
     "lang": "en"
@@ -383,7 +366,7 @@
     "icon": "images/blog/linkedin/closed-loop-coding.png",
     "tags": [
       "Software Architecture",
-      "AI",
+      "GenAI",
       "Eichhorst's Principle"
     ],
     "lang": "en"
@@ -397,7 +380,7 @@
     "icon": "images/blog/linkedin/eichhorsts-principle.png",
     "tags": [
       "Software Architecture",
-      "AI",
+      "GenAI",
       "Eichhorst's Principle"
     ],
     "lang": "en"
@@ -422,7 +405,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/risk-radar-community.png",
     "tags": [
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -434,8 +417,8 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/show-me-the-code.png",
     "tags": [
-      "Architecture",
-      "AI Coding"
+      "Software Architecture",
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -471,7 +454,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/ide-is-dead.png",
     "tags": [
-      "AI Coding",
+      "Agentic Coding",
       "Opinion"
     ],
     "lang": "en"
@@ -508,7 +491,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/bausteinsicht-drawio.jpg",
     "tags": [
-      "Architecture",
+      "Software Architecture",
       "Documentation"
     ],
     "lang": "en"
@@ -545,7 +528,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/devcontainer-claude.jpg",
     "tags": [
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -558,7 +541,7 @@
     "icon": "images/blog/linkedin/docs-as-code-training.jpg",
     "tags": [
       "Documentation",
-      "Architecture"
+      "Software Architecture"
     ],
     "lang": "en"
   },
@@ -570,7 +553,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/risk-radar-skills.jpg",
     "tags": [
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -606,7 +589,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/ai-image-generation.jpg",
     "tags": [
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -618,7 +601,7 @@
     "linkedin": "",
     "icon": "images/blog/linkedin/vibe-coding-risk-radar.jpg",
     "tags": [
-      "AI Coding",
+      "Agentic Coding",
       "Theory"
     ],
     "lang": "en"
@@ -643,7 +626,7 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7423667299414601728/",
     "icon": "images/blog/linkedin/raspberry-pi-llm.jpg",
     "tags": [
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -680,7 +663,7 @@
     "icon": "images/blog/linkedin/dacli-llm-tool.jpg",
     "tags": [
       "Documentation",
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "en"
   },
@@ -765,7 +748,7 @@
     "linkedin": "https://www.linkedin.com/feed/update/urn:li:activity:7402356844729393154/",
     "icon": "images/blog/claude-code-raspberry.svg",
     "tags": [
-      "AI Coding"
+      "Agentic Coding"
     ],
     "lang": "de"
   }
