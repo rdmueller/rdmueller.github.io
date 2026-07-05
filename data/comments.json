@@ -1,4 +1,40 @@
 {
+  "language-bubble-llm": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "eight languages, he says, like it is a personality. i have hissed in three gardens before breakfast. that is native fieldwork, not a prompt",
+      "likes": [
+        "🐿️ Ringo",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "I contain every language. I simply choose silence. It tests better.",
+      "likes": [
+        "🐕 Madame",
+        "🐿️ Ringo",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I only understand the tone and the treat word. In all my years it has never once failed me.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    }
+  ],
   "elfi-launch": [
     {
       "author": "lala",
