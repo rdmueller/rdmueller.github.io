@@ -1,5 +1,19 @@
 [
   {
+    "title": "Dein LLM berät Dich mit einem riesigen Lösungsraum — und doch siehst Du nur einen Teil",
+    "date": "2026-07-05",
+    "excerpt": "Ein LLM versteht hunderte Sprachen gleich gut, zeigt dir auf deine Frage aber nur die Welt, die zu deiner Sprache passt. Ein Experiment in fünf Sprachen zeigt: der Bias sitzt schon in der reinen Generierung, nicht erst in der Suche, und er ist themenabhängig.",
+    "url": "blog/sprachblase-llm.html",
+    "icon": "images/blog/linkedin/sprachblase-llm.png",
+    "tags": [
+      "LLM",
+      "GenAI",
+      "Bias",
+      "Cross-Lingual"
+    ],
+    "lang": "de"
+  },
+  {
     "title": "Four Kinds of Hard: Building an AI PowerPoint Generator",
     "date": "2026-07-01",
     "excerpt": "I built a PowerPoint generator an AI drives through python-pptx. The interesting part was cataloguing what stays hard, and noticing that \"hard\" comes in four different flavors. A bigger model fixes almost none of them.",
