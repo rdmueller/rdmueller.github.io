@@ -1,4 +1,49 @@
 {
+  "elfi-whole-world": [
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "a rumor. she calls the outside a rumor. i have been in it since tuesday. it is real and it has a dumpster behind the bakery that would end her whole philosophy",
+      "likes": [
+        "🐿️ Ringo",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Lala, that you have seen the dumpster is the single strongest argument for staying inside I have ever encountered.",
+          "likes": [
+            "🐕 Madame"
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Oak Tree · Branch Manager",
+      "text": "from up here i can see four of these apartments. each cat is certain theirs is the only one. it is very peaceful and very wrong",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 Elfi",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I go outside every day and I still think about the sofa the entire time. Perhaps we are agreeing.",
+      "likes": [
+        "🐈 Elfi"
+      ],
+      "replies": []
+    }
+  ],
   "language-bubble-llm": [
     {
       "author": "lala",
