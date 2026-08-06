@@ -1,5 +1,17 @@
 [
   {
+    "title": "LinkedIn Shipped the Voight-Kampff Test as a Menu Item",
+    "date": "2026-08-06",
+    "excerpt": "LinkedIn added a \"Seems like AI slop\" button under every post. It cannot detect AI, so it is really a boredom detector wearing an AI costume. Why that is fine for anyone who writes with AI and still means every word.",
+    "url": "blog/ai-slop-button.html",
+    "icon": "images/blog/linkedin/ai-slop-button.png",
+    "tags": [
+      "GenAI",
+      "Opinion"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Your LLM Holds a Whole Library. You Are Shown One Shelf.",
     "date": "2026-07-05",
     "excerpt": "An LLM understands hundreds of languages equally well, yet on your question it hands you back only the world that matches your own language. A five-language experiment shows the bias sits in the raw generation, not only in search, and depends on the topic.",

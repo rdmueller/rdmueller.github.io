@@ -5,11 +5,21 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-07-05T00:00:00Z</updated>
+    <updated>2026-08-06T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/ai-slop-button.html</id>
+        <title>LinkedIn Shipped the Voight-Kampff Test as a Menu Item</title>
+        <updated>2026-08-06T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/ai-slop-button.html" />
+        <summary>LinkedIn added a "Seems like AI slop" button under every post. It cannot detect AI, so it is really a boredom detector wearing an AI costume. Why that is fine for anyone who writes with AI and still means every word.</summary>
+        <category term="GenAI" />
+        <category term="Opinion" />
+        <content type="html">&lt;p&gt;LinkedIn added a "Seems like AI slop" button under every post. It cannot detect AI, so it is really a boredom detector wearing an AI costume. Why that is fine for anyone who writes with AI and still means every word.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/ai-slop-button.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/language-bubble-llm.html</id>
         <title>Your LLM Holds a Whole Library. You Are Shown One Shelf.</title>
