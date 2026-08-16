@@ -1,5 +1,18 @@
 [
   {
+    "title": "autoCompactWindow: keep Claude Code's context lean and cheap",
+    "date": "2026-08-16",
+    "excerpt": "Claude Code made the 1M context window the default, but you can set the point where it compacts yourself. The setting is called autoCompactWindow, reachable through /autocompact, and almost nobody knows about it. Why setting it well below 1M saves cost and keeps answer quality up.",
+    "url": "blog/autocompact-window.html",
+    "icon": "images/blog/linkedin/autocompact-window.png",
+    "tags": [
+      "Agentic Coding",
+      "LLM",
+      "GenAI"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "LinkedIn Shipped the Voight-Kampff Test as a Menu Item",
     "date": "2026-08-06",
     "excerpt": "LinkedIn added a \"Seems like AI slop\" button under every post. It cannot detect AI, so it is really a boredom detector wearing an AI costume. Why that is fine for anyone who writes with AI and still means every word.",
