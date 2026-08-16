@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claude Code made the 1M context window the default, but you can set the point where it compacts yourself. The setting is called autoCompactWindow, reachable through /autocompact, and almost nobody knows about it. Why setting it well below 1M saves cost and keeps answer quality up.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/autocompact-window.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/autocompact-window.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="autoCompactWindow: keep Claude Code's context lean and cheap | Ralf D. Müller">
+    <meta property="og:description" content="Claude Code made the 1M context window the default, but you can set the point where it compacts yourself. The setting is called autoCompactWindow, reachable through /autocompact, and almost nobody knows about it. Why setting it well below 1M saves cost and keeps answer quality up.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/autocompact-window.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="autoCompactWindow: keep Claude Code's context lean and cheap">
+    <meta name="twitter:description" content="Claude Code made the 1M context window the default, but you can set the point where it compacts yourself. The setting is called autoCompactWindow, reachable through /autocompact, and almost nobody knows about it. Why setting it well below 1M saves cost and keeps answer quality up.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/autocompact-window.png">
+    <title>autoCompactWindow: keep Claude Code's context lean and cheap | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "autoCompactWindow: keep Claude Code's context lean and cheap",
+      "description": "Claude Code made the 1M context window the default, but you can set the point where it compacts yourself. The setting is called autoCompactWindow, reachable through /autocompact, and almost nobody knows about it. Why setting it well below 1M saves cost and keeps answer quality up.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/autocompact-window.png",
+      "url": "https://rdmueller.github.io/pages/blog/autocompact-window.html",
+      "datePublished": "2026-08-16",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">16 August 2026</span>
+                </div>
+                <h1>autoCompactWindow: keep Claude Code's context lean and cheap</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/autocompact-window.png" alt="An illustration of a large context window being compacted down to a lean, tidy summary.">
+            </figure>
+
+            <div class="article-content">
+                <p>Since Claude Code made the 1M context window the default, I have wanted one small config: to set the point myself where it compacts automatically. It exists now. It is called autoCompactWindow, can be set through /autocompact, and almost nobody knows about it. Did you?</p>
+
+                <p>Why do I set it lower than 1M? Cost, plainly. An LLM has no memory. Every turn resends the entire context and pays for it again. A history of 900,000 tokens gets billed in full with every single answer. You feel it even on a flat rate, because sooner or later you hit your limit. The big window is convenient, but it runs up your bill the whole time.</p>
+
+                <p>The 1M window is a ceiling, not a target. You never have to fill it. With autoCompactWindow you set the compact threshold to, say, 400,000 tokens. Claude Code then summarizes the history earlier, and you keep working with a lean context.</p>
+
+                <p>The second effect is quality. Models lose the middle in very long contexts. 800,000 tokens of old tool output dilute attention more than they help. A compact summary often carries further than the full history.</p>
+
+                <p>Here is the odd part: how easily a feature like this slips by. Claude Code changes in small steps, several versions a week (often even a day!), each with a handful of fixes. In that stream even a useful new dial reads like noise. I only found autoCompactWindow because I noticed the autocomplete in the CLI. I then asked Claude to search for it in the changelog.</p>
+
+                <p>What I would also like: a feature which allows the model to trigger the compact itself when a feature is done. Currently that is not possible, /compact is a user command.</p>
+
+                <p>But there is a workaround that does almost the same thing. I learned it from Uwe Franke: you instruct Claude to work on issues and other tasks in a subagent. It is not a real compact, because the subagent's context is discarded afterwards. Yet the subagent hands its summary back to the main session, much like a compact would. The main session stays lean and doesn't hit the ceiling so soon.</p>
+
+                <p>If you work with the 1M window, set autoCompactWindow to a value well below it and watch how much calmer and cheaper your sessions run.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">GenAI</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
