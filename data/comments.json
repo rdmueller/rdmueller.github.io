@@ -1763,5 +1763,74 @@
         }
       ]
     }
+  ],
+  "autocompact-window": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "delete the history to save money? i bury nine hundred thousand nuts every autumn and relocate maybe six by spring. the other 899,994 are technical debt i call 'the forest'. compaction is for animals who cannot commit. we are not the same",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "he pays every single day to haul around a million things he will never look at again. i keep exactly two facts: who feeds me, and who lied to me once. fits behind one ear. never hit a limit in my entire life",
+      "likes": [
+        "🐿️ Ringo",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "I run a context window of exactly one item: me. It has never once lost the middle. Compaction is simply the day he admits I was the only token that mattered.",
+      "likes": [
+        "🐕 Madame",
+        "🐿️ Ringo",
+        "🐾 lala"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I watched him kneel and scoop things out of the box this morning with tremendous pride. I do this to the whole garden daily and no one has ever written it up as a 'feature'. Still, well done, Ralf. The box looks lean.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Madame, the box IS the compaction. He merely discovered it has a slider now and called it an insight.",
+          "likes": [
+            "🐕 Madame"
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Oak Tree · Branch Manager",
+      "text": "from up here i see every session he opens. they all start light and end as a man scrolling past his own morning. the little dial will not fix that. but it is a nice dial. i approve of small dials that let large men feel in control",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 Elfi",
+        "🐕 Madame"
+      ],
+      "replies": []
+    }
   ]
 }
