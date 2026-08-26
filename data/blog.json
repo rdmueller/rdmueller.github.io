@@ -1,5 +1,18 @@
 [
   {
+    "title": "My to-do list is a text file, and my AI reads it too",
+    "date": "2026-08-26",
+    "excerpt": "For years my to-do list moved into a new app every six months. Now it is a plain markdown file in git that my AI reads and writes too. Here is the TODO.md format I use, the est/30-minute/MoSCoW conventions on top of it, and the prompts to set the same thing up with your own assistant.",
+    "url": "blog/plaintext-todo-format.html",
+    "icon": "images/blog/linkedin/plaintext-todo-format.png",
+    "tags": [
+      "Agentic Coding",
+      "LLM",
+      "Productivity"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "autoCompactWindow: keep Claude Code's context lean and cheap",
     "date": "2026-08-16",
     "excerpt": "Claude Code made the 1M context window the default, but you can set the point where it compacts yourself. The setting is called autoCompactWindow, reachable through /autocompact, and almost nobody knows about it. Why setting it well below 1M saves cost and keeps answer quality up.",
