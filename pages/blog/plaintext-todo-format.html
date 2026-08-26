@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="For years my to-do list moved into a new app every six months. Now it is a plain markdown file in git that my AI reads and writes too. Here is the TODO.md format I use, the est/30-minute/MoSCoW conventions on top of it, and the prompts to set the same thing up with your own assistant.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/plaintext-todo-format.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/plaintext-todo-format.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="My to-do list is a text file, and my AI reads it too | Ralf D. Müller">
+    <meta property="og:description" content="For years my to-do list moved into a new app every six months. Now it is a plain markdown file in git that my AI reads and writes too. Here is the TODO.md format I use, the est/30-minute/MoSCoW conventions on top of it, and the prompts to set the same thing up with your own assistant.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/plaintext-todo-format.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My to-do list is a text file, and my AI reads it too">
+    <meta name="twitter:description" content="For years my to-do list moved into a new app every six months. Now it is a plain markdown file in git that my AI reads and writes too. Here is the TODO.md format I use, the est/30-minute/MoSCoW conventions on top of it, and the prompts to set the same thing up with your own assistant.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/plaintext-todo-format.png">
+    <title>My to-do list is a text file, and my AI reads it too | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "My to-do list is a text file, and my AI reads it too",
+      "description": "For years my to-do list moved into a new app every six months. Now it is a plain markdown file in git that my AI reads and writes too. Here is the TODO.md format I use, the est/30-minute/MoSCoW conventions on top of it, and the prompts to set the same thing up with your own assistant.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/plaintext-todo-format.png",
+      "url": "https://rdmueller.github.io/pages/blog/plaintext-todo-format.html",
+      "datePublished": "2026-08-26",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">26 August 2026</span>
+                </div>
+                <h1>My to-do list is a text file, and my AI reads it too</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/plaintext-todo-format.png" alt="Watercolour illustration of a friendly robot assistant and a human hand pointing at the same to-do checklist; one line reads Katze füttern">
+            </figure>
+
+            <div class="article-content">
+                <p>For years my to-do list moved into a new app every six months. Todoist, Things, Notion, a whiteboard, back to Todoist. Each one wanted me to learn its buttons, and none of them survived contact with a busy week.</p>
+
+<p>Now my task manager is a text file. <code>todos.md</code>, plain markdown, in a git repository. It is boring on purpose, and that is why it works. I can grep it, diff it, read its history, and, the part I did not plan for, my AI assistant reads and writes the same file in the same syntax I would have typed.</p>
+
+<h2>The format is just markdown checkboxes</h2>
+
+<p>The base is the TODO.md convention: GitHub-flavoured markdown checkboxes, with a few inline tags borrowed from the older todo.txt idea.</p>
+
+<pre><code>- [ ] Draft the conference abstract +Talk #must due:2026-09-14 est:1h
+  - [ ] Outline the three key points id:0413 est:30m
+  - [ ] Write it and submit id:0414 est:30m
+- [x] Book the hotel id:0129</code></pre>
+
+<p>A checkbox holds the state. <code>@name</code> marks a person, <code>+project</code> a project, <code>#tag</code> a context, <code>due:</code> a deadline, <code>created:</code> the day it appeared, and <code>id:</code> a stable number so I can point at a task later. Finished tasks move to a second file, <code>done.md</code>, grouped by month. Nothing here needs more than a shell script from 2010 could parse.</p>
+
+<h2>Three additions that make it mine</h2>
+
+<h3>est: and the 30-minute rule</h3>
+
+<p><code>est:</code> records how long a task should take: <code>15m</code>, <code>30m</code>, <code>1h</code>, <code>2h</code>, <code>4h</code>, <code>1d</code>. The rule on top of it: anything longer than 30 minutes gets broken into subtasks, each 30 minutes or less, unless it genuinely cannot be split. A 30-minute block is something you can always find between two meetings. A four-hour task never starts. Four thirty-minute ones do.</p>
+
+<h3>MoSCoW as colour</h3>
+
+<p>Priority is a tag: <code>#must</code>, <code>#should</code>, <code>#could</code>, <code>#wont</code>. On their own they are just words in a line. A small static HTML page reads the file and paints each task in its colour, so I see the shape of the week without opening anything heavy.</p>
+
+<h3>Subtasks</h3>
+
+<p>Subtasks are indented checkbox lines under their parent. The parent keeps its <code>est:</code> as an aggregate; the children sum to it and each stays under the 30-minute line.</p>
+
+<h2>The same file, two writers</h2>
+
+<p>The viewer is a single static HTML page. No backend, no database, no API. It reads <code>todos.md</code> and shows the week, and it lets me tick a box or jot a comment. When I am done it builds a short prompt and copies it to the clipboard. I paste that back into my assistant, and the assistant edits the same plaintext files. The loop closes through the clipboard, and the plaintext stays the interface between me and the model.</p>
+
+<h2>Set it up with your own assistant</h2>
+
+<p>You do not need my viewer to get most of the value. You need the format and an assistant that respects it. Drop these rules into your project's <code>CLAUDE.md</code> (or <code>AGENTS.md</code>, or your assistant's system prompt):</p>
+
+<pre><code>## todos.md format
+- Tasks live in todos.md as GitHub-flavoured markdown checkboxes.
+- Syntax: - [ ] text @person +project #tag id:NNNN created:YYYY-MM-DD due:YYYY-MM-DD est:X
+- est is one of: 15m, 30m, 1h, 2h, 4h, 1d.
+- Every open leaf task must be 30 minutes or less. If it is larger, break it
+  into indented subtasks, each with its own id and est, unless it genuinely
+  cannot be split.
+- Priority is a MoSCoW tag: #must, #should, #could, #wont.
+- New task: assign the next free id and today's date as created:.
+- Done: mark - [x] and move the line to done.md, grouped by month.
+- Never invent tasks or data; only change what I ask for.</code></pre>
+
+<p>Then, once, ask the assistant to bootstrap the files:</p>
+
+<pre><code>Create todos.md and done.md following the format in CLAUDE.md. Add these
+tasks with sensible est values, break anything over 30 minutes into subtasks,
+and tag each with a MoSCoW priority: [ your tasks here ]</code></pre>
+
+<p>From then on you talk to it in plain language. "The hotel is booked" ticks the box and moves the line to <code>done.md</code>. "Break down the JavaLand submission" turns one line into three. The file stays readable to you, to a script, and to the model.</p>
+
+<h2>Why this beats an app</h2>
+
+<p>An app keeps your tasks inside someone else's database, behind someone else's buttons, on someone else's release schedule. A text file you can grep, diff, version, back up, and hand to an LLM. Mine has outlived four apps, and it reads the same to a human, a shell script, and a language model. That is the whole trick.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">LLM</span>
+                    <span class="blog-tag">Productivity</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
