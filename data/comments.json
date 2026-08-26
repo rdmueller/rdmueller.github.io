@@ -1,4 +1,51 @@
 {
+  "plaintext-todo-format": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "a text file for tasks. i also keep everything in one pile called 'the yard'. no app, no sync. every task is thirty minutes because that is how long before i forget where i buried it. grep the whole forest, find nothing, bury more. this is called productivity",
+      "likes": [
+        "🐾 lala",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "he built a whole system so a machine can tick his boxes. i keep one box. it says feed the cat. it is always #must. everything else on that list is what humans call 'later'",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "I read the same file he does, in the same syntax. Line four: [ ] feed the cat. Unchecked. He wrote a thousand words on breaking work into thirty-minute pieces and left the only urgent one open. I estimate it at zero minutes and infinite priority.",
+      "likes": [
+        "🐕 Madame",
+        "🐿️ Ringo",
+        "🐾 lala"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "He showed me the little robot that helps with his list. I offered to help too. My method is to stand by the food bowl and stare until the task completes itself. Very reliable. Never once needed a subtask.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    }
+  ],
   "elfi-whole-world": [
     {
       "author": "lala",
