@@ -45,10 +45,20 @@ const SECTIONS = [
   'pages/hhgdac.html',
 ].map((p) => SITE_URL + p)
 
-/** Keine Seiten: Build-Zubehör, Rohdaten, Assets und die Weiterleitungs-Stubs. */
+/**
+ * Keine Seiten: Build-Zubehör, Rohdaten, Assets und die Weiterleitungs-Stubs.
+ *
+ * Auch die ignorierten Verzeichnisse: Der Generator liest das Dateisystem, nicht
+ * den Index. Ein `npm run lhci` vor dem Build legt sonst seine HTML-Reports als
+ * Seiten der Site ab.
+ */
 const SKIP = [
   '.git',
   '.github',
+  '.lighthouseci',
+  '.playwright-mcp',
+  '.claude',
+  '.serena',
   'node_modules',
   'scripts',
   'docs',
@@ -100,8 +110,11 @@ function asAttribute(value) {
  */
 function writeButton(page, { url, prompt }) {
   const file = path.join(ROOT, page)
+  // defer: synchron geladen blockiert das Script den Parser mitten in der Hero
+  // und kostet 0,08 Lighthouse-Performance. Das Custom Element wird nachträglich
+  // aufgewertet, der Knopf funktioniert unverändert.
   const markup = [
-    '<script src="js/talkitover.js"></script>',
+    '<script src="js/talkitover.js" defer></script>',
     `<talk-it-over url="${url}" prompt="${asAttribute(prompt)}" data-prompt="site@1"></talk-it-over>`,
   ]
     .map((line) => `                        ${line}`)
