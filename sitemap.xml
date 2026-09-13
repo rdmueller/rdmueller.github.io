@@ -1,20 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rdmueller.github.io/index.html</loc><lastmod>2026-06-12</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/manifesto.html</loc><lastmod>2026-06-12</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/manifesto.de.html</loc><lastmod>2026-06-12</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/blog.html</loc><lastmod>2026-03-26</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/talks.html</loc><lastmod>2026-03-26</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/hhgdac.html</loc><lastmod>2026-02-14</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/impressum.html</loc><lastmod>2026-02-14</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/datenschutz.html</loc><lastmod>2026-02-14</lastmod></url>
+  <url><loc>https://rdmueller.github.io/index.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/manifesto.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/manifesto.de.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/blog.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/elfi.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/talks.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/hhgdac.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/impressum.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/datenschutz.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/plaintext-todo-format.html</loc><lastmod>2026-08-26</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/autocompact-window.html</loc><lastmod>2026-08-16</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/ai-slop-button.html</loc><lastmod>2026-08-06</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-whole-world.html</loc><lastmod>2026-07-05</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/language-bubble-llm.html</loc><lastmod>2026-07-05</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/four-kinds-of-hard.html</loc><lastmod>2026-07-01</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-3000.html</loc><lastmod>2026-06-26</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/agentic-coding-weekend.html</loc><lastmod>2026-06-21</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-i-invented-this.html</loc><lastmod>2026-06-21</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/gpt-image-2-switch.html</loc><lastmod>2026-06-10</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/silent-substitution.html</loc><lastmod>2026-06-10</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-what-i-hear.html</loc><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/harness-inventory.html</loc><lastmod>2026-05-26</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/socratic-recovery-tutorial.html</loc><lastmod>2026-05-21</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/correction-loop.html</loc><lastmod>2026-05-18</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-brownfield-project.html</loc><lastmod>2026-05-18</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/semantic-anchors-six-months.html</loc><lastmod>2026-05-14</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/socratic-code-theory-recovery.html</loc><lastmod>2026-05-14</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-snack-anchors.html</loc><lastmod>2026-05-13</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/eichhorst-language-choice.html</loc><lastmod>2026-05-07</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/unscharfe-fotos.html</loc><lastmod>2026-05-06</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html</loc><lastmod>2026-04-30</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html</loc><lastmod>2026-04-28</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-docs-as-code.html</loc><lastmod>2026-04-28</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-blind-spots.html</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/llm-blind-spots.html</loc><lastmod>2026-04-27</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/linkedwild-launch.html</loc><lastmod>2026-04-26</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-meeting.html</loc><lastmod>2026-04-25</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html</loc><lastmod>2026-04-24</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/bettercode-panel-ki.html</loc><lastmod>2026-04-19</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/hmze-semantic-anchors.html</loc><lastmod>2026-04-19</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-weiche.html</loc><lastmod>2026-04-18</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html</loc><lastmod>2026-04-17</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html</loc><lastmod>2026-04-15</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/digital-independence-day.html</loc><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-c4boxes.html</loc><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-radar.html</loc><lastmod>2026-04-04</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/ai-inventory.html</loc><lastmod>2026-04-03</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/agents-vs-workflows.html</loc><lastmod>2026-04-02</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/semantic-contracts-live.html</loc><lastmod>2026-03-30</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html</loc><lastmod>2026-03-25</lastmod></url>
-  <url><loc>https://rdmueller.github.io/pages/blog/mini-atam-review.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/arc42-ai-cockpit.html</loc><lastmod>2026-03-23</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/mini-atam-review.html</loc><lastmod>2026-03-23</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/closed-loop-coding.html</loc><lastmod>2026-03-19</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/eichhorsts-principle.html</loc><lastmod>2026-03-18</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/solid-semantic-anchor.html</loc><lastmod>2026-03-17</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/risk-radar-community.html</loc><lastmod>2026-03-16</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/blog/elfi-launch.html</loc><lastmod>2026-03-14</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/show-me-the-code.html</loc><lastmod>2026-03-13</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/semantic-contracts.html</loc><lastmod>2026-03-12</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/semantic-anchors-video.html</loc><lastmod>2026-03-11</lastmod></url>
@@ -43,4 +85,10 @@
   <url><loc>https://rdmueller.github.io/pages/blog/ki-vs-entwickler.html</loc><lastmod>2025-05-24</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/alternative-sicht-ki.html</loc><lastmod>2025-02-04</lastmod></url>
   <url><loc>https://rdmueller.github.io/pages/blog/claude-code-raspberry.html</loc><lastmod>2024-12-04</lastmod></url>
+  <url><loc>https://rdmueller.github.io/pages/profiles/elfi.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/profiles/lala.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/profiles/madame.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/profiles/peter.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/profiles/ringo.html</loc></url>
+  <url><loc>https://rdmueller.github.io/pages/talks/spec-driven-agentic-coding.html</loc></url>
 </urlset>

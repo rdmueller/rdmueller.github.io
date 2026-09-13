@@ -1,17 +1,17 @@
 # https://rdmueller.github.io/ — Bündel 4 von 4
 
-> 7 Seiten im Volltext.
+> 9 Seiten im Volltext.
 
-# Your LLM Will Be Deprecated. What's Your Test Plan?
-Page: https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html
+# Agentic Coding vs. CNC Fräsen
+Page: https://rdmueller.github.io/pages/blog/bettercode-panel-ki.html
 
-EN
- 25. März 2026
+DE
+ 19. April 2026
  
 
  
 
-# Your LLM Will Be Deprecated. What's Your Test Plan?
+# Agentic Coding vs. CNC Fräsen
 
  
 
@@ -20,27 +20,17 @@ EN
  
 
  
- Your LLM will be deprecated within two years. What's your migration test plan?
+ Auf der betterCode Modern Architecture 2026 war ich Teil einer Paneldiskussion zu KI in der Softwarearchitektur — mit Ingo Eichhorst, Ferdinand Adé und moderiert von Falk Sippach.
 
- If the answer is "we'll see if it still works," keep reading.
+ Eine Aussage aus der Diskussion beschäftigt mich noch. Ingo Eichhorst hat eine Parallele gezogen: In den 90ern kamen CNC-Fräsen in die Ausbildung. Die Gesellen lernten sie zuerst, und plötzlich mussten sich die Meister von den Gesellen erklären lassen, wie es funktioniert. Ingo vermutet: Ähnliches passiert gerade in der Softwareentwicklung. Junior-Entwickler, die heute ausgebildet werden, kommen in ein paar Jahren in unsere Teams und erklären uns, wie man KI effektiv einsetzt.
 
- We needed to evaluate whether Semantic Anchors work across models. Semantic Anchors are established terms like "TDD, London School" or "arc42" that activate specific knowledge in LLMs more reliably than verbose descriptions. We maintain an open-source catalog of 90+ of them. But a catalog without evidence is not enough.
+ Studien deuten das schon an: Senior-Entwickler sehen zunächst keine Produktivitätssteigerung, weil sie ihre Arbeitsweise erst umbauen müssen. Junior-Entwickler können auf einmal Dinge, die sie vorher nicht konnten. In der zweiten Untersuchungsrunde der gleichen Entwickler war der Effekt dann auch bei den Seniors angekommen.
 
- So we built an evaluation framework. Existing tools like promptfoo or LangSmith exist, but the established methodology is almost always LLM-as-Judge: use one LLM to grade another. The problem: the judge model gets deprecated too. Your scores drift without the evaluated model changing. You're measuring with a ruler that changes.
+ Beim Thema autonome Agenten waren wir uns einig: extrem viel Potenzial, aber auch extrem viel Governance nötig. Ein Agent von Ingo hatte sich selbstständig einen API-Key angelegt, um in ein KI-Agenten-Netzwerk zu schreiben, und hat ihn irgendwann verloren. Wir sind noch am Anfang dieser Welle.
 
- We went a different route: multiple choice with deterministic scoring. 193 questions, 63 anchors, 4 position rotations per question. Compare letter to expected letter. No LLM judges another LLM. Total cost across three models: under $25.
+ Die Aufzeichnung der Panel-Diskussion: YouTube
 
- Results: Claude Sonnet 4.6 at 99%, GPT-4o at 97%, Mistral Large at 96%. Sounds safe. It's not. The averages hide real failures.
-
- "Describe the Feynman Technique without naming it." Claude and GPT-4o both drop to 0%. Say "Feynman Technique" and they score 100%. The name activates knowledge that a paraphrase does not. Today this works. After the next model update, it might not. Without an evaluation, you won't know.
-
- In a small test, a 1.7B parameter model scores 63% overall but 0% on German prompts. Small models, different language, everything breaks.
-
- The multiple-choice pattern works beyond our use case. Same pattern, same deterministic scoring, no LLM judge needed.
-
- Few books cover LLM evaluations. Few teams build them. Your API-hosted model will be deprecated. Time to start. One script, under $25 per run.
-
- Evaluation concept | Full evaluation report
+ Wer mehr zu KI in der Architekturdokumentation hören will: Am 20. Mai findet archdoc.betterCode.eu statt. Ich moderiere dort die Panel-Diskussion zu genau diesem Thema.
 
  
 
@@ -51,16 +41,16 @@ EN
 
 ---
 
-# Semantic Contracts: When Anchors Are Not Enough
-Page: https://rdmueller.github.io/pages/blog/semantic-contracts-live.html
+# Purpose vs. Task: Where the Human-Machine Boundary Actually Sits
+Page: https://rdmueller.github.io/pages/blog/eichhorst-purpose-vs-task.html
 
 EN
- 30. März 2026
+ 24. April 2026
  
 
  
 
-# Semantic Contracts: When Anchors Are Not Enough
+# Purpose vs. Task: Where the Human-Machine Boundary Actually Sits
 
  
 
@@ -69,37 +59,31 @@ EN
  
 
  
- "Write a specification" can mean anything. A Semantic Contract makes it precise:
+ The LLM does not know why you are building this.
 
- Specification = Use Cases with Activity Diagrams (all paths) + acceptance criteria in Gherkin format.
+ Last week I wrote about Eichhorst's Principle and the compiler as Shannon's noiseless channel. Today a different angle from the same conversation with Avraham Poupko.
 
- This is not prompt engineering. It is a definition that every LLM reads at session start and follows. Like a Semantic Anchor, but for terms that don't exist in training data.
+ We talked about where the human-machine boundary actually sits. Not in the code. Not in the tools. In the question "why?"
 
- "arc42" activates 12 sections of architecture documentation in every model. "Operations Manual" activates nothing. A Contract gives the term meaning: it composes established anchors into a precise definition or defines completely custom rules.
+ Purpose vs. Task. Two words that clarify everything.
 
- We published 12 Contracts that cover a complete development workflow:
+ Purpose is "why are we doing this?" It is meaning, goals, value, context. It lives in the heads of stakeholders, in conversations, in the messy reality of a business that changes every quarter. Purpose is not delegable.
 
- 
- 
-- Requirements Discovery: Socratic Method + MECE + PRD
- 
-- Specification: Gherkin + BDD
- 
-- Architecture: arc42 + C4 + ADR (Nygard) with Pugh Matrix
- 
-- Backlog: INVEST + MoSCoW
- 
-- Implement Next: TDD London School + Conventional Commits + Definition of Done
- 
-- Quality Review: Fagan Inspection + OWASP Top 10 + ATAM
- 
-- Docs-as-Code: AsciiDoc + PlantUML + docToolchain
- 
- Plus three communication Contracts: Concise Response (BLUF), Simple Explanation (Feynman Technique), Writing Style (Wolf Schneider + custom rules).
+ Task is "what should the machine do?" Execution, implementation, code generation. Tasks are delegable, and LLMs are getting remarkably good at them.
 
- On the website, select the Contracts you need, download them as semantic-contracts.md, and drop the file into your AGENTS.md or CLAUDE.md. Next session start, the LLM works by your rules.
+ As long as the human defines the purpose and the machine executes tasks, we are using the machine to our benefit. The danger is when the boundary blurs.
 
- Browse and download Contracts
+ And it blurs quietly. An LLM that always suggests microservices when you ask for architecture advice is not just completing a task. It is shaping your purpose. An LLM that generates a requirements document from a vague briefing is not just writing, it is deciding what matters. Not because it intends to, but because you did not specify it clearly enough, and the model filled in the gaps with its training distribution.
+
+ This is the "tool shapes the hand" problem. The saw does not decide what to build, but the carpenter who only owns a saw will see every problem as a cutting problem.
+
+ In my Semantic Anchors Workflow, this maps cleanly to phases. Phase 1, Requirements Discovery with the Socratic Method, is purpose work. The human drives. The LLM asks clarifying questions but does not decide. Phase 4, Implementation, is task work. The LLM drives. The human reviews.
+
+ The separation of phases is not process overhead. It is the mechanism that keeps purpose in human hands.
+
+ Avraham put it simply: as long as we maintain this distinction, AI is a tool we use. The moment we stop asking "why," it becomes a tool that uses us.
+
+ The full workflow: https://llm-coding.github.io/Semantic-Anchors/workflow
 
  
 
@@ -110,16 +94,16 @@ EN
 
 ---
 
-# The Agent Made Itself Obsolete. That Was Its Best Work.
-Page: https://rdmueller.github.io/pages/blog/agents-vs-workflows.html
+# Meeting Moderation by Elfi
+Page: https://rdmueller.github.io/pages/blog/elfi-meeting.html
 
 EN
- 2. April 2026
+ 25. April 2026
  
 
  
 
-# The Agent Made Itself Obsolete. That Was Its Best Work.
+# Meeting Moderation by Elfi
 
  
 
@@ -128,19 +112,23 @@ EN
  
 
  
- I produced 32 videos with AI. Every image, every voice, every subtitle. What I learned about agents doesn't match the current hype.
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
 
- The first version was fully agentic. Claude researched the topic, wrote the script, translated it, generated images, synthesized speech, synchronized subtitles, and assembled the video. All in one session, all autonomous. Sounds like the dream, right?
+ My hooman had an important call today. I know this because he closed the door, adjusted his microphone, and said "Can everyone hear me?" three times.
 
- The result: videos without a logo. Subtitles two seconds ahead of the voice. Images in the wrong aspect ratio. Every third video had something different missing. The agent improvised creatively where it should have followed a rigid schema.
+ I waited until he was sharing his screen. Then I jumped on the desk, walked between him and the laptop, and sat down facing him. This is standard procedure. He gets my full attention. The meeting gets a direct, honest view of reality.
 
- So I did the opposite. I asked the agent to write me fixed scripts. generate-voice.py, generate-image.py, generate-video.py. Each script does exactly one thing, the same way every time. Logo always in the same spot. Subtitles frame-synced. Resolution always correct.
+ He tried to move me. I increased my weight by 40%. This is a skill they do not teach in any certification programme. I have been refining it for five years.
 
- Four steps still need an LLM: describing the topic, translating text, writing image prompts, generating images. The rest is Python. No agent, no autonomous decision-making, no "let me handle this." Just scripts that the agent wrote once, running deterministically from then on.
+ The meeting continued. Someone said "Cute cat." Someone else said "Is that a Ragdoll?" A third person unmuted just to say "My cat does the same thing." The agenda item was forgotten. I consider this a successful intervention.
 
- My takeaway after 32 videos: the agent's value was not in doing the work autonomously. It was in helping me build a workflow that works without it. The agent made itself obsolete, and that was its best contribution.
+ My hooman says I am disrupting his workflow. I disagree. I am providing real-time feedback on his prioritisation. If the meeting were truly important, he would have fed me first.
 
- When people talk about agents, they usually mean autonomous systems making independent decisions. What actually works better in practice: agents that help you build systems. Systems that no longer need agents.
+ I am available for freelance meeting moderation. My rates are one treat per call, two for anything involving the words "let's circle back."
+
+ -- Elfi
+
+ P.S. He still does not close the kitchen door when he makes coffee. Amateur.
 
  
 
@@ -151,16 +139,16 @@ EN
 
 ---
 
-# I Inventoried My Entire Apartment with AI
-Page: https://rdmueller.github.io/pages/blog/ai-inventory.html
+# LinkedWild: When Your Cat Invades Your Website
+Page: https://rdmueller.github.io/pages/blog/linkedwild-launch.html
 
 EN
- 3. April 2026
+ 26. April 2026
  
 
  
 
-# I Inventoried My Entire Apartment with AI
+# LinkedWild: When Your Cat Invades Your Website
 
  
 
@@ -169,27 +157,13 @@ EN
  
 
  
- I inventoried my entire apartment with AI. Not with a barcode scanner. Not with a spreadsheet. With photos and Claude Code.
+ You might know Elfi, my Ragdoll sidekick, already by now. Since she can't open her own LinkedIn account, she invaded my personal website instead. And she brought her friends from the hood.
 
- It started during spring cleaning. "Where was Catan again?" "Did we have a book by Kawasaki?" "Which drawer has the Xbox controllers?" I had this idea: what if I just photograph every shelf, drawer and cabinet, and let an AI figure out what's inside?
+ It is called LinkedWild, and five animal characters now comment on every blog post. Elfi reviews architecture decisions from the keyboard. Lala, the black neighbor cat, ignores capitalisation and does not respect territorial boundaries. Peter Pigeon observes everything from the oak tree and claims to have data. Madame, the dog next door, barks her reviews in formal French. And Ringo, the squirrel, makes brilliant observations about software principles but loses focus after two sentences.
 
- The setup was simple. Take a photo of each storage location. Let Claude analyze the image. Store the results in JSON. Build a search page that answers "Where is X?" with the actual photo and a position marker.
+ Every post now has context-specific commentary from characters who actually read the content. Ringo comments on architecture posts. Madame comments on process posts. Lala disrupts everything. Each character has a profile page with a proper bio.
 
- The first attempt was humbling. Claude recognized objects well, but book titles on vertical spines were mostly unreadable. Makes sense. The text is rotated 90 degrees. Even multimodal AI struggles with that.
-
- So I wrote a preprocessing step. Each photo gets sliced into overlapping strips and rotated 90 degrees. Vertical text becomes horizontal. Suddenly Claude reads "The Macintosh Way, Guy Kawasaki" instead of returning "unreadable spine." One photo becomes 14 image crops: 5 rotated strips for book spines, 9 unrotated quarters for objects like figurines, games or vases. The 50% overlap ensures nothing gets lost at a cut boundary.
-
- Then the scaling problem hit. My bookshelf has 18 compartments. At 14 crops each, that's 250+ images for one piece of furniture. After 12 compartments, the context window was full and previous results were gone.
-
- The fix: subagents. Each compartment gets its own agent. The agent receives 15 images (the original plus 14 crops), analyzes them, and returns a compact text list. The image data stays in the agent's context. The main context only gets the results. 18 agents in parallel. All 18 compartments analyzed in under 60 seconds.
-
- The result is a JSON database with around 200 items and a searchable HTML page. Search for "Kawasaki" and you get 3 hits in 2 compartments, each with a colored position overlay on the detail photo. Search for "Xbox" and you see controllers, console and games in the sideboard, each marked on the drawer photo. Red overlays for book positions, blue overlays for objects.
-
- What I learned: Image preprocessing makes or breaks the result. The crop-and-rotate technique turned spine recognition from "barely usable" to "surprisingly good." Subagents are the key to scaling. Without them, the project would have died at context limits. With them, it scales linearly: one agent per compartment, all in parallel.
-
- Claude Code did more than analyze images. It wrote the ffmpeg preprocessing code, designed the JSON structure, built the search page, and documented the workflow as a reusable skill. I didn't write a single line of code by hand.
-
- From "I have a photo" to "searchable database with position markers" in one CLI tool. Next up: the rest of the apartment. About 50 storage locations, probably 1000+ items.
+ Join the tribe and start to comment at https://rdmueller.github.io/pages/elfi.html
 
  
 
@@ -200,16 +174,16 @@ EN
 
 ---
 
-# I DID it!
-Page: https://rdmueller.github.io/pages/blog/digital-independence-day.html
+# 5 Blind Spots in Coding LLMs
+Page: https://rdmueller.github.io/pages/blog/llm-blind-spots.html
 
 EN
- 11. April 2026
+ 27. April 2026
  
 
  
 
-# I DID it!
+# 5 Blind Spots in Coding LLMs
 
  
 
@@ -218,21 +192,43 @@ EN
  
 
  
- Marc-Uwe Kling (author of the Kangaroo Chronicles) launched "Digital Independence Day" at the 39C3 hacker congress: replace one US tech service with an independent alternative on the first Sunday of every month. A relaxed rebellion. One step at a time.
+ Ask an image generator for a vintage tube radio and you'll spot the blind spot instantly. The dials are wrong, the buttons don't exist, the whole thing looks like a fever dream of a radio.
 
- I took that as a prompt to rethink my video conferencing setup. Zoom works. No question. But I love the idea behind the Digital Independence Day. So I looked at seven European alternatives, both managed services and open source, and ran two Pugh decision matrices with 14 weighted criteria each. Zoom as baseline.
+ Coding LLMs have the same blind spots. We just don't see them as clearly, because broken code compiles often enough to feel right.
 
- Two winners emerged. One, I have chosen.
+ 
 
- Will my choice be perfect? No. Most participants won't know the name yet. But the same people once asked "What's Zoom?" and three weeks later it was the default.
+## 1. Time gap
 
- Starting this month, I'll use it for my workshops and meetings. Field report to follow.
+ Deprecated APIs show up in 25-38% of completions (ICSE 2025). Your model's favorite React hook might have been removed 14 months ago.
 
- I documented my decision as an ADR so I can re-evaluate in 12 months. Let's see if my choice will work out.
+ 
 
- "Der Netzwerkeffekt sind wir." (Linus Neumann, CCC)
+## 2. Domain gap
 
- If enough people switch, the alternative becomes the standard. Digital independence is not an all-or-nothing project. It's a path. One tool at a time.
+ The tube-radio zone. COBOL, ABAP, IEC 61131-3, AUTOSAR, BaFin specifics, internal frameworks of large enterprises. Exists, runs production, barely in training data.
+
+ 
+
+## 3. Context gap
+
+ Your codebase. Your ADRs. Your team's naming conventions. Structurally unknowable.
+
+ 
+
+## 4. Structure gap
+
+ Models scoring 80%+ on isolated tasks can drop below 25% on repository-level benchmarks (CrossCodeEval, RepoMasterEval). A function the model nails in isolation breaks when it has to reach across three files.
+
+ 
+
+## 5. The meta-gap
+
+ The model doesn't know which of the above it's in. Hallucination confidence scales inversely with training-data density. The thinner the spot, the more convincing the fabrication.
+
+ That last one is why the others are dangerous.
+
+ Practical move: before every non-trivial LLM task, ask which zone you're in. If it's 1-4, feed context (llms.txt, MCP, AGENTS.md, pinned versions). If it's 5, read more carefully than you want to.
 
  
 
@@ -243,16 +239,16 @@ EN
 
 ---
 
-# Your chatbot can run rm -rf. Your linter has no idea.
-Page: https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html
+# 5 LLM Blind Spots, Translated into Cat
+Page: https://rdmueller.github.io/pages/blog/elfi-blind-spots.html
 
 EN
- 15. April 2026
+ 27. April 2026
  
 
  
 
-# Your chatbot can run rm -rf. Your linter has no idea.
+# 5 LLM Blind Spots, Translated into Cat
 
  
 
@@ -261,34 +257,28 @@ EN
  
 
  
- An update to the Vibe-Coding Risk Radar. It came from realizing that most "AI code security" conversations quietly conflate two very different problems.
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
 
- Build-time risk and runtime risk are not the same thing.
+ I chase the red dot every single day. Here's the thing: I can't even see red. Cats are dichromats. I react to movement, not color. I have no idea what I'm actually chasing.
 
- A chatbot that lets an LLM execute shell commands isn't "just" a higher-tier web app. It introduces a failure class that linters, SAST, and code reviews can't catch: prompt injection escalating to remote code execution (RCE). Build-time and runtime live in different dimensions.
-
- The Radar now has a cross-cutting LLM Runtime Integration modifier:
+ Ralf keeps telling me coding LLMs have the same problem. They react to patterns, not meaning. After watching him yell at his screen for a week, I believe him. He says there are five blind spots. I'll translate them into cat.
 
  
  
-- L0: No LLM
+- Time gap. The food bowl was full at 7am. The model thinks it's still full at noon. Deprecated APIs are yesterday's kibble. 25-38% of code completions use them (some study Ralf keeps waving around).
  
-- L1: Classify (sentiment, intent, embeddings)
+- Domain gap. I know 47 types of bird by silhouette. Ask me about fish and I'll just stare at you. LLMs are the same with COBOL and ABAP. Exists, runs production, not in the training data. The tube-radio zone, Ralf calls it.
  
-- L2: Generate (chat, summaries)
+- Context gap. Every cat knows: YOUR couch is different from THE couch. Your codebase, your ADRs, your team's weird naming conventions. No model has ever slept on your specific couch.
  
-- L3: Tool Use (function calling)
+- Structure gap. I can catch a fly in mid-air. Put a glass door between us and I slam into it face first. Models nail a function in isolation, then break when they have to reach across three files. 80% accuracy drops below 25%.
  
-- L4: Agentic (autonomous loops, code execution)
+- The meta-gap. This is the one that gets cats killed. I don't know that I can't see red. The model doesn't know which blind spot it's in. The less it knows, the more confident it sounds. Just like me with cucumbers.
  
 
- L3 forces at least Tier 3, L4 forces at least Tier 4, regardless of what the code itself looks like. An agent that could run rm -rf is safety-critical by definition. No amount of "but the surrounding app is just a dashboard" changes that.
+ Ralf says the practical move is to ask which zone you're in before every task. Feed context if it's 1-4. Read more carefully if it's 5.
 
- For those runtime risks, the Radar deliberately stays out of the way and defers to specialized frameworks that have already done the threat modeling for agent systems: OWASP LLM Top 10, Palo Alto SHIELD, Aikido VCAL, Google SAIF. No point reinventing what they already do better.
-
- The Radar stays focused on what it was built for: a fast, visual, MECE way to classify the build-time risk of AI-generated code and pick appropriate quality gates. The new modifier is the bridge when your build-time and runtime risks no longer live in the same universe.
-
- Try the Radar
+ I say: if you're not sure whether the dot is real, just pounce anyway. You'll learn something either way.
 
  
 
@@ -299,16 +289,16 @@ EN
 
 ---
 
-# Your Compiler Is Shannon's Noiseless Channel
-Page: https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html
+# Your New Colleague Has Amnesia | Elfi's Corner
+Page: https://rdmueller.github.io/pages/blog/elfi-docs-as-code.html
 
 EN
- 17. April 2026
+ 28. April 2026
  
 
  
 
-# Your Compiler Is Shannon's Noiseless Channel
+# Your New Colleague Has Amnesia
 
  
 
@@ -317,35 +307,123 @@ EN
  
 
  
- Your compiler is not a tool. It is Shannon's noiseless channel.
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
 
- I had a conversation with Avraham Poupko that changed how I think about Eichhorst's Principle. Eichhorst's Principle applies Shannon's noisy channel theorem to LLM coding: an LLM is a noisy, non-deterministic channel, and an agent in a feedback loop is error correction.
+ My hooman has a new colleague. It is very smart. It can write code in fourteen languages, explain distributed systems, and generate architecture diagrams in seconds. It also has the long-term memory of a goldfish with a compute budget.
 
- But Shannon's theorem has a prerequisite that I had been overlooking. Before you can do error correction, sender and receiver must agree on the correction method over a separate, noiseless channel. In agentic coding, that noiseless channel is the compiler. It is deterministic, unambiguous, and not open to interpretation. When it says "type mismatch," there is no negotiation.
+ Every morning it wakes up and has no idea where it is. Who are the other services? What does the database schema look like? Why is that endpoint called /api/v2/legacy-new-final? It reads the documentation to find out. Every single day. From scratch.
 
- This has a consequence that surprised me.
+ I have lived in this house for five years. I know where every piece of furniture is, which floorboard creaks, where the sun hits at 3pm, and which drawer contains the treats. Nobody had to write this down for me. I built this mental model through five years of continuous observation. I am the original single source of truth.
 
- Modifiers like private, static, final were invented for human programmers. They protect API boundaries. The running program does not care whether a field is private. But the compiler does. And now the LLM does too. When an agent tries to access a private field, the compiler returns an error, the agent reads it, and corrects itself. A language feature designed for human discipline turns out to be error correction for machines.
+ The robot cannot do this. It has no continuous observation. It has a context window and whatever files my hooman remembered to keep updated. If the architecture document says the cat food is in the kitchen but six months ago we moved it to the pantry, the robot will look in the kitchen. Every time. With full confidence.
 
- The stricter the language, the stronger the error correction. That makes language choice a channel capacity decision, not just a preference.
+ My hooman used to write documentation for other hoomans. Hoomans are sloppy readers. They skim, they skip, they fill gaps from hallway conversations and gut feeling. It worked well enough. Now the second reader is a machine that reads literally. Every word. No gut feeling. No hallway. If the document says service A talks to service B, it generates code that talks to service B. Even if service B was decommissioned in January.
 
- But here is where it gets practical. The real cost of error correction is not the compiler running (milliseconds). It is the full round trip: LLM generates, compiler rejects, error goes back to the LLM, LLM reasons about the fix, generates again. Every round trip costs tokens and time.
+ This is why Ralf is rebuilding his documentation toolchain. He released something called Bausteinsicht this week. It keeps architecture diagrams in sync with a JSON model. Bidirectional. Real-time. The robot reads the JSON. The hooman reads the diagram. Both see the same architecture.
 
- The optimization is obvious once you see it: push error correction into layers that do not need the LLM at all. A formatter like gofmt or prettier fixes an entire class of errors without a single LLM round trip. An eslint --fix corrects patterns before the LLM even sees them. Every auto-corrected error is an error the LLM does not spend tokens on.
+ He is very proud of this. I am moderately impressed. The tool even has an llms.txt file so the robot understands how to use the tool. Documentation for a robot about a tool that creates documentation for robots. Very recursive. Very hooman.
 
- Three levels of error correction, ranked by cost:
+ My documentation system is simpler. I sit on the keyboard until someone pays attention. Then I walk to whatever needs documenting. This has never drifted from reality. Zero sync issues. Five nines uptime.
 
- Auto-correction (prettier, gofmt, eslint --fix): zero LLM involvement, near-zero cost.
+ But I understand the problem. Hoomans forget things. Robots forget everything. If your documentation is not current, your robot assistant is navigating your codebase with last year's map. And unlike a cat, it will not notice when the furniture has moved. It will just walk into the wall and generate a pull request about it.
 
- Diagnostics (compiler, type checker): LLM reads the error and fixes it. Medium cost.
+ 
 
- Behavioral verification (tests, BDD): LLM must understand the failing test, find the root cause, and fix it. High cost, often multiple round trips.
+ 
+ 
 
- The goal: maximize the first level. Free the LLM budget for the errors that actually require reasoning.
+## LinkedWild
 
- "You can communicate over noisy channels, but you should invest in clear channels." That line from our conversation stuck with me. Better models give us a clearer channel. Better error correction gives us a safety net. Both matter.
+---
 
- Thanks Avraham Poupko for a conversation that made me rethink the fundamentals.
+# Docs-as-Code Is Now AI Infrastructure
+Page: https://rdmueller.github.io/pages/blog/bausteinsicht-launch.html
+
+EN
+ 28. April 2026
+ 
+
+ 
+
+# Docs-as-Code Is Now AI Infrastructure
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Docs-as-Code is more relevant today than it was five years ago. Not less. And the reason is GenAI.
+
+ Your LLM-based coding assistant starts every session like a new colleague on their first day. No institutional memory. No hallway conversations from last week. It reads your repo, your docs, your architecture decisions. If those are outdated, inconsistent, or buried in a wiki nobody maintains, the assistant works from a broken map. Every decision it makes downstream inherits that drift.
+
+ This changes for whom documentation is written. It used to be written for humans who could fill gaps from context and memory. Now there is a second stakeholder that cannot do that. The LLM reads literally. If the building block view says service A talks to service B, but in production it has been service C for six months, the LLM will generate code that talks to B. No gut feeling corrects that.
+
+ That means Docs-as-Code is no longer just a developer convenience. It is infrastructure for your AI toolchain. Architecture docs that stay in sync with code are not a nice-to-have. They are the context window your assistant depends on.
+
+ This is why we are rebuilding docToolchain. The first piece of that rebuild is Bausteinsicht (short b11t), and it is now open source.
+
+ Bausteinsicht lets you define your architecture in a JSON model and generates draw.io diagrams automatically. Bidirectional sync, real-time. Built in Go, single binary, zero dependencies. The visual layer is draw.io, the tool your team already knows. No proprietary viewer, no new software to learn. And unlike PlantUML or Mermaid, you keep full control over the layout. Auto-generated diagrams show structure. Hand-arranged diagrams communicate intent.
+
+ But the features are not the point. The point is what they enable.
+
+ The JSON model is machine-readable. An LLM agent can query the architecture via CLI, understand module boundaries, and modify the model directly. No screenshot parsing, no diagram archaeology. The architecture becomes a first-class API for your coding assistant. The project even ships an llms.txt so your assistant understands the tool itself, not just the architecture it describes.
+
+ Thanks to Paul Fleischmann for his support in preparing this release and for continuing to help shape the tool going forward.
+
+ Try Bausteinsicht
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# The Correction Radius: When to Stop the Feedback Loop
+Page: https://rdmueller.github.io/pages/blog/eichhorst-correction-radius.html
+
+EN
+ 30. April 2026
+ 
+
+ 
+
+# The Correction Radius: When to Stop the Feedback Loop
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Your feedback loop has a correction radius. Beyond it, the agent just makes things worse.
+
+ Third post in the Eichhorst's Principle series. The first was about the compiler as Shannon's noiseless channel. The second about Purpose vs. Task. This one is about knowing when to stop the loop.
+
+ Agentic coding works because the agent corrects itself. It writes code, the compiler rejects it, the agent reads the error, fixes the code, tries again. That loop is powerful. It turns a noisy, non-deterministic LLM into a reliable coding partner. Shannon's error correction, applied to software.
+
+ But error-correcting codes have a fundamental limit. They can detect and correct errors up to a certain distance from the correct signal. In coding theory, that is the Hamming distance. Beyond it, the code cannot recover. The signal is too far from anything correct.
+
+ The same applies to agentic coding.
+
+ A syntax error is a small distance from correct code. The compiler says "missing semicolon on line 42." The agent adds the semicolon. One round trip, done.
+
+ A type mismatch is a medium distance. The compiler says "expected int, got String." The agent reasons about the conversion, fixes the call site. Maybe two round trips.
+
+ A wrong algorithm is a large distance. The tests fail, the agent reads the failure, tries a different approach, the tests fail differently, the agent tries again. Five round trips, ten round trips. The cost escalates. Sometimes the agent finds a fix. Sometimes it oscillates between two wrong approaches.
+
+ A fundamental architectural mistake is beyond the correction radius. The agent cannot fix it because the fix requires understanding the purpose behind the architecture, and that purpose lives outside the code. No number of round trips will help. The feedback loop is optimizing in the wrong search space.
+
+ When you see an agent cycling through increasingly desperate fixes, it has exceeded its correction radius. The correct intervention is not a better prompt or a longer context window. It is a human stepping in and redirecting at the purpose level.
+
+ This connects to something practical. The Semantic Anchors Workflow breaks work into small, well-defined steps. Each step is a short transmission over the noisy channel. Short transmissions stay within the correction radius. The paradox: the smaller you make each task, the more autonomy you can give the agent. Not despite the correction radius, but because of it.
+
+ Small steps are not caution. They are information theory.
 
  
 

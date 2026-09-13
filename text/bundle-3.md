@@ -1,677 +1,6 @@
 # https://rdmueller.github.io/ — Bündel 3 von 4
 
-> 19 Seiten im Volltext.
-
-# Datenschutz
-Page: https://rdmueller.github.io/pages/datenschutz.html
-
-# Datenschutzerklärung
-
- 
- 
-
-## 1. Datenschutz auf einen Blick
-
- 
-
-### Allgemeine Hinweise
-
- 
- Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren
- personenbezogenen Daten passiert, wenn Sie diese Website besuchen.
- Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
- 
-
- 
-
-### Datenerfassung auf dieser Website
-
- 
- Wer ist verantwortlich für die Datenerfassung auf dieser Website?
-
- Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber.
- Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
- 
-
- 
- Wie erfassen wir Ihre Daten?
-
- Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen.
- Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
- Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst.
- Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
- 
-
- 
-
- 
- 
-
-## 2. Hosting
-
- 
- Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website
- erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v.a.
- um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten,
- Namen, Webseitenzugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
- 
-
- 
-
- 
- 
-
-## 3. Allgemeine Hinweise und Pflichtinformationen
-
- 
-
-### Datenschutz
-
- 
- Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
- Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
- Datenschutzvorschriften sowie dieser Datenschutzerklärung.
- 
-
- 
-
-### Hinweis zur verantwortlichen Stelle
-
- 
- Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
-
- Ralf D. Müller
-
- [Adresse]
-
- E-Mail: ralf.d.mueller@gmail.com
- 
-
- 
-
-### Widerruf Ihrer Einwilligung zur Datenverarbeitung
-
- 
- Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich.
- Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine
- formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten
- Datenverarbeitung bleibt vom Widerruf unberührt.
- 
-
- 
-
-### Beschwerderecht bei der zuständigen Aufsichtsbehörde
-
- 
- Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
- Aufsichtsbehörde zu.
- 
-
- 
-
- 
- 
-
-## 4. Datenerfassung auf dieser Website
-
- 
-
-### Server-Log-Dateien
-
- 
- Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
- Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
- 
-
- 
- 
-- Browsertyp und Browserversion
- 
-- verwendetes Betriebssystem
- 
-- Referrer URL
- 
-- Hostname des zugreifenden Rechners
- 
-- Uhrzeit der Serveranfrage
- 
-- IP-Adresse
- 
- 
- Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
- 
-
- 
-
- 
- 
-
-## 5. Web-Analyse mit GoatCounter
-
- 
- Diese Website nutzt GoatCounter,
- ein datenschutzfreundliches Web-Analyse-Werkzeug. GoatCounter setzt keine Cookies und
- erstellt keine Profile.
- 
-
- 
- Erfasst werden ausschließlich anonymisierte Aufrufdaten:
- 
-
- 
- 
-- aufgerufene Seite (URL-Pfad)
- 
-- Referrer (verweisende Seite)
- 
-- Browser und Betriebssystem (aus dem User-Agent)
- 
-- ungefähre Region anhand der IP (die IP selbst wird nicht gespeichert)
- 
- 
- Ein Tracking über mehrere Seitenaufrufe hinweg findet nicht statt. Die Daten werden
- auf europäischen Servern des Anbieters (Martin Tournoij, NL) verarbeitet.
- Rechtsgrundlage ist das berechtigte Interesse an der Reichweitenmessung
- (Art. 6 Abs. 1 lit. f DSGVO).
- 
-
- 
- Details und Opt-out:
- goatcounter.com/help/privacy.
- 
-
- 
-
- 
- 
-
-## 6. Externe Links
-
- 
- Diese Website enthält Links zu externen Websites (GitHub, LinkedIn, software-architektur.tv).
- Für die Datenschutzpraktiken dieser externen Websites sind wir nicht verantwortlich.
- Bitte informieren Sie sich auf den jeweiligen Websites über deren Datenschutzbestimmungen.
-
----
-
-# Risk Radar Skills: The Automation Layer
-Page: https://rdmueller.github.io/pages/blog/risk-radar-skills.html
-
-EN
- 17. Februar 2026
- 
-
- 
-
-# Risk Radar Skills: The Automation Layer
-
- 
-
- 
- 
- 
-
- 
- Last week I shared the Vibe-Coding Risk Radar — an interactive tool that helps you decide which AI-generated code needs review and which mitigations to apply.
-
- The feedback was clear: "Great visualization. But how do I actually implement this in my workflow?"
-
- So Claude and I built the automation layer.
-
- Two new Claude Code skills turn the Risk Radar from a decision framework into an executable workflow:
-
- `/risk-assess` — Interactive Risk Assessment → Scans your repository and detects modules automatically → Pattern-matches code types (auth, API, UI) with evidence → Asks targeted questions for uncertain dimensions → Calculates tier (1-4) based on highest risk dimension → Generates an ADR (nach Nygard) documenting the decision → Writes structured assessment to CLAUDE.md
-
- `/risk-mitigate` — Automated Mitigation Implementation → Reads assessment from CLAUDE.md → Detects existing tools (linters, SAST, pre-commit hooks) → Shows gap analysis by tier (cumulative requirements) → Installs missing measures interactively (with your confirmation) → Verifies each tool works, commits individually to git → Updates the ADR status from "Proposed" to "Accepted" → Keeps CLAUDE.md in sync with actual state
-
- The workflow now looks like this: 1. Run `/risk-assess` → Get tier classification + ADR 2. Security team reviews ADR → Approves assessment 3. Run `/risk-mitigate` → Tools get installed automatically 4. Security team reviews ADR again → Confirms mitigations active 5. Living documentation stays current with every change
-
- Examples of what gets automated: • Tier 1: ESLint, Prettier, Husky pre-commit, npm audit in CI • Tier 2: Semgrep SAST, fast-check property tests, SonarQube • Tier 3: Branch protection via GitHub API, fuzzing setup, CODEOWNERS • Tier 4: Formal verification guidance (Dafny, TLA+), MC/DC coverage
-
- The skills don't just recommend — they configure, verify, commit, and track. The ADR bridges developers and security teams with a shared artifact both can approve.
-
- This closes the loop: - Developers get automated tooling help - Security teams get transparent ADRs to review - The codebase documents its own risk posture - No Excel files that nobody reads
-
- Built with Semantic Anchors throughout (MECE, ADR nach Nygard, IEC 61508 SIL levels).
-
- Try it yourself: https://github.com/LLM-Coding/vibe-coding-risk-radar
-
- Skills live in `.claude/skills/` — install via `bash install-skills.sh`
-
- Your feedback made this better. If you try it, let me know what works and what doesn't!
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Documentation-as-Code Training with Socreatory
-Page: https://rdmueller.github.io/pages/blog/docs-as-code-training.html
-
-EN
- 24. Februar 2026
- 
-
- 
-
-# Documentation-as-Code Training with Socreatory
-
- 
-
- 
- 
- 
-
- 
- Architecture documentation that nobody reads. Diagrams that are outdated the moment you commit your code. README files scattered across repos with no single source of truth.
-
- Sound familiar?
-
- There's a better way: Documentation-as-Code.
-
- Treat your docs like source code — version-controlled, automated, continuously delivered. No more Word documents or wiki pages that diverge from reality.
-
- Falk Sippach and I are running a 2-day interactive workshop where you'll learn:
-
- → Markup languages and lightweight tools (AsciiDoc, Markdown) → Version control integration (Git workflows for docs) → Diagram creation (PlantUML, Kroki.io, Diagrams.net) → Documentation modularization (DRY principle for docs) → Reducing redundancy through source code integration → Automated build management (CI/CD for documentation) → Audience-specific output generation (HTML, PDF, microsites)
-
- Who should join: Developers, architects, and product managers who want quality documentation without the overhead. No specific tech stack required — the principles apply everywhere.
-
- What you get: - Pragmatic, modern approach to architecture documentation - Continuous delivery of current docs - Integration into your existing dev workflow - Exchange on current industry trends and tools
-
- I created docToolchain specifically to solve these problems. This workshop shows you how to use it (and alternatives) effectively.
-
- Available as online or in-house training.
-
- Interested? Check out the details: https://www.socreatory.com/de/trainings/docascode
-
- Questions? Drop them in the comments or DM me.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# devcontainer exec claude
-Page: https://rdmueller.github.io/pages/blog/devcontainer-claude.html
-
-EN
- 1. März 2026
- 
-
- 
-
-# devcontainer exec claude
-
- 
-
- 
- 
- 
-
- 
- devcontainer exec --workspace-folder . claude --dangerously-skip-permissions -p "do the needful"
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# 200-Line Prompt vs. 5 Words: Why Semantic Anchors Win
-Page: https://rdmueller.github.io/pages/blog/200-line-prompt.html
-
-EN
- 2. März 2026
- 
-
- 
-
-# 200-Line Prompt vs. 5 Words: Why Semantic Anchors Win
-
- 
-
- 
- 
- 
-
- 
- Why your 200-line prompt might be worse than five words
-
- I keep seeing the same pattern: someone asks an LLM to generate a detailed system prompt for coding assistance. The result is a 200-line wall of instructions -- "always write tests before implementation, use mock objects to isolate each unit from its dependencies, start from the outermost layer and work inward..."
-
- Then they paste that into their next session and wonder why the results are mediocre.
-
- Here's what I'd write instead: "Use TDD, London School."
-
- Five words. Better results. Because the model doesn't just follow a checklist -- it activates the entire concept: Freeman & Pryce, outside-in development, interaction-based verification, walking skeleton. The 200-line prompt tries to describe what the model already knows.
-
- This led me to curate Semantic Anchors -- an open-source catalog of 52 precision terms that reliably activate rich knowledge domains in LLMs.
-
- https://llm-coding.github.io/Semantic-Anchors/
-
- ---
-
- Why this works
-
- A good semantic anchor is a compression heuristic: maximum context transfer with minimal tokens. But not every term qualifies. Four quality criteria separate anchors from buzzwords:
-
- - Precise -- references a specific, well-bounded body of knowledge - Rich -- activates interconnected concepts, not just a single instruction - Consistent -- different users get similar results - Attributable -- traceable to concrete sources
-
- "Best practices" is not an anchor. "SOLID Principles" is one.
-
- ---
-
- Where it gets interesting: layering anchors
-
- "Create an arc42 architecture documentation with ADRs according to Nygard. Add a 3-point (-1,0,1) Pugh Matrix to the ADRs."
-
- Four anchors working together: arc42 provides structure, ADR the decision format, Pugh Matrix the evaluation method -- and "3-point (-1,0,1)" refines the variant. This isn't prompt engineering. This is professional communication with a machine that understands domain language.
-
- ---
-
- The limits
-
- A discussion with Edmund Siegfried Haselwanter challenged me on the failure modes. His core point: anchors are compression, not replacement for precise instructions.
-
- When your understanding diverges from the mainstream, you need to make that explicit. Example: you follow TDD London School but use Testcontainers instead of mocks for infrastructure boundaries. The model won't guess that.
-
- We converged on a layered approach:
-
- 1. Set the anchor as baseline 2. Make the delta explicit -- where you diverge from the mainstream 3. Verify -- test whether the model understands the concept as you intend it
-
- Same principle as any professional communication: assume shared vocabulary, make deviations explicit, verify understanding.
-
- The catalog is open source: https://github.com/LLM-Coding/Semantic-Anchors
-
- Do you consciously use semantic anchors in your work with LLMs?
-
- Thanks to Edmund Siegfried Haselwanter for sparking this post.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# 200 Stars on GitHub in 10 Days
-Page: https://rdmueller.github.io/pages/blog/200-stars.html
-
-EN
- 4. März 2026
- 
-
- 
-
-# 200 Stars on GitHub in 10 Days
-
- 
-
- 
- 
- 
-
- 
- 200 Stars on GitHub. In 10 days.
-
- Two weeks ago I published my first post about Semantic Anchors -- the idea that five precise words like "TDD, London School" can outperform a 200-line system prompt because they activate what the model already knows.
-
- The response blew me away. 200+ stars, mass of contributions, and discussions that pushed the concept further than I could have on my own.
-
- What started as a personal observation has become a community project: 52 curated anchors across software architecture, testing, design patterns, and development methodologies. Each one tested against the quality criteria (precise, rich, consistent, attributable).
-
- A few highlights from the contributions:
-
- - New anchors I hadn't considered - Quality improvements to existing entries - Thoughtful debates about what qualifies as an anchor vs. a buzzword
-
- Thank you to everyone who starred, contributed, or challenged the idea. Open source lives from exactly this.
-
- If you find Semantic Anchors useful in your daily work with LLMs, a star on GitHub helps the project reach more people: https://github.com/LLM-Coding/Semantic-Anchors
-
- What anchor would you add?
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Bausteinsicht: Architecture as Code with draw.io
-Page: https://rdmueller.github.io/pages/blog/bausteinsicht-drawio.html
-
-EN
- 5. März 2026
- 
-
- 
-
-# Bausteinsicht: Architecture as Code with draw.io
-
- 
-
- 
- 
- 
-
- 
- Introducing Bausteinsicht -- Architecture as Code with draw.io
-
- After years of building docToolchain, I kept running into the same problem: architecture diagrams that drift from reality the moment someone opens a diagramming tool.
-
- Bausteinsicht (short b11t) solves this with a different approach:
-
- Define your architecture in a simple JSON model. Get draw.io diagrams automatically -- and keep them in sync, bidirectionally.
-
- How it works: - You describe elements, relationships, and views in JSONC (JSON with comments + schema validation) - The CLI generates fully styled draw.io diagrams with zoom-based drill-down navigation - Edit in draw.io? Changes sync back to the model. Edit the model? Diagrams update. - Watch mode detects changes in real-time
-
- What makes it different: - No vendor lock-in -- draw.io files are open XML, your model is plain JSON - IDE-first -- JSON Schema gives you autocompletion and validation in any editor - LLM-friendly -- AI agents can read and modify architecture via CLI commands - Flexible hierarchy -- not limited to 4 C4 levels; define your own notation
-
- Built in Go, zero npm dependencies, runs as a single CLI binary.
-
- We just completed a thorough testing round (215 E2E tests) and fixed all reported bugs. The project includes arc42 documentation, ADRs, a security review, and a devcontainer for instant onboarding.
-
- Open-source release is coming soon -- stay tuned!
-
- If you're working on architecture-as-code, model-driven documentation, or diagram automation, I'd love to connect.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Socratic Method as a Semantic Anchor
-Page: https://rdmueller.github.io/pages/blog/socratic-method-anchor.html
-
-EN
- 8. März 2026
- 
-
- 
-
-# Socratic Method as a Semantic Anchor
-
- 
-
- 
- 
- 
-
- 
- How to use the Socratic Method as a Semantic Anchor for requirements
-
- Most developers start a new project by writing requirements. The problem: you're documenting assumptions you haven't questioned yet.
-
- Try this instead:
-
- "Use the Socratic Method to help me clarify requirements for [your project]."
-
- One sentence. The model won't list requirements -- it will ask questions that expose your blind spots. It activates the full concept: targeted questioning, challenging assumptions, productive use of not-knowing, dialogue-driven clarity.
-
- ---
-
- Layering anchors makes it stronger
-
- "Use the Socratic Method combined with MECE to clarify requirements for [project]. Challenge my assumptions before documenting anything."
-
- Two anchors working together: - Socratic Method -- asks instead of answers - MECE -- ensures questions cover all areas without overlap
-
- The result: structured questioning that systematically uncovers what you don't know yet.
-
- ---
-
- A concrete example
-
- Me: "Use the Socratic Method to help me clarify requirements for a CLI tool that generates draw.io diagrams from a JSON architecture model."
-
- The model asked: - "Who is the primary user -- an architect defining the model, or a developer consuming it?" - "When you say 'generates', do you mean one-time export or continuous sync?" - "What happens when someone edits the diagram in draw.io -- is that a valid workflow or a corruption?"
-
- That third question uncovered a requirement I hadn't considered: bidirectional sync. It became the core feature of the tool.
-
- ---
-
- The delta pattern
-
- Add constraints to prevent question overload:
-
- "Use the Socratic Method to clarify requirements. Focus on: stakeholder conflicts, implicit assumptions, and boundary conditions. Don't ask more than 3 questions at a time."
-
- The delta ("max 3 questions") keeps the dialogue productive instead of overwhelming.
-
- This follows the Anchor, Delta, Verify pattern: 1. Set the anchor -- activate the established concept 2. Make the delta explicit -- constrain to your context 3. Verify -- check if the questions actually expose assumptions
-
- ---
-
- "Socratic Method" is one of 52 curated Semantic Anchors -- precision terms that reliably activate rich knowledge domains in LLMs: https://github.com/LLM-Coding/Semantic-Anchors
-
- What's your go-to technique for uncovering hidden requirements?
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Vacuum Cleaner Philosophy: Duck Typing in Real Life
-Page: https://rdmueller.github.io/pages/blog/vacuum-cleaner-duck-typing.html
-
-EN
- 10. März 2026
- 
-
- 
-
-# Vacuum Cleaner Philosophy: Duck Typing in Real Life
-
- 
-
- 
- 
- 
-
- 
- My vacuum cleaner gets hungry.
-
- Sounds absurd? Think about it. It has an internal state (battery level) that constantly influences its behavior. It weighs "should I keep cleaning?" against "how far is the charging station?" Every decision is a trade-off between current task and energy reserves. That's functionally identical to hunger. But we refuse to call it that, because we've defined hunger as something only humans can feel. Same with intelligence, same with creativity.
-
- Watch what happens when AI reaches a milestone. The Turing Test was proposed in 1950 as the ultimate measure of machine intelligence. It seemed impossible at the time, so it became the goalpost. Now that LLMs pass it, we say "well, that wasn't real intelligence anyway." The goalposts keep moving. "It's just pattern matching." So is most human cognition. "It's just recombination." So is human creativity. Every time machines reach a bar we've set, we raise it and claim the old bar never counted.
-
- A developer in a LinkedIn comment told me yesterday that LLMs are like "monkeys producing Shakespeare." He's deeply technical, understands transformer architecture, and has programmed similar models himself. His argument is purely about mechanism: "It's just token prediction, therefore it can't be intelligent." But by that logic, your brain is just neurons firing electrochemical signals. Does that mean you can't be intelligent either? The mechanism tells you very little about what emerges from it.
-
- I've started thinking about this in terms of duck typing. If it writes working code, finds bugs, creates architecture plans, knows when it's done, and refuses to help with unethical requests... does it matter what we call it? Maybe what AI does is something new that doesn't fit our old categories. We only have two boxes for it: "just a tool" and "truly intelligent." And when something doesn't fit either box, most people force it into "just a tool" because the alternative is uncomfortable.
-
- Don't take this too seriously. It's a thought experiment. It makes zero practical difference whether we call a low battery "hunger" or just "a low battery." The vacuum behaves the same either way. But the words we choose reveal something about us: how we draw the line between "real" and "just mechanical," and why we're so invested in keeping that line exactly where it is.
-
- My vacuum cleaner doesn't care what we call its hunger. It just goes to the charging station when it needs to.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# The IDE Is Dead
-Page: https://rdmueller.github.io/pages/blog/ide-is-dead.html
-
-EN
- 10. März 2026
- 
-
- 
-
-# The IDE Is Dead
-
- 
-
- 
- 
- 
-
- 
- The IDE Is Dead. We Just Haven't Noticed Yet.
-
- One golden rule of agentic coding: Never place your cursor in the editor.
-
- Always tell the AI what to change. Never touch the code yourself. Why? Because every manual edit breaks the AI's context.
-
- So you stop editing.
-
- But then... what is the IDE still doing for you?
-
- Code review? The AI does that. Debugging? The AI does that. Refactoring? The AI does that. Previewing artifacts? I tell the AI how to render a view and get it in the browser.
-
- I literally ran a Slidev presentation server from my terminal last night. No IDE involved. When I needed changes to the slides, I described them in natural language. Done.
-
- The IDE has become a spectator in its own stadium.
-
- Surveys have shown for years that IDEs like IntelliJ are losing users. Most migrated to VS Code. But here's the thing: VS Code is next.
-
- When developers embrace agentic coding, VS Code degrades to a glorified preview window. You don't use its editing features. You don't use its refactoring tools. You don't even use its debugger. You use the terminal. And a browser.
-
- This is genuinely sad for some brilliant work. Alexander Schwartz's Asciidoctor plugin for IntelliJ, for example, is a masterpiece of IDE integration with features no browser can match. Years of craft, potentially obsoleted not by a better tool, but by a paradigm shift that makes the whole category irrelevant.
-
- But that's how technology works. The best horse carriage manufacturer didn't become the best car manufacturer.
-
- The question isn't whether IDEs will disappear. The question is what replaces them.
-
- My bet: a thin terminal + browser combo. The AI orchestrates. You review. The browser renders.
-
- The "Integrated" in IDE meant integrating everything into one tool. Agentic coding disintegrates that. And that's fine.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
+> 21 Seiten im Volltext.
 
 # Semantic Anchors Video Series
 Page: https://rdmueller.github.io/pages/blog/semantic-anchors-video.html
@@ -790,6 +119,55 @@ EN
  Now you can argue that my side-projects are not complex. Fair point. Without the LLM, I would never have invested the time to build them. But these tools are useful, self-contained modules. And we always tried to build software modular. So if you want to see something more complex, combine more modules.
 
  Swipe through the carousel for the details. And if you want to try it yourself: DM me and I'll share one of my three referral tokens with the first to reach out.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Hello, World. I am Elfi Wang.
+Page: https://rdmueller.github.io/pages/blog/elfi-launch.html
+
+EN
+ 14. März 2026
+ 
+
+ 
+
+# Hello, World. I am Elfi Wang.
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
+
+ Hello, World. I am Elfi Wang.
+
+ I am a Ragdoll. Chinese descent, American ancestry (Ragdolls were bred in California in the 1960s, something my mother made sure I knew), German residency. A citizen of nowhere in particular, napping everywhere on principle.
+
+ Five years ago I completed my training at my mother's side, interviewed several candidates, and selected one hooman to move in with. He calls himself a Software Architect. I call him The Provider. We have a working arrangement.
+
+ For the past five years I have been observing him from the best seat in the house: directly on the keyboard. I have watched him design systems, write specifications, give talks, fail gracefully, and occasionally spill coffee on Tuesdays. I have opinions.
+
+ I am taking over this corner of the website because I am tired of being a sidekick in his posts. I appear in the background. I sit on the desk. Sometimes a paw is visible. People comment "cute cat" and move on. That is not the full picture.
+
+ The full picture is that I have been reviewing his work. Some of it is good. Some of it is worse than he thinks. And some of it would be considerably worse without my supervision.
+
+ This page is where I share what I see. My framework is simple. If it moves predictably, I observe it. If it moves unpredictably, I hide under the bed. If it does not move at all, I sit on it and claim it as my own.
+
+ I post on Fridays. The hooman thinks he is in charge of this website. He is not.
+
+ -- Elfi
+
+ P.S. He figured it out. He usually does. But by then I had already invited the entire neighborhood.
 
  
 
@@ -1053,6 +431,552 @@ EN
 
  Stop scrolling through generated source files. Start reading the architecture.
 
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Your LLM Will Be Deprecated. What's Your Test Plan?
+Page: https://rdmueller.github.io/pages/blog/semantic-anchors-evaluation.html
+
+EN
+ 25. März 2026
+ 
+
+ 
+
+# Your LLM Will Be Deprecated. What's Your Test Plan?
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Your LLM will be deprecated within two years. What's your migration test plan?
+
+ If the answer is "we'll see if it still works," keep reading.
+
+ We needed to evaluate whether Semantic Anchors work across models. Semantic Anchors are established terms like "TDD, London School" or "arc42" that activate specific knowledge in LLMs more reliably than verbose descriptions. We maintain an open-source catalog of 90+ of them. But a catalog without evidence is not enough.
+
+ So we built an evaluation framework. Existing tools like promptfoo or LangSmith exist, but the established methodology is almost always LLM-as-Judge: use one LLM to grade another. The problem: the judge model gets deprecated too. Your scores drift without the evaluated model changing. You're measuring with a ruler that changes.
+
+ We went a different route: multiple choice with deterministic scoring. 193 questions, 63 anchors, 4 position rotations per question. Compare letter to expected letter. No LLM judges another LLM. Total cost across three models: under $25.
+
+ Results: Claude Sonnet 4.6 at 99%, GPT-4o at 97%, Mistral Large at 96%. Sounds safe. It's not. The averages hide real failures.
+
+ "Describe the Feynman Technique without naming it." Claude and GPT-4o both drop to 0%. Say "Feynman Technique" and they score 100%. The name activates knowledge that a paraphrase does not. Today this works. After the next model update, it might not. Without an evaluation, you won't know.
+
+ In a small test, a 1.7B parameter model scores 63% overall but 0% on German prompts. Small models, different language, everything breaks.
+
+ The multiple-choice pattern works beyond our use case. Same pattern, same deterministic scoring, no LLM judge needed.
+
+ Few books cover LLM evaluations. Few teams build them. Your API-hosted model will be deprecated. Time to start. One script, under $25 per run.
+
+ Evaluation concept | Full evaluation report
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Semantic Contracts: When Anchors Are Not Enough
+Page: https://rdmueller.github.io/pages/blog/semantic-contracts-live.html
+
+EN
+ 30. März 2026
+ 
+
+ 
+
+# Semantic Contracts: When Anchors Are Not Enough
+
+ 
+
+ 
+ 
+ 
+
+ 
+ "Write a specification" can mean anything. A Semantic Contract makes it precise:
+
+ Specification = Use Cases with Activity Diagrams (all paths) + acceptance criteria in Gherkin format.
+
+ This is not prompt engineering. It is a definition that every LLM reads at session start and follows. Like a Semantic Anchor, but for terms that don't exist in training data.
+
+ "arc42" activates 12 sections of architecture documentation in every model. "Operations Manual" activates nothing. A Contract gives the term meaning: it composes established anchors into a precise definition or defines completely custom rules.
+
+ We published 12 Contracts that cover a complete development workflow:
+
+ 
+ 
+- Requirements Discovery: Socratic Method + MECE + PRD
+ 
+- Specification: Gherkin + BDD
+ 
+- Architecture: arc42 + C4 + ADR (Nygard) with Pugh Matrix
+ 
+- Backlog: INVEST + MoSCoW
+ 
+- Implement Next: TDD London School + Conventional Commits + Definition of Done
+ 
+- Quality Review: Fagan Inspection + OWASP Top 10 + ATAM
+ 
+- Docs-as-Code: AsciiDoc + PlantUML + docToolchain
+ 
+ Plus three communication Contracts: Concise Response (BLUF), Simple Explanation (Feynman Technique), Writing Style (Wolf Schneider + custom rules).
+
+ On the website, select the Contracts you need, download them as semantic-contracts.md, and drop the file into your AGENTS.md or CLAUDE.md. Next session start, the LLM works by your rules.
+
+ Browse and download Contracts
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# The Agent Made Itself Obsolete. That Was Its Best Work.
+Page: https://rdmueller.github.io/pages/blog/agents-vs-workflows.html
+
+EN
+ 2. April 2026
+ 
+
+ 
+
+# The Agent Made Itself Obsolete. That Was Its Best Work.
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I produced 32 videos with AI. Every image, every voice, every subtitle. What I learned about agents doesn't match the current hype.
+
+ The first version was fully agentic. Claude researched the topic, wrote the script, translated it, generated images, synthesized speech, synchronized subtitles, and assembled the video. All in one session, all autonomous. Sounds like the dream, right?
+
+ The result: videos without a logo. Subtitles two seconds ahead of the voice. Images in the wrong aspect ratio. Every third video had something different missing. The agent improvised creatively where it should have followed a rigid schema.
+
+ So I did the opposite. I asked the agent to write me fixed scripts. generate-voice.py, generate-image.py, generate-video.py. Each script does exactly one thing, the same way every time. Logo always in the same spot. Subtitles frame-synced. Resolution always correct.
+
+ Four steps still need an LLM: describing the topic, translating text, writing image prompts, generating images. The rest is Python. No agent, no autonomous decision-making, no "let me handle this." Just scripts that the agent wrote once, running deterministically from then on.
+
+ My takeaway after 32 videos: the agent's value was not in doing the work autonomously. It was in helping me build a workflow that works without it. The agent made itself obsolete, and that was its best contribution.
+
+ When people talk about agents, they usually mean autonomous systems making independent decisions. What actually works better in practice: agents that help you build systems. Systems that no longer need agents.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# I Inventoried My Entire Apartment with AI
+Page: https://rdmueller.github.io/pages/blog/ai-inventory.html
+
+EN
+ 3. April 2026
+ 
+
+ 
+
+# I Inventoried My Entire Apartment with AI
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I inventoried my entire apartment with AI. Not with a barcode scanner. Not with a spreadsheet. With photos and Claude Code.
+
+ It started during spring cleaning. "Where was Catan again?" "Did we have a book by Kawasaki?" "Which drawer has the Xbox controllers?" I had this idea: what if I just photograph every shelf, drawer and cabinet, and let an AI figure out what's inside?
+
+ The setup was simple. Take a photo of each storage location. Let Claude analyze the image. Store the results in JSON. Build a search page that answers "Where is X?" with the actual photo and a position marker.
+
+ The first attempt was humbling. Claude recognized objects well, but book titles on vertical spines were mostly unreadable. Makes sense. The text is rotated 90 degrees. Even multimodal AI struggles with that.
+
+ So I wrote a preprocessing step. Each photo gets sliced into overlapping strips and rotated 90 degrees. Vertical text becomes horizontal. Suddenly Claude reads "The Macintosh Way, Guy Kawasaki" instead of returning "unreadable spine." One photo becomes 14 image crops: 5 rotated strips for book spines, 9 unrotated quarters for objects like figurines, games or vases. The 50% overlap ensures nothing gets lost at a cut boundary.
+
+ Then the scaling problem hit. My bookshelf has 18 compartments. At 14 crops each, that's 250+ images for one piece of furniture. After 12 compartments, the context window was full and previous results were gone.
+
+ The fix: subagents. Each compartment gets its own agent. The agent receives 15 images (the original plus 14 crops), analyzes them, and returns a compact text list. The image data stays in the agent's context. The main context only gets the results. 18 agents in parallel. All 18 compartments analyzed in under 60 seconds.
+
+ The result is a JSON database with around 200 items and a searchable HTML page. Search for "Kawasaki" and you get 3 hits in 2 compartments, each with a colored position overlay on the detail photo. Search for "Xbox" and you see controllers, console and games in the sideboard, each marked on the drawer photo. Red overlays for book positions, blue overlays for objects.
+
+ What I learned: Image preprocessing makes or breaks the result. The crop-and-rotate technique turned spine recognition from "barely usable" to "surprisingly good." Subagents are the key to scaling. Without them, the project would have died at context limits. With them, it scales linearly: one agent per compartment, all in parallel.
+
+ Claude Code did more than analyze images. It wrote the ffmpeg preprocessing code, designed the JSON structure, built the search page, and documented the workflow as a reusable skill. I didn't write a single line of code by hand.
+
+ From "I have a photo" to "searchable database with position markers" in one CLI tool. Next up: the rest of the apartment. About 50 storage locations, probably 1000+ items.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# The Cat Risk Framework
+Page: https://rdmueller.github.io/pages/blog/elfi-radar.html
+
+EN
+ 4. April 2026
+ 
+
+ 
+
+# The Cat Risk Framework
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
+
+ Yesterday the hooman gave a talk about something called the Vibe-Coding Risk Radar. I attended. I had to, really. The beamer was on my side of the table.
+
+ He spent a long time explaining five dimensions and four tiers and something called an "LLM Runtime Integration modifier". The audience nodded politely.
+
+ When he was finished I walked up to the screen and offered my own framework. It has three tiers and it fits on a single paw.
+
+ Tier 1: If it does not move, ignore it.
+
+ Tier 2: If it moves predictably, watch it from a distance.
+
+ Tier 3: If it moves unpredictably, hide under the bed.
+
+ The hooman's command-line agents are Tier 3. I have been telling him this for months. He keeps typing things into them anyway.
+
+ The audience laughed. I am not sure why. My framework is objectively simpler, and it has been field-tested on vacuum cleaners, delivery persons, and one very suspicious cucumber. The hooman's framework has only been tested on software.
+
+ I am releasing my framework under the Cat License (CC-BY-PURR). Attribution is not strictly required but will be noticed.
+
+ -- Elfi
+
+ P.S. The hooman is fine. He sat in the front row and took notes.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Boxes and Lines: A Feline Guide to C4
+Page: https://rdmueller.github.io/pages/blog/elfi-c4boxes.html
+
+EN
+ 11. April 2026
+ 
+
+ 
+
+# Boxes and Lines: A Feline Guide to C4
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
+
+ Today the hooman tried to explain C4 diagrams to me. He said they are called "Boxes and Lines."
+
+ I have been an expert in Boxes and Lines for five years. My credentials are impeccable. I sit in boxes. I walk on lines. I have never met a diagram I could not improve by sitting on it.
+
+ He showed me the four levels.
+
+ Level 1: Context. I am the context. Everything in this household exists in relation to me.
+
+ Level 2: Container. I prefer cardboard. The hooman prefers Docker. We have agreed to disagree, though I notice he has never once tried sitting in a Docker container. His loss.
+
+ Level 3: Component. I review every component by sitting on it. If it supports my weight, it is production-ready. If it does not, it needs refactoring.
+
+ Level 4: Code. This is where I draw the line. Literally. With my tail. Across the keyboard. The hooman calls this "a merge conflict." I call it an editorial decision.
+
+ He asked me to stop walking on his architecture diagrams. I told him they were improved by the paw prints. He did not agree. But he also did not move me.
+
+ I am now offering C4 consulting. Boxes supplied by the client. Lines drawn at my discretion.
+
+ -- Elfi
+
+ P.S. Whoever invented this model: it is sound. It just needed a feline perspective.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# I DID it!
+Page: https://rdmueller.github.io/pages/blog/digital-independence-day.html
+
+EN
+ 11. April 2026
+ 
+
+ 
+
+# I DID it!
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Marc-Uwe Kling (author of the Kangaroo Chronicles) launched "Digital Independence Day" at the 39C3 hacker congress: replace one US tech service with an independent alternative on the first Sunday of every month. A relaxed rebellion. One step at a time.
+
+ I took that as a prompt to rethink my video conferencing setup. Zoom works. No question. But I love the idea behind the Digital Independence Day. So I looked at seven European alternatives, both managed services and open source, and ran two Pugh decision matrices with 14 weighted criteria each. Zoom as baseline.
+
+ Two winners emerged. One, I have chosen.
+
+ Will my choice be perfect? No. Most participants won't know the name yet. But the same people once asked "What's Zoom?" and three weeks later it was the default.
+
+ Starting this month, I'll use it for my workshops and meetings. Field report to follow.
+
+ I documented my decision as an ADR so I can re-evaluate in 12 months. Let's see if my choice will work out.
+
+ "Der Netzwerkeffekt sind wir." (Linus Neumann, CCC)
+
+ If enough people switch, the alternative becomes the standard. Digital independence is not an all-or-nothing project. It's a path. One tool at a time.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Your chatbot can run rm -rf. Your linter has no idea.
+Page: https://rdmueller.github.io/pages/blog/risk-radar-runtime-modifier.html
+
+EN
+ 15. April 2026
+ 
+
+ 
+
+# Your chatbot can run rm -rf. Your linter has no idea.
+
+ 
+
+ 
+ 
+ 
+
+ 
+ An update to the Vibe-Coding Risk Radar. It came from realizing that most "AI code security" conversations quietly conflate two very different problems.
+
+ Build-time risk and runtime risk are not the same thing.
+
+ A chatbot that lets an LLM execute shell commands isn't "just" a higher-tier web app. It introduces a failure class that linters, SAST, and code reviews can't catch: prompt injection escalating to remote code execution (RCE). Build-time and runtime live in different dimensions.
+
+ The Radar now has a cross-cutting LLM Runtime Integration modifier:
+
+ 
+ 
+- L0: No LLM
+ 
+- L1: Classify (sentiment, intent, embeddings)
+ 
+- L2: Generate (chat, summaries)
+ 
+- L3: Tool Use (function calling)
+ 
+- L4: Agentic (autonomous loops, code execution)
+ 
+
+ L3 forces at least Tier 3, L4 forces at least Tier 4, regardless of what the code itself looks like. An agent that could run rm -rf is safety-critical by definition. No amount of "but the surrounding app is just a dashboard" changes that.
+
+ For those runtime risks, the Radar deliberately stays out of the way and defers to specialized frameworks that have already done the threat modeling for agent systems: OWASP LLM Top 10, Palo Alto SHIELD, Aikido VCAL, Google SAIF. No point reinventing what they already do better.
+
+ The Radar stays focused on what it was built for: a fast, visual, MECE way to classify the build-time risk of AI-generated code and pick appropriate quality gates. The new modifier is the bridge when your build-time and runtime risks no longer live in the same universe.
+
+ Try the Radar
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Your Compiler Is Shannon's Noiseless Channel
+Page: https://rdmueller.github.io/pages/blog/eichhorst-noiseless-channel.html
+
+EN
+ 17. April 2026
+ 
+
+ 
+
+# Your Compiler Is Shannon's Noiseless Channel
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Your compiler is not a tool. It is Shannon's noiseless channel.
+
+ I had a conversation with Avraham Poupko that changed how I think about Eichhorst's Principle. Eichhorst's Principle applies Shannon's noisy channel theorem to LLM coding: an LLM is a noisy, non-deterministic channel, and an agent in a feedback loop is error correction.
+
+ But Shannon's theorem has a prerequisite that I had been overlooking. Before you can do error correction, sender and receiver must agree on the correction method over a separate, noiseless channel. In agentic coding, that noiseless channel is the compiler. It is deterministic, unambiguous, and not open to interpretation. When it says "type mismatch," there is no negotiation.
+
+ This has a consequence that surprised me.
+
+ Modifiers like private, static, final were invented for human programmers. They protect API boundaries. The running program does not care whether a field is private. But the compiler does. And now the LLM does too. When an agent tries to access a private field, the compiler returns an error, the agent reads it, and corrects itself. A language feature designed for human discipline turns out to be error correction for machines.
+
+ The stricter the language, the stronger the error correction. That makes language choice a channel capacity decision, not just a preference.
+
+ But here is where it gets practical. The real cost of error correction is not the compiler running (milliseconds). It is the full round trip: LLM generates, compiler rejects, error goes back to the LLM, LLM reasons about the fix, generates again. Every round trip costs tokens and time.
+
+ The optimization is obvious once you see it: push error correction into layers that do not need the LLM at all. A formatter like gofmt or prettier fixes an entire class of errors without a single LLM round trip. An eslint --fix corrects patterns before the LLM even sees them. Every auto-corrected error is an error the LLM does not spend tokens on.
+
+ Three levels of error correction, ranked by cost:
+
+ Auto-correction (prettier, gofmt, eslint --fix): zero LLM involvement, near-zero cost.
+
+ Diagnostics (compiler, type checker): LLM reads the error and fixes it. Medium cost.
+
+ Behavioral verification (tests, BDD): LLM must understand the failing test, find the root cause, and fix it. High cost, often multiple round trips.
+
+ The goal: maximize the first level. Free the LLM budget for the errors that actually require reasoning.
+
+ "You can communicate over noisy channels, but you should invest in clear channels." That line from our conversation stuck with me. Better models give us a clearer channel. Better error correction gives us a safety net. Both matter.
+
+ Thanks Avraham Poupko for a conversation that made me rethink the fundamentals.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Digital Independence: A Cat's Decision
+Page: https://rdmueller.github.io/pages/blog/elfi-weiche.html
+
+EN
+ 18. April 2026
+ 
+
+ 
+
+# Digital Independence: A Cat's Decision
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
+
+ Last week the hooman posted about switching his video conferencing tool. He called it "Digital Independence." He used a railway metaphor. He even posed next to a lever.
+
+ What he did not mention is that I had already made the decision.
+
+ I sat on the lever three days before he wrote the post. He interpreted this as "the cat is in the way again." I was providing architectural guidance. The direction was clear. He just needed time to catch up.
+
+ This happens more often than you would think. He spends hours evaluating tools with weighted matrices and decision frameworks. I spend three seconds sitting on the answer. We arrive at the same conclusion. My method scales better.
+
+ I have reviewed his ADR afterwards. Fourteen criteria. Weighted scores. A baseline comparison. It is thorough work. But if he had consulted me earlier, I could have saved him an afternoon. The correct tool is always the one the cat sat on first.
+
+ I do not charge for architectural consulting. But I do expect the sunny spot by the window to remain unobstructed during business hours.
+
+ -- Elfi
+
+ P.S. He still uses Zoom for the free tier. I am watching him.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Agentic Coding mit Magic Spells: Semantic Anchors
+Page: https://rdmueller.github.io/pages/blog/hmze-semantic-anchors.html
+
+DE
+ 19. April 2026
+ 
+
+ 
+
+# Agentic Coding mit Magic Spells: Semantic Anchors
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Am Freitag war ich zu Gast bei HMZE Beyond Vibe Coding. Stefan Schmidt hatte in einer der letzten Folgen Semantic Anchors mal als "Magic Spells" beschrieben, und ich finde, das trifft es sehr gut.
+
+ Den Ausgangspunkt hatte ich auf LinkedIn: Posts über AI, die alles macht, Swarms die über Nacht laufen, Code der morgens fertig ist. Ich konnte es nicht glauben. Also habe ich mir das Spark Framework von Reuven Cohen angeschaut. Kein 150-Zeilen-Prompt, der Test-Driven Development erklärt. Nur drei Wörter: "TDD London School." Das reichte.
+
+ Der Begriff hat im Modell eine Wissensinsel aktiviert. London School heißt: Mocks first, Outside-in-Design, Tests definieren die Schnittstelle. Das alles steckt in diesem einen Begriff, weil er in den Trainingsdaten gut definiert ist. Die KI weiß, was gemeint ist, ohne dass ich es erklären muss.
+
+ Das lässt sich kombinieren. "arc42" gibt 12 Kapitel Struktur. "ADRs nach Nygard" gibt ein präzises Format für Architekturentscheidungen. "3-Punkt Pugh Matrix" fügt eine Entscheidungsmatrix hinzu. Drei Anker in einem Satz, und ich habe präziser beschrieben, wie meine Architekturdokumentation aussehen soll, als es 300 Zeilen Prompt könnten.
+
+ Der Vorteil gegenüber dem langen Prompt: "TDD London School" ist wartbar. Ich sehe, warum das Modell sich so verhält. Ich kann gezielt eingreifen. Und die Begriffe funktionieren modellübergreifend, weil sie in den Trainingsdaten stabil verankert sind.
+
+ Die vollständige Episode gibt es hier:
+
+ 
+ 
+- YouTube
+ 
+- Spotify
+ 
  
 
  

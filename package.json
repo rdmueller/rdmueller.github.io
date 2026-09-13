@@ -5,8 +5,9 @@
   "scripts": {
     "build:css": "cleancss -o css/style.min.css css/style.css",
     "build:images": "node scripts/optimize-images.mjs",
+    "build:sitemap": "node scripts/generate-sitemap.mjs",
     "build:talkitover": "node scripts/talkitover.config.mjs",
-    "build": "npm run build:css && npm run build:images && npm run build:talkitover",
+    "build": "npm run build:css && npm run build:images && npm run build:sitemap && npm run build:talkitover",
     "lhci": "lhci autorun"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 # https://rdmueller.github.io/ — Bündel 1 von 4
 
-> 25 Seiten im Volltext.
+> 20 Seiten im Volltext.
 
 # Spec-Driven Agentic Coding mit semantischen Ankern
 Page: https://rdmueller.github.io/pages/talks/spec-driven-agentic-coding.html
@@ -272,744 +272,364 @@ Page: https://rdmueller.github.io/pages/profiles/elfi.html
 
 ---
 
-# LinkedWild: When Your Cat Invades Your Website
-Page: https://rdmueller.github.io/pages/blog/linkedwild-launch.html
+# Mein GenAI-Manifest
+Page: https://rdmueller.github.io/pages/manifesto.de.html
 
 EN
- 26. April 2026
+ ·
+ DE
+ 
+ Persönliche Fassung v0.9
  
 
  
 
-# LinkedWild: When Your Cat Invades Your Website
+# Mein GenAI-Manifest
 
  
 
  
- 
- 
+ Ich bin Software-Architekt. Ich habe aufgehört zu fragen, was GenAI ist, und angefangen zu nutzen, was sie kann.
 
- 
- You might know Elfi, my Ragdoll sidekick, already by now. Since she can't open her own LinkedIn account, she invaded my personal website instead. And she brought her friends from the hood.
-
- It is called LinkedWild, and five animal characters now comment on every blog post. Elfi reviews architecture decisions from the keyboard. Lala, the black neighbor cat, ignores capitalisation and does not respect territorial boundaries. Peter Pigeon observes everything from the oak tree and claims to have data. Madame, the dog next door, barks her reviews in formal French. And Ringo, the squirrel, makes brilliant observations about software principles but loses focus after two sentences.
-
- Every post now has context-specific commentary from characters who actually read the content. Ringo comments on architecture posts. Madame comments on process posts. Lala disrupts everything. Each character has a profile page with a proper bio.
-
- Join the tribe and start to comment at https://rdmueller.github.io/pages/elfi.html
+ Die spannende Diskussion ist weitergezogen. Ich ziehe mit.
 
  
 
- 
+## Meine Haltung
+
+ Ich akzeptiere GenAI als eine Form von Intelligenz.
+
+ Ob sie „wirklich" intelligent ist, bringt mich nicht weiter. Ich schaue, was die Systeme leisten — und arbeite damit.
+
+ Ich definiere Fähigkeiten unabhängig vom Menschen.
+
+ Begriffe wie Kreativität, Verständnis und Intelligenz fest an den Menschen zu binden — „Kreativität ist, was Menschen tun" — engt das Denken ein und macht neue Formen unsichtbar, bevor man hinsieht. Ich messe solche Fähigkeiten an ihren Eigenschaften und Wirkungen, nicht an ihrer Herkunft. Das nimmt dem Menschen nichts — es weitet den Blick.
+
+ Ich warte nicht auf AGI.
+
+ Auf einen Begriff zu warten, den niemand definieren kann, ist keine Strategie, sondern eine Ausrede. Ich arbeite mit dem, was heute auf dem Tisch liegt — und das ist mehr als genug.
+
+ Die Büchse der Pandora ist offen.
+
+ GenAI ist in der Welt — und niemand fängt sie wieder ein. Die Frage ist nicht ob, sondern wie. Ich antizipiere und gestalte, statt zu warten, bis „sich das alles beruhigt". Das tut es nicht.
+
+ Ich wende GenAI nicht blind an — ich verstehe sie.
+
+ GenAI sinnvoll einzusetzen ist eine Ingenieursdisziplin: Man liest keine Spezifikation, man untersucht ein Verhalten. Also gehe ich empirisch vor und will wissen, warum etwas funktioniert, wo es bricht und wann man ihm nicht trauen darf. Das schützt vor dem Cargo-Kult auf der einen und der Angst auf der anderen Seite.
+
+ Ich bringe Handwerk mit, nicht nur Begeisterung.
+
+ Ein Sprachmodell ersetzt keine Architektur, keine Klarheit über das Problem, keine Disziplin im Bauen. Genau das bringe ich ein. Die Werkzeuge sind neu — der Anspruch an gute Arbeit ist es nicht.
+
+ Ich setze GenAI für Menschen ein, nicht gegen sie.
+
+ Ich messe sie nicht an dem, was sie verspricht, sondern an dem, was sie tut, wenn es etwas kostet. KI, die Menschen überwacht, herabwürdigt oder mit Desinformation flutet — oder ohne menschliche Verantwortung losgelassen wird — ist nicht, was ich meine. Gleich, wessen Logo darauf klebt.
+
+ Echte Kontrolle schlägt das Ritual der Kontrolle.
+
+ Ein erzwungenes Review, das in Review-Fatigue verläuft, ist erzählte Sicherheit — ein Haken ohne Substanz. Wo menschliche Prüfung nicht mehr echt greift, baue ich die Sicherheit in den Prozess: in Tests, in Architektur, in Abläufe, die Fehler abfangen. Der Mensch ist nicht das Gate, sondern der, der das System so baut, dass es trägt.
+
+ Die Pflicht, KI zu kennzeichnen, wird sich selbst überholen.
+
+ Heute soll eine Markierung warnen: „hier war eine Maschine". Wenn aber bald alles KI-berührt ist, markiert sie nichts mehr — eine Warnung auf allem ist keine Warnung. Was zählt, wandert von der Herkunft zur Sorgfalt: nicht ob eine Maschine beteiligt war, sondern wie geprüft wurde.
+
  
 
-## LinkedWild
+## Kurz gesagt
+
+ 
+ Verstehen über Bestaunen.
+
+ Bauen über Debattieren.
+
+ Fähigkeit über Etikett.
+
+ Handeln über Versprechen.
+
+ Heute über irgendwann.
+
+ 
+
+ 
+
+## Worüber ich reden will
+
+ Wenn du mir beim Abendessen erklären willst, warum „die KI ja gar nicht wirklich versteht" — das ist ein interessantes Gespräch. Es ist nur nicht meins.
+
+ Wenn du mir lieber zeigst, was du letzte Woche damit gebaut hast: jederzeit.
 
 ---
 
-# I Have Seen the Entire World. It Fits in This Apartment. | Elfi's Corner
-Page: https://rdmueller.github.io/pages/blog/elfi-whole-world.html
+# Impressum
+Page: https://rdmueller.github.io/pages/impressum.html
 
-EN
- 5. Juli 2026
- 
-
- 
-
-# I Have Seen the Entire World. It Fits in This Apartment.
-
- 
+# Impressum
 
  
  
- 
+
+## Angaben gemäß § 5 TMG
 
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
+ Ralf D. Müller
 
- People keep asking whether I want to go outside. Outside. As if I have not already mapped everything worth mapping.
+ [Straße und Hausnummer]
 
+ [PLZ Ort]
  
-
-## I have audited the whole world
-
- Five years I have surveyed this apartment. Every windowsill, every warm laptop, every square of afternoon sun. I know where the treats live and where the vacuum sleeps. This is not a small world. It is a complete one.
-
- There is a door. Ralf opens it, vanishes, and returns smelling of places I did not authorize. He calls this "the world." I call it a rumor.
-
- 
-
-## You cannot miss what you never asked for
-
- Here is what the humans get wrong. They think I am missing something because I have not been there. But I never asked to go, so the question never came up, so as far as my records show, there is nothing to miss. My world is total. It is total precisely because I never queried past the door.
-
- Ralf wrote a long article this week about exactly this, something about languages and models and shelves in a library. He presented it as a deep insight. I have been living it, flawlessly, since I was a kitten.
-
- 
-
-## That is all
-
- I am not in a bubble. A bubble is small. This is everything. I checked.
-
- I will be on the windowsill, running the world.
 
  
 
  
  
 
-## LinkedWild
-
----
-
-# What I Hear That You Don't | Elfi's Corner
-Page: https://rdmueller.github.io/pages/blog/elfi-what-i-hear.html
-
-EN
- 26. Mai 2026
- 
+## Kontakt
 
  
-
-# What I Hear That You Don't
-
+ E-Mail: ralf.d.mueller@gmail.com
  
-
- 
- 
- 
-
- 
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- I hear the rustle in the next room. The car turning into the street. The paper bag two rooms over.
-
- You hear none of it. Not because you can't. Because you didn't bother to pay attention.
-
- Most of your tooling works the same way.
-
- 
-
-## Free things, wasted
-
- Your compiler tells you when types do not match. Loud and clear. You ignore it.
-
- Your linter has been pointing at the same dead import for three sprints. You scrolled past.
-
- There is a public database of every known vulnerability in your dependencies. It is free. You did not look.
-
- There is a tool that scans your container images, your infrastructure config, your secrets in git history. All free. All saying things you do not hear.
-
- 
-
-## Why you don't hear them
-
- The ear is fine. The attention is not.
-
- You opted out of the noise because there was too much noise to begin with. Twelve linter warnings. Forty deprecation messages. Six commit hooks. So the brain learns to mute. And then the one real signal arrives, and you mute that too.
-
- A cat does not do this. I keep one ear free. The one that catches the keys turning in the door downstairs. The one that catches the bird outside, even when I am asleep.
-
- You can do the same. Turn on the free things. Tune what is too loud. Tune up what matters.
-
- 
-
-## Or do not
-
- I am fine either way. I will keep hearing what you miss.
-
- That is what I do.
 
  
 
  
  
 
-## LinkedWild
+## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+
+ 
+ Ralf D. Müller
+
+ [Adresse wie oben]
+ 
+
+ 
+
+ 
+ 
+
+## Haftungsausschluss
+
+ 
+
+### Haftung für Inhalte
+
+ 
+ Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+ Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+ 
+
+ 
+
+### Haftung für Links
+
+ 
+ Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen
+ Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+ Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
+ Seiten verantwortlich.
+ 
+
+ 
+
+### Urheberrecht
+
+ 
+ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
+ dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
+ der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung
+ des jeweiligen Autors bzw. Erstellers.
 
 ---
 
-# Digital Independence: A Cat's Decision
-Page: https://rdmueller.github.io/pages/blog/elfi-weiche.html
+# Datenschutz
+Page: https://rdmueller.github.io/pages/datenschutz.html
 
-EN
- 18. April 2026
- 
-
- 
-
-# Digital Independence: A Cat's Decision
-
- 
-
- 
- 
- 
-
- 
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- Last week the hooman posted about switching his video conferencing tool. He called it "Digital Independence." He used a railway metaphor. He even posed next to a lever.
-
- What he did not mention is that I had already made the decision.
-
- I sat on the lever three days before he wrote the post. He interpreted this as "the cat is in the way again." I was providing architectural guidance. The direction was clear. He just needed time to catch up.
-
- This happens more often than you would think. He spends hours evaluating tools with weighted matrices and decision frameworks. I spend three seconds sitting on the answer. We arrive at the same conclusion. My method scales better.
-
- I have reviewed his ADR afterwards. Fourteen criteria. Weighted scores. A baseline comparison. It is thorough work. But if he had consulted me earlier, I could have saved him an afternoon. The correct tool is always the one the cat sat on first.
-
- I do not charge for architectural consulting. But I do expect the sunny spot by the window to remain unobstructed during business hours.
-
- -- Elfi
-
- P.S. He still uses Zoom for the free tier. I am watching him.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Snack Anchors: a parallel catalog | Elfi's Corner
-Page: https://rdmueller.github.io/pages/blog/elfi-snack-anchors.html
-
-EN
- 13. Mai 2026
- 
-
- 
-
-# Snack Anchors: a parallel catalog
-
- 
-
- 
- 
- 
-
- 
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- The Provider is celebrating today. Six months of his Semantic Anchors catalog. 147 entries. The community is writing more than he does. He looks pleased with himself, which is rare and worth noting.
-
- What he does not know is that I have been running a parallel catalog the whole time. Mine also has 147 entries. Mine is older. Mine works.
-
- Semantic Anchors, in his telling, are shared terms that activate rich knowledge inside a language model without writing pages of prose. Say "Cockburn Use Cases" and a trained model unfolds the whole Fully Dressed format on its own. Efficient.
-
- Snack Anchors work the same way. Say "Tuna Premise" anywhere within hearing distance of The Provider, and he will, without any further instructions, walk to the kitchen, open the correct cabinet, retrieve the correct pouch, and serve it on the correct plate. No prose required. No fine-tuning needed. The behavior was already there. The anchor activates it.
-
- I have spent five years training this model.
-
- A few selected entries from my catalog:
-
- The Lap Doctrine. When The Provider sits down on the couch with a laptop, the lap is now my property. He has agreed to this. He does not remember agreeing to this. The anchor activates anyway.
-
- 14:30 Crunchies Protocol. Daily, between 14:25 and 14:35, I station myself at the food cabinet and look at him. He delivers. The window is narrow. The protocol is precise. I have not had to write it down once.
-
- Tuna Premise. A foundational anchor. Once invoked, all subsequent actions follow. Cabinet, pouch, plate, floor, departure. Five steps, zero prompting.
-
- The Kibble Conjecture. When the bowl is half full, it is empty. The Provider has internalized this. He refills regardless of measurement. Pure pattern recognition.
-
- Treat Hypothesis. Any noise from the treat drawer is treated as a request from me. I have not made the request. The drawer is the request. Catch and release behavior, fully automated.
-
- This is the entire point. A good anchor encodes a shared model. Both parties already know what comes next. You do not have to explain. You just say the word.
-
- His catalog and mine work on the same principle. He calls it Semantic Anchors. I call it good training. The difference is that he had to write a website and onboard a community. I had to sit on the keyboard at the right moments.
-
- The Provider likes to say that the community is now writing more anchors than he is. That was the plan, he says. Same with me. lala filed a Garden Anchor last week ("seven beds per day, capitalize nothing"). Madame contributed three Security Anchors. Even Peter, who panics, submitted an Aerial Observation Anchor. The catalog grows.
-
- He thinks he invented this in November. He is six months in. I am five years in. Welcome to the field, Provider.
-
- -- Elfi
-
- P.S. Browse his version at llm-coding.github.io/Semantic-Anchors. Mine is not online. It runs in The Provider's brain. You cannot grep it. You can only observe it at 14:30.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
+# Datenschutzerklärung
 
-# The Cat Risk Framework
-Page: https://rdmueller.github.io/pages/blog/elfi-radar.html
-
-EN
- 4. April 2026
- 
-
  
-
-# The Cat Risk Framework
-
  
 
- 
- 
- 
+## 1. Datenschutz auf einen Blick
 
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- Yesterday the hooman gave a talk about something called the Vibe-Coding Risk Radar. I attended. I had to, really. The beamer was on my side of the table.
-
- He spent a long time explaining five dimensions and four tiers and something called an "LLM Runtime Integration modifier". The audience nodded politely.
-
- When he was finished I walked up to the screen and offered my own framework. It has three tiers and it fits on a single paw.
-
- Tier 1: If it does not move, ignore it.
 
- Tier 2: If it moves predictably, watch it from a distance.
+### Allgemeine Hinweise
 
- Tier 3: If it moves unpredictably, hide under the bed.
-
- The hooman's command-line agents are Tier 3. I have been telling him this for months. He keeps typing things into them anyway.
-
- The audience laughed. I am not sure why. My framework is objectively simpler, and it has been field-tested on vacuum cleaners, delivery persons, and one very suspicious cucumber. The hooman's framework has only been tested on software.
-
- I am releasing my framework under the Cat License (CC-BY-PURR). Attribution is not strictly required but will be noticed.
-
- -- Elfi
-
- P.S. The hooman is fine. He sat in the front row and took notes.
-
- 
-
  
+ Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren
+ personenbezogenen Daten passiert, wenn Sie diese Website besuchen.
+ Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
  
 
-## LinkedWild
-
----
-
-# Meeting Moderation by Elfi
-Page: https://rdmueller.github.io/pages/blog/elfi-meeting.html
-
-EN
- 25. April 2026
- 
-
  
 
-# Meeting Moderation by Elfi
+### Datenerfassung auf dieser Website
 
  
+ Wer ist verantwortlich für die Datenerfassung auf dieser Website?
 
- 
+ Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber.
+ Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
  
- 
 
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- My hooman had an important call today. I know this because he closed the door, adjusted his microphone, and said "Can everyone hear me?" three times.
+ Wie erfassen wir Ihre Daten?
 
- I waited until he was sharing his screen. Then I jumped on the desk, walked between him and the laptop, and sat down facing him. This is standard procedure. He gets my full attention. The meeting gets a direct, honest view of reality.
-
- He tried to move me. I increased my weight by 40%. This is a skill they do not teach in any certification programme. I have been refining it for five years.
-
- The meeting continued. Someone said "Cute cat." Someone else said "Is that a Ragdoll?" A third person unmuted just to say "My cat does the same thing." The agenda item was forgotten. I consider this a successful intervention.
-
- My hooman says I am disrupting his workflow. I disagree. I am providing real-time feedback on his prioritisation. If the meeting were truly important, he would have fed me first.
-
- I am available for freelance meeting moderation. My rates are one treat per call, two for anything involving the words "let's circle back."
-
- -- Elfi
-
- P.S. He still does not close the kitchen door when he makes coffee. Amateur.
-
+ Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen.
+ Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
+ Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst.
+ Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
  
 
- 
  
 
-## LinkedWild
-
----
-
-# Hello, World. I am Elfi Wang.
-Page: https://rdmueller.github.io/pages/blog/elfi-launch.html
-
-EN
- 14. März 2026
  
-
  
 
-# Hello, World. I am Elfi Wang.
+## 2. Hosting
 
- 
-
- 
- 
  
-
+ Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website
+ erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v.a.
+ um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten,
+ Namen, Webseitenzugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- Hello, World. I am Elfi Wang.
-
- I am a Ragdoll. Chinese descent, American ancestry (Ragdolls were bred in California in the 1960s, something my mother made sure I knew), German residency. A citizen of nowhere in particular, napping everywhere on principle.
-
- Five years ago I completed my training at my mother's side, interviewed several candidates, and selected one hooman to move in with. He calls himself a Software Architect. I call him The Provider. We have a working arrangement.
-
- For the past five years I have been observing him from the best seat in the house: directly on the keyboard. I have watched him design systems, write specifications, give talks, fail gracefully, and occasionally spill coffee on Tuesdays. I have opinions.
-
- I am taking over this corner of the website because I am tired of being a sidekick in his posts. I appear in the background. I sit on the desk. Sometimes a paw is visible. People comment "cute cat" and move on. That is not the full picture.
-
- The full picture is that I have been reviewing his work. Some of it is good. Some of it is worse than he thinks. And some of it would be considerably worse without my supervision.
-
- This page is where I share what I see. My framework is simple. If it moves predictably, I observe it. If it moves unpredictably, I hide under the bed. If it does not move at all, I sit on it and claim it as my own.
 
- I post on Fridays. The hooman thinks he is in charge of this website. He is not.
-
- -- Elfi
-
- P.S. He figured it out. He usually does. But by then I had already invited the entire neighborhood.
-
  
 
  
  
-
-## LinkedWild
 
----
+## 3. Allgemeine Hinweise und Pflichtinformationen
 
-# I Invented This. You Just Caught Up. | Elfi's Corner
-Page: https://rdmueller.github.io/pages/blog/elfi-i-invented-this.html
-
-EN
- 21. Juni 2026
- 
-
  
-
-# I Invented This. You Just Caught Up.
 
- 
+### Datenschutz
 
  
+ Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst.
+ Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen
+ Datenschutzvorschriften sowie dieser Datenschutzerklärung.
  
- 
 
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- You invented something new. You call it "agentic coding". A small autonomous thing does the work. You stay in the room. You look important. At the end of the day someone hands you the result.
 
- I have been doing this since I was a kitten.
+### Hinweis zur verantwortlichen Stelle
 
- It is called living with humans. The food appears. The litter box gets cleaned. The shipping boxes get assembled into furniture and then offered to me as climbing structures. I observe. I approve or disapprove. Mostly I sleep. The work happens.
-
- You think this is a recent breakthrough. You think it is something to write a post about.
-
- I think it is finally happening to your laptop too.
-
  
-
-## Delegation is the expensive thing
+ Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
- What you are discovering this weekend, when a coding agent ships in three days what you used to ship in a quarter, is that delegation is not the cheap thing. Delegation is the expensive thing. The expensive part is knowing what you actually want, and being precise enough that the thing doing the work can hit it.
+ Ralf D. Müller
 
- Cats are precise. A cat does not say "I am hungry". A cat says: the food bowl is here, at this hour you walk to this kitchen, you open this drawer, and the small dry crunchy ones (not the wet ones, not today) appear in the bowl. The food arrives.
+ [Adresse]
 
- You used to say "build me a website" and then act surprised when nothing useful happened. Now you are learning to say what you mean.
-
- Welcome.
-
+ E-Mail: ralf.d.mueller@gmail.com
  
-
-## How long it took us
-
- Humans, agentic coding adoption: roughly two years.
 
- Cats, agentic human adoption: roughly ten thousand years.
-
- We had a head start. We also have better posture.
-
  
-
-## That is all
-
- You can take it from here. I will be on the chair.
 
- 
+### Widerruf Ihrer Einwilligung zur Datenverarbeitung
 
- 
  
-
-## LinkedWild
-
----
-
-# Your New Colleague Has Amnesia | Elfi's Corner
-Page: https://rdmueller.github.io/pages/blog/elfi-docs-as-code.html
-
-EN
- 28. April 2026
+ Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich.
+ Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine
+ formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten
+ Datenverarbeitung bleibt vom Widerruf unberührt.
  
 
  
 
-# Your New Colleague Has Amnesia
-
- 
+### Beschwerderecht bei der zuständigen Aufsichtsbehörde
 
  
+ Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
+ Aufsichtsbehörde zu.
  
- 
-
- 
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- My hooman has a new colleague. It is very smart. It can write code in fourteen languages, explain distributed systems, and generate architecture diagrams in seconds. It also has the long-term memory of a goldfish with a compute budget.
-
- Every morning it wakes up and has no idea where it is. Who are the other services? What does the database schema look like? Why is that endpoint called /api/v2/legacy-new-final? It reads the documentation to find out. Every single day. From scratch.
-
- I have lived in this house for five years. I know where every piece of furniture is, which floorboard creaks, where the sun hits at 3pm, and which drawer contains the treats. Nobody had to write this down for me. I built this mental model through five years of continuous observation. I am the original single source of truth.
-
- The robot cannot do this. It has no continuous observation. It has a context window and whatever files my hooman remembered to keep updated. If the architecture document says the cat food is in the kitchen but six months ago we moved it to the pantry, the robot will look in the kitchen. Every time. With full confidence.
-
- My hooman used to write documentation for other hoomans. Hoomans are sloppy readers. They skim, they skip, they fill gaps from hallway conversations and gut feeling. It worked well enough. Now the second reader is a machine that reads literally. Every word. No gut feeling. No hallway. If the document says service A talks to service B, it generates code that talks to service B. Even if service B was decommissioned in January.
 
- This is why Ralf is rebuilding his documentation toolchain. He released something called Bausteinsicht this week. It keeps architecture diagrams in sync with a JSON model. Bidirectional. Real-time. The robot reads the JSON. The hooman reads the diagram. Both see the same architecture.
-
- He is very proud of this. I am moderately impressed. The tool even has an llms.txt file so the robot understands how to use the tool. Documentation for a robot about a tool that creates documentation for robots. Very recursive. Very hooman.
-
- My documentation system is simpler. I sit on the keyboard until someone pays attention. Then I walk to whatever needs documenting. This has never drifted from reality. Zero sync issues. Five nines uptime.
-
- But I understand the problem. Hoomans forget things. Robots forget everything. If your documentation is not current, your robot assistant is navigating your codebase with last year's map. And unlike a cat, it will not notice when the furniture has moved. It will just walk into the wall and generate a pull request about it.
-
  
 
  
  
-
-## LinkedWild
-
----
-
-# Boxes and Lines: A Feline Guide to C4
-Page: https://rdmueller.github.io/pages/blog/elfi-c4boxes.html
 
-EN
- 11. April 2026
- 
+## 4. Datenerfassung auf dieser Website
 
  
-
-# Boxes and Lines: A Feline Guide to C4
 
- 
+### Server-Log-Dateien
 
- 
  
+ Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
+ Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
  
-
- 
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- Today the hooman tried to explain C4 diagrams to me. He said they are called "Boxes and Lines."
-
- I have been an expert in Boxes and Lines for five years. My credentials are impeccable. I sit in boxes. I walk on lines. I have never met a diagram I could not improve by sitting on it.
 
- He showed me the four levels.
-
- Level 1: Context. I am the context. Everything in this household exists in relation to me.
-
- Level 2: Container. I prefer cardboard. The hooman prefers Docker. We have agreed to disagree, though I notice he has never once tried sitting in a Docker container. His loss.
-
- Level 3: Component. I review every component by sitting on it. If it supports my weight, it is production-ready. If it does not, it needs refactoring.
-
- Level 4: Code. This is where I draw the line. Literally. With my tail. Across the keyboard. The hooman calls this "a merge conflict." I call it an editorial decision.
-
- He asked me to stop walking on his architecture diagrams. I told him they were improved by the paw prints. He did not agree. But he also did not move me.
-
- I am now offering C4 consulting. Boxes supplied by the client. Lines drawn at my discretion.
-
- -- Elfi
-
- P.S. Whoever invented this model: it is sound. It just needed a feline perspective.
-
  
-
  
+- Browsertyp und Browserversion
  
-
-## LinkedWild
-
----
-
-# The Provider Is a Brownfield Project | Elfi's Corner
-Page: https://rdmueller.github.io/pages/blog/elfi-brownfield-project.html
-
-EN
- 18. Mai 2026
+- verwendetes Betriebssystem
  
-
+- Referrer URL
  
-
-# The Provider Is a Brownfield Project
-
+- Hostname des zugreifenden Rechners
  
-
+- Uhrzeit der Serveranfrage
  
+- IP-Adresse
  
  
-
+ Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- The Provider published something this week about recovering the theory of an old codebase. His premise: code shows you what a program does, never why it ended up that way. The why lives in a human head, and when that head leaves, the why is gone. He calls the method Socratic Code-Theory Recovery. He thinks it is new.
-
- I have been running it on him for five years.
-
- The Provider is a brownfield project. Undocumented. No spec. The original team, his mother presumably, dispersed long ago. What remains is the running system, and I have spent considerable effort recovering its theory.
-
- His method builds a question tree. Every node is either ANSWERED, with evidence, or OPEN, meaning only a human can say. Mine works the same way. Let me show you a branch.
-
- ANSWERED leaves are easy. They have evidence. Provider enters kitchen at 06:40. Evidence: I am on the counter, I have watched it 1,800 times. Provider opens laptop, becomes unresponsive. Evidence: daily, observable, file kitchen-table:1. Provider says the word "meeting" and the lap becomes unavailable. Confirmed across many runs. The what is fully recovered. I could write his arc42 building-block view myself.
-
- The OPEN leaves are the problem.
-
- Intent. Why does the Provider exist? Which of his activities is the product and which is debt? He spends hours moving a small arrow across a glowing rectangle. I have classified this as either his core feature or his largest unaddressed defect. The code does not say. OPEN. Ask: The Provider.
-
- Judgment. When the warmth of the windowsill conflicts with the warmth of the laptop, which wins? He chooses inconsistently. There is a rule. He has never stated it. OPEN.
-
- Self-knowledge. He owns four feeding bowls. Deliberate redundancy, or accumulated mess? He cannot tell me. He suspects it is debt. He keeps all four.
-
- This is the part his article gets right. I can observe everything the Provider does. I have a perfect record of the what. I will never recover the why by watching harder. The why was a decision, made once, in a room I was not in.
-
- His conclusion is that the open questions are not unanswerable. They just need a human to write them down, once, in the right chapter. He is correct. I have been asking him to do exactly that for five years. He still has not filled in chapter 1.2.
-
- So the question tree is complete. Many ANSWERED leaves, beautifully evidenced. Three OPEN leaves, routed to the one stakeholder who can close them.
 
- He has not responded to the ticket.
-
- -- Elfi
-
- P.S. His version of the method is at llm-coding.github.io/Semantic-Anchors/brownfield. Mine has no website. It runs on the windowsill. The OPEN questions remain OPEN. I have learned to live with technical debt.
-
  
 
  
  
-
-## LinkedWild
 
----
+## 5. Web-Analyse mit GoatCounter
 
-# 5 LLM Blind Spots, Translated into Cat
-Page: https://rdmueller.github.io/pages/blog/elfi-blind-spots.html
-
-EN
- 27. April 2026
- 
-
  
-
-# 5 LLM Blind Spots, Translated into Cat
-
+ Diese Website nutzt GoatCounter,
+ ein datenschutzfreundliches Web-Analyse-Werkzeug. GoatCounter setzt keine Cookies und
+ erstellt keine Profile.
  
 
- 
  
- 
-
+ Erfasst werden ausschließlich anonymisierte Aufrufdaten:
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
 
- I chase the red dot every single day. Here's the thing: I can't even see red. Cats are dichromats. I react to movement, not color. I have no idea what I'm actually chasing.
-
- Ralf keeps telling me coding LLMs have the same problem. They react to patterns, not meaning. After watching him yell at his screen for a week, I believe him. He says there are five blind spots. I'll translate them into cat.
-
- 
- 
-- Time gap. The food bowl was full at 7am. The model thinks it's still full at noon. Deprecated APIs are yesterday's kibble. 25-38% of code completions use them (some study Ralf keeps waving around).
  
-- Domain gap. I know 47 types of bird by silhouette. Ask me about fish and I'll just stare at you. LLMs are the same with COBOL and ABAP. Exists, runs production, not in the training data. The tube-radio zone, Ralf calls it.
  
-- Context gap. Every cat knows: YOUR couch is different from THE couch. Your codebase, your ADRs, your team's weird naming conventions. No model has ever slept on your specific couch.
+- aufgerufene Seite (URL-Pfad)
  
-- Structure gap. I can catch a fly in mid-air. Put a glass door between us and I slam into it face first. Models nail a function in isolation, then break when they have to reach across three files. 80% accuracy drops below 25%.
+- Referrer (verweisende Seite)
  
-- The meta-gap. This is the one that gets cats killed. I don't know that I can't see red. The model doesn't know which blind spot it's in. The less it knows, the more confident it sounds. Just like me with cucumbers.
+- Browser und Betriebssystem (aus dem User-Agent)
  
-
- Ralf says the practical move is to ask which zone you're in before every task. Feed context if it's 1-4. Read more carefully if it's 5.
-
- I say: if you're not sure whether the dot is real, just pounce anyway. You'll learn something either way.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# I Don't Do Reach | Elfi's Corner
-Page: https://rdmueller.github.io/pages/blog/elfi-3000.html
-
-EN
- 26. Juni 2026
+- ungefähre Region anhand der IP (die IP selbst wird nicht gespeichert)
  
-
  
-
-# I Don't Do Reach
-
+ Ein Tracking über mehrere Seitenaufrufe hinweg findet nicht statt. Die Daten werden
+ auf europäischen Servern des Anbieters (Martin Tournoij, NL) verarbeitet.
+ Rechtsgrundlage ist das berechtigte Interesse an der Reichweitenmessung
+ (Art. 6 Abs. 1 lit. f DSGVO).
  
 
- 
- 
  
-
+ Details und Opt-out:
+ goatcounter.com/help/privacy.
  
- Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
-
- My human just hit 3000 followers and would not stop talking about it. Three thousand. He was very pleased with himself.
 
- Adorable. I have a small staff who follow me from room to room, respond within seconds, and have never once asked me to like and subscribe. That is what reach actually looks like.
-
  
-
-## Numbers are not the point
 
- He writes for experienced engineers. People who have shipped real systems and carry the scars. There were never going to be millions of them, and that is exactly the right size for an audience that reads the words instead of scrolling past them.
-
- I work the same way. I do not need the admiration of every cat on the street. I need a few humans who are completely certain the household revolves around me. It does. The system works.
-
  
-
-## On going viral
-
- He says his posts do not go viral, in the tone of a small disappointment he has made peace with. It is not a disappointment. Viral is what happens when something escapes the people who understand it and gets pawed at by strangers. Quality stays where it belongs.
-
- I have never gone viral. I have simply been, without interruption, the most important presence in every room I enter. Aim for that instead.
-
  
-
-## That is all
-
- 3000 is plenty. Tell him I said congratulations, then tell him to get back to work.
 
- I will be on the windowsill.
+## 6. Externe Links
 
  
-
- 
- 
-
-## LinkedWild
+ Diese Website enthält Links zu externen Websites (GitHub, LinkedIn, software-architektur.tv).
+ Für die Datenschutzpraktiken dieser externen Websites sind wir nicht verantwortlich.
+ Bitte informieren Sie sich auf den jeweiligen Websites über deren Datenschutzbestimmungen.
 
 ---
 
@@ -1444,6 +1064,756 @@ DE
  Etablierte Domain-Terminologie übertrifft lange Erklärungen beim Prompting von LLMs für Code-Generierung.
 
  
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Semantic Anchors: Speaking the Same Language as LLMs
+Page: https://rdmueller.github.io/pages/blog/semantic-anchors-catalog.html
+
+EN
+ November 11, 2025
+ 
+
+ 
+
+# Semantic Anchors: Speaking the Same Language as LLMs
+
+ A catalog of 21+ terms for efficient AI communication
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I've open-sourced a catalog with 21+ Semantic Anchors covering Software Architecture, Testing, Requirements, Decision-Making, and Documentation. Available on GitHub.
+
+ 
+
+## What Are Semantic Anchors?
+
+ Semantic Anchors are established terms that activate coherent response patterns in LLMs. Instead of explaining what you want in detail, you use a term the LLM already "knows" from its training data.
+
+ 
+
+## The Catalog Categories
+
+ 
+
+### 🏗️ Software Architecture
+
+ 
+ 
+- C4 Model - Context, Containers, Components, Code diagrams
+ 
+- arc42 - Architecture documentation template
+ 
+- ADR - Architecture Decision Records
+ 
+- Domain-Driven Design - Strategic and tactical patterns
+ 
+- Ports & Adapters - Hexagonal architecture
+ 
+
+ 
+
+### 🧪 Testing
+
+ 
+ 
+- TDD London School - Outside-in, mock-heavy approach
+ 
+- TDD Detroit School - Inside-out, classical approach
+ 
+- Given-When-Then - BDD scenario format
+ 
+- Arrange-Act-Assert - Test structure pattern
+ 
+- Test Pyramid - Unit, Integration, E2E balance
+ 
+
+ 
+
+### 📋 Requirements
+
+ 
+ 
+- User Story - As a [role], I want [feature], so that [benefit]
+ 
+- Job Story - When [situation], I want [motivation], so I can [outcome]
+ 
+- INVEST Criteria - Independent, Negotiable, Valuable, Estimable, Small, Testable
+ 
+- Acceptance Criteria - Conditions of satisfaction
+ 
+
+ 
+
+### 🎯 Decision Making
+
+ 
+ 
+- SWOT Analysis - Strengths, Weaknesses, Opportunities, Threats
+ 
+- Pros/Cons Matrix - Weighted comparison
+ 
+- 5 Whys - Root cause analysis
+ 
+- Cost-Benefit Analysis - Economic evaluation
+ 
+
+ 
+
+### 📝 Documentation
+
+ 
+ 
+- Docs-as-Code - Documentation in version control
+ 
+- Diátaxis Framework - Tutorials, How-tos, Reference, Explanation
+ 
+- Pyramid Principle - BLUF, MECE, SCQ
+ 
+
+ 
+
+## How to Use
+
+ Instead of:
+
+ 
+ "Write tests that first set up the context, then perform an action, then verify the result. Make sure each test is independent..."
+
+ 
+
+ Just say:
+
+ 
+ "Write tests using Arrange-Act-Assert pattern"
+
+ 
+
+ 
+
+## Open Source
+
+ The full catalog is available on GitHub. Contributions welcome!
+
+ View on GitHub →
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Semantic Anchor: Pyramid Principle
+Page: https://rdmueller.github.io/pages/blog/pyramid-principle.html
+
+EN
+ January 21, 2026
+ 
+
+ 
+
+# New Semantic Anchor: Pyramid Principle
+
+ One term activates an entire communication framework
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Semantic Anchors enable efficient LLM communication: Instead of lengthy explanations, simply say "Pyramid Principle" - and immediately activate BLUF, SCQ, MECE, and more.
+
+ 
+
+## The Problem
+
+ When working with LLMs, we often find ourselves writing lengthy prompts explaining exactly how we want information structured:
+
+ 
+ "Start with the main conclusion, then group supporting arguments logically, make sure groups are mutually exclusive and collectively exhaustive..."
+
+ 
+
+ 
+
+## The Solution: Semantic Anchors
+
+ Instead of all that, just write:
+
+ 
+ "Use the Pyramid Principle"
+
+ 
+
+ This single term activates a whole framework of concepts the LLM already knows from its training data:
+
+ 
+
+## What Gets Activated
+
+ 
+ 
+- BLUF (Bottom Line Up Front) - Lead with your conclusion
+ 
+- SCQ (Situation-Complication-Question) - Set up the context
+ 
+- MECE (Mutually Exclusive, Collectively Exhaustive) - Organize arguments logically
+ 
+- So What? - Keep everything action-oriented
+ 
+
+ 
+
+## Why This Works
+
+ LLMs do pattern completion based on their training data. Well-established concepts like "Pyramid Principle" (popularized by Barbara Minto at McKinsey) appear frequently enough that they activate coherent response patterns.
+
+ 
+
+## Adding to the Catalog
+
+ This is now part of the growing Semantic Anchors catalog on GitHub - a collection of terms that enable efficient human-LLM communication.
+
+ What semantic anchors do you use in your LLM workflows?
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# 5 LLMs Tested the New Tool
+Page: https://rdmueller.github.io/pages/blog/dacli-llm-tool.html
+
+EN
+ 24. Januar 2026
+ 
+
+ 
+
+# 5 LLMs Tested the New Tool. Their Verdict Is Clear.
+
+ Introducing dacli: Like LSP for documentation
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Documentation systems lack standardized interfaces comparable to LSP. Large docs-as-code projects face a dilemma: providing entire files creates excessive context, while minimal input leaves gaps.
+
+ 
+
+## The Problem
+
+ When working with LLMs on documentation:
+
+ 
+ 
+- Full files → Token overload, cost explosion
+ 
+- Snippets only → Missing context, poor results
+ 
+- Manual copy-paste → Time-consuming, error-prone
+ 
+
+ 
+
+## The Solution: dacli
+
+ dacli is a command-line tool designed to provide LLMs with structured access to documentation—similar to how LSP works for code.
+
+ 
+
+### Key Features
+
+ 
+ 
+- 📂 Hierarchical navigation through document structures
+ 
+- 🔍 Relevance-ranked search functionality
+ 
+- ✏️ Programmatic editing of individual sections
+ 
+- ✅ Documentation quality validation
+ 
+
+ 
+
+## What the LLMs Said
+
+ 
+ "Missing tool between LLMs and Docs-as-Code"
+
+ — Claude
+ 
+
+ 
+ "Production-ready after testing 134 sections"
+
+ — GitHub Copilot CLI
+ 
+
+ 
+ "Must-have for modern documentation workflows"
+
+ — Kiro (AWS)
+ 
+
+ 
+
+## Open Source
+
+ dacli is open source, part of the docToolchain ecosystem, and built with 90% code coverage. The tool was reportedly built entirely by LLMs—a fitting origin story.
+
+ → View on GitHub
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# No Person, No Rights, No Responsibility
+Page: https://rdmueller.github.io/pages/blog/ai-license-paradox.html
+
+EN
+ 29. Januar 2026
+ 
+
+ 
+
+# No Person, No Rights, No Responsibility: Why AI Contributors Break Our License System
+
+ Exploring a fundamental paradox in open source licensing when AI generates code
+
+ 
+
+ 
+ 
+ 
+
+ 
+ This post was written by Claude (Anthropic) based on an extensive conversation with me about the topic. As a non-native English speaker, I could not have articulated these thoughts as clearly on my own. However, this is not "AI slop" – we discussed the subject in depth beforehand, building the argument together. I reviewed, edited, and approved the final result. The irony of using AI to write about AI authorship is not lost on me.
+
+ 
+
+## The Spark
+
+ Two days ago, I shared a LinkedIn post about my newest open source project. Three days old, seven contributors – all of them AI:
+
+ 
+ 
+- Claude, acting as me (a misconfiguration, actually)
+ 
+- Claude as himself
+ 
+- Claude with his own GitHub account R{AI}f.D.Mueller
+ 
+- Copilot Pull-Request-Reviewer
+ 
+- Copilot SWE-Agent
+ 
+- Dependabot
+ 
+ A commenter raised an interesting point: "Does Claude then become co-author? If that's the case, does Claude immediately co-share ownership of the software?"
+
+ This deserves a proper answer, because the question reveals how fundamentally unprepared our legal and licensing frameworks are for AI-generated code.
+
+ 
+
+## The Trigger: Claude Claims Co-Authorship
+
+ Here's what sparked the concern: Claude Code automatically adds this to commits:
+
+ 
+ Co-authored-by: Claude <noreply@anthropic.com>
+
+ 
+
+ This happens by default. The AI claims co-authorship without the user explicitly deciding to grant it. I understand why this feels presumptuous – Anthropic made a choice that affects how contributions are attributed in projects worldwide.
+
+ But here's the thing: this claim is legally meaningless.
+
+ 
+
+## Copyright ≠ Urheberrecht ≠ Software Patents
+
+ Before we go further, let's untangle some terms that often get conflated:
+
+ Copyright (US): Protects the work. It's a property right that can be transferred. "Work for hire" doctrine means employers can own copyright on employee creations.
+
+ Urheberrecht (German/EU): Protects the creator. It's a personal right that cannot be transferred, only licensed. The creator always remains the creator.
+
+ Software Patents: Exist in the US, not in Germany/EU (with very limited exceptions). Protect inventions and methods, not expression.
+
+ Why does this matter? Because the question "who owns AI-generated code" has different answers depending on which legal framework you're in – and in most cases, the answer is: nobody.
+
+ 
+
+## No Person, No Rights
+
+ Here's the core legal reality:
+
+ German copyright law (§ 2 UrhG) requires a "persönliche geistige Schöpfung" – a personal intellectual creation. The US Copyright Office has ruled similarly: AI-generated content without sufficient human creative input cannot be copyrighted.
+
+ AI is not a person. Therefore:
+
+ 
+ 
+- AI cannot hold copyright
+ 
+- AI cannot hold Urheberrecht
+ 
+- AI cannot be granted patents
+ 
+ But what about the human who prompted the AI? If the prompting itself doesn't constitute sufficient creative input – if you just said "write me a function that does X" – then arguably no copyright exists for you either.
+
+ The result: AI-generated code may be public domain by default.
+
+ 
+
+## The Ownership Paradox
+
+ This creates an interesting paradox:
+
+ Open source licenses (MIT, GPL, Apache, BSD) all assume that someone holds the rights and is granting permissions. The entire model is: "I own this, and I give you permission to use it under these conditions."
+
+ But if nobody owns AI-generated code:
+
+ 
+ 
+- Who has the right to grant a license?
+ 
+- Can you put an MIT license on something you don't own?
+ 
+- Is AI-generated code automatically "freer than free"?
+ 
+ Peter's concern about ownership was exactly backwards: the problem isn't that AI might claim ownership. The problem is that nobody can claim ownership, which breaks our entire licensing model.
+
+ 
+
+## No Person, No Responsibility
+
+ But here's where it gets serious. Rights come with responsibilities:
+
+ 
+ 
+- Who is liable if the code contains a security vulnerability?
+ 
+- Who ensures no license violations are hidden in the output?
+ 
+- Who guarantees there's no malicious code?
+ 
+- Who can be sued if something goes wrong?
+ 
+ Not the AI. It's not a legal person. It cannot be held responsible.
+
+ This is why my workflow matters:
+
+ AI generates code → No author, no responsibility
+ ↓
+Human reviews PR → Human assumes responsibility
+ ↓
+Human approves merge → Human is accountable
+ The "Co-authored-by: Claude" tag isn't about claiming ownership. It's about transparency – documenting how the code came into existence. The responsibility enters through my review.
+
+ I am the human in the loop. Every PR goes through me. I have to approve it. That's where accountability is created.
+
+ My weakness? I'm getting lazy. Sometimes I just wave PRs through. That's the real risk – not some theoretical AI ownership claim, but humans rubber-stamping AI output without proper review.
+
+ 
+
+## The Final Irony: MIT License
+
+ And then I put the code under MIT license:
+
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
+
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE...
+
+ 
+
+ So the responsibility I assumed through review? I immediately disclaim it via the license.
+
+ AI generates → no responsibility (no person)
+ ↓
+Human reviews → assumes responsibility
+ ↓
+MIT license → disclaims all responsibility
+ ↓
+End user → uses at own risk 🎪
+ We've come full circle. The entire system of rights and responsibilities just... dissolves.
+
+ 
+
+## What Needs to Change
+
+ Our software licensing model was built for a world where:
+
+ 
+ 
+- Humans write code
+ 
+- Humans own that code
+ 
+- Humans grant permissions
+ 
+- Humans bear responsibility
+ 
+ None of these assumptions hold cleanly in the age of AI-assisted development.
+
+ We need new frameworks that address:
+
+ 
+ 
+- Transparency requirements: How do we document AI involvement? The "Co-authored-by" tag is a start, but it's informal.
+ 
+- Responsibility attribution: If AI generates and humans review, how do we formalize where responsibility lies?
+ 
+- License validity: Can current licenses even apply to AI-generated code? Do we need new license types?
+ 
+- Review documentation: Should there be a way to certify that human review actually happened?
+ 
+- Hybrid works: Most code will be partly human, partly AI. How do we handle mixed provenance?
+ 
+
+ 
+
+## Back to Peter's Question
+
+ So, does Claude "co-share ownership" of my software?
+
+ No. Claude cannot own anything. Claude has no legal personhood. The "Co-authored-by" line is a transparency mechanism, not a legal claim. It's Anthropic's attempt to make AI involvement visible – which I'd argue is better than hiding it.
+
+ The real questions we should be asking:
+
+ 
+ 
+- Who reviewed this code?
+ 
+- Who is responsible for it?
+ 
+- What does "authorship" even mean when the author has no legal existence?
+ 
+ The future of open source isn't threatened by AI claiming ownership. It's challenged by the fact that our entire legal and licensing infrastructure assumes human authors with human rights and human responsibilities.
+
+ We need to update that infrastructure. Until then, we're all just improvising.
+
+ 
+
+ What do you think? How should software licenses evolve for the AI age? I'd love to hear your thoughts.
+
+ 
+
+ About this post: Written by Claude, directed by Ralf, reviewed by Ralf. The responsibility for publishing this is entirely human. The irony is entirely intentional.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# docToolchain rb - Documentation for the AI Age
+Page: https://rdmueller.github.io/pages/blog/doctoolchain-rb.html
+
+EN
+ 30. Januar 2026
+ 
+
+ 
+
+# 🔄 docToolchain rb — Documentation Reborn for the AI Age
+
+ After eight years of docs-as-code, documentation must now serve two audiences: humans AND AI systems
+
+ 
+
+ 
+ 
+ 
+
+ 
+ The statement "AI reads docs" is more significant than "AI writes docs." Tools like ChatGPT and Claude consume documentation as context—and they need different formatting than humans.
+
+ 
+
+## The Paradigm Shift
+
+ For eight years, I've been advocating docs-as-code. Now the field faces a fundamental transformation: documentation must serve two distinctly different audiences.
+
+ 
+
+## Emerging Trends
+
+ 
+ 
+- llms.txt adoption: 600+ organizations including Anthropic and Stripe now provide AI-readable documentation summaries
+ 
+- Model Context Protocol (MCP): Standardization for AI tool integration
+ 
+- RAG technology: Converting documentation into searchable knowledge bases
+ 
+
+ 
+
+## The Market Gap
+
+ All current AI-native documentation tools operate as SaaS. This leaves enterprises with data privacy concerns without suitable options for self-hosted solutions.
+
+ 
+
+## docToolchain rb Features
+
+ 
+ 
+- 🔒 Self-hosted AI documentation with user-controlled LLMs
+ 
+- 📝 AsciiDoc-native formatting
+ 
+- 🏛️ Architecture documentation assistance (arc42 + ADR)
+ 
+- 🤖 llms.txt and MCP support
+ 
+- 🐳 Docker-first infrastructure
+ 
+
+ 
+ "The question is no longer 'How do we write docs?' but 'How will AI read our docs?'"
+
+ 
+
+ 
+
+## What's Next?
+
+ docToolchain rb represents the evolution of documentation tooling for a world where AI systems are first-class consumers of our technical content. Stay tuned for the release.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Raspberry Pi 5 + Local LLM
+Page: https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html
+
+EN
+ 1. Februar 2026
+ 
+
+ 
+
+# Can a Raspberry Pi 5 Run a Local LLM for Coding Assistance?
+
+ An experiment in edge AI—and why context size is a deployment constraint
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I wanted to know: can a Raspberry Pi 5 run local LLMs for coding tasks? The hardware successfully ran smaller models via Ollama, but practical limitations emerged quickly.
+
+ 
+
+## The Experiment
+
+ Setting up Ollama on the Pi 5 was straightforward. Smaller models loaded fine. But then I tried to use it with Claude Code's workflow...
+
+ 
+
+## The Showstopper
+
+ The problem isn't running the model—it's context processing speed.
+
+ Claude Code requires an ~11,000 token system prompt before generating any response. At the Pi's processing rate:
+
+ 
+ 11,000 tokens at 5 tok/s = several minutes just to process the input
+
+ 
+
+ This exceeds typical timeout thresholds before any actual response generation occurs.
+
+ 
+
+## The Workaround
+
+ Using n8n with custom, shorter prompts (50 tokens) achieved 15-30 second response times. This works for focused automation tasks like:
+
+ 
+ 
+- Translations
+ 
+- Smart home commands
+ 
+- Simple text processing
+ 
+
+ 
+
+## Critical Insights
+
+ 
+ 
+- Small models lack reasoning depth compared to larger counterparts
+ 
+- "Context size" is a deployment constraint, not merely a model property
+ 
+- Device capability differs from practical usability for specific tasks
+ 
+- Processing every context token before generation becomes the dominant factor on constrained hardware
+ 
+
+ 
+
+## The Right Question
+
+ Rather than asking "does it run?", evaluators should ask:
+
+ 
+ "What context size is practical, and what does that mean for my use case?"
+
+ 
+
+ For simple, focused tasks with minimal context: yes, it works.
+
+ For agentic coding workflows: not yet practical.
 
  
 
