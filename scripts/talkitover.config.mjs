@@ -72,23 +72,16 @@ const SKIP = [
 /**
  * url -> Datum, damit die jüngsten Beiträge einzeln genannt werden.
  *
- * sitemap.xml ist die genannte Quelle, deckt aber nur einen Teil der Seiten ab.
- * Für den Rest steht das Datum in data/blog.json — derselben Datei, aus der die
- * Blog-Übersicht gebaut ist. Beides ist vorhandene Repo-Daten, nichts Neues.
+ * sitemap.xml wird von scripts/generate-sitemap.mjs aus den Seiten selbst
+ * erzeugt und läuft im Build davor. Sie kennt jede Seite, also reicht sie hier
+ * als einzige Quelle.
  */
 function readDates() {
   const dates = {}
-
-  const blog = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/blog.json'), 'utf-8'))
-  for (const post of blog) {
-    if (post.url && post.date) dates[`${SITE_URL}pages/${post.url}`] = post.date
-  }
-
   const sitemap = fs.readFileSync(path.join(ROOT, 'sitemap.xml'), 'utf-8')
   for (const entry of sitemap.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) {
     dates[entry[1]] = entry[2]
   }
-
   return dates
 }
 

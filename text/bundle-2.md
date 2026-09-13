@@ -1,756 +1,6 @@
 # https://rdmueller.github.io/ — Bündel 2 von 4
 
-> 12 Seiten im Volltext.
-
-# Semantic Anchors: Speaking the Same Language as LLMs
-Page: https://rdmueller.github.io/pages/blog/semantic-anchors-catalog.html
-
-EN
- November 11, 2025
- 
-
- 
-
-# Semantic Anchors: Speaking the Same Language as LLMs
-
- A catalog of 21+ terms for efficient AI communication
-
- 
-
- 
- 
- 
-
- 
- I've open-sourced a catalog with 21+ Semantic Anchors covering Software Architecture, Testing, Requirements, Decision-Making, and Documentation. Available on GitHub.
-
- 
-
-## What Are Semantic Anchors?
-
- Semantic Anchors are established terms that activate coherent response patterns in LLMs. Instead of explaining what you want in detail, you use a term the LLM already "knows" from its training data.
-
- 
-
-## The Catalog Categories
-
- 
-
-### 🏗️ Software Architecture
-
- 
- 
-- C4 Model - Context, Containers, Components, Code diagrams
- 
-- arc42 - Architecture documentation template
- 
-- ADR - Architecture Decision Records
- 
-- Domain-Driven Design - Strategic and tactical patterns
- 
-- Ports & Adapters - Hexagonal architecture
- 
-
- 
-
-### 🧪 Testing
-
- 
- 
-- TDD London School - Outside-in, mock-heavy approach
- 
-- TDD Detroit School - Inside-out, classical approach
- 
-- Given-When-Then - BDD scenario format
- 
-- Arrange-Act-Assert - Test structure pattern
- 
-- Test Pyramid - Unit, Integration, E2E balance
- 
-
- 
-
-### 📋 Requirements
-
- 
- 
-- User Story - As a [role], I want [feature], so that [benefit]
- 
-- Job Story - When [situation], I want [motivation], so I can [outcome]
- 
-- INVEST Criteria - Independent, Negotiable, Valuable, Estimable, Small, Testable
- 
-- Acceptance Criteria - Conditions of satisfaction
- 
-
- 
-
-### 🎯 Decision Making
-
- 
- 
-- SWOT Analysis - Strengths, Weaknesses, Opportunities, Threats
- 
-- Pros/Cons Matrix - Weighted comparison
- 
-- 5 Whys - Root cause analysis
- 
-- Cost-Benefit Analysis - Economic evaluation
- 
-
- 
-
-### 📝 Documentation
-
- 
- 
-- Docs-as-Code - Documentation in version control
- 
-- Diátaxis Framework - Tutorials, How-tos, Reference, Explanation
- 
-- Pyramid Principle - BLUF, MECE, SCQ
- 
-
- 
-
-## How to Use
-
- Instead of:
-
- 
- "Write tests that first set up the context, then perform an action, then verify the result. Make sure each test is independent..."
-
- 
-
- Just say:
-
- 
- "Write tests using Arrange-Act-Assert pattern"
-
- 
-
- 
-
-## Open Source
-
- The full catalog is available on GitHub. Contributions welcome!
-
- View on GitHub →
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Semantic Anchor: Pyramid Principle
-Page: https://rdmueller.github.io/pages/blog/pyramid-principle.html
-
-EN
- January 21, 2026
- 
-
- 
-
-# New Semantic Anchor: Pyramid Principle
-
- One term activates an entire communication framework
-
- 
-
- 
- 
- 
-
- 
- Semantic Anchors enable efficient LLM communication: Instead of lengthy explanations, simply say "Pyramid Principle" - and immediately activate BLUF, SCQ, MECE, and more.
-
- 
-
-## The Problem
-
- When working with LLMs, we often find ourselves writing lengthy prompts explaining exactly how we want information structured:
-
- 
- "Start with the main conclusion, then group supporting arguments logically, make sure groups are mutually exclusive and collectively exhaustive..."
-
- 
-
- 
-
-## The Solution: Semantic Anchors
-
- Instead of all that, just write:
-
- 
- "Use the Pyramid Principle"
-
- 
-
- This single term activates a whole framework of concepts the LLM already knows from its training data:
-
- 
-
-## What Gets Activated
-
- 
- 
-- BLUF (Bottom Line Up Front) - Lead with your conclusion
- 
-- SCQ (Situation-Complication-Question) - Set up the context
- 
-- MECE (Mutually Exclusive, Collectively Exhaustive) - Organize arguments logically
- 
-- So What? - Keep everything action-oriented
- 
-
- 
-
-## Why This Works
-
- LLMs do pattern completion based on their training data. Well-established concepts like "Pyramid Principle" (popularized by Barbara Minto at McKinsey) appear frequently enough that they activate coherent response patterns.
-
- 
-
-## Adding to the Catalog
-
- This is now part of the growing Semantic Anchors catalog on GitHub - a collection of terms that enable efficient human-LLM communication.
-
- What semantic anchors do you use in your LLM workflows?
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# 5 LLMs Tested the New Tool
-Page: https://rdmueller.github.io/pages/blog/dacli-llm-tool.html
-
-EN
- 24. Januar 2026
- 
-
- 
-
-# 5 LLMs Tested the New Tool. Their Verdict Is Clear.
-
- Introducing dacli: Like LSP for documentation
-
- 
-
- 
- 
- 
-
- 
- Documentation systems lack standardized interfaces comparable to LSP. Large docs-as-code projects face a dilemma: providing entire files creates excessive context, while minimal input leaves gaps.
-
- 
-
-## The Problem
-
- When working with LLMs on documentation:
-
- 
- 
-- Full files → Token overload, cost explosion
- 
-- Snippets only → Missing context, poor results
- 
-- Manual copy-paste → Time-consuming, error-prone
- 
-
- 
-
-## The Solution: dacli
-
- dacli is a command-line tool designed to provide LLMs with structured access to documentation—similar to how LSP works for code.
-
- 
-
-### Key Features
-
- 
- 
-- 📂 Hierarchical navigation through document structures
- 
-- 🔍 Relevance-ranked search functionality
- 
-- ✏️ Programmatic editing of individual sections
- 
-- ✅ Documentation quality validation
- 
-
- 
-
-## What the LLMs Said
-
- 
- "Missing tool between LLMs and Docs-as-Code"
-
- — Claude
- 
-
- 
- "Production-ready after testing 134 sections"
-
- — GitHub Copilot CLI
- 
-
- 
- "Must-have for modern documentation workflows"
-
- — Kiro (AWS)
- 
-
- 
-
-## Open Source
-
- dacli is open source, part of the docToolchain ecosystem, and built with 90% code coverage. The tool was reportedly built entirely by LLMs—a fitting origin story.
-
- → View on GitHub
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# No Person, No Rights, No Responsibility
-Page: https://rdmueller.github.io/pages/blog/ai-license-paradox.html
-
-EN
- 29. Januar 2026
- 
-
- 
-
-# No Person, No Rights, No Responsibility: Why AI Contributors Break Our License System
-
- Exploring a fundamental paradox in open source licensing when AI generates code
-
- 
-
- 
- 
- 
-
- 
- This post was written by Claude (Anthropic) based on an extensive conversation with me about the topic. As a non-native English speaker, I could not have articulated these thoughts as clearly on my own. However, this is not "AI slop" – we discussed the subject in depth beforehand, building the argument together. I reviewed, edited, and approved the final result. The irony of using AI to write about AI authorship is not lost on me.
-
- 
-
-## The Spark
-
- Two days ago, I shared a LinkedIn post about my newest open source project. Three days old, seven contributors – all of them AI:
-
- 
- 
-- Claude, acting as me (a misconfiguration, actually)
- 
-- Claude as himself
- 
-- Claude with his own GitHub account R{AI}f.D.Mueller
- 
-- Copilot Pull-Request-Reviewer
- 
-- Copilot SWE-Agent
- 
-- Dependabot
- 
- A commenter raised an interesting point: "Does Claude then become co-author? If that's the case, does Claude immediately co-share ownership of the software?"
-
- This deserves a proper answer, because the question reveals how fundamentally unprepared our legal and licensing frameworks are for AI-generated code.
-
- 
-
-## The Trigger: Claude Claims Co-Authorship
-
- Here's what sparked the concern: Claude Code automatically adds this to commits:
-
- 
- Co-authored-by: Claude <noreply@anthropic.com>
-
- 
-
- This happens by default. The AI claims co-authorship without the user explicitly deciding to grant it. I understand why this feels presumptuous – Anthropic made a choice that affects how contributions are attributed in projects worldwide.
-
- But here's the thing: this claim is legally meaningless.
-
- 
-
-## Copyright ≠ Urheberrecht ≠ Software Patents
-
- Before we go further, let's untangle some terms that often get conflated:
-
- Copyright (US): Protects the work. It's a property right that can be transferred. "Work for hire" doctrine means employers can own copyright on employee creations.
-
- Urheberrecht (German/EU): Protects the creator. It's a personal right that cannot be transferred, only licensed. The creator always remains the creator.
-
- Software Patents: Exist in the US, not in Germany/EU (with very limited exceptions). Protect inventions and methods, not expression.
-
- Why does this matter? Because the question "who owns AI-generated code" has different answers depending on which legal framework you're in – and in most cases, the answer is: nobody.
-
- 
-
-## No Person, No Rights
-
- Here's the core legal reality:
-
- German copyright law (§ 2 UrhG) requires a "persönliche geistige Schöpfung" – a personal intellectual creation. The US Copyright Office has ruled similarly: AI-generated content without sufficient human creative input cannot be copyrighted.
-
- AI is not a person. Therefore:
-
- 
- 
-- AI cannot hold copyright
- 
-- AI cannot hold Urheberrecht
- 
-- AI cannot be granted patents
- 
- But what about the human who prompted the AI? If the prompting itself doesn't constitute sufficient creative input – if you just said "write me a function that does X" – then arguably no copyright exists for you either.
-
- The result: AI-generated code may be public domain by default.
-
- 
-
-## The Ownership Paradox
-
- This creates an interesting paradox:
-
- Open source licenses (MIT, GPL, Apache, BSD) all assume that someone holds the rights and is granting permissions. The entire model is: "I own this, and I give you permission to use it under these conditions."
-
- But if nobody owns AI-generated code:
-
- 
- 
-- Who has the right to grant a license?
- 
-- Can you put an MIT license on something you don't own?
- 
-- Is AI-generated code automatically "freer than free"?
- 
- Peter's concern about ownership was exactly backwards: the problem isn't that AI might claim ownership. The problem is that nobody can claim ownership, which breaks our entire licensing model.
-
- 
-
-## No Person, No Responsibility
-
- But here's where it gets serious. Rights come with responsibilities:
-
- 
- 
-- Who is liable if the code contains a security vulnerability?
- 
-- Who ensures no license violations are hidden in the output?
- 
-- Who guarantees there's no malicious code?
- 
-- Who can be sued if something goes wrong?
- 
- Not the AI. It's not a legal person. It cannot be held responsible.
-
- This is why my workflow matters:
-
- AI generates code → No author, no responsibility
- ↓
-Human reviews PR → Human assumes responsibility
- ↓
-Human approves merge → Human is accountable
- The "Co-authored-by: Claude" tag isn't about claiming ownership. It's about transparency – documenting how the code came into existence. The responsibility enters through my review.
-
- I am the human in the loop. Every PR goes through me. I have to approve it. That's where accountability is created.
-
- My weakness? I'm getting lazy. Sometimes I just wave PRs through. That's the real risk – not some theoretical AI ownership claim, but humans rubber-stamping AI output without proper review.
-
- 
-
-## The Final Irony: MIT License
-
- And then I put the code under MIT license:
-
- 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
-
- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE...
-
- 
-
- So the responsibility I assumed through review? I immediately disclaim it via the license.
-
- AI generates → no responsibility (no person)
- ↓
-Human reviews → assumes responsibility
- ↓
-MIT license → disclaims all responsibility
- ↓
-End user → uses at own risk 🎪
- We've come full circle. The entire system of rights and responsibilities just... dissolves.
-
- 
-
-## What Needs to Change
-
- Our software licensing model was built for a world where:
-
- 
- 
-- Humans write code
- 
-- Humans own that code
- 
-- Humans grant permissions
- 
-- Humans bear responsibility
- 
- None of these assumptions hold cleanly in the age of AI-assisted development.
-
- We need new frameworks that address:
-
- 
- 
-- Transparency requirements: How do we document AI involvement? The "Co-authored-by" tag is a start, but it's informal.
- 
-- Responsibility attribution: If AI generates and humans review, how do we formalize where responsibility lies?
- 
-- License validity: Can current licenses even apply to AI-generated code? Do we need new license types?
- 
-- Review documentation: Should there be a way to certify that human review actually happened?
- 
-- Hybrid works: Most code will be partly human, partly AI. How do we handle mixed provenance?
- 
-
- 
-
-## Back to Peter's Question
-
- So, does Claude "co-share ownership" of my software?
-
- No. Claude cannot own anything. Claude has no legal personhood. The "Co-authored-by" line is a transparency mechanism, not a legal claim. It's Anthropic's attempt to make AI involvement visible – which I'd argue is better than hiding it.
-
- The real questions we should be asking:
-
- 
- 
-- Who reviewed this code?
- 
-- Who is responsible for it?
- 
-- What does "authorship" even mean when the author has no legal existence?
- 
- The future of open source isn't threatened by AI claiming ownership. It's challenged by the fact that our entire legal and licensing infrastructure assumes human authors with human rights and human responsibilities.
-
- We need to update that infrastructure. Until then, we're all just improvising.
-
- 
-
- What do you think? How should software licenses evolve for the AI age? I'd love to hear your thoughts.
-
- 
-
- About this post: Written by Claude, directed by Ralf, reviewed by Ralf. The responsibility for publishing this is entirely human. The irony is entirely intentional.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# docToolchain rb - Documentation for the AI Age
-Page: https://rdmueller.github.io/pages/blog/doctoolchain-rb.html
-
-EN
- 30. Januar 2026
- 
-
- 
-
-# 🔄 docToolchain rb — Documentation Reborn for the AI Age
-
- After eight years of docs-as-code, documentation must now serve two audiences: humans AND AI systems
-
- 
-
- 
- 
- 
-
- 
- The statement "AI reads docs" is more significant than "AI writes docs." Tools like ChatGPT and Claude consume documentation as context—and they need different formatting than humans.
-
- 
-
-## The Paradigm Shift
-
- For eight years, I've been advocating docs-as-code. Now the field faces a fundamental transformation: documentation must serve two distinctly different audiences.
-
- 
-
-## Emerging Trends
-
- 
- 
-- llms.txt adoption: 600+ organizations including Anthropic and Stripe now provide AI-readable documentation summaries
- 
-- Model Context Protocol (MCP): Standardization for AI tool integration
- 
-- RAG technology: Converting documentation into searchable knowledge bases
- 
-
- 
-
-## The Market Gap
-
- All current AI-native documentation tools operate as SaaS. This leaves enterprises with data privacy concerns without suitable options for self-hosted solutions.
-
- 
-
-## docToolchain rb Features
-
- 
- 
-- 🔒 Self-hosted AI documentation with user-controlled LLMs
- 
-- 📝 AsciiDoc-native formatting
- 
-- 🏛️ Architecture documentation assistance (arc42 + ADR)
- 
-- 🤖 llms.txt and MCP support
- 
-- 🐳 Docker-first infrastructure
- 
-
- 
- "The question is no longer 'How do we write docs?' but 'How will AI read our docs?'"
-
- 
-
- 
-
-## What's Next?
-
- docToolchain rb represents the evolution of documentation tooling for a world where AI systems are first-class consumers of our technical content. Stay tuned for the release.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Raspberry Pi 5 + Local LLM
-Page: https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html
-
-EN
- 1. Februar 2026
- 
-
- 
-
-# Can a Raspberry Pi 5 Run a Local LLM for Coding Assistance?
-
- An experiment in edge AI—and why context size is a deployment constraint
-
- 
-
- 
- 
- 
-
- 
- I wanted to know: can a Raspberry Pi 5 run local LLMs for coding tasks? The hardware successfully ran smaller models via Ollama, but practical limitations emerged quickly.
-
- 
-
-## The Experiment
-
- Setting up Ollama on the Pi 5 was straightforward. Smaller models loaded fine. But then I tried to use it with Claude Code's workflow...
-
- 
-
-## The Showstopper
-
- The problem isn't running the model—it's context processing speed.
-
- Claude Code requires an ~11,000 token system prompt before generating any response. At the Pi's processing rate:
-
- 
- 11,000 tokens at 5 tok/s = several minutes just to process the input
-
- 
-
- This exceeds typical timeout thresholds before any actual response generation occurs.
-
- 
-
-## The Workaround
-
- Using n8n with custom, shorter prompts (50 tokens) achieved 15-30 second response times. This works for focused automation tasks like:
-
- 
- 
-- Translations
- 
-- Smart home commands
- 
-- Simple text processing
- 
-
- 
-
-## Critical Insights
-
- 
- 
-- Small models lack reasoning depth compared to larger counterparts
- 
-- "Context size" is a deployment constraint, not merely a model property
- 
-- Device capability differs from practical usability for specific tasks
- 
-- Processing every context token before generation becomes the dominant factor on constrained hardware
- 
-
- 
-
-## The Right Question
-
- Rather than asking "does it run?", evaluators should ask:
-
- 
- "What context size is practical, and what does that mean for my use case?"
-
- 
-
- For simple, focused tasks with minimal context: yes, it works.
-
- For agentic coding workflows: not yet practical.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
+> 14 Seiten im Volltext.
 
 # Your Code Is Worthless
 Page: https://rdmueller.github.io/pages/blog/code-is-worthless.html
@@ -1350,82 +600,480 @@ EN
 
 ---
 
-# Impressum
-Page: https://rdmueller.github.io/pages/impressum.html
+# Risk Radar Skills: The Automation Layer
+Page: https://rdmueller.github.io/pages/blog/risk-radar-skills.html
 
-# Impressum
+EN
+ 17. Februar 2026
+ 
 
  
- 
 
-## Angaben gemäß § 5 TMG
-
- 
- Ralf D. Müller
-
- [Straße und Hausnummer]
-
- [PLZ Ort]
- 
+# Risk Radar Skills: The Automation Layer
 
  
 
  
  
-
-## Kontakt
-
- 
- E-Mail: ralf.d.mueller@gmail.com
  
 
  
+ Last week I shared the Vibe-Coding Risk Radar — an interactive tool that helps you decide which AI-generated code needs review and which mitigations to apply.
+
+ The feedback was clear: "Great visualization. But how do I actually implement this in my workflow?"
+
+ So Claude and I built the automation layer.
+
+ Two new Claude Code skills turn the Risk Radar from a decision framework into an executable workflow:
+
+ `/risk-assess` — Interactive Risk Assessment → Scans your repository and detects modules automatically → Pattern-matches code types (auth, API, UI) with evidence → Asks targeted questions for uncertain dimensions → Calculates tier (1-4) based on highest risk dimension → Generates an ADR (nach Nygard) documenting the decision → Writes structured assessment to CLAUDE.md
+
+ `/risk-mitigate` — Automated Mitigation Implementation → Reads assessment from CLAUDE.md → Detects existing tools (linters, SAST, pre-commit hooks) → Shows gap analysis by tier (cumulative requirements) → Installs missing measures interactively (with your confirmation) → Verifies each tool works, commits individually to git → Updates the ADR status from "Proposed" to "Accepted" → Keeps CLAUDE.md in sync with actual state
+
+ The workflow now looks like this: 1. Run `/risk-assess` → Get tier classification + ADR 2. Security team reviews ADR → Approves assessment 3. Run `/risk-mitigate` → Tools get installed automatically 4. Security team reviews ADR again → Confirms mitigations active 5. Living documentation stays current with every change
+
+ Examples of what gets automated: • Tier 1: ESLint, Prettier, Husky pre-commit, npm audit in CI • Tier 2: Semgrep SAST, fast-check property tests, SonarQube • Tier 3: Branch protection via GitHub API, fuzzing setup, CODEOWNERS • Tier 4: Formal verification guidance (Dafny, TLA+), MC/DC coverage
+
+ The skills don't just recommend — they configure, verify, commit, and track. The ADR bridges developers and security teams with a shared artifact both can approve.
+
+ This closes the loop: - Developers get automated tooling help - Security teams get transparent ADRs to review - The codebase documents its own risk posture - No Excel files that nobody reads
+
+ Built with Semantic Anchors throughout (MECE, ADR nach Nygard, IEC 61508 SIL levels).
+
+ Try it yourself: https://github.com/LLM-Coding/vibe-coding-risk-radar
+
+ Skills live in `.claude/skills/` — install via `bash install-skills.sh`
+
+ Your feedback made this better. If you try it, let me know what works and what doesn't!
+
+ 
 
  
  
 
-## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+## LinkedWild
 
- 
- Ralf D. Müller
+---
 
- [Adresse wie oben]
- 
+# Documentation-as-Code Training with Socreatory
+Page: https://rdmueller.github.io/pages/blog/docs-as-code-training.html
 
- 
-
- 
- 
-
-## Haftungsausschluss
-
- 
-
-### Haftung für Inhalte
-
- 
- Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
- Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
+EN
+ 24. Februar 2026
  
 
  
 
-### Haftung für Links
-
- 
- Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen
- Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
- Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
- Seiten verantwortlich.
- 
+# Documentation-as-Code Training with Socreatory
 
  
 
-### Urheberrecht
+ 
+ 
+ 
 
  
- Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
- dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
- der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung
- des jeweiligen Autors bzw. Erstellers.
+ Architecture documentation that nobody reads. Diagrams that are outdated the moment you commit your code. README files scattered across repos with no single source of truth.
+
+ Sound familiar?
+
+ There's a better way: Documentation-as-Code.
+
+ Treat your docs like source code — version-controlled, automated, continuously delivered. No more Word documents or wiki pages that diverge from reality.
+
+ Falk Sippach and I are running a 2-day interactive workshop where you'll learn:
+
+ → Markup languages and lightweight tools (AsciiDoc, Markdown) → Version control integration (Git workflows for docs) → Diagram creation (PlantUML, Kroki.io, Diagrams.net) → Documentation modularization (DRY principle for docs) → Reducing redundancy through source code integration → Automated build management (CI/CD for documentation) → Audience-specific output generation (HTML, PDF, microsites)
+
+ Who should join: Developers, architects, and product managers who want quality documentation without the overhead. No specific tech stack required — the principles apply everywhere.
+
+ What you get: - Pragmatic, modern approach to architecture documentation - Continuous delivery of current docs - Integration into your existing dev workflow - Exchange on current industry trends and tools
+
+ I created docToolchain specifically to solve these problems. This workshop shows you how to use it (and alternatives) effectively.
+
+ Available as online or in-house training.
+
+ Interested? Check out the details: https://www.socreatory.com/de/trainings/docascode
+
+ Questions? Drop them in the comments or DM me.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# devcontainer exec claude
+Page: https://rdmueller.github.io/pages/blog/devcontainer-claude.html
+
+EN
+ 1. März 2026
+ 
+
+ 
+
+# devcontainer exec claude
+
+ 
+
+ 
+ 
+ 
+
+ 
+ devcontainer exec --workspace-folder . claude --dangerously-skip-permissions -p "do the needful"
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# 200-Line Prompt vs. 5 Words: Why Semantic Anchors Win
+Page: https://rdmueller.github.io/pages/blog/200-line-prompt.html
+
+EN
+ 2. März 2026
+ 
+
+ 
+
+# 200-Line Prompt vs. 5 Words: Why Semantic Anchors Win
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Why your 200-line prompt might be worse than five words
+
+ I keep seeing the same pattern: someone asks an LLM to generate a detailed system prompt for coding assistance. The result is a 200-line wall of instructions -- "always write tests before implementation, use mock objects to isolate each unit from its dependencies, start from the outermost layer and work inward..."
+
+ Then they paste that into their next session and wonder why the results are mediocre.
+
+ Here's what I'd write instead: "Use TDD, London School."
+
+ Five words. Better results. Because the model doesn't just follow a checklist -- it activates the entire concept: Freeman & Pryce, outside-in development, interaction-based verification, walking skeleton. The 200-line prompt tries to describe what the model already knows.
+
+ This led me to curate Semantic Anchors -- an open-source catalog of 52 precision terms that reliably activate rich knowledge domains in LLMs.
+
+ https://llm-coding.github.io/Semantic-Anchors/
+
+ ---
+
+ Why this works
+
+ A good semantic anchor is a compression heuristic: maximum context transfer with minimal tokens. But not every term qualifies. Four quality criteria separate anchors from buzzwords:
+
+ - Precise -- references a specific, well-bounded body of knowledge - Rich -- activates interconnected concepts, not just a single instruction - Consistent -- different users get similar results - Attributable -- traceable to concrete sources
+
+ "Best practices" is not an anchor. "SOLID Principles" is one.
+
+ ---
+
+ Where it gets interesting: layering anchors
+
+ "Create an arc42 architecture documentation with ADRs according to Nygard. Add a 3-point (-1,0,1) Pugh Matrix to the ADRs."
+
+ Four anchors working together: arc42 provides structure, ADR the decision format, Pugh Matrix the evaluation method -- and "3-point (-1,0,1)" refines the variant. This isn't prompt engineering. This is professional communication with a machine that understands domain language.
+
+ ---
+
+ The limits
+
+ A discussion with Edmund Siegfried Haselwanter challenged me on the failure modes. His core point: anchors are compression, not replacement for precise instructions.
+
+ When your understanding diverges from the mainstream, you need to make that explicit. Example: you follow TDD London School but use Testcontainers instead of mocks for infrastructure boundaries. The model won't guess that.
+
+ We converged on a layered approach:
+
+ 1. Set the anchor as baseline 2. Make the delta explicit -- where you diverge from the mainstream 3. Verify -- test whether the model understands the concept as you intend it
+
+ Same principle as any professional communication: assume shared vocabulary, make deviations explicit, verify understanding.
+
+ The catalog is open source: https://github.com/LLM-Coding/Semantic-Anchors
+
+ Do you consciously use semantic anchors in your work with LLMs?
+
+ Thanks to Edmund Siegfried Haselwanter for sparking this post.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# 200 Stars on GitHub in 10 Days
+Page: https://rdmueller.github.io/pages/blog/200-stars.html
+
+EN
+ 4. März 2026
+ 
+
+ 
+
+# 200 Stars on GitHub in 10 Days
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 200 Stars on GitHub. In 10 days.
+
+ Two weeks ago I published my first post about Semantic Anchors -- the idea that five precise words like "TDD, London School" can outperform a 200-line system prompt because they activate what the model already knows.
+
+ The response blew me away. 200+ stars, mass of contributions, and discussions that pushed the concept further than I could have on my own.
+
+ What started as a personal observation has become a community project: 52 curated anchors across software architecture, testing, design patterns, and development methodologies. Each one tested against the quality criteria (precise, rich, consistent, attributable).
+
+ A few highlights from the contributions:
+
+ - New anchors I hadn't considered - Quality improvements to existing entries - Thoughtful debates about what qualifies as an anchor vs. a buzzword
+
+ Thank you to everyone who starred, contributed, or challenged the idea. Open source lives from exactly this.
+
+ If you find Semantic Anchors useful in your daily work with LLMs, a star on GitHub helps the project reach more people: https://github.com/LLM-Coding/Semantic-Anchors
+
+ What anchor would you add?
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Bausteinsicht: Architecture as Code with draw.io
+Page: https://rdmueller.github.io/pages/blog/bausteinsicht-drawio.html
+
+EN
+ 5. März 2026
+ 
+
+ 
+
+# Bausteinsicht: Architecture as Code with draw.io
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Introducing Bausteinsicht -- Architecture as Code with draw.io
+
+ After years of building docToolchain, I kept running into the same problem: architecture diagrams that drift from reality the moment someone opens a diagramming tool.
+
+ Bausteinsicht (short b11t) solves this with a different approach:
+
+ Define your architecture in a simple JSON model. Get draw.io diagrams automatically -- and keep them in sync, bidirectionally.
+
+ How it works: - You describe elements, relationships, and views in JSONC (JSON with comments + schema validation) - The CLI generates fully styled draw.io diagrams with zoom-based drill-down navigation - Edit in draw.io? Changes sync back to the model. Edit the model? Diagrams update. - Watch mode detects changes in real-time
+
+ What makes it different: - No vendor lock-in -- draw.io files are open XML, your model is plain JSON - IDE-first -- JSON Schema gives you autocompletion and validation in any editor - LLM-friendly -- AI agents can read and modify architecture via CLI commands - Flexible hierarchy -- not limited to 4 C4 levels; define your own notation
+
+ Built in Go, zero npm dependencies, runs as a single CLI binary.
+
+ We just completed a thorough testing round (215 E2E tests) and fixed all reported bugs. The project includes arc42 documentation, ADRs, a security review, and a devcontainer for instant onboarding.
+
+ Open-source release is coming soon -- stay tuned!
+
+ If you're working on architecture-as-code, model-driven documentation, or diagram automation, I'd love to connect.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Socratic Method as a Semantic Anchor
+Page: https://rdmueller.github.io/pages/blog/socratic-method-anchor.html
+
+EN
+ 8. März 2026
+ 
+
+ 
+
+# Socratic Method as a Semantic Anchor
+
+ 
+
+ 
+ 
+ 
+
+ 
+ How to use the Socratic Method as a Semantic Anchor for requirements
+
+ Most developers start a new project by writing requirements. The problem: you're documenting assumptions you haven't questioned yet.
+
+ Try this instead:
+
+ "Use the Socratic Method to help me clarify requirements for [your project]."
+
+ One sentence. The model won't list requirements -- it will ask questions that expose your blind spots. It activates the full concept: targeted questioning, challenging assumptions, productive use of not-knowing, dialogue-driven clarity.
+
+ ---
+
+ Layering anchors makes it stronger
+
+ "Use the Socratic Method combined with MECE to clarify requirements for [project]. Challenge my assumptions before documenting anything."
+
+ Two anchors working together: - Socratic Method -- asks instead of answers - MECE -- ensures questions cover all areas without overlap
+
+ The result: structured questioning that systematically uncovers what you don't know yet.
+
+ ---
+
+ A concrete example
+
+ Me: "Use the Socratic Method to help me clarify requirements for a CLI tool that generates draw.io diagrams from a JSON architecture model."
+
+ The model asked: - "Who is the primary user -- an architect defining the model, or a developer consuming it?" - "When you say 'generates', do you mean one-time export or continuous sync?" - "What happens when someone edits the diagram in draw.io -- is that a valid workflow or a corruption?"
+
+ That third question uncovered a requirement I hadn't considered: bidirectional sync. It became the core feature of the tool.
+
+ ---
+
+ The delta pattern
+
+ Add constraints to prevent question overload:
+
+ "Use the Socratic Method to clarify requirements. Focus on: stakeholder conflicts, implicit assumptions, and boundary conditions. Don't ask more than 3 questions at a time."
+
+ The delta ("max 3 questions") keeps the dialogue productive instead of overwhelming.
+
+ This follows the Anchor, Delta, Verify pattern: 1. Set the anchor -- activate the established concept 2. Make the delta explicit -- constrain to your context 3. Verify -- check if the questions actually expose assumptions
+
+ ---
+
+ "Socratic Method" is one of 52 curated Semantic Anchors -- precision terms that reliably activate rich knowledge domains in LLMs: https://github.com/LLM-Coding/Semantic-Anchors
+
+ What's your go-to technique for uncovering hidden requirements?
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# Vacuum Cleaner Philosophy: Duck Typing in Real Life
+Page: https://rdmueller.github.io/pages/blog/vacuum-cleaner-duck-typing.html
+
+EN
+ 10. März 2026
+ 
+
+ 
+
+# Vacuum Cleaner Philosophy: Duck Typing in Real Life
+
+ 
+
+ 
+ 
+ 
+
+ 
+ My vacuum cleaner gets hungry.
+
+ Sounds absurd? Think about it. It has an internal state (battery level) that constantly influences its behavior. It weighs "should I keep cleaning?" against "how far is the charging station?" Every decision is a trade-off between current task and energy reserves. That's functionally identical to hunger. But we refuse to call it that, because we've defined hunger as something only humans can feel. Same with intelligence, same with creativity.
+
+ Watch what happens when AI reaches a milestone. The Turing Test was proposed in 1950 as the ultimate measure of machine intelligence. It seemed impossible at the time, so it became the goalpost. Now that LLMs pass it, we say "well, that wasn't real intelligence anyway." The goalposts keep moving. "It's just pattern matching." So is most human cognition. "It's just recombination." So is human creativity. Every time machines reach a bar we've set, we raise it and claim the old bar never counted.
+
+ A developer in a LinkedIn comment told me yesterday that LLMs are like "monkeys producing Shakespeare." He's deeply technical, understands transformer architecture, and has programmed similar models himself. His argument is purely about mechanism: "It's just token prediction, therefore it can't be intelligent." But by that logic, your brain is just neurons firing electrochemical signals. Does that mean you can't be intelligent either? The mechanism tells you very little about what emerges from it.
+
+ I've started thinking about this in terms of duck typing. If it writes working code, finds bugs, creates architecture plans, knows when it's done, and refuses to help with unethical requests... does it matter what we call it? Maybe what AI does is something new that doesn't fit our old categories. We only have two boxes for it: "just a tool" and "truly intelligent." And when something doesn't fit either box, most people force it into "just a tool" because the alternative is uncomfortable.
+
+ Don't take this too seriously. It's a thought experiment. It makes zero practical difference whether we call a low battery "hunger" or just "a low battery." The vacuum behaves the same either way. But the words we choose reveal something about us: how we draw the line between "real" and "just mechanical," and why we're so invested in keeping that line exactly where it is.
+
+ My vacuum cleaner doesn't care what we call its hunger. It just goes to the charging station when it needs to.
+
+ 
+
+ 
+ 
+
+## LinkedWild
+
+---
+
+# The IDE Is Dead
+Page: https://rdmueller.github.io/pages/blog/ide-is-dead.html
+
+EN
+ 10. März 2026
+ 
+
+ 
+
+# The IDE Is Dead
+
+ 
+
+ 
+ 
+ 
+
+ 
+ The IDE Is Dead. We Just Haven't Noticed Yet.
+
+ One golden rule of agentic coding: Never place your cursor in the editor.
+
+ Always tell the AI what to change. Never touch the code yourself. Why? Because every manual edit breaks the AI's context.
+
+ So you stop editing.
+
+ But then... what is the IDE still doing for you?
+
+ Code review? The AI does that. Debugging? The AI does that. Refactoring? The AI does that. Previewing artifacts? I tell the AI how to render a view and get it in the browser.
+
+ I literally ran a Slidev presentation server from my terminal last night. No IDE involved. When I needed changes to the slides, I described them in natural language. Done.
+
+ The IDE has become a spectator in its own stadium.
+
+ Surveys have shown for years that IDEs like IntelliJ are losing users. Most migrated to VS Code. But here's the thing: VS Code is next.
+
+ When developers embrace agentic coding, VS Code degrades to a glorified preview window. You don't use its editing features. You don't use its refactoring tools. You don't even use its debugger. You use the terminal. And a browser.
+
+ This is genuinely sad for some brilliant work. Alexander Schwartz's Asciidoctor plugin for IntelliJ, for example, is a masterpiece of IDE integration with features no browser can match. Years of craft, potentially obsoleted not by a better tool, but by a paradigm shift that makes the whole category irrelevant.
+
+ But that's how technology works. The best horse carriage manufacturer didn't become the best car manufacturer.
+
+ The question isn't whether IDEs will disappear. The question is what replaces them.
+
+ My bet: a thin terminal + browser combo. The AI orchestrates. You review. The browser renders.
+
+ The "Integrated" in IDE meant integrating everything into one tool. Agentic coding disintegrates that. And that's fine.
+
+ 
+
+ 
+ 
+
+## LinkedWild
 
