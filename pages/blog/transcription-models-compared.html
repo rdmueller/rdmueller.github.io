@@ -34,7 +34,7 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <link rel="stylesheet" href="../../css/style.min.css">
-    <style>.article-content .table-wide{--gutter:2.5rem;width:calc(100vw - 2*var(--gutter));max-width:none;margin:var(--spacing-xl) 0 var(--spacing-xl) calc(var(--gutter) - var(--container-padding) - (100vw - min(var(--container-max),100vw))/2);overflow-x:auto}.article-content .table-wide table{width:100%;border-collapse:collapse;font-size:.85em;line-height:1.4}.article-content .table-wide th,.article-content .table-wide td{padding:.4em .6em;border-bottom:1px solid #e5e7eb;vertical-align:top;text-align:left}.article-content .table-wide th{background:#f3f4f6}td:has(.bar){white-space:nowrap}.bar{display:inline-block;width:6rem;height:.6em;background:#eee;vertical-align:middle;margin-right:.4em}.bar i{display:block;height:100%;width:var(--w);background:#2b6cb0}</style>
+    <style>.article-content .table-wide{--gutter:2.5rem;width:calc(100vw - 2*var(--gutter));max-width:none;margin:var(--spacing-xl) 0 var(--spacing-xl) calc(var(--gutter) - var(--container-padding) - (100vw - min(var(--container-max),100vw))/2);overflow-x:auto}.article-content .table-wide table{width:100%;border-collapse:collapse;font-size:.85em;line-height:1.4}.article-content .table-wide th,.article-content .table-wide td{padding:.4em .6em;border-bottom:1px solid #e5e7eb;vertical-align:top;text-align:left}.article-content .table-wide th{background:#f3f4f6}.article-content .table-wide td.num,.article-content .table-wide td:nth-child(2){white-space:nowrap}.article-content .table-wide small{font-weight:400;color:#6b7280;font-size:.85em}.article-content .table-notes{font-size:.8em;color:#6b7280;margin:.5em 0 0 1.2em;line-height:1.4}.article-content .table-wide sup{font-size:.7em}.bar{display:inline-block;width:6rem;height:.6em;background:#eee;vertical-align:middle;margin-right:.4em}.bar i{display:block;height:100%;width:var(--w);background:#2b6cb0}</style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -91,111 +91,22 @@
 
                 <div class="table-wide">
 <table>
-                    <thead>
-                        <tr>
-                            <th>Model</th>
-                            <th>Time, clip 1 / clip 2</th>
-                            <th>Time per 5-min clip</th>
-                            <th>Deviation from old reference (clip 1 / clip 2)</th>
-                            <th>Terms</th>
-                            <th>Timestamps</th>
-                            <th>Cost per 10 min (billing)</th>
-                            <th>Cost per hour of audio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>whisper-1</td>
-                            <td>20.7 s / 21.9 s</td>
-                            <td><span class="bar" style="--w:9%"><i></i></span> 21.9 s</td>
-                            <td>73 (10.5 %) / 84 (11.6 %)</td>
-                            <td>4 of 4</td>
-                            <td>yes, segments</td>
-                            <td>$0.03</td>
-                            <td><span class="bar" style="--w:51%"><i></i></span> $0.18</td>
-                        </tr>
-                        <tr>
-                            <td>gpt-4o-transcribe</td>
-                            <td>15.3 s / 25.1 s</td>
-                            <td><span class="bar" style="--w:10%"><i></i></span> 25.1 s</td>
-                            <td>57 (8.2 %) / 115 (15.8 %)</td>
-                            <td>4 of 4</td>
-                            <td>no</td>
-                            <td>$0.027</td>
-                            <td><span class="bar" style="--w:46%"><i></i></span> $0.162</td>
-                        </tr>
-                        <tr>
-                            <td>gpt-transcribe</td>
-                            <td>13.9 s / 12.4 s</td>
-                            <td><span class="bar" style="--w:5%"><i></i></span> 12.4 s</td>
-                            <td>57 (8.2 %) / 93 (12.8 %)</td>
-                            <td>4 of 4</td>
-                            <td>no</td>
-                            <td>$0.045</td>
-                            <td><span class="bar" style="--w:76%"><i></i></span> $0.27</td>
-                        </tr>
-                        <tr>
-                            <td>gpt-4o-transcribe-diarize</td>
-                            <td>168.8 s / 140.1 s</td>
-                            <td><span class="bar" style="--w:56%"><i></i></span> 140.1 s</td>
-                            <td>305 (43.9 %) / 171 (23.5 %)</td>
-                            <td>2 of 4</td>
-                            <td>yes, with speakers</td>
-                            <td>$0.059</td>
-                            <td><span class="bar" style="--w:100%"><i></i></span> $0.354</td>
-                        </tr>
-                        <tr>
-                            <td>voxtral-mini-latest</td>
-                            <td>64.4 s / 110.3 s</td>
-                            <td><span class="bar" style="--w:44%"><i></i></span> 110.3 s</td>
-                            <td>49 / 102</td>
-                            <td>4 of 4</td>
-                            <td>yes, segments</td>
-                            <td>$0.03 (list price $0.003/min)</td>
-                            <td><span class="bar" style="--w:51%"><i></i></span> $0.18</td>
-                        </tr>
-                        <tr>
-                            <td>large-v3 local, new settings</td>
-                            <td>708 s / 766 s</td>
-                            <td><span class="bar" style="--w:100%"><i></i></span> 766 s +</td>
-                            <td>46 (6.6 %) / 98 (13.5 %)</td>
-                            <td>4 of 4</td>
-                            <td>not evaluated</td>
-                            <td>$0</td>
-                            <td>$0, electricity</td>
-                        </tr>
-                        <tr>
-                            <td>large-v3-turbo local</td>
-                            <td>216 s (clip 2; clip 1 includes the model download)</td>
-                            <td><span class="bar" style="--w:86%"><i></i></span> 216 s</td>
-                            <td>52 (7.5 %) / 106 (14.6 %)</td>
-                            <td>4 of 4</td>
-                            <td>not evaluated</td>
-                            <td>$0</td>
-                            <td>$0, electricity</td>
-                        </tr>
-                        <tr>
-                            <td>Parakeet TDT 0.6B v3 local</td>
-                            <td>57 s / 59 s, plus 54 s to load</td>
-                            <td><span class="bar" style="--w:24%"><i></i></span> 59 s</td>
-                            <td>62 (8.9 %) / 113 (15.5 %)</td>
-                            <td>4 of 4</td>
-                            <td>not evaluated</td>
-                            <td>$0</td>
-                            <td>$0, electricity</td>
-                        </tr>
-                        <tr>
-                            <td>Canary 1B v2 local</td>
-                            <td>aborted, OOM at 9.8 GB RAM</td>
-                            <td>aborted, OOM</td>
-                            <td>not measurable</td>
-                            <td>not measurable</td>
-                            <td>no</td>
-                            <td>$0</td>
-                            <td>$0, electricity</td>
-                        </tr>
-                    </tbody>
-                </table>
+<thead>
+<tr><th>Model</th><th>Time per 5-min clip<br><small>clip 1 / clip 2, bar = clip 2</small></th><th>Words off vs. old reference<br><small>clip 1 / clip 2</small></th><th>Terms</th><th>Timestamps</th><th>Cost per hour of audio<br><small>from billing per 10 min</small></th></tr>
+</thead>
+<tbody>
+<tr><td>whisper-1</td><td class="num"><span class="bar" style="--w:9%"><i></i></span> 20.7 s / 21.9 s</td><td class="num">73 (10.5&nbsp;%) / 84 (11.6&nbsp;%)</td><td>4 of 4</td><td>yes, segments</td><td class="num"><span class="bar" style="--w:51%"><i></i></span> $0.18 <small>($0.03 / 10 min)</small></td></tr>
+<tr><td>gpt-4o-transcribe</td><td class="num"><span class="bar" style="--w:10%"><i></i></span> 15.3 s / 25.1 s</td><td class="num">57 (8.2&nbsp;%) / 115 (15.8&nbsp;%)</td><td>4 of 4</td><td>no</td><td class="num"><span class="bar" style="--w:46%"><i></i></span> $0.162 <small>($0.027 / 10 min)</small></td></tr>
+<tr><td>gpt-transcribe</td><td class="num"><span class="bar" style="--w:5%"><i></i></span> 13.9 s / 12.4 s</td><td class="num">57 (8.2&nbsp;%) / 93 (12.8&nbsp;%)</td><td>4 of 4</td><td>no</td><td class="num"><span class="bar" style="--w:76%"><i></i></span> $0.27 <small>($0.045 / 10 min)</small></td></tr>
+<tr><td>gpt-4o-transcribe-diarize</td><td class="num"><span class="bar" style="--w:56%"><i></i></span> 168.8 s / 140.1 s</td><td class="num">305 (43.9&nbsp;%) / 171 (23.5&nbsp;%)</td><td>2 of 4</td><td>yes, with speakers</td><td class="num"><span class="bar" style="--w:100%"><i></i></span> $0.354 <small>($0.059 / 10 min)</small></td></tr>
+<tr><td>voxtral-mini-latest</td><td class="num"><span class="bar" style="--w:44%"><i></i></span> 64.4 s / 110.3 s</td><td class="num">49 / 102</td><td>4 of 4</td><td>yes, segments</td><td class="num"><span class="bar" style="--w:51%"><i></i></span> $0.18<sup>1</sup> <small>($0.03 / 10 min)</small></td></tr>
+<tr><td>large-v3 local, new settings</td><td class="num"><span class="bar" style="--w:100%"><i></i></span> 708 s / 766 s +</td><td class="num">46 (6.6&nbsp;%) / 98 (13.5&nbsp;%)</td><td>4 of 4</td><td>not evaluated</td><td class="num">$0, electricity</td></tr>
+<tr><td>large-v3-turbo local</td><td class="num"><span class="bar" style="--w:86%"><i></i></span> 326 s / 216 s<sup>2</sup></td><td class="num">52 (7.5&nbsp;%) / 106 (14.6&nbsp;%)</td><td>4 of 4</td><td>not evaluated</td><td class="num">$0, electricity</td></tr>
+<tr><td>Parakeet TDT 0.6B v3 local</td><td class="num"><span class="bar" style="--w:24%"><i></i></span> 57 s / 59 s<sup>3</sup></td><td class="num">62 (8.9&nbsp;%) / 113 (15.5&nbsp;%)</td><td>4 of 4</td><td>not evaluated</td><td class="num">$0, electricity</td></tr>
+<tr><td>Canary 1B v2 local</td><td class="num">aborted<sup>4</sup></td><td class="num">not measurable</td><td>not measurable</td><td>no</td><td class="num">$0, electricity</td></tr>
+</tbody>
+</table>
+<ol class="table-notes"><li>Voxtral: list price $0.003 per minute, no billing figure.</li><li>large-v3-turbo, clip 1: includes the 1.6 GB model download; 216 s is the clean value.</li><li>Parakeet: plus 54 s to load the model once.</li><li>Canary 1B v2: OOM at 9.8 GB RAM, output loops after about 90 words.</li></ol>
 </div>
 
                 <p>Time bars use clip 2 without download or load time, scaled at 25 seconds per tenth of the bar and capped at 250 seconds; the large-v3 bar (766 s) is cut off and marked with a +. Cost bars scale to the most expensive model, $0.354 per hour. OpenAI costs come from my billing page and cover audio input only; Voxtral is list price. A 65-minute episode costs less than half a dollar with any of them.</p>
