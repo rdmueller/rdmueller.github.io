@@ -34,7 +34,7 @@
     </script>
     <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <link rel="stylesheet" href="../../css/style.min.css">
-    <style>td:has(.bar){white-space:nowrap}.bar{display:inline-block;width:6rem;height:.6em;background:#eee;vertical-align:middle;margin-right:.4em}.bar i{display:block;height:100%;width:var(--w);background:#2b6cb0}</style>
+    <style>.article-content .table-wide{width:calc(min(var(--container-max),100vw) - 2*var(--container-padding));max-width:none;overflow-x:auto;margin:var(--spacing-xl) 0}.article-content .table-wide table{width:100%;border-collapse:collapse;font-size:.85em;line-height:1.4}.article-content .table-wide th,.article-content .table-wide td{padding:.4em .6em;border-bottom:1px solid #e5e7eb;vertical-align:top;text-align:left}.article-content .table-wide th{background:#f3f4f6}td:has(.bar){white-space:nowrap}.bar{display:inline-block;width:6rem;height:.6em;background:#eee;vertical-align:middle;margin-right:.4em}.bar i{display:block;height:100%;width:var(--w);background:#2b6cb0}</style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -89,7 +89,8 @@
 
                 <p>For the comparison I cut two five-minute clips from episode 113: minutes 20 to 25 and minutes 31 to 36. The second clip contains the technical terms EKS, EC2, Kubernetes and "99.99 %". The local large-v3 transcript from the first run served as the reference. I count differing words, ignoring case and punctuation. The lineup: four OpenAI models, Mistral's voxtral-mini-latest, and locally a second run of large-v3 with different settings, Whisper large-v3-turbo, Parakeet TDT 0.6B v3 and Canary 1B v2. API timings include the upload over my home network. Local runs: WSL2, 12 vCPUs, no GPU.</p>
 
-                <table>
+                <div class="table-wide">
+<table>
                     <thead>
                         <tr>
                             <th>Model</th>
@@ -195,6 +196,7 @@
                         </tr>
                     </tbody>
                 </table>
+</div>
 
                 <p>Time bars use clip 2 without download or load time, scaled at 25 seconds per tenth of the bar and capped at 250 seconds; the large-v3 bar (766 s) is cut off and marked with a +. Cost bars scale to the most expensive model, $0.354 per hour. OpenAI costs come from my billing page and cover audio input only; Voxtral is list price. A 65-minute episode costs less than half a dollar with any of them.</p>
 
@@ -206,7 +208,8 @@
 
                 <p>Four passages show where the models hear or write things differently. The quotes stay in German; the first column says what to look for.</p>
 
-                <table>
+                <div class="table-wide">
+<table>
                     <thead>
                         <tr>
                             <th>Passage</th>
@@ -272,6 +275,7 @@
                         </tr>
                     </tbody>
                 </table>
+</div>
 
                 <p>Three things stand out. Every model mishears something, just in different places: gpt-transcribe turns "Semantik" into "diese Mantik", Voxtral turns "erfolgreichen Reparatur" (successful repair) into "folgenden Reparatur" (following repair). All the text models get the technical terms right. And they handle self-corrections differently: gpt-transcribe keeps the spoken "sorry", while whisper-1, gpt-4o-transcribe and Voxtral write only the corrected sentence. One detail on whisper-1: clip 1 came back in lowercase without punctuation, a known mode that a prompt written as a full sentence usually prevents.</p>
 
@@ -301,7 +305,8 @@
 
                 <p>Canary 1B v2 isn't usable on this hardware. Memory climbed to 9.8 GB on clip 1 and the OOM killer ended the process. Of the 263 unpunctuated words written by then, the first 90 or so are right; after that the output loops ("das ist ein bisschen mehr als das ist ein bisschen mehr als ...").</p>
 
-                <table>
+                <div class="table-wide">
+<table>
                     <thead>
                         <tr>
                             <th>Local model</th>
@@ -337,6 +342,7 @@
                         </tr>
                     </tbody>
                 </table>
+</div>
 
                 <h2>The next pipeline uses two witnesses and a referee</h2>
 
