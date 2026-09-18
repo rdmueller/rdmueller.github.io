@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eight transcription models compared. Whisper's bad results came from its settings, not the model, and a two-witness pipeline keeps you vendor-independent.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/transcription-models-compared.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/transcription-models-compared.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Whisper wasn't the problem, my settings were: eight transcription models compared | Ralf D. Müller">
+    <meta property="og:description" content="Eight transcription models compared. Whisper's bad results came from its settings, not the model, and a two-witness pipeline keeps you vendor-independent.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/transcription-models-compared.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Whisper wasn't the problem, my settings were: eight transcription models compared | Ralf D. Müller">
+    <meta name="twitter:description" content="Eight transcription models compared. Whisper's bad results came from its settings, not the model, and a two-witness pipeline keeps you vendor-independent.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/transcription-models-compared.png">
+    <title>Whisper wasn't the problem, my settings were: eight transcription models compared | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Whisper wasn't the problem, my settings were: eight transcription models compared",
+      "description": "Eight transcription models compared. Whisper's bad results came from its settings, not the model, and a two-witness pipeline keeps you vendor-independent.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/transcription-models-compared.png",
+      "url": "https://rdmueller.github.io/pages/blog/transcription-models-compared.html",
+      "datePublished": "2026-09-18",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <style>.bar{display:inline-block;width:6rem;height:.6em;background:#eee;vertical-align:middle;margin-right:.4em}.bar i{display:block;height:100%;width:var(--w);background:#2b6cb0}</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">18 September 2026</span>
+                </div>
+                <h1>Whisper wasn't the problem, my settings were: eight transcription models compared</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/transcription-models-compared.png" alt="Two microphones on a desk feeding two paper transcripts, a small referee with a whistle comparing the sheets and pointing at a highlighted word">
+            </figure>
+
+            <div class="article-content">
+                <p>I needed transcripts of three episodes of software-architektur.tv. In episodes 111 to 113, Eberhard Wolff builds a software architecture live on stream under the title "Wir bauen eine Software-Architektur" ("Let's build a software architecture"). I wanted to derive ADRs and an arc42 document from them; both are now public at <a href="https://llm-coding.github.io/fahrrad-reparatur-architektur/">llm-coding.github.io/fahrrad-reparatur-architektur</a>. The side task turned into a comparison of eight models, five via API and three local, and a lesson about my own settings.</p>
+
+                <h2>Local Whisper tied up my laptop for two days</h2>
+
+                <p>My first attempt ran Whisper large-v3 locally. The laptop has no GPU, so the model ran on the CPU under WSL2 in int8, with the audio cut into 15-minute chunks and a VAD filter. Fifteen minutes of audio took 40 to 60 minutes. The OOM killer stopped the process twice. The laptop kept dropping into Modern Standby even though it was plugged in (Windows event 506: "Idle Timeout", "Lid", "Austerity Battery Drain Budget"), until a PowerShell script called <code>SetThreadExecutionState</code> to keep it awake. Three episodes took a good two days.</p>
+
+                <p>The output was only partly worth the effort. The transcript had repetition loops where the same half sentence appears three times in a row. Whole passages came back without punctuation. And the model made up terms: arc42 became "Akte 42" (a German word for "file"), EC2 became "ECB". I blamed the model. That was premature.</p>
+
+                <h2>The API models take seconds and don't make those mistakes</h2>
+
+                <p>For the comparison I cut two five-minute clips from episode 113: minutes 20 to 25 and minutes 31 to 36. The second clip contains the technical terms EKS, EC2, Kubernetes and "99.99 %". The local large-v3 transcript from the first run served as the reference. I count differing words, ignoring case and punctuation. The lineup: four OpenAI models, Mistral's voxtral-mini-latest, and locally a second run of large-v3 with different settings, Whisper large-v3-turbo, Parakeet TDT 0.6B v3 and Canary 1B v2. API timings include the upload over my home network. Local runs: WSL2, 12 vCPUs, no GPU.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Time, clip 1 / clip 2</th>
+                            <th>Time per 5-min clip</th>
+                            <th>Deviation from old reference (clip 1 / clip 2)</th>
+                            <th>Terms</th>
+                            <th>Timestamps</th>
+                            <th>Cost per 10 min (billing)</th>
+                            <th>Cost per hour of audio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>whisper-1</td>
+                            <td>20.7 s / 21.9 s</td>
+                            <td><span class="bar" style="--w:9%"><i></i></span> 21.9 s</td>
+                            <td>73 (10.5 %) / 84 (11.6 %)</td>
+                            <td>4 of 4</td>
+                            <td>yes, segments</td>
+                            <td>$0.03</td>
+                            <td><span class="bar" style="--w:51%"><i></i></span> $0.18</td>
+                        </tr>
+                        <tr>
+                            <td>gpt-4o-transcribe</td>
+                            <td>15.3 s / 25.1 s</td>
+                            <td><span class="bar" style="--w:10%"><i></i></span> 25.1 s</td>
+                            <td>57 (8.2 %) / 115 (15.8 %)</td>
+                            <td>4 of 4</td>
+                            <td>no</td>
+                            <td>$0.027</td>
+                            <td><span class="bar" style="--w:46%"><i></i></span> $0.162</td>
+                        </tr>
+                        <tr>
+                            <td>gpt-transcribe</td>
+                            <td>13.9 s / 12.4 s</td>
+                            <td><span class="bar" style="--w:5%"><i></i></span> 12.4 s</td>
+                            <td>57 (8.2 %) / 93 (12.8 %)</td>
+                            <td>4 of 4</td>
+                            <td>no</td>
+                            <td>$0.045</td>
+                            <td><span class="bar" style="--w:76%"><i></i></span> $0.27</td>
+                        </tr>
+                        <tr>
+                            <td>gpt-4o-transcribe-diarize</td>
+                            <td>168.8 s / 140.1 s</td>
+                            <td><span class="bar" style="--w:56%"><i></i></span> 140.1 s</td>
+                            <td>305 (43.9 %) / 171 (23.5 %)</td>
+                            <td>2 of 4</td>
+                            <td>yes, with speakers</td>
+                            <td>$0.059</td>
+                            <td><span class="bar" style="--w:100%"><i></i></span> $0.354</td>
+                        </tr>
+                        <tr>
+                            <td>voxtral-mini-latest</td>
+                            <td>64.4 s / 110.3 s</td>
+                            <td><span class="bar" style="--w:44%"><i></i></span> 110.3 s</td>
+                            <td>49 / 102</td>
+                            <td>4 of 4</td>
+                            <td>yes, segments</td>
+                            <td>$0.03 (list price $0.003/min)</td>
+                            <td><span class="bar" style="--w:51%"><i></i></span> $0.18</td>
+                        </tr>
+                        <tr>
+                            <td>large-v3 local, new settings</td>
+                            <td>708 s / 766 s</td>
+                            <td><span class="bar" style="--w:100%"><i></i></span> 766 s +</td>
+                            <td>46 (6.6 %) / 98 (13.5 %)</td>
+                            <td>4 of 4</td>
+                            <td>not evaluated</td>
+                            <td>$0</td>
+                            <td>$0, electricity</td>
+                        </tr>
+                        <tr>
+                            <td>large-v3-turbo local</td>
+                            <td>216 s (clip 2; clip 1 includes the model download)</td>
+                            <td><span class="bar" style="--w:86%"><i></i></span> 216 s</td>
+                            <td>52 (7.5 %) / 106 (14.6 %)</td>
+                            <td>4 of 4</td>
+                            <td>not evaluated</td>
+                            <td>$0</td>
+                            <td>$0, electricity</td>
+                        </tr>
+                        <tr>
+                            <td>Parakeet TDT 0.6B v3 local</td>
+                            <td>57 s / 59 s, plus 54 s to load</td>
+                            <td><span class="bar" style="--w:24%"><i></i></span> 59 s</td>
+                            <td>62 (8.9 %) / 113 (15.5 %)</td>
+                            <td>4 of 4</td>
+                            <td>not evaluated</td>
+                            <td>$0</td>
+                            <td>$0, electricity</td>
+                        </tr>
+                        <tr>
+                            <td>Canary 1B v2 local</td>
+                            <td>aborted, OOM at 9.8 GB RAM</td>
+                            <td>aborted, OOM</td>
+                            <td>not measurable</td>
+                            <td>not measurable</td>
+                            <td>no</td>
+                            <td>$0</td>
+                            <td>$0, electricity</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Time bars use clip 2 without download or load time, scaled at 25 seconds per tenth of the bar and capped at 250 seconds; the large-v3 bar (766 s) is cut off and marked with a +. Cost bars scale to the most expensive model, $0.354 per hour. OpenAI costs come from my billing page and cover audio input only; Voxtral is list price. A 65-minute episode costs less than half a dollar with any of them.</p>
+
+                <h2>The old reference is flawed itself, so the numbers only rank the models</h2>
+
+                <p>The "deviation from old reference" column isn't an error rate, because the reference itself has at least four clear mistakes in ten minutes of audio: the hallucinated "ECB", the "99 x 99 %" repetition loop, and two misheard phrases that turn "Ausfallsicherheit" (resilience) and "zusichert" (guarantees) into nonsense. So the numbers tell you which model stays closest to the spoken words, not which one makes the fewest mistakes. And as it turned out, those four mistakes came from my setup, not from the model.</p>
+
+                <h2>The models part ways on the exact wording</h2>
+
+                <p>Four passages show where the models hear or write things differently. The quotes stay in German; the first column says what to look for.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Passage</th>
+                            <th>Model</th>
+                            <th>Transcript</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SLA sentence: "ECB" doesn't exist, the speaker says EC2</td>
+                            <td>large-v3 (old reference)</td>
+                            <td>"das sind halt die SLAs von ECB. EC2 oder EKS, also von den Amazon-Services in Bezug auf Kubernetes und EC2."</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>gpt-transcribe</td>
+                            <td>"das sind halt die SLAs von EC2 oder EKS, also von den Amazon Services in Bezug auf Kubernetes und EC2."</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>gpt-4o-transcribe-diarize</td>
+                            <td>"das sind halt die I uh S_L_A_s from Isitu to I_K_S_ also von den Amazon services in Bezug auf Kubernetes und etcd."</td>
+                        </tr>
+                        <tr>
+                            <td>Self-correction: the speaker says "less than 99 percent, sorry, 99.99 percent"</td>
+                            <td>large-v3 (old reference)</td>
+                            <td>"wenn das System mit weniger als 99 x 99 % zur Verfügung steht? Also weniger als, sorry, 99,99 % zur Verfügung steht, wenn das System mit weniger als 99 x 99 % zur Verfügung steht?"</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>whisper-1</td>
+                            <td>"wenn das System mit weniger als 99,99% zur Verfügung steht?"</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>gpt-transcribe</td>
+                            <td>"mit weniger als 99 Prozent zur Verfügung, also weniger als, sorry, 99,99 Prozent zur Verfügung steht?"</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>voxtral-mini-latest</td>
+                            <td>"weniger als 99,99% zur Verfügung steht?"</td>
+                        </tr>
+                        <tr>
+                            <td>"Ausfallsicherheit" (resilience)</td>
+                            <td>large-v3 (old reference)</td>
+                            <td>"mit höherer Wahrscheinlichkeiten aus für Sicherheit zu erzeugen"</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>gpt-4o-transcribe</td>
+                            <td>"mit höherer Wahrscheinlichkeit einen Ausfallsicherheit zu erzeugen"</td>
+                        </tr>
+                        <tr>
+                            <td>"Semantik" (semantics)</td>
+                            <td>gpt-transcribe</td>
+                            <td>"Ich hätte jetzt eben diese Mantik dieser roten Dinger geändert."</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>voxtral-mini-latest</td>
+                            <td>"Ich hätte jetzt eben die Semantik dieser roten Dinger geändert, um ..."</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>Three things stand out. Every model mishears something, just in different places: gpt-transcribe turns "Semantik" into "diese Mantik", Voxtral turns "erfolgreichen Reparatur" (successful repair) into "folgenden Reparatur" (following repair). All the text models get the technical terms right. And they handle self-corrections differently: gpt-transcribe keeps the spoken "sorry", while whisper-1, gpt-4o-transcribe and Voxtral write only the corrected sentence. One detail on whisper-1: clip 1 came back in lowercase without punctuation, a known mode that a prompt written as a full sentence usually prevents.</p>
+
+                <h2>Diarization fails the test</h2>
+
+                <p>Only one of the eight models separates speakers: gpt-4o-transcribe-diarize. Even with an eight-second speaker reference from the intro, it delivered the worst result of the test. Several times it flips into English for 10 to 20 seconds, translating or inventing as it goes: "I have a Docker-image for a bitmap, I have a Docker-image for bit material and so forth." EC2 becomes "Isitu" and "etcd", EKS becomes "I_K_S_". The stream has one speaker; the model splits him across five labels in clip 1. The call also takes about ten times as long as the other API models. If you need speaker separation for episodes with guests, combine a text model with pyannote.</p>
+
+                <h2>Voxtral smooths, gpt-transcribe keeps every word</h2>
+
+                <p>Voxtral was a pleasant surprise. No hallucinations, no artificial repetitions, all four terms right, punctuation in place, segment timestamps included. It differs from gpt-transcribe by only about 30 words per clip, much of it spelling ("Docker-Image" versus "Docker Image"). The downsides: five to nine times the runtime of gpt-transcribe, and <code>context_bias</code> only takes single words, not phrases like "Eberhard Wolff".</p>
+
+                <p>The real difference is how each model treats speech. Voxtral smooths over slips and self-corrections: the false start "eine Dienst-, eine Gutschrift" becomes "eine Gutschrift". To me that's a feature: a transcript meant for reading doesn't need the slips. gpt-transcribe keeps every "sorry" and every filler word. That's the right choice when the exact wording matters, say for a quote you attribute to the speaker.</p>
+
+                <h2>large-v3 wasn't the problem, my settings were</h2>
+
+                <p>A control run flipped my verdict on local Whisper. I ran large-v3 over the same two clips again, still on the CPU, still in int8, but with three settings changed: VAD filter off, <code>condition_on_previous_text</code> off, beam size 5, each clip as one file in one piece. All four mistakes of the old reference disappeared. "SLAs von ECB. EC2 oder EKS" became "SLAs von EC2 oder EKS". The "99 x 99 %" loop is gone. No hallucination, no loop, no language switch, all four terms right.</p>
+
+                <p>Measured against gpt-transcribe, the control run is closer than any API model: 42 words (6.1 %) in clip 1 and 37 words (5.3 %) in clip 2, where the old reference was 8 to 13 percent away. What's left is filler words, spelling, and the odd misheard word like "Bezahnung" for "Bezahlung" (payment) and "tlmw" for "Ziel irgendwie".</p>
+
+                <p>With <code>condition_on_previous_text</code>, the previous window's text becomes the prompt for the next one; a mistake like "ECB" hardens, a repetition turns into a loop. The VAD filter cuts out pauses, so windows start mid-sentence. The 65-minute run amplified both. int8 isn't the cause; the control run uses int8 too. The price of clean settings is time: 708 and 766 seconds per five minutes of audio, roughly 2.5 times real time, at 5.4 GB of RAM.</p>
+
+                <h2>Whisper turbo matches large-v3 in a third of the time</h2>
+
+                <p>With the corrected settings, three more local models ran over the same clips. The clear winner is Whisper large-v3-turbo. It deviates from gpt-transcribe by 6 percent in both clips (44 words, 6.4 % and 6.2 %), on par with the large-v3 control run, gets all four terms right, and shows no hallucination, no language switch, no loop. It needs 216 seconds per five minutes of audio instead of 708 to 766, and 2.9 GB of RAM instead of 5.4. Two weaknesses: it writes "Availability Zunes" for "Zones" three times, and like large-v3 it drops the "sorry" self-correction.</p>
+
+                <p>Parakeet TDT 0.6B v3 is five times faster and makes a third more mistakes. It transcribes five minutes of audio in 57 to 59 seconds, plus 54 seconds once to load the model. Deviation from gpt-transcribe is 7.4 and 8.0 percent. All four terms are there, punctuation too, but the text comes as one paragraph. The mistakes are the mangled words you'd expect from an acoustic model without a strong language model: "Dock-Emage", one "Availability Zoom", "das viel MB erreichen" for "das Ziel irgendwie erreichen", and one "0,99,99 Prozent". In return, Parakeet is the only model besides gpt-transcribe that keeps the "sorry" self-correction.</p>
+
+                <p>Canary 1B v2 isn't usable on this hardware. Memory climbed to 9.8 GB on clip 1 and the OOM killer ended the process. Of the 263 unpunctuated words written by then, the first 90 or so are right; after that the output loops ("das ist ein bisschen mehr als das ist ein bisschen mehr als ...").</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Local model</th>
+                            <th>Time per 5-min clip</th>
+                            <th>Deviation from gpt-transcribe (clip 1 / clip 2)</th>
+                            <th>RAM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>large-v3, new settings</td>
+                            <td>708 s / 766 s</td>
+                            <td>42 (6.1 %) / 37 (5.3 %)</td>
+                            <td>5.4 GB</td>
+                        </tr>
+                        <tr>
+                            <td>large-v3-turbo</td>
+                            <td>216 s (clip 2)</td>
+                            <td>44 (6.4 %) / 44 (6.2 %)</td>
+                            <td>2.9 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Parakeet TDT 0.6B v3</td>
+                            <td>57 s / 59 s, plus 54 s to load</td>
+                            <td>51 (7.4 %) / 56 (8.0 %)</td>
+                            <td>5.8 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Canary 1B v2</td>
+                            <td>aborted</td>
+                            <td>not measurable</td>
+                            <td>9.8 GB at abort</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>The next pipeline uses two witnesses and a referee</h2>
+
+                <p><strong>Context.</strong> Every model in this test misheard something, each in a different place. A single transcript, from any vendor, hides those mistakes until someone checks the audio. And I don't want a pipeline that stops the moment one vendor's API is down. The current label for that goal is digital sovereignty. I'll use the plainer words here: independence from any single vendor, and resilience when one of them fails.</p>
+
+                <p><strong>Decision.</strong> Two independent witnesses instead of one model. Voxtral is the primary witness, for readable text with timestamps. gpt-transcribe is the second opinion. Both transcribe the same audio independently, and the outputs are diffed at word level. Where they agree, nothing is touched. Neither model corrects the other; otherwise one vendor would always win. A referee decides only at the differences, about 30 spots per five minutes. It gets both variants, the surrounding sentence and a glossary of proper names (arc42, INNOQ, EKS, EC2 and so on), and picks one. That isn't a full-text correction, just a few hundred tokens per decision. The referee is Mistral Large or Medium, called through litellm, which the transcriber already uses. So the default path runs entirely on European services.</p>
+
+                <p>If OpenAI is unavailable, Whisper large-v3-turbo running locally takes over as second witness. If Mistral is unavailable too, turbo and Parakeet run locally, on the laptop or a Raspberry Pi 5, with a local language model as referee; 7 to 8 billion parameters are enough for these decisions. That takes hours instead of minutes, but no vendor is a single point of failure.</p>
+
+                <p><strong>Rationale.</strong> Witnesses have to come from different model families so their errors don't correlate. Voxtral, gpt-transcribe, Whisper and Parakeet are four architectures. whisper-1 plus turbo would be a bad pair: both smooth over the same self-corrections, so the diff would never see them. European services as the default is a matter of independence and resilience, not politics: with two witnesses and a fallback chain, no single vendor outage stops the pipeline.</p>
+
+                <p>It works. Exactly this diff of two transcripts caught a factual error today in a summary I had already published: support hours "7 to 24" instead of 24/7. Cost per episode is under 50 cents, runtime under three minutes.</p>
+
+                <p><strong>Consequences.</strong> Two transcription calls per episode instead of one, plus a handful of small referee calls, and a glossary to maintain per show. Speaker diarization stays open: of the eight models, only gpt-4o-transcribe-diarize separates speakers, and it failed. The plan is diarization as a separate step, pyannote running locally and preferably on the Pi, laid over the transcript's timestamps. The goal is episodes with guests. No date attached.</p>
+
+                <h2>If you run only one model, pick it by what you need</h2>
+
+                <p>Use gpt-transcribe when the exact wording matters and you want a result today; its keywords list is the clean way to feed it terms like arc42 or INNOQ. Use Voxtral for a readable transcript with timestamps, whisper-1 for word-level timestamps (with a prompt written as a sentence). gpt-4o-transcribe has no advantage over gpt-transcribe, and gpt-4o-transcribe-diarize is best left alone for German material. If the data can't leave your machine, use Whisper large-v3-turbo with the settings above; on a Raspberry Pi 5 with 8 GB, expect roughly three to five times real time, an overnight job. Parakeet is for raw text you want to search rather than quote. Canary is out.</p>
+
+                <p>My two days on the first attempt weren't the model's fault. They were the price of settings I had copied without checking.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">Tooling</span>
+                    <span class="blog-tag">Software Architecture</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

@@ -1,5 +1,18 @@
 [
   {
+    "title": "Whisper wasn't the problem, my settings were: eight transcription models compared",
+    "date": "2026-09-18",
+    "excerpt": "Eight transcription models compared, five via API and three local. Whisper's bad results came from its settings, not the model, and a two-witness pipeline with a referee keeps the workflow independent of any single vendor.",
+    "url": "blog/transcription-models-compared.html",
+    "icon": "images/blog/linkedin/transcription-models-compared.png",
+    "tags": [
+      "GenAI",
+      "Tooling",
+      "Software Architecture"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "My to-do list is a text file, and my AI reads it too",
     "date": "2026-08-26",
     "excerpt": "For years my to-do list moved into a new app every six months. Now it is a plain markdown file in git that my AI reads and writes too. Here is the TODO.md format I use, the est/30-minute/MoSCoW conventions on top of it, and the prompts to set the same thing up with your own assistant.",

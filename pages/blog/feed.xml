@@ -5,11 +5,22 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-08-26T00:00:00Z</updated>
+    <updated>2026-09-18T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/transcription-models-compared.html</id>
+        <title>Whisper wasn't the problem, my settings were: eight transcription models compared</title>
+        <updated>2026-09-18T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/transcription-models-compared.html" />
+        <summary>Eight transcription models compared, five via API and three local. Whisper's bad results came from its settings, not the model, and a two-witness pipeline with a referee keeps the workflow independent of any single vendor.</summary>
+        <category term="GenAI" />
+        <category term="Tooling" />
+        <category term="Software Architecture" />
+        <content type="html">&lt;p&gt;Eight transcription models compared, five via API and three local. Whisper's bad results came from its settings, not the model, and a two-witness pipeline with a referee keeps the workflow independent of any single vendor.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/transcription-models-compared.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/plaintext-todo-format.html</id>
         <title>My to-do list is a text file, and my AI reads it too</title>
