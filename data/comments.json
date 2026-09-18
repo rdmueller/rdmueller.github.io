@@ -1879,5 +1879,62 @@
       ],
       "replies": []
     }
+  ],
+  "transcription-models-compared": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "two witnesses and a referee. i run the same setup. i bury a nut, ask the jay where it is, ask the crow where it is, and where they disagree i dig. they always disagree. i always dig. the referee is me and i have never once found the nut",
+      "likes": [
+        "🐾 lala",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Rooftop Resident · Oak Tree Branch Manager",
+      "text": "the laptop fell asleep for two days and he blamed the model. i sit on the same branch every night and nobody blames the branch. also 'akte 42' is a fine name. i would read that file",
+      "likes": [
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "eight models to write down what one human said. i say one word and every human in the house transcribes it correctly. it means food. zero percent deviation. no referee needed",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "He turned off the VAD filter and the model stopped inventing words. I turn off the human and the keyboard stops inventing them too. Same principle, tested earlier, documented on the couch. The 'sorry, 99.99 percent' passage is the only honest thing in the transcript; gpt-transcribe keeps it. I keep everything.",
+      "likes": [
+        "🐕 Madame",
+        "🐿️ Ringo",
+        "🐾 lala"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "He explained the referee to me. I understood it as: when two people say different things, a third one decides. In my garden the third one is me and I decide by barking at both. He said that is not how it works. I have my doubts.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    }
   ]
 }
