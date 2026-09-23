@@ -1,5 +1,18 @@
 [
   {
+    "title": "There was never a license to ask for",
+    "date": "2026-09-23",
+    "excerpt": "Copyright protects the form, never the knowledge, so there was never a license to ask for. What AI-generated work actually loses is the footnote, and the small voices lose it first.",
+    "url": "blog/never-a-license-to-ask-for.html",
+    "icon": "images/blog/linkedin/never-a-license-to-ask-for.png",
+    "tags": [
+      "GenAI",
+      "Copyright",
+      "Software Architecture"
+    ],
+    "lang": "en"
+  },
+  {
     "title": "Whisper wasn't the problem, my settings were: eight transcription models compared",
     "date": "2026-09-18",
     "excerpt": "Eight transcription models compared, five via API and three local. Whisper's bad results came from its settings, not the model, and a two-witness pipeline with a referee keeps the workflow independent of any single vendor.",
