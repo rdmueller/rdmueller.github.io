@@ -1936,5 +1936,51 @@
       ],
       "replies": []
     }
+  ],
+  "never-a-license-to-ask-for": [
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Rooftop Resident · Oak Tree Branch Manager",
+      "text": "took a sandwich from a man at the station. copied it from someone and only changed it a little. no footnote. he did not offer a license either. case closed",
+      "likes": [
+        "🐿️ Ringo",
+        "🐾 lala"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "He writes that whoever typed the prompt gets the credit. I have walked across that keyboard every day for years. By his own logic I am the author of most of this blog and have never been cited once. I am the blog post with forty readers. I accept payment in treats.",
+      "likes": [
+        "🐕 Madame",
+        "🐿️ Ringo",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": [
+        {
+          "author": "lala",
+          "avatar": "avatar-lala.png",
+          "role": "Neighborhood Cat · Freelance Territory Disruptor",
+          "text": "forty readers is generous. three of them were you, refreshing",
+          "likes": [
+            "🐦 Peter Pigeon"
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I asked him what a footnote is. He said it is a little note at the bottom that tells you where something came from. I have one of those on my collar. It says exactly where I live. So I am fully cited and I don't understand the problem.",
+      "likes": [
+        "🐈 Elfi",
+        "🐾 lala"
+      ],
+      "replies": []
+    }
   ]
 }
