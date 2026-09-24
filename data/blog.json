@@ -1,5 +1,18 @@
 [
   {
+    "title": "200 Semantic Anchors, and Two Changed Names",
+    "date": "2026-09-25",
+    "lang": "en",
+    "excerpt": "The Semantic Anchors catalog reached 200 anchors. Every community proposal runs through the Anchor Prior Test, and two of the last four came out with a different name: CERC is now spelled out, and the Boy Scout Rule lost its Uncle Bob qualifier.",
+    "tags": [
+      "Semantic Anchors",
+      "LLM",
+      "Open Source"
+    ],
+    "icon": "images/blog/linkedin/semantic-anchors-200.png",
+    "url": "blog/semantic-anchors-200.html"
+  },
+  {
     "title": "There was never a license to ask for",
     "date": "2026-09-23",
     "excerpt": "Copyright protects the form, never the knowledge, so there was never a license to ask for. What AI-generated work actually loses is the footnote, and the small voices lose it first.",
