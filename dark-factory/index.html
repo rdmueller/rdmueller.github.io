@@ -22,6 +22,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
     <style>
+        .df-talk { max-width: 40rem; margin: 1.5rem auto 0; text-align: center; }
+        .df-talk p { margin: 0 0 0.75rem; }
         .df-links { display: grid; gap: 1.5rem; max-width: 40rem; margin: 2rem auto 0; }
         .df-card {
             display: block; padding: 1.5rem; border: 1px solid var(--color-border);
@@ -64,6 +66,15 @@
     <main class="page-content">
         <div class="container">
             <h1>Dark Factory? Kommt auf die Risikoklasse an.</h1>
+
+            <div class="df-talk">
+                <p>In welche Risikoklasse fällt Ihr Projekt? Sprechen Sie den Vortrag mit Ihrer eigenen KI durch.</p>
+                <script src="../js/talkitover.js" defer></script>
+                <talk-it-over url="https://rdmueller.github.io/dark-factory/dark-factory.md"
+                              prompt="Lade {url}. Ich möchte den Talk durchsprechen und herausfinden, in welche Risikoklasse mein Projekt fällt. Frag mich zuerst nach meinem Projekt."
+                              label="Let's talk it over"
+                              providers="claude,chatgpt,copy"><a href="dark-factory.md">Vortrag als Text für Ihre KI (Markdown)</a></talk-it-over>
+            </div>
 
             <div class="df-links">
                 <a class="df-card df-card-contact" href="https://www.linkedin.com/in/rdmueller/">
