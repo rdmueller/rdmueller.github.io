@@ -1,0 +1,58 @@
+# There was never a license to ask for
+Page: https://rdmueller.github.io/pages/blog/never-a-license-to-ask-for.html
+
+EN
+ 23. September 2026
+ 
+
+ 
+
+# There was never a license to ask for
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Three lines of autocomplete never bothered me.
+
+ A function signature, a loop, the boilerplate everyone writes the same way. Too small and too obvious to be anyone's protected work. If a model had memorized those three lines from somebody's repository, nothing of value moved from them to me.
+
+ That changed when I had a model build a reference work on software architecture. Not three lines. A structured body of knowledge, chapter by chapter, that I could not have written alone in that time.
+
+ I've let Claude, my LLM, write whole applications since then.
+
+ Somewhere in there the feeling shifted. It reads like something copied from someone and only changed a little. I just can't say from whom.
+
+ I treated this as a licensing problem for a while, and that was the wrong frame. Copyright protects the form, never the knowledge itself. Read fifty books on architecture, write your own, and you owe nobody a license. That was true before models existed and it stays true with one in the middle.
+
+ Legally there is most likely nothing stolen here, at least not by me.
+
+ Whether the models were entitled to train on all of it is a separate fight, and courts are having it right now.
+
+ My question is narrower: what do I owe for what came out?
+
+ What I actually lost is harder to replace. It's the footnote.
+
+ When I learned this trade from books and other people's code, I could name them. "As Fowler puts it." A bibliography. A link in the README. That was never law, it was manners, and it was how a field keeps track of who worked something out first. A model flattens all of that. Everything it hands me arrives as common knowledge, including the parts that were once one person's specific idea.
+
+ At least, when it recreates from its training data. If it does a web search, I can instruct it to give me references.
+
+ Fowler will be fine. Everyone cites Fowler anyway. The footnote mattered most further down the list: the blog post with forty readers, the talk nobody recorded. For them a citation was the only visibility they got, and they lose it first.
+
+ There was never a license to ask for. What's missing is the citation.
+
+ I'm on both sides of this, and my own side is easy to settle. I don't sell my knowledge. I earn my living advising people day to day, and what I write I publish openly. So when a model carries my writing further, nothing is taken from me and I'm glad it travels.
+
+ What would bother me is someone presenting it as their own. That is roughly what happens now, minus the intent. The model has no way to name me, so whoever typed the prompt gets the credit by default. Which puts me on the taking side too, every time I generate something.
+
+ So I've stopped asking whether my generated code is stolen. The better question is what a field looks like once it stops citing. If you have a practical answer, one that survives a real project rather than a blog post, I'd like to hear it.
+
+ 
+
+ 
+ 
+
+## LinkedWild

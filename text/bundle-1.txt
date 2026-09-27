@@ -1,6 +1,6 @@
 # https://rdmueller.github.io/ — Bündel 1 von 4
 
-> 20 Seiten im Volltext.
+> 21 Seiten im Volltext.
 
 # Spec-Driven Agentic Coding mit semantischen Ankern
 Page: https://rdmueller.github.io/pages/talks/spec-driven-agentic-coding.html
@@ -630,6 +630,48 @@ Page: https://rdmueller.github.io/pages/datenschutz.html
  Diese Website enthält Links zu externen Websites (GitHub, LinkedIn, software-architektur.tv).
  Für die Datenschutzpraktiken dieser externen Websites sind wir nicht verantwortlich.
  Bitte informieren Sie sich auf den jeweiligen Websites über deren Datenschutzbestimmungen.
+
+---
+
+# Dark Factory? Kommt auf die Risikoklasse an.
+Page: https://rdmueller.github.io/dark-factory/index.html
+
+# Dark Factory? Kommt auf die Risikoklasse an.
+
+ 
+ Fragen, Einwände, Ihr eigenes Projekt: Sprechen Sie den Vortrag mit Ihrer eigenen KI durch.
+
+ 
+ Vortrag als Text für Ihre KI (Markdown)
+ 
+
+ 
+ 
+ 
+
+## Sprechen wir weiter
+
+ Fragen, Einwände, eigene Erfahrungen? Vernetzen Sie sich mit mir auf LinkedIn.
+
+ Zu LinkedIn →
+ 
+
+ 
+ 
+
+## Risk Radar
+
+ Ordnet einen Use Case nach Risikoklasse ein.
+
+ 
+ 
+
+ 
+ 
+
+## Harness Coverage Wheel
+
+ 69 Fehlerkorrektur-Schichten zum Selbst-Assessment.
 
 ---
 

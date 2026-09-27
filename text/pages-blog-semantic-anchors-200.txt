@@ -1,0 +1,40 @@
+# 200 Semantic Anchors, and Two Changed Names
+Page: https://rdmueller.github.io/pages/blog/semantic-anchors-200.html
+
+EN
+ 25. September 2026
+ 
+
+ 
+
+# 200 Semantic Anchors, and Two Changed Names
+
+ 
+
+ 
+ 
+ 
+
+ 
+ The Semantic Anchors catalog reached 200 anchors today. The last four came from the community, and the number is the least interesting part.
+
+ None of the four got in on reputation. Each ran through the Anchor Prior Test: 56 probes in a clean room, no custom instructions, no memory, on a weak model and a frontier model, with every anchored run compared against the same task without the term.
+
+ Two of the four came out with a different name than they went in with.
+
+ CERC is the sharper case. Asked about the bare acronym, the frontier model offered four expansions, none of them the risk-communication framework, and settled on this: "If you don't specify a context, the Indian electricity regulator is the most likely meaning." So the anchor is now Crisis and Emergency Risk Communication, spelled out. An acronym only works as an anchor if the model resolves it to the thing you meant.
+
+ The Boy Scout Rule went the other way. It arrived with Uncle Bob attached, but the bare name already lands in software engineering on both models. The qualifier repaired nothing, so it went.
+
+ That is the point of measuring. A term that sounds precise to us can mean something else to a model, and the only way to find out is to ask it cold.
+
+ Thanks to Philipp Just, @xamurej, Simon Thum and Roland Weisleder for the proposals.
+
+ https://llm-coding.github.io/Semantic-Anchors/
+
+ 
+
+ 
+ 
+
+## LinkedWild

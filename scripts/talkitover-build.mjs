@@ -165,16 +165,16 @@ export function readPages(root, siteUrl, options = {}) {
 }
 
 export function build(options) {
-  const { root, out, siteUrl, sections = [], prose, dates = {}, budget, reserve } = options
+  const { root, out, siteUrl, sections = [], prose, dates = {}, budget, reserve, ext = '.md' } = options
   const pages = readPages(root, siteUrl, { ...options, skip: [...(options.skip || []), outName(out)] })
   const ordered = order(pages, sections, dates)
 
   const directory = outName(out)
   const entryOf = {
-    page: (page) => ({ title: page.title, url: `${siteUrl}${directory}/${slugOf(page.url, siteUrl)}.md` }),
+    page: (page) => ({ title: page.title, url: `${siteUrl}${directory}/${slugOf(page.url, siteUrl)}${ext}` }),
     bundle: (group, index) => ({
       title: `Weitere Seiten ${index + 1}`,
-      url: `${siteUrl}${directory}/bundle-${index + 1}.md`,
+      url: `${siteUrl}${directory}/bundle-${index + 1}${ext}`,
       pages: group.length,
     }),
   }
@@ -184,12 +184,12 @@ export function build(options) {
   fs.rmSync(out, { recursive: true, force: true })
   fs.mkdirSync(out, { recursive: true })
   for (const page of ordered) {
-    fs.writeFileSync(path.join(out, `${slugOf(page.url, siteUrl)}.md`), asText(page), 'utf-8')
+    fs.writeFileSync(path.join(out, `${slugOf(page.url, siteUrl)}${ext}`), asText(page), 'utf-8')
   }
   bundled.forEach((group, index) => {
     const header = `# ${siteUrl} — Bündel ${index + 1} von ${bundled.length}\n\n> ${group.length} Seiten im Volltext.\n\n`
     fs.writeFileSync(
-      path.join(out, `bundle-${index + 1}.md`),
+      path.join(out, `bundle-${index + 1}${ext}`),
       header + group.map(asText).join('\n---\n\n') + '\n',
       'utf-8'
     )
