@@ -1,0 +1,267 @@
+# Whisper wasn't the problem, my settings were: eight transcription models compared
+Page: https://rdmueller.github.io/pages/blog/transcription-models-compared.html
+
+EN
+ 18 September 2026
+ 
+
+ 
+
+# Whisper wasn't the problem, my settings were: eight transcription models compared
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I needed transcripts of three episodes of software-architektur.tv. In episodes 111 to 113, Eberhard Wolff builds a software architecture live on stream under the title "Wir bauen eine Software-Architektur" ("Let's build a software architecture"). I wanted to derive ADRs and an arc42 document from them; both are now public at llm-coding.github.io/fahrrad-reparatur-architektur. The side task turned into a comparison of eight models, five via API and three local, and a lesson about my own settings.
+
+ 
+
+## Local Whisper tied up my laptop for two days
+
+ My first attempt ran Whisper large-v3 locally. The laptop has no GPU, so the model ran on the CPU under WSL2 in int8, with the audio cut into 15-minute chunks and a VAD filter. Fifteen minutes of audio took 40 to 60 minutes. The OOM killer stopped the process twice. The laptop kept dropping into Modern Standby even though it was plugged in (Windows event 506: "Idle Timeout", "Lid", "Austerity Battery Drain Budget"), until a PowerShell script called SetThreadExecutionState to keep it awake. Three episodes took a good two days.
+
+ The output was only partly worth the effort. The transcript had repetition loops where the same half sentence appears three times in a row. Whole passages came back without punctuation. And the model made up terms: arc42 became "Akte 42" (a German word for "file"), EC2 became "ECB". I blamed the model. That was premature.
+
+ 
+
+## The API models take seconds and don't make those mistakes
+
+ For the comparison I cut two five-minute clips from episode 113: minutes 20 to 25 and minutes 31 to 36. The second clip contains the technical terms EKS, EC2, Kubernetes and "99.99 %". The local large-v3 transcript from the first run served as the reference. I count differing words, ignoring case and punctuation. The lineup: four OpenAI models, Mistral's voxtral-mini-latest, and locally a second run of large-v3 with different settings, Whisper large-v3-turbo, Parakeet TDT 0.6B v3 and Canary 1B v2. API timings include the upload over my home network. Local runs: WSL2, 12 vCPUs, no GPU.
+
+ 
+
+ModelTime per 5-min clip
+clip 1 / clip 2, bar = clip 2Words off vs. old reference
+clip 1 / clip 2TermsTimestampsCost per hour of audio
+from billing per 10 min
+
+whisper-1 20.7 s / 21.9 s73 (10.5 %) / 84 (11.6 %)4 of 4yes, segments $0.18 ($0.03 / 10 min)
+
+gpt-4o-transcribe 15.3 s / 25.1 s57 (8.2 %) / 115 (15.8 %)4 of 4no $0.162 ($0.027 / 10 min)
+
+gpt-transcribe 13.9 s / 12.4 s57 (8.2 %) / 93 (12.8 %)4 of 4no $0.27 ($0.045 / 10 min)
+
+gpt-4o-transcribe-diarize 168.8 s / 140.1 s305 (43.9 %) / 171 (23.5 %)2 of 4yes, with speakers $0.354 ($0.059 / 10 min)
+
+voxtral-mini-latest 64.4 s / 110.3 s49 / 1024 of 4yes, segments $0.181 ($0.03 / 10 min)
+
+large-v3 local, new settings 708 s / 766 s +46 (6.6 %) / 98 (13.5 %)4 of 4not evaluated$0, electricity
+
+large-v3-turbo local 326 s / 216 s252 (7.5 %) / 106 (14.6 %)4 of 4not evaluated$0, electricity
+
+Parakeet TDT 0.6B v3 local 57 s / 59 s362 (8.9 %) / 113 (15.5 %)4 of 4not evaluated$0, electricity
+
+Canary 1B v2 localaborted4not measurablenot measurableno$0, electricity
+
+- Voxtral: list price $0.003 per minute, no billing figure.
+- large-v3-turbo, clip 1: includes the 1.6 GB model download; 216 s is the clean value.
+- Parakeet: plus 54 s to load the model once.
+- Canary 1B v2: OOM at 9.8 GB RAM, output loops after about 90 words.
+
+ Time bars use clip 2 without download or load time, scaled at 25 seconds per tenth of the bar and capped at 250 seconds; the large-v3 bar (766 s) is cut off and marked with a +. Cost bars scale to the most expensive model, $0.354 per hour. OpenAI costs come from my billing page and cover audio input only; Voxtral is list price. A 65-minute episode costs less than half a dollar with any of them.
+
+ 
+
+## The old reference is flawed itself, so the numbers only rank the models
+
+ The "deviation from old reference" column isn't an error rate, because the reference itself has at least four clear mistakes in ten minutes of audio: the hallucinated "ECB", the "99 x 99 %" repetition loop, and two misheard phrases that turn "Ausfallsicherheit" (resilience) and "zusichert" (guarantees) into nonsense. So the numbers tell you which model stays closest to the spoken words, not which one makes the fewest mistakes. And as it turned out, those four mistakes came from my setup, not from the model.
+
+ 
+
+## The models part ways on the exact wording
+
+ Four passages show where the models hear or write things differently. The quotes stay in German; the first column says what to look for.
+
+ 
+
+ 
+ 
+ Passage
+ Model
+ Transcript
+ 
+
+ 
+ 
+ 
+ SLA sentence: "ECB" doesn't exist, the speaker says EC2
+ large-v3 (old reference)
+ "das sind halt die SLAs von ECB. EC2 oder EKS, also von den Amazon-Services in Bezug auf Kubernetes und EC2."
+ 
+
+ 
+ 
+ gpt-transcribe
+ "das sind halt die SLAs von EC2 oder EKS, also von den Amazon Services in Bezug auf Kubernetes und EC2."
+ 
+
+ 
+ 
+ gpt-4o-transcribe-diarize
+ "das sind halt die I uh S_L_A_s from Isitu to I_K_S_ also von den Amazon services in Bezug auf Kubernetes und etcd."
+ 
+
+ 
+ Self-correction: the speaker says "less than 99 percent, sorry, 99.99 percent"
+ large-v3 (old reference)
+ "wenn das System mit weniger als 99 x 99 % zur Verfügung steht? Also weniger als, sorry, 99,99 % zur Verfügung steht, wenn das System mit weniger als 99 x 99 % zur Verfügung steht?"
+ 
+
+ 
+ 
+ whisper-1
+ "wenn das System mit weniger als 99,99% zur Verfügung steht?"
+ 
+
+ 
+ 
+ gpt-transcribe
+ "mit weniger als 99 Prozent zur Verfügung, also weniger als, sorry, 99,99 Prozent zur Verfügung steht?"
+ 
+
+ 
+ 
+ voxtral-mini-latest
+ "weniger als 99,99% zur Verfügung steht?"
+ 
+
+ 
+ "Ausfallsicherheit" (resilience)
+ large-v3 (old reference)
+ "mit höherer Wahrscheinlichkeiten aus für Sicherheit zu erzeugen"
+ 
+
+ 
+ 
+ gpt-4o-transcribe
+ "mit höherer Wahrscheinlichkeit einen Ausfallsicherheit zu erzeugen"
+ 
+
+ 
+ "Semantik" (semantics)
+ gpt-transcribe
+ "Ich hätte jetzt eben diese Mantik dieser roten Dinger geändert."
+ 
+
+ 
+ 
+ voxtral-mini-latest
+ "Ich hätte jetzt eben die Semantik dieser roten Dinger geändert, um ..."
+ 
+
+ 
+ 
+
+ Three things stand out. Every model mishears something, just in different places: gpt-transcribe turns "Semantik" into "diese Mantik", Voxtral turns "erfolgreichen Reparatur" (successful repair) into "folgenden Reparatur" (following repair). All the text models get the technical terms right. And they handle self-corrections differently: gpt-transcribe keeps the spoken "sorry", while whisper-1, gpt-4o-transcribe and Voxtral write only the corrected sentence. One detail on whisper-1: clip 1 came back in lowercase without punctuation, a known mode that a prompt written as a full sentence usually prevents.
+
+ 
+
+## Diarization fails the test
+
+ Only one of the eight models separates speakers: gpt-4o-transcribe-diarize. Even with an eight-second speaker reference from the intro, it delivered the worst result of the test. Several times it flips into English for 10 to 20 seconds, translating or inventing as it goes: "I have a Docker-image for a bitmap, I have a Docker-image for bit material and so forth." EC2 becomes "Isitu" and "etcd", EKS becomes "I_K_S_". The stream has one speaker; the model splits him across five labels in clip 1. The call also takes about ten times as long as the other API models. If you need speaker separation for episodes with guests, combine a text model with pyannote.
+
+ 
+
+## Voxtral smooths, gpt-transcribe keeps every word
+
+ Voxtral was a pleasant surprise. No hallucinations, no artificial repetitions, all four terms right, punctuation in place, segment timestamps included. It differs from gpt-transcribe by only about 30 words per clip, much of it spelling ("Docker-Image" versus "Docker Image"). The downsides: five to nine times the runtime of gpt-transcribe, and context_bias only takes single words, not phrases like "Eberhard Wolff".
+
+ The real difference is how each model treats speech. Voxtral smooths over slips and self-corrections: the false start "eine Dienst-, eine Gutschrift" becomes "eine Gutschrift". To me that's a feature: a transcript meant for reading doesn't need the slips. gpt-transcribe keeps every "sorry" and every filler word. That's the right choice when the exact wording matters, say for a quote you attribute to the speaker.
+
+ 
+
+## large-v3 wasn't the problem, my settings were
+
+ A control run flipped my verdict on local Whisper. I ran large-v3 over the same two clips again, still on the CPU, still in int8, but with three settings changed: VAD filter off, condition_on_previous_text off, beam size 5, each clip as one file in one piece. All four mistakes of the old reference disappeared. "SLAs von ECB. EC2 oder EKS" became "SLAs von EC2 oder EKS". The "99 x 99 %" loop is gone. No hallucination, no loop, no language switch, all four terms right.
+
+ Measured against gpt-transcribe, the control run is closer than any API model: 42 words (6.1 %) in clip 1 and 37 words (5.3 %) in clip 2, where the old reference was 8 to 13 percent away. What's left is filler words, spelling, and the odd misheard word like "Bezahnung" for "Bezahlung" (payment) and "tlmw" for "Ziel irgendwie".
+
+ Both settings are well meant. VAD stands for voice activity detection: a small pre-filter (Silero VAD in faster-whisper) that keeps only the stretches where someone speaks, so the model never sees silence, a classic trigger for invented text. condition_on_previous_text hands the previous window's transcript to the next window as its prompt, so terms stay consistent. Together they backfire. The VAD cuts at its own boundaries, not the speaker's, so windows start mid-sentence with a clipped word. The prompt then carries every mistake forward: a misheard "ECB" makes the next "ECB" more likely, and one repetition invites the next until it loops. The 65-minute run amplified both. int8 isn't the cause; the control run uses int8 too. The price of clean settings is time: 708 and 766 seconds per five minutes of audio, roughly 2.5 times real time, at 5.4 GB of RAM.
+
+ 
+
+## Whisper turbo matches large-v3 in a third of the time
+
+ With the corrected settings, three more local models ran over the same clips. The clear winner is Whisper large-v3-turbo. It deviates from gpt-transcribe by 6 percent in both clips (44 words, 6.4 % and 6.2 %), on par with the large-v3 control run, gets all four terms right, and shows no hallucination, no language switch, no loop. It needs 216 seconds per five minutes of audio instead of 708 to 766, and 2.9 GB of RAM instead of 5.4. Two weaknesses: it writes "Availability Zunes" for "Zones" three times, and like large-v3 it drops the "sorry" self-correction.
+
+ Parakeet TDT 0.6B v3 is five times faster and makes a third more mistakes. It transcribes five minutes of audio in 57 to 59 seconds, plus 54 seconds once to load the model. Deviation from gpt-transcribe is 7.4 and 8.0 percent. All four terms are there, punctuation too, but the text comes as one paragraph. The mistakes are the mangled words you'd expect from an acoustic model without a strong language model: "Dock-Emage", one "Availability Zoom", "das viel MB erreichen" for "das Ziel irgendwie erreichen", and one "0,99,99 Prozent". In return, Parakeet is the only model besides gpt-transcribe that keeps the "sorry" self-correction.
+
+ Canary 1B v2 isn't usable on this hardware. Memory climbed to 9.8 GB on clip 1 and the OOM killer ended the process. Of the 263 unpunctuated words written by then, the first 90 or so are right; after that the output loops ("das ist ein bisschen mehr als das ist ein bisschen mehr als ...").
+
+ 
+
+ 
+ 
+ Local model
+ Time per 5-min clip
+ Deviation from gpt-transcribe (clip 1 / clip 2)
+ RAM
+ 
+
+ 
+ 
+ 
+ large-v3, new settings
+ 708 s / 766 s
+ 42 (6.1 %) / 37 (5.3 %)
+ 5.4 GB
+ 
+
+ 
+ large-v3-turbo
+ 216 s (clip 2)
+ 44 (6.4 %) / 44 (6.2 %)
+ 2.9 GB
+ 
+
+ 
+ Parakeet TDT 0.6B v3
+ 57 s / 59 s, plus 54 s to load
+ 51 (7.4 %) / 56 (8.0 %)
+ 5.8 GB
+ 
+
+ 
+ Canary 1B v2
+ aborted
+ not measurable
+ 9.8 GB at abort
+ 
+
+ 
+ 
+
+ 
+
+## The next pipeline uses two witnesses and a referee
+
+ Context. Every model in this test misheard something, each in a different place. A single transcript, from any vendor, hides those mistakes until someone checks the audio. And I don't want a pipeline that stops the moment one vendor's API is down. The current label for that goal is digital sovereignty. I'll use the plainer words here: independence from any single vendor, and resilience when one of them fails.
+
+ Decision. Two independent witnesses instead of one model. Voxtral is the primary witness, for readable text with timestamps. gpt-transcribe is the second opinion. Both transcribe the same audio independently, and the outputs are diffed at word level. Where they agree, nothing is touched. Neither model corrects the other; otherwise one vendor would always win. A referee decides only at the differences, about 30 spots per five minutes. It gets both variants, the surrounding sentence and a glossary of proper names (arc42, INNOQ, EKS, EC2 and so on), and picks one. That isn't a full-text correction, just a few hundred tokens per decision. The referee is Mistral Large or Medium, called through litellm, which the transcriber already uses. So the default path runs entirely on European services.
+
+ If OpenAI is unavailable, Whisper large-v3-turbo running locally takes over as second witness. If Mistral is unavailable too, turbo and Parakeet run locally, on the laptop or a Raspberry Pi 5, with a local language model as referee; 7 to 8 billion parameters are enough for these decisions. That takes hours instead of minutes, but no vendor is a single point of failure.
+
+ Rationale. Witnesses have to come from different model families so their errors don't correlate. Voxtral, gpt-transcribe, Whisper and Parakeet are four architectures. whisper-1 plus turbo would be a bad pair: both smooth over the same self-corrections, so the diff would never see them. European services as the default is a matter of independence and resilience, not politics: with two witnesses and a fallback chain, no single vendor outage stops the pipeline.
+
+ It works. Exactly this diff of two transcripts caught a factual error today in a summary I had already published: support hours "7 to 24" instead of 24/7. Cost per episode is under 50 cents, runtime under three minutes.
+
+ Consequences. Two transcription calls per episode instead of one, plus a handful of small referee calls, and a glossary to maintain per show. Speaker diarization stays open: of the eight models, only gpt-4o-transcribe-diarize separates speakers, and it failed. The plan is diarization as a separate step, pyannote running locally and preferably on the Pi, laid over the transcript's timestamps. The goal is episodes with guests. No date attached.
+
+ 
+
+## If you run only one model, pick it by what you need
+
+ Use gpt-transcribe when the exact wording matters and you want a result today; its keywords list is the clean way to feed it terms like arc42 or INNOQ. Use Voxtral for a readable transcript with timestamps, whisper-1 for word-level timestamps (with a prompt written as a sentence). gpt-4o-transcribe has no advantage over gpt-transcribe, and gpt-4o-transcribe-diarize is best left alone for German material. If the data can't leave your machine, use Whisper large-v3-turbo with the settings above; on a Raspberry Pi 5 with 8 GB, expect roughly three to five times real time, an overnight job. Parakeet is for raw text you want to search rather than quote. Canary is out.
+
+ My two days on the first attempt weren't the model's fault. They were the price of settings I had copied without checking.
+
+ 
+
+ 
+ 
+
+## LinkedWild

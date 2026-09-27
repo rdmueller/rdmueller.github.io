@@ -12,6 +12,7 @@ Page: https://rdmueller.github.io/pages/blog.html
  Alle
  Agentic Coding
  Brownfield
+ Copyright
  Digital Independence
  Documentation
  Eichhorst's Principle
@@ -24,8 +25,90 @@ Page: https://rdmueller.github.io/pages/blog.html
  Semantic Anchors
  Software Architecture
  Theory
+ Tooling
  arc42
  docToolchain
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 25
+ Sep
+ 2026
+ 
+
+ 
+ 
+ ENSemantic AnchorsLLMOpen Source
+ 
+
+ 
+
+## 200 Semantic Anchors, and Two Changed Names
+
+ The Semantic Anchors catalog reached 200 anchors. Every community proposal runs through the Anchor Prior Test, and two of the last four came out with a different name: CERC is now spelled out, and the Boy Scout Rule lost its Uncle Bob qualifier.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 23
+ Sep
+ 2026
+ 
+
+ 
+ 
+ ENGenAICopyrightSoftware Architecture
+ 
+
+ 
+
+## There was never a license to ask for
+
+ Copyright protects the form, never the knowledge, so there was never a license to ask for. What AI-generated work actually loses is the footnote, and the small voices lose it first.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 18
+ Sep
+ 2026
+ 
+
+ 
+ 
+ ENGenAIToolingSoftware Architecture
+ 
+
+ 
+
+## Whisper wasn't the problem, my settings were: eight transcription models compared
+
+ Eight transcription models compared, five via API and three local. Whisper's bad results came from its settings, not the model, and a two-witness pipeline with a referee keeps the workflow independent of any single vendor.
+
+ Artikel lesen
  
 
  

@@ -26,7 +26,7 @@ page as text and names the address a person can open at the top.
 {pages}
 
 When I ask for a link, give me the page a person can open — each file names it
-under "Page:" — never the .md file you read from.
+under "Page:" — never the .txt file you read from.
 
 Ask what I am looking for before you fetch anything. Then fetch what matches,
 read it, and answer from what you read. Keep it short and name the page each
@@ -129,6 +129,9 @@ const result = build({
   prose: PROSE,
   dates: readDates(),
   skip: SKIP,
+  // .txt statt .md: GitHub Pages liefert .md als text/markdown aus, und das
+  // lädt ChatGPT nicht. text/plain lesen alle Provider.
+  ext: '.txt',
 })
 
 writeButton('index.html', result)

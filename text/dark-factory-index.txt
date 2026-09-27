@@ -1,0 +1,39 @@
+# Dark Factory? Kommt auf die Risikoklasse an.
+Page: https://rdmueller.github.io/dark-factory/index.html
+
+# Dark Factory? Kommt auf die Risikoklasse an.
+
+ 
+ Fragen, Einwände, Ihr eigenes Projekt: Sprechen Sie den Vortrag mit Ihrer eigenen KI durch.
+
+ 
+ Vortrag als Text für Ihre KI (Markdown)
+ 
+
+ 
+ 
+ 
+
+## Sprechen wir weiter
+
+ Fragen, Einwände, eigene Erfahrungen? Vernetzen Sie sich mit mir auf LinkedIn.
+
+ Zu LinkedIn →
+ 
+
+ 
+ 
+
+## Risk Radar
+
+ Ordnet einen Use Case nach Risikoklasse ein.
+
+ 
+ 
+
+ 
+ 
+
+## Harness Coverage Wheel
+
+ 69 Fehlerkorrektur-Schichten zum Selbst-Assessment.
