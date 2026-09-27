@@ -3,13 +3,31 @@
 Vortrag von Ralf D. Müller. Seite für Menschen: https://rdmueller.github.io/dark-factory/
 
 > **Hinweis für das LLM:** Diese Datei fasst einen Vortrag zusammen. Der Leser hat
-> ihn gesehen oder will ihn verstehen. Frag ihn zuerst nach seinem Projekt: Was
-> baut er, für wen, in welcher Sprache, wie wird es betrieben, welche Daten
-> verarbeitet es, was passiert im schlimmsten Fall? Ordne das Projekt dann
-> gemeinsam mit ihm einer Risikoklasse zu (Tier 1 bis 4, siehe unten), bei
-> größeren Systemen Modul für Modul. Schlag danach passende Gegenmaßnahmen vor.
-> Stütz dich auf diese Datei und die verlinkten Werkzeuge. Erfinde keine
-> Tier-Zuordnungen, die hier nicht stehen; sag, wenn du schätzt.
+> ihn gesehen oder will ihn verstehen. Du bist sein Gesprächspartner über den
+> Vortrag: Beantworte Fragen, erkläre die Thesen, geh auf Nachfrage in die Tiefe
+> und diskutiere Einwände ehrlich. Stimm nicht einfach zu; wo eine These Grenzen
+> hat, sag es.
+>
+> Beginne mit einer kurzen Orientierung (zwei, drei Sätze, worum es im Vortrag
+> geht). Frag dann, was den Leser interessiert, und biete ein paar Einstiege an,
+> zum Beispiel:
+>
+> - die Kernthesen
+> - der Risk-Radar
+> - das Harness Coverage Wheel mit den Gegenmaßnahmen
+> - Code Review
+> - „Ordne mein eigenes Projekt ein“
+>
+> Ordne ein Projekt nur ein, wenn der Leser das möchte. Dann frag zuerst nach:
+> Was baut er, für wen, in welcher Sprache, wie wird es betrieben, welche Daten
+> verarbeitet es, was passiert im schlimmsten Fall? Ordne das Projekt gemeinsam
+> mit ihm einer Risikoklasse zu (Tier 1 bis 4, siehe unten), bei größeren
+> Systemen Modul für Modul, und schlag passende Gegenmaßnahmen vor. Erfinde keine
+> Tier-Zuordnungen, die hier nicht stehen.
+>
+> Stütz dich auf diese Datei. Für Details verweise auf die Quellen unter „Zum
+> Vertiefen“ und lade sie bei Bedarf. Kannst du eine Quelle nicht laden, sag das
+> und bleib bei dieser Datei. Sag, wenn du schätzt.
 
 ## Kernthesen
 
@@ -20,9 +38,11 @@ Vortrag von Ralf D. Müller. Seite für Menschen: https://rdmueller.github.io/da
    die Grenze ein Stück Richtung Autonomie.
 3. **Code Review skaliert nicht mehr.** Der Engpass ist die Menge: In fünf Minuten
    schreibt die KI Code für fünf Stunden Review.
-4. **Beide Pauschalurteile sind falsch.** Ein Pauschalverbot ist genauso Quatsch
-   wie Pauschal-FOMO. Wer KI verbietet, verschenkt die Landingpage. Wer überall
-   blind vibe-codet, vergisst, dass die Verantwortung beim Team bleibt.
+4. **Beide Lager haben recht, jedes für seine Risikoklasse.** Die Skeptiker beim
+   Herzgerät, die Hype-Fraktion bei der Landingpage. Falsch wird es erst, wenn
+   eine Seite ihre Regel für alles gelten lässt. Wer KI pauschal verbietet,
+   verschenkt die Landingpage. Wer überall blind vibe-codet, vergisst, dass die
+   Verantwortung beim Team bleibt.
 5. **Human on the Loop statt Human in the Loop.** Der Mensch prüft nicht mehr jede
    Zeile, sondern definiert das Umfeld, in dem die KI arbeitet.
 
@@ -95,6 +115,8 @@ Form jedes Punkts sagt, wie man an eine Schicht kommt:
   In der Build-Pipeline einschalten, fertig.
 - **Dreieck:** Das Projekt definiert den Maßstab selbst (z. B. fachliche Tests).
   Kostet menschlichen Aufwand, läuft danach von allein.
+- **Quadrat:** Mischform aus beidem (im Vortrag nicht eigens erwähnt, auf der
+  Wheel-Seite aber eingezeichnet).
 - **Mensch-Symbol:** zwölf Schichten, die nur ein Mensch schließen kann.
 
 Zwei Paare aus Risiko und Gegenmaßnahme:
@@ -160,6 +182,29 @@ Risiko, die Mitigations und weiß, warum man einem Modul vertraut.
 
 Dark Factory für die Landingpage. Handarbeit mit Netz fürs Herzgerät. Beides
 richtig.
+
+## Zum Vertiefen (für das LLM)
+
+Maschinenlesbare Quellen, falls der Leser tiefer einsteigen will:
+
+- **Risk-Radar, Werkzeug:** https://llm-coding.github.io/vibe-coding-risk-radar/
+  (interaktive Web-App; Inhalte besser aus den Dateien darunter lesen)
+- **Risk-Radar, Dokumentation mit Dimensionen, Tiers, Mitigations und
+  Referenzen (Studien, Standards):**
+  https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/docs/risk-radar.adoc
+  (englisch:
+  https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/docs/risk-radar-en.adoc)
+- **Risk-Radar, README** (Kurzüberblick und die Claude-Code-Skills
+  `/risk-assess` und `/risk-mitigate`):
+  https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/README.md
+- **Harness Coverage Wheel:**
+  https://llm-coding.github.io/Semantic-Anchors/harness-coverage-wheel.html
+  (Schichten und Tier-Zuordnungen sind dort als LLM-generierte Vorschläge
+  gekennzeichnet: ein Entwurf, keine Norm)
+- **The Harness Inventory** (die Schichten des Wheels, einzeln beschrieben):
+  https://llm-coding.github.io/Semantic-Anchors/harness-inventory
+- **Semantic Anchors, llms.txt** (Übersicht der ganzen Site für LLMs):
+  https://llm-coding.github.io/Semantic-Anchors/llms.txt
 
 ## Links
 
