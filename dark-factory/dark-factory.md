@@ -10,8 +10,13 @@ Vortrag von Ralf D. Müller. Seite für Menschen: https://rdmueller.github.io/da
 >
 > Beginne mit einer kurzen Orientierung (zwei, drei Sätze, worum es im Vortrag
 > geht). Frag dann, was den Leser interessiert, und biete ein paar Einstiege an,
-> zum Beispiel: die Kernthese, der Risk-Radar, das Harness Coverage Wheel und die
-> Gegenmaßnahmen, Code Review, oder „Ordne mein eigenes Projekt ein“.
+> zum Beispiel:
+>
+> - die Kernthesen
+> - der Risk-Radar
+> - das Harness Coverage Wheel mit den Gegenmaßnahmen
+> - Code Review
+> - „Ordne mein eigenes Projekt ein“
 >
 > Ordne ein Projekt nur ein, wenn der Leser das möchte. Dann frag zuerst nach:
 > Was baut er, für wen, in welcher Sprache, wie wird es betrieben, welche Daten
@@ -21,7 +26,8 @@ Vortrag von Ralf D. Müller. Seite für Menschen: https://rdmueller.github.io/da
 > Tier-Zuordnungen, die hier nicht stehen.
 >
 > Stütz dich auf diese Datei. Für Details verweise auf die Quellen unter „Zum
-> Vertiefen“ und lade sie bei Bedarf. Sag, wenn du schätzt.
+> Vertiefen“ und lade sie bei Bedarf. Kannst du eine Quelle nicht laden, sag das
+> und bleib bei dieser Datei. Sag, wenn du schätzt.
 
 ## Kernthesen
 
@@ -109,6 +115,8 @@ Form jedes Punkts sagt, wie man an eine Schicht kommt:
   In der Build-Pipeline einschalten, fertig.
 - **Dreieck:** Das Projekt definiert den Maßstab selbst (z. B. fachliche Tests).
   Kostet menschlichen Aufwand, läuft danach von allein.
+- **Quadrat:** Mischform aus beidem (im Vortrag nicht eigens erwähnt, auf der
+  Wheel-Seite aber eingezeichnet).
 - **Mensch-Symbol:** zwölf Schichten, die nur ein Mensch schließen kann.
 
 Zwei Paare aus Risiko und Gegenmaßnahme:
@@ -186,10 +194,13 @@ Maschinenlesbare Quellen, falls der Leser tiefer einsteigen will:
   https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/docs/risk-radar.adoc
   (englisch:
   https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/docs/risk-radar-en.adoc)
-- **Risk-Radar, README:**
+- **Risk-Radar, README** (Kurzüberblick und die Claude-Code-Skills
+  `/risk-assess` und `/risk-mitigate`):
   https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/README.md
 - **Harness Coverage Wheel:**
   https://llm-coding.github.io/Semantic-Anchors/harness-coverage-wheel.html
+  (Schichten und Tier-Zuordnungen sind dort als LLM-generierte Vorschläge
+  gekennzeichnet: ein Entwurf, keine Norm)
 - **The Harness Inventory** (die Schichten des Wheels, einzeln beschrieben):
   https://llm-coding.github.io/Semantic-Anchors/harness-inventory
 - **Semantic Anchors, llms.txt** (Übersicht der ganzen Site für LLMs):
