@@ -1,5 +1,18 @@
 [
   {
+    "title": "Dark Factory: My Talk, Retold by Two People Who Don't Exist",
+    "date": "2026-09-28",
+    "lang": "en",
+    "excerpt": "I handed my slides and transcript to Claude Code and let it write a dialogue: Martin tells Lena over coffee what my German talk was about, now in English with its own script and slides. The core idea: whether a dark factory makes sense is decided by the risk class of your software.",
+    "tags": [
+      "Agentic Coding",
+      "Software Architecture",
+      "Dark Factory"
+    ],
+    "icon": "images/blog/linkedin/dark-factory-dialog-video.png",
+    "url": "blog/dark-factory-dialog-video.html"
+  },
+  {
     "title": "200 Semantic Anchors, and Two Changed Names",
     "date": "2026-09-25",
     "lang": "en",
