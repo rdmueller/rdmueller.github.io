@@ -1,4 +1,4 @@
-# https://rdmueller.github.io/ — Bündel 1 von 4
+# https://rdmueller.github.io/ — Bündel 1 von 6
 
 > 21 Seiten im Volltext.
 
@@ -642,7 +642,7 @@ Page: https://rdmueller.github.io/dark-factory/index.html
  Fragen, Einwände, Ihr eigenes Projekt: Sprechen Sie den Vortrag mit Ihrer eigenen KI durch.
 
  
- Vortrag als Text für Ihre KI (Markdown)
+ Vortrag als Text für Ihre KI
  
 
  

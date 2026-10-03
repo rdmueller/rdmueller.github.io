@@ -1669,6 +1669,10 @@ ul, ol {
     margin-bottom: var(--spacing-lg);
 }
 
+.series-info ul {
+    margin-bottom: var(--spacing-lg);
+}
+
 .series-links {
     display: flex;
     gap: var(--spacing-md);

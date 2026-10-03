@@ -358,6 +358,27 @@ Technology Evangelist
  
  
  
+ 
+
+ 
+ 
+
+### Eichhorst's Principle
+
+ Konzept | Blogserie 2026
+
+ Shannons Noisy-Channel-Theorem auf LLM-Coding angewendet: Das LLM ist ein verrauschter Kanal, Compiler und Tests sind die Fehlerkorrektur. Definition, Herkunft, alle Folgen der Serie und Zitiervorschlag.
+
+ Zur Konzeptseite →
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
 ### docToolchain
 

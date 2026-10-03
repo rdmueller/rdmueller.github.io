@@ -1,4 +1,4 @@
-# https://rdmueller.github.io/ — Bündel 3 von 4
+# https://rdmueller.github.io/ — Bündel 3 von 6
 
 > 21 Seiten im Volltext.
 
@@ -276,6 +276,11 @@ EN
  
 
  
+ 
+ This is the post that coined the term. For the definition, the full series, and how to cite it, see the Eichhorst's Principle concept page.
+
+ 
+
  Claude Shannon proved in 1948 that a noisy channel can deliver error-free transmission if you invest enough redundancy. Ingo Eichhorst applied this to LLM agents in his JavaLand keynote last week. I think he is right.
 
  An LLM is not a deterministic tool. It is a noisy, non-deterministic channel. It hallucinates. It loses context. It is sometimes plain wrong. But an agent in a loop corrects itself. The compiler reports line 5. The LLM reads the error. It fixes the code. The build passes. That is not magic, that is error correction. Exactly like Shannon described.
@@ -287,6 +292,8 @@ EN
  Shannon's proof took 60 years before engineers translated it into real codes. We are at the beginning of translating Eichhorst's Principle into software processes.
 
  Anyone at JavaLand who saw the talk? Is the agentic loop the turbo code of our time?
+
+ 
 
  
 
@@ -338,6 +345,8 @@ EN
  "It somehow works" is not engineering. "I know exactly why it works and I can control the quality by controlling the feedback loop" is engineering. You can measure it. You can improve it. You can explain it to your CTO in terms they already understand from control theory.
 
  Eichhorst's Principle is not just an analogy. It is an operational framework. Invest in your test suite. Keep your specs small. Close the loop.
+
+ Related: Eichhorst's Principle. The concept page has the definition, all posts, and how to cite it.
 
  
 
@@ -886,6 +895,8 @@ EN
  "You can communicate over noisy channels, but you should invest in clear channels." That line from our conversation stuck with me. Better models give us a clearer channel. Better error correction gives us a safety net. Both matter.
 
  Thanks Avraham Poupko for a conversation that made me rethink the fundamentals.
+
+ Part of the series on Eichhorst's Principle. The concept page has the definition, all posts, and how to cite it.
 
  
 

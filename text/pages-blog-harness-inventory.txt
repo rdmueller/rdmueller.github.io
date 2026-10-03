@@ -54,6 +54,8 @@ EN
 
  Special credit to Avraham Poupko for the modifier insight (private, static, final as error correction for machines), and to Ingo Eichhorst for the Shannon framing that made the rest fall into place.
 
+ Related: Eichhorst's Principle. The concept page has the definition, all posts, and how to cite it.
+
  
 
  

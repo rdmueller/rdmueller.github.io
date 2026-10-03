@@ -1,4 +1,4 @@
-# https://rdmueller.github.io/ — Bündel 4 von 4
+# https://rdmueller.github.io/ — Bündel 4 von 6
 
 > 12 Seiten im Volltext.
 
@@ -84,6 +84,8 @@ EN
  Avraham put it simply: as long as we maintain this distinction, AI is a tool we use. The moment we stop asking "why," it becomes a tool that uses us.
 
  The full workflow: https://llm-coding.github.io/Semantic-Anchors/workflow
+
+ Part of the series on Eichhorst's Principle. The concept page has the definition, all posts, and how to cite it.
 
  
 
@@ -425,6 +427,8 @@ EN
 
  Small steps are not caution. They are information theory.
 
+ Part of the series on Eichhorst's Principle. The concept page has the definition, all posts, and how to cite it.
+
  
 
  
@@ -514,6 +518,8 @@ EN
  The ideal language for agentic coding is strict, produces clear error messages, and has strong auto-formatting. Today, that points to Go, Kotlin, and Java. Rust has the strictest compiler but the steepest actionability curve. JavaScript and Python have the weakest error correction but the largest ecosystems.
 
  Choose your language. You are choosing your channel capacity.
+
+ Part of the series on Eichhorst's Principle. The concept page has the definition, all posts, and how to cite it.
 
  
 

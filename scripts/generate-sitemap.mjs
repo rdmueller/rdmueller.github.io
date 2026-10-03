@@ -36,6 +36,7 @@ const SECTIONS = [
   'pages/elfi.html',
   'pages/talks.html',
   'pages/hhgdac.html',
+  'pages/eichhorsts-principle.html',
   'pages/impressum.html',
   'pages/datenschutz.html',
 ]
