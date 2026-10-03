@@ -346,6 +346,8 @@ EN
 
  Eichhorst's Principle is not just an analogy. It is an operational framework. Invest in your test suite. Keep your specs small. Close the loop.
 
+ Related: Eichhorst's Principle. The concept page has the definition, all posts, and how to cite it.
+
  
 
  
