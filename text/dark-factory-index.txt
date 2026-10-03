@@ -7,7 +7,7 @@ Page: https://rdmueller.github.io/dark-factory/index.html
  Fragen, Einwände, Ihr eigenes Projekt: Sprechen Sie den Vortrag mit Ihrer eigenen KI durch.
 
  
- Vortrag als Text für Ihre KI (Markdown)
+ Vortrag als Text für Ihre KI
  
 
  

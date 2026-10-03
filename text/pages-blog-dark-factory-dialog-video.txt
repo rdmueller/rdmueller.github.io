@@ -1,0 +1,47 @@
+# Dark Factory: My Talk, Retold by Two People Who Don't Exist
+Page: https://rdmueller.github.io/pages/blog/dark-factory-dialog-video.html
+
+EN
+ 28. September 2026
+ 
+
+ 
+
+# Dark Factory: My Talk, Retold by Two People Who Don't Exist
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I gave a talk in German last week. Two people who don't exist will now explain it to you in English.
+
+ After my talk "Dark Factory? Kommt auf die Risikoklasse an." at Haeger Consulting's Tech & Connect, I tried something new. I handed my slides and the transcript to Claude Code and let it write a dialogue: Martin was in the audience, Lena wasn't, and over coffee he tells her what the talk was about. Cartesia gave them their voices, ffmpeg put the slides underneath, and a local Whisper checked the pronunciation. The English version got its own script and its own slides, rewritten from scratch, so it doesn't sound like a German talk with subtitles.
+
+ The core idea fits in a few sentences. Whether a dark factory makes sense is decided by the risk class of your software. How much you believe in AI has nothing to do with it. A static landing page can ship without anyone reading the code, pacemaker firmware can't. Both camps in the AI debate are right, each for their own risk class, and every mitigation you add moves the line a little further toward autonomy.
+
+ The video is its own example. It's a tier 1 artifact, so the AI was allowed to build all of it. My part was deciding what it should say and rejecting what sounded wrong, like the voice that spelled out "H-T-M-L" or the sentence that put the stress on exactly the wrong word. Avraham Poupko calls this purpose vs. task, and I haven't found a better way to put it. I set the purpose. The machine did the task.
+
+ If you'd rather talk than watch, the landing page has a button that hands the talk to Claude or ChatGPT, so you can argue with it about your own project.
+
+ 
+ 
+- 🎬 English: https://youtu.be/yq0szkziM7E
+ 
+- 🇩🇪 Deutsch: https://youtu.be/-s6RpLsrfYA
+ 
+- 💬 Talk it over: https://rdmueller.github.io/dark-factory/
+ 
+
+ Thanks to ultrathink.club for inspiration and sparring: Uwe Franke, Stephan 🦄 Schmidt, Ingo Eichhorst
+
+ Would you let a dark factory build your next landing page? Where would you draw the line?
+
+ 
+
+ 
+ 
+
+## LinkedWild

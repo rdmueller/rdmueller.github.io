@@ -13,6 +13,7 @@ Page: https://rdmueller.github.io/pages/blog.html
  Agentic Coding
  Brownfield
  Copyright
+ Dark Factory
  Digital Independence
  Documentation
  Eichhorst's Principle
@@ -28,6 +29,33 @@ Page: https://rdmueller.github.io/pages/blog.html
  Tooling
  arc42
  docToolchain
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 28
+ Sep
+ 2026
+ 
+
+ 
+ 
+ ENAgentic CodingSoftware ArchitectureDark Factory
+ 
+
+ 
+
+## Dark Factory: My Talk, Retold by Two People Who Don't Exist
+
+ I handed my slides and transcript to Claude Code and let it write a dialogue: Martin tells Lena over coffee what my German talk was about, now in English with its own script and slides. The core idea: whether a dark factory makes sense is decided by the risk class of your software.
+
+ Artikel lesen
  
 
  
