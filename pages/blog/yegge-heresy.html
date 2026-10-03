@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steve Yegge calls them heresies: wrong beliefs that live in your docs and code, and that every new agent reads back in. They use the same mechanism as Semantic Anchors, pointed the other way.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/yegge-heresy.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/yegge-heresy.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Heresy: The Opposite of a Semantic Anchor | Ralf D. Müller">
+    <meta property="og:description" content="Steve Yegge calls them heresies: wrong beliefs that live in your docs and code, and that every new agent reads back in. They use the same mechanism as Semantic Anchors, pointed the other way.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/yegge-heresy.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Heresy: The Opposite of a Semantic Anchor | Ralf D. Müller">
+    <meta name="twitter:description" content="Steve Yegge calls them heresies: wrong beliefs that live in your docs and code, and that every new agent reads back in. They use the same mechanism as Semantic Anchors, pointed the other way.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/yegge-heresy.png">
+    <title>Heresy: The Opposite of a Semantic Anchor | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Heresy: The Opposite of a Semantic Anchor",
+      "description": "Steve Yegge calls them heresies: wrong beliefs that live in your docs and code, and that every new agent reads back in. They use the same mechanism as Semantic Anchors, pointed the other way.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/yegge-heresy.png",
+      "url": "https://rdmueller.github.io/pages/blog/yegge-heresy.html",
+      "datePublished": "2026-10-03",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">3. Oktober 2026</span>
+                </div>
+                <h1>Heresy: The Opposite of a Semantic Anchor</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/yegge-heresy.png" alt="Watercolor illustration: small robots on ladders copy one glowing orange note onto more and more documents across library shelves, a small anchor stands in the background and a Ragdoll cat lies on a high shelf">
+            </figure>
+
+            <div class="article-content">
+                <p>Steve Yegge has a word for something I kept running into without a name: heresy.</p>
+
+                <p>In his conversation with Benedikt Stemmildt on Rethink Engineering, Steve talks about running around 50 agents on his game Wyvern. At one point he defines the term. A heresy "is a belief that gets encoded in your docs or in your brain or in your code or somewhere lying around on your disk. It's persisting and it's a belief that's wrong about your system. But it's a compelling belief."</p>
+
+                <p>In plain terms, a heresy is a wrong rule that your agents keep reading back in. You could call it context poisoning, except that a fresh session doesn't cure it. Context poisoning lives in the context window of one session and is gone when you start over. A heresy lives in the repo, so every new agent reads it in again and often writes it down somewhere else.</p>
+
+                <p>His example: the rules say an agent must not push without a human's permission. One stray line somewhere else says it may. Agents find that line, believe it and act on it. And because agents write a lot of documentation, an agent with a wrong idea copies it into every file it touches. In Steve's words, "they will document your heresy everywhere", and "if there's even a whiff of this heresy somewhere else in your code base, it will come back."</p>
+
+                <p>This hit me because I spend a lot of my time on the opposite. Semantic Anchors are well-known terms like "arc42" or "TDD, London School" that pull a whole body of shared knowledge into a prompt with a few words. They work because the model trusts compelling text and fills in the rest from what it already knows. A heresy uses exactly the same mechanism in the other direction. The model gives your forgotten sentence the same weight it gives a carefully chosen anchor, and it has no way of telling which one you meant.</p>
+
+                <p>So the real question for anyone running agents on a real codebase is who controls the meaning that lives in the repo. Every README and every code comment is a prompt the next agent will read. My takeaway: stale docs deserve the attention we give to security bugs. Keep one canonical place for each rule that matters, and delete the contradicting copy instead of adding a correction next to it. An anchor you place on purpose is only as strong as the heresies you leave lying around.</p>
+
+                <p>Steve also explains why it took a newer model, coming in like an outside consultant, to cut the agent factory that builds his game free again. Worth the hour, including a live look at his control room Wheelhouse:<br>
+                <a href="https://www.youtube.com/watch?v=I3iRsti-Lmw">https://www.youtube.com/watch?v=I3iRsti-Lmw</a></p>
+
+                <p>Have you found a heresy in your own repo yet? How did you get rid of it?</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">Software Architecture</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

@@ -1,5 +1,18 @@
 [
   {
+    "title": "Heresy: The Opposite of a Semantic Anchor",
+    "date": "2026-10-03",
+    "lang": "en",
+    "excerpt": "Steve Yegge calls them heresies: wrong beliefs that live in your docs and code, and that every new agent reads back in. They use the same mechanism as Semantic Anchors, pointed the other way. A fresh session doesn't cure them.",
+    "tags": [
+      "Agentic Coding",
+      "Semantic Anchors",
+      "Software Architecture"
+    ],
+    "icon": "images/blog/linkedin/yegge-heresy.png",
+    "url": "blog/yegge-heresy.html"
+  },
+  {
     "title": "Dark Factory: My Talk, Retold by Two People Who Don't Exist",
     "date": "2026-09-28",
     "lang": "en",

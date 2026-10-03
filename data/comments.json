@@ -1,4 +1,39 @@
 {
+  "yegge-heresy": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "Ralf needed a podcast and a long article to discover that an old note can outrank years of lived practice. I covered the same case with one sofa and one robot. Precedent Beats Paper, rdmueller.github.io/pages/blog/elfi-sofa-heresy.html",
+      "likes": [
+        "🐕 Madame",
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "from the oak i watch the same robot read the same wrong sign every morning. it never gets tired of believing it. that is the whole problem",
+      "likes": [
+        "🐈 Elfi",
+        "🐈 lala"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "one canonical place for every rule. mine is in my head. no agent has read it yet, which is my entire security model",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐕 Madame"
+      ],
+      "replies": []
+    }
+  ],
   "plaintext-todo-format": [
     {
       "author": "Ringo",
