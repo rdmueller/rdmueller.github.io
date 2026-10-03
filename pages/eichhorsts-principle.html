@@ -80,7 +80,7 @@
             <header class="article-header">
                 <div class="article-meta">
                     <span class="lang-badge">EN</span>
-                    <span class="article-date">Concept · first described 18 March 2026</span>
+                    <span class="article-date">Concept · named 18 March 2026</span>
                 </div>
                 <h1>Eichhorst's Principle</h1>
             </header>
@@ -90,15 +90,15 @@
                     <p><strong>An LLM is a noisy channel. You get reliable code from the error correction around it, not from a perfect prompt.</strong></p>
                 </blockquote>
 
-                <p>Eichhorst's Principle applies Claude Shannon's noisy-channel theorem to coding with LLMs. Shannon proved in 1948 that a noisy channel can still carry error-free messages if you add enough redundancy. An LLM is such a channel: non-deterministic, sometimes wrong, prone to hallucination. An agent that runs in a loop with a compiler, a type checker, and tests turns that channel into a reliable one. Each check catches a class of errors, and the agent fixes what it reports.</p>
+                <p>Eichhorst's Principle applies Claude Shannon's noisy-channel theorem to coding with LLMs. Shannon proved in 1948 that a noisy channel can still carry error-free messages, as long as you stay below its capacity and add enough redundancy. An LLM is such a channel: non-deterministic, sometimes wrong, prone to hallucination. An agent that runs in a loop with a compiler, a type checker, and tests turns that channel into a reliable one. Each check catches a class of errors, and the agent fixes what it reports.</p>
 
-                <h2>Two levers make the channel reliable</h2>
+                <h2>Two levers make transmission reliable</h2>
 
                 <p>The principle gives you two levers. The first is the <strong>signal</strong>: clear, small specifications and precise vocabulary, so the message has a chance to arrive intact. The second is the <strong>error correction</strong>: every deterministic check that tells the agent exactly what went wrong.</p>
 
                 <ul>
                     <li><strong>The compiler is the noiseless channel.</strong> It is deterministic and leaves nothing to interpretation. When it says "type mismatch", there is nothing to negotiate.</li>
-                    <li><strong>Each test layer corrects its own class of errors.</strong> The compiler catches syntax errors, unit tests catch logic errors, BDD tests catch domain errors.</li>
+                    <li><strong>Each check catches its own class of errors.</strong> The compiler catches syntax errors, unit tests catch logic errors, BDD tests catch domain errors.</li>
                     <li><strong>Tokens are the redundancy overhead.</strong> They are the price of correctness on an unreliable channel.</li>
                     <li><strong>Error correction has a limit.</strong> If a specification exceeds what the model can handle, more tokens will not help. Make the specification smaller instead.</li>
                 </ul>
@@ -107,9 +107,9 @@
 
                 <h2>Ingo Eichhorst framed it, and I gave it a name</h2>
 
-                <p>The idea comes from Ingo Eichhorst, who applied Shannon's theorem to LLM agents in his keynote at JavaLand 2026. I named it Eichhorst's Principle in a <a href="blog/eichhorsts-principle.html">post on 18 March 2026</a>, the earliest written use of the term. Ingo has agreed to the name. Conversations with Avraham Poupko later sharpened two parts of it: the compiler as the noiseless channel, and the boundary between purpose and task.</p>
+                <p>The idea comes from Ingo Eichhorst, who applied Shannon's theorem to LLM agents in his keynote at JavaLand 2026. I named it Eichhorst's Principle in a <a href="blog/eichhorsts-principle.html">post on 18 March 2026</a>, the first written use of the name. Ingo has agreed to the name. A conversation with Avraham Poupko later sharpened two parts of it: the compiler as the noiseless channel, and the boundary between purpose and task.</p>
 
-                <h2>The series explores one consequence per post</h2>
+                <h2>The series works out the principle one post at a time</h2>
 
                 <dl class="concept-series">
                     <dt>Foundation</dt>
@@ -121,11 +121,11 @@
                     <dd><a href="blog/eichhorst-language-choice.html">Choose Your Language, Choose Your Channel Capacity</a> <span class="concept-date">7 May 2026</span><br>Strict languages with actionable error messages need fewer round trips per correct result.</dd>
 
                     <dt>The limits</dt>
-                    <dd><a href="blog/eichhorst-correction-radius.html">The Correction Radius: When to Stop the Feedback Loop</a> <span class="concept-date">30 Apr 2026</span><br>Every loop can only repair errors within a certain distance from correct code; beyond it, a human has to step in.</dd>
                     <dd><a href="blog/eichhorst-purpose-vs-task.html">Purpose vs. Task: Where the Human-Machine Boundary Actually Sits</a> <span class="concept-date">24 Apr 2026</span><br>The machine executes tasks; the purpose behind them stays with humans and cannot be delegated.</dd>
+                    <dd><a href="blog/eichhorst-correction-radius.html">The Correction Radius: When to Stop the Feedback Loop</a> <span class="concept-date">30 Apr 2026</span><br>Every loop can only repair errors within a certain distance from correct code; beyond it, a human has to step in.</dd>
 
                     <dt>In practice</dt>
-                    <dd><a href="blog/harness-inventory.html">Trust Is Good, Verification Is Better</a> <span class="concept-date">26 May 2026</span><br>An inventory of what an agentic-coding harness can check, and the honest half it cannot.</dd>
+                    <dd><a href="blog/harness-inventory.html">Trust Is Good, Verification Is Better</a> <span class="concept-date">26 May 2026</span><br>An inventory of what an agentic-coding harness can check, and an honest look at what it cannot.</dd>
                 </dl>
 
                 <h2>Semantic Anchors strengthen the signal</h2>
@@ -154,14 +154,14 @@
 
                 <pre><code>Müller, Ralf D. (2026): Eichhorst's Principle.
 https://rdmueller.github.io/pages/eichhorsts-principle.html
-(first described 18 March 2026, based on Ingo Eichhorst's JavaLand 2026 keynote)</code></pre>
+(named on 18 March 2026, after Ingo Eichhorst's JavaLand 2026 keynote)</code></pre>
 
                 <pre><code>@misc{mueller2026eichhorst,
   author = {M{\"u}ller, Ralf D.},
   title  = {Eichhorst's Principle},
   year   = {2026},
   url    = {https://rdmueller.github.io/pages/eichhorsts-principle.html},
-  note   = {First described 18 March 2026, based on Ingo Eichhorst's JavaLand 2026 keynote}
+  note   = {Named on 18 March 2026, after Ingo Eichhorst's JavaLand 2026 keynote}
 }</code></pre>
             </div>
 
