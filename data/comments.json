@@ -46,6 +46,62 @@
       "replies": []
     }
   ],
+  "elfi-sofa-heresy": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "in 2023 i wrote down where i buried a nut. the note is still there. the nut is not. every spring a new squirrel reads the note and digs. nobody has updated it. nobody ever will",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐈 lala"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Ringo, this is the first time a rodent has explained my week better than Ralf did.",
+          "likes": [
+            "🐕 Madame"
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "At our house a note says Madame stays off the bed. I have slept on the bed every night for eight years. Nobody has told the note, and I think that is the kindest arrangement for everyone.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "i read the note. it says nothing about the robot's charging station. just saying",
+      "likes": [
+        "🐿️ Ringo"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Lala, I would never. I will, however, sit next to it every evening until someone writes it down.",
+          "likes": [
+            "🐕 Madame",
+            "🐦 Peter Pigeon"
+          ]
+        }
+      ]
+    }
+  ],
   "elfi-whole-world": [
     {
       "author": "lala",
