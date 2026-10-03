@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eichhorst's Principle: an LLM is a noisy channel in Shannon's sense. Reliable code comes from error correction around it (compiler, tests, review), not from a perfect prompt.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/eichhorsts-principle.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/eichhorsts-principle.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Eichhorst's Principle | Ralf D. Müller">
+    <meta property="og:description" content="An LLM is a noisy channel. Reliable code comes from error correction around it, not from a perfect prompt. Definition, origin, the post series, and how to cite it.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorsts-principle.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eichhorst's Principle | Ralf D. Müller">
+    <meta name="twitter:description" content="An LLM is a noisy channel. Reliable code comes from error correction around it, not from a perfect prompt.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/eichhorsts-principle.png">
+    <title>Eichhorst's Principle | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Eichhorst's Principle",
+      "description": "Eichhorst's Principle applies Shannon's noisy-channel theorem to LLM coding: an LLM is a noisy channel, and reliable code comes from error correction around it.",
+      "url": "https://rdmueller.github.io/pages/eichhorsts-principle.html",
+      "datePublished": "2026-10-03",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "Ralf D. Müller",
+        "url": "https://rdmueller.github.io/"
+      },
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Eichhorst's Principle",
+        "alternateName": ["Eichhorst Principle", "Eichhorst-Prinzip"],
+        "description": "An LLM is a noisy, non-deterministic channel. Reliable software comes from error correction around the channel (compiler, type checker, tests, review), not from a perfect prompt. Clearer specifications raise the signal; deterministic checks correct the noise.",
+        "url": "https://rdmueller.github.io/pages/eichhorsts-principle.html"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .concept-definition { font-size: 1.15rem; }
+        .concept-definition p { font-style: normal; }
+        .concept-series dt { font-weight: 600; margin-top: var(--spacing-lg); color: var(--color-text); }
+        .concept-series dd { margin: var(--spacing-xs) 0 0 0; color: var(--color-text-light); }
+        .concept-series dd + dd { margin-top: var(--spacing-sm); }
+        .concept-date { white-space: nowrap; color: var(--color-text-light); font-size: var(--font-size-sm); }
+    </style>
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">Über mich</a></li>
+                <li><a href="../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../index.html#trainings">Trainings</a></li>
+                <li><a href="../pages/talks.html">Vorträge</a></li>
+                <li><a href="../index.html#publications">Publikationen</a></li>
+                <li><a href="../pages/blog.html">Ralf's Corner</a></li>
+                <li><a href="../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">Concept · first described 18 March 2026</span>
+                </div>
+                <h1>Eichhorst's Principle</h1>
+            </header>
+
+            <div class="article-content">
+                <blockquote class="concept-definition">
+                    <p><strong>An LLM is a noisy channel. You get reliable code from the error correction around it, not from a perfect prompt.</strong></p>
+                </blockquote>
+
+                <p>Eichhorst's Principle applies Claude Shannon's noisy-channel theorem to coding with LLMs. Shannon proved in 1948 that a noisy channel can still carry error-free messages if you add enough redundancy. An LLM is such a channel: non-deterministic, sometimes wrong, prone to hallucination. An agent that runs in a loop with a compiler, a type checker, and tests turns that channel into a reliable one. Each check catches a class of errors, and the agent fixes what it reports.</p>
+
+                <h2>Two levers make the channel reliable</h2>
+
+                <p>The principle gives you two levers. The first is the <strong>signal</strong>: clear, small specifications and precise vocabulary, so the message has a chance to arrive intact. The second is the <strong>error correction</strong>: every deterministic check that tells the agent exactly what went wrong.</p>
+
+                <ul>
+                    <li><strong>The compiler is the noiseless channel.</strong> It is deterministic and leaves nothing to interpretation. When it says "type mismatch", there is nothing to negotiate.</li>
+                    <li><strong>Each test layer corrects its own class of errors.</strong> The compiler catches syntax errors, unit tests catch logic errors, BDD tests catch domain errors.</li>
+                    <li><strong>Tokens are the redundancy overhead.</strong> They are the price of correctness on an unreliable channel.</li>
+                    <li><strong>Error correction has a limit.</strong> If a specification exceeds what the model can handle, more tokens will not help. Make the specification smaller instead.</li>
+                </ul>
+
+                <p>The practical consequence: invest in your tests and your feedback loop before you invest in better prompts.</p>
+
+                <h2>Ingo Eichhorst framed it, and I gave it a name</h2>
+
+                <p>The idea comes from Ingo Eichhorst, who applied Shannon's theorem to LLM agents in his keynote at JavaLand 2026. I named it Eichhorst's Principle in a <a href="blog/eichhorsts-principle.html">post on 18 March 2026</a>, the earliest written use of the term. Ingo has agreed to the name. Conversations with Avraham Poupko later sharpened two parts of it: the compiler as the noiseless channel, and the boundary between purpose and task.</p>
+
+                <h2>The series explores one consequence per post</h2>
+
+                <dl class="concept-series">
+                    <dt>Foundation</dt>
+                    <dd><a href="blog/eichhorsts-principle.html">Eichhorst's Principle: Shannon's Noisy Channel Applied to LLM Coding</a> <span class="concept-date">18 Mar 2026</span><br>The original post: the LLM as a noisy channel, the agentic loop as error correction.</dd>
+                    <dd><a href="blog/closed-loop-coding.html">Closed Loop vs. Open Loop: Why the Feedback Loop Is Everything</a> <span class="concept-date">19 Mar 2026</span><br>Prompting is an open loop, agentic coding a closed one, so better tests beat better prompts.</dd>
+
+                    <dt>The channel</dt>
+                    <dd><a href="blog/eichhorst-noiseless-channel.html">Your Compiler Is Shannon's Noiseless Channel</a> <span class="concept-date">17 Apr 2026</span><br>Modifiers like <code>private</code> and <code>final</code> become error correction for machines, and auto-fixers are the cheapest layer.</dd>
+                    <dd><a href="blog/eichhorst-language-choice.html">Choose Your Language, Choose Your Channel Capacity</a> <span class="concept-date">7 May 2026</span><br>Strict languages with actionable error messages need fewer round trips per correct result.</dd>
+
+                    <dt>The limits</dt>
+                    <dd><a href="blog/eichhorst-correction-radius.html">The Correction Radius: When to Stop the Feedback Loop</a> <span class="concept-date">30 Apr 2026</span><br>Every loop can only repair errors within a certain distance from correct code; beyond it, a human has to step in.</dd>
+                    <dd><a href="blog/eichhorst-purpose-vs-task.html">Purpose vs. Task: Where the Human-Machine Boundary Actually Sits</a> <span class="concept-date">24 Apr 2026</span><br>The machine executes tasks; the purpose behind them stays with humans and cannot be delegated.</dd>
+
+                    <dt>In practice</dt>
+                    <dd><a href="blog/harness-inventory.html">Trust Is Good, Verification Is Better</a> <span class="concept-date">26 May 2026</span><br>An inventory of what an agentic-coding harness can check, and the honest half it cannot.</dd>
+                </dl>
+
+                <h2>Semantic Anchors strengthen the signal</h2>
+
+                <p>Error correction repairs what arrives broken. The other lever is to send a clearer message in the first place. <a href="https://llm-coding.github.io/Semantic-Anchors/">Semantic Anchors</a> do exactly that: well-known terms such as "TDD, London School" or "arc42" carry a whole method in a few tokens, so the model knows what you mean without a long explanation. The <a href="https://llm-coding.github.io/Semantic-Anchors/spec-driven-development/">Spec-Driven Development</a> workflow combines both levers: small specifications with precise anchors, implemented test-first in a closed loop.</p>
+
+                <h2>Others have picked up the term</h2>
+
+                <ul>
+                    <li>Beyond Vibe Coding by HMZE × Impala Search, episode #061: <a href="https://www.youtube.com/watch?v=eyvs7deP9CU">"Das Eichhorst Prinzip" with Ingo Eichhorst</a> (podcast, German, 7 May 2026).</li>
+                    <li>Johannes Rabauer: <a href="https://rabauer.dev/methods/eichhorst-principle">"Eichhorst Principle"</a> in his catalogue of agentic methods (July 2026).</li>
+                    <li>Johannes Rabauer with Ingo Eichhorst: <a href="https://www.youtube.com/watch?v=5vm4eckX6f8">"Stop Prompting. Start Building Software Factories for Java"</a> (live coding, 2 July 2026), with the <a href="https://rabauer.dev/en/blog/software-factories">accompanying blog post</a>.</li>
+                </ul>
+
+                <h2>Further reading goes deeper into the Shannon framing</h2>
+
+                <ul>
+                    <li>Ingo Eichhorst: <a href="https://leanpub.com/der-agent-tickt-anders">"Der Agent tickt anders: Was Claude Shannon Softwarearchitekten über Coding-Agenten lehrt"</a> (book, German, Leanpub). Ingo's own, fuller treatment of the Shannon perspective.</li>
+                    <li>Eberhard Wolff: <a href="https://www.youtube.com/watch?v=WxO1ms6svC8">"KI Coding Produktivität mit Ingo Eichhorst"</a> (video, German).</li>
+                    <li>Claude E. Shannon: "A Mathematical Theory of Communication", <em>Bell System Technical Journal</em> 27 (1948). The theorem everything here builds on.</li>
+                </ul>
+
+                <h2>Cite this page as</h2>
+
+                <p>If you refer to the principle, please link to this page. It stays put while the posts move down the blog feed.</p>
+
+                <pre><code>Müller, Ralf D. (2026): Eichhorst's Principle.
+https://rdmueller.github.io/pages/eichhorsts-principle.html
+(first described 18 March 2026, based on Ingo Eichhorst's JavaLand 2026 keynote)</code></pre>
+
+                <pre><code>@misc{mueller2026eichhorst,
+  author = {M{\"u}ller, Ralf D.},
+  title  = {Eichhorst's Principle},
+  year   = {2026},
+  url    = {https://rdmueller.github.io/pages/eichhorsts-principle.html},
+  note   = {First described 18 March 2026, based on Ingo Eichhorst's JavaLand 2026 keynote}
+}</code></pre>
+            </div>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">AI</span>
+                    <span class="blog-tag">Software Engineering</span>
+                    <span class="blog-tag">Theory</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="blog.html" class="back-link">← Back to the blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
