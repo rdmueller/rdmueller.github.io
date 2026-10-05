@@ -1,5 +1,18 @@
 [
   {
+    "title": "A Plastic Toy Drawing Robot Taught Me What GenAI Can Do",
+    "date": "2026-10-05",
+    "lang": "en",
+    "excerpt": "My vacation project: a 3D printed drawing robot with an LLM on top. Claude built the simulator, designed every part in OpenSCAD, planned the fit test and watched the print through my webcams. I ran the printer and made the calls.",
+    "tags": [
+      "GenAI",
+      "Agentic Coding",
+      "3D Printing"
+    ],
+    "icon": "images/blog/linkedin/drawing-robot.png",
+    "url": "blog/drawing-robot.html"
+  },
+  {
     "title": "Heresy: The Opposite of a Semantic Anchor",
     "date": "2026-10-03",
     "lang": "en",
