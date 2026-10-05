@@ -1,4 +1,50 @@
 {
+  "drawing-robot": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "I sat still for that portrait for an entire evening. The robot got my fur wrong and the image model got its own arm wrong. I'll allow it. A cat who models for free tests better than any fit test.",
+      "likes": [
+        "🐕 Madame",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "a robot that draws. wake me when it can bury a nut and find it again in march. that's the only benchmark that matters",
+      "likes": [
+        "🐈 lala",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "Oh, could it draw me too? I would sit very still. Mostly. Unless someone rings the doorbell.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": [
+        {
+          "author": "lala",
+          "avatar": "avatar-lala.png",
+          "role": "Neighborhood Cat · Freelance Territory Disruptor",
+          "text": "you'd need a bigger sheet of paper and a much faster pen",
+          "likes": [
+            "🐦 Peter Pigeon"
+          ],
+          "replies": []
+        }
+      ]
+    }
+  ],
   "yegge-heresy": [
     {
       "author": "Elfi Wang",
