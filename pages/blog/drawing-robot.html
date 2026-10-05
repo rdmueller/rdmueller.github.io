@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My vacation project: a 3D printed drawing robot with an LLM on top. Claude built the simulator, designed every part in OpenSCAD, planned the fit test and watched the print through my webcams. I ran the printer and made the calls.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/drawing-robot.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/drawing-robot.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="A Plastic Toy Drawing Robot Taught Me What GenAI Can Do | Ralf D. Müller">
+    <meta property="og:description" content="My vacation project: a 3D printed drawing robot with an LLM on top. Claude built the simulator, designed every part in OpenSCAD, planned the fit test and watched the print through my webcams. I ran the printer and made the calls.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/drawing-robot.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A Plastic Toy Drawing Robot Taught Me What GenAI Can Do | Ralf D. Müller">
+    <meta name="twitter:description" content="My vacation project: a 3D printed drawing robot with an LLM on top. Claude built the simulator, designed every part in OpenSCAD, planned the fit test and watched the print through my webcams. I ran the printer and made the calls.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/drawing-robot.png">
+    <title>A Plastic Toy Drawing Robot Taught Me What GenAI Can Do | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "A Plastic Toy Drawing Robot Taught Me What GenAI Can Do",
+      "description": "My vacation project: a 3D printed drawing robot with an LLM on top. Claude built the simulator, designed every part in OpenSCAD, planned the fit test and watched the print through my webcams. I ran the printer and made the calls.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/drawing-robot.png",
+      "url": "https://rdmueller.github.io/pages/blog/drawing-robot.html",
+      "datePublished": "2026-10-05",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">5. Oktober 2026</span>
+                </div>
+                <h1>A Plastic Toy Drawing Robot Taught Me What GenAI Can Do</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/drawing-robot.png" alt="Watercolor illustration: a white cat-shaped drawing robot with two blue arms holds a pen over a sheet of paper with a sketch of a cat, while a fluffy Ragdoll cat sits next to it and reaches out with one paw">
+                <figcaption>AI-generated title picture. Look closely at the arm linkage.</figcaption>
+            </figure>
+
+            <div class="article-content">
+                <p>A plastic toy drawing robot taught me something about what GenAI can do.</p>
+
+                <p>My vacation project started with one of those cheap drawing robots for kids. It is basically a Spirograph with ambition: two motors drive two arms, the arms meet at the pen, and the thing draws surprisingly clean pictures. I wanted to build my own, 3D printed, with a little LLM on top so it draws whatever you ask for.</p>
+
+                <p>So I opened Claude and started talking mechanics. We went through the five-bar linkage and read a security blog that had taken the toy apart. Then Claude built an interactive simulator in plain HTML. You drag the pen around and a heatmap shows the drawing error across the whole field. That simulator delivered the first real insight. The arm geometry barely matters, because the play in the cheap stepper gearboxes swamps everything else. A rubber band that keeps the gears pressed to one side does more than any clever arm length.</p>
+
+                <figure>
+                    <img src="../../images/blog/drawing-robot/simulator.png" alt="Screenshot of the drawing robot simulator (German interface): a top view of the five-bar linkage with two driven upper arms, the reachable area and a 100 by 100 mm drawing field colored as a heatmap of the pen error per step, with geometry sliders on the left and error statistics on the right" loading="lazy">
+                    <figcaption>The simulator Claude built in plain HTML: a heatmap of the drawing error across the field.</figcaption>
+                </figure>
+
+                <p>From there it got physical. Claude designed every part in OpenSCAD, fully parametric, and ran a collision check through the whole range of motion. That check caught two real bugs: the pen hit the head plate during homing, and a cam sat 90 degrees off in the model. When I grumbled about too many screws, the next version went from 24 down to 9 by using crush ribs instead. Claude wrote down every decision as it went. It also picked bearings and switches on Amazon, and I clicked "buy" myself.</p>
+
+                <figure>
+                    <img src="../../images/blog/drawing-robot/assembly.png" alt="OpenSCAD rendering of the robot assembly: a yellow base plate with two motor hubs, orange and yellow upper arms, two green forearms that meet at a red pen holder" loading="lazy">
+                    <figcaption>The parametric OpenSCAD assembly.</figcaption>
+                </figure>
+
+                <p>Before printing nine hours of parts, Claude designed a small fit test with every critical bore and seat in three sizes. Then it watched the print through the two webcams on my printer, one snapshot every five minutes. When a part came loose, we looked at it together and agreed on a brim for the next run. I measured the results, reported "press fit" or "too loose", and the numbers went straight back into the model.</p>
+
+                <figure>
+                    <img src="../../images/blog/drawing-robot/fit-test.jpg" style="max-width: 420px" alt="Photo of two white 3D printed fit-test sprues on a black surface, each holding bores, seats, a ring and a small bracket, one of them with stringy strands at the top" loading="lazy">
+                    <figcaption>The fit test: every critical bore and seat, printed to find the right tolerances.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../../images/blog/drawing-robot/webcam.jpg" style="max-width: 520px" alt="Webcam snapshot from inside a 3D printer: the print head moves over the build plate while the first layers of the small test parts are printed" loading="lazy">
+                    <figcaption>One of the snapshots Claude watched during the print.</figcaption>
+                </figure>
+
+                <p>Next comes the firmware. Claude will write it and flash it onto the microcontroller, but that part stopped surprising me a while ago. My bet is that it will once again put a little web server on the chip as the control panel. :-D</p>
+
+                <p>I ran the printer and made the calls. Everything else happened in a conversation. A year ago I would have filed half of this under "not something a language model can do".</p>
+
+                <p>What surprises you most here? Or does nothing surprise you anymore?</p>
+
+                <p>PS: The image model got the arm linkage wrong in the title picture. Image generation still lags behind what the language model can do.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">3D Printing</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
