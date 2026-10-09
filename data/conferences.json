@@ -287,5 +287,17 @@
     "location": "Online",
     "inverted": false,
     "role": "Co-Moderator"
+  },
+  {
+    "name": "Software Architecture InfoDays",
+    "aliases": [
+      "Software Architecture InfoDays",
+      "InfoDays Software-Architektur",
+      "InfoDays"
+    ],
+    "logo": null,
+    "url": "https://www.infodays.de/sa",
+    "location": "Online",
+    "inverted": false
   }
 ]
