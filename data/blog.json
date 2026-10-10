@@ -1,5 +1,17 @@
 [
   {
+    "title": "Ein Arcade-Automat aus einem Satz",
+    "date": "2026-10-10",
+    "lang": "de",
+    "excerpt": "Uwe Frankes Agent macht aus einem Satz ein Klemmbaustein-Modell samt Bauanleitung. In Frankfurt habe ich live zugesehen: 35 Schritte, 281 Teile. Der Unterschied liegt darin, dass der Agent sein eigenes Ergebnis prüft und nachbessert.",
+    "tags": [
+      "GenAI",
+      "Agentic Coding"
+    ],
+    "icon": "images/blog/linkedin/uwe-arcade.png",
+    "url": "blog/uwe-arcade.html"
+  },
+  {
     "title": "A Plastic Toy Drawing Robot Taught Me What GenAI Can Do",
     "date": "2026-10-05",
     "lang": "en",
