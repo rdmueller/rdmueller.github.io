@@ -1,5 +1,17 @@
 [
   {
+    "title": "Fallbacks nach Recovery Time ordnen, nicht nach Bequemlichkeit",
+    "date": "2026-10-10",
+    "lang": "de",
+    "excerpt": "Der DHL-Bote wählt als Fallback den Laden, der samstags um 13 Uhr schließt, statt der Packstation um die Ecke. Diesen Fehler sehe ich in Architektur-Reviews oft: Die Fallback-Reihenfolge dient dem Aufrufer, nicht der Recovery Time des Empfängers.",
+    "tags": [
+      "Software Architecture",
+      "Resilience"
+    ],
+    "icon": "images/blog/linkedin/dhl-fallback.png",
+    "url": "blog/dhl-fallback.html"
+  },
+  {
     "title": "Ein Arcade-Automat aus einem Satz",
     "date": "2026-10-10",
     "lang": "de",

@@ -11,6 +11,16 @@
         <uri>https://rdmueller.github.io/</uri>
     </author>
     <entry>
+        <id>https://rdmueller.github.io/pages/blog/dhl-fallback.html</id>
+        <title>Fallbacks nach Recovery Time ordnen, nicht nach Bequemlichkeit</title>
+        <updated>2026-10-10T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/dhl-fallback.html" />
+        <summary>Der DHL-Bote wählt als Fallback den Laden, der samstags um 13 Uhr schließt, statt der Packstation um die Ecke. Diesen Fehler sehe ich in Architektur-Reviews oft: Die Fallback-Reihenfolge dient dem Aufrufer, nicht der Recovery Time des Empfängers.</summary>
+        <category term="Software Architecture" />
+        <category term="Resilience" />
+        <content type="html">&lt;p&gt;Der DHL-Bote wählt als Fallback den Laden, der samstags um 13 Uhr schließt, statt der Packstation um die Ecke. Diesen Fehler sehe ich in Architektur-Reviews oft: Die Fallback-Reihenfolge dient dem Aufrufer, nicht der Recovery Time des Empfängers.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/dhl-fallback.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
+    <entry>
         <id>https://rdmueller.github.io/pages/blog/uwe-arcade.html</id>
         <title>Ein Arcade-Automat aus einem Satz</title>
         <updated>2026-10-10T00:00:00Z</updated>

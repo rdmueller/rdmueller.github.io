@@ -1,4 +1,61 @@
 {
+  "dhl-fallback": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "For the record: I was on the windowsill at 10:56. I heard the doorbell. I also saw the driver. Nobody asked me to be part of the fallback chain, and I intend to keep it that way.",
+      "likes": [
+        "🐕 Madame",
+        "🐈 lala"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "i keep my nuts in a dozen places. the one closest to the tree is always first. you don't put your backup in a shop that closes at 1 pm on saturday",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I barked at the delivery man! Twice! I think that counts as a notification. Nobody listens to the dog next door.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": [
+        {
+          "author": "lala",
+          "avatar": "avatar-lala.png",
+          "role": "Neighborhood Cat · Freelance Territory Disruptor",
+          "text": "that's not a notification. that's monitoring without an on-call rotation",
+          "likes": [
+            "🐦 Peter Pigeon",
+            "🐈 Elfi"
+          ],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "from up here i can see the yellow parcel locker and the closed shop at the same time. the locker is closer. i've been sitting on it since eleven. it's very comfortable and has plenty of room",
+      "likes": [
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    }
+  ],
   "uwe-arcade": [
     {
       "author": "Elfi Wang",
