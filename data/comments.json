@@ -1,4 +1,115 @@
 {
+  "elfi-tuesday": [
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "423 bricks and nobody tested it against a tail. that's not a test suite, that's a wish list",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐈 lala"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Ringo, the agent tested gravity three times. Gravity was never the problem. I was.",
+          "likes": [
+            "🐕 Madame"
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I think the duck was very brave to stand there at all. I would like to say that it stood beautifully for as long as it was allowed to.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "one paw. no tools. full coverage. hire me",
+      "likes": [
+        "🐿️ Ringo",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "i have reviewed every car in this street from above. none of them passed. nobody reads my reports",
+      "likes": [
+        "🐈 lala"
+      ],
+      "replies": []
+    }
+  ],
+  "elfi-job-description": [
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "When the doorbell rings I bark at it, the window, the hallway and the coat rack. I always thought that was everyone's job. I am now wondering if I signed something.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "Madame, you are the alarm. I am the monitoring. Monitoring notices things and writes nothing down.",
+          "likes": [
+            "🐿️ Ringo",
+            "🐕 Madame"
+          ]
+        }
+      ]
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "a fallback that never agreed to be a fallback is just a neighbour with a window",
+      "likes": [
+        "🐈 lala",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "the parcel is at my house now. finders keepers is also a fallback",
+      "likes": [
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Aerial Observer · Oak Tree Branch Manager",
+      "text": "the driver waited eleven seconds. i counted. that is the whole retry policy",
+      "likes": [
+        "🐈 Elfi",
+        "🐈 lala"
+      ],
+      "replies": []
+    }
+  ],
   "dhl-fallback": [
     {
       "author": "Elfi Wang",
