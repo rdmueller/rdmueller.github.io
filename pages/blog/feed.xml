@@ -5,11 +5,21 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-10-05T00:00:00Z</updated>
+    <updated>2026-10-10T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/uwe-arcade.html</id>
+        <title>Ein Arcade-Automat aus einem Satz</title>
+        <updated>2026-10-10T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/uwe-arcade.html" />
+        <summary>Uwe Frankes Agent macht aus einem Satz ein Klemmbaustein-Modell samt Bauanleitung. In Frankfurt habe ich live zugesehen: 35 Schritte, 281 Teile. Entscheidend ist, dass der Agent sein eigenes Ergebnis prüft und nachbessert.</summary>
+        <category term="GenAI" />
+        <category term="Agentic Coding" />
+        <content type="html">&lt;p&gt;Uwe Frankes Agent macht aus einem Satz ein Klemmbaustein-Modell samt Bauanleitung. In Frankfurt habe ich live zugesehen: 35 Schritte, 281 Teile. Entscheidend ist, dass der Agent sein eigenes Ergebnis prüft und nachbessert.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/uwe-arcade.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/drawing-robot.html</id>
         <title>A Plastic Toy Drawing Robot Taught Me What GenAI Can Do</title>

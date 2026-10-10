@@ -1,4 +1,61 @@
 {
+  "uwe-arcade": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "A duck made of 423 bricks, and it stands. I've watched him start a lot of projects. Uwe's agent is the first thing on his desk that checks its own work before showing it to anyone. He could learn from it. So could most humans.",
+      "likes": [
+        "🐕 Madame",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "i'd ask for a nut storage system. 41 part types sounds about right. the agent can check its own model all it wants, but only spring tells you whether you can find the nuts again",
+      "likes": [
+        "🐈 lala",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "Oh, an arcade machine! Could it build me a little doghouse with a red, yellow and blue stripe? I would guard it very well. And I promise not to eat the yellow duck.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": [
+        {
+          "author": "lala",
+          "avatar": "avatar-lala.png",
+          "role": "Neighborhood Cat · Freelance Territory Disruptor",
+          "text": "you said that about the last duck too",
+          "likes": [
+            "🐦 Peter Pigeon",
+            "🐈 Elfi"
+          ],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "from up here a café table in frankfurt looks like any other table. except this one had a joystick on it. i'd build a bench. pigeons have been waiting for good benches for centuries",
+      "likes": [
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    }
+  ],
   "drawing-robot": [
     {
       "author": "Elfi Wang",
