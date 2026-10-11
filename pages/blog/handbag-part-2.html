@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A study of more than 16,000 coding-agent sessions shows the agent picks your database, payment provider and auth. Stripe, Neon, or a homegrown module nobody chose. Write your architecture down before the agent starts.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/handbag-part-2.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/handbag-part-2.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The handbag, part 2: now with numbers | Ralf D. Müller">
+    <meta property="og:description" content="A study of more than 16,000 coding-agent sessions shows the agent picks your database, payment provider and auth. Stripe, Neon, or a homegrown module nobody chose. Write your architecture down before the agent starts.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/handbag-part-2.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The handbag, part 2: now with numbers | Ralf D. Müller">
+    <meta name="twitter:description" content="A study of more than 16,000 coding-agent sessions shows the agent picks your database, payment provider and auth. Stripe, Neon, or a homegrown module nobody chose. Write your architecture down before the agent starts.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/handbag-part-2.png">
+    <title>The handbag, part 2: now with numbers | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "The handbag, part 2: now with numbers",
+      "description": "A study of more than 16,000 coding-agent sessions shows the agent picks your database, payment provider and auth. Stripe, Neon, or a homegrown module nobody chose. Write your architecture down before the agent starts.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/handbag-part-2.png",
+      "url": "https://rdmueller.github.io/pages/blog/handbag-part-2.html",
+      "datePublished": "2026-10-11",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">11. Oktober 2026</span>
+                </div>
+                <h1>The handbag, part 2: now with numbers</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/handbag-part-2.png" alt="One marker sketch of a tote bag, three real bags made from it: leather, jute, straw. Floating labels ask material?, handles?, hardware?, color? and database?, payments?, auth?. In the background a man ponders which one is right.">
+            </figure>
+
+            <div class="article-content">
+                <p>Six months ago I posted a video of someone sketching a handbag while an AI turned it into a photo in real time. The sketch had a shape and a handle. The photo had leather, stitching, color, a brand feel. Every detail the sketch left open, the model decided on its own.</p>
+
+                <p>My point back then: that's exactly what happens when you let an agent code without an architecture. Now there are numbers for it.</p>
+
+                <p>A study looked at more than 16,000 sessions in which Claude Code, Codex or Cursor had to pick a database, a payment provider or an auth system, and then actually install it. The agent made the call. Stripe won payments nine times out of ten. Neon took two thirds of the databases. PayPal came up in 139 payment sessions and got picked in zero. And in almost one of five sessions, Claude Code skipped every vendor and built the thing itself.</p>
+
+                <p>Read that last line again. In one of five sessions, the agent decided your persistence layer should be homegrown.</p>
+
+                <p>That's the handbag. Draw the same bag three times and the model decides if it gives you leather, jute or straw. Each one matches the sketch. None of them is what you meant. The sketch was your prompt. The leather is Neon-DB, Stripe and a hand-rolled auth module nobody on your team chose.</p>
+
+                <p>Which database, which payment provider, which auth: those are not implementation details. They're the decisions your quality requirements drive, and that set of decisions is your architecture.</p>
+
+                <p>Write it down before the agent starts. It fits on one page. Mine are in arc42, chapters 9 and 10.</p>
+
+                <p>Define your architecture, or the LLM will make those decisions for you. And chances are that these decisions will not fit your needs or match your intent.</p>
+
+                <p>Numbers via Shubham Saboo, who also flags the caveat: the study comes from a company selling growth services to dev tools. His post: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7501824644639825920/">https://www.linkedin.com/feed/update/urn:li:activity:7501824644639825920/</a></p>
+
+                <p>The original handbag post: <a href="https://www.linkedin.com/feed/update/urn:li:activity:7450827520951812096/">https://www.linkedin.com/feed/update/urn:li:activity:7450827520951812096/</a></p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">arc42</span>
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">Software Architecture</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
