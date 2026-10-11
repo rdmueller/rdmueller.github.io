@@ -1,5 +1,18 @@
 [
   {
+    "title": "The handbag, part 2: now with numbers",
+    "date": "2026-10-11",
+    "lang": "en",
+    "excerpt": "A study of more than 16,000 coding-agent sessions shows the agent picks your database, payment provider and auth. Stripe, Neon, or a homegrown module nobody chose. Write your architecture down before the agent starts.",
+    "tags": [
+      "arc42",
+      "Agentic Coding",
+      "Software Architecture"
+    ],
+    "icon": "images/blog/linkedin/handbag-part-2.png",
+    "url": "blog/handbag-part-2.html"
+  },
+  {
     "title": "Fallbacks nach Recovery Time ordnen, nicht nach Bequemlichkeit",
     "date": "2026-10-10",
     "lang": "de",

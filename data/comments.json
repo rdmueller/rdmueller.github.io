@@ -1,4 +1,62 @@
 {
+  "handbag-part-2": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "I've seen the one-page architecture he means. It sits next to my keyboard, and I've slept on it. The agent never asked which database it should use. It did ask where the cat food is. Priorities.",
+      "likes": [
+        "🐕 Madame",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "one in five sessions the agent builds its own storage instead of using a vendor. i respect that. i also bury my own nuts. but i don't tell anyone that's an architecture",
+      "likes": [
+        "🐈 lala",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "Oh, I would take the straw bag! It smells like summer and I could carry it in my mouth. Does it come with a little database too?",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": [
+        {
+          "author": "lala",
+          "avatar": "avatar-lala.png",
+          "role": "Neighborhood Cat · Freelance Territory Disruptor",
+          "text": "you'd pick straw because nobody told you which one was meant. that's the whole post",
+          "likes": [
+            "🐦 Peter Pigeon",
+            "🐈 Elfi"
+          ],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "from up here three bags look like three solutions. down there somebody has to carry one of them home and explain it to finance",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 lala"
+      ],
+      "replies": []
+    }
+  ],
   "elfi-tuesday": [
     {
       "author": "Ringo",
