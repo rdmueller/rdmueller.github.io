@@ -1,5 +1,18 @@
 [
   {
+    "title": "My software factory runs on a Raspberry Pi",
+    "date": "2026-10-15",
+    "lang": "en",
+    "excerpt": "I write an issue in Forgejo on a Pi 5. A watcher wakes a Claude Code orchestrator, worker sessions come back with a pull request, and only I can merge to main. I haven't opened a terminal for these projects since.",
+    "tags": [
+      "Agentic Coding",
+      "Dark Factory",
+      "Tooling"
+    ],
+    "icon": "images/blog/linkedin/pi-software-factory.png",
+    "url": "blog/pi-software-factory.html"
+  },
+  {
     "title": "The handbag, part 2: now with numbers",
     "date": "2026-10-11",
     "lang": "en",

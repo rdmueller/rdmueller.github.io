@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I write an issue in Forgejo on a Pi 5. A watcher wakes a Claude Code orchestrator, worker sessions come back with a pull request, and only I can merge to main. I haven't opened a terminal for these projects since.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/pi-software-factory.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/pi-software-factory.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="My software factory runs on a Raspberry Pi | Ralf D. Müller">
+    <meta property="og:description" content="I write an issue in Forgejo on a Pi 5. A watcher wakes a Claude Code orchestrator, worker sessions come back with a pull request, and only I can merge to main. I haven't opened a terminal for these projects since.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/pi-software-factory.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My software factory runs on a Raspberry Pi | Ralf D. Müller">
+    <meta name="twitter:description" content="I write an issue in Forgejo on a Pi 5. A watcher wakes a Claude Code orchestrator, worker sessions come back with a pull request, and only I can merge to main. I haven't opened a terminal for these projects since.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/pi-software-factory.png">
+    <title>My software factory runs on a Raspberry Pi | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "My software factory runs on a Raspberry Pi",
+      "description": "I write an issue in Forgejo on a Pi 5. A watcher wakes a Claude Code orchestrator, worker sessions come back with a pull request, and only I can merge to main. I haven't opened a terminal for these projects since.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/pi-software-factory.png",
+      "url": "https://rdmueller.github.io/pages/blog/pi-software-factory.html",
+      "datePublished": "2026-10-15",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">15. Oktober 2026</span>
+                </div>
+                <h1>My software factory runs on a Raspberry Pi</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/pi-software-factory.png" alt="Small white robots run a toy factory built on top of a Raspberry Pi board. Issue cards with checkmarks ride a conveyor belt in, a robot in a hard hat directs the work, and envelopes with the Git logo come out on the other side. A Raspberry Pi mug and a notebook sit on the desk.">
+            </figure>
+
+            <div class="article-content">
+                <p>My side projects now run through a small software factory on a Raspberry Pi. Matt Pocock recently wrote that GitHub Actions are an easy way to start with software factories, before you build one on your own infra. I went straight to the second part, and it turns out a Pi is enough.</p>
+
+                <p>The ticket system is Forgejo, a self-hosted Git forge, running on a Pi 5 in my home network.</p>
+
+                <p>I write an issue. A small watcher service checks the issues every 30 seconds and wakes a Claude Code session that acts as the orchestrator.</p>
+
+                <p>It reads the issue (and rewrites it in much better style), starts worker sessions for the actual work, and they come back with a branch and a pull request.</p>
+
+                <p>Then the issue gets assigned to whoever has the next move. Usually that's me, with one sentence on what I should look at. I merge, and a Forgejo Action builds the docs.</p>
+
+                <p>The guardrails are boring on purpose. The agents run as their own Linux user without sudo or Docker. They can push branches, but only I can merge to main, and they only see the repos I hand over one by one.</p>
+
+                <p>A status page shows what the orchestrator is doing and which sessions are waiting for me.</p>
+
+                <p>What surprised me: I don't open a terminal for these projects anymore. I talk to the factory through issues, from whatever device is closest.</p>
+
+                <p>If you want to try this, start with Matt's version. Moving it onto a Pi took me one day of pairing with Claude, and Claude did the heavy lifting.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">Dark Factory</span>
+                    <span class="blog-tag">Tooling</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
