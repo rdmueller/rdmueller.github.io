@@ -23,7 +23,7 @@ const SITE_URL = 'https://rdmueller.github.io/'
 
 /** Kein Inhalt: Build-Zubehör, Rohdaten, Assets, Textfassungen. */
 const SKIP = new Set([
-  '.git', '.github', '.lighthouseci', '.playwright-mcp', '.claude', '.serena',
+  '.git', '.github', '.lighthouseci', '.playwright-mcp', '.claude', '.serena', '.tmp',
   'node_modules', 'scripts', 'docs', 'data', 'css', 'js', 'images', 'text',
 ])
 
@@ -35,6 +35,7 @@ const SECTIONS = [
   'pages/blog.html',
   'pages/elfi.html',
   'pages/talks.html',
+  'pages/vortragsangebot.html',
   'pages/hhgdac.html',
   'pages/eichhorsts-principle.html',
   'pages/impressum.html',

@@ -27,6 +27,7 @@ ACTIVE_RULES = [
     (re.compile(r'^pages/elfi\.html$'), "Elfi's Corner"),
     (re.compile(r'^pages/profiles/.*\.html$'), "Elfi's Corner"),
     (re.compile(r'^pages/talks\.html$'), "Vorträge"),
+    (re.compile(r'^pages/vortragsangebot\.html$'), "Vorträge"),
     (re.compile(r'^pages/talks/.*\.html$'), "Vorträge"),
 ]
 

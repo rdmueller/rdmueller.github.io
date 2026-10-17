@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vortrag: Dark Factory? Kommt auf die Risikoklasse an. Wie viel Autonomie KI-Coding-Agenten bekommen dürfen, entscheidet die Risikoklasse der Software.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/talks/dark-factory-risikoklasse.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/talks/dark-factory-risikoklasse.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Dark Factory? Kommt auf die Risikoklasse an. | Ralf D. Müller">
+    <meta property="og:description" content="Mit dem Risk Radar Software nach Risikoklassen einordnen und mit passenden Gegenmaßnahmen Richtung Autonomie verschieben">
+    <meta property="og:image" content="https://rdmueller.github.io/images/dark-factory/harness-wheel.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dark Factory? Kommt auf die Risikoklasse an.">
+    <meta name="twitter:description" content="Mit dem Risk Radar Software nach Risikoklassen einordnen und mit passenden Gegenmaßnahmen Richtung Autonomie verschieben">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/dark-factory/harness-wheel.png">
+    <title>Dark Factory? Kommt auf die Risikoklasse an. | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .talk-detail { max-width: 720px; margin: 0 auto; }
+        .talk-meta { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 24px; }
+        .talk-meta-item {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 4px 12px; border-radius: 6px;
+            font-size: 14px; background: #f0f0f0; color: #555;
+        }
+        .talk-abstract { font-size: 16px; line-height: 1.7; color: #333; }
+        .talk-abstract p { margin-bottom: 16px; }
+        .talk-detail h2 { margin-top: 32px; margin-bottom: 12px; }
+        .talk-detail ul { list-style: disc; padding-left: 1.5em; }
+        .talk-detail li { margin-bottom: 8px; }
+        .talk-keywords { margin-top: 24px; }
+        .talk-keywords span {
+            display: inline-block; padding: 4px 10px; margin: 3px 4px 3px 0;
+            border-radius: 4px; font-size: 13px;
+            background: #e8f4f8; color: #1a5276;
+        }
+        .talk-video img { display: block; width: 100%; height: auto; border-radius: 8px; }
+        .talk-cta {
+            margin-top: 32px; padding: 24px;
+            background: #f8f8f5; border-radius: 8px; text-align: center;
+        }
+        .talk-cta p { margin-bottom: 12px; font-size: 15px; color: #555; }
+        .back-link { display: inline-block; margin-bottom: 16px; font-size: 14px; color: #666; }
+        .back-link:hover { color: #333; }
+    </style>
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html" class="active">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="talk-detail">
+                <a href="../vortragsangebot.html" class="back-link">&larr; Alle Vortragsangebote</a>
+                <h1>Dark Factory? Kommt auf die Risikoklasse an.</h1>
+
+                <div class="talk-meta">
+                    <span class="talk-meta-item">Vortrag, 30 Minuten</span>
+                    <span class="talk-meta-item">Deutsch</span>
+                    <span class="talk-meta-item">Gehalten bei Haeger Tech &amp; Connect, 25.09.2026</span>
+                </div>
+
+                <div class="talk-abstract">
+                    <p>„Ich mache Dark Factory. Du nicht. Und das ist gut so.“</p>
+
+                    <p>Die Branche steht unter FOMO. Die einen wollen KI sofort überall, die anderen verbieten sie im Projekt komplett. Beide urteilen pauschal, und beide liegen daneben. Ob KI im Code Hebel oder Risiko ist, hängt nicht vom Hype ab, sondern vom Anwendungsfall. Eine statische Landing Page vibe-code ich blind. Eine Firmware für medizinische Geräte niemals.</p>
+
+                    <p>Mit dem vibe-coding-risk-radar ordnen wir Software nach Risikoklassen ein und sehen: Ein Pauschalverbot ist genauso unsinnig wie pauschales Mitmachen. Und weil Vibe Coding damit nicht automatisch unverantwortlich ist, geht es im zweiten Teil um Mitigations. Zu jedem Risiko gibt es eine Gegenmaßnahme, und mit den passenden lässt sich eine Risikoklasse Stück für Stück Richtung Autonomie verschieben.</p>
+
+                    <p>Wer danach weiß, wie er seinen eigenen Use Case einordnet, hört auf, über Hype zu streiten, und fängt an, KI dort einzusetzen, wo sie trägt.</p>
+                </div>
+
+                <h2>Für wen</h2>
+                <p>Für Entwicklungs- und Architekturteams in Unternehmen, die KI-Coding-Agenten einführen und klären müssen, wie viel sie ihnen überlassen können.</p>
+
+                <h2>Kernaussagen</h2>
+                <ul>
+                    <li>KI im Code ist weder Hype noch Tabu. Es kommt auf die Risikoklasse an.</li>
+                    <li>Der Risk Radar macht aus einer Glaubensfrage eine Engineering-Entscheidung. Er bewertet einen Use Case in fünf Dimensionen: Code-Typ, Sprachsicherheit, Deployment-Kontext, Datensensibilität und Blast Radius.</li>
+                    <li>Zu jedem Risiko gibt es eine Gegenmaßnahme. Das Harness Coverage Wheel sammelt sie als Schichten der Fehlerkorrektur, vom Compiler bis zum Chaos Engineering.</li>
+                    <li>Code Review skaliert nicht mehr. Der Mensch prüft nicht jede Zeile, sondern legt das Umfeld fest, in dem die KI arbeitet: Human on the Loop statt Human in the Loop.</li>
+                    <li>Dark Factory für die Landingpage, Handarbeit mit Netz fürs Herzgerät. Beides ist richtig.</li>
+                </ul>
+
+                <h2>Video und Material</h2>
+                <p>Zwei Stimmen sprechen den Vortrag mit allen Folien durch, rund 17 Minuten. Risk Radar, Harness Coverage Wheel und eine Textfassung für Ihre KI finden Sie auf der <a href="../../dark-factory/">Seite zum Vortrag</a>.</p>
+                <a class="talk-video" href="https://youtu.be/-s6RpLsrfYA">
+                    <img src="../../images/dark-factory/dialog-video.jpg" width="800" height="450" loading="lazy"
+                         alt="Titelfolie des Videos: Dark Factory? Oder lieber gar keine KI? Kommt auf die Risikoklasse an!">
+                </a>
+                <p><a href="https://youtu.be/-s6RpLsrfYA">Video auf YouTube ansehen</a> · <a href="https://youtu.be/yq0szkziM7E" hreflang="en" lang="en">English version</a></p>
+
+                <div class="talk-keywords">
+                    <span>Agentic Coding</span>
+                    <span>Dark Factory</span>
+                    <span>Vibe Coding</span>
+                    <span>Risk Radar</span>
+                    <span>Harness Coverage Wheel</span>
+                    <span>Governance</span>
+                </div>
+
+                <div class="talk-cta">
+                    <p>Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?</p>
+                    <a href="../../index.html#contact" class="btn btn-primary">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

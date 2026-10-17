@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vortrag: Vom Coding zum Product Engineering. Wenn KI-Agenten schneller bauen, wird der Product Owner zum Engpass. Was das für die Arbeitsteilung zwischen PO und Entwicklung bedeutet.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/talks/product-engineering.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/talks/product-engineering.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev | Ralf D. Müller">
+    <meta property="og:description" content="Wenn KI-Agenten schneller bauen, lautet die Frage nicht mehr „Können wir das bauen?“, sondern „Was bauen wir als Nächstes?“">
+    <meta property="og:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev">
+    <meta name="twitter:description" content="Wenn KI-Agenten schneller bauen, lautet die Frage nicht mehr „Können wir das bauen?“, sondern „Was bauen wir als Nächstes?“">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/ralf-mueller.jpg">
+    <title>Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .talk-detail { max-width: 720px; margin: 0 auto; }
+        .talk-meta { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 24px; }
+        .talk-meta-item {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 4px 12px; border-radius: 6px;
+            font-size: 14px; background: #f0f0f0; color: #555;
+        }
+        .talk-abstract { font-size: 16px; line-height: 1.7; color: #333; }
+        .talk-abstract p { margin-bottom: 16px; }
+        .talk-detail h2 { margin-top: 32px; margin-bottom: 12px; }
+        .talk-detail ul { list-style: disc; padding-left: 1.5em; }
+        .talk-detail li { margin-bottom: 8px; }
+        .talk-keywords { margin-top: 24px; }
+        .talk-keywords span {
+            display: inline-block; padding: 4px 10px; margin: 3px 4px 3px 0;
+            border-radius: 4px; font-size: 13px;
+            background: #e8f4f8; color: #1a5276;
+        }
+        .talk-video img { display: block; width: 100%; height: auto; border-radius: 8px; }
+        .talk-cta {
+            margin-top: 32px; padding: 24px;
+            background: #f8f8f5; border-radius: 8px; text-align: center;
+        }
+        .talk-cta p { margin-bottom: 12px; font-size: 15px; color: #555; }
+        .back-link { display: inline-block; margin-bottom: 16px; font-size: 14px; color: #666; }
+        .back-link:hover { color: #333; }
+    </style>
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html" class="active">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="talk-detail">
+                <a href="../vortragsangebot.html" class="back-link">&larr; Alle Vortragsangebote</a>
+                <h1>Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev</h1>
+
+                <div class="talk-meta">
+                    <span class="talk-meta-item">Vortrag mit Diskussion</span>
+                    <span class="talk-meta-item">Deutsch</span>
+                    <span class="talk-meta-item">Für Product Owner und Entwicklungsteams</span>
+                </div>
+
+                <div class="talk-abstract">
+                    <p>Claude Code, Cursor und GitHub Copilot verändern die Entwicklung. Entwickler implementieren nicht mehr jede Zeile selbst, sie dirigieren KI-Agenten. Was früher Wochen dauerte, ist oft in Stunden fertig. Manche Entwickler ziehen daraus einen naheliegenden Schluss: Wozu brauche ich noch einen Product Owner?</p>
+
+                    <p>Ich habe das ausprobiert. Mein Werkzeug dacli ist komplett mit KI gebaut und funktioniert gut. Der Haken: Ich war selbst der Nutzer, kannte jeden Pain Point und wusste, was ich brauchte. Das ist die Ausnahme. Bei einer Flugbuchung sieht der Entwickler eine Datenbankabfrage. Der Product Owner kennt Crew-Ruhezeiten, Slot-Vergabe, Überbuchungsstrategien und Umsteigezeiten. Je komplexer die Domäne, desto wichtiger wird der PO.</p>
+
+                    <p>Statt den PO zu ersetzen, entsteht eine neue Rolle: der Product Engineer. Er übersetzt die Produktvision in Spezifikation und Architektur, lässt KI-Agenten danach bauen und spielt Feedback an den PO zurück. Damit wandert der Engpass. Früher lautete die Frage „Können wir das bauen?“. Jetzt lautet sie „Was bauen wir als Nächstes?“, und zwar im Tempo der Agenten. Der Product Owner wird zum neuen Engpass.</p>
+
+                    <p>Der Vortrag zeigt, wie dieser Prozess vom Requirement bis zur Qualitätssicherung aussieht und was er von Product Ownern verlangt. Am Ende steht die gemeinsame Frage: Wie bereiten wir uns darauf vor?</p>
+                </div>
+
+                <h2>Für wen</h2>
+                <p>Für Product Owner und Produktverantwortliche, deren Entwicklungsteams mit KI-Agenten arbeiten, und für die Entwicklerinnen und Entwickler, die mit ihnen zusammenarbeiten.</p>
+
+                <h2>Kernaussagen</h2>
+                <ul>
+                    <li>KI-Agenten machen Entwickler nicht zu Produktexperten. Kundennähe, Fachwissen und User Research bleiben beim Product Owner.</li>
+                    <li>Es entsteht eine neue Rolle: der Product Engineer, Partner des PO und kein Ersatz.</li>
+                    <li>Der Engpass verschiebt sich von der Entwicklung zum Produkt. Ein Team, das schneller baut, braucht mehr validierte Ideen.</li>
+                    <li>Für Product Owner heißt das: Ideen schneller validieren, mehr User Research und laufend eine Antwort auf „Was als Nächstes?“.</li>
+                    <li>Die Chance: schnellere Experimente, mehr Iterationen und mehr Zeit für die Frage „Sollen wir?“ statt „Können wir?“.</li>
+                </ul>
+
+                <div class="talk-keywords">
+                    <span>Product Ownership</span>
+                    <span>Product Engineering</span>
+                    <span>GenAI / LLMs</span>
+                    <span>Agentic Coding</span>
+                    <span>Zusammenarbeit</span>
+                </div>
+
+                <div class="talk-cta">
+                    <p>Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?</p>
+                    <a href="../../index.html#contact" class="btn btn-primary">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
