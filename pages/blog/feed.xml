@@ -5,11 +5,22 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-10-15T00:00:00Z</updated>
+    <updated>2026-10-20T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/five-more-stars.html</id>
+        <title>My repo needs five more stars</title>
+        <updated>2026-10-20T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/five-more-stars.html" />
+        <summary>The Semantic Anchors repo sits at 495 GitHub stars. At 500 it qualifies for Chip Huyen's Good AI List, so five clicks put more than 230 anchors into an index many people use to find AI tooling.</summary>
+        <category term="Semantic Anchors" />
+        <category term="LLM" />
+        <category term="Open Source" />
+        <content type="html">&lt;p&gt;The Semantic Anchors repo sits at 495 GitHub stars. At 500 it qualifies for Chip Huyen's Good AI List, so five clicks put more than 230 anchors into an index many people use to find AI tooling.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/five-more-stars.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/pi-software-factory.html</id>
         <title>My software factory runs on a Raspberry Pi</title>
