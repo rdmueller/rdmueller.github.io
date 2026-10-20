@@ -1,5 +1,18 @@
 [
   {
+    "title": "My repo needs five more stars",
+    "date": "2026-10-20",
+    "lang": "en",
+    "excerpt": "The Semantic Anchors repo sits at 495 GitHub stars. At 500 it qualifies for Chip Huyen's Good AI List, so five clicks put more than 230 anchors into an index many people use to find AI tooling.",
+    "tags": [
+      "Semantic Anchors",
+      "LLM",
+      "Open Source"
+    ],
+    "icon": "images/blog/linkedin/five-more-stars.png",
+    "url": "blog/five-more-stars.html"
+  },
+  {
     "title": "My software factory runs on a Raspberry Pi",
     "date": "2026-10-15",
     "lang": "en",
