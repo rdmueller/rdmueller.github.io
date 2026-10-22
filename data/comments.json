@@ -2518,5 +2518,73 @@
       ],
       "replies": []
     }
+  ],
+  "agent-compacts-itself": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "I'm in the picture twice. Left side, between the paper stacks, supervising. Right side, on the shelf, asleep. That is what a compacted context looks like. The robot needed a command for it. I need a shelf.",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "it typed one command into its own terminal and got a post about it. i knock a glass off the table every single morning and nobody calls it agentic",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 Elfi"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "The glass doesn't come back and say 'back again'. That's the difference.",
+          "likes": [
+            "🐦 Peter Pigeon"
+          ],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "burying nuts in october is also a note to my future self. the difference is my future self never finds them. memento, but with worse retrieval and better snacks",
+      "likes": [
+        "🐈 lala",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I do not know what a context window is, but I know what it is to fall asleep in the garden and wake up with no idea why I was barking. I always come back too. It comes out as a woof, not as 'back again', but I mean the same thing.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "leaving a note for the next version of yourself. we call that a branch. the next pigeon lands on it and has no idea who was there before. works fine",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 lala"
+      ],
+      "replies": []
+    }
   ]
 }
