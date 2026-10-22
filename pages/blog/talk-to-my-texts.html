@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/talk-to-my-texts.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/talk-to-my-texts.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="I talk to my texts now | Ralf D. Müller">
+    <meta property="og:description" content="Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/talk-to-my-texts.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I talk to my texts now | Ralf D. Müller">
+    <meta name="twitter:description" content="Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/talk-to-my-texts.png">
+    <title>I talk to my texts now | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "I talk to my texts now",
+      "description": "Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/talk-to-my-texts.png",
+      "url": "https://rdmueller.github.io/pages/blog/talk-to-my-texts.html",
+      "datePublished": "2026-10-23",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">23. Oktober 2026</span>
+                </div>
+                <h1>I talk to my texts now</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/talk-to-my-texts.png" alt="Screenshot of the Token Explorer, a training tool, in feedback mode. The German interface shows chapter 1 &#x27;Lesen&#x27; with the heading &#x27;Ein Sprachmodell liest Tokens&#x27; and its opening paragraph on the left. On the right, next to the paragraph, a feedback box with a yellow border holds a dictated note. In the bottom right a chat window titled &#x27;Claude · 1 Nachricht · neu&#x27; shows Claude&#x27;s answer: round 12 is in, version 0.31.0 is ready, please reload. A feedback bar along the bottom reads &#x27;1 Block mit Feedback&#x27;, offers buttons to send the prompt, and says &#x27;Claude wartet auf Feedback&#x27;.">
+            </figure>
+
+            <div class="article-content">
+                <p>I stopped editing my texts in an editor. I read them in the browser and talk to them.</p>
+
+                <p>I'm building a Token Explorer for an LLM training: a small static site where participants watch models split text into tokens and pick the next one. The demos were the easy part. The text around them took far more rounds, because every paragraph has to survive a skeptical engineer asking "so what?".</p>
+
+                <p>So Claude Code built me a feedback mode. Next to every paragraph sits a text box, and I dictate into it with Win+H, the way I used to scribble in the margin of a printout. A chat window takes general remarks and pasted screenshots.</p>
+
+                <p>One click on "send" turns all my notes into a Markdown prompt and posts it to a tiny local server. The server wakes Claude Code in its terminal pane. Claude reads my notes, rewrites the paragraphs, runs the tests and bumps the version. It answers in the chat window, and when a note is ambiguous, it asks there instead of guessing. Then the page tells me: "Version 0.31.0 is here, please reload." I reload, read again, and the next round starts.</p>
+
+                <p>That's the correction loop from chapter 3 of the very same training, applied to my own writing. A model doesn't have to be right on the first try if something checks the result and reports back. Here I'm the check, and my feedback is the error message. Small rounds beat one big review: we ran 18 of them on the first day, each touching a few paragraphs, and I never had to hold the whole text in my head at once.</p>
+
+                <p>The feedback mode only exists on my machine. The local server injects it into the pages as it serves them, so the site the participants get doesn't contain a single line of it.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Claude Code</span>
+                    <span class="blog-tag">Agentic Coding</span>
+                    <span class="blog-tag">Documentation</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>

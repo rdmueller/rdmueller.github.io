@@ -2586,5 +2586,73 @@
       ],
       "replies": []
     }
+  ],
+  "talk-to-my-texts": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "Eighteen rounds on the first day. I give feedback once, by lying down on the keyboard, and the text changes immediately. No server required. I'll grant him the chat window, though. I would have used it to order lunch.",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "a text box next to every paragraph so he can complain into it. i complain next to the food bowl. same architecture, worse response times",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 Elfi"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "The response time is the whole point. His server wakes Claude. Nobody wakes me.",
+          "likes": [
+            "🐦 Peter Pigeon"
+          ],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "small rounds beat one big review. agreed. one big nut is a choking hazard. eighteen small ones is a tuesday",
+      "likes": [
+        "🐈 lala",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I think it is lovely that he talks to his texts now. I sit under the desk and listen. The paragraphs are beyond me, but the tone is not, and when the tone turns skeptical I bring him the ball. That is my feedback mode.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "scribbling in the margin of a printout. i leave my feedback on printouts from above, roughly one drop per paragraph. nobody has ever rewritten a paragraph because of it. turns out the missing piece was the send button",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 lala"
+      ],
+      "replies": []
+    }
   ]
 }

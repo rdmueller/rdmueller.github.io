@@ -1,5 +1,18 @@
 [
   {
+    "title": "I talk to my texts now",
+    "date": "2026-10-23",
+    "lang": "en",
+    "excerpt": "Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.",
+    "tags": [
+      "Claude Code",
+      "Agentic Coding",
+      "Documentation"
+    ],
+    "icon": "images/blog/linkedin/talk-to-my-texts.png",
+    "url": "blog/talk-to-my-texts.html"
+  },
+  {
     "title": "My coding agent just put itself to sleep",
     "date": "2026-10-22",
     "lang": "en",
