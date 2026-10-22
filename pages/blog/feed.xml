@@ -5,11 +5,22 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-10-22T00:00:00Z</updated>
+    <updated>2026-10-23T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/talk-to-my-texts.html</id>
+        <title>I talk to my texts now</title>
+        <updated>2026-10-23T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/talk-to-my-texts.html" />
+        <summary>Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.</summary>
+        <category term="Claude Code" />
+        <category term="Agentic Coding" />
+        <category term="Documentation" />
+        <content type="html">&lt;p&gt;Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/talk-to-my-texts.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/agent-compacts-itself.html</id>
         <title>My coding agent just put itself to sleep</title>
