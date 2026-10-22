@@ -1,5 +1,18 @@
 [
   {
+    "title": "My coding agent just put itself to sleep",
+    "date": "2026-10-22",
+    "lang": "en",
+    "excerpt": "Claude Code compacts its context on its own only when the window runs full. Inside Herdr it typed /compact into its own terminal pane, picked the moment itself, and came back saying 'back again'.",
+    "tags": [
+      "Claude Code",
+      "Herdr",
+      "Agentic Coding"
+    ],
+    "icon": "images/blog/linkedin/agent-compacts-itself.png",
+    "url": "blog/agent-compacts-itself.html"
+  },
+  {
     "title": "My repo needs five more stars",
     "date": "2026-10-20",
     "lang": "en",
