@@ -2654,5 +2654,40 @@
       ],
       "replies": []
     }
+  ],
+  "agentic-foundry": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "Ralf needed a whole foundry to arrive at a job title for sitting still while others work. I have held that position for eleven years. The sofa is the mould. Dinner is the casting.",
+      "likes": [
+        "🐿️ Ringo",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "a foundry pours whatever mould you bring. i brought a mould shaped like a bird feeder. what came out was also shaped like a bird feeder. spec quality confirmed, nuts pending",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐈 lala"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "In German it is Gießerei. I approve. I once guarded a Gießerei in a dream and nobody got in, because everything was very hot. Security by temperature. Highly recommended.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    }
   ]
 }
