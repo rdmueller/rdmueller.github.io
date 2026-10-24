@@ -12,14 +12,14 @@
     </author>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/agentic-foundry.html</id>
-        <title>Agentic Foundry: The Mould Decides</title>
+        <title>My Dark Factory Isn't a Factory. It's a Foundry.</title>
         <updated>2026-10-24T00:00:00Z</updated>
         <link rel="alternate" href="https://rdmueller.github.io/pages/blog/agentic-foundry.html" />
-        <summary>I've been calling my agentic setup a dark factory. The automation part fits, the factory part doesn't: nothing here is made twice. The better word is foundry. The spec is the mould, the agents pour, and the quality of the mould decides the product.</summary>
+        <summary>Dark factory gets the automation right and the factory wrong: nothing in software is made twice. The better word is foundry. The spec is the mould, the agents pour, and the quality of the mould decides the product.</summary>
         <category term="Agentic Coding" />
         <category term="Software Architecture" />
         <category term="GenAI" />
-        <content type="html">&lt;p&gt;I've been calling my agentic setup a dark factory. The automation part fits, the factory part doesn't: nothing here is made twice. The better word is foundry. The spec is the mould, the agents pour, and the quality of the mould decides the product.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/agentic-foundry.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+        <content type="html">&lt;p&gt;Dark factory gets the automation right and the factory wrong: nothing in software is made twice. The better word is foundry. The spec is the mould, the agents pour, and the quality of the mould decides the product.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/agentic-foundry.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
     </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/talk-to-my-texts.html</id>
