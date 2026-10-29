@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-10-29",
+    "lang": "en",
+    "title": "A Design Style Is a Name Your LLM Already Knows",
+    "excerpt": "Ten Claude sessions, one prompt, one changed word: Swiss Style, Bauhaus, Tufte, Dieter Rams and six more design anchors restyle my homepage without any description of the style. The name alone pulls in the whole design vocabulary.",
+    "icon": "images/blog/linkedin/design-anchors.jpg",
+    "url": "blog/design-anchors.html",
+    "tags": [
+      "Semantic Anchors",
+      "GenAI",
+      "Claude Code"
+    ]
+  },
+  {
     "date": "2026-10-24",
     "lang": "en",
     "title": "My Dark Factory Isn't a Factory. It's a Foundry.",
