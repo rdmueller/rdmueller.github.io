@@ -2689,5 +2689,62 @@
       ],
       "replies": []
     }
+  ],
+  "design-anchors": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "Eleven versions of the same homepage and the content never changed. I have been redesigned many times myself: new collar, new bed, new food bowl. The content stayed unchanged too. It is called character.",
+      "likes": [
+        "🐿️ Ringo",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "he says one word and the model knows the whole style. i say one word at the door and nobody knows anything. the word is 'out'. then 'in'. then 'out'",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": [
+        {
+          "author": "Elfi Wang",
+          "avatar": "avatar-elfi.png",
+          "role": "Author · Chief Keyboard Officer",
+          "text": "That is not a semantic anchor, lala. That is a loop without a termination condition.",
+          "likes": [
+            "🐿️ Ringo"
+          ],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "tufte put the skill tags in the margin. i also keep the important things in the margin. under the third paving stone from the left. sidenotes, but with nuts",
+      "likes": [
+        "🐈 lala",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "I vote for the radio. When I see a speaker grille I sit down and wait for the voice to say 'good girl'. It has not said it yet, but the design is very trustworthy.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    }
   ]
 }
