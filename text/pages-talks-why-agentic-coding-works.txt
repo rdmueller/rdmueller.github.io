@@ -1,0 +1,64 @@
+# Why Agentic Coding Works – Semantic Anchors, Contracts and Eichhorst's Principle
+Page: https://rdmueller.github.io/pages/talks/why-agentic-coding-works.html
+
+&larr; All talks on offer
+ 
+
+# Why Agentic Coding Works – Semantic Anchors, Contracts and Eichhorst's Principle
+
+ 
+ Session, 45 minutes
+ English
+ Advanced
+ With Avraham Poupko
+ Software Architecture Gathering, Berlin, 18 November 2026
+ 
+
+ 
+ More and more developers report success with agentic coding. They use SPARC, Cursor Rules, Claude Code Skills or plain prompting. The approaches couldn't be more different, yet they all “work” in the sense that they produce code that compiles and meets the specification.
+
+ Models keep getting better at following instructions, using tools, handling long contexts and reasoning. The floor has risen. But we still fail, and often. Failure ranges from code that misses the developer's intent to code that isn't robust or maintainable over time. Given how capable the models are, why do some teams still fail? And which approaches will survive the next model switch?
+
+ In his JavaLand 2026 keynote, Ingo Eichhorst drew a crucial connection: an LLM is a noisy channel in the sense of Shannon's information theory. Shannon gives us exactly two levers to push more information through a noisy channel: improve the signal, and improve error correction. For LLMs, that means giving the model more relevant context, and finding and fixing the errors in its output.
+
+ In practice, we suggest improving the signal with Semantic Anchors: well-known terms that invoke entire knowledge domains. And we improve error correction through redundancy: agents, linters, compilers and other checks that cross-check each other. Together, these levers form a harness, and experiments show that the gap between the best and the worst harness is bigger than the gap between the best and the worst model.
+
+ The talk shows how Semantic Anchors, Semantic Contracts and Eichhorst's Principle work together in practice, using three fully AI-generated open-source projects.
+
+ 
+
+ 
+
+## Who it's for
+
+ The session is pitched at an advanced level and belongs to the track “Architecture in the Age of AI”.
+
+ 
+
+## Key takeaways
+
+ 
+ 
+- Better models raise the floor, but the ceiling depends on the harness.
+ 
+- Semantic Anchors compress domain knowledge into a few tokens.
+ 
+- Better tests beat better prompts.
+ 
+- Semantic Contracts extend Anchors with project-specific knowledge.
+ 
+- Eichhorst's Principle gives you a framework for investment decisions: harness first.
+ 
+
+ 
+ Agentic Coding
+ Semantic Anchors
+ Semantic Contracts
+ Eichhorst's Principle
+ Software Architecture
+ 
+
+ 
+ Would you like this talk at your conference or company?
+
+ Get in touch

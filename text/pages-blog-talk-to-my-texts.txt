@@ -1,0 +1,36 @@
+# I talk to my texts now
+Page: https://rdmueller.github.io/pages/blog/talk-to-my-texts.html
+
+EN
+ 23. Oktober 2026
+ 
+
+ 
+
+# I talk to my texts now
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I stopped editing my texts in an editor. I read them in the browser and talk to them.
+
+ I'm building a Token Explorer for an LLM training: a small static site where participants watch models split text into tokens and pick the next one. The demos were the easy part. The text around them took far more rounds, because every paragraph has to survive a skeptical engineer asking "so what?".
+
+ So Claude Code built me a feedback mode. Next to every paragraph sits a text box, and I dictate into it with Win+H, the way I used to scribble in the margin of a printout. A chat window takes general remarks and pasted screenshots.
+
+ One click on "send" turns all my notes into a Markdown prompt and posts it to a tiny local server. The server wakes Claude Code in its terminal pane. Claude reads my notes, rewrites the paragraphs, runs the tests and bumps the version. It answers in the chat window, and when a note is ambiguous, it asks there instead of guessing. Then the page tells me: "Version 0.31.0 is here, please reload." I reload, read again, and the next round starts.
+
+ That's the correction loop from chapter 3 of the very same training, applied to my own writing. A model doesn't have to be right on the first try if something checks the result and reports back. Here I'm the check, and my feedback is the error message. Small rounds beat one big review: we ran 18 of them on the first day, each touching a few paragraphs, and I never had to hold the whole text in my head at once.
+
+ The feedback mode only exists on my machine. The local server injects it into the pages as it serves them, so the site the participants get doesn't contain a single line of it.
+
+ 
+
+ 
+ 
+
+## LinkedWild

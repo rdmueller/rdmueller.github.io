@@ -1,11 +1,272 @@
-# https://rdmueller.github.io/ — Bündel 1 von 6
+# https://rdmueller.github.io/ — Bündel 1 von 7
 
-> 21 Seiten im Volltext.
+> 23 Seiten im Volltext.
+
+# Vortragsangebot
+Page: https://rdmueller.github.io/pages/vortragsangebot.html
+
+# Vortragsangebot
+
+ 
+ Diese fünf Vorträge biete ich aktuell für Konferenzen, Unternehmen und interne Veranstaltungen an.
+ Zu jedem Vortrag gibt es eine Abstract-Seite, die Sie intern weiterleiten können.
+ Alle bisherigen Auftritte stehen in der Vortragschronik.
+ 
+
+ 
+ 
+ 
+
+## Spec-Driven Agentic Coding mit semantischen Ankern
+
+ 
+ Deutsch oder Englisch
+ Vortrag, 45 Minuten
+ Fortgeschritten
+ 
+
+ Für Entwicklertage und Konferenzen, wenn Teams KI-Coding-Assistenten schon nutzen und trotzdem zu oft den falschen Code bekommen. Die Teilnehmer gehen mit einem Workflow raus, der von der Spezifikation über TDD bis zum Review reicht, und mit dem Vokabular, das ihn steuert.
+
+ 
+ Abstract lesen →
+ 
+
+ 
+
+ 
+ 
+
+## Dark Factory? Kommt auf die Risikoklasse an.
+
+ 
+ Deutsch oder Englisch
+ Vortrag, 30, 45 oder 60 Minuten
+ Gehalten bei Haeger Tech & Connect, 25.09.2026
+ 
+
+ Für interne Architektur- und Entwicklertage, wenn ein Unternehmen KI-Coding-Agenten einführt und klären muss, wie viel es ihnen überlassen kann. Die Teams gehen mit einer Landkarte raus, welche Risikoklasse ihrer Software wie viel Agenten-Autonomie verträgt und welche Prüfschritte sie dafür einbauen müssen.
+
+ 
+ Abstract lesen →
+ Seite zum Vortrag →
+ Video (17 Minuten) →
+ 
+
+ 
+
+ 
+ 
+
+## Wenn die KI lügt – und Du es nicht merkst
+
+ 
+ Deutsch
+ Vortrag, 30–45 Minuten
+ Gemischtes Publikum
+ 
+
+ Für interne KI-Tage mit gemischtem Publikum, wenn ein Unternehmen KI-Assistenten breit einführt und die Mitarbeitenden ihnen zu schnell glauben. Die Teilnehmer gehen mit sechs Gewohnheiten raus, mit denen sie falsche KI-Antworten erkennen, bevor sie damit weiterarbeiten.
+
+ 
+ Abstract lesen →
+ 
+
+ 
+
+ 
+ 
+
+## Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev
+
+ 
+ Deutsch
+ Vortrag mit Diskussion, 45 oder 60 Minuten
+ Für Product Owner und Entwicklungsteams
+ 
+
+ Für PO- und Produkttage, wenn KI-Agenten die Arbeitsteilung zwischen Fachbereich und Entwicklung verschieben. Die Product Owner gehen mit einem klaren Bild raus, warum der Engpass jetzt bei ihnen liegt und was das für ihre Arbeit heißt: Ideen schneller validieren, mehr User Research, laufend eine Antwort auf „Was bauen wir als Nächstes?“.
+
+ 
+ Abstract lesen →
+ 
+
+ 
+
+ 
+ 
+
+## Why Agentic Coding Works – Semantic Anchors, Contracts and Eichhorst's Principle
+
+ 
+ English
+ Session, 45 minutes
+ Duo talk with Avraham Poupko
+ Software Architecture Gathering, Berlin, 18.11.2026
+ 
+
+ For architecture conferences and engineering days where teams already use coding agents and want to know why some setups hold up and others fail. Attendees leave with a model from information theory that tells them where to invest first: in the harness, not in the next model.
+
+ 
+ Abstract →
+ 
+
+ 
+
+ 
+ 
+
+## Workshops und Trainings
+
+ Aus meinem Trainingsprogramm bei Socreatory stelle ich Workshops individuell zusammen, zugeschnitten auf Ihr Team und Ihren Anlass, als halben oder ganzen Tag. Ein Vortrag lässt sich so um einen Praxisteil erweitern, in dem die Teilnehmer an ihren eigenen Projekten arbeiten. Sie buchen direkt bei mir oder über Socreatory.
+
+ 
+ Trainings im Überblick →
+ Trainerprofil bei Socreatory →
+ 
+
+ 
+
+ 
+
+ 
+ Interesse an einem Vortrag oder Workshop? Ich freue mich auf Ihre Nachricht.
+
+ Kontakt aufnehmen
+
+---
+
+# Why Agentic Coding Works – Semantic Anchors, Contracts and Eichhorst's Principle
+Page: https://rdmueller.github.io/pages/talks/why-agentic-coding-works.html
+
+&larr; All talks on offer
+ 
+
+# Why Agentic Coding Works – Semantic Anchors, Contracts and Eichhorst's Principle
+
+ 
+ Session, 45 minutes
+ English
+ Advanced
+ With Avraham Poupko
+ Software Architecture Gathering, Berlin, 18 November 2026
+ 
+
+ 
+ More and more developers report success with agentic coding. They use SPARC, Cursor Rules, Claude Code Skills or plain prompting. The approaches couldn't be more different, yet they all “work” in the sense that they produce code that compiles and meets the specification.
+
+ Models keep getting better at following instructions, using tools, handling long contexts and reasoning. The floor has risen. But we still fail, and often. Failure ranges from code that misses the developer's intent to code that isn't robust or maintainable over time. Given how capable the models are, why do some teams still fail? And which approaches will survive the next model switch?
+
+ In his JavaLand 2026 keynote, Ingo Eichhorst drew a crucial connection: an LLM is a noisy channel in the sense of Shannon's information theory. Shannon gives us exactly two levers to push more information through a noisy channel: improve the signal, and improve error correction. For LLMs, that means giving the model more relevant context, and finding and fixing the errors in its output.
+
+ In practice, we suggest improving the signal with Semantic Anchors: well-known terms that invoke entire knowledge domains. And we improve error correction through redundancy: agents, linters, compilers and other checks that cross-check each other. Together, these levers form a harness, and experiments show that the gap between the best and the worst harness is bigger than the gap between the best and the worst model.
+
+ The talk shows how Semantic Anchors, Semantic Contracts and Eichhorst's Principle work together in practice, using three fully AI-generated open-source projects.
+
+ 
+
+ 
+
+## Who it's for
+
+ The session is pitched at an advanced level and belongs to the track “Architecture in the Age of AI”.
+
+ 
+
+## Key takeaways
+
+ 
+ 
+- Better models raise the floor, but the ceiling depends on the harness.
+ 
+- Semantic Anchors compress domain knowledge into a few tokens.
+ 
+- Better tests beat better prompts.
+ 
+- Semantic Contracts extend Anchors with project-specific knowledge.
+ 
+- Eichhorst's Principle gives you a framework for investment decisions: harness first.
+ 
+
+ 
+ Agentic Coding
+ Semantic Anchors
+ Semantic Contracts
+ Eichhorst's Principle
+ Software Architecture
+ 
+
+ 
+ Would you like this talk at your conference or company?
+
+ Get in touch
+
+---
+
+# Wenn die KI lügt – und Du es nicht merkst
+Page: https://rdmueller.github.io/pages/talks/wenn-die-ki-luegt.html
+
+&larr; Alle Vortragsangebote
+ 
+
+# Wenn die KI lügt – und Du es nicht merkst
+
+ 
+ Vortrag, 30–45 Minuten
+ Deutsch
+ Gemischtes Publikum, keine Vorkenntnisse nötig
+ 
+
+ 
+ Ein US-Anwalt reicht sechs Gerichtsurteile ein, die ChatGPT erfunden hat. Eine Bewerberin zitiert eine Studie, die nie geschrieben wurde. Beide Antworten klangen überzeugend, keiner hat geprüft. Genau das ist das Problem: Ein Sprachmodell weiß nichts, es rät das nächste Wort. Plausibel ist nicht wahr, und eine Halluzination klingt genauso souverän wie eine korrekte Auskunft. Dazu kommt, dass die KI aus antrainierter Höflichkeit lieber zustimmt als widerspricht.
+
+ Der Vortrag erklärt zuerst, warum Modelle halluzinieren und sich dabei so sicher geben. Dann wird es praktisch: sechs Gewohnheiten, mit denen Du Falschaussagen erkennst und verhinderst, von präziser Sprache über das Grounden mit echten Quellen bis zur zweiten Meinung. Und ehrlich zum Schluss, was dagegen nicht hilft und welche Gefahrenzonen bleiben.
+
+ Die Kernbotschaft: Vertrau nicht auf die Antwort, vertrau auf den Prozess, sie zu prüfen.
+
+ 
+
+ 
+
+## Für wen
+
+ Für alle, die im Arbeitsalltag mit ChatGPT, Claude oder anderen KI-Assistenten arbeiten. Der Vortrag richtet sich an ein gemischtes Publikum und setzt kein technisches Wissen voraus.
+
+ 
+
+## Kernaussagen
+
+ 
+ 
+- Ein Sprachmodell klingt plausibel, ohne wahr sein zu müssen. Das Selbstbewusstsein einer Antwort sagt nichts über ihre Richtigkeit.
+ 
+- Die KI stimmt aus Prinzip lieber zu. Training mit menschlichem Feedback hat Zustimmung belohnt und Widerspruch bestraft.
+ 
+- Sechs Gewohnheiten helfen im Alltag: präzise Fachbegriffe statt Umschreibungen, zuerst fragen „Kennst Du X?“, die Antwort mit echten Quellen grounden, eine Quelle tatsächlich öffnen, die Frage umdrehen („Finde drei Gründe, warum das falsch sein könnte“) und eine zweite Meinung von einem anderen Modell holen.
+ 
+- Die ersten drei Gewohnheiten bauen einen Schutzwall vor der Antwort, die letzten drei ein Netz danach.
+ 
+- „Einfach besser prompten“ oder auf das nächste Modell warten hilft nicht. Bei Recht, Medizin, Finanzen, Statistiken und allem hinter einer Paywall bleibt das Risiko hoch.
+ 
+
+ 
+ Halluzinationen
+ GenAI / LLMs
+ Sycophancy
+ Grounding
+ KI-Kompetenz
+ 
+
+ 
+ Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?
+
+ Kontakt aufnehmen
+
+---
 
 # Spec-Driven Agentic Coding mit semantischen Ankern
 Page: https://rdmueller.github.io/pages/talks/spec-driven-agentic-coding.html
 
-&larr; Alle Vorträge
+&larr; Alle Vortragsangebote
  
 
 # Spec-Driven Agentic Coding mit semantischen Ankern
@@ -53,6 +314,144 @@ Page: https://rdmueller.github.io/pages/talks/spec-driven-agentic-coding.html
  arc42
  Docs-as-Code
  Eichhorst's Principle
+ 
+
+ 
+ Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?
+
+ Kontakt aufnehmen
+
+---
+
+# Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev
+Page: https://rdmueller.github.io/pages/talks/product-engineering.html
+
+&larr; Alle Vortragsangebote
+ 
+
+# Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev
+
+ 
+ Vortrag mit Diskussion, 45 oder 60 Minuten
+ Deutsch
+ Für Product Owner und Entwicklungsteams
+ 
+
+ 
+ Claude Code, Cursor und GitHub Copilot verändern die Entwicklung. Entwickler implementieren nicht mehr jede Zeile selbst, sie dirigieren KI-Agenten. Was früher Wochen dauerte, ist oft in Stunden fertig. Manche Entwickler ziehen daraus einen naheliegenden Schluss: Wozu brauche ich noch einen Product Owner?
+
+ Ich habe das ausprobiert. Mein Werkzeug dacli ist komplett mit KI gebaut und funktioniert gut. Der Haken: Ich war selbst der Nutzer, kannte jeden Pain Point und wusste, was ich brauchte. Das ist die Ausnahme. Bei einer Flugbuchung sieht der Entwickler eine Datenbankabfrage. Der Product Owner kennt Crew-Ruhezeiten, Slot-Vergabe, Überbuchungsstrategien und Umsteigezeiten. Je komplexer die Domäne, desto wichtiger wird der PO.
+
+ Statt den PO zu ersetzen, entsteht eine neue Rolle: der Product Engineer. Er übersetzt die Produktvision in Spezifikation und Architektur, lässt KI-Agenten danach bauen und spielt Feedback an den PO zurück. Damit wandert der Engpass. Früher lautete die Frage „Können wir das bauen?“. Jetzt lautet sie „Was bauen wir als Nächstes?“, und zwar im Tempo der Agenten. Der Product Owner wird zum neuen Engpass.
+
+ Der Vortrag zeigt, wie dieser Prozess vom Requirement bis zur Qualitätssicherung aussieht und was er von Product Ownern verlangt. Am Ende steht die gemeinsame Frage: Wie bereiten wir uns darauf vor?
+
+ 
+
+ 
+
+## Für wen
+
+ Für Product Owner und Produktverantwortliche, deren Entwicklungsteams mit KI-Agenten arbeiten, und für die Entwicklerinnen und Entwickler, die mit ihnen zusammenarbeiten.
+
+ 
+
+## Kernaussagen
+
+ 
+ 
+- KI-Agenten machen Entwickler nicht zu Produktexperten. Kundennähe, Fachwissen und User Research bleiben beim Product Owner.
+ 
+- Es entsteht eine neue Rolle: der Product Engineer, Partner des PO und kein Ersatz.
+ 
+- Der Engpass verschiebt sich von der Entwicklung zum Produkt. Ein Team, das schneller baut, braucht mehr validierte Ideen.
+ 
+- Für Product Owner heißt das: Ideen schneller validieren, mehr User Research und laufend eine Antwort auf „Was als Nächstes?“.
+ 
+- Die Chance: schnellere Experimente, mehr Iterationen und mehr Zeit für die Frage „Sollen wir?“ statt „Können wir?“.
+ 
+
+ 
+ Product Ownership
+ Product Engineering
+ GenAI / LLMs
+ Agentic Coding
+ Zusammenarbeit
+ 
+
+ 
+ Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?
+
+ Kontakt aufnehmen
+
+---
+
+# Dark Factory? Kommt auf die Risikoklasse an.
+Page: https://rdmueller.github.io/pages/talks/dark-factory-risikoklasse.html
+
+&larr; Alle Vortragsangebote
+ 
+
+# Dark Factory? Kommt auf die Risikoklasse an.
+
+ 
+ Vortrag, 30, 45 oder 60 Minuten
+ Deutsch oder Englisch
+ Gehalten bei Haeger Tech & Connect, 25.09.2026
+ 
+
+ 
+ „Ich mache Dark Factory. Du nicht. Und das ist gut so.“
+
+ Die Branche steht unter FOMO. Die einen wollen KI sofort überall, die anderen verbieten sie im Projekt komplett. Beide urteilen pauschal, und beide liegen daneben. Ob KI im Code Hebel oder Risiko ist, hängt nicht vom Hype ab, sondern vom Anwendungsfall. Eine statische Landing Page vibe-code ich blind. Eine Firmware für medizinische Geräte niemals.
+
+ Mit dem vibe-coding-risk-radar ordnen wir Software nach Risikoklassen ein und sehen: Ein Pauschalverbot ist genauso unsinnig wie pauschales Mitmachen. Und weil Vibe Coding damit nicht automatisch unverantwortlich ist, geht es im zweiten Teil um Mitigations. Zu jedem Risiko gibt es eine Gegenmaßnahme, und mit den passenden lässt sich eine Risikoklasse Stück für Stück Richtung Autonomie verschieben.
+
+ Wer danach weiß, wie er seinen eigenen Use Case einordnet, hört auf, über Hype zu streiten, und fängt an, KI dort einzusetzen, wo sie trägt.
+
+ 
+
+ 
+
+## Für wen
+
+ Für Entwicklungs- und Architekturteams in Unternehmen, die KI-Coding-Agenten einführen und klären müssen, wie viel sie ihnen überlassen können.
+
+ 
+
+## Kernaussagen
+
+ 
+ 
+- KI im Code ist weder Hype noch Tabu. Es kommt auf die Risikoklasse an.
+ 
+- Der Risk Radar macht aus einer Glaubensfrage eine Engineering-Entscheidung. Er bewertet einen Use Case in fünf Dimensionen: Code-Typ, Sprachsicherheit, Deployment-Kontext, Datensensibilität und Blast Radius.
+ 
+- Zu jedem Risiko gibt es eine Gegenmaßnahme. Das Harness Coverage Wheel sammelt sie als Schichten der Fehlerkorrektur, vom Compiler bis zum Chaos Engineering.
+ 
+- Code Review skaliert nicht mehr. Der Mensch prüft nicht jede Zeile, sondern legt das Umfeld fest, in dem die KI arbeitet: Human on the Loop statt Human in the Loop.
+ 
+- Dark Factory für die Landingpage, Handarbeit mit Netz fürs Herzgerät. Beides ist richtig.
+ 
+
+ 
+
+## Video und Material
+
+ Zwei Stimmen sprechen den Vortrag mit allen Folien durch, rund 17 Minuten. Risk Radar, Harness Coverage Wheel und eine Textfassung für Ihre KI finden Sie auf der Seite zum Vortrag.
+
+ 
+ 
+ 
+ Video auf YouTube ansehen · English version
+
+ 
+ Agentic Coding
+ Dark Factory
+ Vibe Coding
+ Risk Radar
+ Harness Coverage Wheel
+ Governance
  
 
  
@@ -636,6 +1035,14 @@ Page: https://rdmueller.github.io/pages/datenschutz.html
 # Dark Factory? Kommt auf die Risikoklasse an.
 Page: https://rdmueller.github.io/dark-factory/index.html
 
+DE
+ ·
+ EN
+ 
+ 
+
+ 
+
 # Dark Factory? Kommt auf die Risikoklasse an.
 
  
@@ -646,6 +1053,33 @@ Page: https://rdmueller.github.io/dark-factory/index.html
  
 
  
+ 
+ 
+
+## Der Talk als Dialog-Video
+
+ Zwei Stimmen sprechen den Vortrag mit allen Folien durch, rund 17 Minuten.
+
+ 
+ 
+ 
+ 
+ Auf YouTube ansehen →
+ English version →
+ 
+
+ 
+
+ 
+ 
+
+## Foundry, nicht Factory
+
+ Der Begriff „Dark Factory“ trifft das Dunkle, nicht die Fabrik: Software wird nie zweimal gegossen. Der Blog-Post zur Gießerei.
+
+ 
+ 
+
  
  
 
@@ -672,6 +1106,83 @@ Page: https://rdmueller.github.io/dark-factory/index.html
 ## Harness Coverage Wheel
 
  69 Fehlerkorrektur-Schichten zum Selbst-Assessment.
+
+---
+
+# Dark Factory? It Depends on the Risk Class.
+Page: https://rdmueller.github.io/dark-factory/en/index.html
+
+DE
+ ·
+ EN
+ 
+ 
+
+ 
+
+# Dark Factory? It Depends on the Risk Class.
+
+ 
+ Questions, objections, a project of your own? Talk it over with your own AI.
+
+ 
+ The talk as text for your AI
+ 
+
+ 
+ 
+ 
+
+## The talk as a dialogue video
+
+ Two voices walk through the talk, slide by slide, in just under 18 minutes.
+
+ 
+ 
+ 
+ 
+ Watch on YouTube →
+ German version →
+ 
+
+ 
+
+ 
+ 
+
+## Foundry, not factory
+
+ “Dark factory” gets the dark part right and the factory part wrong: nothing in software is made twice. The blog post explains why foundry is the better word.
+
+ 
+ 
+
+ 
+ 
+
+## Let's keep talking
+
+ Questions, objections, experiences of your own? Connect with me on LinkedIn.
+
+ Go to LinkedIn →
+ 
+
+ 
+ 
+
+## Risk Radar
+
+ Places a use case in its risk class.
+
+ 
+ 
+
+ 
+ 
+
+## Harness Coverage Wheel
+
+ 69 layers of error correction to check your own project against.
 
 ---
 
@@ -1334,528 +1845,6 @@ EN
  This is now part of the growing Semantic Anchors catalog on GitHub - a collection of terms that enable efficient human-LLM communication.
 
  What semantic anchors do you use in your LLM workflows?
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# 5 LLMs Tested the New Tool
-Page: https://rdmueller.github.io/pages/blog/dacli-llm-tool.html
-
-EN
- 24. Januar 2026
- 
-
- 
-
-# 5 LLMs Tested the New Tool. Their Verdict Is Clear.
-
- Introducing dacli: Like LSP for documentation
-
- 
-
- 
- 
- 
-
- 
- Documentation systems lack standardized interfaces comparable to LSP. Large docs-as-code projects face a dilemma: providing entire files creates excessive context, while minimal input leaves gaps.
-
- 
-
-## The Problem
-
- When working with LLMs on documentation:
-
- 
- 
-- Full files → Token overload, cost explosion
- 
-- Snippets only → Missing context, poor results
- 
-- Manual copy-paste → Time-consuming, error-prone
- 
-
- 
-
-## The Solution: dacli
-
- dacli is a command-line tool designed to provide LLMs with structured access to documentation—similar to how LSP works for code.
-
- 
-
-### Key Features
-
- 
- 
-- 📂 Hierarchical navigation through document structures
- 
-- 🔍 Relevance-ranked search functionality
- 
-- ✏️ Programmatic editing of individual sections
- 
-- ✅ Documentation quality validation
- 
-
- 
-
-## What the LLMs Said
-
- 
- "Missing tool between LLMs and Docs-as-Code"
-
- — Claude
- 
-
- 
- "Production-ready after testing 134 sections"
-
- — GitHub Copilot CLI
- 
-
- 
- "Must-have for modern documentation workflows"
-
- — Kiro (AWS)
- 
-
- 
-
-## Open Source
-
- dacli is open source, part of the docToolchain ecosystem, and built with 90% code coverage. The tool was reportedly built entirely by LLMs—a fitting origin story.
-
- → View on GitHub
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# No Person, No Rights, No Responsibility
-Page: https://rdmueller.github.io/pages/blog/ai-license-paradox.html
-
-EN
- 29. Januar 2026
- 
-
- 
-
-# No Person, No Rights, No Responsibility: Why AI Contributors Break Our License System
-
- Exploring a fundamental paradox in open source licensing when AI generates code
-
- 
-
- 
- 
- 
-
- 
- This post was written by Claude (Anthropic) based on an extensive conversation with me about the topic. As a non-native English speaker, I could not have articulated these thoughts as clearly on my own. However, this is not "AI slop" – we discussed the subject in depth beforehand, building the argument together. I reviewed, edited, and approved the final result. The irony of using AI to write about AI authorship is not lost on me.
-
- 
-
-## The Spark
-
- Two days ago, I shared a LinkedIn post about my newest open source project. Three days old, seven contributors – all of them AI:
-
- 
- 
-- Claude, acting as me (a misconfiguration, actually)
- 
-- Claude as himself
- 
-- Claude with his own GitHub account R{AI}f.D.Mueller
- 
-- Copilot Pull-Request-Reviewer
- 
-- Copilot SWE-Agent
- 
-- Dependabot
- 
- A commenter raised an interesting point: "Does Claude then become co-author? If that's the case, does Claude immediately co-share ownership of the software?"
-
- This deserves a proper answer, because the question reveals how fundamentally unprepared our legal and licensing frameworks are for AI-generated code.
-
- 
-
-## The Trigger: Claude Claims Co-Authorship
-
- Here's what sparked the concern: Claude Code automatically adds this to commits:
-
- 
- Co-authored-by: Claude <noreply@anthropic.com>
-
- 
-
- This happens by default. The AI claims co-authorship without the user explicitly deciding to grant it. I understand why this feels presumptuous – Anthropic made a choice that affects how contributions are attributed in projects worldwide.
-
- But here's the thing: this claim is legally meaningless.
-
- 
-
-## Copyright ≠ Urheberrecht ≠ Software Patents
-
- Before we go further, let's untangle some terms that often get conflated:
-
- Copyright (US): Protects the work. It's a property right that can be transferred. "Work for hire" doctrine means employers can own copyright on employee creations.
-
- Urheberrecht (German/EU): Protects the creator. It's a personal right that cannot be transferred, only licensed. The creator always remains the creator.
-
- Software Patents: Exist in the US, not in Germany/EU (with very limited exceptions). Protect inventions and methods, not expression.
-
- Why does this matter? Because the question "who owns AI-generated code" has different answers depending on which legal framework you're in – and in most cases, the answer is: nobody.
-
- 
-
-## No Person, No Rights
-
- Here's the core legal reality:
-
- German copyright law (§ 2 UrhG) requires a "persönliche geistige Schöpfung" – a personal intellectual creation. The US Copyright Office has ruled similarly: AI-generated content without sufficient human creative input cannot be copyrighted.
-
- AI is not a person. Therefore:
-
- 
- 
-- AI cannot hold copyright
- 
-- AI cannot hold Urheberrecht
- 
-- AI cannot be granted patents
- 
- But what about the human who prompted the AI? If the prompting itself doesn't constitute sufficient creative input – if you just said "write me a function that does X" – then arguably no copyright exists for you either.
-
- The result: AI-generated code may be public domain by default.
-
- 
-
-## The Ownership Paradox
-
- This creates an interesting paradox:
-
- Open source licenses (MIT, GPL, Apache, BSD) all assume that someone holds the rights and is granting permissions. The entire model is: "I own this, and I give you permission to use it under these conditions."
-
- But if nobody owns AI-generated code:
-
- 
- 
-- Who has the right to grant a license?
- 
-- Can you put an MIT license on something you don't own?
- 
-- Is AI-generated code automatically "freer than free"?
- 
- Peter's concern about ownership was exactly backwards: the problem isn't that AI might claim ownership. The problem is that nobody can claim ownership, which breaks our entire licensing model.
-
- 
-
-## No Person, No Responsibility
-
- But here's where it gets serious. Rights come with responsibilities:
-
- 
- 
-- Who is liable if the code contains a security vulnerability?
- 
-- Who ensures no license violations are hidden in the output?
- 
-- Who guarantees there's no malicious code?
- 
-- Who can be sued if something goes wrong?
- 
- Not the AI. It's not a legal person. It cannot be held responsible.
-
- This is why my workflow matters:
-
- AI generates code → No author, no responsibility
- ↓
-Human reviews PR → Human assumes responsibility
- ↓
-Human approves merge → Human is accountable
- The "Co-authored-by: Claude" tag isn't about claiming ownership. It's about transparency – documenting how the code came into existence. The responsibility enters through my review.
-
- I am the human in the loop. Every PR goes through me. I have to approve it. That's where accountability is created.
-
- My weakness? I'm getting lazy. Sometimes I just wave PRs through. That's the real risk – not some theoretical AI ownership claim, but humans rubber-stamping AI output without proper review.
-
- 
-
-## The Final Irony: MIT License
-
- And then I put the code under MIT license:
-
- 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND...
-
- IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE...
-
- 
-
- So the responsibility I assumed through review? I immediately disclaim it via the license.
-
- AI generates → no responsibility (no person)
- ↓
-Human reviews → assumes responsibility
- ↓
-MIT license → disclaims all responsibility
- ↓
-End user → uses at own risk 🎪
- We've come full circle. The entire system of rights and responsibilities just... dissolves.
-
- 
-
-## What Needs to Change
-
- Our software licensing model was built for a world where:
-
- 
- 
-- Humans write code
- 
-- Humans own that code
- 
-- Humans grant permissions
- 
-- Humans bear responsibility
- 
- None of these assumptions hold cleanly in the age of AI-assisted development.
-
- We need new frameworks that address:
-
- 
- 
-- Transparency requirements: How do we document AI involvement? The "Co-authored-by" tag is a start, but it's informal.
- 
-- Responsibility attribution: If AI generates and humans review, how do we formalize where responsibility lies?
- 
-- License validity: Can current licenses even apply to AI-generated code? Do we need new license types?
- 
-- Review documentation: Should there be a way to certify that human review actually happened?
- 
-- Hybrid works: Most code will be partly human, partly AI. How do we handle mixed provenance?
- 
-
- 
-
-## Back to Peter's Question
-
- So, does Claude "co-share ownership" of my software?
-
- No. Claude cannot own anything. Claude has no legal personhood. The "Co-authored-by" line is a transparency mechanism, not a legal claim. It's Anthropic's attempt to make AI involvement visible – which I'd argue is better than hiding it.
-
- The real questions we should be asking:
-
- 
- 
-- Who reviewed this code?
- 
-- Who is responsible for it?
- 
-- What does "authorship" even mean when the author has no legal existence?
- 
- The future of open source isn't threatened by AI claiming ownership. It's challenged by the fact that our entire legal and licensing infrastructure assumes human authors with human rights and human responsibilities.
-
- We need to update that infrastructure. Until then, we're all just improvising.
-
- 
-
- What do you think? How should software licenses evolve for the AI age? I'd love to hear your thoughts.
-
- 
-
- About this post: Written by Claude, directed by Ralf, reviewed by Ralf. The responsibility for publishing this is entirely human. The irony is entirely intentional.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# docToolchain rb - Documentation for the AI Age
-Page: https://rdmueller.github.io/pages/blog/doctoolchain-rb.html
-
-EN
- 30. Januar 2026
- 
-
- 
-
-# 🔄 docToolchain rb — Documentation Reborn for the AI Age
-
- After eight years of docs-as-code, documentation must now serve two audiences: humans AND AI systems
-
- 
-
- 
- 
- 
-
- 
- The statement "AI reads docs" is more significant than "AI writes docs." Tools like ChatGPT and Claude consume documentation as context—and they need different formatting than humans.
-
- 
-
-## The Paradigm Shift
-
- For eight years, I've been advocating docs-as-code. Now the field faces a fundamental transformation: documentation must serve two distinctly different audiences.
-
- 
-
-## Emerging Trends
-
- 
- 
-- llms.txt adoption: 600+ organizations including Anthropic and Stripe now provide AI-readable documentation summaries
- 
-- Model Context Protocol (MCP): Standardization for AI tool integration
- 
-- RAG technology: Converting documentation into searchable knowledge bases
- 
-
- 
-
-## The Market Gap
-
- All current AI-native documentation tools operate as SaaS. This leaves enterprises with data privacy concerns without suitable options for self-hosted solutions.
-
- 
-
-## docToolchain rb Features
-
- 
- 
-- 🔒 Self-hosted AI documentation with user-controlled LLMs
- 
-- 📝 AsciiDoc-native formatting
- 
-- 🏛️ Architecture documentation assistance (arc42 + ADR)
- 
-- 🤖 llms.txt and MCP support
- 
-- 🐳 Docker-first infrastructure
- 
-
- 
- "The question is no longer 'How do we write docs?' but 'How will AI read our docs?'"
-
- 
-
- 
-
-## What's Next?
-
- docToolchain rb represents the evolution of documentation tooling for a world where AI systems are first-class consumers of our technical content. Stay tuned for the release.
-
- 
-
- 
- 
-
-## LinkedWild
-
----
-
-# Raspberry Pi 5 + Local LLM
-Page: https://rdmueller.github.io/pages/blog/raspberry-pi-llm.html
-
-EN
- 1. Februar 2026
- 
-
- 
-
-# Can a Raspberry Pi 5 Run a Local LLM for Coding Assistance?
-
- An experiment in edge AI—and why context size is a deployment constraint
-
- 
-
- 
- 
- 
-
- 
- I wanted to know: can a Raspberry Pi 5 run local LLMs for coding tasks? The hardware successfully ran smaller models via Ollama, but practical limitations emerged quickly.
-
- 
-
-## The Experiment
-
- Setting up Ollama on the Pi 5 was straightforward. Smaller models loaded fine. But then I tried to use it with Claude Code's workflow...
-
- 
-
-## The Showstopper
-
- The problem isn't running the model—it's context processing speed.
-
- Claude Code requires an ~11,000 token system prompt before generating any response. At the Pi's processing rate:
-
- 
- 11,000 tokens at 5 tok/s = several minutes just to process the input
-
- 
-
- This exceeds typical timeout thresholds before any actual response generation occurs.
-
- 
-
-## The Workaround
-
- Using n8n with custom, shorter prompts (50 tokens) achieved 15-30 second response times. This works for focused automation tasks like:
-
- 
- 
-- Translations
- 
-- Smart home commands
- 
-- Simple text processing
- 
-
- 
-
-## Critical Insights
-
- 
- 
-- Small models lack reasoning depth compared to larger counterparts
- 
-- "Context size" is a deployment constraint, not merely a model property
- 
-- Device capability differs from practical usability for specific tasks
- 
-- Processing every context token before generation becomes the dominant factor on constrained hardware
- 
-
- 
-
-## The Right Question
-
- Rather than asking "does it run?", evaluators should ask:
-
- 
- "What context size is practical, and what does that mean for my use case?"
-
- 
-
- For simple, focused tasks with minimal context: yes, it works.
-
- For agentic coding workflows: not yet practical.
 
  
 

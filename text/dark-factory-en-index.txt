@@ -1,0 +1,74 @@
+# Dark Factory? It Depends on the Risk Class.
+Page: https://rdmueller.github.io/dark-factory/en/index.html
+
+DE
+ ·
+ EN
+ 
+ 
+
+ 
+
+# Dark Factory? It Depends on the Risk Class.
+
+ 
+ Questions, objections, a project of your own? Talk it over with your own AI.
+
+ 
+ The talk as text for your AI
+ 
+
+ 
+ 
+ 
+
+## The talk as a dialogue video
+
+ Two voices walk through the talk, slide by slide, in just under 18 minutes.
+
+ 
+ 
+ 
+ 
+ Watch on YouTube →
+ German version →
+ 
+
+ 
+
+ 
+ 
+
+## Foundry, not factory
+
+ “Dark factory” gets the dark part right and the factory part wrong: nothing in software is made twice. The blog post explains why foundry is the better word.
+
+ 
+ 
+
+ 
+ 
+
+## Let's keep talking
+
+ Questions, objections, experiences of your own? Connect with me on LinkedIn.
+
+ Go to LinkedIn →
+ 
+
+ 
+ 
+
+## Risk Radar
+
+ Places a use case in its risk class.
+
+ 
+ 
+
+ 
+ 
+
+## Harness Coverage Wheel
+
+ 69 layers of error correction to check your own project against.

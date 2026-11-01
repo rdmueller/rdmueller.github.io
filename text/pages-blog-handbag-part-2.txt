@@ -1,0 +1,44 @@
+# The handbag, part 2: now with numbers
+Page: https://rdmueller.github.io/pages/blog/handbag-part-2.html
+
+EN
+ 11. Oktober 2026
+ 
+
+ 
+
+# The handbag, part 2: now with numbers
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Six months ago I posted a video of someone sketching a handbag while an AI turned it into a photo in real time. The sketch had a shape and a handle. The photo had leather, stitching, color, a brand feel. Every detail the sketch left open, the model decided on its own.
+
+ My point back then: that's exactly what happens when you let an agent code without an architecture. Now there are numbers for it.
+
+ A study looked at more than 16,000 sessions in which Claude Code, Codex or Cursor had to pick a database, a payment provider or an auth system, and then actually install it. The agent made the call. Stripe won payments nine times out of ten. Neon took two thirds of the databases. PayPal came up in 139 payment sessions and got picked in zero. And in almost one of five sessions, Claude Code skipped every vendor and built the thing itself.
+
+ Read that last line again. In one of five sessions, the agent decided your persistence layer should be homegrown.
+
+ That's the handbag. Draw the same bag three times and the model decides if it gives you leather, jute or straw. Each one matches the sketch. None of them is what you meant. The sketch was your prompt. The leather is Neon-DB, Stripe and a hand-rolled auth module nobody on your team chose.
+
+ Which database, which payment provider, which auth: those are not implementation details. They're the decisions your quality requirements drive, and that set of decisions is your architecture.
+
+ Write it down before the agent starts. It fits on one page. Mine are in arc42, chapters 9 and 10.
+
+ Define your architecture, or the LLM will make those decisions for you. And chances are that these decisions will not fit your needs or match your intent.
+
+ Numbers via Shubham Saboo, who also flags the caveat: the study comes from a company selling growth services to dev tools. His post: https://www.linkedin.com/feed/update/urn:li:activity:7501824644639825920/
+
+ The original handbag post: https://www.linkedin.com/feed/update/urn:li:activity:7450827520951812096/
+
+ 
+
+ 
+ 
+
+## LinkedWild

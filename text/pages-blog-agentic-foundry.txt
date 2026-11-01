@@ -1,0 +1,46 @@
+# My Dark Factory Isn't a Factory. It's a Foundry.
+Page: https://rdmueller.github.io/pages/blog/agentic-foundry.html
+
+EN
+ 24. Oktober 2026
+ 
+
+ 
+
+# My Dark Factory Isn't a Factory. It's a Foundry.
+
+ 
+
+ 
+ 
+ 
+
+ 
+ I've been calling my setup a dark factory. The "dark" part is right. The "factory" part is wrong.
+
+ Dark factory comes from lights-out manufacturing: a plant that runs without people, so nobody needs to switch the lights on. That part fits. In my side projects, no human reviews the code. The agents write it and ship it.
+
+ But a factory is an assembly line. It makes the same thing a thousand times. Software doesn't work that way. The second copy of a program is a file copy, not a production run. Every single thing that comes out of my setup is a one-off.
+
+ The better word is foundry.
+
+ A foundry doesn't design the product. It casts it. Someone brings a mould, the foundry pours metal into it, and the result is only as good as the mould. Type foundries cast letters from a designer's drawings. Since TSMC in 1987, semiconductor foundries have been casting other people's chip designs into silicon. The pattern stays the same: the form comes from outside, the pouring is the process.
+
+ That's what agentic coding without human code review is. I make the mould: the idea, written down as a spec. The agents pour. When the result is wrong, I don't fix the casting. I fix the mould and pour again.
+
+ Which changes where the work goes. The quality of the mould decides the quality of the product. So my effort has moved from code to spec, almost entirely.
+
+ Ahmed E. Hassan and his co-authors published the Software Engineering Factory manifesto yesterday, and it got me thinking about the word again. We start from the same diagnosis: final code review can't carry the load anymore. Their factory moves control into the process, with protocols and gates. My foundry moves it into the mould. Same diagnosis, different place for the work.
+
+ Für die deutschen Leser: Gießerei, nicht Manufaktur. Wer an Manufaktur denkt, denkt an Handarbeit. Wer an Gießerei denkt, denkt an Form und Guss. Genau darum geht es.
+
+ If you run an agentic foundry, you're a mould-maker, not a factory worker.
+
+ The manifesto by Ahmed E. Hassan and his co-authors: The Software Engineering Factory
+
+ 
+
+ 
+ 
+
+## LinkedWild

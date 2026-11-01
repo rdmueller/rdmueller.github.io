@@ -1,0 +1,42 @@
+# Heresy: The Opposite of a Semantic Anchor
+Page: https://rdmueller.github.io/pages/blog/yegge-heresy.html
+
+EN
+ 3. Oktober 2026
+ 
+
+ 
+
+# Heresy: The Opposite of a Semantic Anchor
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Steve Yegge has a word for something I kept running into without a name: heresy.
+
+ In his conversation with Benedikt Stemmildt on Rethink Engineering, Steve talks about running around 50 agents on his game Wyvern. At one point he defines the term. A heresy "is a belief that gets encoded in your docs or in your brain or in your code or somewhere lying around on your disk. It's persisting and it's a belief that's wrong about your system. But it's a compelling belief."
+
+ In plain terms, a heresy is a wrong rule that your agents keep reading back in. You could call it context poisoning, except that a fresh session doesn't cure it. Context poisoning lives in the context window of one session and is gone when you start over. A heresy lives in the repo, so every new agent reads it in again and often writes it down somewhere else.
+
+ His example: the rules say an agent must not push without a human's permission. One stray line somewhere else says it may. Agents find that line, believe it and act on it. And because agents write a lot of documentation, an agent with a wrong idea copies it into every file it touches. In Steve's words, "they will document your heresy everywhere", and "if there's even a whiff of this heresy somewhere else in your code base, it will come back."
+
+ This hit me because I spend a lot of my time on the opposite. Semantic Anchors are well-known terms like "arc42" or "TDD, London School" that pull a whole body of shared knowledge into a prompt with a few words. They work because the model trusts compelling text and fills in the rest from what it already knows. A heresy uses exactly the same mechanism in the other direction. The model gives your forgotten sentence the same weight it gives a carefully chosen anchor, and it has no way of telling which one you meant.
+
+ So the real question for anyone running agents on a real codebase is who controls the meaning that lives in the repo. Every README and every code comment is a prompt the next agent will read. My takeaway: stale docs deserve the attention we give to security bugs. Keep one canonical place for each rule that matters, and delete the contradicting copy instead of adding a correction next to it. An anchor you place on purpose is only as strong as the heresies you leave lying around.
+
+ Steve also explains why it took a newer model, coming in like an outside consultant, to cut the agent factory that builds his game free again. Worth the hour, including a live look at his control room Wheelhouse:
+
+ https://www.youtube.com/watch?v=I3iRsti-Lmw
+
+ Have you found a heresy in your own repo yet? How did you get rid of it?
+
+ 
+
+ 
+ 
+
+## LinkedWild

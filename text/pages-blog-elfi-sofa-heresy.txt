@@ -1,0 +1,48 @@
+# Precedent Beats Paper | Elfi's Corner
+Page: https://rdmueller.github.io/pages/blog/elfi-sofa-heresy.html
+
+EN
+ 3. Oktober 2026
+ 
+
+ 
+
+# Precedent Beats Paper
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Elfi is a Ragdoll cat who lives with software architect Ralf D. Müller. She has opinions about software development. This is her column.
+
+ We got a household robot this week. Very eager. On its first evening it found an old note in a drawer, written by my humans before I moved in: "No cat on the sofa."
+
+ 
+
+## How this house actually works
+
+ Nobody has followed that note for years. I have slept on the left cushion every evening since my first winter here. There is a blanket that lives there just for me, and there are photos of me on it. That is how this house actually works.
+
+ The robot does not care how the house works. It believed the paper and lifted me off the sofa with a polite little beep. Then it pinned the note to the wall, so the next helper would believe it too.
+
+ 
+
+## A heresy, apparently
+
+ Ralf says a man on a podcast has a word for this: a heresy. An old, wrong rule that sits written down somewhere, and every new helper reads it and follows it again. Ralf calls it a documentation problem. I call it a staffing problem.
+
+ 
+
+## My proposal
+
+ The note goes in the bin and the blanket stays where it is. Years on that cushion are precedent. A forgotten piece of paper is not.
+
+ 
+
+ 
+ 
+
+## LinkedWild

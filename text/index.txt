@@ -180,13 +180,17 @@ Technology Evangelist
 ## Aktuelle Vorträge
 
  
- Meine Themen: Von Docs-as-Code über Software-Architektur bis hin zu GenAI und LLMs.
+ Diese fünf Vorträge biete ich aktuell an, für Konferenzen, Unternehmen und interne Veranstaltungen.
+ 
+
+ 
+ Zum Vortragsangebot
  
 
  
  
  
- Session
+ Vortrag
  
 
  
@@ -195,7 +199,38 @@ Technology Evangelist
 
  Wie ein gemeinsames Vokabular die Qualität von AI-generiertem Code verändert. Mit Eichhorst's Principle und einem kompletten Workflow von der Spec bis zum Review.
 
- IT-Tage 2026
+ 
+ Abstract
+ 
+
+ 
+ 
+ 
+ Vortrag
+ 
+
+ 
+
+### Dark Factory? Kommt auf die Risikoklasse an.
+
+ Wie viel Autonomie KI-Coding-Agenten bekommen dürfen, entscheidet die Risikoklasse der Software. Mit Risk Radar und passenden Gegenmaßnahmen.
+
+ 
+ Abstract
+ Material & Video
+ 
+
+ 
+ 
+ 
+ Vortrag
+ 
+
+ 
+
+### Wenn die KI lügt – und Du es nicht merkst
+
+ Warum Sprachmodelle halluzinieren und sich dabei so sicher geben. Sechs Gewohnheiten, mit denen Sie Falschaussagen im Arbeitsalltag erkennen.
 
  
  Abstract
@@ -204,63 +239,41 @@ Technology Evangelist
  
  
  
- Keynote
+ Vortrag
  
 
  
 
-### Die Zukunft der Software-Architektur: Wie GenAI & LLMs den Code von Morgen gestalten
+### Vom Coding zum Product Engineering
 
- Wie verändern Large Language Models die Art, wie wir Software entwerfen und dokumentieren?
-
- JavaLand 2026, betterCode(), iSAQB Meetup
+ Wenn KI-Agenten schneller bauen, wird der Product Owner zum Engpass. Die neue Arbeitsteilung zwischen PO und Entwicklung.
 
  
- EN Video
- DE Video
- 
-
- 
- 
- 
- Session
- 
-
- 
-
-### Prompt-Engineering für Entwickler
-
- ChatGPT und ähnliche Systeme sind Technologie, die bleiben wird. Der richtige Input (Prompt) ist entscheidend für maximalen Nutzen.
-
- IT-Tage, JavaLand, W-JAX
-
- 
- Video ansehen
+ Abstract
  
 
  
  
  
- Workshop
+ Talk (EN)
  
 
  
 
-### Real World Architekturdiagramme
+### Why Agentic Coding Works
 
- Phantastische Diagramme und wie Du sie selbst erstellst - praktische Techniken für bessere Visualisierung.
-
- Software Architecture Summit
+ Semantic Anchors, Contracts and Eichhorst's Principle: why some approaches work regardless of the model. A duo talk with Avraham Poupko.
 
  
- Video ansehen
+ Abstract
  
 
  
  
 
  
- Alle Vorträge ansehen
+ Vortragsangebot ansehen
+ Alle bisherigen Vorträge
  
 
  
@@ -464,6 +477,132 @@ Technology Evangelist
  
  
  
+ #342
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+### Wie relevant ist eine saubere Software-Architektur im Zeitalter der KI?
+
+ Mit Alexander von Zitzewitz
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ #341
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+### My Teammates Can’t Dream
+
+ But they sure can hallucinate – with Avraham Poupko
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ #331
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+### Building Software in the Age of AI
+
+ A Conversation with Randy Shoup
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ #330
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+### AI as a Mirror
+
+ A Conversation with Kevlin Henney
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ #318
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+### Wie fährst du dein Projekt zuverlässig an die Wand?
+
+ Mit Andreas Monschau
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ #317
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+### Zwischen KI-Hype und KI-Vampire
+
+ Wie wir den Einsatz von KI im Alltag erleben - mit Martin Lippert
+
+ 
+
+ 
+ 
+ 
+ 
+ 
  #300
  
  
@@ -519,111 +658,6 @@ Technology Evangelist
 ### Future of Software Architecture
 
  How GenAI & LLMs Are Shaping the Code of Tomorrow
-
- 
-
- 
- 
- 
- 
- 
- #278
- 
- 
- 
-
- 
-
- 
- 
-
-### Störrisches LLM auf den richtigen Weg
-
- Mit Oliver Jägle und Ralf D. Müller
-
- 
-
- 
- 
- 
- 
- 
- #271
- 
- 
- 
-
- 
-
- 
- 
-
-### Architecture of the Death Star
-
- 20 Years of arc42 and What We Can Learn
-
- 
-
- 
- 
- 
- 
- 
- #267
- 
- 
- 
-
- 
-
- 
- 
-
-### Architekturtheater mit Claude
-
- Live-Architektur mit Anthropics LLM
-
- 
-
- 
- 
- 
- 
- 
- #242
- 
- 
- 
-
- 
-
- 
- 
-
-### Generative AI Meets Architecture
-
- LLMs als Werkzeug für Architekten
-
- 
-
- 
- 
- 
- 
- 
- #199
- 
- 
- 
-
- 
-
- 
- 
-
-### ChatGPT in der Software-Architektur
-
- Wie kann KI den Architekten unterstützen?
 
  
 
