@@ -1,0 +1,94 @@
+# A Design Style Is a Name Your LLM Already Knows
+Page: https://rdmueller.github.io/pages/blog/design-anchors.html
+
+EN
+ 29. Oktober 2026
+ 
+
+ 
+
+# A Design Style Is a Name Your LLM Already Knows
+
+ 
+
+ 
+ 
+ 
+
+ 
+ A design style is a name your LLM already knows.
+
+ That came up last night at the Java User Group Frankfurt, while we were talking about Semantic Anchors. Names like Swiss Design and Material Design came up, and it clicked: they carry a whole design vocabulary, the same way "TDD" or "arc42" carry a whole method. On the train home I asked Claude to add them to the catalog. Now there's a new category for UX and visual design.
+
+ Then I wanted to see it work. So I took my homepage and gave ten Claude sessions the same prompt:
+
+ "Redesign this website in the style of {ANCHOR}. Keep the content unchanged."
+
+ Only the name changed. The sessions got no description of the style and no reference images. Each one ran once and checked its own screenshot. I didn't reroll anything or pick the best of several tries. (The actual prompt was in German, like my homepage: "Gestalte diese Website im Stil von {ANKER} neu. Die Inhalte bleiben unverändert.")
+
+ The first image is my current site. The other ten are Swiss Style, Bauhaus, Material Design 3, Neo-Brutalism, Apple Human Interface Guidelines, GOV.UK Design System, Tufte Style, Dieter Rams' 10 Principles, Bento Grid and Glassmorphism. Same text in every one of them, it's basically the makeover montage from an 80s movie, minus the soundtrack.
+
+ 
+
+ 
+ 
+ 
+ My current homepage
+ 
+ 
+ 
+ Swiss Style
+ 
+ 
+ 
+ Bauhaus
+ 
+ 
+ 
+ Material Design 3
+ 
+ 
+ 
+ Neo-Brutalism
+ 
+ 
+ 
+ Apple Human Interface Guidelines
+ 
+ 
+ 
+ GOV.UK Design System
+ 
+ 
+ 
+ Tufte Style
+ 
+ 
+ 
+ Dieter Rams' 10 Principles
+ 
+ 
+ 
+ Bento Grid
+ 
+ 
+ 
+ Glassmorphism
+ 
+ 
+
+ 
+ What surprised me is how much each name pulls in. Swiss Style didn't just pick a sans-serif font, it set my name as a huge black block on a strict grid and added a red square. Tufte moved my photo and my skill tags into the margin as sidenotes. The Dieter Rams session built a Braun radio front around my face, speaker grille included. None of that was in the prompt.
+
+ That's the idea behind Semantic Anchors. A well-known term activates knowledge the model already has, so you don't have to spell it out. It works like telling a colleague "make it look like GOV.UK" instead of handing over a ten-page brief.
+
+ Which one should I ship? 😄 I'm leaning towards the Rams radio.
+
+ The catalog: Semantic Anchors
+
+ 
+
+ 
+ 
+
+## LinkedWild

@@ -1,6 +1,14 @@
 # Dark Factory? Kommt auf die Risikoklasse an.
 Page: https://rdmueller.github.io/dark-factory/index.html
 
+DE
+ ·
+ EN
+ 
+ 
+
+ 
+
 # Dark Factory? Kommt auf die Risikoklasse an.
 
  
@@ -11,6 +19,33 @@ Page: https://rdmueller.github.io/dark-factory/index.html
  
 
  
+ 
+ 
+
+## Der Talk als Dialog-Video
+
+ Zwei Stimmen sprechen den Vortrag mit allen Folien durch, rund 17 Minuten.
+
+ 
+ 
+ 
+ 
+ Auf YouTube ansehen →
+ English version →
+ 
+
+ 
+
+ 
+ 
+
+## Foundry, nicht Factory
+
+ Der Begriff „Dark Factory“ trifft das Dunkle, nicht die Fabrik: Software wird nie zweimal gegossen. Der Blog-Post zur Gießerei.
+
+ 
+ 
+
  
  
 

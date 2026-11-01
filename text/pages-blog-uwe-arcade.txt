@@ -1,0 +1,36 @@
+# Ein Arcade-Automat aus einem Satz
+Page: https://rdmueller.github.io/pages/blog/uwe-arcade.html
+
+DE
+ 10. Oktober 2026
+ 
+
+ 
+
+# Ein Arcade-Automat aus einem Satz
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Uwe Franke hat vor ein paar Tagen auf LinkedIn gefragt, ob er aus seinem Klemmbaustein-Agenten etwas launchen soll. Heute sitzen wir in Frankfurt zusammen (damit ist der halbe ultrathink.club an einem Tisch, Grüße an Stephan und Ingo!) und ich habe die Antwort live gesehen.
+
+ Zur Erinnerung: Uwes Agent bekommt einen Satz und entwirft daraus ein Modell, das man wirklich bauen kann. Danach schaut er sich sein eigenes Ergebnis an, vergleicht es mit dem Original und bessert nach. Bei der Gummiente waren es am Ende 423 Steine, und die Ente steht.
+
+ In der Live-Demo hat er mir einen 80er-Jahre-Arcade-Automaten erzeugt. Herausgekommen ist eine Bauanleitung als PDF, wie man sie aus dem Karton kennt: 35 Schritte, 281 Teile, 41 Teiletypen, eine Stückliste mit Teilenummern und bei den kniffligen Schritten eine Rückansicht. Joystick, bunte Knöpfe, ein kleiner Bildschirm und die Zierstreifen in Rot, Gelb und Blau sind alle da.
+
+ Was mich daran packt, ist dieselbe Frage, die mich beim Agentic Coding umtreibt. Ein Modell, das etwas erzeugt, ist schnell gebaut. Ein Agent, der sein Ergebnis prüft und korrigiert, bevor ein Mensch draufschaut, ist der Teil, der den Unterschied macht. Bei Code übernehmen das Tests. Bei Uwe schaut der Agent auf sein gerendertes Modell und vergleicht es mit dem Vorbild.
+
+ Uwe, du hast gefragt, ob es zu früh ist. Ich finde nicht. Die Anleitung auf meinem Tisch ist nicht peinlich, sie macht Lust aufs Bauen.
+
+ Was würdet ihr euch von so einem Agenten bauen lassen?
+
+ 
+
+ 
+ 
+
+## LinkedWild

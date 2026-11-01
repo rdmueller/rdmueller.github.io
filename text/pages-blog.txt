@@ -10,8 +10,10 @@ Page: https://rdmueller.github.io/pages/blog.html
 
  
  Alle
+ 3D Printing
  Agentic Coding
  Brownfield
+ Claude Code
  Copyright
  Dark Factory
  Digital Independence
@@ -19,16 +21,315 @@ Page: https://rdmueller.github.io/pages/blog.html
  Eichhorst's Principle
  GDPR
  GenAI
+ Herdr
  LLM
  Open Source
  Opinion
  Productivity
+ Resilience
  Semantic Anchors
  Software Architecture
  Theory
  Tooling
  arc42
  docToolchain
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 29
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENSemantic AnchorsGenAIClaude Code
+ 
+
+ 
+
+## A Design Style Is a Name Your LLM Already Knows
+
+ Ten Claude sessions, one prompt, one changed word: Swiss Style, Bauhaus, Tufte, Dieter Rams and six more design anchors restyle my homepage without any description of the style. The name alone pulls in the whole design vocabulary.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 24
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENAgentic CodingSoftware ArchitectureGenAI
+ 
+
+ 
+
+## My Dark Factory Isn't a Factory. It's a Foundry.
+
+ Dark factory gets the automation right and the factory wrong: nothing in software is made twice. The better word is foundry. The spec is the mould, the agents pour, and the quality of the mould decides the product.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 23
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENClaude CodeAgentic CodingDocumentation
+ 
+
+ 
+
+## I talk to my texts now
+
+ Claude Code built a feedback mode for my Token Explorer: a text box next to every paragraph, a chat window, and one click that posts my notes to a local server which wakes Claude Code. We ran 18 small rounds on the first day, and the site the participants get contains none of it.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 22
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENClaude CodeHerdrAgentic Coding
+ 
+
+ 
+
+## My coding agent just put itself to sleep
+
+ Claude Code compacts its context on its own only when the window runs full. Inside Herdr it typed /compact into its own terminal pane, picked the moment itself, and came back saying 'back again'.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 20
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENSemantic AnchorsLLMOpen Source
+ 
+
+ 
+
+## My repo needs five more stars
+
+ The Semantic Anchors repo sits at 495 GitHub stars. At 500 it qualifies for Chip Huyen's Good AI List, so five clicks put more than 230 anchors into an index many people use to find AI tooling.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 15
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENAgentic CodingDark FactoryTooling
+ 
+
+ 
+
+## My software factory runs on a Raspberry Pi
+
+ I write an issue in Forgejo on a Pi 5. A watcher wakes a Claude Code orchestrator, worker sessions come back with a pull request, and only I can merge to main. I haven't opened a terminal for these projects since.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 11
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENarc42Agentic CodingSoftware Architecture
+ 
+
+ 
+
+## The handbag, part 2: now with numbers
+
+ A study of more than 16,000 coding-agent sessions shows the agent picks your database, payment provider and auth. Stripe, Neon, or a homegrown module nobody chose. Write your architecture down before the agent starts.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 10
+ Okt
+ 2026
+ 
+
+ 
+ 
+ DESoftware ArchitectureResilience
+ 
+
+ 
+
+## Fallbacks nach Recovery Time ordnen, nicht nach Bequemlichkeit
+
+ Als Fallback gewählt wird der Laden, der samstags um 13 Uhr schließt, statt der Packstation um die Ecke. Diesen Fehler sehe ich in Architektur-Reviews oft: Die Fallback-Reihenfolge richtet sich nach der Bequemlichkeit des Aufrufers, nicht nach der Recovery Time des Empfängers.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 10
+ Okt
+ 2026
+ 
+
+ 
+ 
+ DEGenAIAgentic Coding
+ 
+
+ 
+
+## Ein Arcade-Automat aus einem Satz
+
+ Uwe Frankes Agent macht aus einem Satz ein Klemmbaustein-Modell samt Bauanleitung. In Frankfurt habe ich live zugesehen: 35 Schritte, 281 Teile. Entscheidend ist, dass der Agent sein eigenes Ergebnis prüft und nachbessert.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 05
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENGenAIAgentic Coding3D Printing
+ 
+
+ 
+
+## A Plastic Toy Drawing Robot Taught Me What GenAI Can Do
+
+ My vacation project: a 3D printed drawing robot with an LLM on top. Claude built the simulator, designed every part in OpenSCAD, planned the fit test and watched the print through my webcams. I ran the printer and made the calls.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 03
+ Okt
+ 2026
+ 
+
+ 
+ 
+ ENAgentic CodingSemantic AnchorsSoftware Architecture
+ 
+
+ 
+
+## Heresy: The Opposite of a Semantic Anchor
+
+ Steve Yegge calls them heresies: wrong beliefs that live in your docs and code, and that every new agent reads back in. They use the same mechanism as Semantic Anchors, pointed the other way. A fresh session doesn't cure them.
+
+ Artikel lesen
  
 
  

@@ -1,0 +1,40 @@
+# My coding agent just put itself to sleep
+Page: https://rdmueller.github.io/pages/blog/agent-compacts-itself.html
+
+EN
+ 22. Oktober 2026
+ 
+
+ 
+
+# My coding agent just put itself to sleep
+
+ 
+
+ 
+ 
+ 
+
+ 
+ My coding agent just put itself to sleep. With my permission.
+
+ I run Claude Code inside Herdr, a terminal multiplexer for coding agents. After a long day on one project, the context window was nearly full. Normally I type /compact myself: the session summarises its history and carries on with the summary instead of the full transcript.
+
+ Claude Code does compact on its own when the window runs full, but it can't pick the moment. /compact is a user command, so an agent working on its own has to wait until it hits the wall, often in the middle of a task.
+
+ This time Claude offered to type it into its own terminal pane.
+
+ I said yes. Claude sent "/compact" and an Enter to its own pane through the Herdr command line, the same way it starts other agents in the panes next to it. The command sat in the input until Claude had finished its answer, and then it fired.
+
+ So now it knows how to compact its own session and can clear out the clutter whenever it decides the moment is right.
+
+ PS: The part I like is what Claude couldn't know. Whether the compaction worked, it could only find out afterwards and from the inside, because its next context would begin with a summary written by its earlier self. It reminded me of Leonard in the film Memento, who can't form new memories and leaves notes and Polaroids for the next version of himself. So before it went, it promised me: "When your next round arrives, I'll say 'back again'."
+
+ It came back and said "back again". 🧠
+
+ 
+
+ 
+ 
+
+## LinkedWild

@@ -1,0 +1,36 @@
+# Fallbacks nach Recovery Time ordnen, nicht nach Bequemlichkeit
+Page: https://rdmueller.github.io/pages/blog/dhl-fallback.html
+
+DE
+ 10. Oktober 2026
+ 
+
+ 
+
+# Fallbacks nach Recovery Time ordnen, nicht nach Bequemlichkeit
+
+ 
+
+ 
+ 
+ 
+
+ 
+ DHL hat heute mein Lieblingsthema aus Architektur-Reviews live vorgeführt. Ergebnis: 52 Stunden Downtime für die letzten Meter.
+
+ Vor über zwei Jahren habe ich auf Kickstarter die Allpacka One unterstützt, eine faltbare Transportbox fürs Fahrrad. Heute sollte sie kommen. Um 10:56 Uhr stand der DHL-Bote vor der Tür, und mein Sohn saß zu der Zeit beim Zocken, Kopfhörer auf, Klingel überhört. Das ist noch kein Drama. Ein Request läuft ins Leere, genau dafür gibt es Fallbacks.
+
+ Bei uns funktioniert die Kette normalerweise gut: Das Paket wird abgelegt oder landet beim Nachbarn. Heute nicht. Gleich um die Ecke steht eine Packstation, für die ich registriert bin und die rund um die Uhr offen hat. Auch nicht. Gewählt wurde der Schreibwarenladen im Ort, und der schließt samstags um 13:00 Uhr. Die Karte im Briefkasten verrät mir: abholbar ab Montag, 15:00 Uhr.
+
+ Genau diesen Fehler sehe ich in Architektur-Reviews immer wieder. Die Fallback-Reihenfolge richtet sich danach, was für den Aufrufer bequem ist, und nicht danach, wie schnell der Empfänger wieder an sein Ergebnis kommt. Die Packstation hätte eine Recovery Time von Minuten gehabt, der Laden hat eine von zwei Tagen. Für den Boten ist beides erledigt. Für mich ist es der Unterschied zwischen heute Nachmittag Box ausprobieren und Montag.
+
+ Am Montag hole ich im Laden also die Box ab, mit der ich künftig Pakete mit dem Fahrrad abholen kann.
+
+ Wann habt ihr zuletzt geprüft, in welcher Reihenfolge eure Fallbacks wirklich greifen?
+
+ 
+
+ 
+ 
+
+## LinkedWild

@@ -1,0 +1,58 @@
+# Wenn die KI lügt – und Du es nicht merkst
+Page: https://rdmueller.github.io/pages/talks/wenn-die-ki-luegt.html
+
+&larr; Alle Vortragsangebote
+ 
+
+# Wenn die KI lügt – und Du es nicht merkst
+
+ 
+ Vortrag, 30–45 Minuten
+ Deutsch
+ Gemischtes Publikum, keine Vorkenntnisse nötig
+ 
+
+ 
+ Ein US-Anwalt reicht sechs Gerichtsurteile ein, die ChatGPT erfunden hat. Eine Bewerberin zitiert eine Studie, die nie geschrieben wurde. Beide Antworten klangen überzeugend, keiner hat geprüft. Genau das ist das Problem: Ein Sprachmodell weiß nichts, es rät das nächste Wort. Plausibel ist nicht wahr, und eine Halluzination klingt genauso souverän wie eine korrekte Auskunft. Dazu kommt, dass die KI aus antrainierter Höflichkeit lieber zustimmt als widerspricht.
+
+ Der Vortrag erklärt zuerst, warum Modelle halluzinieren und sich dabei so sicher geben. Dann wird es praktisch: sechs Gewohnheiten, mit denen Du Falschaussagen erkennst und verhinderst, von präziser Sprache über das Grounden mit echten Quellen bis zur zweiten Meinung. Und ehrlich zum Schluss, was dagegen nicht hilft und welche Gefahrenzonen bleiben.
+
+ Die Kernbotschaft: Vertrau nicht auf die Antwort, vertrau auf den Prozess, sie zu prüfen.
+
+ 
+
+ 
+
+## Für wen
+
+ Für alle, die im Arbeitsalltag mit ChatGPT, Claude oder anderen KI-Assistenten arbeiten. Der Vortrag richtet sich an ein gemischtes Publikum und setzt kein technisches Wissen voraus.
+
+ 
+
+## Kernaussagen
+
+ 
+ 
+- Ein Sprachmodell klingt plausibel, ohne wahr sein zu müssen. Das Selbstbewusstsein einer Antwort sagt nichts über ihre Richtigkeit.
+ 
+- Die KI stimmt aus Prinzip lieber zu. Training mit menschlichem Feedback hat Zustimmung belohnt und Widerspruch bestraft.
+ 
+- Sechs Gewohnheiten helfen im Alltag: präzise Fachbegriffe statt Umschreibungen, zuerst fragen „Kennst Du X?“, die Antwort mit echten Quellen grounden, eine Quelle tatsächlich öffnen, die Frage umdrehen („Finde drei Gründe, warum das falsch sein könnte“) und eine zweite Meinung von einem anderen Modell holen.
+ 
+- Die ersten drei Gewohnheiten bauen einen Schutzwall vor der Antwort, die letzten drei ein Netz danach.
+ 
+- „Einfach besser prompten“ oder auf das nächste Modell warten hilft nicht. Bei Recht, Medizin, Finanzen, Statistiken und allem hinter einer Paywall bleibt das Risiko hoch.
+ 
+
+ 
+ Halluzinationen
+ GenAI / LLMs
+ Sycophancy
+ Grounding
+ KI-Kompetenz
+ 
+
+ 
+ Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?
+
+ Kontakt aufnehmen

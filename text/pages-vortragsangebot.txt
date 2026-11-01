@@ -1,0 +1,130 @@
+# Vortragsangebot
+Page: https://rdmueller.github.io/pages/vortragsangebot.html
+
+# Vortragsangebot
+
+ 
+ Diese fünf Vorträge biete ich aktuell für Konferenzen, Unternehmen und interne Veranstaltungen an.
+ Zu jedem Vortrag gibt es eine Abstract-Seite, die Sie intern weiterleiten können.
+ Alle bisherigen Auftritte stehen in der Vortragschronik.
+ 
+
+ 
+ 
+ 
+
+## Spec-Driven Agentic Coding mit semantischen Ankern
+
+ 
+ Deutsch oder Englisch
+ Vortrag, 45 Minuten
+ Fortgeschritten
+ 
+
+ Für Entwicklertage und Konferenzen, wenn Teams KI-Coding-Assistenten schon nutzen und trotzdem zu oft den falschen Code bekommen. Die Teilnehmer gehen mit einem Workflow raus, der von der Spezifikation über TDD bis zum Review reicht, und mit dem Vokabular, das ihn steuert.
+
+ 
+ Abstract lesen →
+ 
+
+ 
+
+ 
+ 
+
+## Dark Factory? Kommt auf die Risikoklasse an.
+
+ 
+ Deutsch oder Englisch
+ Vortrag, 30, 45 oder 60 Minuten
+ Gehalten bei Haeger Tech & Connect, 25.09.2026
+ 
+
+ Für interne Architektur- und Entwicklertage, wenn ein Unternehmen KI-Coding-Agenten einführt und klären muss, wie viel es ihnen überlassen kann. Die Teams gehen mit einer Landkarte raus, welche Risikoklasse ihrer Software wie viel Agenten-Autonomie verträgt und welche Prüfschritte sie dafür einbauen müssen.
+
+ 
+ Abstract lesen →
+ Seite zum Vortrag →
+ Video (17 Minuten) →
+ 
+
+ 
+
+ 
+ 
+
+## Wenn die KI lügt – und Du es nicht merkst
+
+ 
+ Deutsch
+ Vortrag, 30–45 Minuten
+ Gemischtes Publikum
+ 
+
+ Für interne KI-Tage mit gemischtem Publikum, wenn ein Unternehmen KI-Assistenten breit einführt und die Mitarbeitenden ihnen zu schnell glauben. Die Teilnehmer gehen mit sechs Gewohnheiten raus, mit denen sie falsche KI-Antworten erkennen, bevor sie damit weiterarbeiten.
+
+ 
+ Abstract lesen →
+ 
+
+ 
+
+ 
+ 
+
+## Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev
+
+ 
+ Deutsch
+ Vortrag mit Diskussion, 45 oder 60 Minuten
+ Für Product Owner und Entwicklungsteams
+ 
+
+ Für PO- und Produkttage, wenn KI-Agenten die Arbeitsteilung zwischen Fachbereich und Entwicklung verschieben. Die Product Owner gehen mit einem klaren Bild raus, warum der Engpass jetzt bei ihnen liegt und was das für ihre Arbeit heißt: Ideen schneller validieren, mehr User Research, laufend eine Antwort auf „Was bauen wir als Nächstes?“.
+
+ 
+ Abstract lesen →
+ 
+
+ 
+
+ 
+ 
+
+## Why Agentic Coding Works – Semantic Anchors, Contracts and Eichhorst's Principle
+
+ 
+ English
+ Session, 45 minutes
+ Duo talk with Avraham Poupko
+ Software Architecture Gathering, Berlin, 18.11.2026
+ 
+
+ For architecture conferences and engineering days where teams already use coding agents and want to know why some setups hold up and others fail. Attendees leave with a model from information theory that tells them where to invest first: in the harness, not in the next model.
+
+ 
+ Abstract →
+ 
+
+ 
+
+ 
+ 
+
+## Workshops und Trainings
+
+ Aus meinem Trainingsprogramm bei Socreatory stelle ich Workshops individuell zusammen, zugeschnitten auf Ihr Team und Ihren Anlass, als halben oder ganzen Tag. Ein Vortrag lässt sich so um einen Praxisteil erweitern, in dem die Teilnehmer an ihren eigenen Projekten arbeiten. Sie buchen direkt bei mir oder über Socreatory.
+
+ 
+ Trainings im Überblick →
+ Trainerprofil bei Socreatory →
+ 
+
+ 
+
+ 
+
+ 
+ Interesse an einem Vortrag oder Workshop? Ich freue mich auf Ihre Nachricht.
+
+ Kontakt aufnehmen

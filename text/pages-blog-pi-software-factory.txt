@@ -1,0 +1,42 @@
+# My software factory runs on a Raspberry Pi
+Page: https://rdmueller.github.io/pages/blog/pi-software-factory.html
+
+EN
+ 15. Oktober 2026
+ 
+
+ 
+
+# My software factory runs on a Raspberry Pi
+
+ 
+
+ 
+ 
+ 
+
+ 
+ My side projects now run through a small software factory on a Raspberry Pi. Matt Pocock recently wrote that GitHub Actions are an easy way to start with software factories, before you build one on your own infra. I went straight to the second part, and it turns out a Pi is enough.
+
+ The ticket system is Forgejo, a self-hosted Git forge, running on a Pi 5 in my home network.
+
+ I write an issue. A small watcher service checks the issues every 30 seconds and wakes a Claude Code session that acts as the orchestrator.
+
+ It reads the issue (and rewrites it in much better style), starts worker sessions for the actual work, and they come back with a branch and a pull request.
+
+ Then the issue gets assigned to whoever has the next move. Usually that's me, with one sentence on what I should look at. I merge, and a Forgejo Action builds the docs.
+
+ The guardrails are boring on purpose. The agents run as their own Linux user without sudo or Docker. They can push branches, but only I can merge to main, and they only see the repos I hand over one by one.
+
+ A status page shows what the orchestrator is doing and which sessions are waiting for me.
+
+ What surprised me: I don't open a terminal for these projects anymore. I talk to the factory through issues, from whatever device is closest.
+
+ If you want to try this, start with Matt's version. Moving it onto a Pi took me one day of pairing with Claude, and Claude did the heavy lifting.
+
+ 
+
+ 
+ 
+
+## LinkedWild

@@ -1,0 +1,60 @@
+# Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev
+Page: https://rdmueller.github.io/pages/talks/product-engineering.html
+
+&larr; Alle Vortragsangebote
+ 
+
+# Vom Coding zum Product Engineering: Die neue Arbeitsteilung zwischen PO und Dev
+
+ 
+ Vortrag mit Diskussion, 45 oder 60 Minuten
+ Deutsch
+ Für Product Owner und Entwicklungsteams
+ 
+
+ 
+ Claude Code, Cursor und GitHub Copilot verändern die Entwicklung. Entwickler implementieren nicht mehr jede Zeile selbst, sie dirigieren KI-Agenten. Was früher Wochen dauerte, ist oft in Stunden fertig. Manche Entwickler ziehen daraus einen naheliegenden Schluss: Wozu brauche ich noch einen Product Owner?
+
+ Ich habe das ausprobiert. Mein Werkzeug dacli ist komplett mit KI gebaut und funktioniert gut. Der Haken: Ich war selbst der Nutzer, kannte jeden Pain Point und wusste, was ich brauchte. Das ist die Ausnahme. Bei einer Flugbuchung sieht der Entwickler eine Datenbankabfrage. Der Product Owner kennt Crew-Ruhezeiten, Slot-Vergabe, Überbuchungsstrategien und Umsteigezeiten. Je komplexer die Domäne, desto wichtiger wird der PO.
+
+ Statt den PO zu ersetzen, entsteht eine neue Rolle: der Product Engineer. Er übersetzt die Produktvision in Spezifikation und Architektur, lässt KI-Agenten danach bauen und spielt Feedback an den PO zurück. Damit wandert der Engpass. Früher lautete die Frage „Können wir das bauen?“. Jetzt lautet sie „Was bauen wir als Nächstes?“, und zwar im Tempo der Agenten. Der Product Owner wird zum neuen Engpass.
+
+ Der Vortrag zeigt, wie dieser Prozess vom Requirement bis zur Qualitätssicherung aussieht und was er von Product Ownern verlangt. Am Ende steht die gemeinsame Frage: Wie bereiten wir uns darauf vor?
+
+ 
+
+ 
+
+## Für wen
+
+ Für Product Owner und Produktverantwortliche, deren Entwicklungsteams mit KI-Agenten arbeiten, und für die Entwicklerinnen und Entwickler, die mit ihnen zusammenarbeiten.
+
+ 
+
+## Kernaussagen
+
+ 
+ 
+- KI-Agenten machen Entwickler nicht zu Produktexperten. Kundennähe, Fachwissen und User Research bleiben beim Product Owner.
+ 
+- Es entsteht eine neue Rolle: der Product Engineer, Partner des PO und kein Ersatz.
+ 
+- Der Engpass verschiebt sich von der Entwicklung zum Produkt. Ein Team, das schneller baut, braucht mehr validierte Ideen.
+ 
+- Für Product Owner heißt das: Ideen schneller validieren, mehr User Research und laufend eine Antwort auf „Was als Nächstes?“.
+ 
+- Die Chance: schnellere Experimente, mehr Iterationen und mehr Zeit für die Frage „Sollen wir?“ statt „Können wir?“.
+ 
+
+ 
+ Product Ownership
+ Product Engineering
+ GenAI / LLMs
+ Agentic Coding
+ Zusammenarbeit
+ 
+
+ 
+ Sie möchten diesen Vortrag für Ihre Konferenz oder Ihr Unternehmen buchen?
+
+ Kontakt aufnehmen

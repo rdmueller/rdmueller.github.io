@@ -1,0 +1,40 @@
+# My repo needs five more stars
+Page: https://rdmueller.github.io/pages/blog/five-more-stars.html
+
+EN
+ 20. Oktober 2026
+ 
+
+ 
+
+# My repo needs five more stars
+
+ 
+
+ 
+ 
+ 
+
+ 
+ My repo needs five more GitHub stars. It collects what Matt Pocock calls "leading words": terms like "tracer bullet" that make a coding agent write better code the moment you put them into a prompt.
+
+ Lynn Cole described the same effect as "prompting with pre-computed priors": the model learned what the term means during training, so one name activates all of it.
+
+ I call them Semantic Anchors, and the repo holds more than 230 of them, from "arc42" and "TDD, London School" to "Cockburn's Fully Dressed use case" and "Pugh Matrix". Each anchor comes with a description of what it activates, so you can pick the right one instead of hoping the model guesses what you meant by "write good docs".
+
+ Why five? The repo sits at 495 stars this morning. At 500 it qualifies for Chip Huyen's Good AI List, her curated index of open source AI repositories. The threshold isn't vanity on her side: her FAQ explains that GitHub's API rate limits force a cut-off, and 500 stars is where she draws it. So five clicks put the anchors into a list that a lot of people use to find AI tooling.
+
+ I know begging for stars is a little undignified. Han Solo made the Kessel Run in less than twelve parsecs. We only need five stars, which sounds a lot easier until you're the one asking.
+
+ If you already starred it, thank you, you are part of the 495. If you know someone who writes prompts for a living, forward this to them. That counts double in my book, even if GitHub disagrees.
+
+ ⭐ github.com/LLM-Coding/Semantic-Anchors
+
+ I'll post an update when we cross the line.
+
+ 
+
+ 
+ 
+
+## LinkedWild
