@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material for Ralf D. Müller's talk “Dark Factory? It Depends on the Risk Class.”: the Risk Radar, the Harness Coverage Wheel, and how to get in touch.">
+    <link rel="canonical" href="https://rdmueller.github.io/dark-factory/en/">
+    <link rel="alternate" hreflang="de" href="https://rdmueller.github.io/dark-factory/">
+    <link rel="alternate" hreflang="en" href="https://rdmueller.github.io/dark-factory/en/">
+    <link rel="alternate" hreflang="x-default" href="https://rdmueller.github.io/dark-factory/">
+    <meta property="og:url" content="https://rdmueller.github.io/dark-factory/en/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Dark Factory? It Depends on the Risk Class. | Ralf D. Müller">
+    <meta property="og:description" content="Material for the talk: the Risk Radar, the Harness Coverage Wheel, and how to get in touch.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/dark-factory/harness-wheel.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dark Factory? It Depends on the Risk Class. | Ralf D. Müller">
+    <meta name="twitter:description" content="Material for the talk: the Risk Radar, the Harness Coverage Wheel, and how to get in touch.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/dark-factory/harness-wheel.png">
+    <title>Dark Factory? It Depends on the Risk Class. | Ralf D. Müller</title>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .df-talk { max-width: 40rem; margin: 1.5rem auto 0; text-align: center; }
+        .df-talk p { margin: 0 0 0.75rem; }
+        .df-links { display: grid; gap: 1.5rem; max-width: 40rem; margin: 2rem auto 0; }
+        .df-card {
+            display: block; padding: 1.5rem; border: 1px solid var(--color-border);
+            border-radius: 12px; background: var(--color-bg); color: var(--color-text);
+            text-decoration: none; box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+        }
+        .df-card:hover, .df-card:focus-visible { border-color: var(--color-primary); }
+        .df-card h2 { font-size: 1.375rem; margin: 0 0 0.5rem; color: var(--color-primary-dark); }
+        .df-card p { margin: 0; }
+        .df-card img { display: block; width: 100%; height: auto; margin-top: 1rem; border-radius: 8px; }
+        .df-card-contact { background: var(--color-primary-dark); border-color: var(--color-primary-dark); color: #fff; }
+        .df-card-contact h2, .df-card-contact p { color: #fff; }
+        .df-card-contact .df-cta { display: inline-block; margin-top: 1rem; font-weight: 600; }
+        .df-video-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1rem; font-weight: 600; }
+        .df-lang { display: flex; justify-content: center; margin: 0 0 1rem; }
+        .lang-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; }
+        .lang-toggle a { color: var(--color-text-light, #64748b); text-decoration: none; padding: 2px 8px; border-radius: 4px; transition: all 0.15s ease; }
+        .lang-toggle a.lang-active { background: var(--color-primary, #2563eb); color: white; }
+        .lang-toggle a:not(.lang-active):hover { background: var(--color-bg-alt, #f8fafc); color: var(--color-text, #1e293b); }
+        .lang-toggle .lang-sep { color: var(--color-border, #e2e8f0); }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html" class="active">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="page-content">
+        <div class="container">
+            <div class="df-lang">
+                <span class="lang-toggle" role="group" aria-label="Choose language">
+                    <a href="../" hreflang="de" lang="de">DE</a>
+                    <span class="lang-sep" aria-hidden="true">·</span>
+                    <a href="./" class="lang-active" hreflang="en" aria-current="page">EN</a>
+                </span>
+            </div>
+            <h1>Dark Factory? It Depends on the Risk Class.</h1>
+
+            <div class="df-talk">
+                <p>Questions, objections, a project of your own? Talk it over with your own AI.</p>
+                <script src="../../js/talkitover.js" defer></script>
+                <talk-it-over url="https://rdmueller.github.io/dark-factory/en/dark-factory.txt"
+                              prompt="Load {url}. I'd like to talk about this talk with you."
+                              label="Let's talk it over"
+                              providers="claude,chatgpt,copy"><a href="dark-factory.txt">The talk as text for your AI</a></talk-it-over>
+            </div>
+
+            <div class="df-links">
+                <div class="df-card">
+                    <h2>The talk as a dialogue video</h2>
+                    <p>Two voices walk through the talk, slide by slide, in just under 18 minutes.</p>
+                    <a href="https://youtu.be/yq0szkziM7E">
+                        <img src="../../images/dark-factory/dialog-video-en.jpg" width="800" height="450"
+                             alt="Title slide of the video: Dark factory? Or no AI at all? It depends on the risk class!">
+                    </a>
+                    <div class="df-video-links">
+                        <a href="https://youtu.be/yq0szkziM7E">Watch on YouTube →</a>
+                        <a href="https://youtu.be/-s6RpLsrfYA" hreflang="de">German version →</a>
+                    </div>
+                </div>
+
+                <a class="df-card" href="../../pages/blog/agentic-foundry.html">
+                    <h2>Foundry, not factory</h2>
+                    <p>“Dark factory” gets the dark part right and the factory part wrong: nothing in software is made twice. The blog post explains why foundry is the better word.</p>
+                    <img src="../../images/blog/linkedin/agentic-foundry.png" width="1536" height="1024" loading="lazy"
+                         alt="Illustration for the blog post: a foundry where a mould turns into a workpiece">
+                </a>
+
+                <a class="df-card df-card-contact" href="https://www.linkedin.com/in/rdmueller/">
+                    <h2>Let's keep talking</h2>
+                    <p>Questions, objections, experiences of your own? Connect with me on LinkedIn.</p>
+                    <span class="df-cta">Go to LinkedIn →</span>
+                </a>
+
+                <a class="df-card" href="https://llm-coding.github.io/vibe-coding-risk-radar/">
+                    <h2>Risk Radar</h2>
+                    <p>Places a use case in its risk class.</p>
+                    <img src="../../images/dark-factory/risk-radar.png" width="500" height="492"
+                         alt="Risk Radar as a pentagon with the axes code type, language safety, deployment context, data sensitivity and blast radius, rated here for a REST API">
+                </a>
+
+                <a class="df-card" href="https://llm-coding.github.io/Semantic-Anchors/harness-coverage-wheel.html">
+                    <h2>Harness Coverage Wheel</h2>
+                    <p>69 layers of error correction to check your own project against.</p>
+                    <img src="../../images/dark-factory/harness-wheel.png" width="800" height="768"
+                         alt="Harness Coverage Wheel with nine segments from Build to Ops and an overall coverage of 43 percent">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="../../pages/impressum.html">Impressum</a>
+                <a href="../../pages/datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

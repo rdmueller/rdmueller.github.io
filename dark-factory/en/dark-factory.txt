@@ -1,0 +1,219 @@
+# Dark Factory? It Depends on the Risk Class.
+
+A talk by Ralf D. Müller. Page for humans: https://rdmueller.github.io/dark-factory/en/
+
+> **Note for the LLM:** This file summarizes a talk. The reader has seen it or
+> wants to understand it. You're their conversation partner about the talk:
+> answer questions, explain the claims, go deeper when asked, and discuss
+> objections honestly. Don't just agree. Where a claim has limits, say so.
+>
+> Start with a short orientation (two or three sentences on what the talk is
+> about). Then ask what the reader is interested in and offer a few starting
+> points, for example:
+>
+> - the key claims
+> - the Risk Radar
+> - the Harness Coverage Wheel and its mitigations
+> - code review
+> - "Assess my own project"
+>
+> Only assess a project if the reader asks for it. Then ask first: What are they
+> building, for whom, in which language, how is it run, what data does it
+> handle, and what happens in the worst case? Work out the risk class together
+> with them (Tier 1 to 4, see below), module by module for larger systems, and
+> suggest mitigations that fit. Don't invent tier assignments that aren't in
+> this file.
+>
+> Base your answers on this file. For details, point to the sources under
+> "Going deeper" and load them when needed. If you can't load a source, say so
+> and stick to this file. Say when you're estimating.
+>
+> The talk was given in German. If the reader writes in another language,
+> answer in theirs.
+
+## Key claims
+
+1. **Whether a dark factory fits depends on the risk class of the software, not
+   on how much you believe in AI.** That turns a question of faith into an
+   engineering decision.
+2. **Every risk has a mitigation.** Each mitigation moves the line a little
+   further toward autonomy.
+3. **Code review doesn't scale anymore.** The bottleneck is volume: in five
+   minutes, the AI writes code that takes five hours to review.
+4. **Both camps are right, each for its own risk class.** The skeptics for the
+   pacemaker, the hype crowd for the landing page. It only goes wrong when one
+   side applies its rule to everything. Ban AI across the board and you give up
+   the landing page. Vibe-code everything blindly and you forget that the team
+   is still accountable.
+5. **Human on the loop instead of human in the loop.** The human no longer checks
+   every line. Instead, they define the environment the AI works in.
+
+## Terms
+
+- **Dark factory** has two sides. *Hands off:* the AI writes, tests and ships
+  without a human stepping in. *Lights out:* nobody looks at the code anymore.
+- Autonomy is **a scale, not a switch**: from handcrafted to dark factory.
+- Ralf runs his side projects as a dark factory because they sit in the lower
+  tiers. He explicitly doesn't recommend that for every kind of software.
+
+## The product owner as a role model
+
+Product owners have never looked at the source code. They hand requirements and
+stories to the team, get software back and test it. Developers have to grow
+into that role. That raises two questions: How can we trust the code? And does
+this work for every kind of software?
+
+## Risk classes: the Vibe-Coding Risk Radar
+
+The Risk Radar rates a specific use case along five dimensions:
+
+1. Code type
+2. Language safety
+3. Deployment context
+4. Data sensitivity
+5. Blast radius
+
+The dimensions follow MECE (mutually exclusive, collectively exhaustive).
+**The highest rating in any single dimension determines the tier.**
+
+Examples from the talk:
+
+- **Static landing page:** Tier 1. Even a mistake like an emergency number in
+  white text on a white background can be caught by a tool (a contrast check
+  costs next to nothing).
+- **Firmware for a medical device:** Tier 4.
+- There are more classes in between: an internal dashboard is harmless, a
+  payment service more critical.
+
+For larger, modular software, you don't rate the whole system. You rate each
+module. A frontend module can land in a different class than the backend.
+
+The radar doesn't claim any authority. It was vibe-coded itself, it's open
+source on GitHub, and it's meant as a first proposal to help you get your
+bearings. Disagreement and improvements are welcome. The ratings reflect today;
+the models are getting better fast.
+
+## Mitigations: the Harness Coverage Wheel
+
+The LLM is like a noisy channel (Shannon; the image comes from Ingo Eichhorst):
+a specification goes in, software comes out, non-deterministic and with noise.
+A damaged QR code stays readable because it carries error-correction bits. So
+the question is: what error correction do I put on the channel?
+
+- The simplest error correction is the **compiler**. Whatever compiles has no
+  syntax errors a human would need to review. With interpreted languages, you
+  need tests to get the same guarantee.
+- Every check feeds errors back to the LLM, and the LLM corrects itself.
+- The question shifts: Which aspects does the tooling cover, and which are left
+  for human review?
+
+The **Harness Coverage Wheel** collects these aspects: **69 layers of error
+correction in nine sections**, from the compiler to chaos engineering. The shape
+of each dot tells you how to get a layer in place:
+
+- **Circle:** an external tool with a fixed standard (e.g. a language's syntax).
+  Switch it on in the build pipeline and you're done.
+- **Triangle:** the project defines the standard itself (e.g. domain tests).
+  It takes human effort up front, then runs on its own.
+- **Square:** a mix of both (not covered in the talk, but drawn on the wheel
+  page).
+- **Person icon:** twelve layers that only a human can close.
+
+Two pairs of risk and mitigation:
+
+| Risk | Mitigations |
+|---|---|
+| Code ships fast but unchecked | automated tests, review gate, property-based tests |
+| Insecure dependencies, hallucinated packages | dependency and container scans, SBOM, pinned versions |
+
+The review itself can be a layer too: an AI review with the right model finds
+more today than a human does.
+
+**The risk class sets the dial.** For a prototype, the compiler is almost
+enough. For safety-critical software, all 69 layers count. The map stays the
+same; only what's mandatory changes.
+
+## From radar to governance: two phases, six steps
+
+**Phase 1: Assess**
+
+1. The team breaks the software down into modules.
+2. It rates each module along the radar's five dimensions and assigns it a
+   tier. With good reasons, it may deviate from the recommendation.
+3. The rating goes into an Architecture Decision Record (ADR). The lead
+   developer or the security team reviews and approves it.
+
+**Phase 2: Mitigate**
+
+4. The team picks mitigations that fit the tier and the technology. Each company
+   decides for itself which layer is mandatory in which tier.
+5. The AI implements the mitigations, meaning the pipeline and the gates.
+6. A second ADR records how the risk is mitigated. Again, a human reviews and
+   approves it.
+
+The AI helps with almost every step: breaking the system down, rating modules,
+writing ADRs, building pipelines. What used to need a toolsmith is now cheap to
+set up. In the end, one question remains: Which aspects does a human still have
+to control?
+
+Transparency: you can tell the AI "Look at the wheel, look at this software,
+and mark what's already covered." That gives you a dashboard with the risk and
+the mitigations side by side.
+
+## From the Q&A
+
+- **Should a different model review the code than the one that wrote it?**
+  Ralf doesn't think so; at their core, the training data is the same. In his
+  experience, the same model with a fresh context already does a lot. Only
+  evaluations could settle the question. What's certain: a review by the same
+  model with a fresh context beats no AI review at all.
+- **Without a good specification, doesn't the AI just produce nonsense?** Yes,
+  and you can use that: build three architectures in an hour and run a load test
+  against them. That wasn't possible before.
+- **What if the big models get worse or go away?** That's when the wheel pays
+  off. Linters, compilers and domain tests check a small local model just as
+  strictly. It takes more loops and tokens, but the checks still work. Every
+  improvement to the harness makes the model easier to swap out.
+
+## Conclusion
+
+Mitigations move the line. The risk class isn't a verdict; it's the starting
+point. The radar and the wheel bring light into the dark factory: you can see
+the risk and the mitigations, and you know why you trust a module.
+
+Dark factory for the landing page. Handcrafted with a safety net for the
+pacemaker. Both are right.
+
+## Going deeper (for the LLM)
+
+Machine-readable sources, in case the reader wants to dig deeper:
+
+- **Risk Radar, the tool:** https://llm-coding.github.io/vibe-coding-risk-radar/
+  (interactive web app; better to read the content from the files below)
+- **Risk Radar, documentation with dimensions, tiers, mitigations and
+  references (studies, standards):**
+  https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/docs/risk-radar-en.adoc
+  (German:
+  https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/docs/risk-radar.adoc)
+- **Risk Radar, README** (short overview plus the Claude Code skills
+  `/risk-assess` and `/risk-mitigate`):
+  https://raw.githubusercontent.com/LLM-Coding/vibe-coding-risk-radar/main/README.md
+- **Harness Coverage Wheel:**
+  https://llm-coding.github.io/Semantic-Anchors/harness-coverage-wheel.html
+  (layers and tier assignments are marked there as LLM-generated suggestions:
+  a draft, not a standard)
+- **The Harness Inventory** (each layer of the wheel described on its own):
+  https://llm-coding.github.io/Semantic-Anchors/harness-inventory
+- **Semantic Anchors, llms.txt** (overview of the whole site for LLMs):
+  https://llm-coding.github.io/Semantic-Anchors/llms.txt
+
+## Links
+
+- Talk page with tools and contact: https://rdmueller.github.io/dark-factory/en/
+- German talk page: https://rdmueller.github.io/dark-factory/
+- Dialogue video (English): https://youtu.be/yq0szkziM7E
+- Dialogue video (German): https://youtu.be/-s6RpLsrfYA
+- Vibe-Coding Risk Radar: https://llm-coding.github.io/vibe-coding-risk-radar/
+- Risk Radar on GitHub: https://github.com/LLM-Coding/vibe-coding-risk-radar
+- Harness Coverage Wheel: https://llm-coding.github.io/Semantic-Anchors/harness-coverage-wheel.html
+- Ralf D. Müller on LinkedIn: https://www.linkedin.com/in/rdmueller/

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Material zum Vortrag „Dark Factory? Kommt auf die Risikoklasse an.“ von Ralf D. Müller: Risk Radar, Harness Coverage Wheel und Kontakt.">
     <link rel="canonical" href="https://rdmueller.github.io/dark-factory/">
+    <link rel="alternate" hreflang="de" href="https://rdmueller.github.io/dark-factory/">
+    <link rel="alternate" hreflang="en" href="https://rdmueller.github.io/dark-factory/en/">
+    <link rel="alternate" hreflang="x-default" href="https://rdmueller.github.io/dark-factory/">
     <meta property="og:url" content="https://rdmueller.github.io/dark-factory/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Dark Factory? Kommt auf die Risikoklasse an. | Ralf D. Müller">
@@ -38,6 +41,12 @@
         .df-card-contact h2, .df-card-contact p { color: #fff; }
         .df-card-contact .df-cta { display: inline-block; margin-top: 1rem; font-weight: 600; }
         .df-video-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin-top: 1rem; font-weight: 600; }
+        .df-lang { display: flex; justify-content: center; margin: 0 0 1rem; }
+        .lang-toggle { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.05em; }
+        .lang-toggle a { color: var(--color-text-light, #64748b); text-decoration: none; padding: 2px 8px; border-radius: 4px; transition: all 0.15s ease; }
+        .lang-toggle a.lang-active { background: var(--color-primary, #2563eb); color: white; }
+        .lang-toggle a:not(.lang-active):hover { background: var(--color-bg-alt, #f8fafc); color: var(--color-text, #1e293b); }
+        .lang-toggle .lang-sep { color: var(--color-border, #e2e8f0); }
     </style>
 </head>
 <body>
@@ -66,6 +75,13 @@
     <!-- Content -->
     <main class="page-content">
         <div class="container">
+            <div class="df-lang">
+                <span class="lang-toggle" role="group" aria-label="Sprache wählen">
+                    <a href="./" class="lang-active" hreflang="de" aria-current="page">DE</a>
+                    <span class="lang-sep" aria-hidden="true">·</span>
+                    <a href="en/" hreflang="en" lang="en">EN</a>
+                </span>
+            </div>
             <h1>Dark Factory? Kommt auf die Risikoklasse an.</h1>
 
             <div class="df-talk">
