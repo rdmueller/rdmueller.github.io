@@ -32,7 +32,7 @@ EN
  
 - 🇩🇪 Deutsch: https://youtu.be/-s6RpLsrfYA
  
-- 💬 Talk it over: https://rdmueller.github.io/dark-factory/
+- 💬 Talk it over: https://rdmueller.github.io/dark-factory/en/
  
 
  Thanks to ultrathink.club for inspiration and sparring: Uwe Franke, Stephan 🦄 Schmidt, Ingo Eichhorst
