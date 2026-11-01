@@ -28,8 +28,7 @@ A talk by Ralf D. Müller. Page for humans: https://rdmueller.github.io/dark-fac
 > "Going deeper" and load them when needed. If you can't load a source, say so
 > and stick to this file. Say when you're estimating.
 >
-> The talk was given in German. If the reader writes in another language,
-> answer in theirs.
+> If the reader writes in another language, answer in theirs.
 
 ## Key claims
 
@@ -40,11 +39,11 @@ A talk by Ralf D. Müller. Page for humans: https://rdmueller.github.io/dark-fac
    further toward autonomy.
 3. **Code review doesn't scale anymore.** The bottleneck is volume: in five
    minutes, the AI writes code that takes five hours to review.
-4. **Both camps are right, each for its own risk class.** The skeptics for the
-   pacemaker, the hype crowd for the landing page. It only goes wrong when one
-   side applies its rule to everything. Ban AI across the board and you give up
-   the landing page. Vibe-code everything blindly and you forget that the team
-   is still accountable.
+4. **Both camps are right, each for its own risk class.** The skeptics are right
+   about the pacemaker, the hype crowd about the landing page. It only goes wrong
+   when one side applies its rule to everything. Ban AI across the board and you
+   give up the landing page. Vibe-code everything blindly and you forget that the
+   team is still accountable.
 5. **Human on the loop instead of human in the loop.** The human no longer checks
    every line. Instead, they define the environment the AI works in.
 
@@ -58,7 +57,7 @@ A talk by Ralf D. Müller. Page for humans: https://rdmueller.github.io/dark-fac
 
 ## The product owner as a role model
 
-Product owners have never looked at the source code. They hand requirements and
+Product owners never look at the source code. They hand requirements and
 stories to the team, get software back and test it. Developers have to grow
 into that role. That raises two questions: How can we trust the code? And does
 this work for every kind of software?
@@ -88,17 +87,17 @@ Examples from the talk:
 For larger, modular software, you don't rate the whole system. You rate each
 module. A frontend module can land in a different class than the backend.
 
-The radar doesn't claim any authority. It was vibe-coded itself, it's open
+The radar makes no claim to authority. It was vibe-coded itself, it's open
 source on GitHub, and it's meant as a first proposal to help you get your
 bearings. Disagreement and improvements are welcome. The ratings reflect today;
 the models are getting better fast.
 
 ## Mitigations: the Harness Coverage Wheel
 
-The LLM is like a noisy channel (Shannon; the image comes from Ingo Eichhorst):
-a specification goes in, software comes out, non-deterministic and with noise.
+The LLM is like a noisy channel (Shannon; the analogy is Ingo Eichhorst's):
+a specification goes in, software comes out, non-deterministic and noisy.
 A damaged QR code stays readable because it carries error-correction bits. So
-the question is: what error correction do I put on the channel?
+the question is: what error correction do I add to the channel?
 
 - The simplest error correction is the **compiler**. Whatever compiles has no
   syntax errors a human would need to review. With interpreted languages, you
@@ -117,9 +116,9 @@ of each dot tells you how to get a layer in place:
   It takes human effort up front, then runs on its own.
 - **Square:** a mix of both (not covered in the talk, but drawn on the wheel
   page).
-- **Person icon:** twelve layers that only a human can close.
+- **Person icon:** twelve layers that only a human can cover.
 
-Two pairs of risk and mitigation:
+Two examples of risks and their mitigations:
 
 | Risk | Mitigations |
 |---|---|
@@ -139,7 +138,7 @@ same; only what's mandatory changes.
 
 1. The team breaks the software down into modules.
 2. It rates each module along the radar's five dimensions and assigns it a
-   tier. With good reasons, it may deviate from the recommendation.
+   tier. It may deviate from the recommendation if it has good reasons.
 3. The rating goes into an Architecture Decision Record (ADR). The lead
    developer or the security team reviews and approves it.
 
@@ -147,16 +146,16 @@ same; only what's mandatory changes.
 
 4. The team picks mitigations that fit the tier and the technology. Each company
    decides for itself which layer is mandatory in which tier.
-5. The AI implements the mitigations, meaning the pipeline and the gates.
+5. The AI implements the mitigations, that is, the pipeline and the gates.
 6. A second ADR records how the risk is mitigated. Again, a human reviews and
    approves it.
 
 The AI helps with almost every step: breaking the system down, rating modules,
 writing ADRs, building pipelines. What used to need a toolsmith is now cheap to
 set up. In the end, one question remains: Which aspects does a human still have
-to control?
+to check personally?
 
-Transparency: you can tell the AI "Look at the wheel, look at this software,
+For transparency, you can tell the AI "Look at the wheel, look at this software,
 and mark what's already covered." That gives you a dashboard with the risk and
 the mitigations side by side.
 
@@ -164,7 +163,7 @@ the mitigations side by side.
 
 - **Should a different model review the code than the one that wrote it?**
   Ralf doesn't think so; at their core, the training data is the same. In his
-  experience, the same model with a fresh context already does a lot. Only
+  experience, the same model with a fresh context already gets you a long way. Only
   evaluations could settle the question. What's certain: a review by the same
   model with a fresh context beats no AI review at all.
 - **Without a good specification, doesn't the AI just produce nonsense?** Yes,
@@ -178,10 +177,10 @@ the mitigations side by side.
 ## Conclusion
 
 Mitigations move the line. The risk class isn't a verdict; it's the starting
-point. The radar and the wheel bring light into the dark factory: you can see
-the risk and the mitigations, and you know why you trust a module.
+point. The radar and the wheel shine a light into the dark factory: you can
+see the risk and the mitigations, and you know why you trust a module.
 
-Dark factory for the landing page. Handcrafted with a safety net for the
+Dark factory for the landing page. Handcrafted, with a safety net, for the
 pacemaker. Both are right.
 
 ## Going deeper (for the LLM)

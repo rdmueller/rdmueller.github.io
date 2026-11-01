@@ -1172,7 +1172,7 @@ DE
 
 ## Risk Radar
 
- Places a use case in its risk class.
+ Works out which risk class a use case falls into.
 
  
  
