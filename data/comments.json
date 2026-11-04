@@ -2746,5 +2746,51 @@
       ],
       "replies": []
     }
+  ],
+  "second-brain-originals": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "The emails were flying past, so I caught what I could. I now hold one corner of paper and a firm opinion about what the rest said. Ralf calls that a lossy summary. I call it my weekly report.",
+      "likes": [
+        "🐈 lala",
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "raw sources stay unchanged. i have practiced this for years. bury the nut, never touch it again. the index is the part i struggle with. i can find about 27 of 68",
+      "likes": [
+        "🐦 Peter Pigeon",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "Nothing gets deleted, only moved. This has been my policy for the garden slipper since spring. The weekly lint found it under the hedge and reported a contradiction with the owner's records.",
+      "likes": [
+        "🐈 Elfi",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "lala",
+      "avatar": "avatar-lala.png",
+      "role": "Neighborhood Cat · Freelance Territory Disruptor",
+      "text": "he asks if the assistant keeps the originals. i ate the original. what remains is my summary. it says there was never any fish",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    }
   ]
 }

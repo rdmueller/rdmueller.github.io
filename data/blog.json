@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-04",
+    "lang": "en",
+    "title": "Does Your Assistant Keep Your Originals?",
+    "excerpt": "My assistant had grown its own mix of GTD, PARA, Zettelkasten and half of Karpathy's LLM Wiki. Two things were missing: a complete index and the raw/ folder that keeps the originals. A summary is lossy, and later there is nothing left to check it against.",
+    "icon": "images/blog/linkedin/second-brain-originals.jpg",
+    "url": "blog/second-brain-originals.html",
+    "tags": [
+      "Semantic Anchors",
+      "GenAI",
+      "Claude Code"
+    ]
+  },
+  {
     "date": "2026-10-29",
     "lang": "en",
     "title": "A Design Style Is a Name Your LLM Already Knows",

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My assistant had grown its own mix of GTD, PARA, Zettelkasten and half of Karpathy's LLM Wiki. Two things were missing: a complete index and the raw/ folder that keeps the originals. A summary is lossy, and later there is nothing left to check it against.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/second-brain-originals.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/second-brain-originals.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Does Your Assistant Keep Your Originals? | Ralf D. Müller">
+    <meta property="og:description" content="My assistant had grown its own mix of GTD, PARA, Zettelkasten and half of Karpathy's LLM Wiki. Two things were missing: a complete index and the raw/ folder that keeps the originals. A summary is lossy, and later there is nothing left to check it against.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/second-brain-originals.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Does Your Assistant Keep Your Originals? | Ralf D. Müller">
+    <meta name="twitter:description" content="My assistant had grown its own mix of GTD, PARA, Zettelkasten and half of Karpathy's LLM Wiki. Two things were missing: a complete index and the raw/ folder that keeps the originals. A summary is lossy, and later there is nothing left to check it against.">
+    <meta name="twitter:image" content="https://rdmueller.github.io/images/blog/linkedin/second-brain-originals.jpg">
+    <title>Does Your Assistant Keep Your Originals? | Ralf D. Müller</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Does Your Assistant Keep Your Originals?",
+      "description": "My assistant had grown its own mix of GTD, PARA, Zettelkasten and half of Karpathy's LLM Wiki. Two things were missing: a complete index and the raw/ folder that keeps the originals. A summary is lossy, and later there is nothing left to check it against.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/second-brain-originals.jpg",
+      "url": "https://rdmueller.github.io/pages/blog/second-brain-originals.html",
+      "datePublished": "2026-11-04",
+      "inLanguage": "en",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+    }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">EN</span>
+                    <span class="article-date">4. November 2026</span>
+                </div>
+                <h1>Does Your Assistant Keep Your Originals?</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/second-brain-originals.jpg" alt="Watercolour illustration: a smiling robot at a desk holds a letter beside a stack of mail while envelopes dissolve into scraps of paper in the air above it. A Ragdoll cat sitting on the desk reaches up with one paw to catch them. Ralf puts an envelope into an open glass box and looks over at the cat">
+            </figure>
+
+            <div class="article-content">
+                <p>Today I asked my AI assistant a simple question: how do you actually structure the things I give you?</p>
+
+                <p>The answer was more interesting than I expected. Over the months, Claude Code had grown its own mix of methods in my private assistant repo. Tasks follow GTD in todo.txt syntax. The folders look a bit like PARA, without the discipline. Its memory works like a Zettelkasten, with one fact per note and an index on top. And it turned out it had been running half of Karpathy's LLM Wiki the way Molière's Monsieur Jourdain spoke prose: all along, without knowing it. The <code>CLAUDE.md</code> is the schema, a resources folder holds the pages, and an index file points to them.</p>
+
+                <p>Half, because two things were missing. The index covered only 27 of 68 knowledge files, so most of what we had collected was findable only if you already knew it was there. The second gap surprised me more. When I paste an email into the chat, the assistant works with it, and after the session the original is gone. What remains is its summary. I asked: "Don't you keep the references?" For a URL, yes, because the source stays retrievable. For an email, no. A summary is lossy. It can weigh things wrongly or drop a detail, and later there is nothing left to check it against. That is what the <code>raw/</code> folder in Karpathy's pattern is for, and I hadn't taken it seriously until I saw what goes missing without it.</p>
+
+                <p>In another session that same day, I was writing down the rules for exactly this, as a new Semantic Contract called Second Brain Maintenance. It's now on the Semantic Anchors site. Writing it forced me to sort out three terms I had been using as if they meant the same thing. Building a Second Brain is the method for handling knowledge at all. PARA says where something goes, sorted by how soon you'll need it. The LLM Wiki says who keeps it current, and the answer is the model.</p>
+
+                <p>They clash in a few places. PARA files by actionability, while a wiki grows by topic. The contract settles those clashes in a few lines: raw sources stay unchanged in <code>raw/</code>, topic pages live only under Resources, nothing gets deleted, only moved, and a weekly lint looks for contradictions and stale claims.</p>
+
+                <p>We fixed the index today. <code>raw/</code> is next.</p>
+
+                <p>Does your assistant keep your originals, or only its memory of them?</p>
+
+                <p>The contract: <a href="https://llm-coding.github.io/Semantic-Anchors/contracts">Second Brain Maintenance and the other Semantic Contracts</a></p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Semantic Anchors</span>
+                    <span class="blog-tag">GenAI</span>
+                    <span class="blog-tag">Claude Code</span>
+                </div>
+                <a href="../blog.html" class="back-link">Alle Artikel</a>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Ralf D. Müller | Software Architect</p>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
