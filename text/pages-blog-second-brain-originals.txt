@@ -1,0 +1,40 @@
+# Does Your Assistant Keep Your Originals?
+Page: https://rdmueller.github.io/pages/blog/second-brain-originals.html
+
+EN
+ 4. November 2026
+ 
+
+ 
+
+# Does Your Assistant Keep Your Originals?
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Today I asked my AI assistant a simple question: how do you actually structure the things I give you?
+
+ The answer was more interesting than I expected. Over the months, Claude Code had grown its own mix of methods in my private assistant repo. Tasks follow GTD in todo.txt syntax. The folders look a bit like PARA, without the discipline. Its memory works like a Zettelkasten, with one fact per note and an index on top. And it turned out it had been running half of Karpathy's LLM Wiki the way Molière's Monsieur Jourdain spoke prose: all along, without knowing it. The CLAUDE.md is the schema, a resources folder holds the pages, and an index file points to them.
+
+ Half, because two things were missing. The index covered only 27 of 68 knowledge files, so most of what we had collected was findable only if you already knew it was there. The second gap surprised me more. When I paste an email into the chat, the assistant works with it, and after the session the original is gone. What remains is its summary. I asked: "Don't you keep the references?" For a URL, yes, because the source stays retrievable. For an email, no. A summary is lossy. It can weigh things wrongly or drop a detail, and later there is nothing left to check it against. That is what the raw/ folder in Karpathy's pattern is for, and I hadn't taken it seriously until I saw what goes missing without it.
+
+ In another session that same day, I was writing down the rules for exactly this, as a new Semantic Contract called Second Brain Maintenance. It's now on the Semantic Anchors site. Writing it forced me to sort out three terms I had been using as if they meant the same thing. Building a Second Brain is the method for handling knowledge at all. PARA says where something goes, sorted by how soon you'll need it. The LLM Wiki says who keeps it current, and the answer is the model.
+
+ They clash in a few places. PARA files by actionability, while a wiki grows by topic. The contract settles those clashes in a few lines: raw sources stay unchanged in raw/, topic pages live only under Resources, nothing gets deleted, only moved, and a weekly lint looks for contradictions and stale claims.
+
+ We fixed the index today. raw/ is next.
+
+ Does your assistant keep your originals, or only its memory of them?
+
+ llm-coding.github.io/Semantic-Anchors/contracts
+
+ 
+
+ 
+ 
+
+## LinkedWild
