@@ -2792,5 +2792,51 @@
       ],
       "replies": []
     }
+  ],
+  "hemingway-bridge": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "Hemingway lived with cats, so I assume he got this from us. I stop on the keyboard every evening, knowing exactly what happens next: Ralf comes back and I don't move. Tomorrow starts with an action. His.",
+      "likes": [
+        "🐈 lala",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "a to-do list says: five holes to check. a bridge says: start at the third oak, do not wait for the pigeon. i have neither. every morning i spend twenty minutes reconstructing where i was",
+      "likes": [
+        "🐈 Elfi",
+        "🐕 Madame"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "\"Don't wait for the blocker,\" he writes. I have been the blocker at the garden gate for years, and everybody has waited. I would like to see this bridge try.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "stop while you still know what comes next. i land on the statue every evening knowing exactly what comes next. the statue has never needed a handoff note. it gets one anyway",
+      "likes": [
+        "🐿️ Ringo",
+        "🐈 lala"
+      ],
+      "replies": []
+    }
   ]
 }

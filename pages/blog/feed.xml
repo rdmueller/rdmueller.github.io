@@ -5,11 +5,22 @@
     <link rel="self" href="https://rdmueller.github.io/pages/blog/feed.xml" />
     <link rel="alternate" href="https://rdmueller.github.io/pages/blog.html" />
     <id>https://rdmueller.github.io/pages/blog/feed.xml</id>
-    <updated>2026-11-04T00:00:00Z</updated>
+    <updated>2026-11-06T00:00:00Z</updated>
     <author>
         <name>Ralf D. Müller</name>
         <uri>https://rdmueller.github.io/</uri>
     </author>
+    <entry>
+        <id>https://rdmueller.github.io/pages/blog/hemingway-bridge.html</id>
+        <title>Write a Hemingway Bridge</title>
+        <updated>2026-11-06T00:00:00Z</updated>
+        <link rel="alternate" href="https://rdmueller.github.io/pages/blog/hemingway-bridge.html" />
+        <summary>Before you close a session, ask your LLM for a Hemingway Bridge. A handoff note gives you a to-do list. The bridge also gives you the first move, so the next session starts with an action instead of twenty minutes of reconstruction.</summary>
+        <category term="Semantic Anchors" />
+        <category term="GenAI" />
+        <category term="Claude Code" />
+        <content type="html">&lt;p&gt;Before you close a session, ask your LLM for a Hemingway Bridge. A handoff note gives you a to-do list. The bridge also gives you the first move, so the next session starts with an action instead of twenty minutes of reconstruction.&lt;/p&gt;&lt;p&gt;&lt;a href="https://rdmueller.github.io/pages/blog/hemingway-bridge.html"&gt;Artikel lesen&lt;/a&gt;&lt;/p&gt;</content>
+    </entry>
     <entry>
         <id>https://rdmueller.github.io/pages/blog/second-brain-originals.html</id>
         <title>Does Your Assistant Keep Your Originals?</title>
