@@ -1,5 +1,18 @@
 [
   {
+    "date": "2026-11-06",
+    "lang": "en",
+    "title": "Write a Hemingway Bridge",
+    "excerpt": "Before you close a session, ask your LLM for a Hemingway Bridge. A handoff note gives you a to-do list. The bridge also gives you the first move, so the next session starts with an action instead of twenty minutes of reconstruction.",
+    "icon": "images/blog/linkedin/hemingway-bridge.jpg",
+    "url": "blog/hemingway-bridge.html",
+    "tags": [
+      "Semantic Anchors",
+      "GenAI",
+      "Claude Code"
+    ]
+  },
+  {
     "date": "2026-11-04",
     "lang": "en",
     "title": "Does Your Assistant Keep Your Originals?",

@@ -43,6 +43,60 @@ Page: https://rdmueller.github.io/pages/blog.html
  
 
  
+ 06
+ Nov
+ 2026
+ 
+
+ 
+ 
+ ENSemantic AnchorsGenAIClaude Code
+ 
+
+ 
+
+## Write a Hemingway Bridge
+
+ Before you close a session, ask your LLM for a Hemingway Bridge. A handoff note gives you a to-do list. The bridge also gives you the first move, so the next session starts with an action instead of twenty minutes of reconstruction.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 04
+ Nov
+ 2026
+ 
+
+ 
+ 
+ ENSemantic AnchorsGenAIClaude Code
+ 
+
+ 
+
+## Does Your Assistant Keep Your Originals?
+
+ My assistant had grown its own mix of GTD, PARA, Zettelkasten and half of Karpathy's LLM Wiki. Two things were missing: a complete index and the raw/ folder that keeps the originals. A summary is lossy, and later there is nothing left to check it against.
+
+ Artikel lesen
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
  29
  Okt
  2026

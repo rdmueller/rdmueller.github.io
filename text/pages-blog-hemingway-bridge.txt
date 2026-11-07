@@ -1,0 +1,44 @@
+# Write a Hemingway Bridge
+Page: https://rdmueller.github.io/pages/blog/hemingway-bridge.html
+
+EN
+ 6. November 2026
+ 
+
+ 
+
+# Write a Hemingway Bridge
+
+ 
+
+ 
+ 
+ 
+
+ 
+ You know the situation. You've been working with your LLM for an hour, it's getting late, and you're not done. The problem is half solved, and you and the model both know exactly what comes next.
+
+ Tomorrow you'll have forgotten half of it. The model will have forgotten all of it.
+
+ What you want at that moment is simple: next time, get back into the problem and the next steps without spending twenty minutes reconstructing where you were.
+
+ So before you close the session, tell the model:
+
+ "Write a Hemingway Bridge."
+
+ The name comes from Ernest Hemingway. In 1935 he wrote: "The best way is always to stop when you are going good and when you know what will happen next." Tiago Forte later named the habit. You stop while you still know the next step, and you leave yourself a bridge back in.
+
+ When I ask for a handoff note without the term, I get a to-do list: status, blockers, five numbered steps. Useful, but tomorrow I still have to decide where to start. With "Hemingway Bridge", I also get the first move: open this file, do this one thing, and don't wait for the blocker. Tomorrow starts with an action instead of a blank page.
+
+ Save the bridge as a file in the project or as an issue assigned to you, not just in the chat, and start the next session with "Read the Hemingway Bridge and continue."
+
+ The term replaces a handoff template you would otherwise have to write and maintain. That's what a Semantic Anchor does: the model already knows the concept, you only have to name it. One caveat: small models know this term less well. Standard coding models handle it fine.
+
+ llm-coding.github.io/Semantic-Anchors/#/anchor/hemingway-bridge
+
+ 
+
+ 
+ 
+
+## LinkedWild
