@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-11-13",
+    "lang": "de",
+    "title": "Kann ein LLM aus 3D-Druckteilen ein Produkt machen?",
+    "excerpt": "Nach rund 40 Tagen mit Claude Code gibt es einen Zwischenstand, den man anfassen kann: PlotBot, ein Zeichenroboter zum Selberbauen. Das CAD-Modell ist OpenSCAD-Code, die Firmware läuft auf einem ESP32, aus dem Handbuch wird ein Buch. Ob die Vermarktung funktioniert, entscheidet sich jetzt.",
+    "icon": "images/blog/linkedin/plotbot-kit.png",
+    "url": "blog/plotbot-kit.html",
+    "tags": [
+      "Maker",
+      "3D Printing",
+      "ESP32",
+      "Claude Code",
+      "Agentic Coding"
+    ]
+  },
+  {
     "date": "2026-11-06",
     "lang": "en",
     "title": "Write a Hemingway Bridge",

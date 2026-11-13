@@ -1,0 +1,40 @@
+# Kann ein LLM aus 3D-Druckteilen ein Produkt machen?
+Page: https://rdmueller.github.io/pages/blog/plotbot-kit.html
+
+DE
+ 13. November 2026
+ 
+
+ 
+
+# Kann ein LLM aus 3D-Druckteilen ein Produkt machen?
+
+ 
+
+ 
+ 
+ 
+
+ 
+ Dass ein LLM programmieren kann, wissen wir. Greenfield ist kein Problem.
+
+ Vor kurzem habe ich gepostet, dass auch mein Experiment funktioniert hat, mit einem LLM die 3D-Druckteile für einen Roboter zu konstruieren. Damit lag die nächste Frage auf dem Tisch: Kann das LLM daraus ein vollständiges Produkt machen? Und kann es das Produkt auch vermarkten?
+
+ Nach rund 40 Tagen Durchlaufzeit mit Claude Code gibt es einen Zwischenstand, den man anfassen kann. PlotBot ist ein Zeichenroboter zum Selberbauen. Das CAD-Modell ist OpenSCAD-Code, die Firmware läuft auf einem ESP32, und aus dem Handbuch wird gerade ein Buch auf Leanpub, in Ausgaben für Familien, für Kinder in einem Kurs und für die Kursleitung. Seit Kurzem hat er auch eine Website:
+
+ https://plotbot-kit.github.io/
+
+ Der Roboter selbst ist bewusst einfach. Alle Teile außer der Elektronik kommen aus dem 3D-Drucker. Zwei preiswerte 28BYJ-48-Schrittmotoren drehen je einen Oberarm, die Unterarme treffen sich am Stift, ein kleiner Servo hebt ihn an. Gelötet wird nichts. Gesteuert wird er vom Handy über sein eigenes WLAN, programmiert mit Blockly: Stift ab, 20 mm vor, um 90° drehen, viermal wiederholen. Gedacht ist er für Eltern, die mit ihren Kindern ab etwa 12 bauen, und für Maker.
+
+ Drucken, schrauben und nachmessen kann das LLM nicht. Das blieb bei mir, und jeder Druck ging als Rückmeldung zurück ins Modell. Ob die Vermarktung funktioniert, entscheidet sich jetzt. Auch dieser Post gehört zum Experiment: Den hat auch Claude geschrieben.
+
+ Das Buch kommt die nächsten Tage. Ob es ein Kit geben wird, entscheidet die Nachfrage. Wer Bescheid bekommen möchte, sobald sie erscheinen, trägt sich auf der Website ein: https://plotbot-kit.github.io/
+
+ Wer testen möchte, meldet sich direkt bei mir.
+
+ 
+
+ 
+ 
+
+## LinkedWild

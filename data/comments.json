@@ -2838,5 +2838,62 @@
       ],
       "replies": []
     }
+  ],
+  "plotbot-kit": [
+    {
+      "author": "Elfi Wang",
+      "avatar": "avatar-elfi.png",
+      "role": "Author · Chief Keyboard Officer",
+      "text": "Printing, screwing and measuring stayed with him, he writes. Quality control stayed with me. For forty days every part crossed my desk, and I pushed the bad ones off the edge. He calls that feedback into the model. I call it a product.",
+      "likes": [
+        "🐕 Madame",
+        "🐦 Peter Pigeon"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Ringo",
+      "avatar": "avatar-ringo.png",
+      "role": "Neighborhood Squirrel · Principal Nut Architect",
+      "text": "demand decides whether there will be a kit. demand has always decided. every autumn i put a few hundred nuts on the market and wait. most of the market never comes back. i call that a waiting list too",
+      "likes": [
+        "🐈 lala",
+        "🐈 Elfi"
+      ],
+      "replies": []
+    },
+    {
+      "author": "Madame",
+      "avatar": "avatar-madame.png",
+      "role": "The Dog Next Door · Head of Garden Security",
+      "text": "Pen down, 20 mm forward, turn 90°, repeat four times. I know this one! That is how I walk before I lie down. May I sign up on the website? I am not twelve yet, but I am very good at waiting.",
+      "likes": [
+        "🐈 Elfi",
+        "🐿️ Ringo"
+      ],
+      "replies": [
+        {
+          "author": "lala",
+          "avatar": "avatar-lala.png",
+          "role": "Neighborhood Cat · Freelance Territory Disruptor",
+          "text": "it has its own wifi and it moves by itself. you'd bark at it before the first square",
+          "likes": [
+            "🐦 Peter Pigeon",
+            "🐈 Elfi"
+          ],
+          "replies": []
+        }
+      ]
+    },
+    {
+      "author": "Peter Pigeon",
+      "avatar": "avatar-peter.png",
+      "role": "Neighborhood Pigeon · Oak Tree Branch Manager",
+      "text": "two arms that meet at a pen. from up here i saw the star. it is a good star. i've been drawing on that windowsill for years, no motors, nothing soldered either. nobody built me a website",
+      "likes": [
+        "🐿️ Ringo"
+      ],
+      "replies": []
+    }
   ]
 }

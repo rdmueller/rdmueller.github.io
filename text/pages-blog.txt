@@ -18,11 +18,13 @@ Page: https://rdmueller.github.io/pages/blog.html
  Dark Factory
  Digital Independence
  Documentation
+ ESP32
  Eichhorst's Principle
  GDPR
  GenAI
  Herdr
  LLM
+ Maker
  Open Source
  Opinion
  Productivity
@@ -33,6 +35,33 @@ Page: https://rdmueller.github.io/pages/blog.html
  Tooling
  arc42
  docToolchain
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 13
+ Nov
+ 2026
+ 
+
+ 
+ 
+ DEMaker3D PrintingESP32Claude CodeAgentic Coding
+ 
+
+ 
+
+## Kann ein LLM aus 3D-Druckteilen ein Produkt machen?
+
+ Nach rund 40 Tagen mit Claude Code gibt es einen Zwischenstand, den man anfassen kann: PlotBot, ein Zeichenroboter zum Selberbauen. Das CAD-Modell ist OpenSCAD-Code, die Firmware läuft auf einem ESP32, aus dem Handbuch wird ein Buch. Ob die Vermarktung funktioniert, entscheidet sich jetzt.
+
+ Artikel lesen
  
 
  

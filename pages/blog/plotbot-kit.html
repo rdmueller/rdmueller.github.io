@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nach rund 40 Tagen mit Claude Code gibt es einen Zwischenstand, den man anfassen kann: PlotBot, ein Zeichenroboter zum Selberbauen. Das CAD-Modell ist OpenSCAD-Code, die Firmware läuft auf einem ESP32, aus dem Handbuch wird ein Buch. Ob die Vermarktung funktioniert, entscheidet sich jetzt.">
+    <link rel="canonical" href="https://rdmueller.github.io/pages/blog/plotbot-kit.html">
+    <meta property="og:url" content="https://rdmueller.github.io/pages/blog/plotbot-kit.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Kann ein LLM aus 3D-Druckteilen ein Produkt machen? | Ralf D. Müller">
+    <meta property="og:description" content="Nach rund 40 Tagen mit Claude Code gibt es einen Zwischenstand, den man anfassen kann: PlotBot, ein Zeichenroboter zum Selberbauen. Das CAD-Modell ist OpenSCAD-Code, die Firmware läuft auf einem ESP32, aus dem Handbuch wird ein Buch. Ob die Vermarktung funktioniert, entscheidet sich jetzt.">
+    <meta property="og:image" content="https://rdmueller.github.io/images/blog/linkedin/plotbot-kit.png">
+    <title>Kann ein LLM aus 3D-Druckteilen ein Produkt machen? | Ralf D. Müller</title>
+        <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Kann ein LLM aus 3D-Druckteilen ein Produkt machen?",
+      "description": "Nach rund 40 Tagen mit Claude Code gibt es einen Zwischenstand, den man anfassen kann: PlotBot, ein Zeichenroboter zum Selberbauen. Das CAD-Modell ist OpenSCAD-Code, die Firmware läuft auf einem ESP32, aus dem Handbuch wird ein Buch. Ob die Vermarktung funktioniert, entscheidet sich jetzt.",
+      "image": "https://rdmueller.github.io/images/blog/linkedin/plotbot-kit.png",
+      "url": "https://rdmueller.github.io/pages/blog/plotbot-kit.html",
+      "datePublished": "2026-11-13",
+      "inLanguage": "de",
+      "author": {
+            "@type": "Person",
+            "name": "Ralf D. Müller",
+            "url": "https://rdmueller.github.io/"
+      }
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script data-goatcounter="https://rdmueller.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">Ralf D. Müller</a>
+            <ul class="nav-links">
+                <li><a href="../../index.html#about">Über mich</a></li>
+                <li><a href="../../pages/manifesto.html">Manifest</a></li>
+                <li><a href="../../index.html#trainings">Trainings</a></li>
+                <li><a href="../../pages/talks.html">Vorträge</a></li>
+                <li><a href="../../index.html#publications">Publikationen</a></li>
+                <li><a href="../../pages/blog.html" class="active">Ralf's Corner</a></li>
+                <li><a href="../../pages/elfi.html">Elfi's Corner</a></li>
+                <li><a href="../../index.html#contact">Kontakt</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="article-page">
+        <article class="container">
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="lang-badge">DE</span>
+                    <span class="article-date">13. November 2026</span>
+                </div>
+                <h1>Kann ein LLM aus 3D-Druckteilen ein Produkt machen?</h1>
+            </header>
+
+            <figure class="article-hero">
+                <img src="../../images/blog/linkedin/plotbot-kit.png" alt="Aquarell-Illustration: Ralf sitzt an einer Werkbank und hält lächelnd ein Blatt mit einem gezeichneten Stern und einer Blume hoch. Vor ihm zeichnet ein kleiner Zeichenroboter mit zwei orange-grauen Armen und einem orangen Stift einen Stern auf Papier. Im Hintergrund stehen ein 3D-Drucker und eine Werkzeugwand.">
+            </figure>
+
+            <div class="article-content">
+                <p>Dass ein LLM programmieren kann, wissen wir. Greenfield ist kein Problem.</p>
+                <p>Vor kurzem habe ich <a href="drawing-robot.html">gepostet</a>, dass auch mein Experiment funktioniert hat, mit einem LLM die 3D-Druckteile für einen Roboter zu konstruieren. Damit lag die nächste Frage auf dem Tisch: Kann das LLM daraus ein vollständiges Produkt machen? Und kann es das Produkt auch vermarkten?</p>
+                <p>Nach rund 40 Tagen Durchlaufzeit mit Claude Code gibt es einen Zwischenstand, den man anfassen kann. PlotBot ist ein Zeichenroboter zum Selberbauen. Das CAD-Modell ist OpenSCAD-Code, die Firmware läuft auf einem ESP32, und aus dem Handbuch wird gerade ein Buch auf Leanpub, in Ausgaben für Familien, für Kinder in einem Kurs und für die Kursleitung. Seit Kurzem hat er auch eine Website:</p>
+                <p><a href="https://plotbot-kit.github.io/">https://plotbot-kit.github.io/</a></p>
+                <p>Der Roboter selbst ist bewusst einfach. Alle Teile außer der Elektronik kommen aus dem 3D-Drucker. Zwei preiswerte 28BYJ-48-Schrittmotoren drehen je einen Oberarm, die Unterarme treffen sich am Stift, ein kleiner Servo hebt ihn an. Gelötet wird nichts. Gesteuert wird er vom Handy über sein eigenes WLAN, programmiert mit Blockly: Stift ab, 20 mm vor, um 90° drehen, viermal wiederholen. Gedacht ist er für Eltern, die mit ihren Kindern ab etwa 12 bauen, und für Maker.</p>
+                <p>Drucken, schrauben und nachmessen kann das LLM nicht. Das blieb bei mir, und jeder Druck ging als Rückmeldung zurück ins Modell. Ob die Vermarktung funktioniert, entscheidet sich jetzt. Auch dieser Post gehört zum Experiment: Den hat auch Claude geschrieben.</p>
+                <p>Das Buch kommt die nächsten Tage. Ob es ein Kit geben wird, entscheidet die Nachfrage. Wer Bescheid bekommen möchte, sobald sie erscheinen, trägt sich auf der Website ein: <a href="https://plotbot-kit.github.io/">https://plotbot-kit.github.io/</a></p>
+                <p>Wer testen möchte, meldet sich direkt bei mir.</p>
+            </div>
+
+            <section class="comments-section" id="linkedwild-comments">
+                <h2>LinkedWild</h2>
+                <div class="comments-list" id="character-comments"></div>
+            </section>
+
+            <footer class="article-footer">
+                <div class="article-tags">
+                    <span class="blog-tag">Maker</span>
+                    <span class="blog-tag">3D Printing</span>
+                    <span class="blog-tag">ESP32</span>
+                    <span class="blog-tag">Claude Code</span>
+                    <span class="blog-tag">Agentic Coding</span>
+                </div>
+                <nav class="article-nav">
+                    <a href="../blog.html" class="back-link">← Zurück zum Blog</a>
+                </nav>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="current-year">2026</span> Ralf D. Müller. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../impressum.html">Impressum</a>
+                <a href="../datenschutz.html">Datenschutz</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/comments.js"></script>
+</body>
+</html>
