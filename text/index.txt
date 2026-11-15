@@ -332,6 +332,23 @@ Technology Evangelist
  
  
 
+### PlotBot – Bau dir deinen Zeichenroboter
+
+ Buch | Leanpub
+
+ Ein Zeichenroboter zum Selberbauen: 3D-Druck, ohne Löten, Steuerung per Handy. Bauanleitung, Druckdateien und Firmware für Familien mit Kindern ab 8.
+
+ Zum Buch →
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
 ### arc42 by Example
 
  Buch | Leanpub & Packt
