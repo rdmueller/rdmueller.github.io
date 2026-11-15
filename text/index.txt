@@ -315,6 +315,23 @@ Technology Evangelist
  
  
 
+### Testing mit KI – der richtige Workflow
+
+ iX Magazin 13/2026
+
+ LLMs schreiben Tests, doch manchmal löschen sie auch einfach welche. Warum Agenten bei Tests schummeln und wie Test-driven Development als Leitplanke im Workflow sie davon abhält.
+
+ Artikel lesen →
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
 ### arc42 by Example
 
  Buch | Leanpub & Packt
